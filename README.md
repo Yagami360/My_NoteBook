@@ -8,3 +8,23 @@ These're summarized in ⚡️ Twitter Moments!
 
 Twitterモーメント：https://twitter.com/yagami_360/moments
 
+## 数学
+
+## 情報工学 / コンピューターサイエンス
+
+### 情報理論
+
+### 統計解析、多変量解析
+
+### 機械学習
+
+
+## 物理学
+
+### 電磁気学
+
+## マイコン / 電子回路
+
+### マイコン
+
+## ゲーム開発
