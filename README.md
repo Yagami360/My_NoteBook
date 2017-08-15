@@ -62,7 +62,12 @@ Twitterモーメント：https://twitter.com/yagami_360/moments
 
 ### マイコン
 
-## ソフトフェア関連
+
+## ソフトウェア関連
+
+### Tips
+
+### デザイン・パターン
 
 ### R / Rstudio
 
@@ -72,12 +77,18 @@ Twitterモーメント：https://twitter.com/yagami_360/moments
 
 ### .NETFramework
 
+### MATLAB Simulink
+
 
 ## ゲーム開発
 
 ### DirectX9
 
 ### Win32API
+
+### Unity
+
+### 各種シェーダー
 
 ### 衝突判定
 
@@ -94,4 +105,4 @@ Twitterモーメント：https://twitter.com/yagami_360/moments
 
 ### 機能安全
 
-### 各種ツール（CANoe/CANstress/GENy/CAPL/MATLAB Simulink/HILS/ 等）
+### 各種ツール（CANoe/CANstress/GENy/CAPL/HILS/ 等）
