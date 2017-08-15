@@ -6,5 +6,5 @@
 This repository mainly describe about tweets in twitter that knowledge related to science,tech,engineers from basic to applied!
 These're summarized in ⚡️ Twitter Moments!
 
-Twitterモーメント：https://twitter.com/yagami_360/moments)
+Twitterモーメント：https://twitter.com/yagami_360/moments
 
