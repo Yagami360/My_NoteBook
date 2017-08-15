@@ -75,6 +75,7 @@ https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5
 
 ### マイコン
 
+https://github.com/Yagami360/My_NoteBook/blob/master/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2_%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3_Note.md
 
 ## ソフトウェア関連
 
