@@ -8,7 +8,17 @@ These're summarized in ⚡️ Twitter Moments!
 
 Twitterモーメント：https://twitter.com/yagami_360/moments
 
+
 ## 数学
+
+### 線形代数学
+
+### 微分方程式
+
+### 最適化問題 / 数理計画法
+
+### ゲーム理論
+
 
 ## 情報工学 / コンピューターサイエンス
 
@@ -23,8 +33,34 @@ Twitterモーメント：https://twitter.com/yagami_360/moments
 
 ### 電磁気学
 
-## マイコン / 電子回路
+### 量子力学
+
+### 剛体力学
+
+### 流体力学
+
+
+## ハードウェア関連
+
+### 電子回路
 
 ### マイコン
 
+## ソフトフェア関連
+
+### R / Rstudio
+
+### Python
+
+### Win32API
+
+### .NETFramework
+
+
 ## ゲーム開発
+
+### DirectX9
+
+### Win32API
+
+### ゲームエンジン
