@@ -1,8 +1,10 @@
 # グラフ理論 [graph theory]
 
-グラフ理論に関してのツイートをまとめたモーメントです。（基本PC or タブレット端末からの閲覧用の画像サイズになってます）
+グラフ理論に関してのまとめたマイノートです。（基本PC or タブレット端末からの閲覧用の画像サイズになってます）
 
-https://twitter.com/i/moments/880663424799318016
+This is my notebook that summarizes about "graph theory". I will add contents as needed.
+
+Twitterモーメント：https://twitter.com/i/moments/880663424799318016
 
 ![twitter_ _ _1-1_170602](https://user-images.githubusercontent.com/25688193/29314190-ea3a24cc-81f7-11e7-943a-82614a44d551.png)
 ![twitter_ _ _1-2_170602](https://user-images.githubusercontent.com/25688193/29314193-ea4e339a-81f7-11e7-9e38-fda3564e1a07.png)

@@ -1,8 +1,8 @@
 # 情報理論[Information theory] / 情報数理
 
-情報理論、情報数理、情報幾何、離散数学、アルゴリズムとデータ構造、グラフ理論、統計、機械学習等に関してのツイートをまとめたモーメントです。（基本PC or タブレット端末からの閲覧用の画像サイズになってます）随時追加予定です！
+情報理論、情報数理に関してまとめたマイノートです。（基本PC or タブレット端末からの閲覧用の画像サイズになってます）随時追加予定です！
 
-(https://twitter.com/i/moments/796112497388335105)
+Twitterモーメント：https://twitter.com/i/moments/796112497388335105
 
 ![twitter_ _ _1-1_170610](https://user-images.githubusercontent.com/25688193/29311448-108cc478-81ed-11e7-95cd-4709b3a66a01.png)
 ![twitter_ _ _1-2_170610](https://user-images.githubusercontent.com/25688193/29311445-1082c78e-81ed-11e7-8224-2d8e93d282f4.png)

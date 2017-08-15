@@ -1,8 +1,10 @@
 # マイコン [microcomputer]
 
-マイコンに関してのツイートをまとめた⚡モーメントです。今後も随時追加予定です！[It is a moment that summarizes tweets about "Microcomputer". I will add tweets as needed!]
+マイコンに関してまとめたマイノートです。今後も随時追加予定です！
 
-https://twitter.com/i/moments/781979032006963200
+This is my notebook that summarizes about "microcomputer". I will add contents as needed.
+
+Twitterモーメント：https://twitter.com/i/moments/781979032006963200
 
 ![twitter_ _](https://user-images.githubusercontent.com/25688193/29314524-4b65016c-81f9-11e7-8b6a-b7409839db79.png)
 

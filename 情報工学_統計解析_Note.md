@@ -1,10 +1,10 @@
 # 統計解析 [statistical analysis]
 
-統計解析に関してのツイートをまとめた⚡モーメントです！（基本PC or タブレット端末からの閲覧用の画像サイズになってます）
+統計解析に関してのまとめた⚡マイノートです。（基本PC or タブレット端末からの閲覧用の画像サイズになってます）今後も随時追加予定です！
 
-[It is a moment that summarizes tweets about "Statistical analysis"! I will add tweets as needed!]
+This is my notebook that summarizes about "statistical analysis". I will add contents as needed!
 
-https://twitter.com/i/moments/781976867125420033
+Twitterモーメント：https://twitter.com/i/moments/781976867125420033
 
 ![twitter_ _ _161001](https://user-images.githubusercontent.com/25688193/29314888-0d233a34-81fb-11e7-8168-7810725fee78.png)
 

@@ -1,10 +1,10 @@
 # 多変数解析 [multivariate analysis]
 
-多変数解析に関してのツイートをまとめた⚡モーメントです！（基本PC or タブレット端末からの閲覧用の画像サイズになってます。）
+多変数解析に関してまとめたマイノートです。（基本PC or タブレット端末からの閲覧用の画像サイズになってます。）今後も随時追加予定です！
 
-[It is a moment that summarizes tweets about "Multivariate analysis". I will add tweets as needed!]
+This is my notebook that summarizes about "multivariate analysis". I will add contents as needed!
 
-https://twitter.com/i/moments/781977273268174849
+Twitterモーメント：https://twitter.com/i/moments/781977273268174849
 
 ## 全体MAP
 ![1](https://user-images.githubusercontent.com/25688193/29316310-7a050f40-8202-11e7-9a1c-60ae1d330749.jpg)

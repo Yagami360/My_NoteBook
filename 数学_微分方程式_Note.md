@@ -1,6 +1,10 @@
 # 微分方程式 [differential equation]
 
-微分方程式のツイートに関してまとめた⚡モーメントです。今後随時追加予定です！（基本PC or タブレット端末からの閲覧用の画像サイズになってます）[It is a moment that summarizes tweets about differential equation". I will add tweets as needed!]
+微分方程式のツイートに関しのマイノートです。今後も随時追加予定です！（基本PC or タブレット端末からの閲覧用の画像サイズになってます）
+
+This is my notebook that summarizes about "differential equation". I will add contents as needed!
+
+Twitterモーメント：https://twitter.com/i/moments/838576386277138432
 
 ![twitter_ _1-1_170306](https://user-images.githubusercontent.com/25688193/29313856-b49c63f8-81f6-11e7-95f8-0d1d34273914.png)
 ![twitter_ _1-2_170306](https://user-images.githubusercontent.com/25688193/29313855-b49c3b26-81f6-11e7-9a26-5eca635633c5.png)

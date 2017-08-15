@@ -2,7 +2,7 @@
 
 機械学習、パターン認識に関してのマイノートです。今後も随時追加予定です！（基本PC or タブレット端末からの閲覧用の画像サイズになってますm(__)m ）
 
-This is my notebook that summarizes about "Machine Learning" and "Pattern recognition". I will add tweets as needed!
+This is my notebook that summarizes about "Machine Learning" and "Pattern recognition". I will add contents as needed.
 
 Twitterモーメント：
 
@@ -28,7 +28,7 @@ https://twitter.com/i/moments/785417932629168129
 1. [ベイスの識別規則 [Bayes's idification rule]](#ベイスの識別規則)
 1. [ROC 曲線 [receiver operator characteristics curve]](#ROC曲線)
 
-1. [最近接法, k-NN 法 [k-nearest neighbor algorithm]](#最近接法、k-NN 法)
+1. [最近接法, k-NN 法 [k-nearest neighbor algorithm]](#最近接法、kNN法)
 1. [線形識別関数 [liner discriminant function]](#線形識別関数)
 1. [線形判別分析 [LDA : liner discrinant analysis]](#線形判別分析)
 1. [ロジスティクス回帰 [Logistic Regression]](#ロジスティクス回帰)
@@ -198,7 +198,7 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ 13-9_170102](https://user-images.githubusercontent.com/25688193/29311716-e12071fc-81ed-11e7-83e7-bfb361481266.png)
 ![twitter_ 13-10_170102](https://user-images.githubusercontent.com/25688193/29311717-e12908e4-81ed-11e7-8d8e-d6ffac3cc539.png)
 
-<a name="最近接法、k-NN 法"></a>
+<a name="最近接法、kNN法"></a>
 
 ## 最近接法、k-NN 法 [k-nearest neighbor algorithm]
 

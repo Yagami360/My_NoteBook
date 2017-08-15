@@ -1,8 +1,10 @@
 # 最適化問題 [Optimization problem]
 
-最適化問題に関してツイートをまとめた⚡モーメントです！（基本PC or タブレット端末からの閲覧用の画像サイズになってます）[It is a moment that summarizes tweets about "Optimization problem" ! I will add tweets as needed!]
+最適化問題、数理計画法に関してまとめたマイノートです！（基本PC or タブレット端末からの閲覧用の画像サイズになってます）今後も随時追加予定です！
 
-https://twitter.com/i/moments/781974495905009664
+This is my notebook that summarizes about "Optimization problem". I will add contents as needed!
+
+Twitterモーメント：https://twitter.com/i/moments/781974495905009664
 
 ![default](https://user-images.githubusercontent.com/25688193/29314342-9624ec36-81f8-11e7-91ed-aaa5eea15629.jpg)
 

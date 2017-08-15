@@ -1,6 +1,8 @@
 # 線形代数学 [linear algebra]
 
-線形代数学に関してのツイートをまとめたモーメントです。（基本PC or タブレット端末からの閲覧用の画像サイズになってます）あまり厳密でないので数学科or出身者の方から見たら天下り的説明に見えるかと思いますがご了承ください。内容は随時追加予定です！
+線形代数学に関してのマイノートです。今後も随時追加予定です！（基本PC or タブレット端末からの閲覧用の画像サイズになってますm(__)m ）あまり厳密でないので数学科or出身者の方から見たら天下り的説明に見えるかと思いますがご了承ください。内容は随時追加予定です！
+
+This is my notebook that summarizes about "linear algebra". I will add contents as needed!
 
 Twitterモーメント ： https://twitter.com/i/moments/867746637526876162
 

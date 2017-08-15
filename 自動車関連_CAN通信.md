@@ -1,10 +1,10 @@
-# CAN通信 [Controller Area Network]
+# CAN通信 [Controller Area Network] / FNOS
 
-車両用ネットワーク規格であるCAN通信に関してのツイートをまとめた⚡モーメントです。
+車両用ネットワーク規格であるCAN通信とFNOSに関してまとめたマイノートです。
 
-[It is a moment that summarizes tweets about " Controller Area Network (,or Automotive network protocol)". I will add as needed!]
+This is my notebook that summarizes about " Controller Area Network (,or Automotive network protocol)". I will add contents as needed.
 
-https://twitter.com/i/moments/781978252898217985
+Twitterモーメント：https://twitter.com/i/moments/781978252898217985
 
 ![can_1_170703](https://user-images.githubusercontent.com/25688193/29316048-54c1416e-8201-11e7-931e-eba9e7465aac.jpg)
 ![can_2_170703](https://user-images.githubusercontent.com/25688193/29316049-54d59682-8201-11e7-9542-dc91ed941a50.jpg)
