@@ -1,10 +1,12 @@
 # My_NoteBook
 
-基本的に、サイエンス、テクノロジー、エンジニア関連の情報を基礎から応用まで自分用ノートの画像を添付したツイートと共に発信していきたいと思います！
-ツイートした内容は ⚡️ Twitterモーメントにまとめています！
+サイエンス、テクノロジー、エンジニア関連の情報の自分用ノートを Markdown 形式で保管したリポジトリです。（プログラムコードではありません）
 
-This repository mainly describe about tweets in twitter that knowledge related to science,tech,engineers from basic to applied!
-These're summarized in ⚡️ Twitter Moments!
+基本的に、Twitterで定期的にツイートしているサイエンス、テクノロジー、エンジニア関連の情報の自分用ノート画像（Twiiterモーメントに保管）と同様のものになります。
+
+This repository describe about my note (markdown format) related to science,tech,engineers from basic to applied.
+
+It is similar to my note picture related to science, technology, engineer I tweets regularly on Twitter. (These're summarized in ⚡️ Twitter Moments)
 
 Twitterモーメント：https://twitter.com/yagami_360/moments
 
