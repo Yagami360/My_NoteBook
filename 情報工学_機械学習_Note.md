@@ -1,6 +1,8 @@
 # 機械学習 [Machine Learning] / パターン認識 [Pattern recognition]
 
-機械学習、パターン認識に関してツイートをまとめた⚡モーメントです。今後も随時追加予定です！（基本PC or タブレット端末からの閲覧用の画像サイズになってますm(__)m ）[It is a moment that summarizes tweets about "Machine Learning" and "Pattern recognition". I will add tweets as needed!]
+機械学習、パターン認識に関してのマイノートです。今後も随時追加予定です！（基本PC or タブレット端末からの閲覧用の画像サイズになってますm(__)m ）
+
+This is my notebook that summarizes about "Machine Learning" and "Pattern recognition". I will add tweets as needed!
 
 Twitterモーメント：
 
@@ -10,24 +12,64 @@ https://twitter.com/i/moments/785417932629168129
 
 ![s_](https://user-images.githubusercontent.com/25688193/29311672-d5cb20c2-81ed-11e7-9c44-002fe0eb0873.png)
 
-## 概要
+## 目次 [Contents]：
+
+1. [概要 [Overview]](#概要)
+1. [識別規則 [Idification rule (Overview)]](#識別規則)
+
+1. [汎化能力 [generalizing capability]](#汎化能力)
+1. [特徴ベクトルの変換](#特徴ベクトルの変換)
+1. [データの分割方法](#データの分割方法)
+
+1. [主成分分析 [PCA]](#主成分分析)
+1. [カーネル主成分分析 [kernelPCA]](#カーネル主成分分析)
+
+1. [確率モデルと識別関数](#確率モデルと識別関数)
+1. [ベイスの識別規則 [Bayes's idification rule]](#ベイスの識別規則)
+1. [ROC 曲線 [receiver operator characteristics curve]](#ROC曲線)
+
+1. [最近接法, k-NN 法 [k-nearest neighbor algorithm]](#最近接法、k-NN 法)
+1. [線形識別関数 [liner discriminant function]](#線形識別関数)
+1. [線形判別分析 [LDA : liner discrinant analysis]](#線形判別分析)
+1. [ロジスティクス回帰 [Logistic Regression]](#ロジスティクス回帰)
+1. [サポートベクターマシン [SVM : Support Vector Machine] ](#サポートベクターマシン)
+
+1. [決定木 [Decision Tree]](#決定木)
+
+1. [混合モデルとアンサンブル学習](#混合モデルとアンサンブル学習)
+1. [EMアルゴリズム](#EMアルゴリズム)
+1. [AdaBoost](#AdaBoost)
+1. [バギング [Bagging]](#バギング)
+1. [ランダムフォレスト [Random Forests]](#ランダムフォレスト)
+
+
+
+
+
+<a name="概要"></a>
+
+## 概要 [Overview]
 
 ![twitter_ 1-1_160915](https://user-images.githubusercontent.com/25688193/29311681-e05770d6-81ed-11e7-9fc1-bced716ee3e3.png)
 ![twitter_ 1-2_160916](https://user-images.githubusercontent.com/25688193/29311683-e057e85e-81ed-11e7-961b-c5cf37414e3e.png)
 
 
-# 識別規則（概要）
+<a name="識別規則"></a>
+
+## 識別規則（概要）[Idification rule (Overview)]
 
 ![twitter_ 2-1_160917](https://user-images.githubusercontent.com/25688193/29311684-e0581b44-81ed-11e7-9480-7efee4e5804a.png)
 ![twitter_ 2-2_160917](https://user-images.githubusercontent.com/25688193/29311685-e0589862-81ed-11e7-91ac-b4fac350b558.png)
 
 ![twitter_ 3-1_160917](https://user-images.githubusercontent.com/25688193/29311686-e078a170-81ed-11e7-945c-44e81d70b268.png)
 
-# 汎化能力 [generalizing capability]
+<a name="汎化能力"></a>
+
+## 汎化能力 [generalizing capability]
 
 ![twitter_ 4-1_160918](https://user-images.githubusercontent.com/25688193/29311687-e0798b12-81ed-11e7-9f9d-1013f2486769.png)
 
-## 汎化能力の評価、バイアス・バリアントトレードオフ、過学習
+### 汎化能力の評価、バイアス・バリアントトレードオフ、過学習
 
 ![twitter_ _3-1_160924](https://user-images.githubusercontent.com/25688193/29312037-c17fd1de-81ee-11e7-9f11-14532581c6ae.png)
 ![twitter_ _3-2_160924](https://user-images.githubusercontent.com/25688193/29312035-c17e5c00-81ee-11e7-9ca6-2ce99be665c2.png)
@@ -38,13 +80,11 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ _3-7_170810](https://user-images.githubusercontent.com/25688193/29312042-c1a19896-81ee-11e7-9814-6576040ce494.png)
 ![twitter_ _3-8_170810](https://user-images.githubusercontent.com/25688193/29312036-c17e67b8-81ee-11e7-8fca-108b9e6f294d.png)
 
-## データの分散方法（トレーニングデータ、テストデータ）
+## 前処理 [Pre Processing]
 
-![twitter_ 5-1_160918](https://user-images.githubusercontent.com/25688193/29311689-e07aea20-81ed-11e7-83e1-c1f46de49359.png)
-![twitter_ 5-2_160919](https://user-images.githubusercontent.com/25688193/29311688-e07a89d6-81ed-11e7-8181-11e17d47b372.png)
-![twitter_ 5-3_160922](https://user-images.githubusercontent.com/25688193/29311691-e07bce86-81ed-11e7-884b-0efbebff7fb6.png)
+<a name="特徴ベクトルの変換"></a>
 
-# 特徴ベクトルの変換
+## 特徴ベクトルの変換
 
 ![twitter_ 19-1_161206](https://user-images.githubusercontent.com/25688193/29311786-e34ae8ae-81ed-11e7-835a-6ac82fafaf77.png)
 ![twitter_ 19-2_161207](https://user-images.githubusercontent.com/25688193/29311787-e3524cd4-81ed-11e7-80a1-b8e76a938791.png)
@@ -54,6 +94,19 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ 19-6_161207](https://user-images.githubusercontent.com/25688193/29311791-e36c543a-81ed-11e7-8e70-4e678200145a.png)
 ![twitter_ 19-7_161209](https://user-images.githubusercontent.com/25688193/29311792-e36e9cfe-81ed-11e7-9a48-e799fe6c40e4.png)
 ![twitter_ 19-8_161210](https://user-images.githubusercontent.com/25688193/29311794-e3890d00-81ed-11e7-87b8-6ad274560d65.png)
+
+
+<a name="データの分割方法"></a>
+
+## データの分割方法（トレーニングデータ、テストデータ）
+
+![twitter_ 5-1_160918](https://user-images.githubusercontent.com/25688193/29311689-e07aea20-81ed-11e7-83e1-c1f46de49359.png)
+![twitter_ 5-2_160919](https://user-images.githubusercontent.com/25688193/29311688-e07a89d6-81ed-11e7-8181-11e17d47b372.png)
+![twitter_ 5-3_160922](https://user-images.githubusercontent.com/25688193/29311691-e07bce86-81ed-11e7-884b-0efbebff7fb6.png)
+
+## 次元削除（特徴抽出）によるデータの圧縮
+
+<a name="主成分分析"></a>
 
 ## 主成分分析 [PCA]
 
@@ -73,14 +126,43 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ _ 1-9_161209](https://user-images.githubusercontent.com/25688193/29312119-fe963b44-81ee-11e7-8ffb-832df72222cd.png)
 ![twitter_ _ 1-10_161209](https://user-images.githubusercontent.com/25688193/29312118-fe947ade-81ee-11e7-976b-50f5a8fcb867.png)
 
-# カーネル主成分分析 [kernel PCA]
+<a name="カーネル主成分分析"></a>
+
+## カーネル主成分分析 [kernel PCA]
 
 ![twitter_pca_2-1_170815](https://user-images.githubusercontent.com/25688193/29312090-f358eb82-81ee-11e7-93a1-1a5e53e0daa1.png)
 ![twitter_pca_2-2_170815](https://user-images.githubusercontent.com/25688193/29312092-f359ad9c-81ee-11e7-9b58-0849548a8b48.png)
 ![twitter_pca_2-3_170815](https://user-images.githubusercontent.com/25688193/29312093-f35a52ce-81ee-11e7-8021-08c23f97028c.png)
 ![twitter_pca_2-4_170815](https://user-images.githubusercontent.com/25688193/29312094-f35d6ec8-81ee-11e7-813d-dc033ac2a515.png)
 
-# ベイスの識別規則 [Bayes's idification rule]
+
+<a name="確率モデルと識別関数"></a>
+
+## 確率モデルと識別関数
+
+![twitter_ 20-1_170108](https://user-images.githubusercontent.com/25688193/29311795-e389900e-81ed-11e7-950d-37c22138aed4.png)
+![twitter_ 20-2_170108](https://user-images.githubusercontent.com/25688193/29311796-e38bbff0-81ed-11e7-8035-58a67b9776c4.png)
+![twitter_ 20-3_170109](https://user-images.githubusercontent.com/25688193/29311797-e38e38d4-81ed-11e7-81f6-94b34e68912a.png)
+![twitter_ 20-4_170109](https://user-images.githubusercontent.com/25688193/29311798-e3911ea0-81ed-11e7-8adc-114253515b81.png)
+![twitter_ 20-5_170110](https://user-images.githubusercontent.com/25688193/29311799-e39b8476-81ed-11e7-962b-10f3f8d4f1a5.png)
+![twitter_ 20-6_170110](https://user-images.githubusercontent.com/25688193/29311801-e3ac1ef8-81ed-11e7-992c-09bc4a17f929.png)
+![twitter_ 20-7_170110](https://user-images.githubusercontent.com/25688193/29311800-e3ab980c-81ed-11e7-9bc8-f5072291d9a8.png)
+![twitter_ 20-8_170116](https://user-images.githubusercontent.com/25688193/29311804-e3c1282a-81ed-11e7-87e7-0307b1562bb4.png)
+![twitter_ 20-9_170116](https://user-images.githubusercontent.com/25688193/29311802-e3b24774-81ed-11e7-8274-86ad54b28f6c.png)
+![twitter_ 20-10_170116](https://user-images.githubusercontent.com/25688193/29311803-e3b5aacc-81ed-11e7-846f-66cefc69bb11.png)
+![twitter_ 20-11_170116](https://user-images.githubusercontent.com/25688193/29311805-e3c12b86-81ed-11e7-9390-9a02c40ee438.png)
+![twitter_ 20-12_170116](https://user-images.githubusercontent.com/25688193/29311806-e3cea7de-81ed-11e7-9541-bff85586623b.png)
+![twitter_ 20-13_170116](https://user-images.githubusercontent.com/25688193/29311807-e3cfb7fa-81ed-11e7-9e48-c530ceffdae7.png)
+![twitter_ 20-14_170116](https://user-images.githubusercontent.com/25688193/29311808-e3d755aa-81ed-11e7-846b-a9ab1b38f933.png)
+![twitter_ 20-15_170116](https://user-images.githubusercontent.com/25688193/29311809-e3d921c8-81ed-11e7-8547-7c9f971eb5a9.png)
+![twitter_ 20-16_170123](https://user-images.githubusercontent.com/25688193/29311810-e3e353fa-81ed-11e7-9a8a-825fc1fe8889.png)
+![twitter_ 20-17_170127](https://user-images.githubusercontent.com/25688193/29311811-e3e4dcf2-81ed-11e7-95f5-14b2bdb669e8.png)
+![twitter_ 20-18_170127](https://user-images.githubusercontent.com/25688193/29311812-e3f16b0c-81ed-11e7-99ad-bc6ae4315238.png)
+
+
+<a name="ベイズの識別規則"></a>
+
+## ベイスの識別規則 [Bayes's idification rule]
 
 ![twitter_ 7-1_160930](https://user-images.githubusercontent.com/25688193/29311692-e09d7e0a-81ed-11e7-926a-bd5c1f4a2ce5.png)
 ![twitter_ 7-2_160930](https://user-images.githubusercontent.com/25688193/29311693-e09e1fe0-81ed-11e7-9477-ffe003d53b49.png)
@@ -100,7 +182,10 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ 12-1_161004](https://user-images.githubusercontent.com/25688193/29311706-e0e44ce0-81ed-11e7-8238-3967e593dd27.png)
 ![twitter_ 12-2_161004](https://user-images.githubusercontent.com/25688193/29311707-e0e6588c-81ed-11e7-84c7-3635a2d8537d.png)
 
-# ROC 曲線 [receiver operator characteristics curve]
+
+<a name="ROC曲線"></a>
+
+## ROC 曲線 [receiver operator characteristics curve]
 
 ![twitter_ 13-1_161227](https://user-images.githubusercontent.com/25688193/29311708-e0f24fac-81ed-11e7-8461-ea000cac9608.png)
 ![twitter_ 13-2_161227](https://user-images.githubusercontent.com/25688193/29311709-e0f3ae74-81ed-11e7-93aa-42632dbc8ff8.png)
@@ -113,7 +198,9 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ 13-9_170102](https://user-images.githubusercontent.com/25688193/29311716-e12071fc-81ed-11e7-83e7-bfb361481266.png)
 ![twitter_ 13-10_170102](https://user-images.githubusercontent.com/25688193/29311717-e12908e4-81ed-11e7-8d8e-d6ffac3cc539.png)
 
-# 最近接法、k-NN 法 [k-nearest neighbor algorithm]
+<a name="最近接法、k-NN 法"></a>
+
+## 最近接法、k-NN 法 [k-nearest neighbor algorithm]
 
 ![twitter_ 14-1_161007](https://user-images.githubusercontent.com/25688193/29311718-e12caecc-81ed-11e7-84d5-bc46932892c1.png)
 ![twitter_ 14-2_161007](https://user-images.githubusercontent.com/25688193/29311719-e12edc7e-81ed-11e7-9ea0-8be8e1e59b1b.png)
@@ -134,7 +221,10 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ 16-6_161112](https://user-images.githubusercontent.com/25688193/29311732-e18010ee-81ed-11e7-9d3d-47877a66f994.png)
 ![twitter_ 16-7_170729](https://user-images.githubusercontent.com/25688193/29311737-e199b45e-81ed-11e7-8685-98c52a6594b2.png)
 
-# 線形識別関数 [liner discriminant function]
+
+<a name="線形識別関数"></a>
+
+## 線形識別関数 [liner discriminant function]
 
 ![twitter_ 17-1_161113](https://user-images.githubusercontent.com/25688193/29311733-e188c93c-81ed-11e7-8622-5688879e3e06.png)
 ![twitter_ 17-2_161113](https://user-images.githubusercontent.com/25688193/29311734-e1926c08-81ed-11e7-94b1-47561b20d85e.png)
@@ -149,7 +239,10 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ 17-10_2_171029](https://user-images.githubusercontent.com/25688193/29311747-e1d8699c-81ed-11e7-9a04-2daa68230d4b.png)
 ![twitter_ 17-10_3_171029](https://user-images.githubusercontent.com/25688193/29311744-e1d1180e-81ed-11e7-8a65-2eae8f3b4ed1.png)
 
-# 線形判別分析 [LDA : liner discrinant analysis]
+
+<a name="線形判別分析"></a>
+
+## 線形判別分析 [LDA : liner discrinant analysis]
 
 ![twitter_ 17-10_161116](https://user-images.githubusercontent.com/25688193/29311746-e1d6ec70-81ed-11e7-8b9f-b969af491912.png)
 ![twitter_ 17-11_161116](https://user-images.githubusercontent.com/25688193/29311748-e1da7868-81ed-11e7-98a1-db01e60a5326.png)
@@ -166,7 +259,10 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ 17-27_170201](https://user-images.githubusercontent.com/25688193/29311759-e2a69574-81ed-11e7-83bb-0a15d1fb46bd.png)
 ![twitter_ 17-28_170201](https://user-images.githubusercontent.com/25688193/29311760-e2b85bba-81ed-11e7-9a46-2d29972a33fc.png)
 
-## ロジスティクス回帰
+
+<a name="ロジスティクス回帰"></a>
+
+## ロジスティクス回帰 [Logistic Regression]
 
 ![twitter_ 18-1_161129](https://user-images.githubusercontent.com/25688193/29311761-e2bb0752-81ed-11e7-94fc-6a887193766f.png)
 ![twitter_ 18-1_161130](https://user-images.githubusercontent.com/25688193/29311762-e2bffd52-81ed-11e7-8792-460a06fd85cb.png)
@@ -194,57 +290,9 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ 18-19_170727](https://user-images.githubusercontent.com/25688193/29311785-e34831d6-81ed-11e7-93f0-0eb9400253dd.png)
 
 
-## 確率モデルと識別関数
+<a name="サポートベクターマシン"></a>
 
-![twitter_ 20-1_170108](https://user-images.githubusercontent.com/25688193/29311795-e389900e-81ed-11e7-950d-37c22138aed4.png)
-![twitter_ 20-2_170108](https://user-images.githubusercontent.com/25688193/29311796-e38bbff0-81ed-11e7-8035-58a67b9776c4.png)
-![twitter_ 20-3_170109](https://user-images.githubusercontent.com/25688193/29311797-e38e38d4-81ed-11e7-81f6-94b34e68912a.png)
-![twitter_ 20-4_170109](https://user-images.githubusercontent.com/25688193/29311798-e3911ea0-81ed-11e7-8adc-114253515b81.png)
-![twitter_ 20-5_170110](https://user-images.githubusercontent.com/25688193/29311799-e39b8476-81ed-11e7-962b-10f3f8d4f1a5.png)
-![twitter_ 20-6_170110](https://user-images.githubusercontent.com/25688193/29311801-e3ac1ef8-81ed-11e7-992c-09bc4a17f929.png)
-![twitter_ 20-7_170110](https://user-images.githubusercontent.com/25688193/29311800-e3ab980c-81ed-11e7-9bc8-f5072291d9a8.png)
-![twitter_ 20-8_170116](https://user-images.githubusercontent.com/25688193/29311804-e3c1282a-81ed-11e7-87e7-0307b1562bb4.png)
-![twitter_ 20-9_170116](https://user-images.githubusercontent.com/25688193/29311802-e3b24774-81ed-11e7-8274-86ad54b28f6c.png)
-![twitter_ 20-10_170116](https://user-images.githubusercontent.com/25688193/29311803-e3b5aacc-81ed-11e7-846f-66cefc69bb11.png)
-![twitter_ 20-11_170116](https://user-images.githubusercontent.com/25688193/29311805-e3c12b86-81ed-11e7-9390-9a02c40ee438.png)
-![twitter_ 20-12_170116](https://user-images.githubusercontent.com/25688193/29311806-e3cea7de-81ed-11e7-9541-bff85586623b.png)
-![twitter_ 20-13_170116](https://user-images.githubusercontent.com/25688193/29311807-e3cfb7fa-81ed-11e7-9e48-c530ceffdae7.png)
-![twitter_ 20-14_170116](https://user-images.githubusercontent.com/25688193/29311808-e3d755aa-81ed-11e7-846b-a9ab1b38f933.png)
-![twitter_ 20-15_170116](https://user-images.githubusercontent.com/25688193/29311809-e3d921c8-81ed-11e7-8547-7c9f971eb5a9.png)
-![twitter_ 20-16_170123](https://user-images.githubusercontent.com/25688193/29311810-e3e353fa-81ed-11e7-9a8a-825fc1fe8889.png)
-![twitter_ 20-17_170127](https://user-images.githubusercontent.com/25688193/29311811-e3e4dcf2-81ed-11e7-95f5-14b2bdb669e8.png)
-![twitter_ 20-18_170127](https://user-images.githubusercontent.com/25688193/29311812-e3f16b0c-81ed-11e7-99ad-bc6ae4315238.png)
-
-
-## 決定木 [Decision Tree]
-
-![twitter_ 21-1_170730](https://user-images.githubusercontent.com/25688193/29311813-e3f36cc2-81ed-11e7-88aa-387bd4b36715.png)
-![twitter_ 21-2_170730](https://user-images.githubusercontent.com/25688193/29311815-e3fc7bdc-81ed-11e7-9af6-a2cbb9d4af64.png)
-![twitter_ 21-3_170731](https://user-images.githubusercontent.com/25688193/29311814-e3fbf7ca-81ed-11e7-9837-1ab49a6c8827.png)
-![twitter_ 21-5_170731](https://user-images.githubusercontent.com/25688193/29311817-e407558e-81ed-11e7-8ec3-a45393202903.png)
-![twitter_ 21-6_170731](https://user-images.githubusercontent.com/25688193/29311816-e407481e-81ed-11e7-9566-4db88d64e241.png)
-![twitter_ 21-7_170731](https://user-images.githubusercontent.com/25688193/29311820-e427e092-81ed-11e7-88d1-de7f469431f6.png)
-![twitter_ 21-8_170801](https://user-images.githubusercontent.com/25688193/29311821-e428507c-81ed-11e7-8123-b9c4db7b12a4.png)
-![twitter_ 21-9_170801](https://user-images.githubusercontent.com/25688193/29311819-e41ebb70-81ed-11e7-9bbc-8bef4683006f.png)
-![twitter_ 21-10_170801](https://user-images.githubusercontent.com/25688193/29311823-e432419a-81ed-11e7-93dc-0487eaeed1bd.png)
-![twitter_ 21-11_170801](https://user-images.githubusercontent.com/25688193/29311822-e42adcde-81ed-11e7-9237-39c7fcefd100.png)
-![twitter_ 21-12_170802](https://user-images.githubusercontent.com/25688193/29311824-e43db656-81ed-11e7-9c1a-01f8f3554f01.png)
-![twitter_ 21-13_170802](https://user-images.githubusercontent.com/25688193/29311825-e44193ac-81ed-11e7-95e2-830f102cbbf0.png)
-![twitter_ 21-14_170802](https://user-images.githubusercontent.com/25688193/29311829-e45cca5a-81ed-11e7-9e16-b9a66fa68715.png)
-![twitter_ 21-15_170802](https://user-images.githubusercontent.com/25688193/29311826-e44e93c2-81ed-11e7-816d-23f42aead2b2.png)
-
-## ランダムフォレスト [Random Forests]
-
-![twitter_ 22-1_170802](https://user-images.githubusercontent.com/25688193/29311827-e44f4970-81ed-11e7-9e51-b6acc9187b77.png)
-![twitter_ 22-2_170802](https://user-images.githubusercontent.com/25688193/29311828-e454f2e4-81ed-11e7-8571-21ae4bb9e86c.png)
-![twitter_ 22-3_170802](https://user-images.githubusercontent.com/25688193/29311830-e46150de-81ed-11e7-95c2-6748c43ce6a4.png)
-![twitter_ 22-4_170803](https://user-images.githubusercontent.com/25688193/29311831-e46479c6-81ed-11e7-8a8c-81644dd09049.png)
-![twitter_ 22-5_170803](https://user-images.githubusercontent.com/25688193/29311832-e4716686-81ed-11e7-9155-292b1f4ce17a.png)
-![twitter_ 22-6_170804](https://user-images.githubusercontent.com/25688193/29311833-e473a6d0-81ed-11e7-8f89-2a07870dbd16.png)
-![twitter_ 22-7_170804](https://user-images.githubusercontent.com/25688193/29311834-e477f2b2-81ed-11e7-9e69-5ccb947e2189.png)
-![twitter_ 22-8_170804](https://user-images.githubusercontent.com/25688193/29311835-e48033be-81ed-11e7-8158-fda1df1da929.png)
-
-## サポートベクターマシン（SVM）
+## サポートベクターマシン [SVM : Support Vector Machine]
 
 ![twitter_svm_1-1_170211](https://user-images.githubusercontent.com/25688193/29311963-8c41480e-81ee-11e7-84a5-7ccfa0f2d724.png)
 ![twitter_svm_1-2_170211](https://user-images.githubusercontent.com/25688193/29311961-8c2d24e6-81ee-11e7-801a-f406b6007b04.png)
@@ -273,15 +321,41 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_svm_6-2 _170728](https://user-images.githubusercontent.com/25688193/29311985-8cb6430c-81ee-11e7-965b-ba1421d9ceb4.png)
 ![twitter_svm_6-3_170729](https://user-images.githubusercontent.com/25688193/29311986-8ccc025a-81ee-11e7-8097-6f1daf9e1a49.png)
 
-# 混合モデルとアンサンブル学習
+
+<a name="決定木"></a>
+
+## 決定木 [Decision Tree]
+
+![twitter_ 21-1_170730](https://user-images.githubusercontent.com/25688193/29311813-e3f36cc2-81ed-11e7-88aa-387bd4b36715.png)
+![twitter_ 21-2_170730](https://user-images.githubusercontent.com/25688193/29311815-e3fc7bdc-81ed-11e7-9af6-a2cbb9d4af64.png)
+![twitter_ 21-3_170731](https://user-images.githubusercontent.com/25688193/29311814-e3fbf7ca-81ed-11e7-9837-1ab49a6c8827.png)
+![twitter_ 21-5_170731](https://user-images.githubusercontent.com/25688193/29311817-e407558e-81ed-11e7-8ec3-a45393202903.png)
+![twitter_ 21-6_170731](https://user-images.githubusercontent.com/25688193/29311816-e407481e-81ed-11e7-9566-4db88d64e241.png)
+![twitter_ 21-7_170731](https://user-images.githubusercontent.com/25688193/29311820-e427e092-81ed-11e7-88d1-de7f469431f6.png)
+![twitter_ 21-8_170801](https://user-images.githubusercontent.com/25688193/29311821-e428507c-81ed-11e7-8123-b9c4db7b12a4.png)
+![twitter_ 21-9_170801](https://user-images.githubusercontent.com/25688193/29311819-e41ebb70-81ed-11e7-9bbc-8bef4683006f.png)
+![twitter_ 21-10_170801](https://user-images.githubusercontent.com/25688193/29311823-e432419a-81ed-11e7-93dc-0487eaeed1bd.png)
+![twitter_ 21-11_170801](https://user-images.githubusercontent.com/25688193/29311822-e42adcde-81ed-11e7-9237-39c7fcefd100.png)
+![twitter_ 21-12_170802](https://user-images.githubusercontent.com/25688193/29311824-e43db656-81ed-11e7-9c1a-01f8f3554f01.png)
+![twitter_ 21-13_170802](https://user-images.githubusercontent.com/25688193/29311825-e44193ac-81ed-11e7-95e2-830f102cbbf0.png)
+![twitter_ 21-14_170802](https://user-images.githubusercontent.com/25688193/29311829-e45cca5a-81ed-11e7-9e16-b9a66fa68715.png)
+![twitter_ 21-15_170802](https://user-images.githubusercontent.com/25688193/29311826-e44e93c2-81ed-11e7-816d-23f42aead2b2.png)
+
+
+<a name="混合モデルとアンサンブル学習"></a>
+
+## 混合モデルとアンサンブル学習
 ![twitter_ _ _11-1_170626](https://user-images.githubusercontent.com/25688193/29312250-795757fa-81ef-11e7-8185-87d3127f6973.png)
 
-## 混合モデルによるモデル多様体の拡張
+### 混合モデルによるモデル多様体の拡張
 
 ![twitter_ _ _11-2_170630](https://user-images.githubusercontent.com/25688193/29312252-7957c64a-81ef-11e7-8e0b-f373dcdd8d55.png)
 ![twitter_ _ _11-3_170630](https://user-images.githubusercontent.com/25688193/29312251-7957822a-81ef-11e7-9f05-f1d331dc26a1.png)
 ![twitter_ _ _11-4_170630](https://user-images.githubusercontent.com/25688193/29312255-795c36f8-81ef-11e7-98d8-2464f129048e.png)
 ![twitter_ _ _11-5_170630](https://user-images.githubusercontent.com/25688193/29312253-795813e8-81ef-11e7-9f61-3bdb0d56b93e.png)
+
+
+<a name="EMアルゴリズム"></a>
 
 ## EMアルゴリズム
 
@@ -293,7 +367,10 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ _ _11-10_170701](https://user-images.githubusercontent.com/25688193/29312260-797df95a-81ef-11e7-98a7-f5c22dc9e4ce.png)
 ![twitter_ _ _11-11_170702](https://user-images.githubusercontent.com/25688193/29312261-797fd37e-81ef-11e7-83e2-f773db4fd494.png)
 
-# AdaBoost
+
+<a name="AdaBoost"></a>
+
+## AdaBoost
 
 ![twitter_ _ _11-12_170703](https://user-images.githubusercontent.com/25688193/29312262-799d8018-81ef-11e7-8afe-a172cae63a6a.png)
 ![twitter_ _ _11-13_170703](https://user-images.githubusercontent.com/25688193/29312263-799eb1ea-81ef-11e7-8fc6-de627e6765f6.png)
@@ -302,7 +379,25 @@ https://twitter.com/i/moments/785417932629168129
 ![twitter_ _ _11-16_170705](https://user-images.githubusercontent.com/25688193/29312266-79a33e72-81ef-11e7-9ab6-b82a0805f846.png)
 ![twitter_ _ _11-17_170705](https://user-images.githubusercontent.com/25688193/29312265-79a28d4c-81ef-11e7-803d-16d725fdba36.png)
 
-# Bagging
+
+<a name="バギング"></a>
+
+## バギング [Bagging]
 
 ![twitter_ _ _11-18_170705](https://user-images.githubusercontent.com/25688193/29312269-79d30102-81ef-11e7-85a1-431e9a19fb61.png)
 ![twitter_ _ _11-19_170707](https://user-images.githubusercontent.com/25688193/29312268-79c1f1e6-81ef-11e7-941c-3f20fbdf74d9.png)
+
+
+<a name="ランダムフォレスト"></a>
+
+## ランダムフォレスト [Random Forests]
+
+![twitter_ 22-1_170802](https://user-images.githubusercontent.com/25688193/29311827-e44f4970-81ed-11e7-9e51-b6acc9187b77.png)
+![twitter_ 22-2_170802](https://user-images.githubusercontent.com/25688193/29311828-e454f2e4-81ed-11e7-8571-21ae4bb9e86c.png)
+![twitter_ 22-3_170802](https://user-images.githubusercontent.com/25688193/29311830-e46150de-81ed-11e7-95c2-6748c43ce6a4.png)
+![twitter_ 22-4_170803](https://user-images.githubusercontent.com/25688193/29311831-e46479c6-81ed-11e7-8a8c-81644dd09049.png)
+![twitter_ 22-5_170803](https://user-images.githubusercontent.com/25688193/29311832-e4716686-81ed-11e7-9155-292b1f4ce17a.png)
+![twitter_ 22-6_170804](https://user-images.githubusercontent.com/25688193/29311833-e473a6d0-81ed-11e7-8f89-2a07870dbd16.png)
+![twitter_ 22-7_170804](https://user-images.githubusercontent.com/25688193/29311834-e477f2b2-81ed-11e7-9e69-5ccb947e2189.png)
+![twitter_ 22-8_170804](https://user-images.githubusercontent.com/25688193/29311835-e48033be-81ed-11e7-8158-fda1df1da929.png)
+
