@@ -73,6 +73,8 @@ https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5
 
 ### 電子回路
 
+https://github.com/Yagami360/My_NoteBook/blob/master/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2_%E9%9B%BB%E5%AD%90%E5%9B%9E%E8%B7%AF_Note.md
+
 ### マイコン
 
 https://github.com/Yagami360/My_NoteBook/blob/master/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2_%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3_Note.md
