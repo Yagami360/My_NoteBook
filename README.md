@@ -38,7 +38,11 @@ https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5
 
 ### 統計解析
 
+https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90_Note.md
+
 ### 多変量解析
+
+https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90_Note.md
 
 ### 機械学習
 
@@ -47,6 +51,8 @@ https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5
 ## 物理学
 
 ### 電磁気学
+
+https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6_%E9%9B%BB%E7%A3%81%E6%B0%97%E5%AD%A6.md
 
 ### 統計力学
 
@@ -112,6 +118,8 @@ https://github.com/Yagami360/My_NoteBook/blob/master/%E3%83%8F%E3%83%BC%E3%83%89
 
 ### DirectX9
 
+https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA_DirextX.md
+
 ### Win32API
 
 ### Unity
@@ -129,9 +137,13 @@ https://github.com/Yagami360/My_NoteBook/blob/master/%E3%83%8F%E3%83%BC%E3%83%89
 
 ### モデルベース開発
 
-### CAN / FNOS
+### CAN通信 / FNOS
+
+https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_CAN%E9%80%9A%E4%BF%A1.md
 
 ### AUTOSAR
+
+https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_AUTOSAR.md
 
 ### 機能安全
 
