@@ -1,7 +1,7 @@
 # My_NoteBook
 
-サイエンス、テクノロジー、エンジニア関連の情報の自分用ノートを Markdown 形式で保管したリポジトリです。（プログラムコードではありません）
-基本的に、Twitterで定期的にツイートしているサイエンス、テクノロジー、エンジニア関連の情報の自分用ノート画像（Twiiterモーメントに保管）と同様のものになります。
+サイエンス、テクノロジー、エンジニア関連情報の自分用ノートを Markdown 形式で保管したリポジトリです。（プログラムコードではありません）
+基本的に、Twitterで定期的にツイートしているサイエンス、テクノロジー、エンジニア関連情報の自分用ノート画像（Twiiterモーメントに保管）と同様のものになります。
 
 This repository describe about my note (markdown format) related to science,tech,engineers from basic to applied.
 It is similar to my note picture related to science, technology, engineer I tweets regularly on Twitter. (These're summarized in ⚡️ Twitter Moments)
