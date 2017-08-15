@@ -13,7 +13,10 @@ Twitterモーメント：https://twitter.com/yagami_360/moments
 
 ### 線形代数学
 
+https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md
+
 ### 微分方程式
+
 
 ### 最適化問題 / 数理計画法
 
