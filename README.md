@@ -69,6 +69,18 @@ Twitterモーメント：https://twitter.com/yagami_360/moments
 
 ### デザイン・パターン
 
+### アセンブラ言語
+
+### C 言語
+
+### C++
+
+### C#
+
+### Java
+
+### Ruby
+
 ### R / Rstudio
 
 ### Python
