@@ -1,16 +1,21 @@
 # 機械学習 [Machine Learning] / パターン認識 [Pattern recognition]
 
+![s_](https://user-images.githubusercontent.com/25688193/29311672-d5cb20c2-81ed-11e7-9c44-002fe0eb0873.png)
+
 機械学習、パターン認識に関してのマイノートです。今後も随時追加予定です！（基本PC or タブレット端末からの閲覧用の画像サイズになってますm(__)m ）
 
 This is my notebook that summarizes about "Machine Learning" and "Pattern recognition". I will add contents as needed.
 
-Twitterモーメント：
+## リンク
+>Twitterモーメント：
+>>https://twitter.com/i/moments/781970648385978368
+>>https://twitter.com/i/moments/785417932629168129
 
-https://twitter.com/i/moments/781970648385978368
+> 機械学習のサンプルコード集（Python使用）。機械学習とPython＆機械学習ライブラリの使い方のお練習 :
+>> https://github.com/Yagami360/MachineLearning_Samples_Python
 
-https://twitter.com/i/moments/785417932629168129
-
-![s_](https://user-images.githubusercontent.com/25688193/29311672-d5cb20c2-81ed-11e7-9c44-002fe0eb0873.png)
+> 主に、「はじパタ」R実行例のサンプルRコード :
+>> https://github.com/Yagami360/PRML_RCode
 
 ## 目次 [Contents]：
 
