@@ -55,7 +55,10 @@ This repository describe about my note (markdown format) related to science, tec
         - Java
         - Ruby
         - R / Rstudio
+            - [My GitHub : PRML_RCode](https://github.com/Yagami360/PRML_RCode)
         - Python
+            - [My GitHub : MachineLearning_Exercises_Python_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn)
+            - [My GitHub : MachineLearning_Exercises_Python_TensorFlow](https://github.com/Yagami360/MachineLearning_Exercises_Python_TensorFlow)
     - ソフトウェアフレームワーク / API / SDK
         - Win32API
         - .NETFramework
@@ -73,8 +76,8 @@ This repository describe about my note (markdown format) related to science, tec
     - モデルベース開発 [Model-based development]
     - [CAN通信 [Controller Area Network] / FNOS](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_CAN%E9%80%9A%E4%BF%A1.md)
     - [AUTOSAR](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_AUTOSAR.md)
-    - 機能安全 [functional safety]
+    - 機能安全 [functional safety] / ISO 26262
+    - MISRA-C
     - 各種ツール（CANoe/CANstress/GENy/CAPL/HILS/ 等）[Tools]
 
-- [](https://github.com/Yagami360/My_NoteBook)
 - [](https://github.com/Yagami360/My_NoteBook)
