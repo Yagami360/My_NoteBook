@@ -3,8 +3,7 @@
 線形代数学に関してのマイノートです。今後も随時追加予定です。</br>
 あまり厳密でないので数学科or出身者の方から見たら天下り的説明に見えるかと思いますがご了承ください。
 
-This is my notebook that summarizes about "linear algebra". </br>
-I will add contents as needed.
+This is my notebook that summarizes about "linear algebra". I will add contents as needed.
 
 > Twitterモーメント ： https://twitter.com/i/moments/867746637526876162</br>
 ![_](https://user-images.githubusercontent.com/25688193/30373543-a1127a20-98bc-11e7-822d-351aeb6b131d.gif)
@@ -17,6 +16,7 @@ I will add contents as needed.
         1. [ベクトル空間とベクトルの性質](#ID_2-1-1)
             1. [張る（生成する）](#ID_2-1-1-1)
             1. [線形独立（一次独立）と線形従属（一次従属）](#ID_2-1-1-2)
+                1. [線形独立（１次独立）[linearly independent] と線形従属（１次従属）[linearly dependent] のイメージ](#ID_2-1-1-2-1)            
         1. [基底ベクトル [basis vector]](#ID_2-1-2)
         1. [ベクトルの次元](#ID_2-1-3)
 1. [行列 [Matrix]](#ID_3)
@@ -27,16 +27,22 @@ I will add contents as needed.
     1. [余因子展開 [cofactor expansion]](#ID_3-5)
     1. [行列式の積](#ID_3-6)
     1. [置換による行列式の表現](#ID_3-7)
+        1. [置換の符号](#ID_3-7-1)
+        1. [置換による行列式の定義](#ID_3-7-2)
     1. [逆行列 [inverse matrix]](#ID_3-8)
         1. [逆行列の公式](#ID_3-8-1)
         1. [逆行列の公式を用いての逆行列の算出](#ID_3-8-2)
         1. [ガウスの消去法を用いての逆行列の算出](#ID_3-8-3)
     1. [行列のランク（階級）[rank]](#ID_3-9)
         1. [行列のランクの意味](#ID_3-9-1)
-        1. [連立１次方程式と行列のランクの関係](#ID_3-9-2)            
+            1. [小行列式によるランクの定義](#ID_3-9-1-1)
+        1. [連立１次方程式と行列のランクの関係](#ID_3-9-2)
+    1. [転置行列 [transposed matrix]、対称行列 [symmetric matrix]](#ID_3-10)
+    1. [複素行列と複素共役、共役転置行列（随伴行列） [adjugate matrix]](#ID_3-11)
 1. [線形写像 [linear mapping]](#ID_4)
     1. [線形変換 [linear transformation]](#ID_4-1)
         1. [線形変換の幾何学的イメージ](#ID_4-1-1)
+        1. [アファイン変換 [affine transformation]](#ID_4-1-1-1)
         1. [線形変換の逆変換](#ID_4-1-2)
     1. [線形写像 [linear mapping]](#ID_4-2)
         1. [線形写像の核 [kernel] と像 [image]](#ID_4-2-1)
@@ -44,6 +50,8 @@ I will add contents as needed.
         1. [線形代数学の基本定理</br>（線形写像の商空間と像の関係＋カーネルと像の次元の関係、準同型定理の特殊なケース）](#ID_4-2-3)
         1. [連立１次方程式への線形代数学の基本定理の応用](#ID_4-2-4)
 1. [固有値 [eigenvalue]、固有ベクトル [eigenvector]](#ID_5)
+    1. [固有方程式](#ID_5-1)
+    1. [特性方程式](#ID_5-2)
 1. [行列の対角化 [diagonalization]](#ID_6)
     1. [対角化可能な条件](#ID_6-1)
     1. [なぜ対角化するのか？](#ID_6-2)
@@ -99,7 +107,12 @@ I will add contents as needed.
 
 #### 線形独立（一次独立）と線形従属（一次従属）
 ![twitter_ _2-4_170525](https://user-images.githubusercontent.com/25688193/29313681-4558390e-81f6-11e7-96e0-c7631e404cfa.png)
+
+<a id="ID_2-1-1-2-1"></a>
+
+##### 線形独立（１次独立）[linearly independent] と線形従属（１次従属）[linearly dependent] のイメージ
 ![twitter_ _2-5_170525](https://user-images.githubusercontent.com/25688193/29313684-4559e0b0-81f6-11e7-818d-bb0fe61655d1.png)
+
 ![twitter_ _2-6_170525](https://user-images.githubusercontent.com/25688193/29313683-4559c828-81f6-11e7-951d-731e825f82a6.png)
 ![twitter_ _2-7_170525](https://user-images.githubusercontent.com/25688193/29313685-455a00d6-81f6-11e7-8a73-0df9221bbb51.png)
 
@@ -156,7 +169,16 @@ I will add contents as needed.
 <a id="ID_3-7"></a>
 
 ### 置換による行列式の表現
-![twitter_ _5-10_170526](https://user-images.githubusercontent.com/25688193/29313703-45d9d752-81f6-11e7-965a-d7c0abc59e8e.png)
+![image](https://user-images.githubusercontent.com/25688193/30404778-28362dce-9923-11e7-8acf-9e352ccc957a.png)
+
+<a id="ID_3-7-1"></a>
+
+#### 置換の符号
+![image](https://user-images.githubusercontent.com/25688193/30404797-3f653706-9923-11e7-9e69-66141c789f58.png)
+
+<a id="ID_3-7-2"></a>
+
+#### 置換による行列式の定義
 ![twitter_ _5-11_170526](https://user-images.githubusercontent.com/25688193/29313701-45c98898-81f6-11e7-9b05-5e949c7daa26.png)
 
 <a id="ID_3-8"></a>
@@ -192,11 +214,28 @@ I will add contents as needed.
 ![twitter_ _7-3_170526](https://user-images.githubusercontent.com/25688193/29313709-45ff6f1c-81f6-11e7-8d69-a06a87ac7620.png)
 ![twitter_ _7-4_170526](https://user-images.githubusercontent.com/25688193/29313711-461179be-81f6-11e7-93f9-1fe859b41cd6.png)
 
+<a id="ID_3-9-1-1"></a>
+
+##### 小行列式によるランクの定義
+> 記載中...
+
 <a id="ID_3-9-2"></a>
 
 #### 連立１次方程式と行列のランクの関係
 ![twitter_ _7-5_170526](https://user-images.githubusercontent.com/25688193/29313710-461128f6-81f6-11e7-8c80-43a3f9af1ffe.png)
 ![twitter_ _7-6_170526](https://user-images.githubusercontent.com/25688193/29313712-46123822-81f6-11e7-88db-8dde81368015.png)
+
+
+<a id="ID_3-10"></a>
+
+### 転置行列 [transposed matrix]、対称行列 [symmetric matrix]
+![image](https://user-images.githubusercontent.com/25688193/30404841-9cc59dbe-9923-11e7-9f1b-4b0a3136961b.png)
+
+<a id="ID_3-11"></a>
+
+### 複素行列と複素共役、共役転置行列（随伴行列） [adjugate matrix]
+![image](https://user-images.githubusercontent.com/25688193/30404923-051693be-9924-11e7-882b-e35a9ce8ef6e.png)
+
 
 <a id="ID_4"></a>
 
@@ -205,7 +244,7 @@ I will add contents as needed.
 <a id="ID_4-1"></a>
 
 ### 線形変換 [linear transformation]
-![twitter_ _8-1_170526](https://user-images.githubusercontent.com/25688193/29313713-4611d486-81f6-11e7-867d-197b84520c4c.png)
+![image](https://user-images.githubusercontent.com/25688193/30404587-4c394482-9922-11e7-812a-28bd943a539f.png)
 ![twitter_ _8-2_170526](https://user-images.githubusercontent.com/25688193/29313714-461fc7e4-81f6-11e7-8813-1fd469af3f42.png)
 ![twitter_ _8-3_170526](https://user-images.githubusercontent.com/25688193/29313715-462aee9e-81f6-11e7-9d58-4654824c2fdf.png)
 
@@ -215,6 +254,10 @@ I will add contents as needed.
 ![twitter_ _8-4_170526](https://user-images.githubusercontent.com/25688193/29313719-463c7c7c-81f6-11e7-917d-0e77da16cc97.png)
 ![twitter_ _8-5_170526](https://user-images.githubusercontent.com/25688193/29313717-463637b8-81f6-11e7-8d0b-d7f80bc03ab6.png)
 ![twitter_ _8-6_170526](https://user-images.githubusercontent.com/25688193/29313716-46360b1c-81f6-11e7-88b8-63c3e903185f.png)
+
+<a id="ID_4-1-1-1"></a>
+
+#### アファイン変換 [affine transformation]
 ![twitter_ _8-7_170526](https://user-images.githubusercontent.com/25688193/29313718-46371d9a-81f6-11e7-832a-a5b55d12a496.png)
 
 <a id="ID_4-1-2"></a>
