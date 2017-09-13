@@ -1,7 +1,6 @@
 # 線形代数学 [linear algebra]
 
 線形代数学に関してのマイノートです。今後も随時追加予定です。</br>
-（基本PC or タブレット端末からの閲覧用の画像サイズになってますm(__)m ）</br>
 あまり厳密でないので数学科or出身者の方から見たら天下り的説明に見えるかと思いますがご了承ください。
 
 This is my notebook that summarizes about "linear algebra". </br>

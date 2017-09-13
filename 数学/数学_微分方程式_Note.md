@@ -1,7 +1,6 @@
 # 微分方程式 [differential equation]
 
 微分方程式のツイートに関しのマイノートです。今後も随時追加予定です。</br>
-（基本PC or タブレット端末からの閲覧用の画像サイズになってます）
 
 This is my notebook that summarizes about "differential equation". </br>
 I will add contents as needed!
