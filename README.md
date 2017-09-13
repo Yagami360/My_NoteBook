@@ -7,7 +7,7 @@
 This repository describe about my note (markdown format) related to science, tech, engineers from basic to applied.</br>
 
 
-> Twitter : @yagami_360
+> Twitter : [@yagami_360](https://twitter.com/yagami_360)
 >> Twitter モーメント：https://twitter.com/yagami_360/moments
 >> 
 
@@ -44,7 +44,7 @@ This repository describe about my note (markdown format) related to science, tec
     - [電子回路 [Electronic circuit]](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2_%E9%9B%BB%E5%AD%90%E5%9B%9E%E8%B7%AF_Note.md)
     - [マイコン [microcomputer]](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2_%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3_Note.md)
 
-- [ソフトウェア関連 [Software]]
+- ソフトウェア関連 [Software]
     - Tips
     - デザイン・パターン [design pattern]
     - プログラミング言語 / スクリプト言語
