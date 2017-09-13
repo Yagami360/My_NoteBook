@@ -9,14 +9,6 @@ I will add contents as needed!
 > Twitterモーメント ： https://twitter.com/i/moments/838576386277138432
 ![twitter_ 2_](https://user-images.githubusercontent.com/25688193/30379666-3ea91eaa-98d2-11e7-97f2-c3c82ac8f1c2.jpg)
 
-> 参考文献
->> キーポイント微分方程式 (理工系数学のキーポイント 5) </br>
->> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-5-%E4%BD%90%E9%87%8E-%E7%90%86/dp/4000078658?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4000078658)</br>
->> キーポイントフーリエ解析 (理工系数学のキーポイント (9))</br>
->> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-9-%E8%88%B9%E8%B6%8A-%E6%BA%80%E6%98%8E/dp/4000078690)</br>
-
-</br>
-
 ## 項目 [Contents]
 
 1. [概要 [Overview]](#ID_1)
@@ -80,7 +72,7 @@ I will add contents as needed!
         1. [自律系微分方程式の平衡解の安定性](#ID_5-2-1)
     1. [相平面 [phase plane]](#ID_5-3)
     1. [](#ID_5-x)
-1. [](#ID_x)
+1. [参考文献](#参考文献)
 
 - 追記予定項目
     - 微分方程式の全体 MAP 図
@@ -482,3 +474,12 @@ I will add contents as needed!
 ![twitter_ _15-2_170428](https://user-images.githubusercontent.com/25688193/29313978-b79616ee-81f6-11e7-8ce5-97851d4dc4a5.png)
 ![twitter_ _15-3_170428](https://user-images.githubusercontent.com/25688193/29313981-b7aee12e-81f6-11e7-9036-fcd22800547a.png)
 ![twitter_ _15-4_170428](https://user-images.githubusercontent.com/25688193/29313982-b7b85d1c-81f6-11e7-8836-32c14c83b4c2.png)
+
+
+## 参考文献
+
+> キーポイント微分方程式 (理工系数学のキーポイント 5) </br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-5-%E4%BD%90%E9%87%8E-%E7%90%86/dp/4000078658?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4000078658)</br>
+
+> キーポイントフーリエ解析 (理工系数学のキーポイント (9))</br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-9-%E8%88%B9%E8%B6%8A-%E6%BA%80%E6%98%8E/dp/4000078690)</br>

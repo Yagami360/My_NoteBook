@@ -7,11 +7,6 @@ This is my notebook that summarizes about "Optimization problem". I will add con
 Twitterモーメント：https://twitter.com/i/moments/781974495905009664
 ![default](https://user-images.githubusercontent.com/25688193/29314342-9624ec36-81f8-11e7-91ed-aaa5eea15629.jpg)
 
-> 参考文献
->> はじめてのパターン認識 </br>
->> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98-%E5%B9%B3%E4%BA%95-%E6%9C%89%E4%B8%89/dp/4627849710?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4627849710)</br>
-
-</br>
 
 1. [概要 [Overview]、全体MAP図](#ID_1)
 1. [凸最適化問題 [convex programing problem]](#ID_2)
@@ -31,6 +26,7 @@ Twitterモーメント：https://twitter.com/i/moments/781974495905009664
     1. [等式制約付き 凸最適化問題 [constrained convex optimization]](#ID_2-6)
     1. [不等式制約付き 凸最適化問題 [unconstrained convex optimization]](#ID_2-7)
     1. [（ラグランジュ関数の）鞍点 [saddle point]](#ID_2-8)
+1. [参考文献](#参考文献)
 
 - 追記予定項目
     - ２次最適化問題 [quadratic programming]
@@ -129,3 +125,11 @@ Twitterモーメント：https://twitter.com/i/moments/781974495905009664
 
 ### （ラグランジュ関数の）鞍点 [saddle point]
 ![twitter_ 8-2_160914](https://user-images.githubusercontent.com/25688193/29314359-9a6c7750-81f8-11e7-8456-edafe1b2afe7.png)
+
+
+<a name=参考文献></a>
+
+## 参考文献
+
+> はじめてのパターン認識 </br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98-%E5%B9%B3%E4%BA%95-%E6%9C%89%E4%B8%89/dp/4627849710?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4627849710)</br>
