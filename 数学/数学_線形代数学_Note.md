@@ -11,7 +11,12 @@ I will add contents as needed.
 ![_](https://user-images.githubusercontent.com/25688193/30373543-a1127a20-98bc-11e7-822d-351aeb6b131d.gif)
 
 > 参考文献
->> 
+>> 情報数理の基礎と応用 (ライブラリ情報学コア・テキスト) </br>
+>> [amazonで詳細を見る](https://www.amazon.co.jp/%E6%83%85%E5%A0%B1%E6%95%B0%E7%90%86%E3%81%AE%E5%9F%BA%E7%A4%8E%E3%81%A8%E5%BF%9C%E7%94%A8-%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E6%83%85%E5%A0%B1%E5%AD%A6%E3%82%B3%E3%82%A2%E3%83%BB%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-%E5%B0%BE%E7%95%91-%E4%BC%B8%E6%98%8E/dp/4781912109?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4781912109)</br>
+>> キーポイント線形代数 (理工系数学のキーポイント 2) </br>
+>> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-2-%E8%96%A9%E6%91%A9-%E9%A0%86%E5%90%89/dp/4000078623?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4000078623)</br>
+
+</br>
 
 ## 項目 [Contents]
 
