@@ -28,6 +28,7 @@ This is my notebook that summarizes about "Information theory". I will add conte
 1. [情報の符号化 [encode]](#ID_3)
     1. [情報量符号化](#ID_3-1)
         1. [エントロピー [entropy]（情報量の平均値）](#ID_3-1-1)
+            1. [同時エントロピー [joint entropy]](#ID_3-1-1-1)
         1. [クロス・エントロピー [cross-entropy] と KL-情報量（情報源符号化の観点からみたKL-情報量）](#ID_3-1-2)
         1. [情報量符号化定理（シャノンの第１定理）](#ID_3-1-3)
         1. [Fano符号とシャノン符号](#ID_3-1-4)
@@ -54,6 +55,7 @@ This is my notebook that summarizes about "Information theory". I will add conte
     1. [混合モデル [mixed model]とアンサンブル学習（集団学習） [ensemble learning]](#ID_6-4)
         1. [混合モデルによるモデル多様体の拡大（混合モデルの幾何学的解釈）](#ID_6-4-1)
             1. [混合正規分布モデル [GMM : Gaussian Mixture Model]](#ID_6-4-1-1)
+            1. [混合正規分布モデルの幾何学的観点](#ID_6-4-1-2)
         1. [EM アルゴリズム [expectation–maximization algorithm]](#ID_6-4-2)
             1. [EM アルゴリズムの適用例](#ID_6-4-2-1)
             1. [EM アルゴリズムの幾何学解釈](#ID_6-4-2-2)
@@ -89,17 +91,19 @@ This is my notebook that summarizes about "Information theory". I will add conte
 <a id="ID_2-1"></a>
 
 ### 情報と確率
+![image](https://user-images.githubusercontent.com/25688193/30414177-373b5f9e-995d-11e7-809f-3239e540c3ff.png)
 
 <a id="ID_2-2"></a>
 
 ### 情報と確率空間、確率変数
-![twitter_ _ _1-1_170610](https://user-images.githubusercontent.com/25688193/29311448-108cc478-81ed-11e7-95cd-4709b3a66a01.png)
+![image](https://user-images.githubusercontent.com/25688193/30414211-61112aba-995d-11e7-855b-f2e2d407d0f6.png)
 ![twitter_ _ _1-2_170610](https://user-images.githubusercontent.com/25688193/29311445-1082c78e-81ed-11e7-8224-2d8e93d282f4.png)
 
 <a id="ID_2-3"></a>
 
 ### 情報源 [information source]
-![twitter_ _ _2-1_170611](https://user-images.githubusercontent.com/25688193/29311444-108261cc-81ed-11e7-8c58-3c92d5197c0f.png)
+![image](https://user-images.githubusercontent.com/25688193/30414253-93f09790-995d-11e7-9a63-6a3e860c7603.png)
+![image](https://user-images.githubusercontent.com/25688193/30414280-af8068a0-995d-11e7-8332-f9fb99222201.png)
 
 <a id="ID_2-3-1"></a>
 
@@ -144,11 +148,13 @@ This is my notebook that summarizes about "Information theory". I will add conte
 <a id="ID_2-6"></a>
 
 ### 情報量（情報の価値を定量化する）
+![image](https://user-images.githubusercontent.com/25688193/30414311-db885a34-995d-11e7-9280-7d8c486b4d3a.png)
 
 <a id="ID_2-6-1"></a>
 
 #### クラフトの不等式 [Kraft's inequality]
-![twitter_ _ _5-1_170613](https://user-images.githubusercontent.com/25688193/29311453-10b483e6-81ed-11e7-8a85-d023ee91a0e3.png)
+![image](https://user-images.githubusercontent.com/25688193/30414339-04912b54-995e-11e7-937d-d8d436b691ba.png)
+![image](https://user-images.githubusercontent.com/25688193/30414358-2002d28e-995e-11e7-92f7-becfa7d0fb09.png)
 ![twitter_ _ _5-2_170613](https://user-images.githubusercontent.com/25688193/29311455-10c8aa9c-81ed-11e7-9e62-077d4ce89274.png)
 
 <a id="ID_2-6-2"></a>
@@ -159,6 +165,8 @@ This is my notebook that summarizes about "Information theory". I will add conte
 ![twitter_ _ _5-5_170613](https://user-images.githubusercontent.com/25688193/29311458-10e52a50-81ed-11e7-92d1-39b388bb38ac.png)
 ![twitter_ _ _5-6_170613](https://user-images.githubusercontent.com/25688193/29311460-10ec8534-81ed-11e7-9e8a-87f325fc4db2.png)
 
+
+
 <a id="ID_3"></a>
 
 ## 情報の符号化 [encode]
@@ -166,18 +174,25 @@ This is my notebook that summarizes about "Information theory". I will add conte
 <a id="ID_3-1"></a>
 
 ### 情報量符号化
+![image](https://user-images.githubusercontent.com/25688193/30414389-546dcb64-995e-11e7-98b8-79c9ee038795.png)
 
 <a id="ID_3-1-1"></a>
 
 #### エントロピー [entropy]（情報量の平均値）
-![twitter_ _ _7-1_170617](https://user-images.githubusercontent.com/25688193/29311467-1116c9b6-81ed-11e7-9178-3682e77486d2.png)
-![twitter_ _ _7-2_170617](https://user-images.githubusercontent.com/25688193/29311469-111c7410-81ed-11e7-850c-a0c341ad20ef.png)
+![image](https://user-images.githubusercontent.com/25688193/30414423-892464c6-995e-11e7-8890-ffc5f6e6ee22.png)
+![image](https://user-images.githubusercontent.com/25688193/30414485-d3998c8e-995e-11e7-9c2b-996ece75fd95.png)
+
+<a id="ID_3-1-1-1"></a>
+
+##### 同時エントロピー [joint entropy]
+![image](https://user-images.githubusercontent.com/25688193/30414514-f078fa10-995e-11e7-9233-8af7bd4ce881.png)
 
 <a id="ID_3-1-2"></a>
 
-#### クロスエントロピーと KL-情報量（情報源符号化の観点からみたKL-情報量）
+#### クロス・エントロピー [cross-entropy] と KL-情報量（情報源符号化の観点からみたKL-情報量）
 ![twitter_ _ _7-3_170617](https://user-images.githubusercontent.com/25688193/29311470-113157cc-81ed-11e7-99cb-47d999a49ace.png)
-![twitter_ _ _7-4_170617](https://user-images.githubusercontent.com/25688193/29311471-1132cdfa-81ed-11e7-9a4a-011708cc1ece.png)
+![image](https://user-images.githubusercontent.com/25688193/30414623-77e4aa8a-995f-11e7-9b27-7bb09f8198eb.png)
+![image](https://user-images.githubusercontent.com/25688193/30414639-8cacf3f0-995f-11e7-936b-4a80688c9723.png)
 
 <a id="ID_3-1-3"></a>
 
@@ -195,14 +210,16 @@ This is my notebook that summarizes about "Information theory". I will add conte
 ![twitter_ _ _7-10_1_170620](https://user-images.githubusercontent.com/25688193/29311473-113e20ba-81ed-11e7-95ad-9cc89b277a4f.png)
 ![twitter_ _ _7-10_2_170620](https://user-images.githubusercontent.com/25688193/29311474-113e4bd0-81ed-11e7-93a5-d7f8707a9896.png)
 
+
 <a id="ID_3-2"></a>
 
 ### 通信路符号化
+![image](https://user-images.githubusercontent.com/25688193/30414697-c8b2e094-995f-11e7-98ac-bbb1b4bcb057.png)
 
 <a id="ID_3-2-1"></a>
 
 #### 条件付きエントロピー [conditional entropy] と相互情報量 [Mutual information]
-![twitter_ _ _8-1_170618](https://user-images.githubusercontent.com/25688193/29311475-1141803e-81ed-11e7-8872-49cc1e6581c7.png)
+![image](https://user-images.githubusercontent.com/25688193/30414724-e85f8014-995f-11e7-9761-fe5a97c7068e.png)
 ![twitter_ _ _8-2_170620](https://user-images.githubusercontent.com/25688193/29311476-11552c60-81ed-11e7-8526-4052735328f0.png)
 ![twitter_ _ _8-3_170620](https://user-images.githubusercontent.com/25688193/29311477-115a4240-81ed-11e7-8f00-f8b8570a1136.png)
 
@@ -215,21 +232,24 @@ This is my notebook that summarizes about "Information theory". I will add conte
 <a id="ID_4"></a>
 
 ## 連続情報の離散化 [discretization]
+![image](https://user-images.githubusercontent.com/25688193/30414755-0598660a-9960-11e7-855d-a73433ebdd51.png)
 
 <a id="ID_4-1"></a>
 
 ### 連続情報のエントロピー（微分エントロピー）
-![twitter_ _ _9-1_170623](https://user-images.githubusercontent.com/25688193/29311479-1161d906-81ed-11e7-85e9-02b909495663.png)
+![image](https://user-images.githubusercontent.com/25688193/30414782-20ee0248-9960-11e7-9bd4-2bb65c8e8d67.png)
 ![twitter_ _ _9-2_170623](https://user-images.githubusercontent.com/25688193/29311481-11646dba-81ed-11e7-8057-91071ed26ed2.png)
+
 
 <a id="ID_4-2"></a>
 
 ### 標本化 [sapling] と量子化 [quantization]
+![image](https://user-images.githubusercontent.com/25688193/30414801-3b212852-9960-11e7-964f-8ab4ef0f8846.png)
 
 <a id="ID_4-2-1"></a>
 
 #### ベクトル量子化 [QV : quantization vector]
-![twitter_ _ _9-3_170623](https://user-images.githubusercontent.com/25688193/29311482-117ae856-81ed-11e7-819f-8823a24f13e3.png)
+![image](https://user-images.githubusercontent.com/25688193/30414832-642e9298-9960-11e7-97c3-6fb0703ea9f7.png)
 
 <a id="ID_4-2-1-1"></a>
 
@@ -242,25 +262,29 @@ This is my notebook that summarizes about "Information theory". I will add conte
 ![twitter_ _ _9-5_170623](https://user-images.githubusercontent.com/25688193/29311485-118904ae-81ed-11e7-82b5-7cd3c5ca863d.png)
 
 
+
 <a id="ID_5"></a>
 
 ## 情報幾何学 [Information Geometry]
+![image](https://user-images.githubusercontent.com/25688193/30414855-84a75fdc-9960-11e7-9a58-a93f3bab86d4.png)
 
 <a id="ID_5-1"></a>
 
 ### 確率分布空間とモデル多様体
-![twitter_ _ _6-1_170613](https://user-images.githubusercontent.com/25688193/29311459-10e82c32-81ed-11e7-9e0d-a0eab7378159.png)
+![image](https://user-images.githubusercontent.com/25688193/30414920-a5c596ca-9960-11e7-8aae-18d9039c6679.png)
 ![twitter_ _ _6-2_170613](https://user-images.githubusercontent.com/25688193/29311462-10efe86e-81ed-11e7-9c3e-230a1142b215.png)
 
 <a id="ID_5-2"></a>
 
 ### KL-情報量 [Kullback–Leibler divergence]
 ![twitter_ _ _6-3_170613](https://user-images.githubusercontent.com/25688193/29311461-10ef620e-81ed-11e7-8b1a-cafa74328805.png)
+![image](https://user-images.githubusercontent.com/25688193/30414957-df4fb902-9960-11e7-8273-c2f77817ff90.png)
 
 <a id="ID_5-2-1"></a>
 
 #### m-表現（混合表現）、e-表現（指数表限）
-![twitter_ _ _6-4_170613](https://user-images.githubusercontent.com/25688193/29311463-10f6cf26-81ed-11e7-816d-5e5f86ad3a99.png)
+![image](https://user-images.githubusercontent.com/25688193/30414994-fcec3670-9960-11e7-90a0-acd1e7f1e015.png)
+
 
 <a id="ID_5-3"></a>
 
@@ -300,6 +324,7 @@ This is my notebook that summarizes about "Information theory". I will add conte
 ![twitter_ _ _10-6 _170627](https://user-images.githubusercontent.com/25688193/29311493-11c4c962-81ed-11e7-990c-ee73bf8ea245.png)
 ![twitter_ _ _10-7_170626](https://user-images.githubusercontent.com/25688193/29311494-11cc77de-81ed-11e7-93e3-ddcbf692cd58.png)
 
+
 <a id="ID_6-4"></a>
 
 ### 混合モデル [mixed model]とアンサンブル学習（集団学習） [ensemble learning]
@@ -308,14 +333,20 @@ This is my notebook that summarizes about "Information theory". I will add conte
 <a id="ID_6-4-1"></a>
 
 #### 混合モデルによるモデル多様体の拡大（混合モデルの幾何学的解釈）
+![image](https://user-images.githubusercontent.com/25688193/30415043-2ede325a-9961-11e7-865b-a209f11be7ec.png)
 
 <a id="ID_6-4-1-1"></a>
 
-##### 混合正規分布モデル [GMM : Gaussian Mixture Model]
-![twitter_ _ _11-2_170630](https://user-images.githubusercontent.com/25688193/30400848-382411fc-9913-11e7-8935-074d68b804cf.png)
+##### 混合正規分布モデル [GMM : Gaussian Mixture Model] 
+![image](https://user-images.githubusercontent.com/25688193/30415111-846fb662-9961-11e7-80e4-abb1b1b9865f.png)
 
-![twitter_ _ _11-3_170630](https://user-images.githubusercontent.com/25688193/30400849-38360876-9913-11e7-88aa-04ea4c69f0f3.png)
-![twitter_ _ _11-4_170630](https://user-images.githubusercontent.com/25688193/30400847-38224642-9913-11e7-86f1-0b9026ed1095.png)
+<a id="ID_6-4-1-2"></a>
+
+##### 混合正規分布モデルの幾何学的観点
+![image](https://user-images.githubusercontent.com/25688193/30415203-fcf52266-9961-11e7-979a-39f8fdf9d966.png)
+![image](https://user-images.githubusercontent.com/25688193/30415230-1bee4c6a-9962-11e7-8f3c-a3357373c575.png)
+![image](https://user-images.githubusercontent.com/25688193/30415375-c0b9178e-9962-11e7-8aa3-f88e7bd97a78.png)
+![image](https://user-images.githubusercontent.com/25688193/30415398-d9c87a9e-9962-11e7-8244-0b5de3bcce16.png)
 ![twitter_ _ _11-5_170630](https://user-images.githubusercontent.com/25688193/30400846-38223ae4-9913-11e7-8ac3-d8851bc4d7ac.png)
 
 
@@ -327,14 +358,18 @@ This is my notebook that summarizes about "Information theory". I will add conte
 <a id="ID_6-4-2-1"></a>
 
 ##### EM アルゴリズムの適用例
-![image](https://user-images.githubusercontent.com/25688193/30401216-64c5d10e-9914-11e7-83bc-298278e633ca.png)
-![twitter_ _ _11-8_170701](https://user-images.githubusercontent.com/25688193/30400852-38453878-9913-11e7-9c1a-c22ee4933d0f.png)
+![image](https://user-images.githubusercontent.com/25688193/30416196-3f828700-9966-11e7-9e66-e02b69ec18ef.png)
+![image](https://user-images.githubusercontent.com/25688193/30416221-5781ae8a-9966-11e7-90ba-373b4a2a3476.png)
+![image](https://user-images.githubusercontent.com/25688193/30416156-102b22fa-9966-11e7-8d12-eb481dba881f.png)
+![image](https://user-images.githubusercontent.com/25688193/30416174-25ed04b4-9966-11e7-9768-881625d9d656.png)
 
 <a id="ID_6-4-2-2"></a>
 
 ##### EM アルゴリズムの幾何学的解釈
-![twitter_ _ _11-9_170701](https://user-images.githubusercontent.com/25688193/30400854-384bb02c-9913-11e7-9f98-0c063be06947.png)
-![twitter_ _ _11-10_170701](https://user-images.githubusercontent.com/25688193/30400855-385919ec-9913-11e7-9d2e-44a0fffeec31.png)
+![image](https://user-images.githubusercontent.com/25688193/30415457-1a321702-9963-11e7-8922-1d9a10f55478.png)
+![image](https://user-images.githubusercontent.com/25688193/30415473-311b90ce-9963-11e7-95a4-5eec3cc5fee0.png)
+![image](https://user-images.githubusercontent.com/25688193/30415510-4f899a9c-9963-11e7-8e62-f1be5a2fb6ad.png)
+![image](https://user-images.githubusercontent.com/25688193/30415534-696ec5ea-9963-11e7-8f78-00b9a2c8e9e0.png)
 
 <a id="ID_6-4-3"></a>
 
@@ -344,26 +379,30 @@ This is my notebook that summarizes about "Information theory". I will add conte
 <a id="ID_6-4-3-1"></a>
 
 #### アダブースト [AdaBoost]
-![twitter_ _ _11-11_170702](https://user-images.githubusercontent.com/25688193/30400856-385c3910-9913-11e7-946c-21cd41ad96c4.png)
+![image](https://user-images.githubusercontent.com/25688193/30415636-d4ee38dc-9963-11e7-9090-28ffc5325dae.png)
+![image](https://user-images.githubusercontent.com/25688193/30415665-0441c360-9964-11e7-8783-85cb1b27fd09.png)
 
 <a id="ID_6-4-3-1-1"></a>
 
 ##### アダブーストの学習アルゴリズムの導出
-![twitter_ _ _11-12_170703](https://user-images.githubusercontent.com/25688193/30400859-3868d51c-9913-11e7-9b20-a676f54492fd.png)
+![image](https://user-images.githubusercontent.com/25688193/30416003-7bf65b90-9965-11e7-9808-11de51cdb027.png)
+![image](https://user-images.githubusercontent.com/25688193/30416046-962e982e-9965-11e7-88a4-d81bc4058bee.png)
 ![twitter_ _ _11-13_170703](https://user-images.githubusercontent.com/25688193/30400857-38676c4a-9913-11e7-9409-b5c9081c38a6.png)
 
 <a id="ID_6-4-3-1-2"></a>
 
 ##### アダブーストの幾何学的解釈
 ![twitter_ _ _11-14_170704](https://user-images.githubusercontent.com/25688193/30400858-38686fe6-9913-11e7-85c1-e7ce2374513b.png)
-![twitter_ _ _11-15_170704](https://user-images.githubusercontent.com/25688193/30400860-3870a440-9913-11e7-8f2d-90ffcfa186ea.png)
+![image](https://user-images.githubusercontent.com/25688193/30415807-ab48b664-9964-11e7-86de-2c300c3107ee.png)
+![image](https://user-images.githubusercontent.com/25688193/30415837-d0222376-9964-11e7-8098-d53d03e3c62c.png)
 ![twitter_ _ _11-16_170705](https://user-images.githubusercontent.com/25688193/30400861-387c20ae-9913-11e7-8e09-ca1bd7b100fd.png)
-![twitter_ _ _11-17_170705](https://user-images.githubusercontent.com/25688193/30400862-38814962-9913-11e7-9c50-8678bb1ecc56.png)
+![image](https://user-images.githubusercontent.com/25688193/30415878-fe5da328-9964-11e7-87ce-b3c66542e3d4.png)
 
 <a id="ID_6-4-4"></a>
 
 #### バギング [Bagging]
-![twitter_ _ _11-18_170705](https://user-images.githubusercontent.com/25688193/30400864-389eab06-9913-11e7-9658-25411d931bd7.png)
+![image](https://user-images.githubusercontent.com/25688193/30415910-2310251a-9965-11e7-8cb6-55434f78d045.png)
+![image](https://user-images.githubusercontent.com/25688193/30415937-371b910c-9965-11e7-9171-0671ea3cfb96.png)
 
 <a id="ID_6-4-4-1"></a>
 
