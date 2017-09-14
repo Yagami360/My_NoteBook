@@ -134,7 +134,8 @@ Twitterモーメント：https://twitter.com/i/moments/781974495905009664
 <a id="ID_2-7-2"></a>
 
 #### 最適解問題の主問題 [primal problem] と双方問題 [dual problem]
-![image](https://user-images.githubusercontent.com/25688193/30413859-aa4078be-995b-11e7-941e-686223f6f559.png)
+![image](https://user-images.githubusercontent.com/25688193/30414028-83b1ca94-995c-11e7-8b56-c742a8911ec4.png)
+
 
 
 <a name=参考文献></a>
