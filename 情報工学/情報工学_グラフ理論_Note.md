@@ -8,13 +8,13 @@ This is my notebook that summarizes about "graph theory". I will add contents as
 ![default](https://user-images.githubusercontent.com/25688193/30402306-4370f5de-9918-11e7-8e6d-5259edcd66d4.png)
 
 ## 項目 [Contents]
-
 1. [概要、全体 MAP [Overview]](#ID_1)
 1. [グラフ [Graph]](#ID_2)
     1. [グラフ [Graph] の概要](#ID_2-1)
     1. [グラフと頂点、辺、隣接関係](#ID_2-2)
         1. [（単純無向）グラフ [Undirected graph]](#ID_2-2-1)
-        1. [頂点の隣接関係、頂点の次数](#ID_2-2-2)
+        1. [頂点の隣接関係](#ID_2-2-2)
+        1. [頂点の次数](#ID_2-2-3)
     1. [グラフの幾何学的表現、概念](#ID_2-3)
         1. [グラフの同型 [isomorphic]](#ID_2-3-1)
         1. [有向グラフ [directed graph]](#ID_2-3-2)
@@ -78,17 +78,23 @@ This is my notebook that summarizes about "graph theory". I will add contents as
 
 <a id="ID_2-2-2"></a>
 
-#### 頂点の隣接関係、頂点の次数
-![twitter_ _ _1-3_170602](https://user-images.githubusercontent.com/25688193/29314191-ea3d593a-81f7-11e7-96bf-902241ec95f8.png)
+#### 頂点の隣接関係
+![image](https://user-images.githubusercontent.com/25688193/30418843-4f0872d0-996f-11e7-84e1-f5b25b3d03c0.png)
+
+<a id="ID_2-2-3"></a>
+
+#### 頂点の次数
+![image](https://user-images.githubusercontent.com/25688193/30418863-661d40cc-996f-11e7-9d4b-ab9b4b90335a.png)
 
 <a id="ID_2-3"></a>
 
 ### グラフの幾何学的表現、概念
+![image](https://user-images.githubusercontent.com/25688193/30418911-8d192920-996f-11e7-83a5-bb5d5814c172.png)
 
 <a id="ID_2-3-1"></a>
 
 #### グラフの同型 [isomorphic]
-![twitter_ _ _1-4_170602](https://user-images.githubusercontent.com/25688193/29314194-ea4ebc34-81f7-11e7-8a75-2c5d7225f27a.png)
+![image](https://user-images.githubusercontent.com/25688193/30418944-a8465344-996f-11e7-8e5c-564264fe387b.png)
 
 <a id="ID_2-3-2"></a>
 
@@ -171,12 +177,14 @@ This is my notebook that summarizes about "graph theory". I will add contents as
 <a id="ID_3-1"></a>
 
 ### マルコフ連鎖 [markov chain]
-![twitter_ _ _4-2_170604](https://user-images.githubusercontent.com/25688193/29314208-ea9fe6fe-81f7-11e7-9340-70a03692766b.png)
+![image](https://user-images.githubusercontent.com/25688193/30419098-218d1616-9970-11e7-8687-789ed48cde4d.png)
+![image](https://user-images.githubusercontent.com/25688193/30419125-4070361c-9970-11e7-9e5f-d0627db65f86.png)
 
 <a id="ID_3-1-1"></a>
 
 #### マルコフ連鎖の初期分布と定常分布
-![twitter_ _ _4-3_170604](https://user-images.githubusercontent.com/25688193/29314207-ea9a505e-81f7-11e7-9175-94875928dcca.png)
+![image](https://user-images.githubusercontent.com/25688193/30419187-6ca24388-9970-11e7-9387-72d2e7b7b4ce.png)
+![image](https://user-images.githubusercontent.com/25688193/30419212-854c6328-9970-11e7-890b-535d8b49a9fc.png)
 
 <a id="ID_3-1-2"></a>
 
@@ -187,7 +195,8 @@ This is my notebook that summarizes about "graph theory". I will add contents as
 <a id="ID_3-1-3"></a>
 
 #### マルコフ連鎖の規約性
-![twitter_ _ _4-7_170605](https://user-images.githubusercontent.com/25688193/29314211-eab83790-81f7-11e7-9a1c-b0d437fff7b4.png)
+![image](https://user-images.githubusercontent.com/25688193/30419274-c3534376-9970-11e7-9b14-73c81e1cd9a6.png)
+![image](https://user-images.githubusercontent.com/25688193/30419312-dd219e74-9970-11e7-94a6-a38aa14ea32d.png)
 ![twitter_ _ _4-8_170605](https://user-images.githubusercontent.com/25688193/29314212-eab9fa9e-81f7-11e7-81b0-000d8f29dc4d.png)
 ![twitter_ _ _4-9_170606](https://user-images.githubusercontent.com/25688193/29314213-eabeda32-81f7-11e7-85ce-0f26113d15ca.png)
 
