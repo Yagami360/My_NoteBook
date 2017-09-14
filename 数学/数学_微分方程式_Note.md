@@ -17,10 +17,12 @@ I will add contents as needed!
         1. [同次形 [Homogeneous Equations]](#ID_2-1)
     1. [１階線型微分方程式 [First-order linear differential equation]](#ID_2-2)
     1. [完全微分方程式 [exact differential equation]](#ID_2-3)
-    1. [完全形における解の存在と一意性 </br>＜ピカールの逐次近似法 [method of successive approximations] ＞](#ID_2-4)
+    1. [完全形における解の存在と一意性＜ピカールの逐次近似法 [method of successive approximations] ＞](#ID_2-4)
         1. [ピカールの近似列](#ID_2-4-1)
             1. [(a) ピカールの近似列の算出](#ID_2-4-1-1)
             1. [(b) ピカールの近似列の収束性](#ID_2-4-1-2)
+            1. [(c) y(t) が対象の初期値問題 (1.6) 式を満たすことの証明](#ID_2-4-1-3)
+            1. [解の存在と一意性](#ID_2-4-1-4)
         1. [逐次近似法を使用した方程式の解の導出](#ID_2-4-2)
     1. [ニュートン・ラプソン法（数値解析） [Newton-Raphson method]](#ID_2-5)
     1. [２階定係数斉次線形微分方程式 [homogeneous linear differential equation]](#ID_2-6)
@@ -40,6 +42,7 @@ I will add contents as needed!
         1. [特異点 [singularity] 、オイラーの方程式](#ID_2-10)
             1. [（特異点が t0=0 の場合で） t > 0 のとき](#ID_2-10-1)
             1. [（特異点が t0=0 の場合で） t < 0 のとき](#ID_2-10-2)
+            1. [オイラーの方程式の一般解](#ID_2-10-3)
         1. [確定特異点 [fixed singular point]、フロベニウスの方法 [Frobenius method]](#ID_2-11)
             1. [確定特異点 [fixed singular point]](#ID_2-11-1)
             1. [フロベニウスの方法 [Frobenius method]](#ID_2-11-2)
@@ -111,36 +114,35 @@ I will add contents as needed!
 <a id="ID_2-1-1"></a>
 
 #### 変数分離型 [separation of variables]
-![twitter_ _1-1_170306](https://user-images.githubusercontent.com/25688193/29313856-b49c63f8-81f6-11e7-95f8-0d1d34273914.png)
+![image](https://user-images.githubusercontent.com/25688193/30405445-e8fd5bec-9926-11e7-9405-ef4c02783075.png)
 
 <a id="ID_2-1-2"></a>
 
 #### 同次形 [Homogeneous Equations] 
 ![twitter_ _1-2_170306](https://user-images.githubusercontent.com/25688193/29313855-b49c3b26-81f6-11e7-9a26-5eca635633c5.png)
 
-</br>
 <a id="ID_2-2"></a>
 
 ### １階線型微分方程式 [First-order linear differential equation]
 ![twitter_ _1-3_170306](https://user-images.githubusercontent.com/25688193/29313857-b4a1e9f4-81f6-11e7-807f-878ca3c8c9a4.png)
 ![twitter_ _1-4_170306](https://user-images.githubusercontent.com/25688193/29313860-b4a3cc4c-81f6-11e7-9127-d1a4581b3279.png)
 
-</br>
 <a id="ID_2-3"></a>
 
 ### 完全微分方程式 [exact differential equation]
 ![twitter_ _1-5_170307](https://user-images.githubusercontent.com/25688193/29313858-b4a2a2e0-81f6-11e7-895b-0510ab988458.png)
 ![twitter_ _1-6_170307](https://user-images.githubusercontent.com/25688193/29313859-b4a2e99e-81f6-11e7-9c96-b95bbeba9edb.png)
 
-</br>
+
 <a id="ID_2-4"></a>
 
 ### 完全形における解の存在と一意性　＜ピカールの逐次近似法 [method of successive approximations] ＞
+![image](https://user-images.githubusercontent.com/25688193/30405563-846acb00-9927-11e7-9c6a-ee0c356e2ec5.png)
 
 <a id="ID_2-4-1"></a>
 
 #### ピカールの近似列
-![twitter_ _1-7_170309](https://user-images.githubusercontent.com/25688193/29313862-b4c4d6e4-81f6-11e7-931c-8bbb3a9fb691.png)
+![image](https://user-images.githubusercontent.com/25688193/30405541-68de8368-9927-11e7-9fbe-683c41b5fccd.png)
 
 <a id="ID_2-4-1-1"></a>
 
@@ -151,14 +153,21 @@ I will add contents as needed!
 <a id="ID_2-4-1-2"></a>
 
 #### (b) ピカールの近似列の収束性
-![twitter_ _1-10_170311](https://user-images.githubusercontent.com/25688193/29313866-b4c90656-81f6-11e7-9186-62a3e60ee8ab.png)
+![image](https://user-images.githubusercontent.com/25688193/30405586-a7778fe8-9927-11e7-9ae8-c06dc9f3b404.png)
 
+<a id="ID_2-4-1-3"></a>
+
+#### (c) y(t) が対象の初期値問題 (1.6) 式を満たすことの証明
+![image](https://user-images.githubusercontent.com/25688193/30405609-d8c6d284-9927-11e7-89f3-c205124f2421.png)
+
+<a id="ID_2-4-1-4"></a>
+
+#### 解の存在と一意性
 ![twitter_ _1-11_170311](https://user-images.githubusercontent.com/25688193/29313863-b4c77aa2-81f6-11e7-9e8f-634278e00738.png)
 
 <a id="ID_2-4-2"></a>
 
 #### 逐次近似法を使用した方程式の解の導出
-
 ![twitter_ _1-12_170312](https://user-images.githubusercontent.com/25688193/29313864-b4c841bc-81f6-11e7-9caa-ef7eff7fc30a.png)
 ![twitter_ _1-13_170312](https://user-images.githubusercontent.com/25688193/29313868-b4e8bd20-81f6-11e7-853d-873fa3241157.png)
 
@@ -196,11 +205,12 @@ I will add contents as needed!
 <a id="ID_2-7"></a>
 
 ### ２階変係数斉次線形微分方程式 [Inhomogeneous linear differential equation]
+![image](https://user-images.githubusercontent.com/25688193/30405740-a2ea1648-9928-11e7-9ccf-f0b54ea4a503.png)
 
 <a id="ID_2-7-1"></a>
 
 #### 定数変化法 [variation of constants]
-![twitter_ _3-1_170318](https://user-images.githubusercontent.com/25688193/29313879-b5366bba-81f6-11e7-894d-97aeafd8cb03.png)
+![image](https://user-images.githubusercontent.com/25688193/30405758-c1b6751c-9928-11e7-8b48-8e24ff627edb.png)
 ![twitter_ _3-2_170318](https://user-images.githubusercontent.com/25688193/29313880-b53783ce-81f6-11e7-9072-c523a88b7f42.png)
 ![twitter_ _3-3_170318](https://user-images.githubusercontent.com/25688193/29313881-b53bacce-81f6-11e7-8cb8-5b3c1a94020d.png)
 ![twitter_ _3-4_170318](https://user-images.githubusercontent.com/25688193/29313883-b542d166-81f6-11e7-99be-11d8eb83f076.png)
@@ -208,11 +218,12 @@ I will add contents as needed!
 <a id="ID_2-7-2"></a>
 
 #### 代入法
+![image](https://user-images.githubusercontent.com/25688193/30405789-e1cc0ff6-9928-11e7-9c67-66af584975e5.png)
 
 <a id="ID_2-7-2-1"></a>
 
 #### ① 右辺が多項式の形をしている場合
-![twitter_ _3-5_170320](https://user-images.githubusercontent.com/25688193/29313882-b541abec-81f6-11e7-9289-5613a77df3ff.png)
+![image](https://user-images.githubusercontent.com/25688193/30405804-fca9379a-9928-11e7-9079-7e7a7d518fd1.png)
 ![twitter_ _3-6_170320](https://user-images.githubusercontent.com/25688193/29313884-b5550656-81f6-11e7-9488-58b2b586b50c.png)
 ![twitter_ _3-7_170320](https://user-images.githubusercontent.com/25688193/29313886-b55ae864-81f6-11e7-8488-dc514f1eba6e.png)
 
@@ -241,11 +252,12 @@ I will add contents as needed!
 <a id="ID_2-9"></a>
 
 ### べき級数 [series] とその性質
+![image](https://user-images.githubusercontent.com/25688193/30405849-4dece66a-9929-11e7-911b-bf646379c7da.png)
 
 <a id="ID_2-9-1"></a>
 
 #### 収束半径と収束、発散、及びCauchyの判定法による収束半径の決定
-![twitter_ _5-1_170323](https://user-images.githubusercontent.com/25688193/29313894-b58a63fa-81f6-11e7-8fb5-af6278acf6da.png)
+![image](https://user-images.githubusercontent.com/25688193/30405873-6b8a3204-9929-11e7-99cd-7c08d0742752.png)
 
 <a id="ID_2-9-2"></a>
 
@@ -253,15 +265,15 @@ I will add contents as needed!
 ![twitter_ _5-2_170324](https://user-images.githubusercontent.com/25688193/29313895-b58f2e1c-81f6-11e7-9bd3-476f3b9dab28.png)
 
 
-</br>
 <a id="ID_2-10"></a>
 
 ### 特異点 [singularity] 、オイラーの方程式
+![image](https://user-images.githubusercontent.com/25688193/30405897-94a673c8-9929-11e7-9d48-b2ea309d7155.png)
 
 <a id="ID_2-10-1"></a>
 
 #### （特異点が t0=0 の場合で） t > 0 のとき
-![twitter_ _6-1_170325](https://user-images.githubusercontent.com/25688193/29313896-b59ee564-81f6-11e7-8ecc-13c22d1a060d.png)
+![image](https://user-images.githubusercontent.com/25688193/30405920-b41ec2be-9929-11e7-890b-e8c8922de69f.png)
 ![twitter_ _6-2_170325](https://user-images.githubusercontent.com/25688193/29313897-b59f52f6-81f6-11e7-83a0-e2e637d6c1f3.png)
 ![twitter_ _6-3_170325](https://user-images.githubusercontent.com/25688193/29313898-b5a1617c-81f6-11e7-96c5-7a60bb1e433f.png)
 
@@ -269,6 +281,10 @@ I will add contents as needed!
 
 #### （特異点が t0=0 の場合で）t < 0 のとき
 ![twitter_ _6-4_170325](https://user-images.githubusercontent.com/25688193/29313899-b5aba772-81f6-11e7-829f-711b033de645.png)
+
+<a id="ID_2-10-3"></a>
+
+#### オイラーの方程式の一般解
 ![twitter_ _6-5_170325](https://user-images.githubusercontent.com/25688193/29313900-b5add844-81f6-11e7-8425-93a3ad0f66d1.png)
 ![twitter_ _6-6_170325](https://user-images.githubusercontent.com/25688193/29313901-b5b1c31e-81f6-11e7-8923-7e5d4c5d65a7.png)
 ![twitter_ _6-7_170325](https://user-images.githubusercontent.com/25688193/29313903-b5c36cf4-81f6-11e7-8e97-07e90d36997f.png)
@@ -277,11 +293,12 @@ I will add contents as needed!
 <a id="ID_2-11"></a>
 
 ### 確定特異点 [fixed singular point]、フロベニウスの方法 [Frobenius method]
+![image](https://user-images.githubusercontent.com/25688193/30406002-15a3cfac-992a-11e7-93f4-cfe0d09f8583.png)
 
 <a id="ID_2-11-1"></a>
 
 #### 確定特異点 [fixed singular point]
-![twitter_ _6-9_170325](https://user-images.githubusercontent.com/25688193/29313904-b5c8616e-81f6-11e7-9b64-11816d27d783.png)
+![image](https://user-images.githubusercontent.com/25688193/30406035-2c4fdc46-992a-11e7-8548-7646caa063cf.png)
 ![twitter_ _6-10_170325](https://user-images.githubusercontent.com/25688193/29313905-b5d1d636-81f6-11e7-9fcc-752907e600ce.png)
 
 <a id="ID_2-11-2"></a>
@@ -304,11 +321,12 @@ I will add contents as needed!
 <a id="ID_2-11-2-2-1"></a>
 
 ##### 決定方程式
+![image](https://user-images.githubusercontent.com/25688193/30406067-6187545c-992a-11e7-9898-ae93ae367a8c.png)
 
 <a id="ID_2-11-2-2-2"></a>
 
 ##### 決定方程式における r1, r2 の差が整数になる場合の、１次独立な２つの解と一般解
-![twitter_ _6-16_170327](https://user-images.githubusercontent.com/25688193/29313913-b5f443c4-81f6-11e7-8f31-6d39d0043cf3.png)
+![image](https://user-images.githubusercontent.com/25688193/30406085-8329f4e8-992a-11e7-8874-78e6fdb70d15.png)
 ![twitter_ _6-17_170327](https://user-images.githubusercontent.com/25688193/29313914-b5f47fce-81f6-11e7-8640-7c2bf5c0d923.png)
 ![twitter_ _6-18_170327](https://user-images.githubusercontent.com/25688193/29313918-b61705bc-81f6-11e7-89ec-b00abf9d62b9.png)
 
@@ -319,7 +337,6 @@ I will add contents as needed!
 ![twitter_ _6-20_170328](https://user-images.githubusercontent.com/25688193/29313915-b61531c4-81f6-11e7-9548-9b31a5180542.png)
 ![twitter_ _6-21_170328](https://user-images.githubusercontent.com/25688193/29313916-b6162502-81f6-11e7-858f-a0ed0cea1116.png)
 
-</br>
 
 <a id="ID_3"></a>
 
@@ -339,7 +356,6 @@ I will add contents as needed!
 ![twitter_ _7-5_170330](https://user-images.githubusercontent.com/25688193/29313924-b63cffce-81f6-11e7-9eae-3b245ffca0aa.png)
 
 
-</br>
 <a id="ID_3-2"></a>
 
 ### フーリエ解析 [Fourier analysis]
@@ -347,7 +363,7 @@ I will add contents as needed!
 <a id="ID_3-2-1"></a>
 
 #### フーリエ級数 [Fourier series]、フーリエ級数展開
-![twitter_ _7-6_170331](https://user-images.githubusercontent.com/25688193/29313922-b63c0c90-81f6-11e7-974d-a102eed03cbc.png)
+![image](https://user-images.githubusercontent.com/25688193/30406164-17f7d0ae-992b-11e7-8ad5-5d51ec073a1f.png)
 ![twitter_ _7-7_170401](https://user-images.githubusercontent.com/25688193/29313923-b63c5aec-81f6-11e7-8186-65657de4dc22.png)
 
 
