@@ -1,8 +1,7 @@
 # My_NoteBook
 
-サイエンス、テクノロジー、エンジニア関連情報の自分用ノートを Markdown 形式で保管したリポジトリです。</br>
+サイエンス、テクノロジー、エンジニア関連情報を記載したオンラインマイノートを Markdown 形式で保管したリポジトリです。</br>
 （プログラムコードではありません）
-
 
 This repository describe about my note (markdown format) related to science, tech, engineers from basic to applied.</br>
 
