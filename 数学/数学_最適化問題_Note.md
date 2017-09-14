@@ -20,12 +20,13 @@ Twitterモーメント：https://twitter.com/i/moments/781974495905009664
             1. [２次の条件 [second-order convexity condition]（凸関数が多変数の関数の場合）](#ID_2-2-3-3)
     1. [凸最適化問題（より詳細な説明）](#ID_2-3)
     1. [制約条件なしの 凸最適化問題 [unconstrained convex optimization]](#ID_2-4)
-    1. [ラグランジュの未定乗数法 [the method of Largrange multipliers]](#ID_2-5)
+    1. [【補足】ラグランジュの未定乗数法 [the method of Largrange multipliers]](#ID_2-5)
         1. [ラグランジュの未定乗数法の直感的な意味](#ID_2-5-1)
         1. [ラグランジュの未定乗数法の意味（数式変換）](#ID_2-5-2)
     1. [等式制約付き 凸最適化問題 [constrained convex optimization]](#ID_2-6)
     1. [不等式制約付き 凸最適化問題 [unconstrained convex optimization]](#ID_2-7)
-    1. [（ラグランジュ関数の）鞍点 [saddle point]](#ID_2-8)
+        1. [（ラグランジュ関数の）鞍点 [saddle point]](#ID_2-7-1)
+        1. [最適解問題の主問題 [primal problem] と双方問題 [dual problem]](#ID_2-7-2)        
 1. [参考文献](#参考文献)
 
 - 追記予定項目
@@ -35,6 +36,7 @@ Twitterモーメント：https://twitter.com/i/moments/781974495905009664
         - シンプレックス法 [simplex method]
     - 非線形計画法 [NLP : nonlinear programming]
     
+
 <a id="ID_1"></a>
 
 ## 概要 [Overview]、全体MAP図
@@ -46,25 +48,27 @@ Twitterモーメント：https://twitter.com/i/moments/781974495905009664
 <a id="ID_2"></a>
 
 ## 凸最適化問題 [convex programing problem]
+![image](https://user-images.githubusercontent.com/25688193/30413506-5ec493b8-9959-11e7-94e6-b53a4b82f183.png)
 
 <a id="ID_2-1"></a>
 
 ### 凸集合 [convex set]
-![twitter_ 2-1 _160909](https://user-images.githubusercontent.com/25688193/29314347-9a1ff542-81f8-11e7-8d31-5c9e3737d848.png)
+![image](https://user-images.githubusercontent.com/25688193/30413527-8f0bfb92-9959-11e7-83d4-888d505b262a.png)
 
 <a id="ID_2-2"></a>
 
 ### 凸関数 [convex function]
+![image](https://user-images.githubusercontent.com/25688193/30413556-bb7c373c-9959-11e7-8939-49332cefa399.png)
 
 <a id="ID_2-2-1"></a>
 
 #### （下に凸な）凸関数 [downward-convex function]
+![image](https://user-images.githubusercontent.com/25688193/30413588-e218c770-9959-11e7-9a12-f29f770ad0f5.png)
 
 <a id="ID_2-2-2"></a>
 
 #### （上に凸な）凸関数 [upward-convex function] 又は、凹関数[concave function]
-
-![twitter_ 3-1_160909](https://user-images.githubusercontent.com/25688193/29314349-9a277a60-81f8-11e7-8043-a7427ba0603e.png)
+![image](https://user-images.githubusercontent.com/25688193/30413606-f8273fa6-9959-11e7-8101-021b42342082.png)
 
 <a id="ID_2-2-3"></a>
 
@@ -72,17 +76,18 @@ Twitterモーメント：https://twitter.com/i/moments/781974495905009664
 
 <a id="ID_2-2-3-1"></a>
 
-#### １次の条件 [first-order convexity condition]
+##### １次の条件 [first-order convexity condition]
+![image](https://user-images.githubusercontent.com/25688193/30413624-169eddfe-995a-11e7-9e97-fd3e99e58980.png)
 
 <a id="ID_2-2-3-2"></a>
 
-#### ２次の条件 [second-order convexity condition]（凸関数が１変数の関数の場合）
-
-![twitter_ 3-2_160909](https://user-images.githubusercontent.com/25688193/29314348-9a27459a-81f8-11e7-901b-d3a966c84cbd.png)
+##### ２次の条件 [second-order convexity condition]（凸関数が１変数の関数の場合）
+![image](https://user-images.githubusercontent.com/25688193/30413663-5a98204c-995a-11e7-9c6f-5d51b8b8fb28.png)
+![image](https://user-images.githubusercontent.com/25688193/30413683-7b2e77ac-995a-11e7-8002-6fad3e733dd7.png)
 
 <a id="ID_2-2-3-3"></a>
 
-#### ２次の条件 [second-order convexity condition]（凸関数が多変数の関数の場合）
+##### ２次の条件 [second-order convexity condition]（凸関数が多変数の関数の場合）
 ![twitter_ 4-1_160910](https://user-images.githubusercontent.com/25688193/29314351-9a3be82e-81f8-11e7-82db-6e113874b4ae.png)
 ![twitter_ 4-2_160910](https://user-images.githubusercontent.com/25688193/29314350-9a28b5c4-81f8-11e7-8cc4-7e2a368ca411.png)
 
@@ -98,7 +103,7 @@ Twitterモーメント：https://twitter.com/i/moments/781974495905009664
 
 <a id="ID_2-5"></a>
 
-### ラグランジュの未定乗数法 [the method of Largrange multipliers]
+### 【補足】ラグランジュの未定乗数法 [the method of Largrange multipliers]
 ![twitter_ 6-1_160912](https://user-images.githubusercontent.com/25688193/29314356-9a4d9fce-81f8-11e7-9c2d-27ec34a70aff.png)
 
 <a id="ID_2-5-1"></a>
@@ -121,10 +126,15 @@ Twitterモーメント：https://twitter.com/i/moments/781974495905009664
 ### 不等式制約付き 凸最適化問題 [unconstrained convex optimization]
 ![twitter_ 8-1_160914](https://user-images.githubusercontent.com/25688193/29314357-9a5fbdf8-81f8-11e7-8231-e7476731036d.png)
 
-<a id="ID_2-8"></a>
+<a id="ID_2-7-1"></a>
 
-### （ラグランジュ関数の）鞍点 [saddle point]
-![twitter_ 8-2_160914](https://user-images.githubusercontent.com/25688193/29314359-9a6c7750-81f8-11e7-8456-edafe1b2afe7.png)
+#### （ラグランジュ関数の）鞍点 [saddle point]
+![image](https://user-images.githubusercontent.com/25688193/30413821-6ba395fa-995b-11e7-8ff2-c93fcee7c316.png)
+
+<a id="ID_2-7-2"></a>
+
+#### 最適解問題の主問題 [primal problem] と双方問題 [dual problem]
+![image](https://user-images.githubusercontent.com/25688193/30413859-aa4078be-995b-11e7-941e-686223f6f559.png)
 
 
 <a name=参考文献></a>
