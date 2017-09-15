@@ -78,13 +78,26 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
     1. [陽性 [positive]、陰性 [negative] から導かれる各種評価指数（２クラスの識別問題）](#ID_3-4)
         1. [混同行列、適合率、再現率、F1スコア](#ID_3-4-1)
         1. [ROC曲線（受信者動作特性曲線）[receiver operator characteristics curve]](#ID_3-4-2)
+            1. [ROC曲線下面積 [AUC: area under ROC curve]](#ID_3-4-2-1)
+            1. [ROC曲線と損失直線（最適な動作点の選択）](#ID_3-4-2-2)        
     1. [グリッドサーチに [grid search] よるモデルのハイパーパラメータのチューニング](#ID_3-7)
     1. [情報量基準[Information Criterion]](#ID_3-8)
         1. [AIC（赤池の情報量基準）[Akaike's Information Criterion]](#ID_3-8-1)
 1. [確率モデルと識別関数 [discriminant function]](#ID_4)
     1. [確率モデル（パラメトリックモデル [parametric models]と、ノンパラメトリックモデル [non-parametric models]）](#ID_4-1)
     1. [識別規則 [idification rule]](#ID_4-2)
+        1. [① 事後確率 [posterior probability] によるクラス分類法](#ID_4-2-1)
+        1. [② 距離 [distance] によるクラス分類法](#ID_4-2-2)
+        1. [③ 関数値 [function value] によるクラス分類法](#ID_4-2-3)
+        1. [④ 決定木 [decision tree] によるクラス分類法](#ID_4-2-4)        
     1. [ベイスの識別規則 [Bayes's idification rule]](#ID_5-1)
+        1. [ベイズの定理 [Bayes' theorem]](#ID_5-1-1)
+        1. [ベイスの識別規則 [Bayes's idification rule]](#ID_5-1-2)
+        1. [識別クラスの決定 [desicide identification class] と、尤度比（ゆうどひ） [likelihood ratio]](#ID_5-1-3)
+        1. [ベイスの識別規則 [Bayes' identification rule] と誤り率最小化 [minimarize error rate]](#ID_5-1-4)
+        1. [最小損失基準 [minimum loss standard] に基づくベイズの識別規則 [Bayes' identification rule]（損失を考慮に入れたベイズの識別規則）](#ID_5-1-5)
+        1. [判断の留保（リジェクト） [decision of rejection]](#ID5-1-6)
+        1. [使用例 [example]](#ID_5-1-7)    
     1. [正規分布関数と正規分布から導かれる識別関数](#ID_4-3)
         1. [使用例 [example]](#ID_4-3-1)
     1. [最大尤度法 [MLE：maximum likelihood estimation]による確率モデルのパラメータの推定](#4-4)
@@ -561,13 +574,23 @@ PCAによる次元の削除
 
 #### ROC曲線（受信者動作特性曲線）[receiver operator characteristics curve]
 
-![twitter_ 13-1_161227](https://user-images.githubusercontent.com/25688193/29311708-e0f24fac-81ed-11e7-8461-ea000cac9608.png)
-![twitter_ 13-2_161227](https://user-images.githubusercontent.com/25688193/29311709-e0f3ae74-81ed-11e7-93aa-42632dbc8ff8.png)
+![image](https://user-images.githubusercontent.com/25688193/30488091-57814dcc-9a70-11e7-975d-3ee4128f04b1.png)
+![image](https://user-images.githubusercontent.com/25688193/30488147-800bff9e-9a70-11e7-82cf-fd42bb07841d.png)
+![image](https://user-images.githubusercontent.com/25688193/30488284-d57f28c0-9a70-11e7-977f-c1983dc9f83c.png)
 ![twitter_ 13-3_161229](https://user-images.githubusercontent.com/25688193/29311710-e0fc87ba-81ed-11e7-9644-49881177d910.png)
+
+<a id="ID_3-4-2-1"></a>
+
+##### ROC曲線下面積 [AUC: area under ROC curve]
 ![twitter_ 13-5_170101](https://user-images.githubusercontent.com/25688193/29311712-e1098ca8-81ed-11e7-9e67-5d2c57edd75b.png)
+
+<a id="ID_3-4-2-2"></a>
+
+##### ROC曲線と損失直線（最適な動作点の選択）
 ![twitter_ 13-8_170102](https://user-images.githubusercontent.com/25688193/29311715-e116b8a6-81ed-11e7-8716-53b612126a91.png)
-![twitter_ 13-9_170102](https://user-images.githubusercontent.com/25688193/29311716-e12071fc-81ed-11e7-83e7-bfb361481266.png)
-![twitter_ 13-10_170102](https://user-images.githubusercontent.com/25688193/29311717-e12908e4-81ed-11e7-8d8e-d6ffac3cc539.png)
+![image](https://user-images.githubusercontent.com/25688193/30489579-8e703eea-9a72-11e7-9264-cc527a004d49.png)
+![image](https://user-images.githubusercontent.com/25688193/30489407-1d00b668-9a72-11e7-9a16-53b0ec8044f7.png)
+![image](https://user-images.githubusercontent.com/25688193/30489333-f37687aa-9a71-11e7-99b8-fb9e0c588789.png)
 
 <a id="ID_3-5"></a>
 
@@ -587,27 +610,76 @@ PCAによる次元の削除
 <a id="ID_4-2"></a>
 
 ### 識別規則 [idification rule]
-![twitter_ 2-1_160917](https://user-images.githubusercontent.com/25688193/29311684-e0581b44-81ed-11e7-9480-7efee4e5804a.png)
-![twitter_ 2-2_160917](https://user-images.githubusercontent.com/25688193/29311685-e0589862-81ed-11e7-91ac-b4fac350b558.png)
+![image](https://user-images.githubusercontent.com/25688193/30489671-ce04d2a0-9a72-11e7-8fbb-b6e48a72c839.png)
+
+<a id="ID_4-2-1"></a>
+
+#### ① 事後確率 [posterior probability] によるクラス分類法
+![image](https://user-images.githubusercontent.com/25688193/30489814-3991d27a-9a73-11e7-82f4-7e55cb1a684d.png)
+
+<a id="ID_4-2-2"></a>
+
+#### ② 距離 [distance] によるクラス分類法
+![image](https://user-images.githubusercontent.com/25688193/30489838-4d3041d6-9a73-11e7-8312-807ed00ea38c.png)
+
+<a id="ID_4-2-3"></a>
+
+#### ③ 関数値 [function value] によるクラス分類法
+![image](https://user-images.githubusercontent.com/25688193/30489861-61e02c4a-9a73-11e7-8274-665190c1ae7b.png)
+
+<a id="ID_4-2-4"></a>
+
+#### ④ 決定木 [decision tree] によるクラス分類法
+![image](https://user-images.githubusercontent.com/25688193/30489783-24e8621c-9a73-11e7-9b29-d665432a09d5.png)
+
 
 <a id="ID_5-1"></a>
 
 ### ベイスの識別規則 [Bayes's idification rule]
-![twitter_ 7-1_160930](https://user-images.githubusercontent.com/25688193/29311692-e09d7e0a-81ed-11e7-926a-bd5c1f4a2ce5.png)
-![twitter_ 7-2_160930](https://user-images.githubusercontent.com/25688193/29311693-e09e1fe0-81ed-11e7-9477-ffe003d53b49.png)
 
-![twitter_ 8-1_161001](https://user-images.githubusercontent.com/25688193/29311694-e09ed4a8-81ed-11e7-9a44-0026c1ec425f.png)
+<a id="ID_5-1-1"></a>
 
-![twitter_ 9-1_161003](https://user-images.githubusercontent.com/25688193/29311699-e0c1411e-81ed-11e7-8e4e-2c2a0d0d0416.png)
-![twitter_ 9-1_161003](https://user-images.githubusercontent.com/25688193/29311700-e0c21c7e-81ed-11e7-929c-88fb64a79cfc.png)
+#### ベイズの定理 [Bayes' theorem]
+![image](https://user-images.githubusercontent.com/25688193/30490114-02dffbf2-9a74-11e7-9af9-67f815f580e7.png)
+![image](https://user-images.githubusercontent.com/25688193/30490195-3bfc3748-9a74-11e7-9fe5-b9af826b4dc6.png)
+![image](https://user-images.githubusercontent.com/25688193/30490231-53c1a71e-9a74-11e7-9db5-53c8cea412e4.png)
 
+<a id="ID_5-1-2"></a>
+
+#### ベイスの識別規則 [Bayes's idification rule]
+![image](https://user-images.githubusercontent.com/25688193/30490276-73e7aae8-9a74-11e7-8ad7-37a37b9972c6.png)
+![image](https://user-images.githubusercontent.com/25688193/30490319-90288d44-9a74-11e7-9226-5bef05457fc9.png)
+
+<a id="ID_5-1-3"></a>
+
+#### 識別クラスの決定 [desicide identification class] と、尤度比（ゆうどひ） [likelihood ratio]
+![image](https://user-images.githubusercontent.com/25688193/30490354-a7340d88-9a74-11e7-945e-e5686128510b.png)
+
+<a id="ID_5-1-4"></a>
+
+#### ベイスの識別規則 [Bayes' identification rule] と誤り率最小化 [minimarize error rate]
+![image](https://user-images.githubusercontent.com/25688193/30490414-d43f1160-9a74-11e7-85af-d3fb332aaa2d.png)
+![image](https://user-images.githubusercontent.com/25688193/30490448-e9c2e5ca-9a74-11e7-9e6e-3a17fcef161c.png)
+![image](https://user-images.githubusercontent.com/25688193/30490625-7716e66a-9a75-11e7-9d7f-af5389b29c50.png)
+
+<a id="ID_5-1-5"></a>
+
+#### 最小損失基準 [minimum loss standard] に基づくベイズの識別規則 [Bayes' identification rule]（損失を考慮に入れたベイズの識別規則）
 ![twitter_ 10-1_161005](https://user-images.githubusercontent.com/25688193/29311701-e0c33898-81ed-11e7-9611-8c5b4f8f3814.png)
-![twitter_ 10-2_161005](https://user-images.githubusercontent.com/25688193/29311703-e0d18dbc-81ed-11e7-88a7-1b0153d422ef.png)
+![image](https://user-images.githubusercontent.com/25688193/30491167-5d998556-9a77-11e7-82bd-5ddff41662d7.png)
+![image](https://user-images.githubusercontent.com/25688193/30491181-73c3f5dc-9a77-11e7-9678-a0b56495bd7a.png)
 ![twitter_ 10-3_161005](https://user-images.githubusercontent.com/25688193/29311702-e0d0d3b8-81ed-11e7-8b91-d142d7ed6e75.png)
 
-![twitter_ 11-1_161005](https://user-images.githubusercontent.com/25688193/29311704-e0d85106-81ed-11e7-97fe-0ce8edb63966.png)
+<a id="ID_5-1-6"></a>
+
+#### 判断の留保（リジェクト） [decision of rejection]
+![image](https://user-images.githubusercontent.com/25688193/30490905-688c3554-9a76-11e7-809d-ae00a1910607.png)
+![image](https://user-images.githubusercontent.com/25688193/30490934-874802b6-9a76-11e7-98b0-7b11bd9eabd6.png)
 ![twitter_ 11-3_161005](https://user-images.githubusercontent.com/25688193/29311705-e0e3ed86-81ed-11e7-9d70-c99072c0aaba.png)
 
+<a id="ID_5-1-7"></a>
+
+#### 使用例 [Examples]
 ![twitter_ 12-1_161004](https://user-images.githubusercontent.com/25688193/29311706-e0e44ce0-81ed-11e7-8238-3967e593dd27.png)
 ![twitter_ 12-2_161004](https://user-images.githubusercontent.com/25688193/29311707-e0e6588c-81ed-11e7-84c7-3635a2d8537d.png)
 
