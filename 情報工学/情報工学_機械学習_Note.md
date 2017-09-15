@@ -40,13 +40,17 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
         1. [特徴ベクトル空間 [feature vector space]](#ID_2-4-1)
         1. [特徴ベクトルの変換](#ID_2-4-2)
         1. [特徴ベクトルの正規化（標準化） [normalization/standardization]](#ID_2-4-3)
+            1. [使用例 [example]](#ID_2-4-3-1)
         1. [特徴ベクトルの無相関化 [decorrelation]](#ID_2-4-4)
+            1. [使用例 [example]](#ID_2-4-4-1)
         1. [特徴ベクトルの白色化 [whitening]](#ID_2-4-5)
     1. [特徴データの次元圧縮、特徴抽出](#ID_2-5)
         1. [主成分分析 [PCA : Principal Component Analysis]](#ID_2-5-1)
             1. [主成分分析（PCA）の分散最大化による定式化](#ID_2-5-1-1)
             1. [主成分分析（PCA）の誤差最小化による定式化](#ID_2-5-1-2)
+            1. [使用例 [example]](#ID_2-5-1-3)
         1. [カーネル主成分分析 [kernel PCA : kernel Principal Component Analysis]](#ID_2-5-2)
+            1. [使用例 [example]](#ID_2-5-2-1)
         1. [部分空間法 [subspace methods]](#ID_2-5-3)
             1. [部分空間 [sub space]](#ID_2-5-3-1)
         1. [カーネル部分空間法 [kernel subspace methods]](#ID_2-5-4)
@@ -82,15 +86,42 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
     1. [識別規則 [idification rule]](#ID_4-2)
     1. [ベイスの識別規則 [Bayes's idification rule]](#ID_5-1)
     1. [正規分布関数と正規分布から導かれる識別関数](#ID_4-3)
+        1. [使用例 [example]](#ID_4-3-1)
     1. [最大尤度法 [MLE：maximum likelihood estimation]による確率モデルのパラメータの推定](#4-4)
 1. [線形判別分析 [LDA : liner discrinant analysis]](#ID_6)
     1. [線形識別関数 [liner discriminant function] でのクラス識別＜識別規則＞](#ID_6-1)
+        1. [超平面 [hyper plabe] の方程式](#ID_6-1-1)
+        1. [多クラスの識別問題への拡張](#ID_6-1-2)
+        1. [使用例 [Examples]](#ID_6-1-3)
     1. [線形判別分析 [LDA : liner discrinant analysis] によるパラメータ推定](#ID_6-2)
-       1. [判別分析法](#ID_6-2-1)
+        1. [判別分析法](#ID_6-2-1)
+        1. [使用例 [Examples]](#ID_6-2-2)
 1. [ロジスティクス回帰 [Logistic Regression]](#ID_7)
+    1. [ロジスティック回帰 [logistic regression] による識別関数のパラメータ推定](#ID_7-1)
+    1. [ロジスティック回帰モデル](#ID_7-2)
+    1. [最尤度法によるロジスティック回帰モデル（確率モデル＜ノンパラメトリックモデル＞）のパラメータ推定 [MLE：maximum-likelihood estimation]](#ID_7-3)
+        1. [L2 正則化による過学習への対応（評価関数への正則化項の追加）](#ID_7-3-1)
+    1. [ロジスティック回帰 [logistic regression] による識別問題の多クラスへの拡張と、非線形変換 [no-liner transformation]、ガウス核関数 [Gaussian kernel function]](#ID_7-4)
+    1. [使用例 [Examples]](#ID_7-5)
 1. [最近接法, k-NN 法 [k-nearest neighbor algorithm]](#ID_8)
+    1. [最近傍法 [nearest neighbor algorithm] とボロノイ境界 [Voronoi diagram]](#ID_8-1)
+        1. [ボロノイ図 [Voronoi diagram]](#ID_8-1-1)
+        1. [鋳型の数と識別性能](#ID_8-1-2)
+        1. [使用例 [Examples]](#ID_8-1-3)
+    1. [k最近傍法（k-NN法）[k-nearest neighbor algorithm]](#ID_8-2)
+        1. [k-NN法 [k-nearest neighbor algorithm] での誤り発生のメカニズムとベイズ誤り率との関係](#ID_8-2-1)
+        1. [k-NN法の計算量とその低減法](#ID_8-2-2)
+        1. [使用例 [Examples]](#ID_8-2-3)
 1. [サポートベクターマシン [SVM : Support Vector Machine]](#ID_9)
+    1. [](#ID_9-x)
 1. [決定木 [Decision Tree]](#ID_10)
+    1. [【補足】決定木に関しての諸定義（グラフ理論）](#ID_10-1)
+    1. [【補足】決定木のノードの特徴空間のクラス分け（各種ノードの確率と識別クラス）](#ID_10-2)
+    1. [ノードの分割規則と不純度 [purity]](#ID_10-3)
+        1. [不純度 [purity] を表す代表的な関数](#ID_10-3-1)
+    1. [木の剪定（せんてい） [pruning] アルゴリズムと過学習対策](#ID_10-4)
+        1. [木の剪定アルゴリズム](#ID_10-4-1)
+    1. [使用例 [Examples]](#ID_10-5)
 1. [アンサンブル学習 [ensemble learning]](#ID_11)
     1. [混合モデル [mixed model]](#ID_11-1)
         1. [混合モデルによるモデル多様体の拡張（混合モデルの幾何学的解釈）](#ID_11-1-1)
@@ -105,23 +136,21 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
             1. [AdaBoost の幾何学的解釈](#ID_11-3-1-2)        
     1. [バギング [Bagging]](#ID_11-4)
         1. [バギングの幾何学解釈](#ID_11-4-1)
-1. [クラスタリング [clustering]](#ID_12)
+    1. [ランダムフォレスト [random forests]](#ID_11-5)
+        1. [ランダムフォレストの学習アルゴリズム](#ID_11-5-1)
+        1. [ランダムフォレスト固有のデータ解析</br>（OBBランダムフォレスト固有のデータ解析（OOB 誤り率 [ out-of-bag error rate]、特徴の重要さ）](#ID_11-5-2)
+1. [クラスター分析 [Clustering Analysis]](#ID_12)
+    1. [標本化 [sapling] と量子化 [quantization]](#ID_12-1)
+    1. [ベクトル量子化 [QV : quantization vector]](#ID_12-2)
+        1. [k-means 法](#ID_12-2-1)
+        1. [学習ベクトル量子化 [LQV : leaning quantization vector]](#ID_12-2-2)
 1. [パターン認識 [pattern recognition]](#ID_x)
-    1. [パターン認識における前処理](#ID_x-x-x)
-1. [](#ID_x)
-1. [](#ID_x)
+    1. [](#ID_x-x)
 1. [参考文献](#参考文献)
+1. [](#ID_x)
+
 ---
 旧目次（後で削除予定）
-1. [識別規則 [Idification rule (Overview)]](#識別規則)
-1. [ベイスの識別規則 [Bayes's idification rule]](#ベイスの識別規則)
-1. [ROC 曲線 [receiver operator characteristics curve]](#ROC曲線)
-1. [最近接法, k-NN 法 [k-nearest neighbor algorithm]](#最近接法、kNN法)
-1. [線形識別関数 [liner discriminant function]](#線形識別関数)
-1. [線形判別分析 [LDA : liner discrinant analysis]](#線形判別分析)
-1. [ロジスティクス回帰 [Logistic Regression]](#ロジスティクス回帰)
-1. [サポートベクターマシン [SVM : Support Vector Machine] ](#サポートベクターマシン)
-1. [決定木 [Decision Tree]](#決定木)
 1. [混合モデルとアンサンブル学習](#混合モデルとアンサンブル学習)
 1. [EMアルゴリズム](#EMアルゴリズム)
 1. [AdaBoost](#AdaBoost)
@@ -243,6 +272,10 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
 
 #### 特徴ベクトルの正規化（標準化） [normalization/standardization]
 ![image](https://user-images.githubusercontent.com/25688193/30472418-3e9a9ffe-9a37-11e7-9377-dc43109d73c7.png)
+
+<a id="ID_2-4-3-1"></a>
+
+##### 使用例
 ![image](https://user-images.githubusercontent.com/25688193/30472452-66fe0986-9a37-11e7-8848-0acb11fdaba2.png)
 
 <a id="ID_2-4-4"></a>
@@ -250,6 +283,10 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
 #### 特徴ベクトルの無相関化 [decorrelation]
 ![image](https://user-images.githubusercontent.com/25688193/30472530-d7244c02-9a37-11e7-9875-9eaf85293d03.png)
 ![image](https://user-images.githubusercontent.com/25688193/30472631-3ea0a9de-9a38-11e7-9d40-9c446b939362.png)
+
+<a id="ID_2-4-4-1"></a>
+
+##### 使用例
 ![image](https://user-images.githubusercontent.com/25688193/30472658-659a7b1e-9a38-11e7-854f-fe00f0a39994.png)
 
 <a id="ID_2-4-5"></a>
@@ -298,6 +335,9 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
 PCAによる次元の削除
 ![image](https://user-images.githubusercontent.com/25688193/30474027-3cd29d24-9a3d-11e7-943e-4511c27bd74a.png)
 
+<a id="ID_2-5-1-3"></a>
+
+##### 使用例 [example]
 > PCA による次元の削除の使用例
 >> 13×178 次元のワインデータ → 2×124 次元のデータに次元削除（特徴抽出）（※124は分割したトレーニングデータ数）
 >>> ワインデータをPCAによる次元削除を行なったデータの散布図。
@@ -329,6 +369,9 @@ PCAによる次元の削除
 ![image](https://user-images.githubusercontent.com/25688193/30474393-8360553c-9a3e-11e7-815c-a04929df7088.png)
 ![image](https://user-images.githubusercontent.com/25688193/30474426-9ea0b7ce-9a3e-11e7-84c5-5c314ae8814e.png)
 
+<a id="ID_2-5-2-1"></a>
+
+##### 使用例 [example]
 - kernelPCA による次元の削除の使用例
 > `sklearn.datasets.make_moons( n_samples = 100 )` で生成した半月状のデータ（サンプル数：１００個）に対し、通常の PCA を適用した結果。</br>
 >>上段の図より、通常の PCA では、うまく線形分離可能なテータに変換できていないことが分かる。（※下段の図は、各主成分に対する固有値と寄与率、累積率寄与率の図）尚、第１主成分 PC1 のみに次元削除（特徴抽出）した図は、各クラス（0 or 1）の識別を見やすくするため、上下に少し移動させている。
@@ -578,8 +621,12 @@ PCAによる次元の削除
 ![twitter_ 20-6_170110](https://user-images.githubusercontent.com/25688193/29311801-e3ac1ef8-81ed-11e7-992c-09bc4a17f929.png)
 ![twitter_ 20-7_170110](https://user-images.githubusercontent.com/25688193/29311800-e3ab980c-81ed-11e7-9bc8-f5072291d9a8.png)
 ![twitter_ 20-8_170116](https://user-images.githubusercontent.com/25688193/29311804-e3c1282a-81ed-11e7-87e7-0307b1562bb4.png)
+
+<a id="ID_4-3-1"></a>
+
+#### 使用例 [example]
 ![twitter_ 20-9_170116](https://user-images.githubusercontent.com/25688193/29311802-e3b24774-81ed-11e7-8274-86ad54b28f6c.png)
-![twitter_ 20-10_170116](https://user-images.githubusercontent.com/25688193/29311803-e3b5aacc-81ed-11e7-846f-66cefc69bb11.png)
+
 
 <a id="ID_4-3"></a>
 
@@ -598,16 +645,31 @@ PCAによる次元の削除
 
 ### 線形識別関数 [liner discriminant function] でのクラス識別＜識別規則＞
 ![twitter_ 17-1_161113](https://user-images.githubusercontent.com/25688193/29311733-e188c93c-81ed-11e7-8622-5688879e3e06.png)
+
+<a id="ID_6-1-1"></a>
+
+#### 超平面 [hyper plane] の方程式
 ![twitter_ 17-2_161113](https://user-images.githubusercontent.com/25688193/29311734-e1926c08-81ed-11e7-94b1-47561b20d85e.png)
 ![twitter_ 17-3_161113](https://user-images.githubusercontent.com/25688193/29311735-e195289e-81ed-11e7-99a8-fa05260c9edf.png)
+
+<a id="ID_6-1-2"></a>
+
+#### 多クラスの識別問題への拡張
 ![twitter_ 17-4_161114](https://user-images.githubusercontent.com/25688193/29311736-e1964d96-81ed-11e7-8deb-967edb1100c6.png)
 ![twitter_ 17-5_161114](https://user-images.githubusercontent.com/25688193/29311738-e1a2a4f6-81ed-11e7-98a8-e354024e7cc5.png)
 ![twitter_ 17-6_161115](https://user-images.githubusercontent.com/25688193/29311739-e1ae8c6c-81ed-11e7-8e58-49521ca97f27.png)
+
+<a id="ID_6-1-2"></a>
+
+#### 最小２乗法によるパラメータ推定
 ![twitter_ 17-7_161115](https://user-images.githubusercontent.com/25688193/29311740-e1b50920-81ed-11e7-976b-1a3da2b5b471.png)
 ![twitter_ 17-8_161115](https://user-images.githubusercontent.com/25688193/29311741-e1b75784-81ed-11e7-939d-22af94e938d5.png)
 ![twitter_ 17-9_161116](https://user-images.githubusercontent.com/25688193/29311742-e1b9add6-81ed-11e7-8f7f-68cbfc635bc0.png)
+
+<a id="ID_6-1-3"></a>
+
+#### 使用例 [Example]
 ![twitter_ 17-10_1_171029](https://user-images.githubusercontent.com/25688193/29311743-e1cff5b4-81ed-11e7-992b-c26737ead99a.png)
-![twitter_ 17-10_2_171029](https://user-images.githubusercontent.com/25688193/29311747-e1d8699c-81ed-11e7-9a04-2daa68230d4b.png)
 
 <a id="ID_6-2"></a>
 
@@ -619,11 +681,14 @@ PCAによる次元の削除
 
 <a id="ID_6-2-1"></a>
 
-####　判別分析法
+#### 判別分析法
 ![twitter_ 17-14_161123](https://user-images.githubusercontent.com/25688193/29311751-e1f55688-81ed-11e7-9a1a-4b695f9cb435.png)
 ![twitter_ 17-15_161123](https://user-images.githubusercontent.com/25688193/29311754-e20c28ea-81ed-11e7-8bdf-9750c373cc16.png)
 ![twitter_ 17-16_161123](https://user-images.githubusercontent.com/25688193/29311752-e1fae198-81ed-11e7-952b-bd56703e6c2c.png)
 
+<a id="ID_6-2-2"></a>
+
+#### 使用例 [Examples]
 ![twitter_ 17-20_170130](https://user-images.githubusercontent.com/25688193/29311755-e20f8198-81ed-11e7-8958-dec5c59f20e8.png)
 
 ![twitter_ 17-25_170201](https://user-images.githubusercontent.com/25688193/29311757-e281b0f6-81ed-11e7-8c1e-dde2a688c020.png)
@@ -633,35 +698,55 @@ PCAによる次元の削除
 <a id="ID_7"></a>
 
 ## ロジスティクス回帰 [Logistic Regression]
-![twitter_ 18-1_161129](https://user-images.githubusercontent.com/25688193/29311761-e2bb0752-81ed-11e7-94fc-6a887193766f.png)
+
+<a id="ID_7-1"></a>
+
+### ロジスティック回帰 [logistic regression] による識別関数のパラメータ推定
 ![twitter_ 18-1_161130](https://user-images.githubusercontent.com/25688193/29311762-e2bffd52-81ed-11e7-8792-460a06fd85cb.png)
 ![twitter_ 18-2_161130](https://user-images.githubusercontent.com/25688193/29311763-e2c3934a-81ed-11e7-96df-d6efb0d753b7.png)
+
+<a id="ID_7-2"></a>
+
+### ロジスティック回帰モデル
 ![twitter_ 18-3_161130](https://user-images.githubusercontent.com/25688193/29311764-e2cb7c5e-81ed-11e7-817e-b7d8d12fe7d1.png)
 ![twitter_ 18-4_161130](https://user-images.githubusercontent.com/25688193/29311767-e2de1062-81ed-11e7-88a4-40c59a934d55.png)
 ![twitter_ 18-5_161201](https://user-images.githubusercontent.com/25688193/29311766-e2db6506-81ed-11e7-8462-d0d5054964e8.png)
-![twitter_ 18-6_161201](https://user-images.githubusercontent.com/25688193/29311768-e2e062e0-81ed-11e7-99d2-00d3c802e369.png)
+
+<a id="ID_7-3"></a>
+
+### 最尤度法によるロジスティック回帰モデル（確率モデル＜ノンパラメトリックモデル＞）のパラメータ推定 [MLE：maximum-likelihood estimation]
 ![twitter_ 18-6 _170204](https://user-images.githubusercontent.com/25688193/29311769-e2e22b16-81ed-11e7-93e2-9252b524a4e6.png)
-![twitter_ 18-7_161201](https://user-images.githubusercontent.com/25688193/29311770-e2fa944e-81ed-11e7-8ab0-6ca5be89e421.png)
 ![twitter_ 18-7 _170204](https://user-images.githubusercontent.com/25688193/29311772-e300ba54-81ed-11e7-8ea6-088f6f79d61c.png)
+![image](https://user-images.githubusercontent.com/25688193/30485329-021346ae-9a68-11e7-81fa-88045b0a1a55.png)
+
+<a id="ID_7-3-1"></a>
+
+#### L2正則化による過学習への対応（評価関数への正則化項の追加）
+![image](https://user-images.githubusercontent.com/25688193/30485372-2740792e-9a68-11e7-8123-1a31936bd633.png)
+
+<a id="ID_7-4"></a>
+
+### ロジスティック回帰 [logistic regression] による識別問題の多クラスへの拡張と、非線形変換 [no-liner transformation]、ガウス核関数 [Gaussian kernel function]
 ![twitter_ 18-8_170204](https://user-images.githubusercontent.com/25688193/29311771-e2feb470-81ed-11e7-9d6a-c55321d5764b.png)
 ![twitter_ 18-9_170208](https://user-images.githubusercontent.com/25688193/29311773-e30114ea-81ed-11e7-9dcd-9cd99ac926ee.png)
 ![twitter_ 18-10_170208](https://user-images.githubusercontent.com/25688193/29311774-e30526e8-81ed-11e7-80dd-75fe8fba875b.png)
-![twitter_ 18-11_170209](https://user-images.githubusercontent.com/25688193/29311775-e30bd466-81ed-11e7-983b-92047d58d118.png)
+
+<a id="ID_7-6"></a>
+
+### 使用例 [Examples]
 ![twitter_ 18-11 _170210](https://user-images.githubusercontent.com/25688193/29311776-e31e2d14-81ed-11e7-8dc4-d3c01c7f46ba.png)
-![twitter_ 18-12_170209](https://user-images.githubusercontent.com/25688193/29311777-e322d170-81ed-11e7-82dc-4d34c48dcbdd.png)
 ![twitter_ 18-12 _170210](https://user-images.githubusercontent.com/25688193/29311779-e3240d06-81ed-11e7-8f9e-61274ddbf738.png)
 ![twitter_ 18-13_170210](https://user-images.githubusercontent.com/25688193/29311778-e3239aba-81ed-11e7-9d57-2b3d620486be.png)
 ![twitter_ 18-14_170210](https://user-images.githubusercontent.com/25688193/29311780-e3286b9e-81ed-11e7-99d5-1dfc532da857.png)
 ![twitter_ 18-15_170210](https://user-images.githubusercontent.com/25688193/29311781-e32fea90-81ed-11e7-8464-c71a34d15ba3.png)
 ![twitter_ 18-16_170210](https://user-images.githubusercontent.com/25688193/29311782-e3411270-81ed-11e7-95f8-6e9b2798ced6.png)
-![twitter_ 18-17_170726](https://user-images.githubusercontent.com/25688193/29311783-e3456b72-81ed-11e7-87ef-4fdba93cf0ea.png)
 ![twitter_ 18-18_170726](https://user-images.githubusercontent.com/25688193/29311784-e3461bd0-81ed-11e7-80af-6c8404d6c0c6.png)
 ![twitter_ 18-19_170727](https://user-images.githubusercontent.com/25688193/29311785-e34831d6-81ed-11e7-93f0-0eb9400253dd.png)
 
 > 参考
 >> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
 >> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
->>> ロジスティクス回帰の練習コード</br>
+>>> ロジスティクス回帰の練習コード。scikit-learn ライブラリを使用。</br>
 >>> [MachineLearning_Exercises_Python_scikit-learn/LogisticRegression_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/LogisticRegression_scikit-learn)</br>
 
 
@@ -669,30 +754,61 @@ PCAによる次元の削除
 <a id="ID_8"></a>
 
 ## 最近接法, k-NN 法 [k-nearest neighbor algorithm]
-
 ![twitter_ 14-1_161007](https://user-images.githubusercontent.com/25688193/29311718-e12caecc-81ed-11e7-84d5-bc46932892c1.png)
-![twitter_ 14-2_161007](https://user-images.githubusercontent.com/25688193/29311719-e12edc7e-81ed-11e7-9ea0-8be8e1e59b1b.png)
+
+<a id="ID_8-1"></a>
+
+### 最近傍法 [nearest neighbor algorithm] とボロノイ境界 [Voronoi diagram]
+![image](https://user-images.githubusercontent.com/25688193/30485865-af214a34-9a69-11e7-9a77-036e953569f9.png)
+
+<a id="ID_8-1-1"></a>
+
+#### ボロノイ図 [Voronoi diagram]
+![image](https://user-images.githubusercontent.com/25688193/30485913-d5e9c5ce-9a69-11e7-99e3-2e67c213f381.png)
 ![twitter_ 14-3_161008](https://user-images.githubusercontent.com/25688193/29311720-e1365d46-81ed-11e7-8552-f97071578c18.png)
 ![twitter_ 14-4_161009](https://user-images.githubusercontent.com/25688193/29311721-e1397abc-81ed-11e7-893b-8850e2002a5b.png)
+
+<a id="ID_8-1-2"></a>
+
+#### 鋳型の数と識別性能
 ![twitter_ 14-5_161010](https://user-images.githubusercontent.com/25688193/29311722-e143c60c-81ed-11e7-90ac-3baab1fd30a9.png)
 
-![twitter_ 15-1_161216](https://user-images.githubusercontent.com/25688193/29311723-e14c2da6-81ed-11e7-99ae-e31d77c6efc3.png)
+<a id="ID_8-1-3"></a>
+
+#### 使用例 [Examples]
 ![twitter_ 15-1 _161221](https://user-images.githubusercontent.com/25688193/29311724-e14ee2bc-81ed-11e7-908b-2fa2cd4a8921.png)
-![twitter_ 15-2_161216](https://user-images.githubusercontent.com/25688193/29311725-e151886e-81ed-11e7-9306-f83c341a3c22.png)
 ![twitter_ 15-2 _161221](https://user-images.githubusercontent.com/25688193/29311726-e158ec12-81ed-11e7-81e1-32d918b2f08e.png)
 
+
+<a id="ID_8-2"></a>
+
+### k最近傍法（k-NN法）[k-nearest neighbor algorithm]
 ![twitter_ 16-1_161011](https://user-images.githubusercontent.com/25688193/29311727-e15eb1d8-81ed-11e7-8d5d-1308321d9d74.png)
 ![twitter_ 16-2_161012](https://user-images.githubusercontent.com/25688193/29311728-e166a5dc-81ed-11e7-9fd5-e24c61588dea.png)
+
 ![twitter_ 16-3_161111](https://user-images.githubusercontent.com/25688193/29311729-e16e9a4e-81ed-11e7-804b-2fbed8884257.png)
 ![twitter_ 16-4_161111](https://user-images.githubusercontent.com/25688193/29311730-e171a8f6-81ed-11e7-8c9c-8299c2e4ae42.png)
+
+<a id="ID_8-2-1"></a>
+
+#### k-NN法 [k-nearest neighbor algorithm] での誤り発生のメカニズムとベイズ誤り率との関係
 ![twitter_ 16-5_161112](https://user-images.githubusercontent.com/25688193/29311731-e1739ecc-81ed-11e7-9feb-6c1168aab9f8.png)
 ![twitter_ 16-6_161112](https://user-images.githubusercontent.com/25688193/29311732-e18010ee-81ed-11e7-9d3d-47877a66f994.png)
+
+<a id="ID_8-2-2"></a>
+
+#### k-NN法の計算量とその低減法
+> 記載中...
+
+<a id="ID_8-2-3"></a>
+
+#### 使用例 [Examples]
 ![twitter_ 16-7_170729](https://user-images.githubusercontent.com/25688193/29311737-e199b45e-81ed-11e7-8685-98c52a6594b2.png)
 
 > 参考
 >> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
 >> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
->>> k-NN 法の練習コード</br>
+>>> k-NN 法の練習コード。scikit-learn ライブラリを使用。</br>
 >>> [MachineLearning_Exercises_Python_scikit-learn/kNN_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/kNN_scikit-learn)</br>
 
 
@@ -727,6 +843,11 @@ PCAによる次元の削除
 ![twitter_svm_6-2 _170728](https://user-images.githubusercontent.com/25688193/29311985-8cb6430c-81ee-11e7-965b-ba1421d9ceb4.png)
 ![twitter_svm_6-3_170729](https://user-images.githubusercontent.com/25688193/29311986-8ccc025a-81ee-11e7-8097-6f1daf9e1a49.png)
 
+> 参考
+>> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
+>> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
+>>> サポートベクターマシンのサンプルコード集。（練習プログラム）scikit-learn ライブラリを使用。</br>
+>>> [MachineLearning_Exercises_Python_scikit-learn/SVM_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/SVM_scikit-learn)
 
 
 <a id="ID_10"></a>
@@ -734,49 +855,210 @@ PCAによる次元の削除
 ## 決定木 [Decision Tree]
 ![twitter_ 21-1_170730](https://user-images.githubusercontent.com/25688193/29311813-e3f36cc2-81ed-11e7-88aa-387bd4b36715.png)
 ![twitter_ 21-2_170730](https://user-images.githubusercontent.com/25688193/29311815-e3fc7bdc-81ed-11e7-9af6-a2cbb9d4af64.png)
+
+<a id="ID_10-1"></a>
+
+### 【補足】決定木に関しての諸定義（グラフ理論）
 ![twitter_ 21-3_170731](https://user-images.githubusercontent.com/25688193/29311814-e3fbf7ca-81ed-11e7-9837-1ab49a6c8827.png)
+
+<a id="ID_10-2"></a>
+
+### 【補足】決定木のノードの特徴空間のクラス分け（各種ノードの確率と識別クラス）
 ![twitter_ 21-5_170731](https://user-images.githubusercontent.com/25688193/29311817-e407558e-81ed-11e7-8ec3-a45393202903.png)
 ![twitter_ 21-6_170731](https://user-images.githubusercontent.com/25688193/29311816-e407481e-81ed-11e7-9566-4db88d64e241.png)
+
+<a id="ID_10-3"></a>
+
+### ノードの分割規則と不純度 [purity]
 ![twitter_ 21-7_170731](https://user-images.githubusercontent.com/25688193/29311820-e427e092-81ed-11e7-88d1-de7f469431f6.png)
+
+<a id="ID_10-3-1"></a>
+
+#### 不純度 [purity] を表す代表的な関数
 ![twitter_ 21-8_170801](https://user-images.githubusercontent.com/25688193/29311821-e428507c-81ed-11e7-8123-b9c4db7b12a4.png)
-![twitter_ 21-9_170801](https://user-images.githubusercontent.com/25688193/29311819-e41ebb70-81ed-11e7-9bbc-8bef4683006f.png)
-![twitter_ 21-10_170801](https://user-images.githubusercontent.com/25688193/29311823-e432419a-81ed-11e7-93dc-0487eaeed1bd.png)
-![twitter_ 21-11_170801](https://user-images.githubusercontent.com/25688193/29311822-e42adcde-81ed-11e7-9237-39c7fcefd100.png)
+
+<a id="ID_10-4"></a>
+
+### 木の剪定（せんてい） [pruning] アルゴリズムと過学習対策
 ![twitter_ 21-12_170802](https://user-images.githubusercontent.com/25688193/29311824-e43db656-81ed-11e7-9c1a-01f8f3554f01.png)
+
+<a id="ID_10-4-1"></a>
+
+#### 木の剪定アルゴリズム
 ![twitter_ 21-13_170802](https://user-images.githubusercontent.com/25688193/29311825-e44193ac-81ed-11e7-95e2-830f102cbbf0.png)
 ![twitter_ 21-14_170802](https://user-images.githubusercontent.com/25688193/29311829-e45cca5a-81ed-11e7-9e16-b9a66fa68715.png)
 ![twitter_ 21-15_170802](https://user-images.githubusercontent.com/25688193/29311826-e44e93c2-81ed-11e7-816d-23f42aead2b2.png)
 
+### 使用例 [Examples]
+![twitter_ 21-9_170801](https://user-images.githubusercontent.com/25688193/29311819-e41ebb70-81ed-11e7-9bbc-8bef4683006f.png)
+![twitter_ 21-10_170801](https://user-images.githubusercontent.com/25688193/29311823-e432419a-81ed-11e7-93dc-0487eaeed1bd.png)
+![twitter_ 21-11_170801](https://user-images.githubusercontent.com/25688193/29311822-e42adcde-81ed-11e7-9237-39c7fcefd100.png)
+
+> 参考
+>> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
+>> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
+>>> 決定木のサンプルコード集。（練習プログラム）scikit-learn ライブラリを使用。</br>
+>>> [MachineLearning_Exercises_Python_scikit-learn/DecisionTree_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/DecisionTree_scikit-learn)
 
 
 <a id="ID_11"></a>
 
 ## アンサンブル学習 [ensemble learning]
+各識別器を組み合わせて使用し、それらの識別器（弱識別器という）の投票結果（単純な多数決 or 重み付け後の多数決等）で最終的な判断を下す学習方法。</br>
+様々な識別器を組み合わせて **多様性のある学習** を行うため、汎化性能が高く、又過学習 [overfitting] を起こしにくい。
+
+> 参考
+>> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
+>> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
+>>> アンサンブル学習のサンプルコード集。（練習プログラム）scikit-learn ライブラリを使用。</br>
+>>> [MachineLearning_Exercises_Python_scikit-learn/EnsembleLearning_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/EnsembleLearning_scikit-learn)</br>
 
 <a id="ID_11-1"></a>
 
-### 混合モデル
+### 混合モデル [mixed model]
+![twitter_ _ _11-1_170626](https://user-images.githubusercontent.com/25688193/30400845-382106c4-9913-11e7-8253-f11084f92847.png)
 
 <a id="ID_11-1-1"></a>
 
 #### 混合モデルによるモデル多様体の拡張
+![image](https://user-images.githubusercontent.com/25688193/30415043-2ede325a-9961-11e7-865b-a209f11be7ec.png)
+
+<a id="ID_11-1-1-1"></a>
+
+##### 混合正規分布モデル [GMM : Gaussian Mixture Model]
+![image](https://user-images.githubusercontent.com/25688193/30415111-846fb662-9961-11e7-80e4-abb1b1b9865f.png)
+
+<a id="ID_11-1-1-2"></a>
+
+##### 混合正規分布モデルの幾何学的観点
+![image](https://user-images.githubusercontent.com/25688193/30415203-fcf52266-9961-11e7-979a-39f8fdf9d966.png)
+![image](https://user-images.githubusercontent.com/25688193/30415230-1bee4c6a-9962-11e7-8f3c-a3357373c575.png)
+![image](https://user-images.githubusercontent.com/25688193/30415375-c0b9178e-9962-11e7-8aa3-f88e7bd97a78.png)
+![image](https://user-images.githubusercontent.com/25688193/30415398-d9c87a9e-9962-11e7-8244-0b5de3bcce16.png)
+![twitter_ _ _11-5_170630](https://user-images.githubusercontent.com/25688193/30400846-38223ae4-9913-11e7-8ac3-d8851bc4d7ac.png)
+
 
 <a id="ID_11-2"></a>
 
-### EM アルゴリズム
+### EM アルゴリズム [expectation–maximization algorithm]
+![twitter_ _ _11-6_170701](https://user-images.githubusercontent.com/25688193/30400850-3837c4fe-9913-11e7-95a6-70fec69c6a10.png)
+
+<a id="ID_11-2-1"></a>
+
+#### EM アルゴリズムの適用例
+![image](https://user-images.githubusercontent.com/25688193/30416196-3f828700-9966-11e7-9e66-e02b69ec18ef.png)
+![image](https://user-images.githubusercontent.com/25688193/30416221-5781ae8a-9966-11e7-90ba-373b4a2a3476.png)
+![image](https://user-images.githubusercontent.com/25688193/30416156-102b22fa-9966-11e7-8d12-eb481dba881f.png)
+![image](https://user-images.githubusercontent.com/25688193/30416174-25ed04b4-9966-11e7-9768-881625d9d656.png)
+
+<a id="ID_11-2-2"></a>
+
+#### EM アルゴリズムの幾何学的解釈
+![image](https://user-images.githubusercontent.com/25688193/30415457-1a321702-9963-11e7-8922-1d9a10f55478.png)
+![image](https://user-images.githubusercontent.com/25688193/30415473-311b90ce-9963-11e7-95a4-5eec3cc5fee0.png)
+![image](https://user-images.githubusercontent.com/25688193/30415510-4f899a9c-9963-11e7-8e62-f1be5a2fb6ad.png)
+![image](https://user-images.githubusercontent.com/25688193/30415534-696ec5ea-9963-11e7-8f78-00b9a2c8e9e0.png)
+
 
 <a id="ID_11-3"></a>
 
-### 
+### ブースティング [Boosting]、アダブースト [AdaBoost]
+![image](https://user-images.githubusercontent.com/25688193/30401309-c15335d8-9914-11e7-990f-011187f57e63.png)
+
+<a id="ID_11-3-1"></a>
+
+#### アダブースト [AdaBoost]
+![image](https://user-images.githubusercontent.com/25688193/30415636-d4ee38dc-9963-11e7-9090-28ffc5325dae.png)
+![image](https://user-images.githubusercontent.com/25688193/30415665-0441c360-9964-11e7-8783-85cb1b27fd09.png)
+
+<a id="ID_11-3-1-1"></a>
+
+##### アダブーストの学習アルゴリズムの導出
+![image](https://user-images.githubusercontent.com/25688193/30416003-7bf65b90-9965-11e7-9808-11de51cdb027.png)
+![image](https://user-images.githubusercontent.com/25688193/30416046-962e982e-9965-11e7-88a4-d81bc4058bee.png)
+![twitter_ _ _11-13_170703](https://user-images.githubusercontent.com/25688193/30400857-38676c4a-9913-11e7-9409-b5c9081c38a6.png)
+
+<a id="ID_11-3-1-2"></a>
+
+##### アダブーストの幾何学的解釈
+![twitter_ _ _11-14_170704](https://user-images.githubusercontent.com/25688193/30400858-38686fe6-9913-11e7-85c1-e7ce2374513b.png)
+![image](https://user-images.githubusercontent.com/25688193/30415807-ab48b664-9964-11e7-86de-2c300c3107ee.png)
+![image](https://user-images.githubusercontent.com/25688193/30415837-d0222376-9964-11e7-8098-d53d03e3c62c.png)
+![twitter_ _ _11-16_170705](https://user-images.githubusercontent.com/25688193/30400861-387c20ae-9913-11e7-8e09-ca1bd7b100fd.png)
+![image](https://user-images.githubusercontent.com/25688193/30415878-fe5da328-9964-11e7-87ce-b3c66542e3d4.png)
 
 <a id="ID_11-4"></a>
 
-### 
+### バギング [Bagging]
+![image](https://user-images.githubusercontent.com/25688193/30415910-2310251a-9965-11e7-8cb6-55434f78d045.png)
+![image](https://user-images.githubusercontent.com/25688193/30415937-371b910c-9965-11e7-9171-0671ea3cfb96.png)
+
+<a id="ID_11-4-1"></a>
+
+#### バギングの幾何学的解釈
+![twitter_ _ _11-19_170707](https://user-images.githubusercontent.com/25688193/30400863-388d60a8-9913-11e7-81b5-d2f6ddb2ab8f.png)
+
 
 <a id="ID_11-5"></a>
 
-### 
+### ランダムフォレスト [Random Forests]
+![twitter_ 22-1_170802](https://user-images.githubusercontent.com/25688193/29311827-e44f4970-81ed-11e7-9e51-b6acc9187b77.png)
 
+<a id="ID_11-5-1"></a>
+
+#### ランダムフォレストの学習アルゴリズム
+![twitter_ 22-2_170802](https://user-images.githubusercontent.com/25688193/29311828-e454f2e4-81ed-11e7-8571-21ae4bb9e86c.png)
+![twitter_ 22-3_170802](https://user-images.githubusercontent.com/25688193/29311830-e46150de-81ed-11e7-95c2-6748c43ce6a4.png)
+![twitter_ 22-4_170803](https://user-images.githubusercontent.com/25688193/29311831-e46479c6-81ed-11e7-8a8c-81644dd09049.png)
+![twitter_ 22-5_170803](https://user-images.githubusercontent.com/25688193/29311832-e4716686-81ed-11e7-9155-292b1f4ce17a.png)
+
+<a id="ID_11-5-2"></a>
+
+#### ランダムフォレスト固有のデータ解析</br>（OBBランダムフォレスト固有のデータ解析（OOB 誤り率 [ out-of-bag error rate]、特徴の重要さ）
+![twitter_ 22-6_170804](https://user-images.githubusercontent.com/25688193/29311833-e473a6d0-81ed-11e7-8f89-2a07870dbd16.png)
+![twitter_ 22-7_170804](https://user-images.githubusercontent.com/25688193/29311834-e477f2b2-81ed-11e7-9e69-5ccb947e2189.png)
+![twitter_ 22-8_170804](https://user-images.githubusercontent.com/25688193/29311835-e48033be-81ed-11e7-8158-fda1df1da929.png)
+
+
+> 参考
+>> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
+>> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
+>>> ランダムフォレストのサンプルコード集。（練習プログラム）scikit-learn ライブラリを使用。</br>
+>>> [MachineLearning_Exercises_Python_scikit-learn/EnsembleLearning_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/RandomForests_scikit-learn)</br>
+
+
+
+<a id="ID_12"></a>
+
+## クラスター分析 [Clustering Analysis]
+
+<a id="ID_12-1"></a>
+
+### 標本化 [sapling] と量子化 [quantization]
+![image](https://user-images.githubusercontent.com/25688193/30414801-3b212852-9960-11e7-964f-8ab4ef0f8846.png)
+
+<a id="ID_12-2"></a>
+
+### ベクトル量子化 [QV : quantization vector]
+![image](https://user-images.githubusercontent.com/25688193/30414832-642e9298-9960-11e7-97c3-6fb0703ea9f7.png)
+
+<a id="ID_12-2-1"></a>
+
+#### k-means 法
+![twitter_ _ _9-4_170623](https://user-images.githubusercontent.com/25688193/29311483-117f7628-81ed-11e7-927d-d69409eb61f3.png)
+
+<a id="ID_12-2-2"></a>
+
+#### 学習ベクトル量子化 [LQV : leaning quantization vector]
+![twitter_ _ _9-5_170623](https://user-images.githubusercontent.com/25688193/29311485-118904ae-81ed-11e7-82b5-7cd3c5ca863d.png)
+
+> 参考
+>> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
+>> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
+>>> クラスター分析のサンプルコード集。（練習プログラム）。scikit-learn ライブラリを使用。</br>
+>>> [MachineLearning_Exercises_Python_scikit-learn/ClusteringAnalysis_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/ClusteringAnalysis_scikit-learn)</br>
+
+---
 
 <a name="参考文献"></a>
 
@@ -827,69 +1109,4 @@ PCAによる次元の削除
 
 
 
-<a name="決定木"></a>
-
-## 決定木 [Decision Tree]
-
-
-
-
-<a name="混合モデルとアンサンブル学習"></a>
-
-## 混合モデルとアンサンブル学習
-![twitter_ _ _11-1_170626](https://user-images.githubusercontent.com/25688193/29312250-795757fa-81ef-11e7-8185-87d3127f6973.png)
-
-### 混合モデルによるモデル多様体の拡張
-
-![twitter_ _ _11-2_170630](https://user-images.githubusercontent.com/25688193/29312252-7957c64a-81ef-11e7-8e0b-f373dcdd8d55.png)
-![twitter_ _ _11-3_170630](https://user-images.githubusercontent.com/25688193/29312251-7957822a-81ef-11e7-9f05-f1d331dc26a1.png)
-![twitter_ _ _11-4_170630](https://user-images.githubusercontent.com/25688193/29312255-795c36f8-81ef-11e7-98d8-2464f129048e.png)
-![twitter_ _ _11-5_170630](https://user-images.githubusercontent.com/25688193/29312253-795813e8-81ef-11e7-9f61-3bdb0d56b93e.png)
-
-
-<a name="EMアルゴリズム"></a>
-
-## EMアルゴリズム
-
-![twitter_ _ _11-6_170701](https://user-images.githubusercontent.com/25688193/29312254-7958c342-81ef-11e7-9e7e-34f261d6ad14.png)
-![twitter_ _ _11-7_170701](https://user-images.githubusercontent.com/25688193/29312256-797abca4-81ef-11e7-9f2f-9d8de6ec4fc8.png)
-![twitter_ _ _11-7 _170701](https://user-images.githubusercontent.com/25688193/29312257-797b4912-81ef-11e7-8da1-1135c8ff87f5.png)
-![twitter_ _ _11-8_170701](https://user-images.githubusercontent.com/25688193/29312258-797bb37a-81ef-11e7-8898-cef3dc5020de.png)
-![twitter_ _ _11-9_170701](https://user-images.githubusercontent.com/25688193/29312259-797c3c0a-81ef-11e7-9bd1-a3bd369a78e9.png)
-![twitter_ _ _11-10_170701](https://user-images.githubusercontent.com/25688193/29312260-797df95a-81ef-11e7-98a7-f5c22dc9e4ce.png)
-![twitter_ _ _11-11_170702](https://user-images.githubusercontent.com/25688193/29312261-797fd37e-81ef-11e7-83e2-f773db4fd494.png)
-
-
-<a name="AdaBoost"></a>
-
-## AdaBoost
-
-![twitter_ _ _11-12_170703](https://user-images.githubusercontent.com/25688193/29312262-799d8018-81ef-11e7-8afe-a172cae63a6a.png)
-![twitter_ _ _11-13_170703](https://user-images.githubusercontent.com/25688193/29312263-799eb1ea-81ef-11e7-8fc6-de627e6765f6.png)
-![twitter_ _ _11-14_170704](https://user-images.githubusercontent.com/25688193/29312264-799ec8b0-81ef-11e7-94c0-3f08b73f6f16.png)
-![twitter_ _ _11-15_170704](https://user-images.githubusercontent.com/25688193/29312267-79b2ac7c-81ef-11e7-9a4c-9073ca9835cf.png)
-![twitter_ _ _11-16_170705](https://user-images.githubusercontent.com/25688193/29312266-79a33e72-81ef-11e7-9ab6-b82a0805f846.png)
-![twitter_ _ _11-17_170705](https://user-images.githubusercontent.com/25688193/29312265-79a28d4c-81ef-11e7-803d-16d725fdba36.png)
-
-
-<a name="バギング"></a>
-
-## バギング [Bagging]
-
-![twitter_ _ _11-18_170705](https://user-images.githubusercontent.com/25688193/29312269-79d30102-81ef-11e7-85a1-431e9a19fb61.png)
-![twitter_ _ _11-19_170707](https://user-images.githubusercontent.com/25688193/29312268-79c1f1e6-81ef-11e7-941c-3f20fbdf74d9.png)
-
-
-<a name="ランダムフォレスト"></a>
-
-## ランダムフォレスト [Random Forests]
-
-![twitter_ 22-1_170802](https://user-images.githubusercontent.com/25688193/29311827-e44f4970-81ed-11e7-9e51-b6acc9187b77.png)
-![twitter_ 22-2_170802](https://user-images.githubusercontent.com/25688193/29311828-e454f2e4-81ed-11e7-8571-21ae4bb9e86c.png)
-![twitter_ 22-3_170802](https://user-images.githubusercontent.com/25688193/29311830-e46150de-81ed-11e7-95c2-6748c43ce6a4.png)
-![twitter_ 22-4_170803](https://user-images.githubusercontent.com/25688193/29311831-e46479c6-81ed-11e7-8a8c-81644dd09049.png)
-![twitter_ 22-5_170803](https://user-images.githubusercontent.com/25688193/29311832-e4716686-81ed-11e7-9155-292b1f4ce17a.png)
-![twitter_ 22-6_170804](https://user-images.githubusercontent.com/25688193/29311833-e473a6d0-81ed-11e7-8f89-2a07870dbd16.png)
-![twitter_ 22-7_170804](https://user-images.githubusercontent.com/25688193/29311834-e477f2b2-81ed-11e7-9e69-5ccb947e2189.png)
-![twitter_ 22-8_170804](https://user-images.githubusercontent.com/25688193/29311835-e48033be-81ed-11e7-8158-fda1df1da929.png)
 
