@@ -262,7 +262,8 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
 
 ### データの分割
 ![image](https://user-images.githubusercontent.com/25688193/30472734-a8bc90a8-9a38-11e7-9f7b-95b8086f9c87.png)
-![image](https://user-images.githubusercontent.com/25688193/30472774-c973f412-9a38-11e7-8570-49a8b4d36eed.png)
+![image](https://user-images.githubusercontent.com/25688193/30491347-fb7a01ec-9a77-11e7-9687-e8b9f586c5d9.png)
+![image](https://user-images.githubusercontent.com/25688193/30491418-2aade88e-9a78-11e7-9bda-079e707a5f28.png)
 
 
 <a id="ID_2-4"></a>
