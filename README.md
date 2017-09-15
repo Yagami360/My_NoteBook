@@ -24,7 +24,7 @@ This repository describe about my note (markdown format) related to science, tec
     - [統計学 [statistics] / 統計解析 [statistical analysis]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90_Note.md)
     - [多変量解析 [multivariate analysis]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90_Note.md)
     - [機械学習 [Machine Learning]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_Note.md)
-        - [ニューラルネットワーク [Neural Network]]()
+        - ニューラルネットワーク [Neural Network]
 
 - 物理学 [Physics]
     - [電磁気学 [Electromagnetism]](https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6/%E7%89%A9%E7%90%86%E5%AD%A6_%E9%9B%BB%E7%A3%81%E6%B0%97%E5%AD%A6.md)
@@ -42,7 +42,7 @@ This repository describe about my note (markdown format) related to science, tec
 - ハードウェア関連 [Hardware]
     - [電子回路 [Electronic circuit]](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2_%E9%9B%BB%E5%AD%90%E5%9B%9E%E8%B7%AF_Note.md)
     - [マイコン [microcomputer]](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2_%E3%83%9E%E3%82%A4%E3%82%B3%E3%83%B3_Note.md)
-
+    - デジタル回路 [digital circuit]
 - ソフトウェア関連 [Software]
     - Tips
     - プログラミング言語 / スクリプト言語
@@ -79,7 +79,7 @@ This repository describe about my note (markdown format) related to science, tec
     - 物理シミュレーション [Physical simulation]
 
 - 自動車技術 [Automotive]
-    - [モデルベース開発 [Model-based development]]()
+    - モデルベース開発 [Model-based development]
     - [CAN通信 [Controller Area Network] / FNOS](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_CAN%E9%80%9A%E4%BF%A1.md)
     - [AUTOSAR](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_AUTOSAR.md)
     - 機能安全 [functional safety] / ISO 26262
