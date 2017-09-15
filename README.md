@@ -62,7 +62,8 @@ This repository describe about my note (markdown format) related to science, tec
         - Win32API
         - .NETFramework
         - MATLAB Simulink
-
+    - 通信プロトコル [Communications protocol]
+        - HTTP [Hypertext Transfer Protocol]
 - ゲーム開発 [Game development]
     - [DirectX9](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA_DirextX.md)
     - Unity
@@ -78,6 +79,9 @@ This repository describe about my note (markdown format) related to science, tec
     - 機能安全 [functional safety] / ISO 26262
     - MISRA-C
     - AutomotiveSpice
+    - DRBFM [Design Review Based on Failure Mode]
+    - CMMI [Capability Maturity Model Integration]
+    - EMC [electromagnetic compatibility] 試験
     - 各種ツール [Tools]
         - CAN 関連 Tools
             - CANoe
