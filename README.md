@@ -45,7 +45,6 @@ This repository describe about my note (markdown format) related to science, tec
 
 - ソフトウェア関連 [Software]
     - Tips
-    - デザイン・パターン [design pattern]
     - プログラミング言語 / スクリプト言語
         - アセンブラ言語 [assembly language]
         - C
@@ -53,7 +52,7 @@ This repository describe about my note (markdown format) related to science, tec
         - C#
         - Java
         - Ruby
-        - R / Rstudio
+        - R
             - [My GitHub : PRML_RCode](https://github.com/Yagami360/PRML_RCode)
         - Python
             - [My GitHub : MachineLearning_Exercises_Python_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn)
@@ -62,6 +61,13 @@ This repository describe about my note (markdown format) related to science, tec
         - Win32API
         - .NETFramework
         - MATLAB Simulink
+    - 開発環境
+        - Visual Studio
+        - Visual Studio Code
+        - PyCharm
+        - RStudio
+        - Vim
+    - デザイン・パターン [design pattern]
     - 通信プロトコル [Communications protocol]
         - HTTP [Hypertext Transfer Protocol]
 - ゲーム開発 [Game development]
