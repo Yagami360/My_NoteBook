@@ -149,16 +149,6 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
 1. [参考文献](#参考文献)
 1. [](#ID_x)
 
----
-旧目次（後で削除予定）
-1. [混合モデルとアンサンブル学習](#混合モデルとアンサンブル学習)
-1. [EMアルゴリズム](#EMアルゴリズム)
-1. [AdaBoost](#AdaBoost)
-1. [バギング [Bagging]](#バギング)
-1. [ランダムフォレスト [Random Forests]](#ランダムフォレスト)
----
-
-
 
 <a id="ID_1"></a>
 
@@ -1098,15 +1088,3 @@ PCAによる次元の削除
 
 > TensorFlow機械学習クックブック Pythonベースの活用レシピ60+</br>
 > [amazonで詳細を見る](https://www.amazon.co.jp/TensorFlow%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%AF%E3%83%83%E3%82%AF%E3%83%96%E3%83%83%E3%82%AF-Python%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%B4%BB%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%9460-impress-top-gear/dp/4295002003?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4295002003)
-
----
-# 以下、旧内容（後で削除予定）
-
-
-
-
-
-
-
-
-
