@@ -70,8 +70,8 @@ This is my notebook that summarizes about "Information theory". I will add conte
 1. [グラフ理論 [graph theory]（外部リンク）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%B0%E3%83%A9%E3%83%95%E7%90%86%E8%AB%96_Note.md)
 1. [最適化問題 [optimization problem]（数理計画問題 [mathematical programming]（外部リンク）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E6%9C%80%E9%81%A9%E5%8C%96%E5%95%8F%E9%A1%8C_Note.md)
 1. [統計学 / 統計解析 [statistics]（外部リンク）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90_Note.md)
-1. [多変量解析（概要リンク）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90_Note.md)
-1. [機械学習 [Machine Learning]（概要リンク）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_Note.md)
+1. [多変量解析（外部リンク）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90_Note.md)
+1. [機械学習 [Machine Learning]（外部リンク）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_Note.md)
     1. [ニューラルネットワーク [Neural Network]（外部リンク）]()
 1. [参考文献](#参考文献)
 
