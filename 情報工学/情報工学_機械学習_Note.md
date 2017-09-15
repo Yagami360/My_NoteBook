@@ -80,13 +80,9 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
 1. [確率モデルと識別関数 [discriminant function]](#ID_4)
     1. [確率モデル（パラメトリックモデル [parametric models]と、ノンパラメトリックモデル [non-parametric models]）](#ID_4-1)
     1. [識別規則 [idification rule]](#ID_4-2)
+    1. [ベイスの識別規則 [Bayes's idification rule]](#ID_5-1)
     1. [正規分布関数と正規分布から導かれる識別関数](#ID_4-3)
     1. [最大尤度法 [MLE：maximum likelihood estimation]による確率モデルのパラメータの推定](#4-4)
-1. [ベイズ識別](#ID_5)
-    1. [ベイスの識別規則 [Bayes's idification rule]](#ID_5-1)
-    1. [](#ID_5-x)
-    1. [](#ID_5-x)
-    1. [](#ID_5-x)
 1. [線形判別分析 [LDA : liner discrinant analysis]](#ID_6)
     1. [線形識別関数 [liner discriminant function] でのクラス識別＜識別規則＞](#ID_6-1)
     1. [線形判別分析 [LDA : liner discrinant analysis] によるパラメータ推定](#ID_6-2)
@@ -550,6 +546,27 @@ PCAによる次元の削除
 ![twitter_ 2-1_160917](https://user-images.githubusercontent.com/25688193/29311684-e0581b44-81ed-11e7-9480-7efee4e5804a.png)
 ![twitter_ 2-2_160917](https://user-images.githubusercontent.com/25688193/29311685-e0589862-81ed-11e7-91ac-b4fac350b558.png)
 
+<a id="ID_5-1"></a>
+
+### ベイスの識別規則 [Bayes's idification rule]
+![twitter_ 7-1_160930](https://user-images.githubusercontent.com/25688193/29311692-e09d7e0a-81ed-11e7-926a-bd5c1f4a2ce5.png)
+![twitter_ 7-2_160930](https://user-images.githubusercontent.com/25688193/29311693-e09e1fe0-81ed-11e7-9477-ffe003d53b49.png)
+
+![twitter_ 8-1_161001](https://user-images.githubusercontent.com/25688193/29311694-e09ed4a8-81ed-11e7-9a44-0026c1ec425f.png)
+
+![twitter_ 9-1_161003](https://user-images.githubusercontent.com/25688193/29311699-e0c1411e-81ed-11e7-8e4e-2c2a0d0d0416.png)
+![twitter_ 9-1_161003](https://user-images.githubusercontent.com/25688193/29311700-e0c21c7e-81ed-11e7-929c-88fb64a79cfc.png)
+
+![twitter_ 10-1_161005](https://user-images.githubusercontent.com/25688193/29311701-e0c33898-81ed-11e7-9611-8c5b4f8f3814.png)
+![twitter_ 10-2_161005](https://user-images.githubusercontent.com/25688193/29311703-e0d18dbc-81ed-11e7-88a7-1b0153d422ef.png)
+![twitter_ 10-3_161005](https://user-images.githubusercontent.com/25688193/29311702-e0d0d3b8-81ed-11e7-8b91-d142d7ed6e75.png)
+
+![twitter_ 11-1_161005](https://user-images.githubusercontent.com/25688193/29311704-e0d85106-81ed-11e7-97fe-0ce8edb63966.png)
+![twitter_ 11-3_161005](https://user-images.githubusercontent.com/25688193/29311705-e0e3ed86-81ed-11e7-9d70-c99072c0aaba.png)
+
+![twitter_ 12-1_161004](https://user-images.githubusercontent.com/25688193/29311706-e0e44ce0-81ed-11e7-8238-3967e593dd27.png)
+![twitter_ 12-2_161004](https://user-images.githubusercontent.com/25688193/29311707-e0e6588c-81ed-11e7-84c7-3635a2d8537d.png)
+
 
 <a id="ID_4-3"></a>
 
@@ -571,31 +588,6 @@ PCAによる次元の削除
 
 
 
-
-<a id="ID_5"></a>
-
-## ベイスの識別
-
-<a id="ID_5-1"></a>
-
-### ベイスの識別規則 [Bayes's idification rule]
-![twitter_ 7-1_160930](https://user-images.githubusercontent.com/25688193/29311692-e09d7e0a-81ed-11e7-926a-bd5c1f4a2ce5.png)
-![twitter_ 7-2_160930](https://user-images.githubusercontent.com/25688193/29311693-e09e1fe0-81ed-11e7-9477-ffe003d53b49.png)
-
-![twitter_ 8-1_161001](https://user-images.githubusercontent.com/25688193/29311694-e09ed4a8-81ed-11e7-9a44-0026c1ec425f.png)
-
-![twitter_ 9-1_161003](https://user-images.githubusercontent.com/25688193/29311699-e0c1411e-81ed-11e7-8e4e-2c2a0d0d0416.png)
-![twitter_ 9-1_161003](https://user-images.githubusercontent.com/25688193/29311700-e0c21c7e-81ed-11e7-929c-88fb64a79cfc.png)
-
-![twitter_ 10-1_161005](https://user-images.githubusercontent.com/25688193/29311701-e0c33898-81ed-11e7-9611-8c5b4f8f3814.png)
-![twitter_ 10-2_161005](https://user-images.githubusercontent.com/25688193/29311703-e0d18dbc-81ed-11e7-88a7-1b0153d422ef.png)
-![twitter_ 10-3_161005](https://user-images.githubusercontent.com/25688193/29311702-e0d0d3b8-81ed-11e7-8b91-d142d7ed6e75.png)
-
-![twitter_ 11-1_161005](https://user-images.githubusercontent.com/25688193/29311704-e0d85106-81ed-11e7-97fe-0ce8edb63966.png)
-![twitter_ 11-3_161005](https://user-images.githubusercontent.com/25688193/29311705-e0e3ed86-81ed-11e7-9d70-c99072c0aaba.png)
-
-![twitter_ 12-1_161004](https://user-images.githubusercontent.com/25688193/29311706-e0e44ce0-81ed-11e7-8238-3967e593dd27.png)
-![twitter_ 12-2_161004](https://user-images.githubusercontent.com/25688193/29311707-e0e6588c-81ed-11e7-84c7-3635a2d8537d.png)
 
 
 <a id="ID_6"></a>
