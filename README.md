@@ -21,7 +21,7 @@ This repository describe about my note (markdown format) related to science, tec
 - 情報工学 / コンピュータ・サイエンス [Computer Science]
     - [情報理論 / 情報数理 [Information theory]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%83%85%E5%A0%B1%E7%90%86%E8%AB%96_Note.md)
     - [グラフ理論 [graph theory]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%B0%E3%83%A9%E3%83%95%E7%90%86%E8%AB%96_Note.md)
-    - [統計学 / 統計解析 [statistics]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90_Note.md)
+    - [統計学 [statistics] / 統計解析 [statistical analysis]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90_Note.md)
     - [多変量解析 [multivariate analysis]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90_Note.md)
     - [機械学習 [Machine Learning]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_Note.md)
         - [ニューラルネットワーク [Neural Network]]()
@@ -71,12 +71,27 @@ This repository describe about my note (markdown format) related to science, tec
     - 衝突判定 [Collision detection]
     - 物理シミュレーション [Physical simulation]
 
-- 自動車関連 [Automotive]
-    - モデルベース開発 [Model-based development]
+- 自動車技術 [Automotive]
+    - [モデルベース開発 [Model-based development]]()
     - [CAN通信 [Controller Area Network] / FNOS](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_CAN%E9%80%9A%E4%BF%A1.md)
     - [AUTOSAR](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_AUTOSAR.md)
     - 機能安全 [functional safety] / ISO 26262
     - MISRA-C
-    - 各種ツール（CANoe/CANstress/GENy/CAPL/HILS/ 等）[Tools]
-
+    - AutomotiveSpice
+    - 各種ツール [Tools]
+        - CAN 関連 Tools
+            - CANoe
+                - CAPL
+            - MVNT
+            - CANstress
+        - FNOS 関連 Tools
+            - GENy
+            - CANdelaStudio
+        - モデルベース開発関連 Tools
+            - MATLAB Simulink
+            - HILS
+        - 開発環境
+            - CubeSuite+
+            - IECUBE
+            - カバレッジマスターwinAMS
 - [](https://github.com/Yagami360/My_NoteBook)
