@@ -113,7 +113,18 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
         1. [k-NN法の計算量とその低減法](#ID_8-2-2)
         1. [使用例 [Examples]](#ID_8-2-3)
 1. [サポートベクターマシン [SVM : Support Vector Machine]](#ID_9)
-    1. [](#ID_9-x)
+    1. [マージン [margin] とマージン最大化について](#ID_9-1)
+    1. [サポートベクターマシン（SVM）[support vector machine] の導出](#ID_9-2)
+        1. [線形分離可能な系における最適識別超平面とサポートベクトルによるマージン最大化 [margin maximization]](#ID_9-3)
+        1. [マージン最大化 [margin maximization] と不等式制約条件凸最適化問題（数理計画法）[unconstrained convex optimization]](#ID_9-4)
+            1. [KTT [Karush-Kuhn-Tucker] 条件](#ID_9-4-1)
+    1. [データの分布が線形分離不可能な系への拡張（スラック変数の導入）とソフトマージン識別器（C-SVM）、その最適化問題](#ID_9-5)
+        1. [サポートベクターマシンにおける非線形特徴写像</br>　＜カーネル関数、カーネル法 [kernel method] 、カーネルトリック　[kernel trick]＞](#ID_9-6)
+            1. [多項式カーネル](#ID_9-6-1)
+            1. [動径基底関数カーネル（RBFカーネル）[radial bases function kernel]](#ID_9-6-2)
+        1. [使用例 [Examples]](#ID_9-7)
+    1. [v-サポートベクターマシン（v-SVM）](#ID_9-8)
+    1. [１クラスサポートベクターマシン](#ID_9-9)
 1. [決定木 [Decision Tree]](#ID_10)
     1. [【補足】決定木に関しての諸定義（グラフ理論）](#ID_10-1)
     1. [【補足】決定木のノードの特徴空間のクラス分け（各種ノードの確率と識別クラス）](#ID_10-2)
@@ -807,31 +818,81 @@ PCAによる次元の削除
 
 ## サポートベクターマシン [SVM : Support Vector Machine]
 ![twitter_svm_1-1_170211](https://user-images.githubusercontent.com/25688193/29311963-8c41480e-81ee-11e7-84a5-7ccfa0f2d724.png)
+
+<a id="ID_9-1"></a>
+
+### マージン [margin] とマージン最大化について
 ![twitter_svm_1-2_170211](https://user-images.githubusercontent.com/25688193/29311961-8c2d24e6-81ee-11e7-801a-f406b6007b04.png)
+
+<a id="ID_9-2"></a>
+
+### サポートベクターマシン（SVM）[support vector machine] の導出
+![image](https://user-images.githubusercontent.com/25688193/30487135-7ce08e5a-9a6d-11e7-8636-0a43529094c6.png)
+
+<a id="ID_9-3"></a>
+
+#### 線形分離可能な系における最適識別超平面とサポートベクトルによるマージン最大化 [margin maximization]
 ![twitter_svm_2-1_170212](https://user-images.githubusercontent.com/25688193/29311964-8c41fbe6-81ee-11e7-89ba-6bbfe11dfc55.png)
 ![twitter_svm_2-2_170212](https://user-images.githubusercontent.com/25688193/29311962-8c4081b2-81ee-11e7-82d5-3ad978082b95.png)
+
+<a id="ID_9-4"></a>
+
+#### マージン最大化 [margin maximization] と不等式制約条件凸最適化問題（数理計画法）[unconstrained convex optimization]
 ![twitter_svm_3-1_170214](https://user-images.githubusercontent.com/25688193/29311966-8c42b464-81ee-11e7-966f-9ca1ea6fbc76.png)
 ![twitter_svm_3-2_170214](https://user-images.githubusercontent.com/25688193/29311965-8c427a26-81ee-11e7-9c3a-ea8ddd28d510.png)
 ![twitter_svm_3-3_170214](https://user-images.githubusercontent.com/25688193/29311967-8c4f9bca-81ee-11e7-8e69-e8cc8d7914ff.png)
 ![twitter_svm_3-4_170214](https://user-images.githubusercontent.com/25688193/29311968-8c6387e8-81ee-11e7-8906-9164dfa399ef.png)
+
+<a id="ID_9-4-1"></a>
+
+##### KTT [Karush-Kuhn-Tucker] 条件
 ![twitter_svm_3-5_170216](https://user-images.githubusercontent.com/25688193/29311969-8c644746-81ee-11e7-9bf9-8bbf6859ac72.png)
+
+<a id="ID_9-5"></a>
+
+### データの分布が線形分離不可能な系への拡張（スラック変数の導入）とソフトマージン識別器（C-SVM）、その最適化問題
 ![twitter_svm_4-1_170216](https://user-images.githubusercontent.com/25688193/29311971-8c6509d8-81ee-11e7-8488-31927efc6e3f.png)
 ![twitter_svm_4-2_170217](https://user-images.githubusercontent.com/25688193/29311970-8c64a7ae-81ee-11e7-868f-6ab7982ee83e.png)
 ![twitter_svm_4-3_170217](https://user-images.githubusercontent.com/25688193/29311972-8c661166-81ee-11e7-8361-7be24886064b.png)
 ![twitter_svm_4-4_170218](https://user-images.githubusercontent.com/25688193/29311973-8c716d5e-81ee-11e7-88f9-a76c020f1ae9.png)
 ![twitter_svm_4-5_170218](https://user-images.githubusercontent.com/25688193/29311974-8c8614e8-81ee-11e7-9f73-c08228309ecd.png)
+
+
+<a id="ID_9-6"></a>
+
+### サポートベクターマシンにおける非線形特徴写像</br>　＜カーネル関数、カーネル法 [kernel method] 、カーネルトリック　[kernel trick]＞
 ![twitter_svm_5-1_170219](https://user-images.githubusercontent.com/25688193/29311975-8c86acf0-81ee-11e7-9439-d245702b6a18.png)
 ![twitter_svm_5-2_170220](https://user-images.githubusercontent.com/25688193/29311977-8c87a916-81ee-11e7-9914-9744d08557c4.png)
 ![twitter_svm_5-2_170225](https://user-images.githubusercontent.com/25688193/29311976-8c86e2ba-81ee-11e7-87ec-5a1508130509.png)
+
+<a id="ID_9-6-1"></a>
+
+##### 多項式カーネル
 ![twitter_svm_5-3_170222](https://user-images.githubusercontent.com/25688193/29311978-8c897980-81ee-11e7-81e0-da923729128b.png)
 ![twitter_svm_5-4_170225](https://user-images.githubusercontent.com/25688193/29311979-8c93a130-81ee-11e7-8631-b7a12773ab50.png)
+
+<a id="ID_9-6-2"></a>
+
+##### 動径基底関数カーネル（RBFカーネル）[radial bases function kernel]
 ![twitter_svm_5-5_170303](https://user-images.githubusercontent.com/25688193/29311980-8ca849e6-81ee-11e7-9871-267853a4e608.png)
 ![twitter_svm_5-6_170303](https://user-images.githubusercontent.com/25688193/29311981-8ca89252-81ee-11e7-9d50-f97de95c69eb.png)
+
+<a id="ID_9-7"></a>
+
+#### 使用例 [Examples]
 ![twitter_svm_5-7_170305](https://user-images.githubusercontent.com/25688193/29311982-8ca99b66-81ee-11e7-8676-3ff2a6e792ca.png)
 ![twitter_svm_6-1_170728](https://user-images.githubusercontent.com/25688193/29311983-8caa804e-81ee-11e7-8d7a-31112a92a58f.png)
 ![twitter_svm_6-2_170728](https://user-images.githubusercontent.com/25688193/29311984-8cab9e84-81ee-11e7-88c3-102147c84341.png)
 ![twitter_svm_6-2 _170728](https://user-images.githubusercontent.com/25688193/29311985-8cb6430c-81ee-11e7-965b-ba1421d9ceb4.png)
 ![twitter_svm_6-3_170729](https://user-images.githubusercontent.com/25688193/29311986-8ccc025a-81ee-11e7-8097-6f1daf9e1a49.png)
+
+
+<a id="ID_9-8"></a>
+
+### v-サポートベクターマシン
+>記載中...
+
+</br>
 
 > 参考
 >> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
