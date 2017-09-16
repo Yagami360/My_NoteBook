@@ -24,7 +24,7 @@ This repository describe about my note (markdown format) related to science, tec
     - [統計学 [statistics] / 統計解析 [statistical analysis]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90_Note.md)
     - [多変量解析 [multivariate analysis]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90_Note.md)
     - [機械学習 [Machine Learning]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_Note.md)
-        - ニューラルネットワーク [Neural Network]
+        - [ニューラルネットワーク [Neural Network]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_NN_Note.md)
 
 - 物理学 [Physics]
     - [電磁気学 [Electromagnetism]](https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6/%E7%89%A9%E7%90%86%E5%AD%A6_%E9%9B%BB%E7%A3%81%E6%B0%97%E5%AD%A6.md)
