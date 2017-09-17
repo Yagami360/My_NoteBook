@@ -1,16 +1,23 @@
 # My_NoteBook
 
-サイエンス、テクノロジー、エンジニア関連情報を記載したオンラインマイノートを Markdown 形式で保管したリポジトリです。</br>
+サイエンス、テクノロジー、エンジニア関連情報を記載したオンラインマイノートを Markdown 形式で保管したリポジトリです。<br>
 （プログラムコードではありません）
 
-This repository describe about my note (markdown format) related to science, tech, engineers from basic to applied.</br>
+This repository describe about my note (markdown format) related to science, tech, engineers from basic to applied. <br>
 
+ここの内容を元にホームページ作成中。以下、作成中のホームページへのリンク
+
+> はてなブログ
+>> [星の本棚](http://yagami12.hatenablog.com/)
+
+> GitHub Pages & Jekyllで作成したホームページ
+>> https://Yagami360.github.io/ <br>
+>> https://Yagami360.github.io/My_Notebook <br>
 
 > Twitter : [@yagami_360](https://twitter.com/yagami_360)
->> Twitter モーメント：https://twitter.com/yagami_360/moments
->> 
+>> Twitter モーメント：https://twitter.com/yagami_360/moments 
 
-## 項目 [Contents]
+## 項目 [Contents] <p>
 
 - 数学 [Mathematics]
     - [線形代数学 [linear algebra]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md)
