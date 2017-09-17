@@ -12,7 +12,7 @@ This repository describe about my note (markdown format) related to science, tec
 
 > GitHub Pages & Jekyllで作成したホームページ
 >> https://Yagami360.github.io/ <br>
->> https://Yagami360.github.io/My_Notebook <br>
+>> https://yagami360.github.io/My_NoteBook/ <br>
 
 > Twitter : [@yagami_360](https://twitter.com/yagami_360)
 >> Twitter モーメント：https://twitter.com/yagami_360/moments 
