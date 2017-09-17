@@ -11,7 +11,7 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
 > はてなブログ
 >> [星の本棚](http://yagami12.hatenablog.com/)
 
-> GitHub Pages & Jekyllで作成したホームページ
+> GitHub Pages & Jekyll で作成中のホームページ
 >> [https://yagami360.github.io/](https://yagami360.github.io/) <br>
 >> [https://yagami360.github.io/My_NoteBook/](https://yagami360.github.io/My_NoteBook/) <br>
 
@@ -112,4 +112,3 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
             - CubeSuite+
             - IECUBE
             - カバレッジマスターwinAMS
-- [](https://github.com/Yagami360/My_NoteBook)
