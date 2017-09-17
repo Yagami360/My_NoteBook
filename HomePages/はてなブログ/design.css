@@ -1,0 +1,56 @@
+/* <system section="theme" selected="6653812171397613909"> */
+@import url("http://hatenablog.com/theme/6653812171397613909.css");
+/* </system> */
+
+/* <system section="background" selected="custom"> */
+body{ background-image: url('https://cdn-ak.f.st-hatena.com/images/fotolife/y/y034112/20170917/20170917093515.jpg'); background-repeat: no-repeat; background-color:#f5f5f5; background-attachment: scroll; background-position: center top;}
+/* </system> */
+
+/* main box */
+#main {
+float: left;
+width: 850px; 
+margin : 0px 0px 0px 0px;;
+}
+
+/* サイドバーbox */
+#box2 {
+float: right;
+width: 250px; 
+margin : 0px 0px;
+}
+
+/* グローバルナビゲーション */
+.nav {
+width: 100%; /* 幅を指定 */
+padding: 0 0; /* 余白を指定 */
+margin-left: 0px;
+margin-top: 50px;
+}
+.nav ul{
+padding: 0;
+overflow:hidden; /* 高さを出すために指定 */
+list-style-type: none; /* リストスタイルを指定 */
+background:#A9A9A9; /* 背景色を指定 */
+margin-bottom:100px; /* 枠の下周囲の余白を指定 */
+text-align: center; /* 文字を真ん中に表示 */
+height: 50px;  /* 高さを指定 */
+}
+.nav li{
+float: left; /* 左に詰めて表示をする */
+text-align: center;
+width:20%; /* 幅を指定 */
+margin: 0;
+}
+.nav li a{
+display: block; /* ブロック表示にする */
+margin: 0;
+line-height:50px; /* 高さを指定 */
+color: #fff; /* 文字色の指定 */
+font-size: 17px; /* 文字の大きさを指定 */
+text-decoration: none; /* アンダーラインを消す */
+}
+.nav a:hover{
+color: #fff799; /* マウスオーバー時の文字色を指定 */
+background:#f7546d; /* マウスオーバー時の背景色を指定 */
+}
