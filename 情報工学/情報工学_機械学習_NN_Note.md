@@ -94,10 +94,12 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 <a id="ID_1-5-2"></a>
 
 #### バッチ学習 [batch processing] とオンライン学習 [online learning]
+![image](https://user-images.githubusercontent.com/25688193/30580233-c7f83474-9d56-11e7-8a0f-38a54892e3d0.png)
 
 <a id="ID_1-5-3"></a>
 
 #### 強化学習 [reinforcement learning]
+![image](https://user-images.githubusercontent.com/25688193/30580261-dd196eea-9d56-11e7-8ae6-6f2df8557307.png)
 
 
 <a id="ID_1-6"></a>
@@ -115,11 +117,8 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 
 <a id="ID_1-6-1"></a>
 
-##### ① 回帰問題の為の損失関数（評価関数、誤差関数）
-
-##### 回帰の為の、損失関数（L2正則化、L1正則化）のグラフ
+##### ① 回帰の為の、損失関数（L2正則化、L1正則化）
 ![processingformachinelearning_tensorflow_2-1](https://user-images.githubusercontent.com/25688193/30248461-2ed858f4-9663-11e7-9e1e-880bd99ca0c7.png)
-[拡大]
 
 - L2 正則化の損失関数は、目的値への距離の２乗で表されるので、下に凸な２次関数の形状をしており、</br>
   目的値（この場合 0）の近くで急なカーブを描く。</br>
@@ -132,7 +131,11 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 <a id="ID_1-6-2"></a>
 
 ##### ② 分類問題の為の損失関数（評価関数、誤差関数）
-> 記載中...
+クラスの分類問題の為の損失関数は、現在の学習結果が与えられたデータに対してどの程度「良い感じなのか」を定量化するために使われる。（誤差逆伝播法時の計算等）<br>
+分類問題でのニューラルネットワークの最終結果は、例えば２クラスの分類問題の場合、正解は -1 or 1（又は 0 or 1）の負例と正例となる。従って、損失関数による損失は、連続な値ではなく sign 化したもの 、即ち正解ラベルと、ニューラルネットワークの出力の符号が一致しているならば損失は 0（＝分類が成功）であり、符号が一致していなければ損失は 1 となる。
+
+![processingformachinelearning_tensorflow_2-2](https://user-images.githubusercontent.com/25688193/30562465-77f470d0-9cf9-11e7-879d-dd81f6cc4679.png)
+
 
 
 <a id="ID_1-7"></a>
