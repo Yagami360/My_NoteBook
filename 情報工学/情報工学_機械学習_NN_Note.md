@@ -179,8 +179,7 @@ S= -k_B*∑ P_n*log P_n <br>
 ##### ② 分類問題の為の損失関数（評価関数、誤差関数）
 クラスの分類問題の為の損失関数は、現在の学習結果が与えられたデータに対してどの程度「良い感じなのか」を定量化するために使われる。（誤差逆伝播法時の計算等）<br>
 分類問題でのニューラルネットワークの最終結果は、例えば２クラスの分類問題の場合、正解は -1 or 1（又は 0 or 1）の負例と正例となる。従って、損失関数による損失は、連続な値ではなく sign 化したもの 、即ち正解ラベルと、ニューラルネットワークの出力の符号が一致しているならば損失は 0（＝分類が成功）であり、符号が一致していなければ損失は 1 となる。
-
-![processingformachinelearning_tensorflow_2-2](https://user-images.githubusercontent.com/25688193/30562465-77f470d0-9cf9-11e7-879d-dd81f6cc4679.png)
+![processingformachinelearning_tensorflow_2-2](https://user-images.githubusercontent.com/25688193/30594195-2d46c742-9d88-11e7-8989-585977c7865b.png)
 
 
 
