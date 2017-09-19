@@ -182,7 +182,6 @@ S= -k_B*∑ P_n*log P_n <br>
 ![processingformachinelearning_tensorflow_2-2](https://user-images.githubusercontent.com/25688193/30594195-2d46c742-9d88-11e7-8989-585977c7865b.png)
 
 
-
 <a id="ID_1-7"></a>
 
 ### ニューラルネットワークにおける基本的な学習規則（重みの更新）
@@ -208,7 +207,6 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_1-7-4"></a>
 
 #### 誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞
-![twitter_nn9-2_160902](https://user-images.githubusercontent.com/25688193/30112776-70665816-934d-11e7-95d5-fbe5e349b94c.png)
 ![twitter_nn9-2 _160903](https://user-images.githubusercontent.com/25688193/30112775-70663048-934d-11e7-8280-b27a02dc1e16.png)
 ![twitter_nn9-3_160903](https://user-images.githubusercontent.com/25688193/30112774-706594d0-934d-11e7-89a7-50814730aafe.png)
 
