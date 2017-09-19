@@ -107,6 +107,26 @@ y_i=\dfrac{e^{x_i}}{e^{x_1}+e^{x_2}+\cdots +e^{x_n}}
 
 > 参考サイト : [画像処理とか機械学習とか / Softmaxって何をしてるの？](http://hiro2o2.hatenablog.jp/entry/2016/07/21/013805)
 
+##### 【Memo】softmax 関数と統計力学での分配関数の繋がり
+ニューラルネットワークの softmax 関数の形は、<br>
+統計力学で言う所のカノニカルアンサンブルでの sub system の微視的状態を与える確率の式<br>
+P_n = e^(E_n/k_b*T) / ∑{ e^(E_n/k_b*T) } <br>
+[tex:{ P_n = \dfrac{ e^{\frac{E_n}{k_B T}} }{ \sum_{i=1}^{n} e^{ \frac{E_i}{k_B \times T } }  } } ]<br>
+の形に対応している。<br>
+
+この確率の式の分母を統計力学では分配関数<br>
+Z=∑e^(-E_n/k_B*T)　<br>
+[tex:{ Z=\sum_{i=1}^{n}e^( \frac{-E_i}{k_B \times T}　}]<br>
+といい重要な意味を持つが、これは、エントロピー最大化に繋がる話しであり、<br>
+
+Helmholtz の自由エネルギーは、この分配関数 Z を用いて、<br>
+F=-k_B*T*log Z <br>
+[tex:{ F = - k_B \times T \times \log_e Z }]<br>
+で表現できるけど、これを使えば、カノニカルアンサンブルのエントロピー S が<br>
+S= -k_B*∑ P_n*log P_n <br>
+[tex:{ S = - k_B \times \sum_{i=1}{n} P_i \times \log_e P_i }]<br>
+と書ける。これはまさに、情報理論でいうとこのシャノンの情報量に対応している。
+
 <a id="ID_1-5"></a>
 
 
