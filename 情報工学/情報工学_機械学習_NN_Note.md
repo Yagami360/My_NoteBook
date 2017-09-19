@@ -99,7 +99,9 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 従って、softmax 関数を通じて出力を確率に変換するようにする。
 この softmax 関数の式は以下のように与えられる。
 
-$$ y_i=\dfrac{e^{x_i}}{e^{x_1}+e^{x_2}+\cdots +e^{x_n}} $$
+```math
+y_i=\dfrac{e^{x_i}}{e^{x_1}+e^{x_2}+\cdots +e^{x_n}}
+```
 
 ![image](https://user-images.githubusercontent.com/25688193/30590115-37a895ae-9d78-11e7-9012-50cc868b6321.png)
 
