@@ -14,6 +14,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [活性化関数 [activate functions]](#ID_1-4)
         1. [sigmoid, tanh, softsign](#ID_1-4-1)
         1. [Relu, Relu6, softplus, ELU](#ID_1-4-2)
+            1. [ReLu 関数による勾配消失問題への対応と softmax 関数](#ID_1-4-2-1)
     1. [学習方法の分類](#ID_1-5)
         1. [教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]](#ID_1-5-1)
         1. [バッチ学習 [batch learning] とオンライン学習 [online learning]](#ID_1-5-2)
@@ -67,19 +68,42 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 ![twitter_nn2-1_160826](https://user-images.githubusercontent.com/25688193/30112640-09b4803e-934d-11e7-993d-4e35263cda81.png)
 ![twitter_nn2-2_160826](https://user-images.githubusercontent.com/25688193/30112641-09b5d6d2-934d-11e7-861d-06792890d2f9.png)
 
-> 活性化関数のグラフ１
->> 活性化関数の内、Relu, Relu6, softplus, ELU 関数の図
+<a id="ID_1-4-1"></a>
+
+#### sigmoid, tanh, softsign
+活性化関数のグラフ１
+> 活性化関数の内、Relu, Relu6, softplus, ELU 関数の図
 ![processingformachinelearning_tensorflow_1-1](https://user-images.githubusercontent.com/25688193/30203903-ac94e5ec-94be-11e7-867f-fc78b059ef44.png)
 [拡大図]
 ![processingformachinelearning_tensorflow_1-1](https://user-images.githubusercontent.com/25688193/30203883-9ac00c48-94be-11e7-888d-fff494e5d1f7.png)
 
+<a id="ID_1-4-2"></a>
 
-> 活性化関数のグラフ２
->> 活性化関数の内、sigmoid, tanh, softsign 関数の図
+#### Relu, Relu6, softplus, ELU
+活性化関数のグラフ２
+> 活性化関数の内、sigmoid, tanh, softsign 関数の図
 ![processingformachinelearning_tensorflow_1-2](https://user-images.githubusercontent.com/25688193/30211949-e16ce07a-94dd-11e7-9562-6d121aeeb59e.png)
 [拡大]
 ![processingformachinelearning_tensorflow_1-2](https://user-images.githubusercontent.com/25688193/30211950-e16e1922-94dd-11e7-9320-7b16dd6006f6.png)
 
+<a id="ID_1-4-2-1"></a>
+
+##### ReLu 関数による勾配消失問題への対応と softmax 関数
+勾配消失問題とは、ニューラルネットワークの層が深くなるにつれて、誤差逆伝播法等の学習の際に損失関数の勾配（傾き）が 0 に近くなり、低い層で誤差（損失関数値）が消失してしまい、うまく学習できなくなるような問題である。<br>
+
+この問題に対応するために開発されたのが、ReLU [rectified linear unit] や MaxOut という活性化関数である。<br>
+これらの手法では、誤差消失問題を起こさないため、深い層のネットワークでも学習が可能となり、現在多くのニューラルネットワークで採用されている。<br>
+
+但し、これらの活性化関数を通して出力される値は、先に示したグラフのように負の値が出てきたりと、そのままでは扱いづらい欠点が存在する。
+
+従って、softmax 関数を通じて出力を確率に変換するようにする。
+この softmax 関数の式は以下のように与えられる。
+
+$$ y_i=\dfrac{e^{x_i}}{e^{x_1}+e^{x_2}+\cdots +e^{x_n}} $$
+
+![image](https://user-images.githubusercontent.com/25688193/30590115-37a895ae-9d78-11e7-9012-50cc868b6321.png)
+
+> 参考サイト : [画像処理とか機械学習とか / Softmaxって何をしてるの？](http://hiro2o2.hatenablog.jp/entry/2016/07/21/013805)
 
 <a id="ID_1-5"></a>
 
