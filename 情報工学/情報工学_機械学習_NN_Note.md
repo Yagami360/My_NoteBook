@@ -31,8 +31,13 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞](#ID_1-7-4)
 1. [パーセプトロン [Perceptron] </br>（階層型ニューラルネットワーク、フィードフォワード型構造）](#ID_2)
     1. [単純パーセプトロン [Simple perceptron]](#ID_2-1)
-    1. [パーセプトロンによる論理演算](#ID_2-2)
-    1. [多層パーセプトロン [ MLP : Multilayer perceptron]](#ID_2-3)
+        1. [誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞](#ID_2-1-1)
+        1. [最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-1-2)
+    1. [多層パーセプトロン [ MLP : Multilayer perceptron]](#ID_2-2)
+        1. [最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-2-1)
+        1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞](#ID_2-2-2)
+    1. [パーセプトロンによる論理演算](#ID_2-3)
+    1. [パーセプトロンの収束定理](#ID_2-4)
 1. [畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]](#ID_3)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
@@ -203,6 +208,7 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_1-7-2-1"></a>
 
 ##### 最急降下法の単層パーセプトロンでの適用
+![image](https://user-images.githubusercontent.com/25688193/30639904-c548d7d4-9e3b-11e7-9492-ba2c6d2061ca.png)
 ![image](https://user-images.githubusercontent.com/25688193/30637199-9c51d226-9e32-11e7-9301-e9a66ca6e34c.png)
 ![image](https://user-images.githubusercontent.com/25688193/30637749-38a66b18-9e34-11e7-827a-c282cb8986c2.png)
 
@@ -221,6 +227,7 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_1-7-4"></a>
 
 #### 誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞
+> 修正中...
 ![twitter_nn9-2 _160903](https://user-images.githubusercontent.com/25688193/30112775-70663048-934d-11e7-8280-b27a02dc1e16.png)
 ![twitter_nn9-3_160903](https://user-images.githubusercontent.com/25688193/30112774-706594d0-934d-11e7-89a7-50814730aafe.png)
 
@@ -234,9 +241,50 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-1"></a>
 
 ### 単純パーセプトロン [Simple perceptron]
+> 修正中...
 ![twitter_nn4 -1_160829](https://user-images.githubusercontent.com/25688193/30112642-09b65e90-934d-11e7-9cac-2472c4add901.png)
 
+<a id="ID_2-1-1"></a>
+
+#### 誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞
+![image](https://user-images.githubusercontent.com/25688193/30514984-f1ba6d2a-9b5a-11e7-8416-0771f9f87db2.png)
+![image](https://user-images.githubusercontent.com/25688193/30628636-7a473ac4-9e12-11e7-8c4b-b342d38913e3.png)
+![image](https://user-images.githubusercontent.com/25688193/30628670-9b6ad2ba-9e12-11e7-9894-d9c52653d4a5.png)
+
+<a id="ID_2-1-2"></a>
+
+#### 最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞
+![image](https://user-images.githubusercontent.com/25688193/30624595-3a3797da-9df9-11e7-95eb-5edb913e080f.png)
+![image](https://user-images.githubusercontent.com/25688193/30639904-c548d7d4-9e3b-11e7-9492-ba2c6d2061ca.png)
+![image](https://user-images.githubusercontent.com/25688193/30637199-9c51d226-9e32-11e7-9301-e9a66ca6e34c.png)
+![image](https://user-images.githubusercontent.com/25688193/30637749-38a66b18-9e34-11e7-827a-c282cb8986c2.png)
+
+
 <a id="ID_2-2"></a>
+
+### 多層パーセプトロン [ MLP : Multilayer perceptron]
+> 修正中...
+![twitter_nn5 -1_160829](https://user-images.githubusercontent.com/25688193/30112646-09d7f8fc-934d-11e7-81fa-4cc74b1e3e39.png)
+![twitter_nn5-1_160829](https://user-images.githubusercontent.com/25688193/30112647-09da02d2-934d-11e7-96a1-a8c4592993cc.png)
+![twitter_nn9-1_160902](https://user-images.githubusercontent.com/25688193/30112773-7050f1c4-934d-11e7-9343-398900bd8a2d.png)
+
+<a id="ID_2-2-1"></a>
+
+#### 最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞
+![image](https://user-images.githubusercontent.com/25688193/30624595-3a3797da-9df9-11e7-95eb-5edb913e080f.png)
+![image](https://user-images.githubusercontent.com/25688193/30634693-e32e0104-9e2a-11e7-87d9-8b570b8af3b0.png)
+![image](https://user-images.githubusercontent.com/25688193/30634719-f9f57a84-9e2a-11e7-9de0-3d8da1268785.png)
+![image](https://user-images.githubusercontent.com/25688193/30636431-65a9b5ec-9e30-11e7-9b83-d3a87daa7513.png)
+
+<a id="ID_2-2-2"></a>
+
+#### 誤差逆伝播法（バックプロパゲーション）[Backpropagation]
+> 修正中...
+![twitter_nn9-2 _160903](https://user-images.githubusercontent.com/25688193/30112775-70663048-934d-11e7-8280-b27a02dc1e16.png)
+![twitter_nn9-3_160903](https://user-images.githubusercontent.com/25688193/30112774-706594d0-934d-11e7-89a7-50814730aafe.png)
+
+
+<a id="ID_2-3"></a>
 
 ### パーセプトロンによる論理演算
 ![twitter_nn6-1_160829](https://user-images.githubusercontent.com/25688193/30112770-703f5f68-934d-11e7-845d-be2240ef4d17.png)
@@ -244,17 +292,18 @@ S= -k_B*∑ P_n*log P_n <br>
 ![twitter_nn8-1 _160902](https://user-images.githubusercontent.com/25688193/30112777-70842ee0-934d-11e7-9486-d3d14be4d6bd.png)
 ![twitter_nn10-1_160903](https://user-images.githubusercontent.com/25688193/30112972-1a64417a-934e-11e7-96f1-775f232a2767.png)
 
-<a id="ID_2-3"></a>
+<a id="ID_2-4"></a>
 
-### 多層パーセプトロン [ MLP : Multilayer perceptron]
-![twitter_nn5 -1_160829](https://user-images.githubusercontent.com/25688193/30112646-09d7f8fc-934d-11e7-81fa-4cc74b1e3e39.png)
-![twitter_nn5-1_160829](https://user-images.githubusercontent.com/25688193/30112647-09da02d2-934d-11e7-96a1-a8c4592993cc.png)
-![twitter_nn9-1_160902](https://user-images.githubusercontent.com/25688193/30112773-7050f1c4-934d-11e7-9343-398900bd8a2d.png)
+### パーセプトロンの収束定理
+> 記載中...
 
+<br>
+---
 
 <a id="ID_5"></a>
 
 ## 連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)
+> 修正中...
 ![twitter_nn11-1_160904](https://user-images.githubusercontent.com/25688193/30112974-1a8ff1b2-934e-11e7-81de-933019772299.png)
 ![twitter_nn11-2_160904](https://user-images.githubusercontent.com/25688193/30112976-1a965e58-934e-11e7-98a7-f80bdee26b35.png)
 ![twitter_nn12-1_160904](https://user-images.githubusercontent.com/25688193/30112977-1aa3d1aa-934e-11e7-98fd-626e1a46fc30.png)
