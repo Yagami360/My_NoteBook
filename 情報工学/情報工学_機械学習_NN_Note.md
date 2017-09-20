@@ -22,13 +22,6 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [ニューラルネットワークにおける損失関数（評価関数、誤差関数）](#ID_1-6)
         1. [① 回帰問題の為の損失関数（評価関数、誤差関数）](#ID_1-6-2)
         1. [② 分類問題の為の損失関数（評価関数、誤差関数）](#ID_1-6-2)
-    1. [ニューラルネットワークにおける基本的な学習規則（重みの更新）](#ID_1-7)
-        1. [誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞](#ID_1-7-1)
-        1. [最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_1-7-2)
-            1. [最急降下法の単層パーセプトロンでの適用](#ID_1-7-2-1)
-            1. [最急降下法の多層パーセプトロンでの適用](#ID_1-7-2-2)
-        1. [確率的勾配降下法 [stochastic gradient descent mesod] </br>＜教師あり学習、オンライン学習＞](#ID_1-7-3)
-        1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞](#ID_1-7-4)
 1. [パーセプトロン [Perceptron] </br>（階層型ニューラルネットワーク、フィードフォワード型構造）](#ID_2)
     1. [単純パーセプトロン [Simple perceptron]](#ID_2-1)
         1. [誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞](#ID_2-1-1)
@@ -50,7 +43,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 <a id="ID_1-1"></a>
 
 ### 全体 MAP図
-![image](https://user-images.githubusercontent.com/25688193/30622620-bb362f1a-9ded-11e7-8052-9e07a8f762dc.png)
+![image](https://user-images.githubusercontent.com/25688193/30653154-4a7ac858-9e65-11e7-8ff1-3b31dc0ab290.png)
 
 <a id="ID_1-2"></a>
 
@@ -187,49 +180,6 @@ S= -k_B*∑ P_n*log P_n <br>
 クラスの分類問題の為の損失関数は、現在の学習結果が与えられたデータに対してどの程度「良い感じなのか」を定量化するために使われる。（誤差逆伝播法時の計算等）<br>
 分類問題でのニューラルネットワークの最終結果は、例えば２クラスの分類問題の場合、正解は -1 or 1（又は 0 or 1）の負例と正例となる。従って、損失関数による損失は、連続な値ではなく sign 化したもの 、即ち正解ラベルと、ニューラルネットワークの出力の符号が一致しているならば損失は 0（＝分類が成功）であり、符号が一致していなければ損失は 1 となる。
 ![processingformachinelearning_tensorflow_2-2](https://user-images.githubusercontent.com/25688193/30594195-2d46c742-9d88-11e7-8989-585977c7865b.png)
-
-
-<a id="ID_1-7"></a>
-
-### ニューラルネットワークにおける基本的な学習規則（重みの更新）
-
-<a id="ID_1-7-1"></a>
-
-#### 誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞
-![image](https://user-images.githubusercontent.com/25688193/30514984-f1ba6d2a-9b5a-11e7-8416-0771f9f87db2.png)
-![image](https://user-images.githubusercontent.com/25688193/30628636-7a473ac4-9e12-11e7-8c4b-b342d38913e3.png)
-![image](https://user-images.githubusercontent.com/25688193/30628670-9b6ad2ba-9e12-11e7-9894-d9c52653d4a5.png)
-
-<a id="ID_1-7-2"></a>
-
-#### 最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞
-![image](https://user-images.githubusercontent.com/25688193/30624595-3a3797da-9df9-11e7-95eb-5edb913e080f.png)
-
-<a id="ID_1-7-2-1"></a>
-
-##### 最急降下法の単層パーセプトロンでの適用
-![image](https://user-images.githubusercontent.com/25688193/30639904-c548d7d4-9e3b-11e7-9492-ba2c6d2061ca.png)
-![image](https://user-images.githubusercontent.com/25688193/30637199-9c51d226-9e32-11e7-9301-e9a66ca6e34c.png)
-![image](https://user-images.githubusercontent.com/25688193/30637749-38a66b18-9e34-11e7-827a-c282cb8986c2.png)
-
-<a id="ID_1-7-2-2"></a>
-
-##### 最急降下法の多層パーセプトロンでの適用
-![image](https://user-images.githubusercontent.com/25688193/30634693-e32e0104-9e2a-11e7-87d9-8b570b8af3b0.png)
-![image](https://user-images.githubusercontent.com/25688193/30634719-f9f57a84-9e2a-11e7-9de0-3d8da1268785.png)
-![image](https://user-images.githubusercontent.com/25688193/30636431-65a9b5ec-9e30-11e7-9b83-d3a87daa7513.png)
-
-<a id="ID_1-7-3"></a>
-
-#### 確率的勾配降下法 [stochastic gradient descent mesod] </br>＜教師あり学習、オンライン学習＞
-> 記載中...
-
-<a id="ID_1-7-4"></a>
-
-#### 誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞
-> 修正中...
-![twitter_nn9-2 _160903](https://user-images.githubusercontent.com/25688193/30112775-70663048-934d-11e7-8280-b27a02dc1e16.png)
-![twitter_nn9-3_160903](https://user-images.githubusercontent.com/25688193/30112774-706594d0-934d-11e7-89a7-50814730aafe.png)
 
 
 
