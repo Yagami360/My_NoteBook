@@ -14,7 +14,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [活性化関数 [activate functions]](#ID_1-4)
         1. [sigmoid, tanh, softsign](#ID_1-4-1)
         1. [Relu, Relu6, softplus, ELU](#ID_1-4-2)
-            1. [ReLu 関数による勾配消失問題への対応と softmax 関数](#ID_1-4-2-1)
+            1. [ReLu 関数による勾配消失問題 [vanishing gradient problem] への対応と softmax 関数](#ID_1-4-2-1)
     1. [学習方法の分類](#ID_1-5)
         1. [教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]](#ID_1-5-1)
         1. [バッチ学習 [batch learning] とオンライン学習 [online learning]](#ID_1-5-2)
@@ -43,7 +43,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 <a id="ID_1-1"></a>
 
 ### 全体 MAP図
->記載中...
+![image](https://user-images.githubusercontent.com/25688193/30622620-bb362f1a-9ded-11e7-8052-9e07a8f762dc.png)
 
 <a id="ID_1-2"></a>
 
@@ -88,8 +88,8 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 
 <a id="ID_1-4-2-1"></a>
 
-##### ReLu 関数による勾配消失問題への対応と softmax 関数
-勾配消失問題とは、ニューラルネットワークの層が深くなるにつれて、誤差逆伝播法等の学習の際に損失関数の勾配（傾き）が 0 に近くなり、低い層で誤差（損失関数値）が消失してしまい、うまく学習できなくなるような問題である。<br>
+##### ReLu 関数による勾配消失問題 [vanishing gradient problem] への対応と softmax 関数
+勾配消失問題 [vanishing gradient problem] とは、ニューラルネットワークの層が深くなるにつれて、誤差逆伝播法等の学習の際に損失関数の勾配（傾き）が 0 に近くなり、入力層に近い層で誤差（損失関数値）が消失してしまい、うまく学習できなくなるような問題である。<br>
 
 この問題に対応するために開発されたのが、ReLU [rectified linear unit] や MaxOut という活性化関数である。<br>
 これらの手法では、誤差消失問題を起こさないため、深い層のネットワークでも学習が可能となり、現在多くのニューラルネットワークで採用されている。<br>
