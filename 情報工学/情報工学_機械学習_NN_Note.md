@@ -25,6 +25,8 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [ニューラルネットワークにおける基本的な学習規則（重みの更新）](#ID_1-7)
         1. [誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞](#ID_1-7-1)
         1. [最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_1-7-2)
+            1. [最急降下法の単層パーセプトロンでの適用](ID_1-7-2-1)
+            1. [最急降下法の多層パーセプトロンでの適用](ID_1-7-2-2)
         1. [確率的勾配降下法 [stochastic gradient descent mesod] </br>＜教師あり学習、オンライン学習＞](#ID_1-7-3)
         1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞](#ID_1-7-4)
 1. [パーセプトロン [Perceptron] </br>（階層型ニューラルネットワーク、フィードフォワード型構造）](#ID_2)
@@ -190,14 +192,26 @@ S= -k_B*∑ P_n*log P_n <br>
 
 #### 誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞
 ![image](https://user-images.githubusercontent.com/25688193/30514984-f1ba6d2a-9b5a-11e7-8416-0771f9f87db2.png)
-![image](https://user-images.githubusercontent.com/25688193/30514987-0d5a91cc-9b5b-11e7-9456-598ccfa12454.png)
-![image](https://user-images.githubusercontent.com/25688193/30514996-351cd10c-9b5b-11e7-949b-aed155639537.png)
+![image](https://user-images.githubusercontent.com/25688193/30628636-7a473ac4-9e12-11e7-8c4b-b342d38913e3.png)
+![image](https://user-images.githubusercontent.com/25688193/30628670-9b6ad2ba-9e12-11e7-9894-d9c52653d4a5.png)
 
 <a id="ID_1-7-2"></a>
 
 #### 最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞
-![twitter_nn8-2 _160902](https://user-images.githubusercontent.com/25688193/30112771-7041b13c-934d-11e7-88c7-8692f42b5799.png)
-![twitter_nn8-3 _160902](https://user-images.githubusercontent.com/25688193/30112769-703f3cb8-934d-11e7-81f0-f78ef37cb2b2.png)
+![image](https://user-images.githubusercontent.com/25688193/30624595-3a3797da-9df9-11e7-95eb-5edb913e080f.png)
+
+<a id="ID_1-7-2-1"></a>
+
+##### 最急降下法の単層パーセプトロンでの適用
+![image](https://user-images.githubusercontent.com/25688193/30637199-9c51d226-9e32-11e7-9301-e9a66ca6e34c.png)
+![image](https://user-images.githubusercontent.com/25688193/30637749-38a66b18-9e34-11e7-827a-c282cb8986c2.png)
+
+<a id="ID_1-7-2-2"></a>
+
+##### 最急降下法の多層パーセプトロンでの適用
+![image](https://user-images.githubusercontent.com/25688193/30634693-e32e0104-9e2a-11e7-87d9-8b570b8af3b0.png)
+![image](https://user-images.githubusercontent.com/25688193/30634719-f9f57a84-9e2a-11e7-9de0-3d8da1268785.png)
+![image](https://user-images.githubusercontent.com/25688193/30636431-65a9b5ec-9e30-11e7-9b83-d3a87daa7513.png)
 
 <a id="ID_1-7-3"></a>
 
