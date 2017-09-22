@@ -27,6 +27,7 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
     1. [機械学習の基本的なタスク処理](#ID_1-2)
         1. [回帰のための機械学習](#ID_1-2-1)
         1. [分類のための機械学習](#ID_1-2-2)
+        1. [クラスタリングのための機械学習](#ID_1-2-3)
     1. [学習の方法、種類](#ID_1-3)
         1. [教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]](#ID_1-3-1)
         1. [バッチ学習 [batch learning] とオンライン学習 [online learning]](#ID_1-3-2)
@@ -189,6 +190,7 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
 機械学習は、大きく分けて以下の２つの問題設定＆解決のための手法に分けることが出来る。
 - ① 回帰問題の為の手法。（単回帰分析、重回帰分析、等）
 - ② （クラスの）分類問題の為の手法（SVM、k-NN、ロジスティクス回帰、等）
+- ③ クラスタリング問題の為の手法（k-means法、等）
 
 <a id="ID_1-2-1"></a>
 
@@ -200,6 +202,10 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
 #### 分類のための機械学習
 > 記載中...
 
+<a id="ID_1-2-3"></a>
+
+#### クラスタリングのための機械学習
+> 記載中...
 
 <a id="ID_1-3"></a>
 

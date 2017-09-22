@@ -54,7 +54,6 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 <a id="ID_1-2"></a>
 
 ### ニューラルネットワークの概要
-![image](https://user-images.githubusercontent.com/25688193/30514810-482d5a7c-9b57-11e7-8d8c-adc2e292203a.png)
 ![twitter_nn1_1_160825](https://user-images.githubusercontent.com/25688193/30112643-09c7ef7a-934d-11e7-91d2-fcc93505baa0.png)
 ![twitter_nn1_2_160825](https://user-images.githubusercontent.com/25688193/30112644-09c88430-934d-11e7-9450-6d4861190175.png)
 
@@ -64,9 +63,10 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 ![twitter_nn3 -1_160827](https://user-images.githubusercontent.com/25688193/30112645-09c8e42a-934d-11e7-95f9-87e0ca316b2f.png)
 
 ニューラルネットワーク、より広義には機械学習は、</br>
-大きく分けて以下の２つの問題設定＆解決のための手法に分けることが出来る。</br>
+大きく分けて以下の３つの問題設定＆解決のための手法に分けることが出来る。</br>
 ① 回帰問題の為の手法。（単回帰分析、重回帰分析、等）</br>
 ② （クラスの）分類問題の為の手法（SVM、k-NN、ロジスティクス回帰、等）</br>
+③ クラスタリング問題の為の手法（k-means法、等）
 
 <a id="ID_1-4"></a>
 
@@ -164,6 +164,7 @@ S= -k_B*∑ P_n*log P_n <br>
 大きく分けて以下の２つの問題設定＆解決のための手法に分けることが出来た。</br>
 ① 回帰問題の為の手法。（単回帰分析、重回帰分析、等）</br>
 ② （クラスの）分類問題の為の手法（SVM、k-NN、ロジスティクス回帰、等）</br>
+③ クラスタリング問題の為の手法（k-means法、等）
 
 従って、損失関数も同様にして、回帰問題の為の損失関数と、分類問題の為の損失関数が存在することになる。
 
@@ -254,8 +255,14 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-2-0"></a>
 
 #### 多層パーセプトロンのアーキテクチャ [architecture]
-> 記載中...
 ![image](https://user-images.githubusercontent.com/25688193/30747431-33745410-9fe8-11e7-883c-d4bf2e333e37.png)
+![image](https://user-images.githubusercontent.com/25688193/30760907-32b178f8-a017-11e7-8605-b087b92c9442.png)
+![image](https://user-images.githubusercontent.com/25688193/30760941-58fdbe40-a017-11e7-930e-a655b5104f29.png)
+![image](https://user-images.githubusercontent.com/25688193/30761470-541ad50a-a019-11e7-8ece-b0cf55e14cee.png)
+> 【参考 URL】softmax関数について
+>> https://mathtrain.jp/softmax<br>
+>> http://s0sem0y.hatenablog.com/entry/2016/11/30/012350<br>
+
 ![image](https://user-images.githubusercontent.com/25688193/30748067-111c05b4-9fea-11e7-8841-f6e9029ea2b4.png)
 
 <a id="ID_2-2-1"></a>
