@@ -25,9 +25,13 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 1. [パーセプトロン [Perceptron] </br>（階層型ニューラルネットワーク、フィードフォワード型構造）](#ID_2)
     1. [単純パーセプトロン [Simple perceptron]](#ID_2-1)
         1. [誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞](#ID_2-1-1)
-        1. [最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-1-2)
+            1. [使用例](#ID_2-1-1-1)
+        1. [最急降下法 [gradient descent method] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-1-2)
+            1. [使用例](#ID_2-1-2-1)
+        1. [確率的勾配降下法 [stochastic gradient descent method]](#ID_2-1-3)
+            1. [使用例](#ID_2-1-3-1)
     1. [多層パーセプトロン [ MLP : Multilayer perceptron]](#ID_2-2)
-        1. [最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-2-1)
+        1. [最急降下法 [gradient descent method] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-2-1)
         1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞](#ID_2-2-2)
     1. [パーセプトロンによる論理演算](#ID_2-3)
     1. [パーセプトロンの収束定理](#ID_2-4)
@@ -201,13 +205,39 @@ S= -k_B*∑ P_n*log P_n <br>
 ![image](https://user-images.githubusercontent.com/25688193/30628636-7a473ac4-9e12-11e7-8c4b-b342d38913e3.png)
 ![image](https://user-images.githubusercontent.com/25688193/30628670-9b6ad2ba-9e12-11e7-9894-d9c52653d4a5.png)
 
+<a id="ID_2-1-1-1"></a>
+
+##### 使用例
+![image](https://user-images.githubusercontent.com/25688193/30742460-1416beaa-9fd4-11e7-8fc0-2b7e565bf036.png)
+
 <a id="ID_2-1-2"></a>
 
-#### 最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞
+#### 最急降下法 [gradient descent method] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞
 ![image](https://user-images.githubusercontent.com/25688193/30624595-3a3797da-9df9-11e7-95eb-5edb913e080f.png)
 ![image](https://user-images.githubusercontent.com/25688193/30639904-c548d7d4-9e3b-11e7-9492-ba2c6d2061ca.png)
 ![image](https://user-images.githubusercontent.com/25688193/30637199-9c51d226-9e32-11e7-9301-e9a66ca6e34c.png)
 ![image](https://user-images.githubusercontent.com/25688193/30637749-38a66b18-9e34-11e7-827a-c282cb8986c2.png)
+
+<a id="ID_2-1-2-1"></a>
+
+##### 使用例
+![image](https://user-images.githubusercontent.com/25688193/30742859-23c08942-9fd6-11e7-98e8-22925e2c7739.png)
+![image](https://user-images.githubusercontent.com/25688193/30742886-46c8a88e-9fd6-11e7-88f0-fbd11f418483.png)
+
+![image](https://user-images.githubusercontent.com/25688193/30743071-086eb712-9fd7-11e7-83d4-cc59e6ac1995.png)
+![image](https://user-images.githubusercontent.com/25688193/30743081-1b63c196-9fd7-11e7-86f5-879868f4aed1.png)
+
+<a id="ID_2-1-3"></a>
+
+#### 確率的勾配降下法 [stochastic gradient descent method]
+バッチ学習である最急降下法をオンライン学習に改良した物。
+
+<a id="ID_2-1-3-1"></a>
+
+##### 使用例
+![image](https://user-images.githubusercontent.com/25688193/30743175-85b4ecbe-9fd7-11e7-9e02-6b3ee77e52ea.png)
+![image](https://user-images.githubusercontent.com/25688193/30743188-951dcc7a-9fd7-11e7-80ca-4b8f2c25717e.png)
+![image](https://user-images.githubusercontent.com/25688193/30743212-a8f8eb4e-9fd7-11e7-9c34-61753d36105f.png)
 
 
 <a id="ID_2-2"></a>
@@ -245,9 +275,11 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-4"></a>
 
 ### パーセプトロンの収束定理
-> 記載中...
+パーセプトロンの学習は、** 線形分離可能な問題であれば、有限回の学習の繰り返しにより収束する ** ことが証明されている。<br>
+このことをパーセプトロンの収束定理と呼ぶ。
 
 <br>
+
 ---
 
 <a id="ID_5"></a>
