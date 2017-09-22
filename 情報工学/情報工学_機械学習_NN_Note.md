@@ -24,6 +24,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [② 分類問題の為の損失関数（評価関数、誤差関数）](#ID_1-6-2)
 1. [パーセプトロン [Perceptron] </br>（階層型ニューラルネットワーク、フィードフォワード型構造）](#ID_2)
     1. [単純パーセプトロン [Simple perceptron]](#ID_2-1)
+        1. [単層パーセプトロンのアーキテクチャ [architecture]](#ID_2-1-0)
         1. [誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞](#ID_2-1-1)
             1. [使用例](#ID_2-1-1-1)
         1. [最急降下法 [gradient descent method] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-1-2)
@@ -31,6 +32,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [確率的勾配降下法 [stochastic gradient descent method]](#ID_2-1-3)
             1. [使用例](#ID_2-1-3-1)
     1. [多層パーセプトロン [ MLP : Multilayer perceptron]](#ID_2-2)
+        1. [多層パーセプトロンのアーキテクチャ [architecture]](#ID_2-2-0)
         1. [最急降下法 [gradient descent method] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-2-1)
         1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞](#ID_2-2-2)
     1. [パーセプトロンによる論理演算](#ID_2-3)
@@ -195,6 +197,10 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-1"></a>
 
 ### 単純パーセプトロン [Simple perceptron]
+
+<a id="ID_2-1-0"></a>
+
+#### 単層パーセプトロンのアーキテクチャ [architecture]
 > 修正中...
 ![twitter_nn4 -1_160829](https://user-images.githubusercontent.com/25688193/30112642-09b65e90-934d-11e7-9cac-2472c4add901.png)
 
@@ -230,7 +236,8 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-1-3"></a>
 
 #### 確率的勾配降下法 [stochastic gradient descent method]
-バッチ学習である最急降下法をオンライン学習に改良した物。
+![image](https://user-images.githubusercontent.com/25688193/30744357-b23a9252-9fdc-11e7-9ad5-70db11ed94ce.png)
+![image](https://user-images.githubusercontent.com/25688193/30744365-bf740002-9fdc-11e7-91c8-631f791384de.png)
 
 <a id="ID_2-1-3-1"></a>
 
@@ -243,10 +250,13 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-2"></a>
 
 ### 多層パーセプトロン [ MLP : Multilayer perceptron]
-> 修正中...
-![twitter_nn5 -1_160829](https://user-images.githubusercontent.com/25688193/30112646-09d7f8fc-934d-11e7-81fa-4cc74b1e3e39.png)
-![twitter_nn5-1_160829](https://user-images.githubusercontent.com/25688193/30112647-09da02d2-934d-11e7-96a1-a8c4592993cc.png)
-![twitter_nn9-1_160902](https://user-images.githubusercontent.com/25688193/30112773-7050f1c4-934d-11e7-9343-398900bd8a2d.png)
+
+<a id="ID_2-2-0"></a>
+
+#### 多層パーセプトロンのアーキテクチャ [architecture]
+> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/30747431-33745410-9fe8-11e7-883c-d4bf2e333e37.png)
+![image](https://user-images.githubusercontent.com/25688193/30748067-111c05b4-9fea-11e7-8841-f6e9029ea2b4.png)
 
 <a id="ID_2-2-1"></a>
 
