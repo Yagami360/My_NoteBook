@@ -208,9 +208,9 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-1-1"></a>
 
 #### 誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞
-![image](https://user-images.githubusercontent.com/25688193/30514984-f1ba6d2a-9b5a-11e7-8416-0771f9f87db2.png)
-![image](https://user-images.githubusercontent.com/25688193/30628636-7a473ac4-9e12-11e7-8c4b-b342d38913e3.png)
-![image](https://user-images.githubusercontent.com/25688193/30628670-9b6ad2ba-9e12-11e7-9894-d9c52653d4a5.png)
+![image](https://user-images.githubusercontent.com/25688193/30771972-171532fc-a08e-11e7-86ab-663fd81fbb75.png)
+![image](https://user-images.githubusercontent.com/25688193/30772185-7c0aca0c-a091-11e7-8a22-f258792b99df.png)
+![image](https://user-images.githubusercontent.com/25688193/30772194-922be5fa-a091-11e7-8f35-26f52b029e14.png)
 
 <a id="ID_2-1-1-1"></a>
 
@@ -221,9 +221,9 @@ S= -k_B*∑ P_n*log P_n <br>
 
 #### 最急降下法 [gradient descent method] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞
 ![image](https://user-images.githubusercontent.com/25688193/30624595-3a3797da-9df9-11e7-95eb-5edb913e080f.png)
-![image](https://user-images.githubusercontent.com/25688193/30639904-c548d7d4-9e3b-11e7-9492-ba2c6d2061ca.png)
-![image](https://user-images.githubusercontent.com/25688193/30637199-9c51d226-9e32-11e7-9301-e9a66ca6e34c.png)
-![image](https://user-images.githubusercontent.com/25688193/30637749-38a66b18-9e34-11e7-827a-c282cb8986c2.png)
+![image](https://user-images.githubusercontent.com/25688193/30772096-ec426f7a-a08f-11e7-8fa6-47ce74a29bb9.png)
+![image](https://user-images.githubusercontent.com/25688193/30772213-fbeaeaa4-a091-11e7-8838-e8ceccc4b96e.png)
+![image](https://user-images.githubusercontent.com/25688193/30772274-78479b3c-a093-11e7-8f6b-6b7ed6c29751.png)
 
 <a id="ID_2-1-2-1"></a>
 
@@ -237,8 +237,8 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-1-3"></a>
 
 #### 確率的勾配降下法 [stochastic gradient descent method]
-![image](https://user-images.githubusercontent.com/25688193/30744357-b23a9252-9fdc-11e7-9ad5-70db11ed94ce.png)
-![image](https://user-images.githubusercontent.com/25688193/30744365-bf740002-9fdc-11e7-91c8-631f791384de.png)
+![image](https://user-images.githubusercontent.com/25688193/30772388-ac53aa3c-a094-11e7-80f2-28703a2931b8.png)
+![image](https://user-images.githubusercontent.com/25688193/30772400-d949d8e0-a094-11e7-8d31-87ebc9e8913e.png)
 
 <a id="ID_2-1-3-1"></a>
 
@@ -273,9 +273,11 @@ S= -k_B*∑ P_n*log P_n <br>
 
 #### 最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞
 ![image](https://user-images.githubusercontent.com/25688193/30624595-3a3797da-9df9-11e7-95eb-5edb913e080f.png)
-![image](https://user-images.githubusercontent.com/25688193/30634693-e32e0104-9e2a-11e7-87d9-8b570b8af3b0.png)
-![image](https://user-images.githubusercontent.com/25688193/30634719-f9f57a84-9e2a-11e7-9de0-3d8da1268785.png)
-![image](https://user-images.githubusercontent.com/25688193/30636431-65a9b5ec-9e30-11e7-9b83-d3a87daa7513.png)
+![image](https://user-images.githubusercontent.com/25688193/30772455-74ac9e16-a096-11e7-99b4-69618fdd8ab8.png)
+![image](https://user-images.githubusercontent.com/25688193/30772459-81003678-a096-11e7-9601-f19f5ec3d332.png)
+![image](https://user-images.githubusercontent.com/25688193/30772515-ef1eabc0-a097-11e7-85ba-78878e943a0a.png)
+![image](https://user-images.githubusercontent.com/25688193/30772699-ffe7f8c2-a09b-11e7-8c63-02771573b7a5.png)
+![image](https://user-images.githubusercontent.com/25688193/30772701-111084a2-a09c-11e7-939e-d3f5a2198157.png)
 
 <a id="ID_2-2-2"></a>
 
