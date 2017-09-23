@@ -255,13 +255,17 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-2-0"></a>
 
 #### 多層パーセプトロンのアーキテクチャ [architecture]
-![image](https://user-images.githubusercontent.com/25688193/30747431-33745410-9fe8-11e7-883c-d4bf2e333e37.png)
+![image](https://user-images.githubusercontent.com/25688193/30770644-c6575a60-a070-11e7-9a4b-c31a0743abf7.png)
+![image](https://user-images.githubusercontent.com/25688193/30770558-ed0b3fe8-a06e-11e7-99b9-15278ee6f60e.png)
 ![image](https://user-images.githubusercontent.com/25688193/30760907-32b178f8-a017-11e7-8605-b087b92c9442.png)
-![image](https://user-images.githubusercontent.com/25688193/30760941-58fdbe40-a017-11e7-930e-a655b5104f29.png)
+![image](https://user-images.githubusercontent.com/25688193/30770651-e0155c40-a070-11e7-94b4-9fa49980ff91.png)
 ![image](https://user-images.githubusercontent.com/25688193/30761470-541ad50a-a019-11e7-8ece-b0cf55e14cee.png)
 > 【参考 URL】softmax関数について
 >> https://mathtrain.jp/softmax<br>
 >> http://s0sem0y.hatenablog.com/entry/2016/11/30/012350<br>
+
+![image](https://user-images.githubusercontent.com/25688193/30770538-6591cad2-a06e-11e7-9440-290d3957af7e.png)
+![image](https://user-images.githubusercontent.com/25688193/30770761-e01c8a26-a073-11e7-9e49-fc70a23bd63d.png)
 
 ![image](https://user-images.githubusercontent.com/25688193/30748067-111c05b4-9fea-11e7-8841-f6e9029ea2b4.png)
 
