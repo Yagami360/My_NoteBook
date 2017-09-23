@@ -33,8 +33,9 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
             1. [使用例](#ID_2-1-3-1)
     1. [多層パーセプトロン [ MLP : Multilayer perceptron]](#ID_2-2)
         1. [多層パーセプトロンのアーキテクチャ [architecture]](#ID_2-2-0)
-        1. [最急降下法 [gradient descent method] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-2-1)
-        1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]</br>＜教師あり学習＞](#ID_2-2-2)
+        1. [最急降下法 [gradient descent method] による学習（重みの更新）<br>＜教師あり学習、パッチ学習＞](#ID_2-2-1)
+        1. [確率的勾配降下法 [stochastic gradient descent method] <br>＜教師あり学習、オンライン学習＞](#ID_2-2-2)
+        1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]<br>＜教師あり学習、バッチ学習＞](#ID_2-2-3)
     1. [パーセプトロンによる論理演算](#ID_2-3)
     1. [パーセプトロンの収束定理](#ID_2-4)
 1. [畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]](#ID_3)
@@ -281,7 +282,12 @@ S= -k_B*∑ P_n*log P_n <br>
 
 <a id="ID_2-2-2"></a>
 
-#### 誤差逆伝播法（バックプロパゲーション）[Backpropagation]
+#### 確率的勾配降下法 [stochastic gradient descent method] <br>＜教師あり学習、オンライン学習＞
+> 記載中...
+
+<a id="ID_2-2-3"></a>
+
+#### 誤差逆伝播法（バックプロパゲーション）[Backpropagation] <br>＜教師あり学習、バッチ学習＞
 > 修正中...
 ![twitter_nn9-2 _160903](https://user-images.githubusercontent.com/25688193/30112775-70663048-934d-11e7-8280-b27a02dc1e16.png)
 ![twitter_nn9-3_160903](https://user-images.githubusercontent.com/25688193/30112774-706594d0-934d-11e7-89a7-50814730aafe.png)
