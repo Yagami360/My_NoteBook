@@ -50,7 +50,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 <a id="ID_1-1"></a>
 
 ### 全体 MAP図
-![image](https://user-images.githubusercontent.com/25688193/30653154-4a7ac858-9e65-11e7-8ff1-3b31dc0ab290.png)
+![image](https://user-images.githubusercontent.com/25688193/30772834-f6b8f168-a09e-11e7-91b8-f9ac62a37844.png)
 
 <a id="ID_1-2"></a>
 
@@ -283,7 +283,8 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_2-2-2"></a>
 
 #### 確率的勾配降下法 [stochastic gradient descent method] <br>＜教師あり学習、オンライン学習＞
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/30773009-98407c24-a0a2-11e7-8e94-2bad0b818786.png)
+![image](https://user-images.githubusercontent.com/25688193/30773013-a883396e-a0a2-11e7-867e-ad3e9e34188b.png)
 
 <a id="ID_2-2-3"></a>
 
