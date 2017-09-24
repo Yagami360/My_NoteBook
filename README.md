@@ -35,7 +35,7 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
         - [ニューラルネットワーク [Neural Network]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_NN_Note.md)
 
 - 物理学 [Physics]
-    - [電磁気学 [Electromagnetism]](https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6/%E7%89%A9%E7%90%86%E5%AD%A6_%E9%9B%BB%E7%A3%81%E6%B0%97%E5%AD%A6.md)
+    - [電磁気学 [Electromagnetism]（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6/%E7%89%A9%E7%90%86%E5%AD%A6_%E9%9B%BB%E7%A3%81%E6%B0%97%E5%AD%A6.md)
     - 統計力学 [statistical mechanics]
     - 剛体力学 [Rigid body dynamics]
     - 流体力学 [Fluid mechanics]
@@ -79,7 +79,7 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
     - 通信プロトコル [Communications protocol]
         - HTTP [Hypertext Transfer Protocol]
 - ゲーム開発 [Game development]
-    - [DirectX9](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA_DirextX.md)
+    - [DirectX9（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA_DirextX.md)
     - Unity
     - ゲームエンジン [Game Engine]
     - 各種シェーダー / プログラマブルシェーダー [Shader / Programmable shader]
@@ -88,8 +88,8 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
 
 - 自動車技術 [Automotive]
     - モデルベース開発 [Model-based development]
-    - [CAN通信 [Controller Area Network] / FNOS](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_CAN%E9%80%9A%E4%BF%A1.md)
-    - [AUTOSAR](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_AUTOSAR.md)
+    - [CAN通信 [Controller Area Network] / FNOS（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_CAN%E9%80%9A%E4%BF%A1.md)
+    - [AUTOSAR（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_AUTOSAR.md)
     - 機能安全 [functional safety] / ISO 26262
     - MISRA-C
     - AutomotiveSpice
