@@ -72,6 +72,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 <a id="ID_1-4"></a>
 
 ### 活性化関数 [activate functions]
+> 修正中...
 ![twitter_nn2-1_160826](https://user-images.githubusercontent.com/25688193/30112640-09b4803e-934d-11e7-993d-4e35263cda81.png)
 ![twitter_nn2-2_160826](https://user-images.githubusercontent.com/25688193/30112641-09b5d6d2-934d-11e7-861d-06792890d2f9.png)
 
@@ -79,27 +80,26 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 
 #### sigmoid, tanh, softsign
 活性化関数のグラフ１
-> 活性化関数の内、Relu, Relu6, softplus, ELU 関数の図
-![processingformachinelearning_tensorflow_1-1](https://user-images.githubusercontent.com/25688193/30203903-ac94e5ec-94be-11e7-867f-fc78b059ef44.png)
-[拡大図]
-![processingformachinelearning_tensorflow_1-1](https://user-images.githubusercontent.com/25688193/30203883-9ac00c48-94be-11e7-888d-fff494e5d1f7.png)
+> 活性化関数の内、sigmoid, tanh, softsign 関数の図
+![processingformachinelearning_tensorflow_1-2](https://user-images.githubusercontent.com/25688193/30211949-e16ce07a-94dd-11e7-9562-6d121aeeb59e.png)
 
 <a id="ID_1-4-2"></a>
 
 #### Relu, Relu6, softplus, ELU
 活性化関数のグラフ２
-> 活性化関数の内、sigmoid, tanh, softsign 関数の図
-![processingformachinelearning_tensorflow_1-2](https://user-images.githubusercontent.com/25688193/30211949-e16ce07a-94dd-11e7-9562-6d121aeeb59e.png)
-[拡大]
-![processingformachinelearning_tensorflow_1-2](https://user-images.githubusercontent.com/25688193/30211950-e16e1922-94dd-11e7-9320-7b16dd6006f6.png)
+> 活性化関数の内、Relu, Relu6, softplus, ELU 関数の図
+![processingformachinelearning_tensorflow_1-1](https://user-images.githubusercontent.com/25688193/30203903-ac94e5ec-94be-11e7-867f-fc78b059ef44.png)
+
+ReLu関数（ランプ関数）は、x=0 にて非連続で微分不可能な関数であるが、その他の領域では微分可能なので、ニューラルネットワークにおいては、微分可能な活性化関数として取り扱われることが多い。<br>
+そして、この ReLu は、勾配が一定なので、ディープネットワークにおける学習アルゴリズムにおいて発生する、勾配損失問題 [vanishing gradient problem] に対応することが出来るのが最大の利点である。（後述）
 
 <a id="ID_1-4-2-1"></a>
 
 ##### ReLu 関数による勾配消失問題 [vanishing gradient problem] への対応と softmax 関数
-勾配消失問題 [vanishing gradient problem] とは、ニューラルネットワークの層が深くなるにつれて、誤差逆伝播法等の学習の際に損失関数の勾配（傾き）が 0 に近くなり、入力層に近い層で誤差（損失関数値）が消失してしまい、うまく学習できなくなるような問題である。<br>
+勾配消失問題 [vanishing gradient problem] とは、ニューラルネットワークの層が深くなるにつれて、誤差逆伝播法等の学習の際に損失関数の勾配（傾き）が 0 に近くなり、入力層に近い層で入出力誤差が消失してしまい、結果として、うまく学習（重みの更新）ができなくなるような問題である。<br>
 
 この問題に対応するために開発されたのが、ReLU [rectified linear unit] や MaxOut という活性化関数である。<br>
-これらの手法では、誤差消失問題を起こさないため、深い層のネットワークでも学習が可能となり、現在多くのニューラルネットワークで採用されている。<br>
+これらの活性化関数では、勾配（傾き）が一定なので、誤差消失問題を起こさない。従って、深い層のネットワークでも学習が可能となり、現在多くのニューラルネットワークで採用されている。<br>
 
 但し、これらの活性化関数を通して出力される値は、先に示したグラフのように負の値が出てきたりと、そのままでは扱いづらい欠点が存在する。
 
@@ -293,10 +293,13 @@ S= -k_B*∑ P_n*log P_n <br>
 ![image](https://user-images.githubusercontent.com/25688193/30778562-c4fc9074-a113-11e7-9df5-3af84b3e26fb.png)
 ![image](https://user-images.githubusercontent.com/25688193/30778693-392d659c-a117-11e7-9a2c-8658144bc5f2.png)
 ![image](https://user-images.githubusercontent.com/25688193/30778686-14bd91be-a117-11e7-8a16-e1651534fc32.png)
+![image](https://user-images.githubusercontent.com/25688193/30779065-4543fc84-a120-11e7-82af-8028fa8e05ef.png)
+![image](https://user-images.githubusercontent.com/25688193/30779458-65f39640-a12c-11e7-848a-fb9cd82e2248.png)
 
-> 修正中...
-![twitter_nn9-2 _160903](https://user-images.githubusercontent.com/25688193/30112775-70663048-934d-11e7-8280-b27a02dc1e16.png)
-![twitter_nn9-3_160903](https://user-images.githubusercontent.com/25688193/30112774-706594d0-934d-11e7-89a7-50814730aafe.png)
+> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/30780761-9f2678bc-a14d-11e7-8dfb-7e3d5e8591e9.png)
+![image](https://user-images.githubusercontent.com/25688193/30782570-990f5922-a16f-11e7-912c-87198f0689bb.png)
+
 
 
 <a id="ID_2-3"></a>
