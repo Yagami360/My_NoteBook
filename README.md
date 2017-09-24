@@ -12,8 +12,8 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
 >> [星の本棚](http://yagami12.hatenablog.com/)
 
 > GitHub Pages & Jekyll で作成中のホームページ
->> [https://yagami360.github.io/](https://yagami360.github.io/) <br>
->> [https://yagami360.github.io/My_NoteBook/](https://yagami360.github.io/My_NoteBook/) <br>
+>> ~~[https://yagami360.github.io/](https://yagami360.github.io/)~~ <br>
+>> ~~[https://yagami360.github.io/My_NoteBook/](https://yagami360.github.io/My_NoteBook/)~~ <br>
 
 > Twitter : [@yagami_360](https://twitter.com/yagami_360) <br>
 > Twitter モーメント : [https://twitter.com/yagami_360/moments](https://twitter.com/yagami_360/moments) <br>
