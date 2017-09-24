@@ -35,7 +35,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [多層パーセプトロンのアーキテクチャ [architecture]](#ID_2-2-0)
         1. [最急降下法 [gradient descent method] による学習（重みの更新）<br>＜教師あり学習、パッチ学習＞](#ID_2-2-1)
         1. [確率的勾配降下法 [stochastic gradient descent method] <br>＜教師あり学習、オンライン学習＞](#ID_2-2-2)
-        1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]<br>＜教師あり学習、バッチ学習＞](#ID_2-2-3)
+        1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]<br>＜教師あり学習、バッチ学習 or オンライン学習＞](#ID_2-2-3)
     1. [パーセプトロンによる論理演算](#ID_2-3)
     1. [パーセプトロンの収束定理](#ID_2-4)
 1. [畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]](#ID_3)
@@ -272,12 +272,12 @@ S= -k_B*∑ P_n*log P_n <br>
 
 <a id="ID_2-2-1"></a>
 
-#### 最急降下法 [gradient descent mesod] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞
+#### 最急降下法 [gradient descent mesod] による学習（重みの更新）<br>＜教師あり学習、パッチ学習＞
 ![image](https://user-images.githubusercontent.com/25688193/30624595-3a3797da-9df9-11e7-95eb-5edb913e080f.png)
 ![image](https://user-images.githubusercontent.com/25688193/30772455-74ac9e16-a096-11e7-99b4-69618fdd8ab8.png)
-![image](https://user-images.githubusercontent.com/25688193/30772459-81003678-a096-11e7-9601-f19f5ec3d332.png)
+![image](https://user-images.githubusercontent.com/25688193/30778507-db5903a8-a112-11e7-8a5e-65e356aa2a3c.png)
 ![image](https://user-images.githubusercontent.com/25688193/30772515-ef1eabc0-a097-11e7-85ba-78878e943a0a.png)
-![image](https://user-images.githubusercontent.com/25688193/30772699-ffe7f8c2-a09b-11e7-8c63-02771573b7a5.png)
+![image](https://user-images.githubusercontent.com/25688193/30778644-0be4c496-a116-11e7-87f4-60e195830a4c.png)
 ![image](https://user-images.githubusercontent.com/25688193/30772701-111084a2-a09c-11e7-939e-d3f5a2198157.png)
 
 <a id="ID_2-2-2"></a>
@@ -288,7 +288,11 @@ S= -k_B*∑ P_n*log P_n <br>
 
 <a id="ID_2-2-3"></a>
 
-#### 誤差逆伝播法（バックプロパゲーション）[Backpropagation] <br>＜教師あり学習、バッチ学習＞
+#### 誤差逆伝播法（バックプロパゲーション）[Backpropagation] <br>＜教師あり学習、バッチ学習 or オンライン学習＞
+![image](https://user-images.githubusercontent.com/25688193/30778562-c4fc9074-a113-11e7-9df5-3af84b3e26fb.png)
+![image](https://user-images.githubusercontent.com/25688193/30778693-392d659c-a117-11e7-9a2c-8658144bc5f2.png)
+![image](https://user-images.githubusercontent.com/25688193/30778686-14bd91be-a117-11e7-8a16-e1651534fc32.png)
+
 > 修正中...
 ![twitter_nn9-2 _160903](https://user-images.githubusercontent.com/25688193/30112775-70663048-934d-11e7-8280-b27a02dc1e16.png)
 ![twitter_nn9-3_160903](https://user-images.githubusercontent.com/25688193/30112774-706594d0-934d-11e7-89a7-50814730aafe.png)
