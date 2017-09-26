@@ -22,7 +22,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [ニューラルネットワークにおける損失関数（評価関数、誤差関数）](#ID_1-6)
         1. [① 回帰問題の為の損失関数（評価関数、誤差関数）](#ID_1-6-2)
         1. [② 分類問題の為の損失関数（評価関数、誤差関数）](#ID_1-6-2)
-1. [パーセプトロン [Perceptron] </br>（階層型ニューラルネットワーク、フィードフォワード型構造）](#ID_2)
+1. [パーセプトロン [Perceptron] <br>（階層型ニューラルネットワーク、フィードフォワード型構造）](#ID_2)
     1. [単純パーセプトロン [Simple perceptron]](#ID_2-1)
         1. [単層パーセプトロンのアーキテクチャ [architecture]](#ID_2-1-0)
         1. [誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞](#ID_2-1-1)
@@ -296,9 +296,9 @@ S= -k_B*∑ P_n*log P_n <br>
 ![image](https://user-images.githubusercontent.com/25688193/30779065-4543fc84-a120-11e7-82af-8028fa8e05ef.png)
 ![image](https://user-images.githubusercontent.com/25688193/30779458-65f39640-a12c-11e7-848a-fb9cd82e2248.png)
 
-> 記載中...
 ![image](https://user-images.githubusercontent.com/25688193/30780761-9f2678bc-a14d-11e7-8dfb-7e3d5e8591e9.png)
-![image](https://user-images.githubusercontent.com/25688193/30782570-990f5922-a16f-11e7-912c-87198f0689bb.png)
+![image](https://user-images.githubusercontent.com/25688193/30846403-832289f4-a2d2-11e7-9dc7-2842bba5abf9.png)
+![image](https://user-images.githubusercontent.com/25688193/30850059-4522b9aa-a2df-11e7-87b2-77b4b689dfd4.png)
 
 
 
