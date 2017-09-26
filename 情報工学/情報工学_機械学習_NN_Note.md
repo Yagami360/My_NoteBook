@@ -38,7 +38,11 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]<br>＜教師あり学習、バッチ学習 or オンライン学習＞](#ID_2-2-3)
     1. [パーセプトロンによる論理演算](#ID_2-3)
     1. [パーセプトロンの収束定理](#ID_2-4)
-1. [畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]](#ID_3)
+1. [畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]<br>＜階層型ニューラルネットワーク、フィードフォワード型構造＞](#ID_3)
+    1. [畳み込みニューラルネットワークの基本アーキテクチャ](#ID_3-1)
+    1. [畳み込み [convolution] 処理について](#ID_3-2)
+    1. [プーリング [pooling] 処理について](#ID_3-3)
+1. [再帰ニューラルネット [[RNN : Recursive Neural Network]]](#ID_4)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
 1. [](#ID_x)
@@ -317,6 +321,30 @@ S= -k_B*∑ P_n*log P_n <br>
 このことをパーセプトロンの収束定理と呼ぶ。
 
 <br>
+
+---
+
+<a id="ID_3"></a>
+
+## 畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]<br>＜階層型ニューラルネットワーク、フィードフォワード型構造＞
+![image](https://user-images.githubusercontent.com/25688193/30858595-4e038b96-a2fb-11e7-9ac2-4e7131148034.png)
+![image](https://user-images.githubusercontent.com/25688193/30858698-b2379058-a2fb-11e7-8bd2-53908707fb2a.png)
+
+<a id="ID_3-1"></a>
+
+### 畳み込みニューラルネットワークの基本アーキテクチャ
+> 記載中...
+
+<a id="ID_3-2"></a>
+
+### 畳み込み [convolution] 処理について
+> 記載中...
+
+<a id="ID_3-3"></a>
+
+### プーリング [pooling] 処理について
+> 記載中...
+
 
 ---
 
