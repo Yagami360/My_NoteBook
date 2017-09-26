@@ -45,7 +45,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 1. [再帰ニューラルネット [[RNN : Recursive Neural Network]]](#ID_4)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
-1. [](#ID_x)
+1. [参考文献](#参考文献)
 
 <a id="ID_1"></a>
 
@@ -340,6 +340,24 @@ S= -k_B*∑ P_n*log P_n <br>
 ### 畳み込み [convolution] 処理について
 > 記載中...
 
+![image](https://user-images.githubusercontent.com/25688193/30863721-af4cee86-a30c-11e7-8d6d-b47244badc03.png)
+![image](https://user-images.githubusercontent.com/25688193/30867484-0d67583a-a317-11e7-9740-d2449e794990.png)
+
+![image](https://user-images.githubusercontent.com/25688193/30872260-6c4409fe-a324-11e7-8758-9a9625a5283d.png)
+![image](https://user-images.githubusercontent.com/25688193/30872283-77425900-a324-11e7-9cfc-4f7346cbada9.png)
+![image](https://user-images.githubusercontent.com/25688193/30872618-adff2058-a325-11e7-94c5-7620941d8a43.png)
+![image](https://user-images.githubusercontent.com/25688193/30874529-9e6564d0-a32b-11e7-904e-a08960e693f3.png)
+![image](https://user-images.githubusercontent.com/25688193/30874745-3e52abce-a32c-11e7-9492-71b7f4f072e5.png)
+![image](https://user-images.githubusercontent.com/25688193/30874981-f4e58672-a32c-11e7-952e-658c105c4782.png)
+![image](https://user-images.githubusercontent.com/25688193/30874489-6f731b90-a32b-11e7-94ad-0025899d76e4.png)
+
+
+
+> 参考サイト
+>> [定番のConvolutional Neural Networkをゼロから理解する#畳み込みとは](https://deepage.net/deep_learning/2016/11/07/convolutional_neural_network.html#畳み込みとは)
+
+
+
 <a id="ID_3-3"></a>
 
 ### プーリング [pooling] 処理について
@@ -359,3 +377,42 @@ S= -k_B*∑ P_n*log P_n <br>
 ![twitter_nn14-1_160905](https://user-images.githubusercontent.com/25688193/30112978-1aa4cc4a-934e-11e7-9a7b-97c4f9d415b5.png)
 ![twitter_nn14-2_160905](https://user-images.githubusercontent.com/25688193/30112973-1a8f9122-934e-11e7-8ef0-2b0f82c00645.png)
 ![twitter_nn15-1_160905](https://user-images.githubusercontent.com/25688193/30112979-1abb3e26-934e-11e7-8e8d-23a72b07fe7c.png)
+
+
+<a name="参考文献"></a>
+
+## 参考文献
+
+> はじめてのパターン認識 </br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98-%E5%B9%B3%E4%BA%95-%E6%9C%89%E4%B8%89/dp/4627849710?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4627849710)</br>
+
+> 深層学習: Deep Learning</br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92-Deep-Learning-%E7%9B%A3%E4%BF%AE-%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E5%AD%A6%E4%BC%9A/dp/476490487X)
+
+> 複素ニューラルネットワーク(第2版) 2016年 06 月号 [雑誌]: 数理科学 別冊</br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/%E8%A4%87%E7%B4%A0%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF-%E7%AC%AC2%E7%89%88-2016%E5%B9%B4-06-%E6%9C%88%E5%8F%B7/dp/B01GU5F48Q?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01GU5F48Q)
+
+> Python機械学習プログラミング 達人データサイエンティストによる理論と実践 (impress top gear)</br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/Python%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-%E9%81%94%E4%BA%BA%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AB%E3%82%88%E3%82%8B%E7%90%86%E8%AB%96%E3%81%A8%E5%AE%9F%E8%B7%B5-impress-top-gear/dp/4844380605)
+
+> TensorFlow機械学習クックブック Pythonベースの活用レシピ60+</br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/TensorFlow%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%AF%E3%83%83%E3%82%AF%E3%83%96%E3%83%83%E3%82%AF-Python%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%B4%BB%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%9460-impress-top-gear/dp/4295002003?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4295002003)
+
+---
+
+以下、同様の文献（はてなブログ形式）
+
+<!-- はじめてのパターン認識 -->
+[asin:4627849710:detail]
+
+<!-- Python機械学習プログラミング 達人データサイエンティストによる理論と実践 -->
+[asin:B01HGIPIAK:detail]
+
+<!-- 深層学習: Deep Learning -->
+[asin:476490487X:detail]
+
+<!-- 複素ニューラルネットワーク -->
+[asin:B01GU5F48Q:detail]
+
+<!-- TensorFlow機械学習クックブック Pythonベースの活用レシピ60+ -->
+[asin:4295002003:detail]
