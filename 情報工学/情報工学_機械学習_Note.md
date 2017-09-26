@@ -1,8 +1,8 @@
-# 機械学習 [Machine Learning] / パターン認識 [Pattern recognition]
+# 機械学習 [Machine Learning]
 
-機械学習、パターン認識に関してのマイノートです。今後も随時追加予定です。
+機械学習に関してのマイノートです。今後も随時追加予定です。
 
-This is my notebook that summarizes about "Machine Learning" and "Pattern recognition". I will add contents as needed.
+This is my notebook that summarizes about "Machine Learning". I will add contents as needed.
 
 ![s_](https://user-images.githubusercontent.com/25688193/29311672-d5cb20c2-81ed-11e7-9c44-002fe0eb0873.png)
 
@@ -169,10 +169,7 @@ This is my notebook that summarizes about "Machine Learning" and "Pattern recogn
     1. [ベクトル量子化 [QV : quantization vector]](#ID_12-2)
         1. [k-means 法](#ID_12-2-1)
         1. [学習ベクトル量子化 [LQV : leaning quantization vector]](#ID_12-2-2)
-1. [パターン認識 [pattern recognition]](#ID_x)
-    1. [](#ID_x-x)
 1. [参考文献](#参考文献)
-1. [](#ID_x)
 
 
 <a id="ID_1"></a>
@@ -1228,3 +1225,45 @@ PCAによる次元の削除
 
 > TensorFlow機械学習クックブック Pythonベースの活用レシピ60+</br>
 > [amazonで詳細を見る](https://www.amazon.co.jp/TensorFlow%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%AF%E3%83%83%E3%82%AF%E3%83%96%E3%83%83%E3%82%AF-Python%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%B4%BB%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%9460-impress-top-gear/dp/4295002003?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4295002003)
+
+---
+
+以下、同様の文献（はてなブログ形式）
+
+<!-- はじめてのパターン認識 -->
+[asin:4627849710:detail]
+
+<!-- パターン認識と機械学習 上（ベイズ理論による統計的予測） -->
+[asin:4621061224:detail]
+
+<!-- パターン認識と機械学習 下（ベイズ理論による統計的予測） -->
+[asin:4621061240:detail]
+
+<!-- パターン認識と機械学習の学習普及版―ベイズ理論に負けないための数学 -->
+[asin:4873100933:detail]
+
+<!-- 情報理論の基礎―情報と学習の直観的理解のために (SGC Books) -->
+[asin:4781912125:detail]
+
+<!-- 言語処理のための機械学習入門 -->
+[asin:4339027510:detail]
+
+<!-- 情報数理の基礎と応用 (ライブラリ情報学コア・テキスト) -->
+[asin:4781912109:detail]
+
+<!-- Python機械学習プログラミング 達人データサイエンティストによる理論と実践 -->
+[asin:B01HGIPIAK:detail]
+
+<!-- Excelで学ぶ多変量解析―資料に隠れた大切な関係は多変量解析を駆使してあぶり出す -->
+[asin:481633968X:detail]
+
+<!-- 深層学習: Deep Learning -->
+[asin:476490487X:detail]
+
+<!-- 複素ニューラルネットワーク -->
+[asin:B01GU5F48Q:detail]
+
+<!-- TensorFlow機械学習クックブック Pythonベースの活用レシピ60+ -->
+[asin:4295002003:detail]
+
+
