@@ -41,6 +41,11 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 1. [畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]<br>＜階層型ニューラルネットワーク、フィードフォワード型構造＞](#ID_3)
     1. [畳み込みニューラルネットワークの基本アーキテクチャ](#ID_3-1)
     1. [畳み込み [convolution] 処理について](#ID_3-2)
+        1. [畳み込みの数学的な一般的な定義](#ID_3-2-1)
+        1. [畳み込みニューラルネットワークにおける畳み込み](#ID_3-2-2)
+        1. [畳み込みニューラルネットワークにおける畳み込み処理の具体的な例（画像データとそのフィルタ処理）](#ID_3-2-3)
+        1. [より一般化した畳み込み層のアーキテクチャの元での定式化](#ID_3-2-4)
+        1. [受容野の観点から見た、畳み込み層](#ID_3-2-5)
     1. [プーリング [pooling] 処理について](#ID_3-3)
 1. [再帰ニューラルネット [[RNN : Recursive Neural Network]]](#ID_4)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
@@ -328,7 +333,7 @@ S= -k_B*∑ P_n*log P_n <br>
 
 ## 畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]<br>＜階層型ニューラルネットワーク、フィードフォワード型構造＞
 ![image](https://user-images.githubusercontent.com/25688193/30858595-4e038b96-a2fb-11e7-9ac2-4e7131148034.png)
-![image](https://user-images.githubusercontent.com/25688193/30858698-b2379058-a2fb-11e7-8bd2-53908707fb2a.png)
+![image](https://user-images.githubusercontent.com/25688193/30904563-47b0fd48-a3ad-11e7-8d6c-c1f3c2751131.png)
 
 <a id="ID_3-1"></a>
 
@@ -338,11 +343,20 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_3-2"></a>
 
 ### 畳み込み [convolution] 処理について
-> 記載中...
 
+<a id="ID_3-2-1"></a>
+
+#### 畳み込みの数学的な一般的な定義
 ![image](https://user-images.githubusercontent.com/25688193/30863721-af4cee86-a30c-11e7-8d6d-b47244badc03.png)
+
+<a id="ID_3-2-2"></a>
+
+#### 畳み込みニューラルネットワークにおける畳み込み
 ![image](https://user-images.githubusercontent.com/25688193/30867484-0d67583a-a317-11e7-9740-d2449e794990.png)
 
+<a id="ID_3-2-3"></a>
+
+#### 畳み込みニューラルネットワークにおける畳み込み処理の具体的な例（画像データとそのフィルタ処理）
 ![image](https://user-images.githubusercontent.com/25688193/30872260-6c4409fe-a324-11e7-8758-9a9625a5283d.png)
 ![image](https://user-images.githubusercontent.com/25688193/30872283-77425900-a324-11e7-9cfc-4f7346cbada9.png)
 ![image](https://user-images.githubusercontent.com/25688193/30872618-adff2058-a325-11e7-94c5-7620941d8a43.png)
@@ -354,11 +368,23 @@ S= -k_B*∑ P_n*log P_n <br>
 > 参考サイト
 >> [定番のConvolutional Neural Networkをゼロから理解する#畳み込みとは](https://deepage.net/deep_learning/2016/11/07/convolutional_neural_network.html#畳み込みとは)
 
+<a id="ID_3-2-4"></a>
+
+#### より一般化した畳み込み層のアーキテクチャの元での定式化
 ![image](https://user-images.githubusercontent.com/25688193/30882264-5eba369a-a343-11e7-84e3-57b5c66c28e7.png)
 ![image](https://user-images.githubusercontent.com/25688193/30882273-6c7c3e9a-a343-11e7-8225-893c3bde3700.png)
 ![image](https://user-images.githubusercontent.com/25688193/30882308-7f8b6a06-a343-11e7-9f50-0288bbfd944b.png)
 ![image](https://user-images.githubusercontent.com/25688193/30884134-648f29e4-a349-11e7-9d14-06b4490f77ff.png)
 ![image](https://user-images.githubusercontent.com/25688193/30884989-9c766018-a34c-11e7-8cf2-adfd0cc891a1.png)
+
+<a id="ID_3-2-5"></a>
+
+#### 受容野の観点から見た、畳み込み層
+![image](https://user-images.githubusercontent.com/25688193/30904710-b736ff00-a3ad-11e7-9a4c-f73f76f71cc3.png)
+![image](https://user-images.githubusercontent.com/25688193/30906526-11838550-a3b3-11e7-87f5-07da6e7d768e.png)
+![image](https://user-images.githubusercontent.com/25688193/30905280-54025c7a-a3af-11e7-949f-25e6f90028d6.png)
+
+
 
 <a id="ID_3-3"></a>
 
