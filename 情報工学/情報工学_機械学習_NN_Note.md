@@ -374,15 +374,15 @@ S= -k_B*∑ P_n*log P_n <br>
 ![image](https://user-images.githubusercontent.com/25688193/30882264-5eba369a-a343-11e7-84e3-57b5c66c28e7.png)
 ![image](https://user-images.githubusercontent.com/25688193/30882273-6c7c3e9a-a343-11e7-8225-893c3bde3700.png)
 ![image](https://user-images.githubusercontent.com/25688193/30882308-7f8b6a06-a343-11e7-9f50-0288bbfd944b.png)
-![image](https://user-images.githubusercontent.com/25688193/30884134-648f29e4-a349-11e7-9d14-06b4490f77ff.png)
+![image](https://user-images.githubusercontent.com/25688193/30926162-3e669cf6-a3ef-11e7-8732-086483b4a2ec.png)
 ![image](https://user-images.githubusercontent.com/25688193/30884989-9c766018-a34c-11e7-8cf2-adfd0cc891a1.png)
 
 <a id="ID_3-2-5"></a>
 
 #### 受容野の観点から見た、畳み込み層
 ![image](https://user-images.githubusercontent.com/25688193/30904710-b736ff00-a3ad-11e7-9a4c-f73f76f71cc3.png)
-![image](https://user-images.githubusercontent.com/25688193/30906526-11838550-a3b3-11e7-87f5-07da6e7d768e.png)
-![image](https://user-images.githubusercontent.com/25688193/30905280-54025c7a-a3af-11e7-949f-25e6f90028d6.png)
+![image](https://user-images.githubusercontent.com/25688193/30926213-5d706af0-a3ef-11e7-84c9-0216233e73ee.png)
+![image](https://user-images.githubusercontent.com/25688193/30926318-abde4d10-a3ef-11e7-900a-8d9eb2842995.png)
 
 
 
@@ -391,6 +391,12 @@ S= -k_B*∑ P_n*log P_n <br>
 ### プーリング [pooling] 処理について
 > 記載中...
 
+
+---
+
+<a id="ID_4"></a>
+
+## 再帰ニューラルネット [[RNN : Recursive Neural Network]]
 
 ---
 
