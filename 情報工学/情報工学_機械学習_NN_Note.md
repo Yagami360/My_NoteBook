@@ -62,6 +62,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. タイル型畳み込み [Tiled convolution]<br>（プーリング層における移動不変性 [location invariant]の拡張）
     1. 逆畳み込みネットワーク [deconvolutional network]<br>（CNN の可視化）
 1. [回帰結合ニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
+    1. [回帰結合ニューラルネットワークのアーキテクチャの種類](#ID_4-1)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
 1. [参考文献](#参考文献)
@@ -430,8 +431,11 @@ S= -k_B*∑ P_n*log P_n <br>
 
 ## 回帰結合ニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞
 ![image](https://user-images.githubusercontent.com/25688193/30980712-f06a0906-a4bc-11e7-9b15-4c46834dd6d2.png)
-![image](https://user-images.githubusercontent.com/25688193/30980721-fc266a0a-a4bc-11e7-94cb-1dbd6cf37007.png)
+![image](https://user-images.githubusercontent.com/25688193/30981066-22f53124-a4be-11e7-9111-9514f04aed7c.png)
 
+<a id="ID_4-1"></a>
+
+### 回帰結合ニューラルネットワークのアーキテクチャの種類
 
 ---
 
