@@ -47,6 +47,9 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [より一般化した畳み込み層のアーキテクチャの元での定式化](#ID_3-2-4)
         1. [受容野の観点から見た、畳み込み層](#ID_3-2-5)
     1. [プーリング [pooling] 処理について](#ID_3-3)
+        1. [平均プーリング [average pooling]](#ID_3-3-1)
+        1. [最大プーリング [max pooling]](#ID_3-3-2)
+        1. [Lp プーリング [Lp pooling]](#ID_3-3-3)
 1. [再帰ニューラルネット [[RNN : Recursive Neural Network]]](#ID_4)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
@@ -316,8 +319,6 @@ S= -k_B*∑ P_n*log P_n <br>
 ### パーセプトロンによる論理演算
 ![twitter_nn6-1_160829](https://user-images.githubusercontent.com/25688193/30112770-703f5f68-934d-11e7-845d-be2240ef4d17.png)
 ![twitter_nn6-2_160829](https://user-images.githubusercontent.com/25688193/30112772-7042419c-934d-11e7-9330-d8292a108c1c.png)
-![twitter_nn8-1 _160902](https://user-images.githubusercontent.com/25688193/30112777-70842ee0-934d-11e7-9486-d3d14be4d6bd.png)
-![twitter_nn10-1_160903](https://user-images.githubusercontent.com/25688193/30112972-1a64417a-934e-11e7-96f1-775f232a2767.png)
 
 <a id="ID_2-4"></a>
 
@@ -389,8 +390,24 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_3-3"></a>
 
 ### プーリング [pooling] 処理について
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/30928885-c94bc0b4-a3f7-11e7-9b83-a86dd44abc95.png)
+![image](https://user-images.githubusercontent.com/25688193/30928920-d8cf1b94-a3f7-11e7-86b7-3ab149639139.png)
+![image](https://user-images.githubusercontent.com/25688193/30947089-aa6e4b62-a442-11e7-94c5-39b4a52f59e1.png)
 
+<a id="ID_3-3-1"></a>
+
+#### 平均プーリング [average pooling]
+![image](https://user-images.githubusercontent.com/25688193/30947132-dfbf6eb8-a442-11e7-9b23-d6eeadc5e951.png)
+
+<a id="ID_3-3-2"></a>
+
+#### 最大プーリング [max pooling]
+![image](https://user-images.githubusercontent.com/25688193/30947702-286b95c6-a446-11e7-92a2-6a4cd87dd706.png)
+
+<a id="ID_3-3-3"></a>
+
+#### Lp プーリング [Lp pooling]
+![image](https://user-images.githubusercontent.com/25688193/30948182-27d90abe-a449-11e7-869d-4d14fbe22904.png)
 
 ---
 
@@ -431,6 +448,13 @@ S= -k_B*∑ P_n*log P_n <br>
 
 > TensorFlow機械学習クックブック Pythonベースの活用レシピ60+</br>
 > [amazonで詳細を見る](https://www.amazon.co.jp/TensorFlow%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%AF%E3%83%83%E3%82%AF%E3%83%96%E3%83%83%E3%82%AF-Python%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%B4%BB%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%9460-impress-top-gear/dp/4295002003?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4295002003)
+>> 本書のレビュー記事 :<br> 
+>> [【書籍紹介】TensorFlow機械学習クックブック](http://s0sem0y.hatenablog.com/entry/2017/09/08/005322)
+
+> 詳解 ディープラーニング ~ TensorFlow・Keras による時系列データ処理</br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/exec/obidos/ASIN/4839962510/hikarus0sem0y-22/)<br>
+>> 本書のレビュー記事 :<br> 
+>> [【書籍紹介】詳解ディープラーニング TensorFlow・Kerasによる時系列データ処理](http://s0sem0y.hatenablog.com/entry/2017/06/25/025725)
 
 ---
 
@@ -450,3 +474,6 @@ S= -k_B*∑ P_n*log P_n <br>
 
 <!-- TensorFlow機械学習クックブック Pythonベースの活用レシピ60+ -->
 [asin:4295002003:detail]
+
+<!-- 詳解 ディープラーニング ~ TensorFlow・Keras による時系列データ処理 ~-->
+[asin:4839962510:detail]
