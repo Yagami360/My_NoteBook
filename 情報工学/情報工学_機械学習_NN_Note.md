@@ -18,14 +18,15 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [学習方法の分類](#ID_1-5)
         1. [教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]](#ID_1-5-1)
         1. [バッチ学習 [batch learning] とオンライン学習 [online learning]](#ID_1-5-2)
-        1. [強化学習 [reinforcement learning]](#ID_1-5-1)
+        1. [強化学習 [reinforcement learning]](#ID_1-5-3)
+        1. [転移学習 [transfer learning]](#ID_1-5-4)
     1. [ニューラルネットワークにおける損失関数（評価関数、誤差関数）](#ID_1-6)
         1. [① 回帰問題の為の損失関数（評価関数、誤差関数）](#ID_1-6-2)
         1. [② 分類問題の為の損失関数（評価関数、誤差関数）](#ID_1-6-2)
 1. [パーセプトロン [Perceptron] <br>（階層型ニューラルネットワーク、フィードフォワード型構造）](#ID_2)
     1. [単純パーセプトロン [Simple perceptron]](#ID_2-1)
         1. [単層パーセプトロンのアーキテクチャ [architecture]](#ID_2-1-0)
-        1. [誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）</br>＜教師あり学習、オンライン学習＞](#ID_2-1-1)
+        1. [誤り訂正学習 [error correction learning rule]（パーセプトロンの学習規則 [perceptron learing rule] ）<br>＜教師あり学習、オンライン学習＞](#ID_2-1-1)
             1. [使用例](#ID_2-1-1-1)
         1. [最急降下法 [gradient descent method] による学習（重みの更新）</br>＜教師あり学習、パッチ学習＞](#ID_2-1-2)
             1. [使用例](#ID_2-1-2-1)
@@ -36,6 +37,11 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [最急降下法 [gradient descent method] による学習（重みの更新）<br>＜教師あり学習、パッチ学習＞](#ID_2-2-1)
         1. [確率的勾配降下法 [stochastic gradient descent method] <br>＜教師あり学習、オンライン学習＞](#ID_2-2-2)
         1. [誤差逆伝播法（バックプロパゲーション）[Backpropagation]<br>＜教師あり学習、バッチ学習 or オンライン学習＞](#ID_2-2-3)
+            1. 誤差逆伝播法の学習特性
+                1. 初期化依存性
+                1. 中間層のノードの数と識別能力
+                1. 中間層の数（層の深さ）と識別能力
+                1. 過学習と正則化
     1. [パーセプトロンによる論理演算](#ID_2-3)
     1. [パーセプトロンの収束定理](#ID_2-4)
 1. [畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]<br>＜階層型ニューラルネットワーク、フィードフォワード型構造＞](#ID_3)
@@ -50,7 +56,12 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [平均プーリング [average pooling]](#ID_3-3-1)
         1. [最大プーリング [max pooling]](#ID_3-3-2)
         1. [Lp プーリング [Lp pooling]](#ID_3-3-3)
-1. [再帰ニューラルネット [[RNN : Recursive Neural Network]]](#ID_4)
+    1. CNN と 一般物体認識
+        1. 局所特徴と大域特徴
+    1. 一般物体認識を学習した CNN と転移学習
+    1. タイル型畳み込み [Tiled convolution]<br>（プーリング層における移動不変性 [location invariant]の拡張）
+    1. 逆畳み込みネットワーク [deconvolutional network]<br>（CNN の可視化）
+1. [回帰結合ニューラルネットワーク [RNN : Recursive Neural Network]](#ID_4)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
 1. [参考文献](#参考文献)
@@ -62,7 +73,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 <a id="ID_1-1"></a>
 
 ### 全体 MAP図
-![image](https://user-images.githubusercontent.com/25688193/30772834-f6b8f168-a09e-11e7-91b8-f9ac62a37844.png)
+![image](https://user-images.githubusercontent.com/25688193/30951582-c3720dc6-a45e-11e7-85af-1592d6020f8f.png)
 
 <a id="ID_1-2"></a>
 
@@ -154,7 +165,7 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_1-5-1"></a>
 
 #### 教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/30948617-1cb9a46a-a44c-11e7-824b-1f0f23f6780a.png)
 
 <a id="ID_1-5-2"></a>
 
@@ -166,6 +177,10 @@ S= -k_B*∑ P_n*log P_n <br>
 #### 強化学習 [reinforcement learning]
 ![image](https://user-images.githubusercontent.com/25688193/30580261-dd196eea-9d56-11e7-8ae6-6f2df8557307.png)
 
+<a id="ID_1-5-4"></a>
+
+#### 転移学習 [transfer learning]
+![image](https://user-images.githubusercontent.com/25688193/30949112-85641f60-a44f-11e7-9430-a0a2fd068e1e.png)
 
 <a id="ID_1-6"></a>
 
@@ -202,7 +217,7 @@ S= -k_B*∑ P_n*log P_n <br>
 ![processingformachinelearning_tensorflow_2-2](https://user-images.githubusercontent.com/25688193/30594195-2d46c742-9d88-11e7-8989-585977c7865b.png)
 
 
-
+---
 
 <a id="ID_2"></a>
 
@@ -413,7 +428,7 @@ S= -k_B*∑ P_n*log P_n <br>
 
 <a id="ID_4"></a>
 
-## 再帰ニューラルネット [[RNN : Recursive Neural Network]]
+## 回帰結合ニューラルネットワーク [RNN : Recursive Neural Network]
 
 ---
 
