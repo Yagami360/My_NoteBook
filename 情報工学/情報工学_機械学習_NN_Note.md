@@ -61,11 +61,13 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. 一般物体認識を学習した CNN と転移学習
     1. タイル型畳み込み [Tiled convolution]<br>（プーリング層における移動不変性 [location invariant]の拡張）
     1. 逆畳み込みネットワーク [deconvolutional network]<br>（CNN の可視化）
-1. [回帰結合ニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
+1. [リカレントニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
     1. [回帰結合ニューラルネットワークのアーキテクチャの種類](#ID_4-1)
         1. [隠れ層間で回帰構造をもつネットワーク](#ID_4-1-1)
             1. [通時的誤差逆伝搬法 [BPTT : back-propagation through time]](#ID_4-1-1-1)
         1. [隠教師強制と出力層間での回帰構造をもつネットワーク](#ID_4-1-2)
+    1. LSTM [long short-term memory]
+    1. GRU [gated recurrent unit]
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
 1. [参考文献](#参考文献)
@@ -434,13 +436,13 @@ S= -k_B*∑ P_n*log P_n <br>
 
 <a id="ID_4"></a>
 
-## 回帰結合ニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞
+## リカレントニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞
 ![image](https://user-images.githubusercontent.com/25688193/30980712-f06a0906-a4bc-11e7-9b15-4c46834dd6d2.png)
 ![image](https://user-images.githubusercontent.com/25688193/30981066-22f53124-a4be-11e7-9111-9514f04aed7c.png)
 
 <a id="ID_4-1"></a>
 
-### 回帰結合ニューラルネットワークのアーキテクチャの種類
+### リカレントニューラルネットワーク（RNN）のアーキテクチャの種類
 
 <a id="ID_4-1-1"></a>
 
@@ -453,7 +455,9 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_4-1-1-1"></a>
 
 ##### 通時的誤差逆伝搬法 [BPTT : back-propagation through time]
-記載中...
+![image](https://user-images.githubusercontent.com/25688193/31018664-dacf44d4-a567-11e7-8014-34523646bfca.png)
+![image](https://user-images.githubusercontent.com/25688193/31019688-7725288c-a56b-11e7-919d-d0be44d4be33.png)
+
 
 <a id="ID_4-1-2"></a>
 
