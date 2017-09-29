@@ -63,9 +63,14 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. 逆畳み込みネットワーク [deconvolutional network]<br>（CNN の可視化）
 1. [回帰結合ニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
     1. [回帰結合ニューラルネットワークのアーキテクチャの種類](#ID_4-1)
+        1. [隠れ層間で回帰構造をもつネットワーク](#ID_4-1-1)
+            1. [通時的誤差逆伝搬法 [BPTT : back-propagation through time]](#ID_4-1-1-1)
+        1. [隠教師強制と出力層間での回帰構造をもつネットワーク](#ID_4-1-2)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
 1. [参考文献](#参考文献)
+
+---
 
 <a id="ID_1"></a>
 
@@ -436,6 +441,24 @@ S= -k_B*∑ P_n*log P_n <br>
 <a id="ID_4-1"></a>
 
 ### 回帰結合ニューラルネットワークのアーキテクチャの種類
+
+<a id="ID_4-1-1"></a>
+
+#### 隠れ層間で回帰構造をもつネットワーク
+![image](https://user-images.githubusercontent.com/25688193/31013864-0baf82cc-a553-11e7-9296-870f600f0381.png)
+![image](https://user-images.githubusercontent.com/25688193/31013877-185db822-a553-11e7-9c5f-625acace78f8.png)
+![image](https://user-images.githubusercontent.com/25688193/31016204-bcbc0cb0-a55e-11e7-86df-3ba574fa8bc2.png)
+![image](https://user-images.githubusercontent.com/25688193/31017867-f379d312-a564-11e7-9d67-fc79a7dda26d.png)
+
+<a id="ID_4-1-1-1"></a>
+
+##### 通時的誤差逆伝搬法 [BPTT : back-propagation through time]
+記載中...
+
+<a id="ID_4-1-2"></a>
+
+#### 教師強制と出力層間での回帰構造をもつネットワーク
+記載中...
 
 ---
 
