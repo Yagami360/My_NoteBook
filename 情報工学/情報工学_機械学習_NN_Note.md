@@ -183,12 +183,12 @@ $$ F = - k_B \times T \times log_e{Z} $$
 
 で表現できるけど、これを使えば、カノニカルアンサンブルのエントロピー S が<br>
 
-![image](https://user-images.githubusercontent.com/25688193/31034763-64b1dec2-a5a0-11e7-834d-e046799b55e1.png)
+![image](https://user-images.githubusercontent.com/25688193/31034868-dba484e4-a5a0-11e7-85fe-ba7d5e011a04.png)
 
-$$ S = - k_B \times \sum_{i=1}{n} P_i \times \log_e{P_i} $$<br>
+$$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 
 <!-- はてなブログ形式
-[tex:{ S = - k_B \times \sum_{i=1}{n} P_i \times \log_e P_i }]<br>
+[tex:{ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e P_i }]<br>
 -->
 
 と書ける。これはまさに、情報理論でいうとこのシャノンの情報量に対応している。
