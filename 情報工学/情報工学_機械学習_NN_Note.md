@@ -149,6 +149,8 @@ y_i=\dfrac{e^{x_i}}{e^{x_1}+e^{x_2}+\cdots +e^{x_n}}
 ニューラルネットワークの softmax 関数の形は、<br>
 統計力学で言う所のカノニカルアンサンブルでの sub system の微視的状態を与える確率の式<br>
 
+![image](https://user-images.githubusercontent.com/25688193/31034610-bfe29f12-a59f-11e7-8d90-6541e8fa216c.png)
+
 $$ P_n = \dfrac{ e^{\frac{E_n}{k_B T}} }{ \sum_{i=1}^{n} e^{ \frac{E_i}{k_B \times T } } } $$
 
 <!-- はてなブログ形式
