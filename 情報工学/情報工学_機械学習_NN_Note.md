@@ -161,6 +161,8 @@ $$ P_n = \dfrac{ e^{\frac{E_n}{k_B T}} }{ \sum_{i=1}^{n} e^{ \frac{E_i}{k_B \tim
 
 この確率の式の分母を統計力学では分配関数<br>
 
+![image](https://user-images.githubusercontent.com/25688193/31034696-21d2f636-a5a0-11e7-9f6d-81de5b7f9f39.png)
+
 $$ Z = \sum_{i=1}^{n} e^{ \frac{-E_i}{k_B \times T} } $$
 
 <!-- はてなブログ形式
@@ -171,6 +173,8 @@ $$ Z = \sum_{i=1}^{n} e^{ \frac{-E_i}{k_B \times T} } $$
 
 Helmholtz の自由エネルギーは、この分配関数 Z を用いて、<br>
 
+![image](https://user-images.githubusercontent.com/25688193/31034742-51e4a0ae-a5a0-11e7-8d87-704124ad5467.png)
+
 $$ F = - k_B \times T \times log_e{Z} $$
 
 <!-- はてなブログ形式
@@ -178,6 +182,8 @@ $$ F = - k_B \times T \times log_e{Z} $$
 -->
 
 で表現できるけど、これを使えば、カノニカルアンサンブルのエントロピー S が<br>
+
+![image](https://user-images.githubusercontent.com/25688193/31034763-64b1dec2-a5a0-11e7-834d-e046799b55e1.png)
 
 $$ S = - k_B \times \sum_{i=1}{n} P_i \times \log_e{P_i} $$<br>
 
