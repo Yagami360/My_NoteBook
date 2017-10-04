@@ -487,6 +487,14 @@ $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 ![image](https://user-images.githubusercontent.com/25688193/31018664-dacf44d4-a567-11e7-8014-34523646bfca.png)
 ![image](https://user-images.githubusercontent.com/25688193/31019688-7725288c-a56b-11e7-919d-d0be44d4be33.png)
 
+<a id="ID_4-1-1-1-1"></a>
+
+###### 通時的誤差逆伝搬法によるパラメータの更新式（誤差関数が最小２乗誤差）
+![image](https://user-images.githubusercontent.com/25688193/31189494-64bc3a80-a973-11e7-90a8-348e97f93f47.png)
+![image](https://user-images.githubusercontent.com/25688193/31189294-c48db61a-a972-11e7-9673-a7805c53eaf5.png)
+![image](https://user-images.githubusercontent.com/25688193/31190398-f0e5337a-a975-11e7-8eff-ff74adf3a6ff.png)
+![image](https://user-images.githubusercontent.com/25688193/31190919-835e326e-a977-11e7-966e-d3675cb83452.png)
+
 
 <a id="ID_4-1-2"></a>
 
