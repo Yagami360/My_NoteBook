@@ -62,12 +62,14 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. タイル型畳み込み [Tiled convolution]<br>（プーリング層における移動不変性 [location invariant]の拡張）
     1. 逆畳み込みネットワーク [deconvolutional network]<br>（CNN の可視化）
 1. [リカレントニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
-    1. [回帰結合ニューラルネットワークのアーキテクチャの種類](#ID_4-1)
+    1. [リカレントニューラルネットワークのアーキテクチャの種類](#ID_4-1)
         1. [隠れ層間で回帰構造をもつネットワーク](#ID_4-1-1)
             1. [通時的誤差逆伝搬法 [BPTT : back-propagation through time]](#ID_4-1-1-1)
         1. [隠教師強制と出力層間での回帰構造をもつネットワーク](#ID_4-1-2)
-    1. LSTM [long short-term memory]
-    1. GRU [gated recurrent unit]
+    1. [長・短期記憶（LSTM [long short-term memory]）モデル](#ID_4-2)
+        1. [CEC [constant error carousel]](ID_4-2-1)
+        1. [重み衝突 [weight coflict] と入力ゲート [input gate]、出力ゲート [output gate]](ID_4-2-2)
+    1. [GRU [gated recurrent unit]](ID_4-3)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
 1. [参考文献](#参考文献)
@@ -494,12 +496,42 @@ $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 ![image](https://user-images.githubusercontent.com/25688193/31189294-c48db61a-a972-11e7-9673-a7805c53eaf5.png)
 ![image](https://user-images.githubusercontent.com/25688193/31190398-f0e5337a-a975-11e7-8eff-ff74adf3a6ff.png)
 ![image](https://user-images.githubusercontent.com/25688193/31190919-835e326e-a977-11e7-966e-d3675cb83452.png)
-
+![image](https://user-images.githubusercontent.com/25688193/31211718-661ae058-a9d6-11e7-96ae-075f35981fd1.png)
 
 <a id="ID_4-1-2"></a>
 
 #### 教師強制と出力層間での回帰構造をもつネットワーク
 記載中...
+
+
+
+
+<a id="ID_4-2"></a>
+
+### 長・短期記憶（LSTM [long short-term memory]）モデル
+
+<a id="ID_4-2-1"></a>
+
+#### CEC [constant error carousel]
+![image](https://user-images.githubusercontent.com/25688193/31226189-2d62a892-aa10-11e7-93e5-b32902d83702.png)
+![image](https://user-images.githubusercontent.com/25688193/31226163-0eb9927a-aa10-11e7-9d06-306e4443c5a8.png)
+![image](https://user-images.githubusercontent.com/25688193/31226629-ce350804-aa11-11e7-8788-01a2b5044463.png)
+![image](https://user-images.githubusercontent.com/25688193/31226906-eb4288bc-aa12-11e7-9f16-621ed4d50063.png)
+
+<a id="ID_4-2-2"></a>
+
+#### 重み衝突 [weight coflict] と入力ゲート [input gate]、出力ゲート [output gate]
+
+
+
+
+
+<a id="ID_4-3"></a>
+
+### GRU [gated recurrent unit]
+記載中...
+
+
 
 ---
 
