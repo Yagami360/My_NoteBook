@@ -67,8 +67,10 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
             1. [通時的誤差逆伝搬法 [BPTT : back-propagation through time]](#ID_4-1-1-1)
         1. [隠教師強制と出力層間での回帰構造をもつネットワーク](#ID_4-1-2)
     1. [長・短期記憶（LSTM [long short-term memory]）モデル](#ID_4-2)
-        1. [CEC [constant error carousel]](ID_4-2-1)
-        1. [重み衝突 [weight coflict] と入力ゲート [input gate]、出力ゲート [output gate]](ID_4-2-2)
+        1. [CEC [constant error carousel]](#ID_4-2-1)
+        1. [重み衝突 [weight conflict] と入力ゲート [input gate]、出力ゲート [output gate]](#ID_4-2-2)
+        1. [忘却ゲート [forget gate]](#ID_4-2-3)
+        1. [覗き穴結合 [peephole connections]](#ID_4-2-4)
     1. [GRU [gated recurrent unit]](ID_4-3)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
@@ -515,12 +517,25 @@ $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 #### CEC [constant error carousel]
 ![image](https://user-images.githubusercontent.com/25688193/31226189-2d62a892-aa10-11e7-93e5-b32902d83702.png)
 ![image](https://user-images.githubusercontent.com/25688193/31226163-0eb9927a-aa10-11e7-9d06-306e4443c5a8.png)
-![image](https://user-images.githubusercontent.com/25688193/31226629-ce350804-aa11-11e7-8788-01a2b5044463.png)
+![image](https://user-images.githubusercontent.com/25688193/31235831-6fa44284-aa2d-11e7-9377-845ea30837c5.png)
 ![image](https://user-images.githubusercontent.com/25688193/31226906-eb4288bc-aa12-11e7-9f16-621ed4d50063.png)
 
 <a id="ID_4-2-2"></a>
 
-#### 重み衝突 [weight coflict] と入力ゲート [input gate]、出力ゲート [output gate]
+#### 重み衝突 [weight conflict] と入力ゲート [input gate]、出力ゲート [output gate]
+![image](https://user-images.githubusercontent.com/25688193/31236796-16687124-aa30-11e7-89b5-2da158274de7.png)
+![image](https://user-images.githubusercontent.com/25688193/31237039-c621b378-aa30-11e7-8f76-ec49c62d0753.png)
+![image](https://user-images.githubusercontent.com/25688193/31238187-2232534a-aa34-11e7-9b61-8ba9cc762bec.png)
+
+<a id="ID_4-2-3"></a>
+
+#### 忘却ゲート [forget gate]
+記載中...
+
+<a id="ID_4-2-4"></a>
+
+#### 覗き穴結合 [peephole connections]
+記載中...
 
 
 
