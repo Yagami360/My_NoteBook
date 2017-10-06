@@ -541,12 +541,16 @@ $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 #### 覗き穴結合 [peephole connections]
 ![image](https://user-images.githubusercontent.com/25688193/31272328-83122b86-aac5-11e7-84db-6a52bd8d2c44.png)
 ![image](https://user-images.githubusercontent.com/25688193/31272347-8f9d67bc-aac5-11e7-9fda-640bdb6a9d7f.png)
-![image](https://user-images.githubusercontent.com/25688193/31275058-a87643de-aad0-11e7-9cf4-3fb4d4f7439c.png)
+![image](https://user-images.githubusercontent.com/25688193/31279596-941088d2-aae4-11e7-9e30-dc28771800c4.png)
 
 <a id="ID_4-2-5"></a>
 
 #### LSTM モデルの定式化
-記載中...
+![image](https://user-images.githubusercontent.com/25688193/31278352-91da316c-aadf-11e7-8ad6-963e7e235852.png)
+![image](https://user-images.githubusercontent.com/25688193/31283264-169b4f16-aaf0-11e7-9f19-976dc2e09bc9.png)
+![image](https://user-images.githubusercontent.com/25688193/31284097-8a2e6e84-aaf2-11e7-8e7d-df00110c5bf6.png)
+
+
 
 
 <a id="ID_4-3"></a>
