@@ -71,6 +71,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [重み衝突 [weight conflict] と入力ゲート [input gate]、出力ゲート [output gate]](#ID_4-2-2)
         1. [忘却ゲート [forget gate]](#ID_4-2-3)
         1. [覗き穴結合 [peephole connections]](#ID_4-2-4)
+        1. [LSTM モデルの定式化](#ID_4-2-5)
     1. [GRU [gated recurrent unit]](ID_4-3)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [](#ID_x)
@@ -524,21 +525,28 @@ $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 
 #### 重み衝突 [weight conflict] と入力ゲート [input gate]、出力ゲート [output gate]
 ![image](https://user-images.githubusercontent.com/25688193/31236796-16687124-aa30-11e7-89b5-2da158274de7.png)
-![image](https://user-images.githubusercontent.com/25688193/31237039-c621b378-aa30-11e7-8f76-ec49c62d0753.png)
-![image](https://user-images.githubusercontent.com/25688193/31238187-2232534a-aa34-11e7-9b61-8ba9cc762bec.png)
+![image](https://user-images.githubusercontent.com/25688193/31246908-ed52d18e-aa49-11e7-946f-44f3fa177eb3.png)
+![image](https://user-images.githubusercontent.com/25688193/31246932-fa855dc2-aa49-11e7-882d-462dd22be03d.png)
 
 <a id="ID_4-2-3"></a>
 
 #### 忘却ゲート [forget gate]
-記載中...
+![image](https://user-images.githubusercontent.com/25688193/31247911-036bc036-aa4d-11e7-9f5f-117eaab0b738.png)
+![image](https://user-images.githubusercontent.com/25688193/31247928-130b98b8-aa4d-11e7-89aa-ac27b1667666.png)
+![image](https://user-images.githubusercontent.com/25688193/31248855-2cf3eb7e-aa50-11e7-99b7-4c81a093f679.png)
+![image](https://user-images.githubusercontent.com/25688193/31249125-2453757e-aa51-11e7-9ce2-715edddf8232.png)
 
 <a id="ID_4-2-4"></a>
 
 #### 覗き穴結合 [peephole connections]
+![image](https://user-images.githubusercontent.com/25688193/31272328-83122b86-aac5-11e7-84db-6a52bd8d2c44.png)
+![image](https://user-images.githubusercontent.com/25688193/31272347-8f9d67bc-aac5-11e7-9fda-640bdb6a9d7f.png)
+![image](https://user-images.githubusercontent.com/25688193/31275058-a87643de-aad0-11e7-9cf4-3fb4d4f7439c.png)
+
+<a id="ID_4-2-5"></a>
+
+#### LSTM モデルの定式化
 記載中...
-
-
-
 
 
 <a id="ID_4-3"></a>
