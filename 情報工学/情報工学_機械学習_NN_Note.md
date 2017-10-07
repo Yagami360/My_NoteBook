@@ -65,16 +65,19 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [リカレントニューラルネットワークのアーキテクチャの種類](#ID_4-1)
         1. [隠れ層間で回帰構造をもつネットワーク](#ID_4-1-1)
             1. [通時的誤差逆伝搬法 [BPTT : back-propagation through time]](#ID_4-1-1-1)
-        1. [隠教師強制と出力層間での回帰構造をもつネットワーク](#ID_4-1-2)
+        1. 教師強制と出力層間での回帰構造をもつネットワーク
     1. [長・短期記憶（LSTM [long short-term memory]）モデル](#ID_4-2)
         1. [CEC [constant error carousel]](#ID_4-2-1)
         1. [重み衝突 [weight conflict] と入力ゲート [input gate]、出力ゲート [output gate]](#ID_4-2-2)
         1. [忘却ゲート [forget gate]](#ID_4-2-3)
         1. [覗き穴結合 [peephole connections]](#ID_4-2-4)
         1. [LSTM モデルの定式化](#ID_4-2-5)
-    1. [GRU [gated recurrent unit]](ID_4-3)
+    1. [GRU [gated recurrent unit]](#ID_4-3)
+    1. Bidirectional RNN
+    1. RNN Encoder-Decoder
+    1. Attention
+    1. Memory Networks
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
-1. [](#ID_x)
 1. [参考文献](#参考文献)
 
 ---
@@ -549,15 +552,16 @@ $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 ![image](https://user-images.githubusercontent.com/25688193/31278352-91da316c-aadf-11e7-8ad6-963e7e235852.png)
 ![image](https://user-images.githubusercontent.com/25688193/31283264-169b4f16-aaf0-11e7-9f19-976dc2e09bc9.png)
 ![image](https://user-images.githubusercontent.com/25688193/31284097-8a2e6e84-aaf2-11e7-8e7d-df00110c5bf6.png)
-
-
+![image](https://user-images.githubusercontent.com/25688193/31293857-b20586f6-ab13-11e7-85b2-460f9bab5e62.png)
+![image](https://user-images.githubusercontent.com/25688193/31294053-706d763a-ab14-11e7-8aed-1fed8327d58c.png)
 
 
 <a id="ID_4-3"></a>
 
 ### GRU [gated recurrent unit]
-記載中...
-
+![image](https://user-images.githubusercontent.com/25688193/31306964-efb70484-ab95-11e7-8e64-c877496dcaee.png)
+![image](https://user-images.githubusercontent.com/25688193/31306417-cfa02a3c-ab8a-11e7-8fb1-0579fe5aa0be.png)
+![image](https://user-images.githubusercontent.com/25688193/31307146-b1ce34fa-ab98-11e7-862a-b139d330222e.png)
 
 
 ---
