@@ -56,6 +56,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [平均プーリング [average pooling]](#ID_3-3-1)
         1. [最大プーリング [max pooling]](#ID_3-3-2)
         1. [Lp プーリング [Lp pooling]](#ID_3-3-3)
+    1. [THE ALL CONVOLUTIONAL NETWORK](#ID_3-4)
     1. CNN と 一般物体認識
         1. 局所特徴と大域特徴
     1. 一般物体認識を学習した CNN と転移学習
@@ -468,6 +469,16 @@ $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 
 #### Lp プーリング [Lp pooling]
 ![image](https://user-images.githubusercontent.com/25688193/30948182-27d90abe-a449-11e7-869d-4d14fbe22904.png)
+
+
+<a id="ID_3-4"></a>
+
+### THE ALL CONVOLUTIONAL NETWORK
+論文URL : https://arxiv.org/abs/1412.6806 <br>
+Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
+
+従来の CNN に対して、Pooling 層を使わず Conv 層のみの構成（Pooing層 → 複数の小さい Conv 層に置き換わる）で同等 or それ以上のレベルの識別性能を持つことを主張したモデル。
+
 
 ---
 
