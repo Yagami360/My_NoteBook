@@ -74,8 +74,8 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [覗き穴結合 [peephole connections]](#ID_4-2-4)
         1. [LSTM モデルの定式化](#ID_4-2-5)
     1. [GRU [gated recurrent unit]](#ID_4-3)
-    1. [双方向 RNN [Bidirectional RNN]](#ID_4-4)
-    1. [RNN Encoder-Decoder](#ID_4-5)
+    1. [双方向 RNN [BiRNN : Bidirectional RNN]](#ID_4-4)
+    1. [RNN Encoder-Decoder (Seqenence-to-sequence models)](#ID_4-5)
     1. Attention
     1. Memory Networks
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
@@ -90,7 +90,9 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 <a id="ID_1-1"></a>
 
 ### 全体 MAP図
-![image](https://user-images.githubusercontent.com/25688193/30951582-c3720dc6-a45e-11e7-85af-1592d6020f8f.png)
+![image](https://user-images.githubusercontent.com/25688193/31337660-4a25672e-ad37-11e7-95a8-afd451b92c48.png)
+![image](https://user-images.githubusercontent.com/25688193/31337672-5d5a384c-ad37-11e7-8a62-9d063c74d301.png)
+
 
 <a id="ID_1-2"></a>
 
@@ -570,7 +572,7 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_4-3"></a>
 
 ### GRU [gated recurrent unit]
-![image](https://user-images.githubusercontent.com/25688193/31306964-efb70484-ab95-11e7-8e64-c877496dcaee.png)
+![image](https://user-images.githubusercontent.com/25688193/31338072-e514030c-ad38-11e7-908c-2446c32b60c6.png)
 ![image](https://user-images.githubusercontent.com/25688193/31306417-cfa02a3c-ab8a-11e7-8fb1-0579fe5aa0be.png)
 ![image](https://user-images.githubusercontent.com/25688193/31307146-b1ce34fa-ab98-11e7-862a-b139d330222e.png)
 ![image](https://user-images.githubusercontent.com/25688193/31308026-2bd77ff2-abaa-11e7-967e-04cff1579a36.png)
@@ -578,7 +580,7 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_4-4"></a>
 
-### 双方向 RNN [Bidirectional RNN]
+### 双方向 RNN [BiRNN : Bidirectional RNN]
 ![image](https://user-images.githubusercontent.com/25688193/31332068-edadd682-ad1f-11e7-9f11-e7374b83465e.png)
 ![image](https://user-images.githubusercontent.com/25688193/31334064-78437f7a-ad27-11e7-84f2-decd65d1599d.png)
 ![image](https://user-images.githubusercontent.com/25688193/31335870-68a806d2-ad2f-11e7-9cd2-36648536cc64.png)
@@ -588,8 +590,10 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_4-5"></a>
 
-### RNN Encoder-Decoder
-記載中...
+### RNN Encoder-Decoder (Seqenence-to-sequence models)
+![image](https://user-images.githubusercontent.com/25688193/31340555-7cd2efac-ad41-11e7-85f0-d70f0f9c7bee.png)
+![image](https://user-images.githubusercontent.com/25688193/31347367-1578df4a-ad57-11e7-8fae-9306590c197b.png)
+
 
 
 ---
