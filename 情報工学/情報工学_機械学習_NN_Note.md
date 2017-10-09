@@ -74,8 +74,8 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
         1. [覗き穴結合 [peephole connections]](#ID_4-2-4)
         1. [LSTM モデルの定式化](#ID_4-2-5)
     1. [GRU [gated recurrent unit]](#ID_4-3)
-    1. Bidirectional RNN
-    1. RNN Encoder-Decoder
+    1. [双方向 RNN [Bidirectional RNN]](#ID_4-4)
+    1. [RNN Encoder-Decoder](#ID_4-5)
     1. Attention
     1. Memory Networks
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
@@ -574,6 +574,17 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 ![image](https://user-images.githubusercontent.com/25688193/31306417-cfa02a3c-ab8a-11e7-8fb1-0579fe5aa0be.png)
 ![image](https://user-images.githubusercontent.com/25688193/31307146-b1ce34fa-ab98-11e7-862a-b139d330222e.png)
 ![image](https://user-images.githubusercontent.com/25688193/31308026-2bd77ff2-abaa-11e7-967e-04cff1579a36.png)
+
+
+<a id="ID_4-4"></a>
+
+### 双方向 RNN [Bidirectional RNN]
+
+
+
+<a id="ID_4-5"></a>
+
+### RNN Encoder-Decoder
 
 ---
 
