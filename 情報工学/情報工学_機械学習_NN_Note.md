@@ -579,12 +579,18 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_4-4"></a>
 
 ### 双方向 RNN [Bidirectional RNN]
-
+![image](https://user-images.githubusercontent.com/25688193/31332068-edadd682-ad1f-11e7-9f11-e7374b83465e.png)
+![image](https://user-images.githubusercontent.com/25688193/31334064-78437f7a-ad27-11e7-84f2-decd65d1599d.png)
+![image](https://user-images.githubusercontent.com/25688193/31335870-68a806d2-ad2f-11e7-9cd2-36648536cc64.png)
+![image](https://user-images.githubusercontent.com/25688193/31335226-9d1c925a-ad2c-11e7-8f79-dccd9d931c41.png)
+![image](https://user-images.githubusercontent.com/25688193/31335735-d0a5b780-ad2e-11e7-82ae-17cd33f2546c.png)
 
 
 <a id="ID_4-5"></a>
 
 ### RNN Encoder-Decoder
+記載中...
+
 
 ---
 
