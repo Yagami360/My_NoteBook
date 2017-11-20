@@ -396,7 +396,7 @@ $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 <a id="ID_3"></a>
 
 ## 畳み込みニューラルネットワーク [CNN :Convolutional Neural Network]<br>＜階層型ニューラルネットワーク、フィードフォワード型構造＞
-![image](https://user-images.githubusercontent.com/25688193/30858595-4e038b96-a2fb-11e7-9ac2-4e7131148034.png)
+![image](https://user-images.githubusercontent.com/25688193/33005129-ca12465a-ce07-11e7-8393-3726b8c5eaf4.png)
 ![image](https://user-images.githubusercontent.com/25688193/30904563-47b0fd48-a3ad-11e7-8d6c-c1f3c2751131.png)
 
 <a id="ID_3-1"></a>
