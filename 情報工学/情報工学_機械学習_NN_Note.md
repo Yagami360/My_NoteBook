@@ -604,7 +604,7 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 ### Attention (Seqenence-to-sequence models)
 > 記載中...<br>
 ![image](https://user-images.githubusercontent.com/25688193/34071090-3e5d1c36-e2b4-11e7-9f39-56cd5def7354.png)
-
+![image](https://user-images.githubusercontent.com/25688193/34071346-81d4a840-e2b8-11e7-9b77-c9aa4a7d83fd.png)
 
 
 
