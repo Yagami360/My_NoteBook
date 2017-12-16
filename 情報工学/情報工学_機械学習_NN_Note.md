@@ -592,7 +592,7 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 ### RNN Encoder-Decoder (Seqenence-to-sequence models)
 ![image](https://user-images.githubusercontent.com/25688193/31340555-7cd2efac-ad41-11e7-85f0-d70f0f9c7bee.png)
-![image](https://user-images.githubusercontent.com/25688193/34071082-0b741a5e-e2b4-11e7-984c-69779f273554.png)
+![image](https://user-images.githubusercontent.com/25688193/34071127-fd431a10-e2b4-11e7-8f45-18a9ca626a20.png)
 ![image](https://user-images.githubusercontent.com/25688193/31370130-2c510356-adc4-11e7-9a59-d2b93cfa4698.png)
 ![image](https://user-images.githubusercontent.com/25688193/31370139-372bbfd2-adc4-11e7-965c-96bc88661505.png)
 ![image](https://user-images.githubusercontent.com/25688193/31371878-45210ec6-adce-11e7-9096-3bbd77dee065.png)
