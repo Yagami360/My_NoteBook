@@ -602,10 +602,11 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_4-6"></a>
 
 ### Attention (Seqenence-to-sequence models)
-> 記載中...<br>
-![image](https://user-images.githubusercontent.com/25688193/34071090-3e5d1c36-e2b4-11e7-9f39-56cd5def7354.png)
+> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34072063-05139170-e2c4-11e7-946a-0a351d215550.png)
 ![image](https://user-images.githubusercontent.com/25688193/34071346-81d4a840-e2b8-11e7-9b77-c9aa4a7d83fd.png)
-
+![image](https://user-images.githubusercontent.com/25688193/34072066-1ed7304e-e2c4-11e7-933a-effdf05d8b89.png)
+![image](https://user-images.githubusercontent.com/25688193/34072073-364eeffa-e2c4-11e7-8202-a9713f375da8.png)
 
 
 ---
