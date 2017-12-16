@@ -77,6 +77,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [双方向 RNN [BiRNN : Bidirectional RNN]](#ID_4-4)
     1. [RNN Encoder-Decoder (Seqenence-to-sequence models)](#ID_4-5)
     1. [Attention](#ID_4-6)
+        1. [LSTM を使用した場合の Attention](#ID_4-6-1)
     1. Memory Networks
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [参考文献](#参考文献)
@@ -602,12 +603,17 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_4-6"></a>
 
 ### Attention (Seqenence-to-sequence models)
-> 記載中...
 ![image](https://user-images.githubusercontent.com/25688193/34072063-05139170-e2c4-11e7-946a-0a351d215550.png)
 ![image](https://user-images.githubusercontent.com/25688193/34071346-81d4a840-e2b8-11e7-9b77-c9aa4a7d83fd.png)
 ![image](https://user-images.githubusercontent.com/25688193/34072066-1ed7304e-e2c4-11e7-933a-effdf05d8b89.png)
-![image](https://user-images.githubusercontent.com/25688193/34072073-364eeffa-e2c4-11e7-8202-a9713f375da8.png)
+![image](https://user-images.githubusercontent.com/25688193/34072851-fcfc95dc-e2d1-11e7-8b60-b836f8e3530d.png)
+![image](https://user-images.githubusercontent.com/25688193/34072877-7a5f9506-e2d2-11e7-8cb9-a890b36f09dc.png)
 
+
+<a id="ID_4-6-1"></a>
+
+### LSTM を使用した場合の Attention
+> 記載中...
 
 ---
 
