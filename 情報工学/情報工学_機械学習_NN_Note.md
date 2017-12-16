@@ -76,7 +76,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [GRU [gated recurrent unit]](#ID_4-3)
     1. [双方向 RNN [BiRNN : Bidirectional RNN]](#ID_4-4)
     1. [RNN Encoder-Decoder (Seqenence-to-sequence models)](#ID_4-5)
-    1. Attention
+    1. [Attention](#ID_4-6)
     1. Memory Networks
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [参考文献](#参考文献)
@@ -592,11 +592,20 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 ### RNN Encoder-Decoder (Seqenence-to-sequence models)
 ![image](https://user-images.githubusercontent.com/25688193/31340555-7cd2efac-ad41-11e7-85f0-d70f0f9c7bee.png)
-![image](https://user-images.githubusercontent.com/25688193/31370123-203bf512-adc4-11e7-8bc1-d65df760a43f.png)
+![image](https://user-images.githubusercontent.com/25688193/34071082-0b741a5e-e2b4-11e7-984c-69779f273554.png)
 ![image](https://user-images.githubusercontent.com/25688193/31370130-2c510356-adc4-11e7-9a59-d2b93cfa4698.png)
 ![image](https://user-images.githubusercontent.com/25688193/31370139-372bbfd2-adc4-11e7-965c-96bc88661505.png)
 ![image](https://user-images.githubusercontent.com/25688193/31371878-45210ec6-adce-11e7-9096-3bbd77dee065.png)
 ![image](https://user-images.githubusercontent.com/25688193/31376678-b29f4ff0-ade0-11e7-9988-88602f28b32c.png)
+
+
+<a id="ID_4-6"></a>
+
+### Attention (Seqenence-to-sequence models)
+> 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34071090-3e5d1c36-e2b4-11e7-9f39-56cd5def7354.png)
+
+
 
 
 ---
