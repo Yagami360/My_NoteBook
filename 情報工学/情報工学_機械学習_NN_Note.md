@@ -614,6 +614,11 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 ### LSTM を使用した場合の Attention
 > 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34073766-afa857a4-e2e4-11e7-8ac6-ee1117f354dd.png)
+![image](https://user-images.githubusercontent.com/25688193/34073777-ecb20d20-e2e4-11e7-8008-231edcd9cac8.png)
+![image](https://user-images.githubusercontent.com/25688193/34073778-06839b60-e2e5-11e7-974a-4717acf98f38.png)
+
+
 
 ---
 
