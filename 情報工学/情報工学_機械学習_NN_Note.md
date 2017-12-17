@@ -78,7 +78,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [RNN Encoder-Decoder (Seqenence-to-sequence models)](#ID_4-5)
     1. [Attention](#ID_4-6)
         1. [LSTM を使用した場合の Attention](#ID_4-6-1)
-    1. Memory Networks
+    1. [Memory Networks](ID_4-7)
 1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
 1. [参考文献](#参考文献)
 
@@ -613,12 +613,22 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_4-6-1"></a>
 
 ### LSTM を使用した場合の Attention
-> 記載中...
 ![image](https://user-images.githubusercontent.com/25688193/34073766-afa857a4-e2e4-11e7-8ac6-ee1117f354dd.png)
-![image](https://user-images.githubusercontent.com/25688193/34073777-ecb20d20-e2e4-11e7-8008-231edcd9cac8.png)
-![image](https://user-images.githubusercontent.com/25688193/34073778-06839b60-e2e5-11e7-974a-4717acf98f38.png)
+![image](https://user-images.githubusercontent.com/25688193/34075906-8bb45cf6-e318-11e7-8875-8ee07a340eaa.png)
+![image](https://user-images.githubusercontent.com/25688193/34075910-ae49a83e-e318-11e7-8e64-ac62bbe55250.png)
+![image](https://user-images.githubusercontent.com/25688193/34076679-ba9c78aa-e331-11e7-95f9-70db54921e8b.png)
+![image](https://user-images.githubusercontent.com/25688193/34076731-31053f9e-e333-11e7-9f03-bb7070f8ee38.png)
 
 
+
+<a id="ID_4-7"></a>
+
+## Memory Network
+> 記載中...
+
+
+
+<br>
 
 ---
 
@@ -661,6 +671,9 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 >> 本書のレビュー記事 :<br> 
 >> [【書籍紹介】詳解ディープラーニング TensorFlow・Kerasによる時系列データ処理](http://s0sem0y.hatenablog.com/entry/2017/06/25/025725)
 
+> 深層学習による自然言語処理 (機械学習プロフェッショナルシリーズ) <br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E3%81%AB%E3%82%88%E3%82%8B%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86-%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%83%97%E3%83%AD%E3%83%95%E3%82%A7%E3%83%83%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%9D%AA%E4%BA%95-%E7%A5%90%E5%A4%AA/dp/4061529242)
+
 ---
 
 以下、同様の文献（はてなブログ形式）
@@ -682,3 +695,6 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <!-- 詳解 ディープラーニング ~ TensorFlow・Keras による時系列データ処理 ~-->
 [asin:4839962510:detail]
+
+<!-- 深層学習による自然言語処理 (機械学習プロフェッショナルシリーズ) -->
+[asin:4061529242:detail]
