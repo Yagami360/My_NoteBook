@@ -78,8 +78,14 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [RNN Encoder-Decoder (Seqenence-to-sequence models)](#ID_4-5)
     1. [Attention](#ID_4-6)
         1. [LSTM を使用した場合の Attention](#ID_4-6-1)
-    1. [Memory Networks](#ID_4-7)
-1. [連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)](#ID_x)
+1. 連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)
+1. Sequence-to-Sequence モデル（seq2seq）
+    1. RNN Encoder-Decoder
+    1. Memory Networks
+1. [ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](#ID_10)
+    1. [one-hot encode と one-hot ベクトル](#ID_10_1)
+    1. [埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]](#ID_10_2)
+    1. 単語の分散表現
 1. [参考文献](#参考文献)
 
 ---
@@ -619,15 +625,6 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 ![image](https://user-images.githubusercontent.com/25688193/34076679-ba9c78aa-e331-11e7-95f9-70db54921e8b.png)
 ![image](https://user-images.githubusercontent.com/25688193/34076731-31053f9e-e333-11e7-9f03-bb7070f8ee38.png)
 
-
-
-<a id="ID_4-7"></a>
-
-## Memory Network
-> 記載中...
-
-
-
 <br>
 
 ---
@@ -644,6 +641,49 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 ![twitter_nn14-2_160905](https://user-images.githubusercontent.com/25688193/30112973-1a8f9122-934e-11e7-8ef0-2b0f82c00645.png)
 ![twitter_nn15-1_160905](https://user-images.githubusercontent.com/25688193/30112979-1abb3e26-934e-11e7-8e8d-23a72b07fe7c.png)
 
+---
+
+<a id="ID_xx"></a>
+
+## Sequence-to-Sequence モデル (seq2seq)
+
+<a id="ID_xx-1"></a>
+
+### RNN Encoder-Decoder
+
+<a id="ID_xx-2"></a>
+
+### Memory Network (MemNN)
+> 記載中...
+
+
+---
+
+<a id="ID_10"></a>
+
+## ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）
+
+<a id="ID_10-1"></a>
+
+### one-hot encode と one-hot ベクトル
+> 記載中...
+
+
+<a id="ID_10-2"></a>
+
+### 埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]
+![image](https://user-images.githubusercontent.com/25688193/34094596-26e24d16-e411-11e7-95d3-1971133297c1.png)
+
+
+<a id="ID_10-3"></a>
+
+### 単語の分散表現 [disturibute representation]
+> 記載中...
+
+
+<br>
+
+---
 
 <a name="参考文献"></a>
 
