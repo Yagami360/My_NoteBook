@@ -85,7 +85,7 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
 1. [ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](#ID_10)
     1. [one-hot encode と one-hot ベクトル](#ID_10_1)
     1. [埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]](#ID_10_2)
-    1. 単語の分散表現
+    1. [単語の分散表現、、Word Embeddings](#ID_10-3)
 1. [参考文献](#参考文献)
 
 ---
@@ -677,8 +677,11 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_10-3"></a>
 
-### 単語の分散表現 [disturibute representation]
-> 記載中...
+### 単語の分散表現 [disturibute representation]、Word Embeddings
+![image](https://user-images.githubusercontent.com/25688193/34101556-6be5943c-e429-11e7-8d26-d6ca3006e3fd.png)
+![image](https://user-images.githubusercontent.com/25688193/34102231-ad432a1e-e42b-11e7-8aa2-12920b882ebd.png)
+![image](https://user-images.githubusercontent.com/25688193/34108443-66e29466-e443-11e7-9145-bc1921e90498.png)
+
 
 
 <br>
