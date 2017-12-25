@@ -84,16 +84,15 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. Memory Networks
 1. [ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](#ID_10)
     1. one-hot encode と one-hot ベクトル    
-    1. [埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]](#ID_10_2)
-    1. [言語モデル [LM : Language model]](#ID_10_3)
+    1. [埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]](#ID_10-2)
+    1. [言語モデル [LM : Language model]](#ID_10-3)
         1. N グラム言語モデル
         1. ニューラル言語モデル [NLM : Neural Language Model]
         1. 順伝搬型ニューラル言語モデル [FFNN Language Model]
         1. 再帰構造型ニューラル（RNN）言語モデル [RNN Language Model]
-    1. [分散表現 [distritution / ]](#ID_10-4)
+    1. [分散表現](#ID_10-4)
         1. [単語の分散表現、Word Embeddings](#ID_10-4-1)
         1. 単語の分散表現 [Word Embeddings] の具体的な獲得方法
-
 1. [参考文献](#参考文献)
 
 
@@ -709,6 +708,8 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 ![image](https://user-images.githubusercontent.com/25688193/34101556-6be5943c-e429-11e7-8d26-d6ca3006e3fd.png)
 ![image](https://user-images.githubusercontent.com/25688193/34102231-ad432a1e-e42b-11e7-8aa2-12920b882ebd.png)
 ![image](https://user-images.githubusercontent.com/25688193/34108443-66e29466-e443-11e7-9145-bc1921e90498.png)
+
+<a id="ID_10-4-2"></a>
 
 #### 単語の分散表現、Word Embeddings の具体的な獲得方法
 > 記載中...
