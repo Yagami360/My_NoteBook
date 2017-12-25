@@ -1,8 +1,9 @@
 # ニューラルネットワーク [NN :Neural Network]
 
-ニューラルネットワークに関してのマイノートです。今後も随時追加予定です。
+ニューラルネットワーク、ディープラーニングに関してのマイノートです。今後も随時追加予定です。
 
-This is my notebook that summarizes about "Neural Network" and "Pattern recognition". I will add contents as needed.
+This is my notebook that summarizes about "Neural Network" and "Deep Learning". 
+I will add contents as needed.
 
 ![neuralnetworks](https://user-images.githubusercontent.com/25688193/30514787-10f19028-9b57-11e7-8091-de114932fd6a.png)
 
@@ -87,9 +88,9 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. [埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]](#ID_10-2)
     1. [言語モデル [LM : Language model]](#ID_10-3)
         1. N グラム言語モデル
-        1. ニューラル言語モデル [NLM : Neural Language Model]
-        1. 順伝搬型ニューラル言語モデル [FFNN Language Model]
-        1. 再帰構造型ニューラル（RNN）言語モデル [RNN Language Model]
+        1. [ニューラル言語モデル [NLM : Neural Language Model]](#ID_10-3-2)
+            1. [順伝播型ニューラル言語モデル（FFNNLM）](#ID_10-3-2-1)
+            1. [再帰構造型ニューラル（RNN）言語モデル [RNNLM]](#ID_10-3-2-2)
     1. [分散表現](#ID_10-4)
         1. [単語の分散表現、Word Embeddings](#ID_10-4-1)
         1. 単語の分散表現 [Word Embeddings] の具体的な獲得方法
@@ -686,17 +687,32 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 ### 埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]
 ![image](https://user-images.githubusercontent.com/25688193/34094596-26e24d16-e411-11e7-95d3-1971133297c1.png)
 
-<br>
 
 <a id="ID_10-3"></a>
 
 ### 言語モデル [LM : Language model]
-> 記載中...
 ![image](https://user-images.githubusercontent.com/25688193/34341685-05559ffc-e9e0-11e7-8380-3a905352754c.png)
 ![image](https://user-images.githubusercontent.com/25688193/34341696-37917a36-e9e0-11e7-9281-efb5294dd58a.png)
+![image](https://user-images.githubusercontent.com/25688193/34341814-cd99e62e-e9e2-11e7-8de5-a94fe5a6d2d2.png)
+![image](https://user-images.githubusercontent.com/25688193/34342701-3cbea040-e9fb-11e7-9680-03e146549cc4.png)
+![image](https://user-images.githubusercontent.com/25688193/34342734-b8146f80-e9fc-11e7-8fe4-ee99fd46cb87.png)
+
+<a id="ID_10-3-2"></a>
+
+### ニューラル言語モデル [NNLM : Neural network Language model ]
+
+<a id="ID_10-3-2-1"></a>
+
+#### 順伝播型ニューラル言語モデル（FFNNLM）
+> 記載中...
 
 
-<br>
+<a id="ID_10-3-2-2"></a>
+
+#### 再帰構造型ニューラル言語モデル（RNNLM）
+> 記載中...
+
+
 
 <a id="ID_10-4"></a>
 
