@@ -83,10 +83,19 @@ This is my notebook that summarizes about "Neural Network" and "Pattern recognit
     1. RNN Encoder-Decoder
     1. Memory Networks
 1. [ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](#ID_10)
-    1. [one-hot encode と one-hot ベクトル](#ID_10_1)
+    1. one-hot encode と one-hot ベクトル    
     1. [埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]](#ID_10_2)
-    1. [単語の分散表現、、Word Embeddings](#ID_10-3)
+    1. [言語モデル [LM : Language model]](#ID_10_3)
+        1. N グラム言語モデル
+        1. ニューラル言語モデル [NLM : Neural Language Model]
+        1. 順伝搬型ニューラル言語モデル [FFNN Language Model]
+        1. 再帰構造型ニューラル（RNN）言語モデル [RNN Language Model]
+    1. [分散表現 [distritution / ]](#ID_10-4)
+        1. [単語の分散表現、Word Embeddings](#ID_10-4-1)
+        1. 単語の分散表現 [Word Embeddings] の具体的な獲得方法
+
 1. [参考文献](#参考文献)
+
 
 ---
 
@@ -656,8 +665,11 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 ### Memory Network (MemNN)
 > 記載中...
 
+<br>
 
 ---
+
+<br>
 
 <a id="ID_10"></a>
 
@@ -665,22 +677,47 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_10-1"></a>
 
+<!--
 ### one-hot encode と one-hot ベクトル
 > 記載中...
-
+-->
 
 <a id="ID_10-2"></a>
 
 ### 埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]
 ![image](https://user-images.githubusercontent.com/25688193/34094596-26e24d16-e411-11e7-95d3-1971133297c1.png)
 
+<br>
 
 <a id="ID_10-3"></a>
 
-### 単語の分散表現 [disturibute representation]、Word Embeddings
+### 言語モデル [LM : Language model]
+> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34341685-05559ffc-e9e0-11e7-8380-3a905352754c.png)
+![image](https://user-images.githubusercontent.com/25688193/34341696-37917a36-e9e0-11e7-9281-efb5294dd58a.png)
+
+
+<br>
+
+<a id="ID_10-4"></a>
+
+### 分散表現
+
+<a id="ID_10-4-1"></a>
+
+#### 単語の分散表現 [disturibute representation]、Word Embeddings
 ![image](https://user-images.githubusercontent.com/25688193/34101556-6be5943c-e429-11e7-8d26-d6ca3006e3fd.png)
 ![image](https://user-images.githubusercontent.com/25688193/34102231-ad432a1e-e42b-11e7-8aa2-12920b882ebd.png)
 ![image](https://user-images.githubusercontent.com/25688193/34108443-66e29466-e443-11e7-9145-bc1921e90498.png)
+
+#### 単語の分散表現、Word Embeddings の具体的な獲得方法
+> 記載中...
+
+
+
+
+
+
 
 
 
