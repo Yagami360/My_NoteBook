@@ -1,4 +1,4 @@
-# ニューラルネットワーク [NN :Neural Network]
+# ニューラルネットワーク [NN :Neural Network] / ディープラーニング [Deep Learning]
 
 ニューラルネットワーク、ディープラーニングに関してのマイノートです。今後も随時追加予定です。
 
@@ -82,20 +82,22 @@ I will add contents as needed.
 1. 連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)
 1. Sequence-to-Sequence モデル（seq2seq）
     1. RNN Encoder-Decoder
-    1. Memory Networks
+    1. Attention
+    1. Memory Networks [MemN]
 1. [ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](#ID_10)
     1. one-hot encode と one-hot ベクトル    
     1. [埋め込みベクトル [embedding vector] と埋め込み行列 [embedding matrix]](#ID_10-2)
     1. [言語モデル [LM : Language model]](#ID_10-3)
         1. N グラム言語モデル
         1. [ニューラル言語モデル [NLM : Neural Language Model]](#ID_10-3-2)
-            1. [順伝播型ニューラル言語モデル（FFNNLM）](#ID_10-3-2-1)
-            1. [再帰構造型ニューラル（RNN）言語モデル [RNNLM]](#ID_10-3-2-2)
+            1. [順伝播型ニューラル言語モデル（FFNN-LM）](#ID_10-3-2-1)
+            1. [再帰ニューラル（RNN）言語モデル [RNN-LM]](#ID_10-3-2-2)
+        1. 言語モデルの評価
+            1. パープレキシティ [PPL : Perplexity]
     1. [分散表現](#ID_10-4)
         1. [単語の分散表現、Word Embeddings](#ID_10-4-1)
         1. 単語の分散表現 [Word Embeddings] の具体的な獲得方法
 1. [参考文献](#参考文献)
-
 
 ---
 
@@ -106,9 +108,9 @@ I will add contents as needed.
 <a id="ID_1-1"></a>
 
 ### 全体 MAP図
-![image](https://user-images.githubusercontent.com/25688193/31337660-4a25672e-ad37-11e7-95a8-afd451b92c48.png)
-![image](https://user-images.githubusercontent.com/25688193/31337672-5d5a384c-ad37-11e7-8a62-9d063c74d301.png)
-
+![image](https://user-images.githubusercontent.com/25688193/34352847-44ef0fda-ea68-11e7-90c9-2a2c10f7a8a4.png)
+![image](https://user-images.githubusercontent.com/25688193/34352981-eaa7eef6-ea68-11e7-8477-99d8bdfb3213.png)
+![image](https://user-images.githubusercontent.com/25688193/34352889-7771a896-ea68-11e7-8e0c-39352581f62b.png)
 
 <a id="ID_1-2"></a>
 
@@ -712,18 +714,20 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_10-3-2-1"></a>
 
-#### 順伝播型ニューラル言語モデル（FFNNLM）
+#### 順伝播型ニューラル言語モデル（FFNN-LM）
 ![image](https://user-images.githubusercontent.com/25688193/34349562-19147962-ea55-11e7-9487-96780bed2a74.png)
 ![image](https://user-images.githubusercontent.com/25688193/34351744-e686df00-ea61-11e7-85dd-d32f73e1d589.png)
-![image](https://user-images.githubusercontent.com/25688193/34351777-0b3cc418-ea62-11e7-9223-35ff73095fab.png)
-![image](https://user-images.githubusercontent.com/25688193/34352474-0deff622-ea66-11e7-9184-2a3760a0f394.png)
+![image](https://user-images.githubusercontent.com/25688193/34355192-d80a567c-ea76-11e7-83c7-2b68388608dd.png)
+![image](https://user-images.githubusercontent.com/25688193/34361963-788001ca-eab2-11e7-8985-1c24d2b1beb3.png)
 
 
 <a id="ID_10-3-2-2"></a>
 
-#### 再帰構造型ニューラル言語モデル（RNNLM）
-> 記載中...
-
+#### 再帰ニューラル言語モデル（RNN-LM）
+![image](https://user-images.githubusercontent.com/25688193/34355245-34a868c4-ea77-11e7-95a4-4bf84dd09ae6.png)
+![image](https://user-images.githubusercontent.com/25688193/34359181-1bb80866-ea99-11e7-9241-6e346425b392.png)
+![image](https://user-images.githubusercontent.com/25688193/34355272-62e4239a-ea77-11e7-9ae0-62210d7509fc.png)
+![image](https://user-images.githubusercontent.com/25688193/34362048-60889040-eab3-11e7-9996-f639a6bf5ead.png)
 
 
 <a id="ID_10-4"></a>
