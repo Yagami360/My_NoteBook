@@ -713,7 +713,10 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_10-3-2-1"></a>
 
 #### 順伝播型ニューラル言語モデル（FFNNLM）
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34349562-19147962-ea55-11e7-9487-96780bed2a74.png)
+![image](https://user-images.githubusercontent.com/25688193/34351744-e686df00-ea61-11e7-85dd-d32f73e1d589.png)
+![image](https://user-images.githubusercontent.com/25688193/34351777-0b3cc418-ea62-11e7-9223-35ff73095fab.png)
+![image](https://user-images.githubusercontent.com/25688193/34352474-0deff622-ea66-11e7-9184-2a3760a0f394.png)
 
 
 <a id="ID_10-3-2-2"></a>
