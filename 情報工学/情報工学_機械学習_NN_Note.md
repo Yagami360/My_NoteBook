@@ -96,7 +96,10 @@ I will add contents as needed.
             1. パープレキシティ [PPL : Perplexity]
     1. [分散表現 [distributional / distributed]](#ID_10-4)
         1. [単語の分散表現、Word 単語埋め込み [Word Embeddings]](#ID_10-4-1)
-        1. 単語の分散表現、Word 単語埋め込み [Word Embeddings] の具体的な獲得方法
+        1. [単語の分散表現、Word 単語埋め込み [Word Embeddings] の具体的な獲得方法](#ID_10-4-2)
+            1. [ニューラル言語モデルを用いた分散表現の獲得方法](#ID_10-4-2-1)
+            1. [対数双線形モデルを用いた分散表現の獲得方法](#ID_10-4-2-1)
+        1. [skip-gram と CBow / word2vec](#ID_10-4-3)
 1. [参考文献](#参考文献)
 
 ---
@@ -749,12 +752,22 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_10-4-2"></a>
 
 #### 単語の分散表現、単語埋め込み [Word Embeddings] の具体的な獲得方法
+
+<a id="ID_10-4-2-1"></a>
+
+##### ニューラル言語モデルを用いた分散表現の獲得方法
+> 記載中...
+
+<a id="ID_10-4-2-2"></a>
+
+##### 対数双線形モデルを用いた分散表現の獲得方法
 > 記載中...
 
 
+<a id="ID_10-4-3"></a>
 
-
-
+#### skip-gram と CBow / word2vec
+> 記載中...
 
 
 
