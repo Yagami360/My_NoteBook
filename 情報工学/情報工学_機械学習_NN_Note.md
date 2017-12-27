@@ -752,11 +752,15 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_10-4-2"></a>
 
 #### 単語の分散表現、単語埋め込み [Word Embeddings] の具体的な獲得方法
+![image](https://user-images.githubusercontent.com/25688193/34370735-ed89bd24-eb09-11e7-9732-bf39e23985c0.png)
 
 <a id="ID_10-4-2-1"></a>
 
 ##### ニューラル言語モデルを用いた分散表現の獲得方法
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34377024-6ab57900-eb32-11e7-993b-4b8a636a6c3c.png)
+![image](https://user-images.githubusercontent.com/25688193/34377036-78a46562-eb32-11e7-8420-8c3e8967b3f8.png)
+![image](https://user-images.githubusercontent.com/25688193/34377396-31308cfe-eb34-11e7-85b2-4d0cc615ce18.png)
+
 
 <a id="ID_10-4-2-2"></a>
 
