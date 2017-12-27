@@ -94,9 +94,9 @@ I will add contents as needed.
             1. [再帰ニューラル（RNN）言語モデル [RNN-LM]](#ID_10-3-2-2)
         1. 言語モデルの評価
             1. パープレキシティ [PPL : Perplexity]
-    1. [分散表現](#ID_10-4)
-        1. [単語の分散表現、Word Embeddings](#ID_10-4-1)
-        1. 単語の分散表現 [Word Embeddings] の具体的な獲得方法
+    1. [分散表現 [distributional / distributed]](#ID_10-4)
+        1. [単語の分散表現、Word 単語埋め込み [Word Embeddings]](#ID_10-4-1)
+        1. 単語の分散表現、Word 単語埋め込み [Word Embeddings] の具体的な獲得方法
 1. [参考文献](#参考文献)
 
 ---
@@ -732,18 +732,23 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_10-4"></a>
 
-### 分散表現
+### 分散表現 [distributional / distributed]
+![image](https://user-images.githubusercontent.com/25688193/34366909-eee0f68e-eae5-11e7-8fe8-bd36d46f00f1.png)
+![image](https://user-images.githubusercontent.com/25688193/34368672-000af334-eaf9-11e7-8425-c5acd7036701.png)
+![image](https://user-images.githubusercontent.com/25688193/34368876-c70ae9c0-eafa-11e7-882d-bbf5b65b7352.png)
+![image](https://user-images.githubusercontent.com/25688193/34369022-fa7eee86-eafb-11e7-94ae-8be2fe02f0b1.png)
+
 
 <a id="ID_10-4-1"></a>
 
-#### 単語の分散表現 [disturibute representation]、Word Embeddings
-![image](https://user-images.githubusercontent.com/25688193/34101556-6be5943c-e429-11e7-8d26-d6ca3006e3fd.png)
+#### 単語の分散表現 [disturibute representation]、単語埋め込み [Word Embeddings]
+![image](https://user-images.githubusercontent.com/25688193/34368756-ad274428-eaf9-11e7-8bc4-d68876b8027d.png)
 ![image](https://user-images.githubusercontent.com/25688193/34102231-ad432a1e-e42b-11e7-8aa2-12920b882ebd.png)
 ![image](https://user-images.githubusercontent.com/25688193/34108443-66e29466-e443-11e7-9145-bc1921e90498.png)
 
 <a id="ID_10-4-2"></a>
 
-#### 単語の分散表現、Word Embeddings の具体的な獲得方法
+#### 単語の分散表現、単語埋め込み [Word Embeddings] の具体的な獲得方法
 > 記載中...
 
 
