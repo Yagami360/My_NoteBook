@@ -772,15 +772,17 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_10-4-3"></a>
 
 ### CBOW [Countinuous Bag-of-Words] と skip-gram
-> 記載中...<br>
 ![image](https://user-images.githubusercontent.com/25688193/34405512-35e2c1e0-ebf7-11e7-91ef-e8ebfed804ac.png)
 ![image](https://user-images.githubusercontent.com/25688193/34405524-49e058b0-ebf7-11e7-9786-aeb76253424a.png)
+![image](https://user-images.githubusercontent.com/25688193/34436951-b4706526-ecdd-11e7-873a-aac4ed5eae48.png)
+![image](https://user-images.githubusercontent.com/25688193/34436963-c1059824-ecdd-11e7-8230-884cfb87113a.png)
+![image](https://user-images.githubusercontent.com/25688193/34436979-cf35ab00-ecdd-11e7-9fc6-e1aab309fd57.png)
 
 
 <a id="ID_10-4-3-1"></a>
 
 #### word2vec ツール
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34437402-2f92c520-ece1-11e7-9003-dc686f2033b6.png)
 
 
 
