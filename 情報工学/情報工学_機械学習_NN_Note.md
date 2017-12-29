@@ -795,11 +795,13 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_10-4-3-2"></a>
 
 #### skip-gram モデル
+- 参考サイト : http://tkengo.github.io/blog/2016/05/09/understand-how-to-learn-word2vec/
+
+> 記載＆修正中...<br>
 ![image](https://user-images.githubusercontent.com/25688193/34443558-5b664f62-ed0b-11e7-85c5-95788e8cdd5f.png)
-![image](https://user-images.githubusercontent.com/25688193/34443571-6de528d4-ed0b-11e7-8653-27af89612225.png)
-
-
-
+![image](https://user-images.githubusercontent.com/25688193/34444167-88e435c2-ed0f-11e7-82ee-ae6e6c7831f5.png)
+![image](https://user-images.githubusercontent.com/25688193/34444399-4782fe36-ed11-11e7-918e-816c2f1ba9cd.png)
+![image](https://user-images.githubusercontent.com/25688193/34444193-adb38092-ed0f-11e7-8ccd-c1fd1bbf41b4.png)
 
 
 
