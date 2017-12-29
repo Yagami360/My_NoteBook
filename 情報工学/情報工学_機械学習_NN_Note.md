@@ -99,7 +99,8 @@ I will add contents as needed.
         1. [単語の分散表現、Word 単語埋め込み [Word Embeddings] の具体的な獲得方法](#ID_10-4-2)
             1. [ニューラル言語モデルを用いた分散表現の獲得方法](#ID_10-4-2-1)
             1. [対数双線形モデルを用いた分散表現の獲得方法](#ID_10-4-2-1)
-        1. [skip-gram と CBow / word2vec](#ID_10-4-3)
+        1. [CBOW [Countinuous Bag-of-Words] と skip-gram](#ID_10-4-3)
+            1. [word2vec ツール](#ID_10-4-3-1)
 1. [参考文献](#参考文献)
 
 ---
@@ -756,7 +757,7 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_10-4-2-1"></a>
 
-##### ニューラル言語モデルを用いた分散表現の獲得方法
+#### ニューラル言語モデルを用いた分散表現の獲得方法
 ![image](https://user-images.githubusercontent.com/25688193/34377024-6ab57900-eb32-11e7-993b-4b8a636a6c3c.png)
 ![image](https://user-images.githubusercontent.com/25688193/34377036-78a46562-eb32-11e7-8420-8c3e8967b3f8.png)
 ![image](https://user-images.githubusercontent.com/25688193/34377396-31308cfe-eb34-11e7-85b2-4d0cc615ce18.png)
@@ -764,13 +765,21 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_10-4-2-2"></a>
 
-##### 対数双線形モデルを用いた分散表現の獲得方法
+#### 対数双線形モデルを用いた分散表現の獲得方法
 > 記載中...
 
 
 <a id="ID_10-4-3"></a>
 
-#### skip-gram と CBow / word2vec
+### CBOW [Countinuous Bag-of-Words] と skip-gram
+> 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34405512-35e2c1e0-ebf7-11e7-91ef-e8ebfed804ac.png)
+![image](https://user-images.githubusercontent.com/25688193/34405524-49e058b0-ebf7-11e7-9786-aeb76253424a.png)
+
+
+<a id="ID_10-4-3-1"></a>
+
+#### word2vec ツール
 > 記載中...
 
 
