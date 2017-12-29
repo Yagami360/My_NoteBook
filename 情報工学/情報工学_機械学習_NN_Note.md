@@ -100,8 +100,9 @@ I will add contents as needed.
             1. [ニューラル言語モデルを用いた分散表現の獲得方法](#ID_10-4-2-1)
             1. [対数双線形モデルを用いた分散表現の獲得方法](#ID_10-4-2-2)
             1. [負例サンプリングを用いた分散表現の獲得方法](#ID_10-4-2-3)
-        1. [CBOW [Countinuous Bag-of-Words] と skip-gram](#ID_10-4-3)
-            1. [word2vec ツール](#ID_10-4-3-1)
+        1. [word2vec ツール](#ID_10-4-3)
+            1. [CBOW [Countinuous Bag-of-Words] モデル](#ID_10-4-3-1)
+            1. [skip-gram モデル](#ID_10-4-3-2)
 1. [参考文献](#参考文献)
 
 ---
@@ -778,19 +779,26 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_10-4-3"></a>
 
-### CBOW [Countinuous Bag-of-Words] と skip-gram
-![image](https://user-images.githubusercontent.com/25688193/34405512-35e2c1e0-ebf7-11e7-91ef-e8ebfed804ac.png)
-![image](https://user-images.githubusercontent.com/25688193/34405524-49e058b0-ebf7-11e7-9786-aeb76253424a.png)
+### word2vec ツール
+![image](https://user-images.githubusercontent.com/25688193/34443712-51ea6814-ed0c-11e7-9324-87056689bee8.png)
+
+<a id="ID_10-4-3-1"></a>
+
+#### CBOW [Countinuous Bag-of-Words] モデル
+![image](https://user-images.githubusercontent.com/25688193/34443731-6cf88154-ed0c-11e7-9b94-75e065a4026d.png)
+![image](https://user-images.githubusercontent.com/25688193/34443022-955317d4-ed09-11e7-8c2b-ceb4ebb0669e.png)
 ![image](https://user-images.githubusercontent.com/25688193/34441364-aaa8d606-ecfe-11e7-9909-34028aabc0ca.png)
 ![image](https://user-images.githubusercontent.com/25688193/34436963-c1059824-ecdd-11e7-8230-884cfb87113a.png)
 ![image](https://user-images.githubusercontent.com/25688193/34436979-cf35ab00-ecdd-11e7-9fc6-e1aab309fd57.png)
 ![image](https://user-images.githubusercontent.com/25688193/34441458-340083b8-ecff-11e7-8034-862f4cb58912.png)
 
+<a id="ID_10-4-3-2"></a>
 
-<a id="ID_10-4-3-1"></a>
+#### skip-gram モデル
+![image](https://user-images.githubusercontent.com/25688193/34443558-5b664f62-ed0b-11e7-85c5-95788e8cdd5f.png)
+![image](https://user-images.githubusercontent.com/25688193/34443571-6de528d4-ed0b-11e7-8653-27af89612225.png)
 
-#### word2vec ツール
-![image](https://user-images.githubusercontent.com/25688193/34437402-2f92c520-ece1-11e7-9003-dc686f2033b6.png)
+
 
 
 
