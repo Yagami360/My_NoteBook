@@ -98,7 +98,8 @@ I will add contents as needed.
         1. [単語の分散表現、Word 単語埋め込み [Word Embeddings]](#ID_10-4-1)
         1. [単語の分散表現、Word 単語埋め込み [Word Embeddings] の具体的な獲得方法](#ID_10-4-2)
             1. [ニューラル言語モデルを用いた分散表現の獲得方法](#ID_10-4-2-1)
-            1. [対数双線形モデルを用いた分散表現の獲得方法](#ID_10-4-2-1)
+            1. [対数双線形モデルを用いた分散表現の獲得方法](#ID_10-4-2-2)
+            1. [負例サンプリングを用いた分散表現の獲得方法](#ID_10-4-2-3)
         1. [CBOW [Countinuous Bag-of-Words] と skip-gram](#ID_10-4-3)
             1. [word2vec ツール](#ID_10-4-3-1)
 1. [参考文献](#参考文献)
@@ -769,14 +770,21 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 > 記載中...
 
 
+<a id="ID_10-4-2-3"></a>
+
+#### 負例サンプリングを用いた分散表現の獲得方法
+> 記載中...
+
+
 <a id="ID_10-4-3"></a>
 
 ### CBOW [Countinuous Bag-of-Words] と skip-gram
 ![image](https://user-images.githubusercontent.com/25688193/34405512-35e2c1e0-ebf7-11e7-91ef-e8ebfed804ac.png)
 ![image](https://user-images.githubusercontent.com/25688193/34405524-49e058b0-ebf7-11e7-9786-aeb76253424a.png)
-![image](https://user-images.githubusercontent.com/25688193/34436951-b4706526-ecdd-11e7-873a-aac4ed5eae48.png)
+![image](https://user-images.githubusercontent.com/25688193/34441364-aaa8d606-ecfe-11e7-9909-34028aabc0ca.png)
 ![image](https://user-images.githubusercontent.com/25688193/34436963-c1059824-ecdd-11e7-8230-884cfb87113a.png)
 ![image](https://user-images.githubusercontent.com/25688193/34436979-cf35ab00-ecdd-11e7-9fc6-e1aab309fd57.png)
+![image](https://user-images.githubusercontent.com/25688193/34441458-340083b8-ecff-11e7-8034-862f4cb58912.png)
 
 
 <a id="ID_10-4-3-1"></a>
