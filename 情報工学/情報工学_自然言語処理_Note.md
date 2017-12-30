@@ -124,7 +124,7 @@
 <a id="ID_10-4-2-2"></a>
 
 #### 対数双線形モデルを用いた分散表現の獲得方法
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34452890-9b39ef32-ed8c-11e7-9700-1b596e13584f.png)
 
 
 <a id="ID_10-4-2-3"></a>
