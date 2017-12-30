@@ -10,7 +10,7 @@
 
 又、より一般的な機械学習に関しては、以下の記事に記載しています。
 
-- [星の本棚（機械学習）](hhttp://yagami12.hatenablog.com/entry/2017/09/17/111400)
+- [星の本棚（機械学習）](http://yagami12.hatenablog.com/entry/2017/09/17/111400)
 
 ## 目次 [Contents]
 1. [自然言語処理（NLP）](#ID_10)
