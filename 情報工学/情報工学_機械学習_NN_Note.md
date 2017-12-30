@@ -7,6 +7,10 @@ I will add contents as needed.
 
 ![neuralnetworks](https://user-images.githubusercontent.com/25688193/30514787-10f19028-9b57-11e7-8091-de114932fd6a.png)
 
+尚、本記事内容に関連した Python & tensorflow ライブラリを用いた実装コード集は、以下の GitHub レポジトリにおいてあります。
+- [Yagami360/MachineLearning_Exercises_Python_TensorFlow](https://github.com/Yagami360/MachineLearning_Exercises_Python_TensorFlow)
+
+
 ## 目次 [Contents]
 1. [概要 [Overview]](#ID_1)
     1. [全体 MAP 図](#ID_1-1)
