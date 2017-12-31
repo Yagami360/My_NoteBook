@@ -30,10 +30,11 @@
         1. [単語の分散表現、Word 単語埋め込み [Word Embeddings] の具体的な獲得方法](#ID_10-4-2)
             1. [ニューラル言語モデルを用いた分散表現の獲得方法](#ID_10-4-2-1)
             1. [対数双線形モデルを用いた分散表現の獲得方法](#ID_10-4-2-2)
-            1. [負例サンプリングを用いた分散表現の獲得方法](#ID_10-4-2-3)
         1. [word2vec ツール](#ID_10-4-3)
             1. [CBOW [Countinuous Bag-of-Words] モデル](#ID_10-4-3-1)
             1. [skip-gram モデル](#ID_10-4-3-2)
+            1. [負例サンプリング [Negative Sampling] による skip-gram モデルの学習の高速化](#ID_10-4-3-3)
+            1. 階層的ソフトマックス [hierarchical softmax] による skip-gram モデルの学習の高速化
 
 <a id="ID_10"></a>
 
@@ -127,16 +128,11 @@
 ![image](https://user-images.githubusercontent.com/25688193/34452890-9b39ef32-ed8c-11e7-9700-1b596e13584f.png)
 
 
-<a id="ID_10-4-2-3"></a>
-
-#### 負例サンプリングを用いた分散表現の獲得方法
-> 記載中...
-
 
 <a id="ID_10-4-3"></a>
 
 ### word2vec ツール
-![image](https://user-images.githubusercontent.com/25688193/34443712-51ea6814-ed0c-11e7-9324-87056689bee8.png)
+![image](https://user-images.githubusercontent.com/25688193/34453040-3ad4665c-ed8e-11e7-8a19-1deab212869e.png)
 
 <a id="ID_10-4-3-1"></a>
 
@@ -160,6 +156,11 @@
 ![image](https://user-images.githubusercontent.com/25688193/34444193-adb38092-ed0f-11e7-8ccd-c1fd1bbf41b4.png)
 
 
+<a id="ID_10-4-3-3"></a>
+
+#### 負例サンプリング [Negative Sampling] による skip-gram モデルの学習の高速化
+> 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34463905-90c3776c-eeae-11e7-96ee-c337afd60138.png)
 
 <br>
 
