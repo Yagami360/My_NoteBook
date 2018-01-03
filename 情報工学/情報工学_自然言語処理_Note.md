@@ -35,7 +35,18 @@
             1. [skip-gram モデル](#ID_10-4-3-2)
             1. [負例サンプリング [Negative Sampling] による skip-gram モデルの学習の高速化](#ID_10-4-3-3)
             1. 階層的ソフトマックス [hierarchical softmax] による skip-gram モデルの学習の高速化
-
+    1. 系列変換モデル [sequence-to-sequence / seq2seq]
+        1. モデルの構造
+            1. 符号化器 - 埋め込み層 [encoder embedding layer]
+            1. 符号化器 - 再帰層 [encoder recurrent layer]
+            1. 復号化器 - 埋め込み層 [decoder embedding layer]
+            1. 復号化器 - 再帰層 [decoder recurrent layer]
+            1. 復号化器 - 出力層 [decoder output layer]
+        1. モデルの学習方法
+        1. 系列生成方法
+            1. ビーム検索 [beam search]
+            1. 貪欲法 [greedy algorithm]
+            
 <a id="ID_10"></a>
 
 ## 自然言語処理（NLP）
@@ -159,8 +170,12 @@
 <a id="ID_10-4-3-3"></a>
 
 #### 負例サンプリング [Negative Sampling] による skip-gram モデルの学習の高速化
-> 記載中...<br>
-![image](https://user-images.githubusercontent.com/25688193/34463905-90c3776c-eeae-11e7-96ee-c337afd60138.png)
+![image](https://user-images.githubusercontent.com/25688193/34534531-d080fe9c-f101-11e7-88bd-ec0926b34f8f.png)
+![image](https://user-images.githubusercontent.com/25688193/34535444-20aaeaa6-f105-11e7-92bc-ca7b1a9a1f72.png)
+![image](https://user-images.githubusercontent.com/25688193/34535467-380fb4a6-f105-11e7-8bda-4bfc514729d7.png)
+![image](https://user-images.githubusercontent.com/25688193/34535495-5f420af6-f105-11e7-8f94-7b3c5ebb7ad1.png)
+
+
 
 <br>
 
