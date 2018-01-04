@@ -35,18 +35,18 @@
             1. [skip-gram モデル](#ID_10-4-3-2)
             1. [負例サンプリング [Negative Sampling] による skip-gram モデルの学習の高速化](#ID_10-4-3-3)
             1. 階層的ソフトマックス [hierarchical softmax] による skip-gram モデルの学習の高速化
-    1. 系列変換モデル [sequence-to-sequence / seq2seq]
-        1. モデルの構造
-            1. 符号化器 - 埋め込み層 [encoder embedding layer]
-            1. 符号化器 - 再帰層 [encoder recurrent layer]
-            1. 復号化器 - 埋め込み層 [decoder embedding layer]
-            1. 復号化器 - 再帰層 [decoder recurrent layer]
-            1. 復号化器 - 出力層 [decoder output layer]
+    1. [系列変換モデル [sequence-to-sequence / seq2seq]](#ID_10-5)
+        1. [モデルの構造](#ID_10-5-1)
+            1. [符号化器 - 埋め込み層 [encoder embedding layer]](#ID_10-5-1-1)
+            1. [符号化器 - 再帰層 [encoder recurrent layer]](#ID_10-5-1-2)
+            1. [復号化器 - 埋め込み層 [decoder embedding layer]](#ID_10-5-1-3)
+            1. [復号化器 - 再帰層 [decoder recurrent layer]](#ID_10-5-1-4)
+            1. [復号化器 - 出力層 [decoder output layer]](#ID_10-5-1-5)
         1. モデルの学習方法
         1. 系列生成方法
             1. ビーム検索 [beam search]
             1. 貪欲法 [greedy algorithm]
-            
+
 <a id="ID_10"></a>
 
 ## 自然言語処理（NLP）
@@ -175,6 +175,54 @@
 ![image](https://user-images.githubusercontent.com/25688193/34535467-380fb4a6-f105-11e7-8bda-4bfc514729d7.png)
 ![image](https://user-images.githubusercontent.com/25688193/34535495-5f420af6-f105-11e7-8f94-7b3c5ebb7ad1.png)
 
+
+
+<a id="ID_10-5"></a>
+
+## 系列変換モデル [sequence-to-sequence / seq2seq]
+![image](https://user-images.githubusercontent.com/25688193/34563308-81db5b0e-f195-11e7-947b-64980e17d825.png)
+
+> 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34565703-3270a68c-f19f-11e7-8e34-f2cb8699889a.png)
+![image](https://user-images.githubusercontent.com/25688193/34581706-cd833a88-f1d4-11e7-9ede-6280366ccd99.png)
+![image](https://user-images.githubusercontent.com/25688193/34582513-6cc63166-f1d7-11e7-8d2d-9102cf04b73d.png)
+![image](https://user-images.githubusercontent.com/25688193/34582533-78910232-f1d7-11e7-8ef6-8a44f7c81dd4.png)
+
+
+
+<a id="ID_10-5-1"></a>
+
+### モデルの構造
+> 記載中...<br>
+
+<a id="ID_10-5-1-1"></a>
+
+#### 符号化器 - 埋め込み層 [encoder embedding layer]
+> 記載中...<br>
+
+
+<a id="ID_10-5-1-2"></a>
+
+#### 符号化器 - 再帰層 [encoder recurrent layer]
+> 記載中...<br>
+
+
+<a id="ID_10-5-1-3"></a>
+
+#### 復号化器 - 埋め込み層 [decoder embedding layer]
+> 記載中...<br>
+
+
+<a id="ID_10-5-1-4"></a>
+
+#### 復号化器 - 再帰層 [decoder recurrent layer]
+> 記載中...<br>
+
+
+<a id="ID_10-5-1-5"></a>
+
+#### 復号化器 - 出力層 [decoder output layer]
+> 記載中...<br>
 
 
 <br>
