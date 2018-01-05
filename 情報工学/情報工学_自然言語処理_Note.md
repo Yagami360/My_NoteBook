@@ -36,7 +36,7 @@
             1. [負例サンプリング [Negative Sampling] による skip-gram モデルの学習の高速化](#ID_10-4-3-3)
             1. 階層的ソフトマックス [hierarchical softmax] による skip-gram モデルの学習の高速化
     1. [系列変換モデル [sequence-to-sequence / seq2seq]](#ID_10-5)
-        1. [モデルの構造](#ID_10-5-1)
+        1. [モデルの構造（アーキテクチャ）](#ID_10-5-1)
             1. [符号化器 - 埋め込み層 [encoder embedding layer]](#ID_10-5-1-1)
             1. [符号化器 - 再帰層 [encoder recurrent layer]](#ID_10-5-1-2)
             1. [復号化器 - 埋め込み層 [decoder embedding layer]](#ID_10-5-1-3)
@@ -181,18 +181,18 @@
 
 ## 系列変換モデル [sequence-to-sequence / seq2seq]
 ![image](https://user-images.githubusercontent.com/25688193/34563308-81db5b0e-f195-11e7-947b-64980e17d825.png)
-
-> 記載中...<br>
 ![image](https://user-images.githubusercontent.com/25688193/34565703-3270a68c-f19f-11e7-8e34-f2cb8699889a.png)
 ![image](https://user-images.githubusercontent.com/25688193/34581706-cd833a88-f1d4-11e7-9ede-6280366ccd99.png)
 ![image](https://user-images.githubusercontent.com/25688193/34582513-6cc63166-f1d7-11e7-8d2d-9102cf04b73d.png)
-![image](https://user-images.githubusercontent.com/25688193/34582533-78910232-f1d7-11e7-8ef6-8a44f7c81dd4.png)
-
+![image](https://user-images.githubusercontent.com/25688193/34589628-10d95d7e-f1f5-11e7-98c2-dcd596d79ec7.png)
+![image](https://user-images.githubusercontent.com/25688193/34598482-4e2ced40-f230-11e7-8269-b667c1f2f8a7.png)
+![image](https://user-images.githubusercontent.com/25688193/34598799-37953afe-f232-11e7-870a-00b5f9846649.png)
+![image](https://user-images.githubusercontent.com/25688193/34599033-c56c4790-f233-11e7-8738-39ccdab616d5.png)
 
 
 <a id="ID_10-5-1"></a>
 
-### モデルの構造
+### モデルの構造（アーキテクチャ）
 > 記載中...<br>
 
 <a id="ID_10-5-1-1"></a>
