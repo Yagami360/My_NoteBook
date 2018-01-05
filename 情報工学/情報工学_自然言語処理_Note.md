@@ -200,6 +200,10 @@
 
 #### 符号化器 - 埋め込み層 [encoder - embedding layer]
 > 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34607679-0b07fe88-f258-11e7-8b33-61f08f81fd02.png)
+![image](https://user-images.githubusercontent.com/25688193/34607696-18257a1e-f258-11e7-9946-52186aae6160.png)
+![image](https://user-images.githubusercontent.com/25688193/34608611-7752d58c-f25c-11e7-8e9c-0ea0223b6809.png)
+
 
 
 <a id="ID_10-5-1-2"></a>
