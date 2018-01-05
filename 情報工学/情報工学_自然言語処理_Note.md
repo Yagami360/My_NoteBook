@@ -158,13 +158,13 @@
 <a id="ID_10-4-3-2"></a>
 
 #### skip-gram モデル
-- 参考サイト : http://tkengo.github.io/blog/2016/05/09/understand-how-to-learn-word2vec/
-
 > 記載＆修正中...<br>
 ![image](https://user-images.githubusercontent.com/25688193/34443558-5b664f62-ed0b-11e7-85c5-95788e8cdd5f.png)
 ![image](https://user-images.githubusercontent.com/25688193/34444167-88e435c2-ed0f-11e7-82ee-ae6e6c7831f5.png)
 ![image](https://user-images.githubusercontent.com/25688193/34444399-4782fe36-ed11-11e7-918e-816c2f1ba9cd.png)
 ![image](https://user-images.githubusercontent.com/25688193/34444193-adb38092-ed0f-11e7-8ccd-c1fd1bbf41b4.png)
+
+- 参考サイト : http://tkengo.github.io/blog/2016/05/09/understand-how-to-learn-word2vec/
 
 
 <a id="ID_10-4-3-3"></a>
@@ -199,17 +199,19 @@
 <a id="ID_10-5-1-1"></a>
 
 #### 符号化器 - 埋め込み層 [encoder - embedding layer]
-> 記載中...<br>
 ![image](https://user-images.githubusercontent.com/25688193/34607679-0b07fe88-f258-11e7-8b33-61f08f81fd02.png)
 ![image](https://user-images.githubusercontent.com/25688193/34607696-18257a1e-f258-11e7-9946-52186aae6160.png)
 ![image](https://user-images.githubusercontent.com/25688193/34608611-7752d58c-f25c-11e7-8e9c-0ea0223b6809.png)
-
+![image](https://user-images.githubusercontent.com/25688193/34608723-0c873b3e-f25d-11e7-9fa6-d7af3166bfa9.png)
 
 
 <a id="ID_10-5-1-2"></a>
 
 #### 符号化器 - 再帰層 [encoder - recurrent layer]
-> 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34613719-1bc6267c-f272-11e7-9ab8-abb1b5edf9a7.png)
+![image](https://user-images.githubusercontent.com/25688193/34613470-46fdc670-f271-11e7-9642-cb697fd13e38.png)
+![image](https://user-images.githubusercontent.com/25688193/34616511-d9326500-f27b-11e7-8c71-cfbb2afdf7c6.png)
+
 
 
 <a id="ID_10-5-1-3"></a>
