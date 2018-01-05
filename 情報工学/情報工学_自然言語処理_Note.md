@@ -26,8 +26,8 @@
         1. 言語モデルの評価
             1. パープレキシティ [PPL : Perplexity]
     1. [分散表現 [distributional / distributed]](#ID_10-4)
-        1. [単語の分散表現、Word 単語埋め込み [Word Embeddings]](#ID_10-4-1)
-        1. [単語の分散表現、Word 単語埋め込み [Word Embeddings] の具体的な獲得方法](#ID_10-4-2)
+        1. [単語の分散表現、単語埋め込み [Word Embeddings]](#ID_10-4-1)
+        1. [単語の分散表現、単語埋め込み [Word Embeddings] の具体的な獲得方法](#ID_10-4-2)
             1. [ニューラル言語モデルを用いた分散表現の獲得方法](#ID_10-4-2-1)
             1. [対数双線形モデルを用いた分散表現の獲得方法](#ID_10-4-2-2)
         1. [word2vec ツール](#ID_10-4-3)
@@ -42,6 +42,7 @@
             1. [復号化器 - 埋め込み層 [decoder embedding layer]](#ID_10-5-1-3)
             1. [復号化器 - 再帰層 [decoder recurrent layer]](#ID_10-5-1-4)
             1. [復号化器 - 出力層 [decoder output layer]](#ID_10-5-1-5)
+            1. [モデルの処理負荷](#ID_10-5-1-6)
         1. モデルの学習方法
         1. 系列生成方法
             1. ビーム検索 [beam search]
@@ -213,11 +214,14 @@
 ![image](https://user-images.githubusercontent.com/25688193/34616511-d9326500-f27b-11e7-8c71-cfbb2afdf7c6.png)
 
 
-
 <a id="ID_10-5-1-3"></a>
 
 #### 復号化器 - 埋め込み層 [decoder - embedding layer]
-> 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34621002-d05135d8-f28a-11e7-9874-5e61dc3bff78.png)
+![image](https://user-images.githubusercontent.com/25688193/34621826-02ce7612-f28e-11e7-8779-0c54ee260eca.png)
+![image](https://user-images.githubusercontent.com/25688193/34621841-0fce3244-f28e-11e7-9e9b-9acfc2f3a42c.png)
+![image](https://user-images.githubusercontent.com/25688193/34622123-37cdb50c-f28f-11e7-8866-7fbe46176930.png)
+![image](https://user-images.githubusercontent.com/25688193/34622771-d1af7276-f291-11e7-99fa-17570a7b5da0.png)
 
 
 <a id="ID_10-5-1-4"></a>
@@ -229,6 +233,12 @@
 <a id="ID_10-5-1-5"></a>
 
 #### 復号化器 - 出力層 [decoder - output layer]
+> 記載中...<br>
+
+
+<a id="ID_10-5-1-6"></a>
+
+#### モデルの処理負荷
 > 記載中...<br>
 
 
