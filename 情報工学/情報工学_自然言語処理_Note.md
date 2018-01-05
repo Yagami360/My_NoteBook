@@ -36,7 +36,7 @@
             1. [負例サンプリング [Negative Sampling] による skip-gram モデルの学習の高速化](#ID_10-4-3-3)
             1. 階層的ソフトマックス [hierarchical softmax] による skip-gram モデルの学習の高速化
     1. [系列変換モデル [sequence-to-sequence / seq2seq]](#ID_10-5)
-        1. [モデルの構造（アーキテクチャ）](#ID_10-5-1)
+        1. [モデルの構造（アーキテクチャ）[model architecture]](#ID_10-5-1)
             1. [符号化器 - 埋め込み層 [encoder embedding layer]](#ID_10-5-1-1)
             1. [符号化器 - 再帰層 [encoder recurrent layer]](#ID_10-5-1-2)
             1. [復号化器 - 埋め込み層 [decoder embedding layer]](#ID_10-5-1-3)
@@ -192,36 +192,37 @@
 
 <a id="ID_10-5-1"></a>
 
-### モデルの構造（アーキテクチャ）
-> 記載中...<br>
+### モデルの構造（アーキテクチャ）[model architecture]
+![image](https://user-images.githubusercontent.com/25688193/34601992-80ab203c-f241-11e7-87b0-7b19d3f54c21.png)
+![image](https://user-images.githubusercontent.com/25688193/34602043-b2bf0dd6-f241-11e7-9328-5d8765bdc309.png)
 
 <a id="ID_10-5-1-1"></a>
 
-#### 符号化器 - 埋め込み層 [encoder embedding layer]
+#### 符号化器 - 埋め込み層 [encoder - embedding layer]
 > 記載中...<br>
 
 
 <a id="ID_10-5-1-2"></a>
 
-#### 符号化器 - 再帰層 [encoder recurrent layer]
+#### 符号化器 - 再帰層 [encoder - recurrent layer]
 > 記載中...<br>
 
 
 <a id="ID_10-5-1-3"></a>
 
-#### 復号化器 - 埋め込み層 [decoder embedding layer]
+#### 復号化器 - 埋め込み層 [decoder - embedding layer]
 > 記載中...<br>
 
 
 <a id="ID_10-5-1-4"></a>
 
-#### 復号化器 - 再帰層 [decoder recurrent layer]
+#### 復号化器 - 再帰層 [decoder - recurrent layer]
 > 記載中...<br>
 
 
 <a id="ID_10-5-1-5"></a>
 
-#### 復号化器 - 出力層 [decoder output layer]
+#### 復号化器 - 出力層 [decoder - output layer]
 > 記載中...<br>
 
 
