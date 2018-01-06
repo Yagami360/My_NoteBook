@@ -42,7 +42,7 @@
             1. [復号化器 - 埋め込み層 [decoder embedding layer]](#ID_10-5-1-3)
             1. [復号化器 - 再帰層 [decoder recurrent layer]](#ID_10-5-1-4)
             1. [復号化器 - 出力層 [decoder output layer]](#ID_10-5-1-5)
-            1. [モデルの処理負荷](#ID_10-5-1-6)
+            1. [seq2seq モデルの処理負荷](#ID_10-5-1-6)
         1. モデルの学習方法
         1. 系列生成方法
             1. ビーム検索 [beam search]
@@ -236,12 +236,17 @@
 <a id="ID_10-5-1-5"></a>
 
 #### 復号化器 - 出力層 [decoder - output layer]
-> 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34634962-c7f7ea84-f2cc-11e7-894e-b92866e0cbb5.png)
+![image](https://user-images.githubusercontent.com/25688193/34638559-4d84ce94-f311-11e7-862e-e69b9da0a817.png)
+![image](https://user-images.githubusercontent.com/25688193/34638605-3f0fb274-f312-11e7-98d4-9e9faef01c07.png)
+![image](https://user-images.githubusercontent.com/25688193/34638638-52b5736c-f313-11e7-8edd-354fdfec4164.png)
+![image](https://user-images.githubusercontent.com/25688193/34638773-494645a6-f316-11e7-9e30-a227217e792e.png)
+![image](https://user-images.githubusercontent.com/25688193/34638779-58512a3e-f316-11e7-8ab3-79fcd64861f1.png)
 
 
 <a id="ID_10-5-1-6"></a>
 
-#### モデルの処理負荷
+#### seq2seq モデルの処理負荷
 > 記載中...<br>
 
 
