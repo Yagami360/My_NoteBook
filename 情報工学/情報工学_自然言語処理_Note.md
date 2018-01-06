@@ -43,7 +43,7 @@
             1. [復号化器 - 再帰層 [decoder recurrent layer]](#ID_10-5-1-4)
             1. [復号化器 - 出力層 [decoder output layer]](#ID_10-5-1-5)
             1. [seq2seq モデルの処理負荷](#ID_10-5-1-6)
-        1. [モデルの学習方法](#ID_10-5-2)
+        1. [seq2seq モデルの学習方法](#ID_10-5-2)
         1. [系列生成方法](#ID_10-5-3)
             1. [ビーム検索 [beam search]](#ID_10-5-3-1)
             1. [貪欲法 [greedy algorithm]](#ID_10-5-3-2)
@@ -254,8 +254,11 @@
 
 <a id="ID_10-5-2"></a>
 
-### モデルの学習方法
-> 記載中...
+### seq2seq モデルの学習方法
+![image](https://user-images.githubusercontent.com/25688193/34640845-0fb58cac-f33e-11e7-8cbd-c9b7cd2e9f82.png)
+![image](https://user-images.githubusercontent.com/25688193/34640850-226d2b34-f33e-11e7-804f-7836d47a381f.png)
+![image](https://user-images.githubusercontent.com/25688193/34640867-56627656-f33e-11e7-9cd4-6d59847c0995.png)
+
 
 
 <a id="ID_10-5-3"></a>
