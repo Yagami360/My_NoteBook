@@ -227,7 +227,10 @@
 <a id="ID_10-5-1-4"></a>
 
 #### 復号化器 - 再帰層 [decoder - recurrent layer]
-> 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34633555-30873486-f2c0-11e7-80b2-47e987f1a9f9.png)
+![image](https://user-images.githubusercontent.com/25688193/34633705-35032e6a-f2c1-11e7-8400-c8ea9c24a9bd.png)
+![image](https://user-images.githubusercontent.com/25688193/34633778-b26695c2-f2c1-11e7-945e-d11f343edb5c.png)
+
 
 
 <a id="ID_10-5-1-5"></a>
