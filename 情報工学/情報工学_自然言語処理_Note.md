@@ -45,8 +45,8 @@
             1. [seq2seq モデルの処理負荷](#ID_10-5-1-6)
         1. [seq2seq モデルの学習方法](#ID_10-5-2)
         1. [系列生成方法](#ID_10-5-3)
-            1. [ビーム検索 [beam search]](#ID_10-5-3-1)
-            1. [貪欲法 [greedy algorithm]](#ID_10-5-3-2)
+            1. [貪欲法 [greedy algorithm]](#ID_10-5-3-1)
+            1. [ビーム検索 [beam search]](#ID_10-5-3-2)
 
 <a id="ID_10"></a>
 
@@ -264,20 +264,24 @@
 <a id="ID_10-5-3"></a>
 
 ### 系列生成方法
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34642354-da54afcc-f354-11e7-96b9-440995d2cec9.png)
+![image](https://user-images.githubusercontent.com/25688193/34642427-28714d22-f356-11e7-946d-fae442965ecd.png)
+![image](https://user-images.githubusercontent.com/25688193/34642432-3bc8b1ee-f356-11e7-864f-7cdd079d0778.png)
 
 
 <a id="ID_10-5-3-1"></a>
 
-### ビーム検索 [beam search]
-> 記載中...
+### 貪欲法 [greedy algorithm]
+> 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34643305-7b0d46f8-f365-11e7-95c5-7d64eba42166.png)
 
 
 <a id="ID_10-5-3-2"></a>
 
-### 貪欲法 [greedy algorithm]
-> 記載中...
+### ビーム検索 [beam search]
+> 記載中...<br>
 
+- 参考サイト : https://deepage.net/machine_learning/2017/07/06/beam-search.html
 
 
 <br>
