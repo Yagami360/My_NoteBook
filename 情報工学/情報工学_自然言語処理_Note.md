@@ -34,7 +34,7 @@
             1. [CBOW [Countinuous Bag-of-Words] モデル](#ID_10-4-3-1)
             1. [skip-gram モデル](#ID_10-4-3-2)
             1. [負例サンプリング [Negative Sampling] による skip-gram モデルの学習の高速化](#ID_10-4-3-3)
-            1. 階層的ソフトマックス [hierarchical softmax] による skip-gram モデルの学習の高速化
+            1. 階層的ソフトマックス [HSM : hierarchical softmax] による skip-gram モデルの学習の高速化
     1. [系列変換モデル [sequence-to-sequence / seq2seq]](#ID_10-5)
         1. [モデルの構造（アーキテクチャ）[model architecture]](#ID_10-5-1)
             1. [符号化器 - 埋め込み層 [encoder embedding layer]](#ID_10-5-1-1)
@@ -44,9 +44,23 @@
             1. [復号化器 - 出力層 [decoder output layer]](#ID_10-5-1-5)
             1. [seq2seq モデルの処理負荷](#ID_10-5-1-6)
         1. [seq2seq モデルの学習方法](#ID_10-5-2)
-        1. [系列生成方法](#ID_10-5-3)
+        1. [seq2seq モデルにおける系列生成方法](#ID_10-5-3)
             1. [貪欲法 [greedy algorithm]](#ID_10-5-3-1)
-            1. [ビーム検索 [beam search]](#ID_10-5-3-2)
+            1. [ビーム探索 [beam search]](#ID_10-5-3-2)
+    1. 注意機構 [attention mechanism] / seq2seq model
+        1. ソフト注意機構 [soft attention mechanism]
+        1. ハード注意機構 [hard attention mechanism]
+    1. 記憶ネットワーク [MemN : memory networks] / seq2seq model
+        1. 教師あり記憶ネットワーク
+        1. end-to-end 記憶ネットワーク [end-to-end memory networks]
+        1. 動的記憶ネットワーク [DMN : dynamic memory networks]
+    1. seq2seq モデルの出力層の高速化手法
+        1. 重点サンプリング [importance sampling]
+        1. 雑音対照推定 [NCE : noise contrastive estimation]
+        1. 負例サンプリング [negative sampling]
+        1. ブラックアウト [black-out]
+        1. 階層的ソフトマックス [HSM : hierarchial softmax]
+    1. 形態素解析 [Morphological Analysis]
 
 <a id="ID_10"></a>
 
@@ -263,7 +277,7 @@
 
 <a id="ID_10-5-3"></a>
 
-### 系列生成方法
+### seq2seq モデルにおける系列生成方法
 ![image](https://user-images.githubusercontent.com/25688193/34642354-da54afcc-f354-11e7-96b9-440995d2cec9.png)
 ![image](https://user-images.githubusercontent.com/25688193/34642427-28714d22-f356-11e7-946d-fae442965ecd.png)
 ![image](https://user-images.githubusercontent.com/25688193/34642432-3bc8b1ee-f356-11e7-864f-7cdd079d0778.png)
@@ -279,8 +293,9 @@
 
 <a id="ID_10-5-3-2"></a>
 
-### ビーム検索 [beam search]
+### ビーム探索 [beam search]
 > 記載中...<br>
+![image](https://user-images.githubusercontent.com/25688193/34643891-d5fb49f2-f36f-11e7-8a93-7f2600ea0462.png)
 
 - 参考サイト : https://deepage.net/machine_learning/2017/07/06/beam-search.html
 
