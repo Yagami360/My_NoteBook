@@ -272,8 +272,9 @@
 <a id="ID_10-5-3-1"></a>
 
 ### 貪欲法 [greedy algorithm]
-> 記載中...<br>
-![image](https://user-images.githubusercontent.com/25688193/34643305-7b0d46f8-f365-11e7-95c5-7d64eba42166.png)
+![image](https://user-images.githubusercontent.com/25688193/34643612-9610d6f4-f36a-11e7-9b7c-cb2bacc29142.png)
+![image](https://user-images.githubusercontent.com/25688193/34643418-4e1891fa-f367-11e7-8e6c-10de1d339b83.png)
+![image](https://user-images.githubusercontent.com/25688193/34643427-731d22d6-f367-11e7-86b6-9a419cf2e752.png)
 
 
 <a id="ID_10-5-3-2"></a>
