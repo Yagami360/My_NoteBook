@@ -294,8 +294,16 @@
 <a id="ID_10-5-3-2"></a>
 
 ### ビーム探索 [beam search]
-> 記載中...<br>
 ![image](https://user-images.githubusercontent.com/25688193/34643891-d5fb49f2-f36f-11e7-8a93-7f2600ea0462.png)
+![image](https://user-images.githubusercontent.com/25688193/34645034-20624a6a-f387-11e7-9133-076f88584d59.png)
+![image](https://user-images.githubusercontent.com/25688193/34645036-3ccbb52e-f387-11e7-9252-b9bd0209185a.png)
+![image](https://user-images.githubusercontent.com/25688193/34645021-9fed1946-f386-11e7-890e-dead39aeadbe.png)
+![image](https://user-images.githubusercontent.com/25688193/34645090-2569e2a6-f388-11e7-903d-909b47bafc81.png)
+![image](https://user-images.githubusercontent.com/25688193/34645212-b9593708-f38a-11e7-8c5f-d2224fd9e242.png)
+![image](https://user-images.githubusercontent.com/25688193/34645279-6a4b90a0-f38c-11e7-88a1-363a7d4f6e7d.png)
+![image](https://user-images.githubusercontent.com/25688193/34645282-7bb1eab0-f38c-11e7-8d26-bfe836081ed5.png)
+![image](https://user-images.githubusercontent.com/25688193/34645358-15c1dfba-f38e-11e7-9540-450af4e5f89d.png)
+![image](https://user-images.githubusercontent.com/25688193/34645366-2b706b1a-f38e-11e7-879a-3f818bcde521.png)
 
 - 参考サイト : https://deepage.net/machine_learning/2017/07/06/beam-search.html
 
