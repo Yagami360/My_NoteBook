@@ -347,6 +347,10 @@
 <a id="ID_10-6-2"></a>
 
 ### ハード注意機構 [hard attention mechanism]
+![image](https://user-images.githubusercontent.com/25688193/34737255-fcb9a2a0-f5b8-11e7-8de3-48149b2015e5.png)
+![image](https://user-images.githubusercontent.com/25688193/34747848-4b833aa8-f5dd-11e7-9748-db4567d1f086.png)
+![image](https://user-images.githubusercontent.com/25688193/34747891-795bb4d2-f5dd-11e7-9467-b1a940080f47.png)
+
 > 記載中...
 
 
