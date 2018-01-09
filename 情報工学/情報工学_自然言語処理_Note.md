@@ -47,9 +47,11 @@
         1. [seq2seq モデルにおける系列生成方法](#ID_10-5-3)
             1. [貪欲法 [greedy algorithm]](#ID_10-5-3-1)
             1. [ビーム探索 [beam search]](#ID_10-5-3-2)
-    1. 注意機構 [attention mechanism] / seq2seq model
-        1. ソフト注意機構 [soft attention mechanism]
-        1. ハード注意機構 [hard attention mechanism]
+    1. [注意機構 [attention mechanism] / seq2seq model](#ID_10-6)
+        1. [ソフト注意機構 [soft attention mechanism]](#ID_10-6-1)
+            1. [seq2seq モデルでのソフト注意機構 [soft attention mechanism]](#ID_10-6-1-1)
+            1. [より一般的なモデルでのソフト注意機構 [soft attention mechanism]](#ID_10-6-1-2)
+        1. [ハード注意機構 [hard attention mechanism]](#ID_10-6-2)
     1. 記憶ネットワーク [MemN : memory networks] / seq2seq model
         1. 教師あり記憶ネットワーク
         1. end-to-end 記憶ネットワーク [end-to-end memory networks]
@@ -305,7 +307,47 @@
 ![image](https://user-images.githubusercontent.com/25688193/34645358-15c1dfba-f38e-11e7-9540-450af4e5f89d.png)
 ![image](https://user-images.githubusercontent.com/25688193/34645366-2b706b1a-f38e-11e7-879a-3f818bcde521.png)
 
-- 参考サイト : https://deepage.net/machine_learning/2017/07/06/beam-search.html
+- 参考サイト
+    - https://deepage.net/machine_learning/2017/07/06/beam-search.html
+    - http://www.phontron.com/slides/nlp-programming-ja-13-search.pdf
+
+---
+
+<a id="ID_10-6"></a>
+
+## 注意機構 [attention mechanism] / seq2seq model
+![image](https://user-images.githubusercontent.com/25688193/34693672-f3eb3406-f507-11e7-89eb-3db1a71aafc3.png)
+
+<a id="ID_10-6-1"></a>
+
+### ソフト注意機構 [soft attention mechanism]
+
+<a id="ID_10-6-1-1"></a>
+
+#### seq2seq モデルでのソフト注意機構 [soft attention mechanism]
+![image](https://user-images.githubusercontent.com/25688193/34696507-70cce974-f512-11e7-92b1-ebf653b546a0.png)
+![image](https://user-images.githubusercontent.com/25688193/34714577-317fa986-f56d-11e7-8eea-a5893ccf713e.png)
+![image](https://user-images.githubusercontent.com/25688193/34712835-94e0d88e-f567-11e7-9ce4-125a8988785a.png)
+![image](https://user-images.githubusercontent.com/25688193/34715071-b964afc6-f56e-11e7-85a9-83a96ea2d255.png)
+![image](https://user-images.githubusercontent.com/25688193/34715658-ae0f2df2-f570-11e7-8e85-f735ea4c7868.png)
+![image](https://user-images.githubusercontent.com/25688193/34720596-a12f67a2-f582-11e7-9670-517cd6e06dba.png)
+![image](https://user-images.githubusercontent.com/25688193/34720614-b5bd33b6-f582-11e7-8463-f696271bd4ed.png)
+
+
+<a id="ID_10-6-1-2"></a>
+
+#### より一般的なモデルでのソフト注意機構 [soft attention mechanism]
+![image](https://user-images.githubusercontent.com/25688193/34725022-1309d96a-f593-11e7-854a-02d68f7e91d0.png)
+![image](https://user-images.githubusercontent.com/25688193/34725002-00ae1402-f593-11e7-8029-14b6345ca32d.png)
+![image](https://user-images.githubusercontent.com/25688193/34725150-64668858-f593-11e7-9bfe-185022357b39.png)
+![image](https://user-images.githubusercontent.com/25688193/34725915-c9124a42-f595-11e7-904f-79aa48b24760.png)
+![image](https://user-images.githubusercontent.com/25688193/34726005-15c4a1fa-f596-11e7-9ba5-d4467bcf9a9e.png)
+
+
+<a id="ID_10-6-2"></a>
+
+### ハード注意機構 [hard attention mechanism]
+> 記載中...
 
 
 <br>
