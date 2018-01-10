@@ -52,10 +52,11 @@
             1. [seq2seq モデルでのソフト注意機構 [soft attention mechanism]](#ID_10-6-1-1)
             1. [より一般的なモデルでのソフト注意機構 [soft attention mechanism]](#ID_10-6-1-2)
         1. [ハード注意機構 [hard attention mechanism]](#ID_10-6-2)
-    1. 記憶ネットワーク [MemN : memory networks] / seq2seq model
-        1. 教師あり記憶ネットワーク
-        1. end-to-end 記憶ネットワーク [end-to-end memory networks]
-        1. 動的記憶ネットワーク [DMN : dynamic memory networks]
+    1. [記憶ネットワーク [MemN : memory networks]](#ID_10-7)
+        1. [記憶ネットワークのアーキテクチャ [architecture]](#ID_10-7-0)
+        1. [教師あり記憶ネットワーク [supervised memory network]](#ID_10-7-1)
+        1. [end-to-end 記憶ネットワーク [end-to-end memory networks]](#ID_10-7-2)
+        1. [動的記憶ネットワーク [DMN : dynamic memory networks]](#ID_10-7-3)
     1. seq2seq モデルの出力層の高速化手法
         1. 重点サンプリング [importance sampling]
         1. 雑音対照推定 [NCE : noise contrastive estimation]
@@ -352,6 +353,42 @@
 ![image](https://user-images.githubusercontent.com/25688193/34747891-795bb4d2-f5dd-11e7-9467-b1a940080f47.png)
 
 > 記載中...
+
+---
+
+<a id="ID_10-7"></a>
+
+## 記憶ネットワーク [MemN : memory networks]
+![image](https://user-images.githubusercontent.com/25688193/34750579-12688b7a-f5eb-11e7-9138-a71232566b83.png)
+
+
+<a id="ID_10-7-0"></a>
+
+### 記憶ネットワークのアーキテクチャ [architecture]
+![image](https://user-images.githubusercontent.com/25688193/34772531-937af814-f64b-11e7-94ff-0b7dfce9d10b.png)
+![image](https://user-images.githubusercontent.com/25688193/34772845-dae746ac-f64c-11e7-9417-b2d3b595f4cc.png)
+![image](https://user-images.githubusercontent.com/25688193/34773668-db0625ec-f64f-11e7-81ee-9a83fa637bef.png)
+![image](https://user-images.githubusercontent.com/25688193/34773684-e8e57d84-f64f-11e7-8f20-39b31cc65c6f.png)
+
+
+<a id="ID_10-7-1"></a>
+
+### 教師あり記憶ネットワーク [supervised memory network]
+> 記載中...
+
+
+<a id="ID_10-7-2"></a>
+
+### end-to-end 記憶ネットワーク [end-to-end memory networks]
+> 記載中...
+
+
+<a id="ID_10-7-3"></a>
+
+### 動的記憶ネットワーク [DMN : dynamic memory networks]
+> 記載中...
+
+
 
 
 <br>
