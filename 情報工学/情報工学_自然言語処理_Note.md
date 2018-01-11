@@ -413,7 +413,7 @@
 
 ### end-to-end 記憶ネットワーク [end-to-end memory networks]
 ![image](https://user-images.githubusercontent.com/25688193/34809894-6889c384-f6db-11e7-9910-b7bba39c21f9.png)
-![image](https://user-images.githubusercontent.com/25688193/34810217-4b6e2144-f6dd-11e7-9c7e-29ae65b29303.png)
+![image](https://user-images.githubusercontent.com/25688193/34819999-b3525f3a-f702-11e7-8b82-177b1e6eb82a.png)
 ![image](https://user-images.githubusercontent.com/25688193/34815299-2f80cdc6-f6f4-11e7-8372-77426d2c5fa0.png)
 
 <a id="ID_10-7-2-1"></a>
@@ -429,7 +429,7 @@
 <a id="ID_10-7-2-3"></a>
 
 #### O : 出力情報変換 [output feature map]
-![image](https://user-images.githubusercontent.com/25688193/34818584-8f0268c2-f6fe-11e7-92f9-44635a6149e5.png)
+![image](https://user-images.githubusercontent.com/25688193/34820056-dd95b954-f702-11e7-8315-a6aa4f5fa315.png)
 ![image](https://user-images.githubusercontent.com/25688193/34819409-ff813ac2-f700-11e7-8ca3-7ef3598ddd9e.png)
 
 
