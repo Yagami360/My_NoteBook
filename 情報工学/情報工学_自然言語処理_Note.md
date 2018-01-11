@@ -424,7 +424,7 @@
 <a id="ID_10-7-2-2"></a>
 
 #### G : 一般化 [genelarization]
-![image](https://user-images.githubusercontent.com/25688193/34816565-a2c6773c-f6f8-11e7-91f5-94e7406c3c71.png)
+![image](https://user-images.githubusercontent.com/25688193/34823860-836fb5ee-f70f-11e7-8472-caee3ad07d7d.png)
 
 <a id="ID_10-7-2-3"></a>
 
@@ -436,7 +436,11 @@
 <a id="ID_10-7-3"></a>
 
 ### 動的記憶ネットワーク [DMN : dynamic memory networks]
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34824992-0b69ac08-f714-11e7-8b27-d0c4ebada20f.png)
+![image](https://user-images.githubusercontent.com/25688193/34824969-f635b660-f713-11e7-9bf2-e3ce870a3384.png)
+![image](https://user-images.githubusercontent.com/25688193/34825462-ebdb781a-f715-11e7-9e82-141d1322cef7.png)
+![image](https://user-images.githubusercontent.com/25688193/34827254-e18bcc96-f71c-11e7-8ace-f0012a4cd09c.png)
+![image](https://user-images.githubusercontent.com/25688193/34827387-5673a286-f71d-11e7-8e0b-7172cb38c394.png)
 
 
 <br>
