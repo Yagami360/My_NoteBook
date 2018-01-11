@@ -54,8 +54,14 @@
         1. [ハード注意機構 [hard attention mechanism]](#ID_10-6-2)
     1. [記憶ネットワーク [MemN : memory networks]](#ID_10-7)
         1. [記憶ネットワークのアーキテクチャ [architecture]](#ID_10-7-0)
-        1. [教師あり記憶ネットワーク [supervised memory network]](#ID_10-7-1)
+        1. [教師あり記憶ネットワーク [supervised memory networks / strongly supervised memory networks]](#ID_10-7-1)
+            1. [I : 入力情報変換 [input feature map]](#ID_10-7-1-1)
+            1. [G : 一般化 [genelarization]](#ID_10-7-1-2)
+            1. [O : 出力情報変換 [output feature map]](#ID_10-7-1-3)
         1. [end-to-end 記憶ネットワーク [end-to-end memory networks]](#ID_10-7-2)
+            1. [I : 入力情報変換 [input feature map]](#ID_10-7-2-1)
+            1. [G : 一般化 [genelarization]](#ID_10-7-2-2)
+            1. [O : 出力情報変換 [output feature map]](#ID_10-7-2-3)
         1. [動的記憶ネットワーク [DMN : dynamic memory networks]](#ID_10-7-3)
     1. seq2seq モデルの出力層の高速化手法
         1. 重点サンプリング [importance sampling]
@@ -359,6 +365,10 @@
 <a id="ID_10-7"></a>
 
 ## 記憶ネットワーク [MemN : memory networks]
+
+- 参照サイト
+    - http://deeplearning.hatenablog.com/entry/memory_networks
+
 ![image](https://user-images.githubusercontent.com/25688193/34750579-12688b7a-f5eb-11e7-9138-a71232566b83.png)
 
 
@@ -373,22 +383,60 @@
 
 <a id="ID_10-7-1"></a>
 
-### 教師あり記憶ネットワーク [supervised memory network]
-> 記載中...
+### 教師あり記憶ネットワーク [supervised memory networks / strongly supervised memory networks]
+![image](https://user-images.githubusercontent.com/25688193/34781151-6e4f4316-f668-11e7-905f-8e21988614e0.png)
+![image](https://user-images.githubusercontent.com/25688193/34781680-d11b4cc8-f669-11e7-8b32-e7624d2d2d07.png)
+
+<a id="ID_10-7-1-1"></a>
+
+#### I : 入力情報変換 [input feature map]
+![image](https://user-images.githubusercontent.com/25688193/34785928-e5e169ce-f675-11e7-9713-fe150cffa3e0.png)
+
+<a id="ID_10-7-1-2"></a>
+
+#### G : 一般化 [genelarization]
+![image](https://user-images.githubusercontent.com/25688193/34785947-f4d3b806-f675-11e7-809b-27f9e367d403.png)
+
+<a id="ID_10-7-1-3"></a>
+
+#### O : 出力情報変換 [output feature map]
+![image](https://user-images.githubusercontent.com/25688193/34796301-6fa16d4a-f698-11e7-9149-bc0f36e47a4c.png)
+![image](https://user-images.githubusercontent.com/25688193/34796406-cae41d06-f698-11e7-94d5-f10b63f590a9.png)
+![image](https://user-images.githubusercontent.com/25688193/34797118-c073ab78-f69a-11e7-82a1-2d11326e27f5.png)
+![image](https://user-images.githubusercontent.com/25688193/34799590-c00e3776-f6a3-11e7-95c5-e594980bb46e.png)
+![image](https://user-images.githubusercontent.com/25688193/34799819-a2c2e148-f6a4-11e7-8c3c-8ea9bdd885de.png)
+![image](https://user-images.githubusercontent.com/25688193/34800341-9f92123a-f6a6-11e7-910e-11e3df0d085c.png)
+![image](https://user-images.githubusercontent.com/25688193/34804317-5e305f94-f6bb-11e7-86f5-596e3e1d0fff.png)
 
 
 <a id="ID_10-7-2"></a>
 
 ### end-to-end 記憶ネットワーク [end-to-end memory networks]
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34809894-6889c384-f6db-11e7-9910-b7bba39c21f9.png)
+![image](https://user-images.githubusercontent.com/25688193/34810217-4b6e2144-f6dd-11e7-9c7e-29ae65b29303.png)
+![image](https://user-images.githubusercontent.com/25688193/34815299-2f80cdc6-f6f4-11e7-8372-77426d2c5fa0.png)
+
+<a id="ID_10-7-2-1"></a>
+
+#### I : 入力情報変換 [input feature map]
+![image](https://user-images.githubusercontent.com/25688193/34816109-3e821ef8-f6f7-11e7-8b86-117d0681c367.png)
+
+<a id="ID_10-7-2-2"></a>
+
+#### G : 一般化 [genelarization]
+![image](https://user-images.githubusercontent.com/25688193/34816565-a2c6773c-f6f8-11e7-91f5-94e7406c3c71.png)
+
+<a id="ID_10-7-2-3"></a>
+
+#### O : 出力情報変換 [output feature map]
+![image](https://user-images.githubusercontent.com/25688193/34818584-8f0268c2-f6fe-11e7-92f9-44635a6149e5.png)
+![image](https://user-images.githubusercontent.com/25688193/34819409-ff813ac2-f700-11e7-8ca3-7ef3598ddd9e.png)
 
 
 <a id="ID_10-7-3"></a>
 
 ### 動的記憶ネットワーク [DMN : dynamic memory networks]
 > 記載中...
-
-
 
 
 <br>
