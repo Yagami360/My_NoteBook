@@ -63,8 +63,8 @@
             1. [G : 一般化 [genelarization]](#ID_10-7-2-2)
             1. [O : 出力情報変換 [output feature map]](#ID_10-7-2-3)
         1. [動的記憶ネットワーク [DMN : dynamic memory networks]](#ID_10-7-3)
-    1. seq2seq モデルの出力層の高速化手法
-        1. 重点サンプリング [importance sampling]
+    1. [ニューラル言語モデル、seq2seq モデルの出力層の高速化手法](#ID_10-8)
+        1. [重点サンプリング [importance sampling]](#ID_10-8-1)
         1. 雑音対照推定 [NCE : noise contrastive estimation]
         1. 負例サンプリング [negative sampling]
         1. ブラックアウト [black-out]
@@ -441,6 +441,26 @@
 ![image](https://user-images.githubusercontent.com/25688193/34825462-ebdb781a-f715-11e7-9e82-141d1322cef7.png)
 ![image](https://user-images.githubusercontent.com/25688193/34827254-e18bcc96-f71c-11e7-8ace-f0012a4cd09c.png)
 ![image](https://user-images.githubusercontent.com/25688193/34827387-5673a286-f71d-11e7-8e0b-7172cb38c394.png)
+
+---
+
+<a id="ID_10-8"></a>
+
+## ニューラル言語モデル、seq2seq モデルの出力層の高速化手法
+![image](https://user-images.githubusercontent.com/25688193/34836700-0a3204fc-f73c-11e7-80b2-30ee6470926a.png)
+
+![image](https://user-images.githubusercontent.com/25688193/34839746-0c4adfca-f746-11e7-887c-077708159ed8.png)
+![image](https://user-images.githubusercontent.com/25688193/34863777-82e0640c-f7b4-11e7-8d81-bbea2dc425d2.png)
+![image](https://user-images.githubusercontent.com/25688193/34863807-a539b08a-f7b4-11e7-883b-2087d238bc22.png)
+![image](https://user-images.githubusercontent.com/25688193/34864657-9fe11b74-f7b8-11e7-9716-3487c83d6aa7.png)
+![image](https://user-images.githubusercontent.com/25688193/34864820-6c38c9ec-f7b9-11e7-95f6-69d36b8103ff.png)
+
+
+<a id="ID_10-8-1"></a>
+
+### 重点サンプリング [importance sampling]
+> 記憶中...
+
 
 
 <br>
