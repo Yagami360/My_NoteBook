@@ -472,6 +472,12 @@
 <a id="ID_10-8-2"></a>
 
 ### 雑音対照推定 [NCE : noise contrastive estimation]
+![image](https://user-images.githubusercontent.com/25688193/34906754-c08b4558-f8b6-11e7-8ed9-7c382bad447d.png)
+![image](https://user-images.githubusercontent.com/25688193/34906757-d7df8a7a-f8b6-11e7-8afc-e74233db287a.png)
+![image](https://user-images.githubusercontent.com/25688193/34907924-fc50bcc2-f8c9-11e7-9baa-888164e6c143.png)
+![image](https://user-images.githubusercontent.com/25688193/34908008-17a1604c-f8cc-11e7-9e0a-4e62b651cdae.png)
+
+
 > 記憶中...
 
 
