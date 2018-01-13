@@ -65,7 +65,7 @@
         1. [動的記憶ネットワーク [DMN : dynamic memory networks]](#ID_10-7-3)
     1. [ニューラル言語モデル、seq2seq モデルの出力層の高速化手法](#ID_10-8)
         1. [重点サンプリング [importance sampling]](#ID_10-8-1)
-        1. 雑音対照推定 [NCE : noise contrastive estimation]
+        1. [雑音対照推定 [NCE : noise contrastive estimation]](#ID_10-8-2)
         1. 負例サンプリング [negative sampling]
         1. ブラックアウト [black-out]
         1. 階層的ソフトマックス [HSM : hierarchial softmax]
@@ -459,7 +459,21 @@
 <a id="ID_10-8-1"></a>
 
 ### 重点サンプリング [importance sampling]
+![image](https://user-images.githubusercontent.com/25688193/34873490-990a2bea-f7d8-11e7-9e64-5b816058eeb4.png)
+![image](https://user-images.githubusercontent.com/25688193/34896933-03995c78-f82f-11e7-8e9a-b3837adad5ee.png)
+![image](https://user-images.githubusercontent.com/25688193/34896996-3dc27164-f82f-11e7-8c0b-f038a0fd9cc3.png)
+![image](https://user-images.githubusercontent.com/25688193/34897240-74b5bf86-f830-11e7-95f1-0670056dcfe5.png)
+![image](https://user-images.githubusercontent.com/25688193/34898714-d5df75fc-f837-11e7-8a2e-19c4226ec8eb.png)
+
 > 記憶中...
+
+
+<a id="ID_10-8-2"></a>
+
+### 雑音対照推定 [NCE : noise contrastive estimation]
+> 記憶中...
+
+
 
 
 
