@@ -63,10 +63,10 @@
             1. [G : 一般化 [genelarization]](#ID_10-7-2-2)
             1. [O : 出力情報変換 [output feature map]](#ID_10-7-2-3)
         1. [動的記憶ネットワーク [DMN : dynamic memory networks]](#ID_10-7-3)
-    1. [ニューラル言語モデル、seq2seq モデルの出力層の高速化手法](#ID_10-8)
+    1. [ニューラル言語モデル、seq2seq モデルの出力層の高速化手法（クロス・エントロピー損失関数の勾配計算の効率化）](#ID_10-8)
         1. [重点サンプリング [importance sampling]](#ID_10-8-1)
         1. [雑音対照推定 [NCE : noise contrastive estimation]](#ID_10-8-2)
-        1. 負例サンプリング [negative sampling]
+        1. [負例サンプリング [negative sampling]](#ID_10-8-3)
         1. ブラックアウト [black-out]
         1. 階層的ソフトマックス [HSM : hierarchial softmax]
     1. 形態素解析 [Morphological Analysis]
@@ -446,7 +446,7 @@
 
 <a id="ID_10-8"></a>
 
-## ニューラル言語モデル、seq2seq モデルの出力層の高速化手法
+## ニューラル言語モデル、seq2seq モデルの出力層の高速化手法（クロス・エントロピー損失関数の勾配計算の効率化）
 ![image](https://user-images.githubusercontent.com/25688193/34836700-0a3204fc-f73c-11e7-80b2-30ee6470926a.png)
 
 ![image](https://user-images.githubusercontent.com/25688193/34839746-0c4adfca-f746-11e7-887c-077708159ed8.png)
@@ -472,16 +472,18 @@
 <a id="ID_10-8-2"></a>
 
 ### 雑音対照推定 [NCE : noise contrastive estimation]
-![image](https://user-images.githubusercontent.com/25688193/34906754-c08b4558-f8b6-11e7-8ed9-7c382bad447d.png)
-![image](https://user-images.githubusercontent.com/25688193/34906757-d7df8a7a-f8b6-11e7-8afc-e74233db287a.png)
-![image](https://user-images.githubusercontent.com/25688193/34907924-fc50bcc2-f8c9-11e7-9baa-888164e6c143.png)
-![image](https://user-images.githubusercontent.com/25688193/34908008-17a1604c-f8cc-11e7-9e0a-4e62b651cdae.png)
+![image](https://user-images.githubusercontent.com/25688193/34910831-7e095c34-f900-11e7-9627-f747296bd2ff.png)
+![image](https://user-images.githubusercontent.com/25688193/34910839-a4f26d68-f900-11e7-82b8-488303fe0e73.png)
+
+![image](https://user-images.githubusercontent.com/25688193/34910914-d72e3f90-f901-11e7-8ff4-91060680a638.png)
+![image](https://user-images.githubusercontent.com/25688193/34910933-26e09308-f902-11e7-94a2-41c23bf07579.png)
+![image](https://user-images.githubusercontent.com/25688193/34911105-f320dee8-f905-11e7-98a5-4f9231be28ff.png)
 
 
+<a id="ID_10-8-3"></a>
+
+### 負例サンプリング [negative sampling]
 > 記憶中...
-
-
-
 
 
 <br>
