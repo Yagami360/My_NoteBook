@@ -65,10 +65,10 @@
         1. [動的記憶ネットワーク [DMN : dynamic memory networks]](#ID_10-7-3)
     1. [ニューラル言語モデル、seq2seq モデルの出力層の高速化手法（クロス・エントロピー損失関数の勾配計算の効率化）](#ID_10-8)
         1. [重点サンプリング [importance sampling]](#ID_10-8-1)
-        1. [雑音対照推定 [NCE : noise contrastive estimation]](#ID_10-8-2)
+        1. [雑音対照推定 [NCE : noise-contrastive estimation]](#ID_10-8-2)
         1. [負例サンプリング [negative sampling]](#ID_10-8-3)
-        1. ブラックアウト [black-out]
-        1. 階層的ソフトマックス [HSM : hierarchial softmax]
+        1. [ブラックアウト [black-out]](#ID_10-8-4)
+        1. [階層的ソフトマックス [HSM : hierarchial softmax]](#ID_10-8-5)
     1. 形態素解析 [Morphological Analysis]
 
 <a id="ID_10"></a>
@@ -471,7 +471,7 @@
 
 <a id="ID_10-8-2"></a>
 
-### 雑音対照推定 [NCE : noise contrastive estimation]
+### 雑音対照推定 [NCE : noise-contrastive estimation]
 ![image](https://user-images.githubusercontent.com/25688193/34910831-7e095c34-f900-11e7-9627-f747296bd2ff.png)
 ![image](https://user-images.githubusercontent.com/25688193/34910839-a4f26d68-f900-11e7-82b8-488303fe0e73.png)
 
@@ -479,11 +479,30 @@
 ![image](https://user-images.githubusercontent.com/25688193/34910933-26e09308-f902-11e7-94a2-41c23bf07579.png)
 ![image](https://user-images.githubusercontent.com/25688193/34911105-f320dee8-f905-11e7-98a5-4f9231be28ff.png)
 
+- 参考サイト
+    - https://qiita.com/Quasi-quant2010/items/a15b0d1b6428dc49c6c2
+
 
 <a id="ID_10-8-3"></a>
 
 ### 負例サンプリング [negative sampling]
-> 記憶中...
+![image](https://user-images.githubusercontent.com/25688193/34916174-069659f0-f977-11e7-9323-083612867985.png)
+![image](https://user-images.githubusercontent.com/25688193/34916162-ca94c87e-f976-11e7-8e36-b749d26f45ab.png)
+![image](https://user-images.githubusercontent.com/25688193/34916265-c2ad5da4-f978-11e7-9f63-3e5c7159616f.png)
+
+
+<a id="ID_10-8-4"></a>
+
+### ブラックアウト [black-out]
+> 記載中...
+
+
+<a id="ID_10-8-5"></a>
+
+### 階層的ソフトマックス [HSM : hierarchial softmax]
+> 記載中...
+
+
 
 
 <br>
