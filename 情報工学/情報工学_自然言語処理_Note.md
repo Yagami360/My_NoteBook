@@ -25,6 +25,7 @@
             1. [再帰ニューラル（RNN）言語モデル [RNN-LM]](#ID_10-3-2-2)
         1. 言語モデルの評価
             1. パープレキシティ [PPL : Perplexity]
+    1. 形態素解析 [Morphological Analysis]
     1. [分散表現 [distributional / distributed]](#ID_10-4)
         1. [単語の分散表現、単語埋め込み [Word Embeddings]](#ID_10-4-1)
         1. [単語の分散表現、単語埋め込み [Word Embeddings] の具体的な獲得方法](#ID_10-4-2)
@@ -69,7 +70,13 @@
         1. [負例サンプリング [negative sampling]](#ID_10-8-3)
         1. [ブラックアウト [black-out]](#ID_10-8-4)
         1. [階層的ソフトマックス [HSM : hierarchial softmax]](#ID_10-8-5)
-    1. 形態素解析 [Morphological Analysis]
+        1. [各種高速化手法の比較](#ID_10-8-6)
+    1. 自然言語処理の応用タスク [application]
+        1. 機械翻訳 [MT : machine translation]
+            1. ニューラル翻訳 [NMT : neural machine translation] / ニューラル翻訳モデル
+        1. 文書要約 [text summarization]
+        1. 対話システム [dialog system]
+        1. 質問応答 [QA : question answering]
 
 <a id="ID_10"></a>
 
@@ -466,7 +473,7 @@
 ![image](https://user-images.githubusercontent.com/25688193/34898714-d5df75fc-f837-11e7-8a2e-19c4226ec8eb.png)
 ![image](https://user-images.githubusercontent.com/25688193/34903184-9852811a-f86f-11e7-968c-4e31fa1085cd.png)
 ![image](https://user-images.githubusercontent.com/25688193/34903344-7e732120-f872-11e7-92ac-99fb3c407e9b.png)
-![image](https://user-images.githubusercontent.com/25688193/34903555-407963f2-f877-11e7-8bdb-50328825f447.png)
+![image](https://user-images.githubusercontent.com/25688193/34918786-09ce01de-f99c-11e7-9186-2019a1a25266.png)
 
 
 <a id="ID_10-8-2"></a>
@@ -486,7 +493,7 @@
 <a id="ID_10-8-3"></a>
 
 ### 負例サンプリング [negative sampling]
-![image](https://user-images.githubusercontent.com/25688193/34916174-069659f0-f977-11e7-9323-083612867985.png)
+![image](https://user-images.githubusercontent.com/25688193/34918212-995f4600-f992-11e7-8db7-69a9677a48d5.png)
 ![image](https://user-images.githubusercontent.com/25688193/34916162-ca94c87e-f976-11e7-8e36-b749d26f45ab.png)
 ![image](https://user-images.githubusercontent.com/25688193/34916265-c2ad5da4-f978-11e7-9f63-3e5c7159616f.png)
 
@@ -494,6 +501,11 @@
 <a id="ID_10-8-4"></a>
 
 ### ブラックアウト [black-out]
+![image](https://user-images.githubusercontent.com/25688193/34918300-c4f711de-f993-11e7-879a-38c6eb558859.png)
+![image](https://user-images.githubusercontent.com/25688193/34918493-a15bed00-f996-11e7-9bd0-20e22b6be5c0.png)
+![image](https://user-images.githubusercontent.com/25688193/34918847-35f9b892-f99d-11e7-92de-53ecf1ee388c.png)
+![image](https://user-images.githubusercontent.com/25688193/34918861-6971d056-f99d-11e7-9f28-35c4330b307a.png)
+
 > 記載中...
 
 
@@ -502,6 +514,11 @@
 ### 階層的ソフトマックス [HSM : hierarchial softmax]
 > 記載中...
 
+
+<a id="ID_10-8-6"></a>
+
+### 各種高速化手法の比較
+> 記載中...
 
 
 
