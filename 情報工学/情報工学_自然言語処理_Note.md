@@ -506,12 +506,17 @@
 ![image](https://user-images.githubusercontent.com/25688193/34918847-35f9b892-f99d-11e7-92de-53ecf1ee388c.png)
 ![image](https://user-images.githubusercontent.com/25688193/34918861-6971d056-f99d-11e7-9f28-35c4330b307a.png)
 
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34922645-0e1ec608-f9d6-11e7-96b2-8742708da58d.png)
+![image](https://user-images.githubusercontent.com/25688193/34922650-21c70bc0-f9d6-11e7-99c4-65eb54f07304.png)
 
 
 <a id="ID_10-8-5"></a>
 
 ### 階層的ソフトマックス [HSM : hierarchial softmax]
+![image](https://user-images.githubusercontent.com/25688193/34958572-d752d484-fa75-11e7-98ed-a0f58e84084a.png)
+![image](https://user-images.githubusercontent.com/25688193/34960208-42222d12-fa7d-11e7-9889-105a86fe3e4a.png)
+![image](https://user-images.githubusercontent.com/25688193/34960422-12046324-fa7e-11e7-8ebe-d6d0c59314bd.png)
+
 > 記載中...
 
 
