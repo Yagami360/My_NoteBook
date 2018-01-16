@@ -71,9 +71,11 @@
         1. [ブラックアウト [black-out]](#ID_10-8-4)
         1. [階層的ソフトマックス [HSM : hierarchial softmax]](#ID_10-8-5)
         1. [各種高速化手法の比較](#ID_10-8-6)
-    1. 自然言語処理の応用タスク [application]
-        1. 機械翻訳 [MT : machine translation]
+    1. [自然言語処理の応用タスク [application]](#ID_10-9)
+        1. [機械翻訳 [MT : machine translation]](#ID_10-9-1)
             1. ニューラル翻訳 [NMT : neural machine translation] / ニューラル翻訳モデル
+            1. [GroundHog / RNNSearch](#ID_10-9-1-1)
+            1. [OpenNMT / seq2seq-attn](#ID_10-9-1-2)
         1. 文書要約 [text summarization]
         1. 対話システム [dialog system]
         1. 質問応答 [QA : question answering]
@@ -516,14 +518,46 @@
 ![image](https://user-images.githubusercontent.com/25688193/34958572-d752d484-fa75-11e7-98ed-a0f58e84084a.png)
 ![image](https://user-images.githubusercontent.com/25688193/34960208-42222d12-fa7d-11e7-9889-105a86fe3e4a.png)
 ![image](https://user-images.githubusercontent.com/25688193/34960422-12046324-fa7e-11e7-8ebe-d6d0c59314bd.png)
-
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34968754-7aebfd2c-faae-11e7-8106-2cb6946def24.png)
 
 
 <a id="ID_10-8-6"></a>
 
 ### 各種高速化手法の比較
 > 記載中...
+
+
+---
+
+
+<a id="ID_10-9"></a>
+
+## 自然言語処理の応用タスク [application]
+
+
+<a id="ID_10-9-1"></a>
+
+### 機械翻訳 [MT : machine translation]
+
+
+<a id="ID_10-9-1-1"></a>
+
+#### GroundHog / RNNSearch
+- 参考サイト
+    - （公式）https://github.com/lisa-groundhog/GroundHog
+
+モントリオール大学からリリースされているニューラル翻訳（NMT）のツール。<br>
+GroundHog ツールのモデルの実装は、注意機構 [attention] 有りとなし両方の場合を含む。
+
+<a id="ID_10-9-1-1"></a>
+
+#### OpenNMT / seq2seq-attn
+- 参考サイト
+    - （公式）http://opennmt.net/
+
+![image](https://user-images.githubusercontent.com/25688193/34977471-f3ca6402-fadd-11e7-8ca4-f1fd16b48b3c.png)
+![image](https://user-images.githubusercontent.com/25688193/34977965-fbe06748-fadf-11e7-9be4-552d24b85f30.png)
+
 
 
 
