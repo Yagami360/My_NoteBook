@@ -76,6 +76,8 @@
             1. ニューラル翻訳 [NMT : neural machine translation] / ニューラル翻訳モデル
             1. [GroundHog / RNNSearch](#ID_10-9-1-1)
             1. [OpenNMT / seq2seq-attn](#ID_10-9-1-2)
+                1. [符号化器 [Encoder] / 2 層の Bidirectional-LSTM](#ID_10-9-1-2-1)
+                1. 復号化器 [Decoder] / 2 層の LSTM
         1. 文書要約 [text summarization]
         1. 対話システム [dialog system]
         1. 質問応答 [QA : question answering]
@@ -455,7 +457,7 @@
 
 <a id="ID_10-8"></a>
 
-## ニューラル言語モデル、seq2seq モデルの出力層の高速化手法（クロス・エントロピー損失関数の勾配計算の効率化）
+## ニューラル言語モデル、seq2seq モデルの出力層の高速化手法<br>（クロス・エントロピー損失関数の勾配計算の効率化）
 ![image](https://user-images.githubusercontent.com/25688193/34836700-0a3204fc-f73c-11e7-80b2-30ee6470926a.png)
 
 ![image](https://user-images.githubusercontent.com/25688193/34839746-0c4adfca-f746-11e7-887c-077708159ed8.png)
@@ -549,15 +551,26 @@
 モントリオール大学からリリースされているニューラル翻訳（NMT）のツール。<br>
 GroundHog ツールのモデルの実装は、注意機構 [attention] 有りとなし両方の場合を含む。
 
-<a id="ID_10-9-1-1"></a>
+<a id="ID_10-9-1-2"></a>
 
 #### OpenNMT / seq2seq-attn
 - 参考サイト
     - （公式）http://opennmt.net/
 
-![image](https://user-images.githubusercontent.com/25688193/34977471-f3ca6402-fadd-11e7-8ca4-f1fd16b48b3c.png)
-![image](https://user-images.githubusercontent.com/25688193/34977965-fbe06748-fadf-11e7-9be4-552d24b85f30.png)
+![image](https://user-images.githubusercontent.com/25688193/34982479-d83aa4c6-faed-11e7-9b7b-c01cef081725.png)
 
+<a id="ID_10-9-1-2-1"></a>
+
+#### 符号化器 [Encoder] / 2 層の Bidirectional-LSTM
+![image](https://user-images.githubusercontent.com/25688193/34982503-e8f7f4d0-faed-11e7-8dd7-1ce3d7e137d4.png)
+![image](https://user-images.githubusercontent.com/25688193/34981388-b7bfd2be-faea-11e7-997c-95c48b9d7e09.png)
+
+##### 符号化器 - 埋め込み層 [encoder - embedding layer]
+![image](https://user-images.githubusercontent.com/25688193/34982208-1f4a38be-faed-11e7-81a3-34f5f88537e2.png)
+
+##### 符号化器 - 再帰層 [encoder - recurrent layer]
+![image](https://user-images.githubusercontent.com/25688193/34983659-9dc8b8ce-faf1-11e7-8592-4ab440654e0d.png)
+![image](https://user-images.githubusercontent.com/25688193/34984444-598654b6-faf4-11e7-8418-ef09c7728b60.png)
 
 
 
