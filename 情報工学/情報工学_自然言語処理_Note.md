@@ -77,10 +77,10 @@
             1. [GroundHog / RNNSearch](#ID_10-9-1-1)
             1. [OpenNMT / seq2seq-attn](#ID_10-9-1-2)
                 1. [符号化器 [Encoder] / 2 層の Bidirectional-LSTM](#ID_10-9-1-2-1)
-                1. 復号化器 [Decoder] / 2 層の LSTM
-        1. 文書要約 [text summarization]
-        1. 対話システム [dialog system]
-        1. 質問応答 [QA : question answering]
+                1. [復号化器 [Decoder] / 2 層の LSTM + attention 層](#ID_10-9-1-2-2)
+        1. [文書要約 [text summarization]](#ID_10-9-2)
+        1. [対話システム [dialog system]](#ID_10-9-3)
+        1. [質問応答 [QA : question answering]](#ID_10-9-4)
 
 <a id="ID_10"></a>
 
@@ -571,6 +571,54 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ##### 符号化器 - 再帰層 [encoder - recurrent layer]
 ![image](https://user-images.githubusercontent.com/25688193/34983659-9dc8b8ce-faf1-11e7-8592-4ab440654e0d.png)
 ![image](https://user-images.githubusercontent.com/25688193/34984444-598654b6-faf4-11e7-8418-ef09c7728b60.png)
+
+
+<a id="ID_10-9-1-2-2"></a>
+
+#### 復号化器 [Decoder] / 2 層の LSTM + attention 層
+![image](https://user-images.githubusercontent.com/25688193/35031279-917b1896-fba5-11e7-8dae-4f482846f1a4.png)
+![image](https://user-images.githubusercontent.com/25688193/35039068-1b08cf26-fbc0-11e7-91cb-a506a7d9cbd5.png)
+
+![image](https://user-images.githubusercontent.com/25688193/35039784-4419aaa0-fbc2-11e7-87c1-d9d30015d22e.png)
+
+![image](https://user-images.githubusercontent.com/25688193/35040247-c12aa35e-fbc3-11e7-8bb8-25a9fa2b052e.png)
+
+
+##### モデルの学習時の処理 / 復号化器 - 埋め込み層 [decoder - recurrent layer]
+![image](https://user-images.githubusercontent.com/25688193/35041826-7cd3dde6-fbc9-11e7-9695-2a2278dd506a.png)
+![image](https://user-images.githubusercontent.com/25688193/35041847-8edad90e-fbc9-11e7-88d8-c3fd44efae50.png)
+
+##### モデルの学習時の処理 / 復号化器 - 再帰層 [encoder - recurrent layer]
+![image](https://user-images.githubusercontent.com/25688193/35042645-d6312af8-fbcc-11e7-85dc-36c40861b4d7.png)
+![image](https://user-images.githubusercontent.com/25688193/35042331-9c34714e-fbcb-11e7-963a-26cef53c54ae.png)
+![image](https://user-images.githubusercontent.com/25688193/35043091-9799e544-fbce-11e7-8df0-3cf6ef7187ce.png)
+
+
+##### モデルの学習時の処理 / 復号化器 - 注意層 [encoder - attention layer]
+> 記載中...
+
+##### モデルの学習時の処理 / 復号化器 - 出力層 [encoder - output layer]
+> 記載中...
+
+
+---
+
+<a id="ID_10-9-2"></a>
+
+### 文書要約 [text summarization]
+> 記載中...
+
+
+<a id="ID_10-9-3"></a>
+
+### 対話システム [dialog system]
+> 記載中...
+
+
+<a id="ID_10-9-4"></a>
+
+### 質問応答 [QA : question answering]
+> 記載中...
 
 
 
