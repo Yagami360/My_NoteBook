@@ -588,16 +588,19 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ![image](https://user-images.githubusercontent.com/25688193/35041826-7cd3dde6-fbc9-11e7-9695-2a2278dd506a.png)
 ![image](https://user-images.githubusercontent.com/25688193/35041847-8edad90e-fbc9-11e7-88d8-c3fd44efae50.png)
 
-##### モデルの学習時の処理 / 復号化器 - 再帰層 [encoder - recurrent layer]
+##### モデルの学習時の処理 / 復号化器 - 再帰層 [decoder - recurrent layer]
 ![image](https://user-images.githubusercontent.com/25688193/35042645-d6312af8-fbcc-11e7-85dc-36c40861b4d7.png)
 ![image](https://user-images.githubusercontent.com/25688193/35042331-9c34714e-fbcb-11e7-963a-26cef53c54ae.png)
 ![image](https://user-images.githubusercontent.com/25688193/35043091-9799e544-fbce-11e7-8df0-3cf6ef7187ce.png)
 
+##### モデルの学習時の処理 / 復号化器 - 注意層 [decoder - attention layer]
+![image](https://user-images.githubusercontent.com/25688193/35057952-ce46b876-fbf9-11e7-8fdc-ba28fc518960.png)
+![image](https://user-images.githubusercontent.com/25688193/35058382-21af2f7e-fbfb-11e7-91eb-0735cdd38e2b.png)
+![image](https://user-images.githubusercontent.com/25688193/35059534-ce396d9c-fbfe-11e7-974e-0f6c74a1c3d9.png)
 
-##### モデルの学習時の処理 / 復号化器 - 注意層 [encoder - attention layer]
-> 記載中...
+##### モデルの学習時の処理 / 復号化器 - 出力層 [decoder - output layer]
+![image](https://user-images.githubusercontent.com/25688193/35058705-23ff1b30-fbfc-11e7-8129-bce89c406524.png)
 
-##### モデルの学習時の処理 / 復号化器 - 出力層 [encoder - output layer]
 > 記載中...
 
 
