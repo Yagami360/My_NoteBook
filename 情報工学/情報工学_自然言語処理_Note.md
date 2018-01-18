@@ -78,6 +78,8 @@
             1. [OpenNMT / seq2seq-attn](#ID_10-9-1-2)
                 1. [符号化器 [Encoder] / 2 層の Bidirectional-LSTM](#ID_10-9-1-2-1)
                 1. [復号化器 [Decoder] / 2 層の LSTM + attention 層](#ID_10-9-1-2-2)
+            1. [機械翻訳タスクで入出力の処理単位 / 未知語に対する改良](#ID_10-9-1-3)
+            1. [機械翻訳タスクでの被覆 [coverage] に関する改良](#ID_10-9-1-4)
         1. [文書要約 [text summarization]](#ID_10-9-2)
         1. [対話システム [dialog system]](#ID_10-9-3)
         1. [質問応答 [QA : question answering]](#ID_10-9-4)
@@ -584,23 +586,38 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ![image](https://user-images.githubusercontent.com/25688193/35040247-c12aa35e-fbc3-11e7-8bb8-25a9fa2b052e.png)
 
 
-##### モデルの学習時の処理 / 復号化器 - 埋め込み層 [decoder - recurrent layer]
-![image](https://user-images.githubusercontent.com/25688193/35041826-7cd3dde6-fbc9-11e7-9695-2a2278dd506a.png)
+##### 復号化器 - 埋め込み層 [decoder - recurrent layer]
+![image](https://user-images.githubusercontent.com/25688193/35101821-3fe6946a-fca4-11e7-9c83-d85f0af193ea.png)
 ![image](https://user-images.githubusercontent.com/25688193/35041847-8edad90e-fbc9-11e7-88d8-c3fd44efae50.png)
 
-##### モデルの学習時の処理 / 復号化器 - 再帰層 [decoder - recurrent layer]
+##### 復号化器 - 再帰層 [decoder - recurrent layer]
 ![image](https://user-images.githubusercontent.com/25688193/35042645-d6312af8-fbcc-11e7-85dc-36c40861b4d7.png)
 ![image](https://user-images.githubusercontent.com/25688193/35042331-9c34714e-fbcb-11e7-963a-26cef53c54ae.png)
 ![image](https://user-images.githubusercontent.com/25688193/35043091-9799e544-fbce-11e7-8df0-3cf6ef7187ce.png)
 
-##### モデルの学習時の処理 / 復号化器 - 注意層 [decoder - attention layer]
-![image](https://user-images.githubusercontent.com/25688193/35057952-ce46b876-fbf9-11e7-8fdc-ba28fc518960.png)
+##### 復号化器 - 注意層 [decoder - attention layer]
+![image](https://user-images.githubusercontent.com/25688193/35101699-c9e86400-fca3-11e7-8dd8-708f929a50c9.png)
 ![image](https://user-images.githubusercontent.com/25688193/35058382-21af2f7e-fbfb-11e7-91eb-0735cdd38e2b.png)
 ![image](https://user-images.githubusercontent.com/25688193/35059534-ce396d9c-fbfe-11e7-974e-0f6c74a1c3d9.png)
 
-##### モデルの学習時の処理 / 復号化器 - 出力層 [decoder - output layer]
-![image](https://user-images.githubusercontent.com/25688193/35058705-23ff1b30-fbfc-11e7-8129-bce89c406524.png)
+##### 復号化器 - 出力層 [decoder - output layer] / モデルの学習時の処理
+![image](https://user-images.githubusercontent.com/25688193/35102186-774b92b0-fca5-11e7-9710-90a3efc635d2.png)
+![image](https://user-images.githubusercontent.com/25688193/35102671-eb8f7320-fca6-11e7-9c4e-ca1f1672e21f.png)
 
+##### 復号化器 - 出力層 [decoder - output layer] / モデルの評価時の処理
+![image](https://user-images.githubusercontent.com/25688193/35101875-6fa30aa8-fca4-11e7-823b-a69ccb245c34.png)
+![image](https://user-images.githubusercontent.com/25688193/35103395-094634d8-fca9-11e7-9965-f892f98ff7c3.png)
+
+
+<a id="ID_10-9-1-3"></a>
+
+#### 機械翻訳タスクでの入出力の処理単位 / 未知語に対する改良
+> 記載中...
+
+
+<a id="ID_10-9-1-4"></a>
+
+#### 機械翻訳タスクでの被覆 [coverage] に関する改良
 > 記載中...
 
 
@@ -611,12 +628,14 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ### 文書要約 [text summarization]
 > 記載中...
 
+---
 
 <a id="ID_10-9-3"></a>
 
 ### 対話システム [dialog system]
 > 記載中...
 
+---
 
 <a id="ID_10-9-4"></a>
 
