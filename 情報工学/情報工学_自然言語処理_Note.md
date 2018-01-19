@@ -80,7 +80,7 @@
                 1. [復号化器 [Decoder] / 2 層の LSTM + attention 層](#ID_10-9-1-2-2)
             1. [機械翻訳タスクで共通の課題とその対策、改良](#ID_10-9-1-3)
                 1. [語彙数、未知語と入出力単位](#ID_10-9-1-3-1)
-                1. [過剰生産 [over-generation]、不足生成 [under-generation] と被覆 [coverage]](#ID_10-9-1-3-2)
+                1. [過剰生成 [over-generation]、不足生成 [under-generation] と被覆 [coverage]](#ID_10-9-1-3-2)
         1. [文書要約 [text summarization]](#ID_10-9-2)
         1. [対話システム [dialog system]](#ID_10-9-3)
         1. [質問応答 [QA : question answering]](#ID_10-9-4)
@@ -627,8 +627,9 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 
 <a id="ID_10-9-1-3-2"></a>
 
-##### 過剰生産 [over-generation]、不足生成 [under-generation] と被覆 [coverage]
-> 記載中...
+##### 過剰生成 [over-generation]、不足生成 [under-generation] と被覆 [coverage]
+![image](https://user-images.githubusercontent.com/25688193/35171771-50dd27e8-fda8-11e7-83f7-941dfbb7a448.png)
+![image](https://user-images.githubusercontent.com/25688193/35171806-67642b88-fda8-11e7-8d40-ed55fd3b8fc9.png)
 
 
 ---
