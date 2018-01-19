@@ -78,11 +78,13 @@
             1. [OpenNMT / seq2seq-attn](#ID_10-9-1-2)
                 1. [符号化器 [Encoder] / 2 層の Bidirectional-LSTM](#ID_10-9-1-2-1)
                 1. [復号化器 [Decoder] / 2 層の LSTM + attention 層](#ID_10-9-1-2-2)
-            1. [機械翻訳タスクで入出力の処理単位 / 未知語に対する改良](#ID_10-9-1-3)
-            1. [機械翻訳タスクでの被覆 [coverage] に関する改良](#ID_10-9-1-4)
+            1. [機械翻訳タスクで共通の課題とその対策、改良](#ID_10-9-1-3)
+                1. [語彙数、未知語と入出力単位](#ID_10-9-1-3-1)
+                1. [過剰生産 [over-generation]、不足生成 [under-generation] と被覆 [coverage]](#ID_10-9-1-3-2)
         1. [文書要約 [text summarization]](#ID_10-9-2)
         1. [対話システム [dialog system]](#ID_10-9-3)
         1. [質問応答 [QA : question answering]](#ID_10-9-4)
+    1. [参考文献](#参考文献)
 
 <a id="ID_10"></a>
 
@@ -611,13 +613,21 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 
 <a id="ID_10-9-1-3"></a>
 
-#### 機械翻訳タスクでの入出力の処理単位 / 未知語に対する改良
-> 記載中...
+#### 機械翻訳タスクで共通の課題とその対策、改良
+![image](https://user-images.githubusercontent.com/25688193/35150308-4e2b76a8-fd5d-11e7-9330-71d3084972d6.png)
 
+<a id="ID_10-9-1-3-1"></a>
 
-<a id="ID_10-9-1-4"></a>
+##### 語彙数、未知語と入出力単位
+![image](https://user-images.githubusercontent.com/25688193/35152023-fc0ad5b0-fd63-11e7-9629-9a52a76cc8e0.png)
+![image](https://user-images.githubusercontent.com/25688193/35152048-166a6236-fd64-11e7-885a-bd3126ea1a21.png)
+![image](https://user-images.githubusercontent.com/25688193/35152078-35991d82-fd64-11e7-8816-a7de70924572.png)
+![image](https://user-images.githubusercontent.com/25688193/35152094-48168364-fd64-11e7-85a2-c6b4353624ab.png)
+![image](https://user-images.githubusercontent.com/25688193/35152105-57f2e91c-fd64-11e7-8cb6-f8ef9a686f81.png)
 
-#### 機械翻訳タスクでの被覆 [coverage] に関する改良
+<a id="ID_10-9-1-3-2"></a>
+
+##### 過剰生産 [over-generation]、不足生成 [under-generation] と被覆 [coverage]
 > 記載中...
 
 
