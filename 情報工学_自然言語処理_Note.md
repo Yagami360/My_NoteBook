@@ -71,12 +71,20 @@
         1. [ブラックアウト [black-out]](#ID_10-8-4)
         1. [階層的ソフトマックス [HSM : hierarchial softmax]](#ID_10-8-5)
         1. [各種高速化手法の比較](#ID_10-8-6)
-    1. 自然言語処理の応用タスク [application]
-        1. 機械翻訳 [MT : machine translation]
+    1. [自然言語処理の応用タスク [application]](#ID_10-9)
+        1. [機械翻訳 [MT : machine translation]](#ID_10-9-1)
             1. ニューラル翻訳 [NMT : neural machine translation] / ニューラル翻訳モデル
-        1. 文書要約 [text summarization]
-        1. 対話システム [dialog system]
-        1. 質問応答 [QA : question answering]
+            1. [GroundHog / RNNSearch](#ID_10-9-1-1)
+            1. [OpenNMT / seq2seq-attn](#ID_10-9-1-2)
+                1. [符号化器 [Encoder] / 2 層の Bidirectional-LSTM](#ID_10-9-1-2-1)
+                1. [復号化器 [Decoder] / 2 層の LSTM + attention 層](#ID_10-9-1-2-2)
+            1. [機械翻訳タスクで共通の課題とその対策、改良](#ID_10-9-1-3)
+                1. [語彙数、未知語と入出力単位](#ID_10-9-1-3-1)
+                1. [過剰生成 [over-generation]、不足生成 [under-generation] と被覆 [coverage]](#ID_10-9-1-3-2)
+        1. [文書要約 [text summarization]](#ID_10-9-2)
+        1. [対話システム [dialog system]](#ID_10-9-3)
+        1. [質問応答 [QA : question answering]](#ID_10-9-4)
+    1. [参考文献](#参考文献)
 
 <a id="ID_10"></a>
 
@@ -453,7 +461,7 @@
 
 <a id="ID_10-8"></a>
 
-## ニューラル言語モデル、seq2seq モデルの出力層の高速化手法（クロス・エントロピー損失関数の勾配計算の効率化）
+## ニューラル言語モデル、seq2seq モデルの出力層の高速化手法<br>（クロス・エントロピー損失関数の勾配計算の効率化）
 ![image](https://user-images.githubusercontent.com/25688193/34836700-0a3204fc-f73c-11e7-80b2-30ee6470926a.png)
 
 ![image](https://user-images.githubusercontent.com/25688193/34839746-0c4adfca-f746-11e7-887c-077708159ed8.png)
@@ -513,12 +521,138 @@
 <a id="ID_10-8-5"></a>
 
 ### 階層的ソフトマックス [HSM : hierarchial softmax]
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/34958572-d752d484-fa75-11e7-98ed-a0f58e84084a.png)
+![image](https://user-images.githubusercontent.com/25688193/34960208-42222d12-fa7d-11e7-9889-105a86fe3e4a.png)
+![image](https://user-images.githubusercontent.com/25688193/34960422-12046324-fa7e-11e7-8ebe-d6d0c59314bd.png)
+![image](https://user-images.githubusercontent.com/25688193/34968754-7aebfd2c-faae-11e7-8106-2cb6946def24.png)
 
 
 <a id="ID_10-8-6"></a>
 
 ### 各種高速化手法の比較
+> 記載中...
+
+
+---
+
+
+<a id="ID_10-9"></a>
+
+## 自然言語処理の応用タスク [application]
+
+
+<a id="ID_10-9-1"></a>
+
+### 機械翻訳 [MT : machine translation]
+
+
+<a id="ID_10-9-1-1"></a>
+
+#### GroundHog / RNNSearch
+- 参考サイト
+    - （公式）https://github.com/lisa-groundhog/GroundHog
+
+モントリオール大学からリリースされているニューラル翻訳（NMT）のツール。<br>
+GroundHog ツールのモデルの実装は、注意機構 [attention] 有りとなし両方の場合を含む。
+
+<a id="ID_10-9-1-2"></a>
+
+#### OpenNMT / seq2seq-attn
+- 参考サイト
+    - （公式）http://opennmt.net/
+
+![image](https://user-images.githubusercontent.com/25688193/34982479-d83aa4c6-faed-11e7-9b7b-c01cef081725.png)
+
+<a id="ID_10-9-1-2-1"></a>
+
+#### 符号化器 [Encoder] / 2 層の Bidirectional-LSTM
+![image](https://user-images.githubusercontent.com/25688193/34982503-e8f7f4d0-faed-11e7-8dd7-1ce3d7e137d4.png)
+![image](https://user-images.githubusercontent.com/25688193/34981388-b7bfd2be-faea-11e7-997c-95c48b9d7e09.png)
+
+##### 符号化器 - 埋め込み層 [encoder - embedding layer]
+![image](https://user-images.githubusercontent.com/25688193/34982208-1f4a38be-faed-11e7-81a3-34f5f88537e2.png)
+
+##### 符号化器 - 再帰層 [encoder - recurrent layer]
+![image](https://user-images.githubusercontent.com/25688193/34983659-9dc8b8ce-faf1-11e7-8592-4ab440654e0d.png)
+![image](https://user-images.githubusercontent.com/25688193/34984444-598654b6-faf4-11e7-8418-ef09c7728b60.png)
+
+
+<a id="ID_10-9-1-2-2"></a>
+
+#### 復号化器 [Decoder] / 2 層の LSTM + attention 層
+![image](https://user-images.githubusercontent.com/25688193/35031279-917b1896-fba5-11e7-8dae-4f482846f1a4.png)
+![image](https://user-images.githubusercontent.com/25688193/35039068-1b08cf26-fbc0-11e7-91cb-a506a7d9cbd5.png)
+
+![image](https://user-images.githubusercontent.com/25688193/35039784-4419aaa0-fbc2-11e7-87c1-d9d30015d22e.png)
+
+![image](https://user-images.githubusercontent.com/25688193/35040247-c12aa35e-fbc3-11e7-8bb8-25a9fa2b052e.png)
+
+
+##### 復号化器 - 埋め込み層 [decoder - recurrent layer]
+![image](https://user-images.githubusercontent.com/25688193/35101821-3fe6946a-fca4-11e7-9c83-d85f0af193ea.png)
+![image](https://user-images.githubusercontent.com/25688193/35041847-8edad90e-fbc9-11e7-88d8-c3fd44efae50.png)
+
+##### 復号化器 - 再帰層 [decoder - recurrent layer]
+![image](https://user-images.githubusercontent.com/25688193/35042645-d6312af8-fbcc-11e7-85dc-36c40861b4d7.png)
+![image](https://user-images.githubusercontent.com/25688193/35042331-9c34714e-fbcb-11e7-963a-26cef53c54ae.png)
+![image](https://user-images.githubusercontent.com/25688193/35043091-9799e544-fbce-11e7-8df0-3cf6ef7187ce.png)
+
+##### 復号化器 - 注意層 [decoder - attention layer]
+![image](https://user-images.githubusercontent.com/25688193/35101699-c9e86400-fca3-11e7-8dd8-708f929a50c9.png)
+![image](https://user-images.githubusercontent.com/25688193/35058382-21af2f7e-fbfb-11e7-91eb-0735cdd38e2b.png)
+![image](https://user-images.githubusercontent.com/25688193/35059534-ce396d9c-fbfe-11e7-974e-0f6c74a1c3d9.png)
+
+##### 復号化器 - 出力層 [decoder - output layer] / モデルの学習時の処理
+![image](https://user-images.githubusercontent.com/25688193/35102186-774b92b0-fca5-11e7-9710-90a3efc635d2.png)
+![image](https://user-images.githubusercontent.com/25688193/35102671-eb8f7320-fca6-11e7-9c4e-ca1f1672e21f.png)
+
+##### 復号化器 - 出力層 [decoder - output layer] / モデルの評価時の処理
+![image](https://user-images.githubusercontent.com/25688193/35101875-6fa30aa8-fca4-11e7-823b-a69ccb245c34.png)
+![image](https://user-images.githubusercontent.com/25688193/35103395-094634d8-fca9-11e7-9965-f892f98ff7c3.png)
+
+
+<a id="ID_10-9-1-3"></a>
+
+#### 機械翻訳タスクで共通の課題とその対策、改良
+![image](https://user-images.githubusercontent.com/25688193/35150308-4e2b76a8-fd5d-11e7-9330-71d3084972d6.png)
+
+<a id="ID_10-9-1-3-1"></a>
+
+##### 語彙数、未知語と入出力単位
+![image](https://user-images.githubusercontent.com/25688193/35152023-fc0ad5b0-fd63-11e7-9629-9a52a76cc8e0.png)
+![image](https://user-images.githubusercontent.com/25688193/35152048-166a6236-fd64-11e7-885a-bd3126ea1a21.png)
+![image](https://user-images.githubusercontent.com/25688193/35152078-35991d82-fd64-11e7-8816-a7de70924572.png)
+![image](https://user-images.githubusercontent.com/25688193/35152094-48168364-fd64-11e7-85a2-c6b4353624ab.png)
+![image](https://user-images.githubusercontent.com/25688193/35152105-57f2e91c-fd64-11e7-8cb6-f8ef9a686f81.png)
+
+<a id="ID_10-9-1-3-2"></a>
+
+##### 過剰生成 [over-generation]、不足生成 [under-generation] と被覆 [coverage]
+![image](https://user-images.githubusercontent.com/25688193/35171771-50dd27e8-fda8-11e7-83f7-941dfbb7a448.png)
+![image](https://user-images.githubusercontent.com/25688193/35178696-ec175996-fdcf-11e7-8baa-2abfba59fbb2.png)
+
+- 元論文
+    - [modeling coverage for neural machine translation](https://arxiv.org/abs/1601.04811)
+
+---
+
+<a id="ID_10-9-2"></a>
+
+### 文書要約 [text summarization]
+> 記載中...
+
+---
+
+<a id="ID_10-9-3"></a>
+
+### 対話システム [dialog system]
+> 記載中...
+
+---
+
+<a id="ID_10-9-4"></a>
+
+### 質問応答 [QA : question answering]
 > 記載中...
 
 
