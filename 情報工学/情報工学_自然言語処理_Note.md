@@ -649,6 +649,14 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 <a id="ID_10-9-2-1"></a>
 
 #### 見出し生成タスク [headline generation task] / 短文生成タスク
+
+- 参考サイト
+    - [論文 : a neural attention model for abstractive sentence summarization](https://arxiv.org/abs/1509.00685)
+    - [GitHub : facebookarchive/NAMAS](https://github.com/facebookarchive/NAMAS)
+
+![image](https://user-images.githubusercontent.com/25688193/35186546-4670873a-fe59-11e7-9600-ad1b878b2905.png)
+
+##### 文書要約タスクでの Encoder-Decoder 方式 / attention 構造を用いるモデル
 > 記載中...
 
 
