@@ -644,21 +644,32 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 - 参考サイト
     - [Qiita : 大自然言語時代のための、文章要約](https://qiita.com/icoxfog417/items/d06651db10e27220c819)
 
-![image](https://user-images.githubusercontent.com/25688193/35184335-916c3ef4-fe37-11e7-8f3e-902dc00eea42.png)
+![image](https://user-images.githubusercontent.com/25688193/35188859-f2bc993e-fe81-11e7-97a4-37da93881cfe.png)
 
 <a id="ID_10-9-2-1"></a>
 
 #### 見出し生成タスク [headline generation task] / 短文生成タスク
+![image](https://user-images.githubusercontent.com/25688193/35188863-08440b20-fe82-11e7-9190-7b645293f036.png)
 
-- 参考サイト
-    - [論文 : a neural attention model for abstractive sentence summarization](https://arxiv.org/abs/1509.00685)
+#### 文書要約タスクでの Encoder-Decoder 方式 / attention 構造を用いるモデル
+![image](https://user-images.githubusercontent.com/25688193/35188731-cfb5ee8e-fe7e-11e7-99fb-9af2d63021a7.png)
+
+#### 「A Neural Attention Model for Abstractive Sentence Summarization」/ Attention-Based Summarization (ABS)
+
+- 元論文
+    - [a neural attention model for abstractive sentence summarization](https://arxiv.org/abs/1509.00685)
+- 実装
     - [GitHub : facebookarchive/NAMAS](https://github.com/facebookarchive/NAMAS)
 
-![image](https://user-images.githubusercontent.com/25688193/35186546-4670873a-fe59-11e7-9600-ad1b878b2905.png)
+![image](https://user-images.githubusercontent.com/25688193/35189017-65a1679c-fe85-11e7-9706-a5a355cf45fe.png)
+![image](https://user-images.githubusercontent.com/25688193/35189030-d97cca44-fe85-11e7-9e4e-d9505926f693.png)
+![image](https://user-images.githubusercontent.com/25688193/35196552-ed72d1e2-ff16-11e7-8208-34b91c2f6597.png)
 
-##### 文書要約タスクでの Encoder-Decoder 方式 / attention 構造を用いるモデル
+![image](https://user-images.githubusercontent.com/25688193/35191638-5dfb9326-fec3-11e7-8491-8028d0e64099.png)
+![image](https://user-images.githubusercontent.com/25688193/35194972-d2238af6-feff-11e7-88f6-0962a3c0536b.png)
+![image](https://user-images.githubusercontent.com/25688193/35196658-6cdaa0f8-ff18-11e7-9856-f7b4bc52fbf6.png)
+
 > 記載中...
-
 
 ---
 
