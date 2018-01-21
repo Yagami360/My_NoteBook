@@ -665,9 +665,14 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ![image](https://user-images.githubusercontent.com/25688193/35189030-d97cca44-fe85-11e7-9e4e-d9505926f693.png)
 ![image](https://user-images.githubusercontent.com/25688193/35196552-ed72d1e2-ff16-11e7-8208-34b91c2f6597.png)
 
+##### 順伝播ニューラル言語モデル側のアーキテクチャ
 ![image](https://user-images.githubusercontent.com/25688193/35191638-5dfb9326-fec3-11e7-8491-8028d0e64099.png)
-![image](https://user-images.githubusercontent.com/25688193/35194972-d2238af6-feff-11e7-88f6-0962a3c0536b.png)
-![image](https://user-images.githubusercontent.com/25688193/35196658-6cdaa0f8-ff18-11e7-9856-f7b4bc52fbf6.png)
+![image](https://user-images.githubusercontent.com/25688193/35198549-cfa7ea86-ff33-11e7-9490-febafe0ab697.png)
+![image](https://user-images.githubusercontent.com/25688193/35198561-f7edae86-ff33-11e7-8d4d-301c1f4defbc.png)
+
+##### attention 構造付き Encoder 側のアーキテクチャ
+![image](https://user-images.githubusercontent.com/25688193/35196705-2fae63c6-ff19-11e7-87d9-f59c43236f93.png)
+![image](https://user-images.githubusercontent.com/25688193/35199091-3e30a8f0-ff3c-11e7-9ddb-6bc2429a76da.png)
 
 > 記載中...
 
