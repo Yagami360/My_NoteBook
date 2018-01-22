@@ -83,6 +83,10 @@
                 1. [過剰生成 [over-generation]、不足生成 [under-generation] と被覆 [coverage]](#ID_10-9-1-3-2)
         1. [文書要約 [text summarization]](#ID_10-9-2)
             1. [見出し生成タスク [headline generation task] / 短文生成タスク](#ID_10-9-2-1)
+                1. [文書要約タスクでの Encoder-Decoder 方式 / attention 構造を用いるモデル](#ID_10-9-2-1-1)
+                    1. 「A Neural Attention Model for Abstractive Sentence Summarization」/ Attention-Based Summarization (ABS)
+                1. [RNN による ABS モデルの拡張、改良](#ID_10-9-2-1-2)
+                1. その他の改良
         1. [対話システム [dialog system]](#ID_10-9-3)
         1. [質問応答 [QA : question answering]](#ID_10-9-4)
     1. [参考文献](#参考文献)
@@ -561,6 +565,10 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 #### OpenNMT / seq2seq-attn
 - 参考サイト
     - （公式）http://opennmt.net/
+    - GitHub : https://github.com/opennmt/opennmt
+
+ツールの使い方は、上記の参考サイトにて。<br>
+以下は、OpenNMT ツールで採用されているモデルのアーキテクチャの説明。
 
 ![image](https://user-images.githubusercontent.com/25688193/34982479-d83aa4c6-faed-11e7-9b7b-c01cef081725.png)
 
@@ -632,8 +640,8 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ![image](https://user-images.githubusercontent.com/25688193/35171771-50dd27e8-fda8-11e7-83f7-941dfbb7a448.png)
 ![image](https://user-images.githubusercontent.com/25688193/35178696-ec175996-fdcf-11e7-8baa-2abfba59fbb2.png)
 
-- 元論文
-    - [modeling coverage for neural machine translation](https://arxiv.org/abs/1601.04811)
+- 元論文「Modeling Coverage for Neural Machine Translation」
+    - arXiv.org : https://arxiv.org/abs/1601.04811
 
 ---
 
@@ -651,13 +659,15 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 #### 見出し生成タスク [headline generation task] / 短文生成タスク
 ![image](https://user-images.githubusercontent.com/25688193/35188863-08440b20-fe82-11e7-9190-7b645293f036.png)
 
+<a id="ID_10-9-2-1-1"></a>
+
 #### 文書要約タスクでの Encoder-Decoder 方式 / attention 構造を用いるモデル
 ![image](https://user-images.githubusercontent.com/25688193/35188731-cfb5ee8e-fe7e-11e7-99fb-9af2d63021a7.png)
 
 #### 「A Neural Attention Model for Abstractive Sentence Summarization」/ Attention-Based Summarization (ABS)
 
-- 元論文
-    - [a neural attention model for abstractive sentence summarization](https://arxiv.org/abs/1509.00685)
+- 元論文「A Neural Attention Model for Abstractive Sentence Summarization」
+    - arxv.org : https://arxiv.org/abs/1509.00685
 - 実装
     - [GitHub : facebookarchive/NAMAS](https://github.com/facebookarchive/NAMAS)
 
@@ -674,6 +684,19 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ![image](https://user-images.githubusercontent.com/25688193/35196705-2fae63c6-ff19-11e7-87d9-f59c43236f93.png)
 ![image](https://user-images.githubusercontent.com/25688193/35204835-22f632ca-ff74-11e7-946c-99dfd62c879e.png)
 ![image](https://user-images.githubusercontent.com/25688193/35216185-1aa58c34-ffaa-11e7-89ea-388821bcf956.png)
+
+---
+
+<a id="ID_10-9-2-1-2"></a>
+
+#### RNN による ABS モデルの拡張、改良
+
+- 元論文「Abstractive Sentence Summarization with Attentive Recurrent Neural Networks」
+- 元論文「Sequence-to-sequence RNNs for text summarization」
+- 元論文「Abstractive Text Summarization Using Sequence-to-Sequence RNNs and Beyond」
+    - arix.org : https://arxiv.org/abs/1602.06023
+
+![image](https://user-images.githubusercontent.com/25688193/35223499-ebfe18d6-ffc4-11e7-9920-48bde479e3e6.png)
 
 ---
 
