@@ -601,7 +601,7 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ##### 復号化器 - 注意層 [decoder - attention layer]
 ![image](https://user-images.githubusercontent.com/25688193/35101699-c9e86400-fca3-11e7-8dd8-708f929a50c9.png)
 ![image](https://user-images.githubusercontent.com/25688193/35058382-21af2f7e-fbfb-11e7-91eb-0735cdd38e2b.png)
-![image](https://user-images.githubusercontent.com/25688193/35059534-ce396d9c-fbfe-11e7-974e-0f6c74a1c3d9.png)
+![image](https://user-images.githubusercontent.com/25688193/35216508-32a66280-ffab-11e7-8889-db89e8e8960c.png)
 
 ##### 復号化器 - 出力層 [decoder - output layer] / モデルの学習時の処理
 ![image](https://user-images.githubusercontent.com/25688193/35102186-774b92b0-fca5-11e7-9710-90a3efc635d2.png)
@@ -672,9 +672,8 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 
 ##### attention 構造付き Encoder 側のアーキテクチャ
 ![image](https://user-images.githubusercontent.com/25688193/35196705-2fae63c6-ff19-11e7-87d9-f59c43236f93.png)
-![image](https://user-images.githubusercontent.com/25688193/35199091-3e30a8f0-ff3c-11e7-9ddb-6bc2429a76da.png)
-
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/35204835-22f632ca-ff74-11e7-946c-99dfd62c879e.png)
+![image](https://user-images.githubusercontent.com/25688193/35216185-1aa58c34-ffaa-11e7-89ea-388821bcf956.png)
 
 ---
 
