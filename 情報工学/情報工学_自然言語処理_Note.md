@@ -88,6 +88,12 @@
                 1. [RNN による ABS モデルの拡張、改良](#ID_10-9-2-1-2)
                 1. その他の改良
         1. [対話システム [dialog system]](#ID_10-9-3)
+            1. [対話モデル](#ID_10-9-3-1)
+                1. 対話システムにおける seq2seq モデルの適用
+                1. attention 構造を用いた、対話モデル
+                1. 対話システムの特徴である話者交代と発話者を積極的にモデルに取り組んだ手法
+            1. [対話モデルの発展](#ID_10-9-3-2)
+            1. [対話システムの自動評価](#ID_10-9-3-3)
         1. [質問応答 [QA : question answering]](#ID_10-9-4)
     1. [参考文献](#参考文献)
 
@@ -703,6 +709,51 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 <a id="ID_10-9-3"></a>
 
 ### 対話システム [dialog system]
+- 参考サイト
+    - [Qiita : 機械学習を使って作る対話システム](https://qiita.com/Hironsan/items/6425787ccbee75dfae36)
+
+![image](https://user-images.githubusercontent.com/25688193/35259767-f2b75d82-004a-11e8-9247-23172ac4f409.png)
+
+<a id="ID_10-9-3-1"></a>
+
+#### 対話モデル
+![image](https://user-images.githubusercontent.com/25688193/35252401-a389e17a-0023-11e8-9db0-1377807771c4.png)
+![image](https://user-images.githubusercontent.com/25688193/35259787-11dfe38c-004b-11e8-8b79-9e400d9c097b.png)
+
+<a id="ID_10-9-3-1-1"></a>
+
+##### 対話システムにおける seq2seq モデルの適用
+![image](https://user-images.githubusercontent.com/25688193/35260583-b6751d46-004f-11e8-9af0-734329e3427c.png)
+![image](https://user-images.githubusercontent.com/25688193/35260601-c4a358b0-004f-11e8-9a26-ca859d9add8e.png)
+![image](https://user-images.githubusercontent.com/25688193/35263139-fb2e4646-005a-11e8-827b-a5189e5486d4.png)
+
+##### attention 構造を用いた、対話モデル
+![image](https://user-images.githubusercontent.com/25688193/35263175-1a03d022-005b-11e8-84eb-76a0cbf2fc21.png)
+
+- 元論文「Neural Responding Machine for Short-Text Conversation」
+    - arXiv.org : https://arxiv.org/abs/1503.02364
+
+##### 対話システムの特徴である話者交代と発話者を積極的にモデルに取り組んだ手法
+![image](https://user-images.githubusercontent.com/25688193/35263771-6fd71548-005d-11e8-8c9d-f7e2d36f677a.png)
+
+- 元論文「Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models」
+    - arXiv.org : https://arxiv.org/abs/1507.04808
+- 元論文「A Persona-Based Neural Conversation Model」
+    - arXiv.org : https://arxiv.org/abs/1603.06155
+    - GitHub : https://github.com/jiweil/Neural-Dialogue-Generation
+- 元論文「Addressee and Response Selection for Multi-Party Conversation」
+    - pdf : https://www.aclweb.org/anthology/D16-1231
+
+> 記載中...
+
+<a id="ID_10-9-3-2"></a>
+
+#### 対話モデルの発展
+> 記載中...
+
+<a id="ID_10-9-3-3"></a>
+
+#### 対話システムの自動評価
 > 記載中...
 
 ---
