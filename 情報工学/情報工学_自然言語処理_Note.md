@@ -760,8 +760,9 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ![image](https://user-images.githubusercontent.com/25688193/35313317-064a0df0-0103-11e8-812e-452d513a9b7d.png)
 
 ##### 論文「Addressee and Response Selection for Multi-Party Conversation」
-> 記載中...
-
+![image](https://user-images.githubusercontent.com/25688193/35315271-d243e4f2-010e-11e8-90f5-3ed3f6b03726.png)
+![image](https://user-images.githubusercontent.com/25688193/35315278-e03b4744-010e-11e8-8f78-846c297a0879.png)
+![image](https://user-images.githubusercontent.com/25688193/35316317-4bce7b0c-0114-11e8-8f26-c33d95b3d6dc.png)
 
 <a id="ID_10-9-3-2"></a>
 
