@@ -755,7 +755,9 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ![image](https://user-images.githubusercontent.com/25688193/35311154-6847cb88-00f8-11e8-8315-21a451642256.png)
 
 ##### 論文「A Persona-Based Neural Conversation Model」
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/35312961-4c43197a-0101-11e8-91c9-e69c79d455e3.png)
+![image](https://user-images.githubusercontent.com/25688193/35312974-615426f6-0101-11e8-8ae6-650d4b6af7d0.png)
+![image](https://user-images.githubusercontent.com/25688193/35313317-064a0df0-0103-11e8-812e-452d513a9b7d.png)
 
 ##### 論文「Addressee and Response Selection for Multi-Party Conversation」
 > 記載中...
