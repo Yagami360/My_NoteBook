@@ -95,6 +95,9 @@
             1. [対話モデルの発展](#ID_10-9-3-2)
             1. [対話システムの自動評価](#ID_10-9-3-3)
         1. [質問応答 [QA : question answering]](#ID_10-9-4)
+            1. [回答選択タスク](#ID_10-9-4-1)
+            1. [回答選択問題の評価方法](#ID_10-9-4-2)
+            1. [end-to-end な質問応答](#ID_10-9-4-3)
     1. [参考文献](#参考文献)
 
 <a id="ID_10"></a>
@@ -794,9 +797,23 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 <a id="ID_10-9-4"></a>
 
 ### 質問応答 [QA : question answering]
+![image](https://user-images.githubusercontent.com/25688193/35413620-629477ba-0263-11e8-8f63-cf62ebadbaf8.png)
+![image](https://user-images.githubusercontent.com/25688193/35414383-a9ab6724-0265-11e8-9e88-7d9ba0ae0721.png)
+
+<a id="ID_10-9-4-1"></a>
+
+#### 回答選択タスク
 > 記載中...
 
+<a id="ID_10-9-4-2"></a>
 
+#### 回答選択問題の評価方法
+> 記載中...
+
+<a id="ID_10-9-4-3"></a>
+
+#### end-to-end な質問応答
+> 記載中...
 
 <br>
 
