@@ -764,15 +764,30 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 ![image](https://user-images.githubusercontent.com/25688193/35315278-e03b4744-010e-11e8-8f78-846c297a0879.png)
 ![image](https://user-images.githubusercontent.com/25688193/35316317-4bce7b0c-0114-11e8-8f26-c33d95b3d6dc.png)
 
+
 <a id="ID_10-9-3-2"></a>
 
 #### 対話モデルの発展
+![image](https://user-images.githubusercontent.com/25688193/35375660-33403454-01eb-11e8-904a-0a005721b951.png)
+
 > 記載中...
+
 
 <a id="ID_10-9-3-3"></a>
 
 #### 対話システムの自動評価
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/35375628-0e03c872-01eb-11e8-98a1-91188223fe28.png)
+![image](https://user-images.githubusercontent.com/25688193/35375963-4ec5b81a-01ec-11e8-9900-ed470d78369c.png)
+
+##### 論文「The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems」
+- 元論文「The Ubuntu Dialogue Corpus: A Large Dataset for Research in Unstructured Multi-Turn Dialogue Systems」
+    - arXiv.org : https://arxiv.org/abs/1506.08909
+
+![image](https://user-images.githubusercontent.com/25688193/35376612-2bd0ebf6-01ef-11e8-93dc-ed95f5061ad7.png)
+![image](https://user-images.githubusercontent.com/25688193/35379682-31f66780-01fa-11e8-8705-9bf35f1099c4.png)
+![image](https://user-images.githubusercontent.com/25688193/35380799-a6e7fcf4-01fd-11e8-83d7-ffae2b5e7a49.png)
+![image](https://user-images.githubusercontent.com/25688193/35380914-fa06e724-01fd-11e8-834a-1b859d750bd6.png)
+
 
 ---
 
