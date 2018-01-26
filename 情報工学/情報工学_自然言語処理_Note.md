@@ -803,7 +803,40 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 <a id="ID_10-9-4-1"></a>
 
 #### 回答選択タスク
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/35424973-ab44958a-029a-11e8-90de-c73a4bcbaf1d.png)
+![image](https://user-images.githubusercontent.com/25688193/35425988-f5f067c8-02a2-11e8-88be-8f532372466c.png)
+![image](https://user-images.githubusercontent.com/25688193/35428536-f60ddeec-02b2-11e8-8518-342fc92dfef4.png)
+![image](https://user-images.githubusercontent.com/25688193/35428542-0312d390-02b3-11e8-8eeb-39eeab0b146b.png)
+
+この際に行われる、質問文と回答候補のベクトル表現化の手法としては、以下のような手法が挙げられる。
+- 双方向 LSTM により、文のベクトルを単一のベクトルに変換（符号化）
+    - 元論文「LSTM-based Deep Learning Models for Non-factoid Answer Selection」
+        - arXiv.org : https://arxiv.org/abs/1511.04108
+    - 元論文「A Long Short-Term Memory Model for Answer Sentence Selection in. Question Answering」
+- 木構造再帰ニューラルネットワークにより、文のベクトルを単一のベクトルに変換（符号化）
+    - 元論文「A Neural Network for Factoid Question Answering over Paragraphs」
+- 畳み込みニューラルネットワークにより、文のベクトルを単一のベクトルに変換（符号化）
+    - 元論文「Applying Deep Learning to Answer Selection: A Study and An Open Task」
+        - arXiv.org : https://arxiv.org/abs/1508.01585
+    - 元論文「Deep Learning for Answer Sentence Selection」
+        - arXiv.org : https://arxiv.org/abs/1412.1632
+
+より発展させたモデルでは、
+- CNN で出力された複数ベクトルに対し、LSTM を適用して、文のベクトルを単一のベクトルに変換（符号化）
+    - 元論文「LSTM-based Deep Learning Models for Non-factoid Answer Selection」<br>（先の双方向 LSTM での手法と同じ論文）
+        - arXiv.org : https://arxiv.org/abs/1511.04108
+- 注意機構 [attention] との組み合わせる
+    - 元論文「aNMM: Ranking Short Answer Texts with Attention-Based Neural Matching Model」
+        - arXiv.org : https://arxiv.org/abs/1801.01641
+- パラメータの異なる CNN での結果を組み合わせる
+    - 元論文「Multi-Perspective Sentence Similarity Modeling with Convolutional Neural Networks」
+
+最近の傾向としては、CNN をベースに改良したモデルが高い精度を出している傾向がある。<br>
+このように、文レベルのベクトル表現（符号化）手法は、新たな手法が次々に出ている状況であり、今後も工夫の余地が大きいと考えられる。
+
+![image](https://user-images.githubusercontent.com/25688193/35429343-07b10eb8-02b7-11e8-9beb-8a9a60b330c4.png)
+![image](https://user-images.githubusercontent.com/25688193/35452896-886cd7ea-030b-11e8-9a48-eefdfd588866.png)
+![image](https://user-images.githubusercontent.com/25688193/35452997-eb1a8c52-030b-11e8-84da-84c676c2b84a.png)
 
 <a id="ID_10-9-4-2"></a>
 
