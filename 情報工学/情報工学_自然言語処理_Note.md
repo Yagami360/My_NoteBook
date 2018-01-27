@@ -848,7 +848,12 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 <a id="ID_10-9-4-3"></a>
 
 #### end-to-end な質問応答
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/35471116-8cfc3a52-0398-11e8-8f17-09c8b4742cd9.png)
+
+- bAbI「Towards AI-Complete Question Answering: A Set of Prerequisite Toy Tasks」
+    - arXiv.org : https://arxiv.org/abs/1502.05698
+    - https://research.fb.com/downloads/babi/
+    - https://github.com/facebook/bAbI-tasks
 
 <br>
 
