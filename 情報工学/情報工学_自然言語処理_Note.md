@@ -841,7 +841,9 @@ GroundHog ツールのモデルの実装は、注意機構 [attention] 有りと
 <a id="ID_10-9-4-2"></a>
 
 #### 回答選択問題の評価方法
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/35465079-e2741c22-033c-11e8-9319-b07df0f90438.png)
+![image](https://user-images.githubusercontent.com/25688193/35470418-7ba4bfa6-038c-11e8-8da3-019087dc1262.png)
+![image](https://user-images.githubusercontent.com/25688193/35470413-64e60f7c-038c-11e8-80a0-e3c4f8f1fd72.png)
 
 <a id="ID_10-9-4-3"></a>
 
