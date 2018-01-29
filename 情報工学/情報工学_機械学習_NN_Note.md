@@ -84,10 +84,14 @@ I will add contents as needed.
     1. [Attention](#ID_4-6)
         1. [LSTM を使用した場合の Attention](#ID_4-6-1)
 1. 連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)
-1. Sequence-to-Sequence モデル（seq2seq）
+1. 系列変換モデル [Sequence-to-Sequence model/seq2seq]
     1. RNN Encoder-Decoder
-    1. Attention
-    1. Memory Networks [MemN]
+    1. [（外部リンク）Attention](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-6)
+    1. [（外部リンク）Memory Networks [MemN]](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-7)
+1. [生成モデル [generative model]](#ID_10)
+    1. [GAN [Generative Adversarial Network]（敵対的ネットワーク）](#ID_10-1)
+        1. DCGAN [Deep Convolutional GAN]
+    1. VAE [Variational Autoencoder]
 1. [（外部リンク）ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
 1. [参考文献](#参考文献)
 
@@ -646,18 +650,43 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 ---
 
-<a id="ID_xx"></a>
+<a id="ID_10"></a>
 
-## Sequence-to-Sequence モデル (seq2seq)
+## 生成モデル [generative model]
+![image](https://user-images.githubusercontent.com/25688193/35478872-4302b400-042c-11e8-80aa-a187b50eba30.png)
 
-<a id="ID_xx-1"></a>
+<a id="ID_10-1"></a>
 
-### RNN Encoder-Decoder
+### GAN [Generative Adversarial Network]（敵対的ネットワーク）
+- 元論文「Generative Adversarial Nets」
+    - arXiv.org : https://arxiv.org/abs/1406.2661
+- 参考サイト
+    - https://elix-tech.github.io/ja/2017/02/06/gan.html
+    - http://mizti.hatenablog.com/entry/2016/12/10/224426
+    - http://vaaaaaanquish.hatenablog.com/entry/2017/03/19/220817
+    - http://yasuke.hatenablog.com/entry/generative-adversarial-nets
 
-<a id="ID_xx-2"></a>
+![image](https://user-images.githubusercontent.com/25688193/35478891-ac0a5494-042c-11e8-8781-39c88431fe8f.png)
+![image](https://user-images.githubusercontent.com/25688193/35481685-c432d534-046b-11e8-954c-f9b88f5a07fb.png)
+![image](https://user-images.githubusercontent.com/25688193/35481115-7b76b87a-0460-11e8-9f3f-293e6afdba22.png)
+![image](https://user-images.githubusercontent.com/25688193/35488656-2b95c91c-04cf-11e8-8d06-67ea71c58a72.png)
 
-### Memory Network (MemNN)
 > 記載中...
+
+
+<a id="ID_10-1-1"></a>
+
+#### DCGAN [Deep Convolutional GAN]
+- 元論文「Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks」
+    - arXiv.org : https://arxiv.org/abs/1511.06434
+
+![image](https://user-images.githubusercontent.com/25688193/35494452-144b9848-04fe-11e8-99cd-6ada85185125.png)
+![image](https://user-images.githubusercontent.com/25688193/35502466-7c31eaee-0520-11e8-8b20-28f9378d104e.png)
+
+> 記載中...
+
+
+
 
 
 <br>
