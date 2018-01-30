@@ -90,7 +90,7 @@ I will add contents as needed.
     1. [（外部リンク）Memory Networks [MemN]](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-7)
 1. [生成モデル [generative model]](#ID_10)
     1. [GAN [Generative Adversarial Network]（敵対的ネットワーク）](#ID_10-1)
-        1. DCGAN [Deep Convolutional GAN]
+        1. [DCGAN [Deep Convolutional GAN]](#ID_10-1-1)
     1. VAE [Variational Autoencoder]
 1. [（外部リンク）ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
 1. [参考文献](#参考文献)
@@ -680,8 +680,13 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 - 元論文「Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks」
     - arXiv.org : https://arxiv.org/abs/1511.06434
 
-![image](https://user-images.githubusercontent.com/25688193/35494452-144b9848-04fe-11e8-99cd-6ada85185125.png)
-![image](https://user-images.githubusercontent.com/25688193/35502466-7c31eaee-0520-11e8-8b20-28f9378d104e.png)
+![image](https://user-images.githubusercontent.com/25688193/35545399-50f2a4bc-05b2-11e8-853e-11d38971630f.png)
+![image](https://user-images.githubusercontent.com/25688193/35545437-72ebb95a-05b2-11e8-9219-e723ee344d54.png)
+![image](https://user-images.githubusercontent.com/25688193/35545467-93e540c2-05b2-11e8-846f-ccd86273a85f.png)
+![image](https://user-images.githubusercontent.com/25688193/35549375-93ea4836-05c8-11e8-8279-a8d3d3a659c6.png)
+![image](https://user-images.githubusercontent.com/25688193/35545532-cd39d9d2-05b2-11e8-9ab9-a3f4123ab8fd.png)
+![image](https://user-images.githubusercontent.com/25688193/35545809-5d14a248-05b4-11e8-854e-caf830ef2972.png)
+![image](https://user-images.githubusercontent.com/25688193/35549398-b4a58dce-05c8-11e8-9bd5-883c03aa4564.png)
 
 > 記載中...
 
