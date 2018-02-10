@@ -680,6 +680,9 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 - 元論文「Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks」
     - arXiv.org : https://arxiv.org/abs/1511.06434
 
+- TensorFlow での DCGAN の実装コード集
+    - https://github.com/Yagami360/MachineLearning_Exercises_Python_TensorFlow/tree/master/GAN_DCGAN_TensorFlow
+
 ![image](https://user-images.githubusercontent.com/25688193/35545399-50f2a4bc-05b2-11e8-853e-11d38971630f.png)
 ![image](https://user-images.githubusercontent.com/25688193/35545437-72ebb95a-05b2-11e8-9219-e723ee344d54.png)
 ![image](https://user-images.githubusercontent.com/25688193/36059567-efac113c-0e7d-11e8-8bdd-329fbc70808a.png)
