@@ -238,7 +238,7 @@
 そのため、行動を実行した直後の報酬をみるだけでは学習主体はその行動が正しかっ たかどうかを判断できないという困難を伴うヒューリスティックな手法。<br>
 （※ ヒューリスティック：必ず正しい答えを導けるわけではないが、ある程度のレベルで正解に近い解を得ることができる方法。 ）<br>
 
-![image](https://user-images.githubusercontent.com/25688193/36220069-b84cbebc-11fc-11e8-9fb6-85265a46b41c.png)
+![image](https://user-images.githubusercontent.com/25688193/36227166-8c318602-1213-11e8-8b3c-3f782300082f.png)
 
 <a id="ID_1-3-4"></a>
 
@@ -294,48 +294,49 @@
 
 クラスを指定したデータを教師データといい、<br>
 ２クラスの場合、出力 y の正負に対応した値<br>
-![image](https://user-images.githubusercontent.com/25688193/36224700-b3ccb4a0-120b-11e8-816d-db4143fe0095.png) で表す。
+![image](https://user-images.githubusercontent.com/25688193/36227244-cec6a272-1213-11e8-9b91-b9e2fea953b1.png) で表す。
 
 クラス数が３つ以上の場合は、クラス数のビット幅を持ったダミー変数表現を用いて、<br>
 例えば、<br>
-![image](https://user-images.githubusercontent.com/25688193/36224720-c71eb698-120b-11e8-9175-e5eab35768ba.png) のように表現する。（このような符号化方式をK対１符号化 [1-of-K coding] という。※尚、Kはクラス数を表している。）
+![image](https://user-images.githubusercontent.com/25688193/36227262-defb05de-1213-11e8-92aa-2b24475ff295.png) のように表現する。（このような符号化方式をK対１符号化 [1-of-K coding] という。※尚、Kはクラス数を表している。）
 
 そして、入力データと教師データのペアは、以下のように表す。<br>
-![image](https://user-images.githubusercontent.com/25688193/36224746-d7e9b1a8-120b-11e8-9a1e-3daf88f93678.png)
+![image](https://user-images.githubusercontent.com/25688193/36227290-f3d49be6-1213-11e8-9d44-d98e34537f91.png)
 
 **学習に用いられるすべてのペアの集合を学習データセット [learning data set] と呼び**、
-![image](https://user-images.githubusercontent.com/25688193/36224766-e35bb608-120b-11e8-95a4-76ab768b6d91.png) で表す。<br>
+![image](https://user-images.githubusercontent.com/25688193/36227311-06da0604-1214-11e8-885e-7c66181201db.png) で表す。<br>
 
 一方、**学習に使用しなかったデータは、テストデータセットとして、**
-![image](https://user-images.githubusercontent.com/25688193/36224780-ee05b09a-120b-11e8-90ad-8dc42e55ad40.png) **として、性能評価に使える。**
+![image](https://user-images.githubusercontent.com/25688193/36227342-279e049e-1214-11e8-8e30-cc54489b72bd.png) **として、性能評価に使える。**
 
 
 #### ◎ 学習データとテストデータの作り方とバイアス、誤り率
-![image](https://user-images.githubusercontent.com/25688193/36224521-3b9a54e2-120b-11e8-96d2-8b6517166ccc.png)
+![image](https://user-images.githubusercontent.com/25688193/36227141-71aaf340-1213-11e8-9a32-62fb2bc62f46.png)
 
-学習データセット ![image](https://user-images.githubusercontent.com/25688193/36224766-e35bb608-120b-11e8-95a4-76ab768b6d91.png) とテストデータセット ![image](https://user-images.githubusercontent.com/25688193/36224780-ee05b09a-120b-11e8-90ad-8dc42e55ad40.png) は、手元にあるデータを分割して作ることになる。<br>
+学習データセット ![image](https://user-images.githubusercontent.com/25688193/36227311-06da0604-1214-11e8-885e-7c66181201db.png) とテストデータセット ![image](https://user-images.githubusercontent.com/25688193/36227342-279e049e-1214-11e8-8e30-cc54489b72bd.png) は、手元にあるデータを分割して作ることになる。<br>
 今、上図のように、<br>
 とある識別対象（100円玉など）を、その母集団からN 個用意し、その内、L 個を学習用データに、T 個をテスト用データに使用する場合を考える。<br>
 また、識別対象を識別するために d 個の特徴（１０円玉の重さ、透磁率など）が用いられているとする。<br>
 
-すると、学習データセット ![image](https://user-images.githubusercontent.com/25688193/36224766-e35bb608-120b-11e8-95a4-76ab768b6d91.png) は、L 個の d 次元特徴ベクトルからなる集合<br>
-　　　　テストデータセット ![image](https://user-images.githubusercontent.com/25688193/36224780-ee05b09a-120b-11e8-90ad-8dc42e55ad40.png) は、T 個の d 次元特徴ベクトルからなる集合となる。<br>
+すると、学習データセット ![image](https://user-images.githubusercontent.com/25688193/36227311-06da0604-1214-11e8-885e-7c66181201db.png) は、L 個の d 次元特徴ベクトルからなる集合<br>
+　　　　テストデータセット ![image](https://user-images.githubusercontent.com/25688193/36227342-279e049e-1214-11e8-8e30-cc54489b72bd.png) は、T 個の d 次元特徴ベクトルからなる集合となる。<br>
 
-それぞれの特徴ベクトルの d 次元空間内での分布関数を ![image](https://user-images.githubusercontent.com/25688193/36226583-92b15c34-1211-11e8-9dbf-673fb8dc1b13.png) 及び ![image](https://user-images.githubusercontent.com/25688193/36226596-a00a2fe6-1211-11e8-8dcf-ad6e2cdf1f91.png) で表すことにすれば、<br>
+それぞれの特徴ベクトルの d 次元空間内での分布関数を ![image](https://user-images.githubusercontent.com/25688193/36227441-6fb0ef9e-1214-11e8-9292-41fab46bbd0c.png) 及び ![image](https://user-images.githubusercontent.com/25688193/36227494-9121935e-1214-11e8-9a74-267f11de4970.png) で表すことにすれば、<br>
 **この分布関数から、平均値、分散値などが計算できる！**<br>
 
 しかしながら、<br>
 学習データセットとテストデータセットは、**母集団からランダムに抽出されたもの**であるが、<br>
-その分布関数 ![image](https://user-images.githubusercontent.com/25688193/36226583-92b15c34-1211-11e8-9dbf-673fb8dc1b13.png) 及び ![image](https://user-images.githubusercontent.com/25688193/36226596-a00a2fe6-1211-11e8-8dcf-ad6e2cdf1f91.png) の平均値や分散値が、母集団 ![image](https://user-images.githubusercontent.com/25688193/36226631-b91f748c-1211-11e8-8799-233469e2dee0.png) のそれと同じになるとは限らない。<br>
+その分布関数 ![image](https://user-images.githubusercontent.com/25688193/36227441-6fb0ef9e-1214-11e8-9292-41fab46bbd0c.png) 及び ![image](https://user-images.githubusercontent.com/25688193/36227494-9121935e-1214-11e8-9a74-267f11de4970.png) の平均値や分散値が、母集団 ![image](https://user-images.githubusercontent.com/25688193/36227541-b0a2bf8c-1214-11e8-9be1-96f078702f9a.png) のそれと同じになるとは限らない。<br>
 **この母集団とのズレをバイアス（偏り）[bias] という。**<br>
 
-ここで、学習データセット ![image](https://user-images.githubusercontent.com/25688193/36224766-e35bb608-120b-11e8-95a4-76ab768b6d91.png) から算出し、テストデータセット ![image](https://user-images.githubusercontent.com/25688193/36224780-ee05b09a-120b-11e8-90ad-8dc42e55ad40.png) を使用してテストしたときの誤り率を、 ![image](https://user-images.githubusercontent.com/25688193/36226695-eb5f0926-1211-11e8-995b-918f19166a03.png) で表すことにする。<br>
-すると、**母集団の誤り率（真の誤り率）**は、![image](https://user-images.githubusercontent.com/25688193/36226742-0d3c6836-1212-11e8-8cc6-e78e390cbd85.png) と表現でき、<br>
-母集団の分布 ![image](https://user-images.githubusercontent.com/25688193/36226631-b91f748c-1211-11e8-8799-233469e2dee0.png) に従う学習データから算出し、母集団の分布 ![image](https://user-images.githubusercontent.com/25688193/36226631-b91f748c-1211-11e8-8799-233469e2dee0.png) に従うテスト用データを用いてテストしたときの誤り率を意味する。<br>
+ここで、学習データセット ![image](https://user-images.githubusercontent.com/25688193/36227311-06da0604-1214-11e8-885e-7c66181201db.png) から算出し、テストデータセット ![image](https://user-images.githubusercontent.com/25688193/36227342-279e049e-1214-11e8-8e30-cc54489b72bd.png) を使用してテストしたときの誤り率を、![image](https://user-images.githubusercontent.com/25688193/36227588-dc2caa46-1214-11e8-8aab-0da039791a1e.png) で表すことにする。<br>
+すると、**母集団の誤り率（真の誤り率）**は、![image](https://user-images.githubusercontent.com/25688193/36227622-fb819898-1214-11e8-90df-40fa50716a85.png) と表現でき、<br>
+母集団の分布 ![image](https://user-images.githubusercontent.com/25688193/36227541-b0a2bf8c-1214-11e8-9be1-96f078702f9a.png) に従う学習データから算出し、母集団の分布 ![image](https://user-images.githubusercontent.com/25688193/36227541-b0a2bf8c-1214-11e8-9be1-96f078702f9a.png) に従うテスト用データを用いてテストしたときの誤り率を意味する。<br>
 
 また、**母集団からサンプリングした学習データをテストデータとして再利用した場合の誤り率を、<br>
-再代入誤り率 [resubstitution error]** といい、![image](https://user-images.githubusercontent.com/25688193/36226790-2f0b09c2-1212-11e8-828a-f4df27f4160e.png) で表現できる。<br>
+再代入誤り率 [resubstitution error]** といい、![image](https://user-images.githubusercontent.com/25688193/36227649-108df524-1215-11e8-8bf4-07fc36370f3a.png) で表現できる。<br>
 
+<br>
 
 
 <a id="ID_2-4"></a>
