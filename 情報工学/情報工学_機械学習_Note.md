@@ -247,8 +247,8 @@
 様々な識別器を組み合わせて **多様性のある学習** を行うため、汎化性能が高く、又過学習 [overfitting] を起こしにくい。
 
 - 実装コード
-    - My GitHub : Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
-        - [機械学習における、アンサンブル学習のサンプルコード集。（練習プログラム）](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/EnsembleLearning_scikit-learn)
+    - Python & scikit-learn ライブラリを用いた、機械学習における、アンサンブル学習のサンプルコード集。（練習プログラム）
+        - https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/EnsembleLearning_scikit-learn)
 
 
 ---
@@ -258,17 +258,18 @@
 ## ■ 機械学習の前処理 [pre processing]
 
 - 実装コード
-    - My GitHub : Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
-        - [機械学習における、データの前処理のサンプルコード集。（練習プログラム）](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/DataPreProcess_scikit-learn)
+    - Python & scikit-learn ライブラリを用いた、機械学習における、データの前処理のサンプルコード集。（練習プログラム）
+        - https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/DataPreProcess_scikit-learn
+
 
 <a id="ID_2-1"></a>
 
 ### ■ 欠損値への対応
 
-#### ◎欠損値 NaN を含むデータ
+#### ◎ 欠損値 NaN を含むデータ
 ![image](https://user-images.githubusercontent.com/25688193/36221539-b672661e-1201-11e8-9502-f9493f036c95.png)
 
-#### NaN の平均値補完
+#### ◎ NaN の平均値補完
 ![image](https://user-images.githubusercontent.com/25688193/36221559-ccb5538c-1201-11e8-9c69-835575241de0.png)
 
 
@@ -287,9 +288,54 @@
 <a id="ID_2-3"></a>
 
 ### ■ データの分割
-![image](https://user-images.githubusercontent.com/25688193/30472734-a8bc90a8-9a38-11e7-9f7b-95b8086f9c87.png)
-![image](https://user-images.githubusercontent.com/25688193/30491347-fb7a01ec-9a77-11e7-9687-e8b9f586c5d9.png)
-![image](https://user-images.githubusercontent.com/25688193/30491418-2aade88e-9a78-11e7-9bda-079e707a5f28.png)
+
+機械学習モデルの学習を行うためには、入力データとその該当するクラスを記述した学習データが必要になる。<br>
+（※教師あり学習 [supervised learning] の場合 ）
+
+クラスを指定したデータを教師データといい、<br>
+２クラスの場合、出力 y の正負に対応した値<br>
+![image](https://user-images.githubusercontent.com/25688193/36224700-b3ccb4a0-120b-11e8-816d-db4143fe0095.png) で表す。
+
+クラス数が３つ以上の場合は、クラス数のビット幅を持ったダミー変数表現を用いて、<br>
+例えば、<br>
+![image](https://user-images.githubusercontent.com/25688193/36224720-c71eb698-120b-11e8-9175-e5eab35768ba.png) のように表現する。（このような符号化方式をK対１符号化 [1-of-K coding] という。※尚、Kはクラス数を表している。）
+
+そして、入力データと教師データのペアは、以下のように表す。<br>
+![image](https://user-images.githubusercontent.com/25688193/36224746-d7e9b1a8-120b-11e8-9a1e-3daf88f93678.png)
+
+**学習に用いられるすべてのペアの集合を学習データセット [learning data set] と呼び**、
+![image](https://user-images.githubusercontent.com/25688193/36224766-e35bb608-120b-11e8-95a4-76ab768b6d91.png) で表す。<br>
+
+一方、**学習に使用しなかったデータは、テストデータセットとして、**
+![image](https://user-images.githubusercontent.com/25688193/36224780-ee05b09a-120b-11e8-90ad-8dc42e55ad40.png) **として、性能評価に使える。**
+
+
+#### ◎ 学習データとテストデータの作り方とバイアス、誤り率
+![image](https://user-images.githubusercontent.com/25688193/36224521-3b9a54e2-120b-11e8-96d2-8b6517166ccc.png)
+
+学習データセット ![image](https://user-images.githubusercontent.com/25688193/36224766-e35bb608-120b-11e8-95a4-76ab768b6d91.png) とテストデータセット ![image](https://user-images.githubusercontent.com/25688193/36224780-ee05b09a-120b-11e8-90ad-8dc42e55ad40.png) は、手元にあるデータを分割して作ることになる。<br>
+今、上図のように、<br>
+とある識別対象（100円玉など）を、その母集団からN 個用意し、その内、L 個を学習用データに、T 個をテスト用データに使用する場合を考える。<br>
+また、識別対象を識別するために d 個の特徴（１０円玉の重さ、透磁率など）が用いられているとする。<br>
+
+すると、学習データセット ![image](https://user-images.githubusercontent.com/25688193/36224766-e35bb608-120b-11e8-95a4-76ab768b6d91.png) は、L 個の d 次元特徴ベクトルからなる集合<br>
+　　　　テストデータセット ![image](https://user-images.githubusercontent.com/25688193/36224780-ee05b09a-120b-11e8-90ad-8dc42e55ad40.png) は、T 個の d 次元特徴ベクトルからなる集合となる。<br>
+
+それぞれの特徴ベクトルの d 次元空間内での分布関数を ![image](https://user-images.githubusercontent.com/25688193/36226583-92b15c34-1211-11e8-9dbf-673fb8dc1b13.png) 及び ![image](https://user-images.githubusercontent.com/25688193/36226596-a00a2fe6-1211-11e8-8dcf-ad6e2cdf1f91.png) で表すことにすれば、<br>
+**この分布関数から、平均値、分散値などが計算できる！**<br>
+
+しかしながら、<br>
+学習データセットとテストデータセットは、**母集団からランダムに抽出されたもの**であるが、<br>
+その分布関数 ![image](https://user-images.githubusercontent.com/25688193/36226583-92b15c34-1211-11e8-9dbf-673fb8dc1b13.png) 及び ![image](https://user-images.githubusercontent.com/25688193/36226596-a00a2fe6-1211-11e8-8dcf-ad6e2cdf1f91.png) の平均値や分散値が、母集団 ![image](https://user-images.githubusercontent.com/25688193/36226631-b91f748c-1211-11e8-8799-233469e2dee0.png) のそれと同じになるとは限らない。<br>
+**この母集団とのズレをバイアス（偏り）[bias] という。**<br>
+
+ここで、学習データセット ![image](https://user-images.githubusercontent.com/25688193/36224766-e35bb608-120b-11e8-95a4-76ab768b6d91.png) から算出し、テストデータセット ![image](https://user-images.githubusercontent.com/25688193/36224780-ee05b09a-120b-11e8-90ad-8dc42e55ad40.png) を使用してテストしたときの誤り率を、 ![image](https://user-images.githubusercontent.com/25688193/36226695-eb5f0926-1211-11e8-995b-918f19166a03.png) で表すことにする。<br>
+すると、**母集団の誤り率（真の誤り率）**は、![image](https://user-images.githubusercontent.com/25688193/36226742-0d3c6836-1212-11e8-8cc6-e78e390cbd85.png) と表現でき、<br>
+母集団の分布 ![image](https://user-images.githubusercontent.com/25688193/36226631-b91f748c-1211-11e8-8799-233469e2dee0.png) に従う学習データから算出し、母集団の分布 ![image](https://user-images.githubusercontent.com/25688193/36226631-b91f748c-1211-11e8-8799-233469e2dee0.png) に従うテスト用データを用いてテストしたときの誤り率を意味する。<br>
+
+また、**母集団からサンプリングした学習データをテストデータとして再利用した場合の誤り率を、<br>
+再代入誤り率 [resubstitution error]** といい、![image](https://user-images.githubusercontent.com/25688193/36226790-2f0b09c2-1212-11e8-828a-f4df27f4160e.png) で表現できる。<br>
+
 
 
 <a id="ID_2-4"></a>
