@@ -4,6 +4,8 @@
 
 ![s_](https://user-images.githubusercontent.com/25688193/29311672-d5cb20c2-81ed-11e7-9c44-002fe0eb0873.png)
 
+尚、本記事内容に関連した Python & scikit-learn ライブラリを用いた実装コード集は、以下の GitHub レポジトリにおいてあります。
+
 - My GitHub
     - [Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn)
 
@@ -158,6 +160,7 @@
         1. [学習ベクトル量子化 [LQV : leaning quantization vector]](#ID_12-2-2)
 1. [参考文献](#参考文献)
 
+---
 
 <a id="ID_1"></a>
 
@@ -174,9 +177,9 @@
 
 ### ■ 機械学習の基本的なタスク処理
 機械学習は、大きく分けて以下の２つの問題設定＆解決のための手法に分けることが出来る。
-- ① 回帰問題の為の手法。（単回帰分析、重回帰分析、等）
-- ② （クラスの）分類問題の為の手法（SVM、k-NN、ロジスティクス回帰、等）
-- ③ クラスタリング問題の為の手法（k-means法、等）
+1. 回帰問題の為の手法。（単回帰分析、重回帰分析、等）
+2. （クラスの）分類問題の為の手法（SVM、k-NN、ロジスティクス回帰、等）
+3. クラスタリング問題の為の手法（k-means法、等）
 
 <!--
 <a id="ID_1-2-1"></a>
@@ -211,7 +214,7 @@
 
 #### ◎ バッチ学習 [batch learning] とオンライン学習 [online learning]
 
-#### ☆ バッチ学習 [batch processing]
+##### ☆ バッチ学習 [batch processing]
 一定量もしくは、一定期間データを集め、まとめて一括に学習を行う学習方式。<br>
 より詳細には、<br>
 **モデルの重みの更新を、各々のサンプルデータ毎に小刻みに行うでのはなく、トレーニングデータ・セット全てのサンプルに対して、一斉（一度）に行う。（バッチ処理）**<br>
@@ -219,7 +222,7 @@
 
 ![image](https://user-images.githubusercontent.com/25688193/36219334-588b8e7e-11fa-11e8-8501-7dd929942979.png)
 
-#### ☆ オンライン学習 [batch processing]
+##### ☆ オンライン学習 [batch processing]
 データを一度に一斉に学習を行うバッチ学習とは異なり、<br>
 新しいトレーニングデータが届いた際に、その場でモデルに対し、このサンプルでの追加の学習を随時行う学習方式。<br>
 オンライン学習を用いれば、生じた変化に素早く適応させることができる。<br>
@@ -239,7 +242,7 @@
 
 <a id="ID_1-3-4"></a>
 
-#### アンサンブル学習 [ensemble learning]
+#### ◎ アンサンブル学習 [ensemble learning]
 各識別器を組み合わせて使用し、それらの識別器（弱識別器という）の投票結果（単純な多数決 or 重み付け後の多数決等）で最終的な判断を下す学習方法。</br>
 様々な識別器を組み合わせて **多様性のある学習** を行うため、汎化性能が高く、又過学習 [overfitting] を起こしにくい。
 
@@ -247,6 +250,8 @@
     - My GitHub : Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
         - [機械学習における、アンサンブル学習のサンプルコード集。（練習プログラム）](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/EnsembleLearning_scikit-learn)
 
+
+---
 
 <a id="ID_2"></a>
 
@@ -258,21 +263,30 @@
 
 <a id="ID_2-1"></a>
 
-### 欠損値への対応
-![image](https://user-images.githubusercontent.com/25688193/30471608-531bc1ea-9a34-11e7-91c2-addd81f5961e.png)
-> 記載中...
+### ■ 欠損値への対応
+
+#### ◎欠損値 NaN を含むデータ
+![image](https://user-images.githubusercontent.com/25688193/36221539-b672661e-1201-11e8-9502-f9493f036c95.png)
+
+#### NaN の平均値補完
+![image](https://user-images.githubusercontent.com/25688193/36221559-ccb5538c-1201-11e8-9c69-835575241de0.png)
+
 
 <a id="ID_2-2"></a>
 
-### カテゴリデータ（名義 [nominal] 特徴量、順序 [ordinal] 特徴量）の処理
-![image](https://user-images.githubusercontent.com/25688193/30471754-df5feea6-9a34-11e7-87a1-f556e6d94829.png)
-![image](https://user-images.githubusercontent.com/25688193/30471665-859ece0a-9a34-11e7-91c1-44c0ce6eae1e.png)
-> 記載中...
+### ■ カテゴリデータ（名義 [nominal] 特徴量、順序 [ordinal] 特徴量）の処理
+パターン認識は、対象を観測し、識別に有効な特徴を抽出することから始まるが、<br>
+観測された特徴は、**非数値データとして抽出される定性的特徴 [qualitative feature]** と、**数値データとして抽出される定量的特徴 [quantitative feature]** に分類できる。<br>
+定性的特徴と定量的特徴のデータは、更に下図のように型分類できる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/36221978-315e9ba8-1203-11e8-9df3-d945d26f27a3.png)
+
+尚、**定性的特徴を処理するためには、データの符号化を行う。**（例えば、２つのクラスラベルを表すために、"0と１"あるいは"-1と+1"のように符号化する。）
 
 
 <a id="ID_2-3"></a>
 
-### データの分割
+### ■ データの分割
 ![image](https://user-images.githubusercontent.com/25688193/30472734-a8bc90a8-9a38-11e7-9f7b-95b8086f9c87.png)
 ![image](https://user-images.githubusercontent.com/25688193/30491347-fb7a01ec-9a77-11e7-9687-e8b9f586c5d9.png)
 ![image](https://user-images.githubusercontent.com/25688193/30491418-2aade88e-9a78-11e7-9bda-079e707a5f28.png)
