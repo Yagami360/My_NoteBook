@@ -24,7 +24,7 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
     - [線形代数学 [linear algebra]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md)
     - [微分方程式 [differential equation]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F_Note.md)
     - [最適化問題 [optimization problem]（数理計画問題 [mathematical programming] ）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E6%9C%80%E9%81%A9%E5%8C%96%E5%95%8F%E9%A1%8C_Note.md)
-    - ゲーム理論 [game theory]
+    - [ゲーム理論 [game theory]（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%82%B2%E3%83%BC%E3%83%A0%E7%90%86%E8%AB%96_Note.md)
 
 - 情報工学 / コンピュータ・サイエンス [Computer Science]
     - [情報理論 / 情報数理 [Information theory]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%83%85%E5%A0%B1%E7%90%86%E8%AB%96_Note.md)
