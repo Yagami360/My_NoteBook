@@ -2,34 +2,21 @@
 
 機械学習に関してのマイノートです。今後も随時追加予定です。
 
-This is my notebook that summarizes about "Machine Learning". I will add contents as needed.
-
 ![s_](https://user-images.githubusercontent.com/25688193/29311672-d5cb20c2-81ed-11e7-9c44-002fe0eb0873.png)
 
-
-> 外部リンク
->> Twitter モーメント：</br>
->> 機械学習 : https://twitter.com/i/moments/781970648385978368</br>
->> SVM : https://twitter.com/i/moments/785417932629168129</br>
->> 情報理論 : https://twitter.com/i/moments/796112497388335105</br>
-
->> My GitHub
->>> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き :
->>> https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn
-
->>> 主に、「はじパタ」R実行例のサンプルRコード :</br>
->>> https://github.com/Yagami360/PRML_RCode
+- My GitHub
+    - [Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn)
 
 
 ## 目次 [Contents]
 1. [機械学習の概要 [Overview]](#ID_1)
-    1. [全体 MAP 図](#ID_1-1)
+    1. 全体 MAP 図
     1. [機械学習の基本的なタスク処理](#ID_1-2)
-        1. [回帰のための機械学習](#ID_1-2-1)
-        1. [分類のための機械学習](#ID_1-2-2)
-        1. [クラスタリングのための機械学習](#ID_1-2-3)
+        1. 回帰のための機械学習
+        1. 分類のための機械学習
+        1. クラスタリングのための機械学習
     1. [学習の方法、種類](#ID_1-3)
-        1. [教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]](#ID_1-3-1)
+        1. 教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]
         1. [バッチ学習 [batch learning] とオンライン学習 [online learning]](#ID_1-3-2)
         1. [強化学習 [reinforcement learning]](#ID_1-3-3)
         1. [アンサンブル学習 [ensemble learning]](#ID_1-3-4)
@@ -174,54 +161,81 @@ This is my notebook that summarizes about "Machine Learning". I will add content
 
 <a id="ID_1"></a>
 
-## 機械学習の概要 [Overview]
+## 概要 [Overview]
 
+<!--
 <a id="ID_1-1"></a>
 
-### 全体 MAP 図
+### ■ 全体 MAP 図
 > 記載中...
+-->
 
 <a id="ID_1-2"></a>
 
-### 機械学習の基本的なタスク処理
+### ■ 機械学習の基本的なタスク処理
 機械学習は、大きく分けて以下の２つの問題設定＆解決のための手法に分けることが出来る。
 - ① 回帰問題の為の手法。（単回帰分析、重回帰分析、等）
 - ② （クラスの）分類問題の為の手法（SVM、k-NN、ロジスティクス回帰、等）
 - ③ クラスタリング問題の為の手法（k-means法、等）
 
+<!--
 <a id="ID_1-2-1"></a>
 
-#### 回帰のための機械学習
+#### ◎ 回帰のための機械学習
 > 記載中...
 
 <a id="ID_1-2-2"></a>
 
-#### 分類のための機械学習
+#### ◎ 分類のための機械学習
 > 記載中...
 
 <a id="ID_1-2-3"></a>
 
-#### クラスタリングのための機械学習
+#### ◎ クラスタリングのための機械学習
 > 記載中...
+
+-->
 
 <a id="ID_1-3"></a>
 
-### 学習の方法、種類
+### ■ 学習の方法、種類
 
+<!--
 <a id="ID_1-3-1"></a>
 
-#### 教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]
+#### ◎ 教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]
 > 記載中...
+-->
 
 <a id="ID_1-3-2"></a>
 
-#### バッチ学習 [batch learning] とオンライン学習 [online learning]
-![image](https://user-images.githubusercontent.com/25688193/30470771-09669b7c-9a31-11e7-8985-74fc6ed9c903.png)
+#### ◎ バッチ学習 [batch learning] とオンライン学習 [online learning]
+
+#### ☆ バッチ学習 [batch processing]
+一定量もしくは、一定期間データを集め、まとめて一括に学習を行う学習方式。<br>
+より詳細には、<br>
+**モデルの重みの更新を、各々のサンプルデータ毎に小刻みに行うでのはなく、トレーニングデータ・セット全てのサンプルに対して、一斉（一度）に行う。（バッチ処理）**<br>
+最急降下法による学習などが、これに相当する。
+
+![image](https://user-images.githubusercontent.com/25688193/36219334-588b8e7e-11fa-11e8-8501-7dd929942979.png)
+
+#### ☆ オンライン学習 [batch processing]
+データを一度に一斉に学習を行うバッチ学習とは異なり、<br>
+新しいトレーニングデータが届いた際に、その場でモデルに対し、このサンプルでの追加の学習を随時行う学習方式。<br>
+オンライン学習を用いれば、生じた変化に素早く適応させることができる。<br>
+応用上において、これが特に役に立つのは、Webアプリケーションの顧客データなどの大量のデータを扱うケースである。<br>
+確率的勾配法などがこれに相当する。
 
 <a id="ID_1-3-3"></a>
 
-#### 強化学習 [reinforcement learning]
-![image](https://user-images.githubusercontent.com/25688193/30470943-bb9e0eb0-9a31-11e7-95d1-681b16a7272e.png)
+#### ◎ 強化学習 [reinforcement learning]
+**試行錯誤を通じて環境に適応する学習制御**の枠組である。<br>
+教師有り学習とは異なり、状態入力に対する正しい行動出力を明示的に示す**教師データが存在しない。（教師なし学習）**<br>
+そのかわりに、報酬というスカラーの情報を手がかりに学習するが、報酬にはノイズや遅れがある。<br>
+そのため、行動を実行した直後の報酬をみるだけでは学習主体はその行動が正しかっ たかどうかを判断できないという困難を伴うヒューリスティックな手法。<br>
+（※ ヒューリスティック：必ず正しい答えを導けるわけではないが、ある程度のレベルで正解に近い解を得ることができる方法。 ）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/36220069-b84cbebc-11fc-11e8-9fb6-85265a46b41c.png)
 
 <a id="ID_1-3-4"></a>
 
@@ -229,23 +243,18 @@ This is my notebook that summarizes about "Machine Learning". I will add content
 各識別器を組み合わせて使用し、それらの識別器（弱識別器という）の投票結果（単純な多数決 or 重み付け後の多数決等）で最終的な判断を下す学習方法。</br>
 様々な識別器を組み合わせて **多様性のある学習** を行うため、汎化性能が高く、又過学習 [overfitting] を起こしにくい。
 
-> 参考
->> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
->> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
->>> 機械学習における、アンサンブル学習のサンプルコード集。（練習プログラム）</br>
->>> [MachineLearning_Exercises_Python_scikit-learn/EnsembleLearning_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/EnsembleLearning_scikit-learn)</br>
-
+- 実装コード
+    - My GitHub : Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
+        - [機械学習における、アンサンブル学習のサンプルコード集。（練習プログラム）](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/EnsembleLearning_scikit-learn)
 
 
 <a id="ID_2"></a>
 
-## 機械学習の前処理 [pre processing]
+## ■ 機械学習の前処理 [pre processing]
 
-> 参考
->> My GitHub : Yagami360/MachineLearning_Exercises_Python_scikit-learn</br>
->> Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
->>> 機械学習における、データの前処理のサンプルコード集。（練習プログラム）</br>
->>> [MachineLearning_Exercises_Python_scikit-learn/DataPreProcess_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/DataPreProcess_scikit-learn)</br>
+- 実装コード
+    - My GitHub : Python＆機械学習ライブラリ scikit-learn の使い方の練習コード集。機械学習の理論解説付き
+        - [機械学習における、データの前処理のサンプルコード集。（練習プログラム）](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/DataPreProcess_scikit-learn)
 
 <a id="ID_2-1"></a>
 
