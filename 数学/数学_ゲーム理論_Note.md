@@ -9,7 +9,7 @@
 1. [ゲーム理論 [Game Theory]](#ID_1)
     1. [概要](#ID_1-1)
     1. [全体 MAP 図](#ID_1-2)
-    1. [戦略形ゲーム [game in staregic form] / 標準形ゲーム [game in normal form]](#ID_1-x)
+    1. [戦略形ゲーム [game in staregic form] / 標準形ゲーム [game in normal form]](#ID_1-3)
     1. [xxx](#ID_1-x)
     1. [参考文献](#参考文献)
 
@@ -87,30 +87,68 @@
 ## 全体 MAP 図
 > 記載中...
 
+<a id="ID_1-3"></a>
+
 ## 戦略形ゲーム [game in staregic form] / 標準形ゲーム [game in normal form]
 戦略形ゲーム（標準形ゲーム）とは、先に記述したように、ゲーム理論における最も基本的な数理モデルであり、
 ゲーム理論が扱うゲーム的状況（＝プレイヤーの利得が自身の戦略のみならず相手の戦略にも依存するような相互依存なシステム）を、関数や行列を用いて定式化するものである。
 
 ここでは、まず、市場シェアという１つのゲームを例を元に、この戦略形ゲームの基本的な性質（特に、ナッシュ均衡点）を見ていく。
 
+<!----------------------------------------------------------->
+
 （例）市場シェアゲーム
 
-![image](https://user-images.githubusercontent.com/25688193/36326899-11928340-13a0-11e8-8447-e632f3ae18b5.png)
+![image](https://user-images.githubusercontent.com/25688193/36329718-511c7386-13aa-11e8-92a2-6ceb027eb1d4.png)
 
 ２つのプレイヤー（企業）A 社, B 社が市場競争しているとする。<br>
 両社は共に、現時点で 50% の市場シェアを占有しているが、もし１社のみ新製品を発売するという戦略 ( s_1  と書くことにする）をとれば、市場シェアを 70% 獲得することが出来るが、 両社ともに新製品を販売するという戦略をとってしまった場合、市場シェアは現在と同じ 50% ずつという結果になってしまう。このような相互依存関係を表で書くと、上表のようになる。
 
+<!----------------------------------------------------------->
+
 この市場シェアゲームのように、<br>
 **プレイヤーの戦略と利得（ここでは市場シェア）の関係によって定義されるゲームを、戦略形ゲームという。**
 
-より一般的には、戦略形 n 人ゲームは以下のような要素の組として定義される。
+**より一般的には、戦略形 n 人ゲームは以下のような要素の組 G として定義される。**
 
-![image](https://user-images.githubusercontent.com/25688193/36327258-626a1930-13a1-11e8-9920-7f47bc778073.png)
+![image](https://user-images.githubusercontent.com/25688193/36327764-f5cc2fc8-13a2-11e8-95da-f98c8e1f6970.png)
 
-1. ![image](https://user-images.githubusercontent.com/25688193/36327291-7e063638-13a1-11e8-8e2c-109d8e5c6bce.png) はプレイヤー集合（各々の要素番号がプレイヤー番号を表す）
-2. ![image](https://user-images.githubusercontent.com/25688193/36327312-9599596a-13a1-11e8-998d-997bcce974d6.png) はプレイヤー i の選択可能な戦略、或いは戦略の集合
-3. ![image](https://user-images.githubusercontent.com/25688193/36327338-a9a4f324-13a1-11e8-8861-89ae1ac06caf.png) は、戦略 S の直積集合 ![image](https://user-images.githubusercontent.com/25688193/36327364-bdf6dbe4-13a1-11e8-8512-71199087b4d8.png) 上の関数
+- ![image](https://user-images.githubusercontent.com/25688193/36327291-7e063638-13a1-11e8-8e2c-109d8e5c6bce.png) はプレイヤー集合（各々の要素番号がプレイヤー番号を表す）
+- ![image](https://user-images.githubusercontent.com/25688193/36327312-9599596a-13a1-11e8-998d-997bcce974d6.png) はプレイヤー i の選択可能な戦略、或いは戦略の集合
+- ![image](https://user-images.githubusercontent.com/25688193/36327338-a9a4f324-13a1-11e8-8861-89ae1ac06caf.png) は、戦略 S の直積集合 ![image](https://user-images.githubusercontent.com/25688193/36327364-bdf6dbe4-13a1-11e8-8512-71199087b4d8.png) 上の関数
 
+ゲームは次のようにプレイ（ゲームプレイ）される。
+1. 任意のプレイヤー i は、他のプレイヤーの戦略 ![image](https://user-images.githubusercontent.com/25688193/36328408-4acc18ec-13a5-11e8-97bf-bf7339978fcc.png) の選択を知らずに、自らの戦略 ![image](https://user-images.githubusercontent.com/25688193/36327312-9599596a-13a1-11e8-998d-997bcce974d6.png) を選択する。
+2. その結果、プレイヤー i は利得 ![image](https://user-images.githubusercontent.com/25688193/36328437-6b43afcc-13a5-11e8-8441-6b77e70abd22.png) を得る。
+3. そして、任意のプレイヤーの目的である、自らの利得の最大化に従って戦略を選択する。
+4. 尚、![image](https://user-images.githubusercontent.com/25688193/36328646-36d2da3c-13a6-11e8-83c9-8fa083ff44e5.png) で定義される戦略形ゲームのゲームプレイにおいて、G の各要素 N（任意のプレイヤー）, S（任意の戦略）, f（任意の利得） は、全てのプレイヤーが完全に知っている（共有知識）であるとする。
+
+<br>
+
+<!----------------------------------------------------------->
+
+戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688193/36328646-36d2da3c-13a6-11e8-83c9-8fa083ff44e5.png) において、
+- 全てのプレイヤーの戦略集合 ![image](https://user-images.githubusercontent.com/25688193/36327312-9599596a-13a1-11e8-998d-997bcce974d6.png) が有限と時、有限ゲームであるといい、
+- 全てのプレイヤーの戦略集合 ![image](https://user-images.githubusercontent.com/25688193/36327312-9599596a-13a1-11e8-998d-997bcce974d6.png) が無限と時、無限ゲームであるという。
+
+本項で扱うのは、主に有限ゲームである。
+
+<br>
+
+<!----------------------------------------------------------->
+
+戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688193/36328646-36d2da3c-13a6-11e8-83c9-8fa083ff44e5.png) において、<br>
+全ての戦略の組 ![image](https://user-images.githubusercontent.com/25688193/36329856-d64839aa-13aa-11e8-85ab-eb7b4a01559c.png) に対して、<br>
+![image](https://user-images.githubusercontent.com/25688193/36329875-e89c9d44-13aa-11e8-9ebb-59568ddc72f7.png)　　が成り立つ時、このゲームを**ゼロサムゲーム [zero-sum game]** という。
+
+この関係式が成り立たない（右辺が 0 でない）、<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/36329943-26730f9a-13ab-11e8-8bf9-6d3a79d2f95c.png)　　が成り立つ時、このゲームを**非ゼロサムゲーム [non-zero-sum game]** という。<br>
+特に、右辺が定数 K となるとき、<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/36330114-c7691d5e-13ab-11e8-953b-4528953fac43.png)　　が成り立つ時、このゲームを**定和ゲーム [constant-sum game]** であるという。
+
+<!----------------------------------------------------------->
 
 
 > 記載中...
