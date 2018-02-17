@@ -112,10 +112,11 @@
 
 （例）市場シェアゲーム
 
-![image](https://user-images.githubusercontent.com/25688193/36329718-511c7386-13aa-11e8-92a2-6ceb027eb1d4.png)
+![image](https://user-images.githubusercontent.com/25688193/36345101-515b5a6a-1468-11e8-9075-63c1d5afe7a2.png)
 
 ２つのプレイヤー（企業）A 社, B 社が市場競争しているとする。<br>
-両社は共に、現時点で 50% の市場シェアを占有しているが、もし１社のみ新製品を発売するという戦略 ( s_1  と書くことにする）をとれば、市場シェアを 70% 獲得することが出来るが、 両社ともに新製品を販売するという戦略をとってしまった場合、市場シェアは現在と同じ 50% ずつという結果になってしまう。このような相互依存関係を表で書くと、上表のようになる。
+両社は共に、現時点で 50% の市場シェアを占有しているが、もし１社のみ新製品を発売するという戦略をとれば、
+市場シェアを 70% 獲得することが出来るが、両社ともに新製品を販売するという戦略をとってしまった場合、市場シェアは現在と同じ 50% ずつという結果になってしまう。このような相互依存関係を表で書くと、上表のようになる。
 
 <!----------------------------------------------------------->
 
@@ -124,25 +125,25 @@
 
 **より一般的には、戦略形 n 人ゲームは以下のような要素の組 G として定義される。**
 
-![image](https://user-images.githubusercontent.com/25688193/36327764-f5cc2fc8-13a2-11e8-95da-f98c8e1f6970.png)
+![image](https://user-images.githubusercontent.com/25688193/36345107-6c457d42-1468-11e8-98ee-0e1eb2d67702.png)
 
 - ![image](https://user-images.githubusercontent.com/25688193/36327291-7e063638-13a1-11e8-8e2c-109d8e5c6bce.png) はプレイヤー集合（各々の要素番号がプレイヤー番号を表す）
-- ![image](https://user-images.githubusercontent.com/25688193/36327312-9599596a-13a1-11e8-998d-997bcce974d6.png) はプレイヤー i の選択可能な戦略、或いは戦略の集合
-- ![image](https://user-images.githubusercontent.com/25688193/36327338-a9a4f324-13a1-11e8-8861-89ae1ac06caf.png) は、戦略 S の直積集合 ![image](https://user-images.githubusercontent.com/25688193/36327364-bdf6dbe4-13a1-11e8-8512-71199087b4d8.png) 上の関数
+- ![image](https://user-images.githubusercontent.com/25688193/36345112-7d754a20-1468-11e8-8bf3-0b7167de3dd0.png) はプレイヤー i の選択可能な戦略、或いは戦略の集合
+- ![image](https://user-images.githubusercontent.com/25688193/36327338-a9a4f324-13a1-11e8-8861-89ae1ac06caf.png) は、戦略 S の直積集合 ![image](https://user-images.githubusercontent.com/25688193/36345126-972ba0b8-1468-11e8-95b4-c60e86ba9071.png) 上の関数
 
 ゲームは次のようにプレイ（ゲームプレイ）される。
-1. 任意のプレイヤー i は、他のプレイヤーの戦略 ![image](https://user-images.githubusercontent.com/25688193/36328408-4acc18ec-13a5-11e8-97bf-bf7339978fcc.png) の選択を知らずに、自らの戦略 ![image](https://user-images.githubusercontent.com/25688193/36327312-9599596a-13a1-11e8-998d-997bcce974d6.png) を選択する。
+1. 任意のプレイヤー i は、他のプレイヤーの戦略 ![image](https://user-images.githubusercontent.com/25688193/36345133-b15ca7a2-1468-11e8-9ba5-495059aed321.png) の選択を知らずに、自らの戦略 ![image](https://user-images.githubusercontent.com/25688193/36345140-cf08abca-1468-11e8-8712-a42fff19fef6.png) を選択する。
 2. その結果、プレイヤー i は利得 ![image](https://user-images.githubusercontent.com/25688193/36328437-6b43afcc-13a5-11e8-8441-6b77e70abd22.png) を得る。
 3. そして、任意のプレイヤーの目的である、自らの利得の最大化に従って戦略を選択する。
-4. 尚、![image](https://user-images.githubusercontent.com/25688193/36328646-36d2da3c-13a6-11e8-83c9-8fa083ff44e5.png) で定義される戦略形ゲームのゲームプレイにおいて、G の各要素 N（任意のプレイヤー）, S（任意の戦略）, f（任意の利得） は、全てのプレイヤーが完全に知っている（共有知識）であるとする。
+4. 尚、![image](https://user-images.githubusercontent.com/25688193/36345149-00346ec8-1469-11e8-800b-c5fdb1ad834c.png) で定義される戦略形ゲームのゲームプレイにおいて、G の各要素 N（任意のプレイヤー）, S（任意の戦略）, f（任意の利得） は、全てのプレイヤーが完全に知っている（共有知識）であるとする。
 
 <br>
 
 <!----------------------------------------------------------->
 
-戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688193/36328646-36d2da3c-13a6-11e8-83c9-8fa083ff44e5.png) において、
-- 全てのプレイヤーの戦略集合 ![image](https://user-images.githubusercontent.com/25688193/36327312-9599596a-13a1-11e8-998d-997bcce974d6.png) が有限と時、有限ゲームであるといい、
-- 全てのプレイヤーの戦略集合 ![image](https://user-images.githubusercontent.com/25688193/36327312-9599596a-13a1-11e8-998d-997bcce974d6.png) が無限と時、無限ゲームであるという。
+戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688193/36345149-00346ec8-1469-11e8-800b-c5fdb1ad834c.png) において、
+- 全てのプレイヤーの戦略集合 ![image](https://user-images.githubusercontent.com/25688193/36345112-7d754a20-1468-11e8-8bf3-0b7167de3dd0.png) が有限と時、有限ゲームであるといい、
+- 全てのプレイヤーの戦略集合 ![image](https://user-images.githubusercontent.com/25688193/36345112-7d754a20-1468-11e8-8bf3-0b7167de3dd0.png) が無限と時、無限ゲームであるという。
 
 本項で扱うのは、主に有限ゲームである。
 
@@ -150,7 +151,7 @@
 
 <!----------------------------------------------------------->
 
-戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688193/36328646-36d2da3c-13a6-11e8-83c9-8fa083ff44e5.png) において、<br>
+戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688193/36345149-00346ec8-1469-11e8-800b-c5fdb1ad834c.png) において、<br>
 全ての戦略の組 ![image](https://user-images.githubusercontent.com/25688193/36329856-d64839aa-13aa-11e8-85ab-eb7b4a01559c.png) に対して、<br>
 ![image](https://user-images.githubusercontent.com/25688193/36329875-e89c9d44-13aa-11e8-9ebb-59568ddc72f7.png)　　が成り立つ時、このゲームを**ゼロサムゲーム [zero-sum game]** という。
 
@@ -166,7 +167,7 @@
 <!----------------------------------------------------------->
 
 非ゼロ和２人ゲーム（戦略形ゲーム） G において、<br>
-プレイヤー１とプレイヤー２の戦略集合が、それぞれ ![image](https://user-images.githubusercontent.com/25688193/36341300-88bd00aa-142f-11e8-8b26-88397d1e7234.png) , ![image](https://user-images.githubusercontent.com/25688193/36341317-9cf6e766-142f-11e8-811e-367804f747ae.png) であるとき、<br>
+プレイヤー１とプレイヤー２の戦略集合が、それぞれ ![image](https://user-images.githubusercontent.com/25688193/36345181-682cc610-1469-11e8-8a7c-162215534634.png) , ![image](https://user-images.githubusercontent.com/25688193/36345186-7c6033d8-1469-11e8-82fe-f009e385a36d.png) であるとき、<br>
 このゲーム G の利得関数 f は、以下のような**双行列 [bimatrix]** で表現することが出来る。
 
 ![image](https://user-images.githubusercontent.com/25688193/36341324-b81de1c0-142f-11e8-8a57-57bf2be314d8.png)
@@ -201,6 +202,19 @@
 **この問題を解析するにあたって、重要な概念が、ゲームにおける解の概念、即ち、ナッシュ均衡点 [Nash's equlibrium point] の概念**となる。
 
 以下、この詳細を見ていく。
+
+今、戦略形 n 人ゲーム ![image](https://user-images.githubusercontent.com/25688193/36345149-00346ec8-1469-11e8-800b-c5fdb1ad834c.png) において、<br>
+全ての戦略の組を ![image](https://user-images.githubusercontent.com/25688193/36329856-d64839aa-13aa-11e8-85ab-eb7b4a01559c.png) とし、
+プレイヤー i に対し、この全戦略の組から第 i 成分 ![image](https://user-images.githubusercontent.com/25688193/36345140-cf08abca-1468-11e8-8712-a42fff19fef6.png) を除いた戦略の組（つまり、自身以外の戦略の組）を ![image](https://user-images.githubusercontent.com/25688193/36345133-b15ca7a2-1468-11e8-9ba5-495059aed321.png) とおく。<br>
+すると、全戦略の組 [image](https://user-images.githubusercontent.com/25688193/36329856-d64839aa-13aa-11e8-85ab-eb7b4a01559c.png) に関する、プレイヤー i の利得は ![image](https://user-images.githubusercontent.com/25688193/36345333-a308a180-146b-11e8-946b-d4e643ee5fa2.png) と書ける。<br>
+
+このとき、<br>
+![image](https://user-images.githubusercontent.com/25688193/36345381-8eddb4b0-146c-11e8-9166-e78d87f19f3d.png)
+
+![image](https://user-images.githubusercontent.com/25688193/36345520-6cfad410-146f-11e8-8c6a-40ac08223a11.png)
+
+このナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/36345526-96638ca2-146f-11e8-87f7-630f1db7124d.png) でゲームがプレイされると、ゲームのプレイは、この点 ![image](https://user-images.githubusercontent.com/25688193/36345526-96638ca2-146f-11e8-87f7-630f1db7124d.png) で均衡することになる。
+
 
 > 記載中...
 
