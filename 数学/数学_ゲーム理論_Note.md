@@ -206,7 +206,7 @@
 今、戦略形 n 人ゲーム ![image](https://user-images.githubusercontent.com/25688193/36345149-00346ec8-1469-11e8-800b-c5fdb1ad834c.png) において、<br>
 全ての戦略の組を ![image](https://user-images.githubusercontent.com/25688193/36329856-d64839aa-13aa-11e8-85ab-eb7b4a01559c.png) とし、
 プレイヤー i に対し、この全戦略の組から第 i 成分 ![image](https://user-images.githubusercontent.com/25688193/36345140-cf08abca-1468-11e8-8712-a42fff19fef6.png) を除いた戦略の組（つまり、自身以外の戦略の組）を ![image](https://user-images.githubusercontent.com/25688193/36345133-b15ca7a2-1468-11e8-9ba5-495059aed321.png) とおく。<br>
-すると、全戦略の組 [image](https://user-images.githubusercontent.com/25688193/36329856-d64839aa-13aa-11e8-85ab-eb7b4a01559c.png) に関する、プレイヤー i の利得は ![image](https://user-images.githubusercontent.com/25688193/36345333-a308a180-146b-11e8-946b-d4e643ee5fa2.png) と書ける。<br>
+すると、全戦略の組 ![image](https://user-images.githubusercontent.com/25688193/36329856-d64839aa-13aa-11e8-85ab-eb7b4a01559c.png) に関する、プレイヤー i の利得は ![image](https://user-images.githubusercontent.com/25688193/36345333-a308a180-146b-11e8-946b-d4e643ee5fa2.png) と書ける。<br>
 
 このとき、<br>
 ![image](https://user-images.githubusercontent.com/25688193/36345381-8eddb4b0-146c-11e8-9166-e78d87f19f3d.png)
