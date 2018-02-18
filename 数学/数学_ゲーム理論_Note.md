@@ -11,7 +11,9 @@
     1. 全体 MAP 図
     1. [戦略形ゲーム [game in staregic form] / 標準形ゲーム [game in normal form]](#ID_1-3)
         1. [ナッシュ均衡点 [Nash equilibrium point]](#ID_1-3-1)
-            1. 囚人のジレンマ
+            1. ゼロ和ゲームでのナッシュ均衡点と鞍点
+            1. 囚人のジレンマとナッシュ均衡点
+            1. パレート最適 [Parete optimal]
         1. [混合戦略と期待利得](#ID_1-3-2)
         1. [不動点と均衡解の存在](#ID_1-3-3)
     1. 展開形ゲーム [game in extensive form]
@@ -216,7 +218,49 @@
 このナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/36345526-96638ca2-146f-11e8-87f7-630f1db7124d.png) でゲームがプレイされると、ゲームのプレイは、この点 ![image](https://user-images.githubusercontent.com/25688193/36345526-96638ca2-146f-11e8-87f7-630f1db7124d.png) で均衡することになる。
 
 
+<!--------------------------------------------------------------------->
+
+ナッシュ均衡点でゲームのプレイが均衡していく様子を見るために以下の図を示す。
+
+![image](https://user-images.githubusercontent.com/25688193/36353378-3bad79fe-1509-11e8-8b1d-30fdd6fc8e61.png)
+
+1. まず始めに、<br>
+プレイヤー１がプレイヤー２の戦略を ![image](https://user-images.githubusercontent.com/25688193/36353399-58c38628-1509-11e8-9463-3fbcd2a53e9e.png) であると予想とし、<br>
+プレイヤー２がプレイヤー１の戦略を ![image](https://user-images.githubusercontent.com/25688193/36353406-68e897d2-1509-11e8-88cb-24ff3d1d6115.png) であると予想としたとする。
+2. すると、<br>
+プレイヤー１の合理的な選択は、プレイヤー２の戦略 ![image](https://user-images.githubusercontent.com/25688193/36353399-58c38628-1509-11e8-9463-3fbcd2a53e9e.png) に対する最適応答 ![image](https://user-images.githubusercontent.com/25688193/36353425-aa544f5e-1509-11e8-950b-9a5da0edf8c3.png) となる。<br>
+同様にして、プレイヤー２の合理的な選択は、プレイヤー１の戦略 ![image](https://user-images.githubusercontent.com/25688193/36353406-68e897d2-1509-11e8-88cb-24ff3d1d6115.png) に対する最適応答 ![image](https://user-images.githubusercontent.com/25688193/36353437-c64ff1d6-1509-11e8-99db-a96757f14a15.png) となる。<br>
+3. すると、更に、<br>
+プレイヤー１の合理的な選択は、プレイヤー２の戦略 ![image](https://user-images.githubusercontent.com/25688193/36353437-c64ff1d6-1509-11e8-99db-a96757f14a15.png) に対する最適応答 ![image](https://user-images.githubusercontent.com/25688193/36353442-e95431a6-1509-11e8-8646-11e5ae0d9cf2.png) となる。<br>
+同様にして、プレイヤー２の合理的な選択は、プレイヤー１の戦略 ![image](https://user-images.githubusercontent.com/25688193/36353425-aa544f5e-1509-11e8-950b-9a5da0edf8c3.png) に対する最適応答 ![image](https://user-images.githubusercontent.com/25688193/36353458-04369a22-150a-11e8-93d1-397655c0ee8d.png) となる。
+4. 以下同様の原理の繰り返しで、プレイヤー１とプレイヤー２の推論は、互いに最適応答となりうる状態、<br>
+即ち、ナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/36353468-37319b98-150a-11e8-98cc-3555b8a976b4.png) に到達する。
+
+そして、このナッシュ均衡点で互いの推論が停止する（均衡点）といった動作となる。
+
+<br>
+
+<!--------------------------------------------------------------------->
+
+<a id="ID_1-3-1-1"></a>
+
+#### ゼロ和ゲームでのナッシュ均衡点と鞍点 [saddle point]
+次に、このナッシュ均衡点に関しての、いくつかの性質を見てみる。
+
+![image](https://user-images.githubusercontent.com/25688193/36353823-8491514a-150e-11e8-8287-ff63fc97d581.png)
+
+<!--------------------------------------------------------------------->
+
+<a id="ID_1-3-1-1-1"></a>
+
+#### 戦略の支配
 > 記載中...
+
+<!--------------------------------------------------------------------->
+
+<a id="ID_1-3-1-2"></a>
+
+#### 囚人のジレンマとナッシュ均衡点
 
 戦略形ゲームの有名な例として、囚人のジレンマ [prisoner's dilemma] というゲームがある。<br>
 これは、以下の表のような利得関係にあるゲームである。
