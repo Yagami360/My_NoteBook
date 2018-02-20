@@ -345,9 +345,9 @@
 
 #### ナッシュ均衡点の非存在性
 ナッシュ均衡点は、戦略形ゲームにおいて必ずしも存在するとは限らない。<br>
-そのことを以下の金銭合わせゲームで見てみる。<br>
+そのことを以下のコイン合わせゲームで見てみる。<br>
 
-（例）金銭合わせゲーム [matching pennies]<br>
+（例）コイン合わせゲーム [matching pennies]<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/36430170-d2e2227c-1697-11e8-8c6e-6f257f1b86a1.png)
 
@@ -369,6 +369,20 @@
 <a id="ID_1-3-2-2"></a>
 
 #### 純戦略 [pure strategy] と混合戦略 [mixed stratey]
+今までは、ある戦略を確定的に１つ選択する方法を考えてきたが、これを純戦略という。<br>
+これに対して、ある確率分布に従って戦術の選択を行う方法が考えられるが、これを混合戦略という。<br>
+
+以下、先のコイン合わせゲームにおける混合戦略を考える。<br>
+プレイヤー ![image](https://user-images.githubusercontent.com/25688193/36445314-48eafc36-16c1-11e8-8fae-8363b5a98a16.png) は、![image](https://user-images.githubusercontent.com/25688193/36445363-6bc7081c-16c1-11e8-9329-5d14ea2c5a28.png) をコインの表を選ぶ確率とすると、![image](https://user-images.githubusercontent.com/25688193/36445390-7c1f74d8-16c1-11e8-87f8-e64ab90b3d12.png) がコインの裏を選ぶ確率となり、
+混合戦略は ![image](https://user-images.githubusercontent.com/25688193/36445414-8ee77fb6-16c1-11e8-8b78-fbe22dc2336a.png) で表せる。<br>
+
+このとき、各々の純戦略の組が選択される確率（実現確率）の分布は、以下の表のように書ける。<br>
+
+（例）コイン合わせゲームにおける、実現確率の分布
+
+![image](https://user-images.githubusercontent.com/25688193/36445440-a8569946-16c1-11e8-8827-293045b12db0.png)
+
+
 > 記載中...
 
 <!--------------------------------------------------------------------->
