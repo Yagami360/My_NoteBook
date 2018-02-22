@@ -21,7 +21,7 @@
             1. [純戦略 [pure strategy] と混合戦略 [mixed stratey]](#ID_1-3-2-2)
             1. [戦略形ゲームの混合拡大 [mixed extension] されたゲーム](#ID_1-3-2-3)
             1. [混合戦略による実現可能集合 [feasible set]](#ID_1-3-2-4)
-        1. [不動点と均衡解の存在](#ID_1-3-3)
+        1. [不動点 [fixed point] とナッシュ均衡点の存在](#ID_1-3-3)
     1. 展開形ゲーム [game in extensive form]
     1. 繰り返しゲーム
         1. 繰り返し囚人のジレンマ
@@ -430,7 +430,7 @@
 
 （例）囚人のジレンマにおける実現可能集合<br>
 ![image](https://user-images.githubusercontent.com/25688193/36480421-989b7c5e-174f-11e8-9cf1-31b3fa41c6dc.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/36480788-e865bdac-1750-11e8-8892-548425091263.png)
+![image](https://user-images.githubusercontent.com/25688193/36508181-51c6e73c-179f-11e8-99ce-4ece6e49dc00.png)
 
 囚人のジレンマにおける実現可能集合は、上表の利得行列より、上図のような凸集合になる。<br>
 利得行列の表と実現可能集合の図から分かるように、<br>
@@ -442,9 +442,43 @@
 <!--------------------------------------------------------------------->
 
 （例）男女の争いにおける実現可能集合<br>
-![image](https://user-images.githubusercontent.com/25688193/36480460-c099896c-174f-11e8-9d6a-413f298499d8.png)
+![image](https://user-images.githubusercontent.com/25688193/36480460-c099896c-174f-11e8-9d6a-413f298499d8.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/36508404-fa8f90e4-179f-11e8-8032-85e47ba657d6.png)
+
+男女争いゲームにおける実現可能集合は、上表の利得行列より、上図のような**非凸集合**になる。（詳細は後述）<br>
+（※**ナッシュ均衡点は、この例のように必ずしも凸集合になるとは限らない。**）
+
+そして、利得行列の表と、実現可能集合の図より分かるように、<br>
+この男女ゲームにおけるナッシュ均衡点の利得ベクトルは、
+(ボクシング,バレエ)=(2,1), (バレエ, ボクシング)=(1,2) の２点となる。<br>
+
+以下、上図の実現可能集合の算出過程を示す。<br>
+
+> まず、プレイヤー１（男性）がボクシングを選択する確率を ![image](https://user-images.githubusercontent.com/25688193/36508727-d54bcd24-17a0-11e8-9e41-0a944a1b9d45.png)
+> プレイヤー２（女性）がボクシングを選択する確率を ![image](https://user-images.githubusercontent.com/25688193/36508765-f10752cc-17a0-11e8-96c0-1245f1025c34.png) とすると、<br>	
+>
+> プレイヤー１の期待利得 ![image](https://user-images.githubusercontent.com/25688193/36508857-3b9c86e0-17a1-11e8-9f25-919c474859d6.png) は、<br>
+> ![image](https://user-images.githubusercontent.com/25688193/36509996-ea4cc6de-17a4-11e8-8147-321e137b95f4.png)<br>
+>
+> 同様にして、プレイヤー２の期待利得 ![image](https://user-images.githubusercontent.com/25688193/36509667-c0ea10b8-17a3-11e8-8962-2958ed1cc6ef.png) は、<br>
+> ![image](https://user-images.githubusercontent.com/25688193/36510011-f9881f40-17a4-11e8-83e4-936a12a3812e.png)<br>
+> 
+> 今、![image](https://user-images.githubusercontent.com/25688193/36510075-295e3a9c-17a5-11e8-8dea-6b8d137a1149.png) とおくと、<br>
+> ![image](https://user-images.githubusercontent.com/25688193/36539752-3120e682-181b-11e8-8d0d-42701a5cec8b.png)<br>
+> x と y は、![image](https://user-images.githubusercontent.com/25688193/36539445-327d6ea2-181a-11e8-8054-3b5a2cc3d247.png) の解であるので、<br>
+> ![image](https://user-images.githubusercontent.com/25688193/36539836-7a320040-181b-11e8-878f-c8cf094e476a.png)<br>
+> ![image](https://user-images.githubusercontent.com/25688193/36540319-3eb8f2c4-181d-11e8-9018-62fcc37dca4d.png) を代入すると（途中計算略）<br>
+> ![image](https://user-images.githubusercontent.com/25688193/36540282-1e408246-181d-11e8-95ea-6852c244af08.png)<br>
+
+---
+
+<a id="ID_1-3-3"></a>
+
+### 不動点 [fixed point] とナッシュ均衡点の存在
 
 > 記載中...
+
+<br>
 
 ---
 
