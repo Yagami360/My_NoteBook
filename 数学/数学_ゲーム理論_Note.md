@@ -22,6 +22,9 @@
             1. [戦略形ゲームの混合拡大 [mixed extension] されたゲーム](#ID_1-3-2-3)
             1. [混合戦略による実現可能集合 [feasible set]](#ID_1-3-2-4)
         1. [角谷の不動点定理 [Kakutani fixed point theorem] とナッシュ均衡点の存在](#ID_1-3-3)
+        1. [ミニマックス定理とゼロ和2人ゲームにおけるナッシュ均衡点の存在性](#ID_1-3-4)
+        1. [ナッシュ均衡点の具体的な計算](#ID_1-3-5)
+            1. シャープレイによるラベル法を用いた、ナッシュ均衡点の計算
     1. 展開形ゲーム [game in extensive form]
     1. 繰り返しゲーム
         1. 繰り返し囚人のジレンマ
@@ -490,6 +493,8 @@
 この最適応答対応と不動点に関して、以下の定理が成り立つ。<br>
 ![image](https://user-images.githubusercontent.com/25688193/36772281-f0f1d0b8-1c97-11e8-9cf3-05232c4b92db.png)
 
+<!------------------------------------------------------------------->
+
 <a id="ID_1-3-3-1"></a>
 
 #### ☆ 角谷の不動点定理
@@ -498,6 +503,8 @@
 - 参考URL
     - [角谷の不動点定理 - Wikipedia ](https://ja.wikipedia.org/wiki/%E8%A7%92%E8%B0%B7%E3%81%AE%E4%B8%8D%E5%8B%95%E7%82%B9%E5%AE%9A%E7%90%86)
 
+<!------------------------------------------------------------------->
+
 <a id="ID_1-3-3-1-1"></a>
 
 ##### ☆ 角谷の不動点定理に関した補足事項
@@ -505,7 +512,73 @@
 
 ![image](https://user-images.githubusercontent.com/25688193/36779281-cb59539c-1cb2-11e8-87a9-420b7761de9b.png)
 
-#### xxx
+<!------------------------------------------------------------------->
+
+<a id="ID_1-3-3-1-2"></a>
+
+#### ☆ ナッシュ均衡点の存在性の定理
+この角谷の不動点定理を用いて、戦略形ゲームにおけるナッシュ均衡点の存在を証明することが出来る。<br>
+![image](https://user-images.githubusercontent.com/25688193/36813495-1e8ff998-1d18-11e8-8912-52b6093fa30d.png)
+
+（証明）<br>
+最適応答対応（写像）B と、その不動点 ![image](https://user-images.githubusercontent.com/25688193/36814592-5d577da6-1d1b-11e8-9549-de4c40ca6113.png) に関しての定理より、<br>
+（混合戦略の組 ![image](https://user-images.githubusercontent.com/25688193/36814561-3e9e8fda-1d1b-11e8-9dc2-ee159640856d.png) がナッシュ均衡点 ⇔ ![image](https://user-images.githubusercontent.com/25688193/36814561-3e9e8fda-1d1b-11e8-9dc2-ee159640856d.png) が不動点。即ち、![image](https://user-images.githubusercontent.com/25688193/36814592-5d577da6-1d1b-11e8-9549-de4c40ca6113.png) が成り立つ）<br>
+最適応答対応 B が、角谷の不動点定理の条件（コンパクトな凸性、上半連続性）を満たすことを示せば良い。<br>
+
+> 記載中...
+
+<br>
+
+---
+
+<a id="ID_1-3-4"></a>
+
+### ◎ ミニマックス定理とゼロ和2人ゲームにおけるナッシュ均衡点の存在性
+ゼロ和２人ゲームにおける、ナッシュ均衡点の存在は、鞍点の存在と同値となるが、<br>
+これは更に、ミニマックス定理と同値となる。<br>
+
+以下、そのことの詳細を見ていく。<br>
+
+<a id="ID_1-3-4-1"></a>
+
+#### ☆ 保証水準、maxmin 戦略、minmax 戦略
+![image](https://user-images.githubusercontent.com/25688193/36819188-ad013e7c-1d2b-11e8-82d4-9def519b6a56.png)
+
+![image](https://user-images.githubusercontent.com/25688193/36824205-8c83b1e8-1d44-11e8-9b88-c0ae6e27ed9c.png)
+
+![image](https://user-images.githubusercontent.com/25688193/36824457-b96518a4-1d45-11e8-9d9a-ab66d1b45ef2.png)
+
+![image](https://user-images.githubusercontent.com/25688193/36826790-221d1286-1d53-11e8-91a1-7739bfd70585.png)
+
+![image](https://user-images.githubusercontent.com/25688193/36827068-9d5ee9c8-1d54-11e8-95c8-53daf731607d.png)
+
+この２つの定理より、ミニマックス定理が成り立つ。<br>
+![image](https://user-images.githubusercontent.com/25688193/36834868-969dd874-1d77-11e8-8f44-b218d335cf03.png)
+
+<br>
+
+---
+
+<a id="ID_1-3-5"></a>
+
+### ◎ ナッシュ均衡点の計算方法
+ゼロ和２人ゲームにおける、ナッシュ均衡点の具体的な計算方法について示す。<br>
+
+いま、以下の表のようなゼロ和２人ゲームがあったとする。<br>
+![image](https://user-images.githubusercontent.com/25688193/36834460-52970566-1d76-11e8-8ee0-ba953d02d2c5.png)
+
+
+ここで、各利得値（利得行列の値）は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36834505-6d743282-1d76-11e8-94c3-2708ca3f3ebc.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/36834533-885b29a2-1d76-11e8-9101-b0182bfbbf5b.png) という条件を満たすとする。
+
+まず、混合戦略によるナッシュ均衡点を計算するための前段階として、
+各プレイヤーの最適応答対応を求める。
+
+プレイヤー i (i=1,2) の混合戦略を ![image](https://user-images.githubusercontent.com/25688193/36834636-d5deece0-1d76-11e8-81c1-d97ac4b4e8e4.png) とすると、<br>
+![image](https://user-images.githubusercontent.com/25688193/36834673-f16c793c-1d76-11e8-9ff5-cbb71bd76b4f.png)
+
+
 
 > 記載中...
 
