@@ -24,6 +24,8 @@
         1. [角谷の不動点定理 [Kakutani fixed point theorem] とナッシュ均衡点の存在](#ID_1-3-3)
         1. [ミニマックス定理とゼロ和2人ゲームにおけるナッシュ均衡点の存在性](#ID_1-3-4)
         1. [ナッシュ均衡点の具体的な計算](#ID_1-3-5)
+            1. [最適応答対応からのナッシュ均衡点の計算方法](#ID_1-3-5-1)
+            1. [maxmin戦略, minmax戦略からのナッシュ均衡点の計算方法](#ID_1-3-5-2)
             1. シャープレイによるラベル法を用いた、ナッシュ均衡点の計算
     1. 展開形ゲーム [game in extensive form]
     1. 繰り返しゲーム
@@ -564,6 +566,9 @@
 ### ◎ ナッシュ均衡点の計算方法
 ゼロ和２人ゲームにおける、ナッシュ均衡点の具体的な計算方法について示す。<br>
 
+<a id="ID_1-3-5-1"></a>
+
+#### ☆ 最適応答対応からのナッシュ均衡点の計算方法
 いま、以下の表のようなゼロ和２人ゲームがあったとする。<br>
 ![image](https://user-images.githubusercontent.com/25688193/36834460-52970566-1d76-11e8-8ee0-ba953d02d2c5.png)
 
@@ -576,8 +581,52 @@
 各プレイヤーの最適応答対応を求める。
 
 プレイヤー i (i=1,2) の混合戦略を ![image](https://user-images.githubusercontent.com/25688193/36834636-d5deece0-1d76-11e8-81c1-d97ac4b4e8e4.png) とすると、<br>
-![image](https://user-images.githubusercontent.com/25688193/36834673-f16c793c-1d76-11e8-9ff5-cbb71bd76b4f.png)
 
+プレイヤー１の純戦略と期待利得の関係は、以下の表のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/36875561-cb0753fc-1df3-11e8-9493-c4e4433bb11a.png)
+
+従って、プレイヤー１の最適応答対応<br>
+![image](https://user-images.githubusercontent.com/25688193/36875738-aabfb232-1df4-11e8-8d8d-8488e0734234.png)
+は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36875829-3b111416-1df5-11e8-8662-e5e98c4e48ff.png) の関係より、<br>
+![image](https://user-images.githubusercontent.com/25688193/36877200-590f8cca-1dfc-11e8-9e46-49dd02513834.png)<br>
+ここで、<br>
+![image](https://user-images.githubusercontent.com/25688193/36874820-b58c4580-1df0-11e8-8e1a-a830ecbe1496.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/36874844-c8b74d12-1df0-11e8-93d0-3a4d3865474a.png) とおいている。<br>
+
+<!------------------------------------------------------------------>
+
+同様にして、<br>
+プレイヤー２の純戦略と期待利得の関係は、以下の表のようになり、<br>
+![image](https://user-images.githubusercontent.com/25688193/36875871-74097ce0-1df5-11e8-9f20-2fa3569ef723.png)<br>
+
+従って、プレイヤー２の最適応答対応<br>
+![image](https://user-images.githubusercontent.com/25688193/36875886-9052ff0c-1df5-11e8-935d-d473495df0e0.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36875902-aafda88e-1df5-11e8-99f7-b9e950eee609.png) の関係より、<br>
+![image](https://user-images.githubusercontent.com/25688193/36877214-6db034cc-1dfc-11e8-9887-bba71e9351cd.png)<br>
+ここで、<br>
+![image](https://user-images.githubusercontent.com/25688193/36876273-8e5f8bfa-1df7-11e8-8368-bb08e304f1eb.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/36876289-a0270e9e-1df7-11e8-822b-d37683af671b.png) とおいている。<br>
+
+<!------------------------------------------------------------------>
+
+このプレイヤー１とプレイヤー２の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/36877519-f02d3dfe-1dfd-11e8-9472-692ce77a7305.png) を図示すると、以下のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/36877606-5ebe8700-1dfe-11e8-8e74-236e15a0b773.png)<br>
+
+よって、このゲームのナッシュ均衡点は、上図（オレンジの点）より、<br>
+- 純戦略の組 ![image](https://user-images.githubusercontent.com/25688193/36877735-07d9e19a-1dff-11e8-861b-ad75c5222832.png)<br>
+- 及び、混合戦略の組 ![image](https://user-images.githubusercontent.com/25688193/36877753-1ac34044-1dff-11e8-9969-d89e9053e90b.png)<br>
+
+が該当する。
+
+<br>
+
+<!------------------------------------------------------------------>
+
+<a id="ID_1-3-5-2"></a>
+
+#### ☆ maxmin戦略, minmax戦略からのナッシュ均衡点の計算方法
+次に、このゼロ和２人ゲームのナッシュ均衡点を maxmin戦略, minmax戦略から計算する。
 
 
 > 記載中...
