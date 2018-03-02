@@ -258,7 +258,7 @@
 #### ☆ ゼロ和ゲームでのナッシュ均衡点と鞍点 [saddle point]
 次に、このナッシュ均衡点に関しての、いくつかの性質を見てみる。
 
-![image](https://user-images.githubusercontent.com/25688193/36353823-8491514a-150e-11e8-8287-ff63fc97d581.png)
+![image](https://user-images.githubusercontent.com/25688193/36888456-e2e62b3e-1e38-11e8-8e24-ebf648a66fa5.png)
 
 <!--------------------------------------------------------------------->
 
@@ -546,13 +546,13 @@
 #### ☆ 保証水準、maxmin 戦略、minmax 戦略
 ![image](https://user-images.githubusercontent.com/25688193/36819188-ad013e7c-1d2b-11e8-82d4-9def519b6a56.png)
 
-![image](https://user-images.githubusercontent.com/25688193/36824205-8c83b1e8-1d44-11e8-9b88-c0ae6e27ed9c.png)
+![image](https://user-images.githubusercontent.com/25688193/36887585-341aec28-1e35-11e8-80e2-eed071a8db58.png)
 
-![image](https://user-images.githubusercontent.com/25688193/36824457-b96518a4-1d45-11e8-9d9a-ab66d1b45ef2.png)
+![image](https://user-images.githubusercontent.com/25688193/36887890-78150282-1e36-11e8-8409-92c91bef11e8.png)
 
-![image](https://user-images.githubusercontent.com/25688193/36826790-221d1286-1d53-11e8-91a1-7739bfd70585.png)
+![image](https://user-images.githubusercontent.com/25688193/36888248-f5ecf286-1e37-11e8-9fb2-e88bcef71925.png)
 
-![image](https://user-images.githubusercontent.com/25688193/36827068-9d5ee9c8-1d54-11e8-95c8-53daf731607d.png)
+![image](https://user-images.githubusercontent.com/25688193/36888266-0bb6c790-1e38-11e8-9bc1-4f480657f856.png)
 
 この２つの定理より、ミニマックス定理が成り立つ。<br>
 ![image](https://user-images.githubusercontent.com/25688193/36834868-969dd874-1d77-11e8-8f44-b218d335cf03.png)
@@ -621,17 +621,74 @@
 
 <br>
 
-<!------------------------------------------------------------------>
+<!------------------------------------------------------------------------------------>
 
 <a id="ID_1-3-5-2"></a>
 
 #### ☆ maxmin戦略, minmax戦略からのナッシュ均衡点の計算方法
-次に、このゼロ和２人ゲームのナッシュ均衡点を maxmin戦略, minmax戦略から計算する。
+次に、このゼロ和２人ゲームのナッシュ均衡点を maxmin戦略, minmax戦略から導出してみる。
 
+（例）コイン合わせゲーム（ゼロ和２人ゲーム）<br>
+![image](https://user-images.githubusercontent.com/25688193/36878105-c6c852f2-1e00-11e8-9321-f5330b2b221d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/36878122-d7bcddb2-1e00-11e8-87ce-b7cd4af1bdff.png)<br>
+
+プレイヤー１の期待利得関数 ![image](https://user-images.githubusercontent.com/25688193/36881161-049f8a46-1e10-11e8-945f-e1effd5a1a43.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36881221-5d8a73fa-1e10-11e8-9ddb-a8a037af3951.png) となる。<br>
+よって、プレイヤー１の maxmin 戦略は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36886538-5a19bc2e-1e30-11e8-9003-6d9cd6836e48.png)<br>
+と書けるが、期待利得関数 ![image](https://user-images.githubusercontent.com/25688193/36883498-0f66f01e-1e1e-11e8-8e93-5b0c2e699822.png) の（確率変数 ![image](https://user-images.githubusercontent.com/25688193/36883503-215c0e12-1e1e-11e8-8224-43f29b7309f4.png) に関する）線形性より、<br>
+min 項の最小化は、![image](https://user-images.githubusercontent.com/25688193/36883512-34fbf9c8-1e1e-11e8-89e8-aee83edeca73.png) 或いは ![image](https://user-images.githubusercontent.com/25688193/36883520-4b3e431c-1e1e-11e8-9286-373bd5ae5d01.png) の条件下で実現される。（＝線形なので、端っこの条件時に最小化）<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/36886591-8e9da1ae-1e30-11e8-9218-9cb583b8be67.png)<br>
+を満たす解 ![image](https://user-images.githubusercontent.com/25688193/36883564-912d2df2-1e1e-11e8-9d63-39be2ade740c.png) が、プレイヤー１の maxmin 戦略となる。<br>
+
+この maxmin 式を図で書くと、以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/36883865-66f9a9f0-1e20-11e8-9c17-83873f2201ae.png)
+
+上図より、プレイヤー１の maxmin 戦略となる ![image](https://user-images.githubusercontent.com/25688193/36883564-912d2df2-1e1e-11e8-9d63-39be2ade740c.png) は、![image](https://user-images.githubusercontent.com/25688193/36883892-9e457aba-1e20-11e8-885c-f36cee060765.png) となる。<br>
+
+<br>
+
+<!------------------------------------------------------------------------------------->
+
+
+同様にして、<br>
+プレイヤー２の期待利得関数 ![image](https://user-images.githubusercontent.com/25688193/36886653-c9c5fff6-1e30-11e8-808b-a3f5ea49fd8e.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36886795-66173c12-1e31-11e8-8707-112b9fe671e0.png) となる。<br>
+
+プレイヤー２の minmax 戦略は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36886838-a02e0552-1e31-11e8-8413-abba733d735a.png)<br>
+と書けるが、期待利得関数 ![image](https://user-images.githubusercontent.com/25688193/36886653-c9c5fff6-1e30-11e8-808b-a3f5ea49fd8e.png) の（確率変数 ![image](https://user-images.githubusercontent.com/25688193/36886260-d1a6c31a-1e2e-11e8-9128-3ea5ae8972ae.png) に関する）線形性より、<br>
+max 項の最大化は、![image](https://user-images.githubusercontent.com/25688193/36886337-3db7cc0c-1e2f-11e8-878a-7dcc54bb3176.png) 或いは ![image](https://user-images.githubusercontent.com/25688193/36886352-4c24c1aa-1e2f-11e8-9730-f87195198877.png) の条件下で実現される。（＝線形なので、端っこの条件時に最小化）<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/36886871-c46ced16-1e31-11e8-9841-9c072b465010.png)<br>
+を満たす解 ![image](https://user-images.githubusercontent.com/25688193/36886894-e606857c-1e31-11e8-9bfb-b115ea153b9c.png) が、プレイヤー２の minmax 戦略となる。<br>
+
+この minmax 式を図で書くと、以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/36887008-732293a6-1e32-11e8-83db-b63dc8efcada.png)
+
+上図より、プレイヤー２の minmax 戦略となる ![image](https://user-images.githubusercontent.com/25688193/36886894-e606857c-1e31-11e8-9bfb-b115ea153b9c.png) は、![image](https://user-images.githubusercontent.com/25688193/36887031-8bef11a2-1e32-11e8-8c24-a9b504f7b6c4.png) となる。
+
+まとめると、<br>
+プレイヤー１の maxmin 戦略は、![image](https://user-images.githubusercontent.com/25688193/36887052-ab17f558-1e32-11e8-88fe-7862b786ed98.png)<br>
+プレイヤー２の minmax 戦略は、![image](https://user-images.githubusercontent.com/25688193/36887031-8bef11a2-1e32-11e8-8c24-a9b504f7b6c4.png)<br>
+となり、両者は一致しているので、<br>
+ミニマックス定理より、この点 ![image](https://user-images.githubusercontent.com/25688193/36887069-be59210a-1e32-11e8-9214-4a6266edf0e8.png) はナッシュ均衡点となる。<br>
+
+<br>
+
+<!------------------------------------------------------------------------------------>
+
+---
+
+<a id="ID_1-3-5-3"></a>
+
+#### ☆ シャープレイによるラベル法を用いた、ナッシュ均衡点の計算
 
 > 記載中...
 
 <br>
+
 
 ---
 
