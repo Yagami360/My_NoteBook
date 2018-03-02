@@ -773,8 +773,7 @@ max 項の最大化は、![image](https://user-images.githubusercontent.com/2568
 <br>
 
 この 2×2 の非ゼロ和ゲームにおけるリスク支配の概念を一般化すると、以下のように定義できる。<br>
-![image](https://user-images.githubusercontent.com/25688193/36897672-e74157e0-1e5a-11e8-8d63-3838fdfb8e8e.png)
-
+![image](https://user-images.githubusercontent.com/25688193/36897866-afab06f4-1e5b-11e8-8a8b-d61d60d87989.png)
 
 
 > 記載中...
