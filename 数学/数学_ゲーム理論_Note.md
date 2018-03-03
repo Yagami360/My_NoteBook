@@ -29,6 +29,8 @@
             1. シャープレイによるラベル法を用いた、ナッシュ均衡点の計算
         1. [「複数均衡」、「均衡選択」の問題](#ID_1-3-6)
             1. [利得支配 [payoff dominate] とリスク支配 [risk dominate]](#ID_1-3-6-1)
+        1. [戦略形ゲームの応用例](#ID_1-3-7)
+            1. [クールノー複占市場](#ID_1-3-7-1)
     1. 展開形ゲーム [game in extensive form]
     1. 繰り返しゲーム
         1. 繰り返し囚人のジレンマ
@@ -803,6 +805,60 @@ max 項の最大化は、![image](https://user-images.githubusercontent.com/2568
 この問題は、プレイヤーが利得支配とリスク支配のどちら行動原理を、ゲーム理論の前提である合理性の概念として採用するかに依存するが、<br>
 ハーサニとゼルテンの理論では、利得支配を優先させる。<br>
 又、これはとは別に、進化ゲームなどの、より広義のアプローチから、均衡点の選択の問題を取り扱う手法も存在する。<br>
+
+<br>
+
+---
+
+<a id="ID_1-3-7"></a>
+
+### ◎ 戦略形ゲームの応用例
+
+<a id="ID_1-3-7-1"></a>
+
+#### ☆ クールノー複占市場
+企業１と企業２という２つの企業が、同質な財を市場に供給しているとする。<br>
+
+企業 i (=1,2) の供給量を ![image](https://user-images.githubusercontent.com/25688193/36930774-904572a0-1eeb-11e8-9837-86852cce8aac.png) とし、<br>
+財の価格 p は、市場（逆）需要関数<br>
+![image](https://user-images.githubusercontent.com/25688193/36930779-a301c268-1eeb-11e8-81ab-22d91f8edd0a.png) により定まるとする。<br>
+![image](https://user-images.githubusercontent.com/25688193/36930783-b33d28fc-1eeb-11e8-856a-58698f851e6c.png)<br>
+
+又、企業 i の費用関数を<br>
+![image](https://user-images.githubusercontent.com/25688193/36930793-db12e1e6-1eeb-11e8-9190-e601b64985aa.png)<br>
+（ ![image](https://user-images.githubusercontent.com/25688193/36930799-224bca1e-1eec-11e8-913c-629291918451.png) : 企業 i が、財１単位を生産するための限界費用）<br>
+
+このときの企業 i の利潤関数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36930803-32984b86-1eec-11e8-923d-5fe51151df14.png) となるとする。<br>
+
+そして、企業１と企業２は利潤（利得）の最大化を目的として、各々の供給量を調整する。<br>
+
+供給量の組 ![image](https://user-images.githubusercontent.com/25688193/36930810-560f8f3e-1eec-11e8-97df-db2eaafb4e77.png) がクールノー＝ナッシュ均衡 [Carnot-Nash equilibrium] であるとは、<br>
+利潤関数 ![image](https://user-images.githubusercontent.com/25688193/36930814-6586914c-1eec-11e8-95e6-08fc81615434.png) に関して、<br>
+![image](https://user-images.githubusercontent.com/25688193/36930818-8027a0ea-1eec-11e8-8265-ee4f75856831.png)<br>
+が成り立つときのことを言う。<br>
+
+以下、このクールノー＝ナッシュ均衡の値を、具体的に求めてみる。<br>
+
+まず、企業１の利潤関数<br>
+![image](https://user-images.githubusercontent.com/25688193/36931397-c048ab14-1ef7-11e8-8d49-54adf44e2bc7.png)<br>
+
+を、![image](https://user-images.githubusercontent.com/25688193/36931410-d8515ecc-1ef7-11e8-99df-6658f30c8ea2.png) の値の範囲によって場合分けすると、<br>
+
+![image](https://user-images.githubusercontent.com/25688193/36931411-eb530778-1ef7-11e8-8b2a-97a6bf283956.png)<br>
+
+そして、この利潤関数より、企業１の最適応答対応<br>
+![image](https://user-images.githubusercontent.com/25688193/36932859-101f1dce-1f13-11e8-9465-bb32ecb346f4.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36932911-01e9e0a8-1f14-11e8-945f-faf57378168a.png)
+
+同様にして、企業２の最適応答対応は、<br>
+![image](https://user-images.githubusercontent.com/25688193/36932917-15c5a864-1f14-11e8-801c-7d2955b20f6a.png)<br>
+
+企業１と企業２の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/36933002-1baa842e-1f15-11e8-80b3-c9f04c438689.png) を図示すると、以下のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/36933070-8f96b91a-1f16-11e8-92a0-35cc79b86e42.png)<br>
+上図の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/36933002-1baa842e-1f15-11e8-80b3-c9f04c438689.png) の交点 E は、クールノー＝ナッシュ均衡となり、<br>
+![image](https://user-images.githubusercontent.com/25688193/36933181-2a6494de-1f18-11e8-8d12-74735e575cfa.png) となる。
+
 
 <br>
 
