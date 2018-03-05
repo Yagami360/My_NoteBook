@@ -36,7 +36,8 @@
             1. [ゲームの木 [game tree]](#ID_1-4-1-1)
             1. [プレイヤー分割 [player partition]](#ID_1-4-1-2)
             1. [偶然手番の確率分布族](#ID_1-4-1-3)
-            1. [xxx](#ID_1-4-1-4)
+            1. [情報分割](#ID_1-4-1-4)
+            1. [利得関数](#ID_1-4-1-5)
     1. 繰り返しゲーム
         1. 繰り返し囚人のジレンマ
         1. 繰り返しゲームのナッシュ均衡点に関する基本的な定理
@@ -982,9 +983,27 @@ max 項の最大化は、![image](https://user-images.githubusercontent.com/2568
 <a id="ID_1-4-1-3"></a>
 
 ##### ③ 偶然手番の確率分布族 : p
+![image](https://user-images.githubusercontent.com/25688193/36981641-0c681a0e-20d1-11e8-87ee-b6d6c0cafd23.png)<br>
+
+ゲームの全ての偶然手番 ![image](https://user-images.githubusercontent.com/25688193/36981718-36f52e2e-20d1-11e8-8960-a5a957865b70.png) に対して、<br>
+x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://user-images.githubusercontent.com/25688193/36981748-4a1fcab8-20d1-11e8-8413-aa395b4f59f4.png) が定められている。<br>
+この確率分布 ![image](https://user-images.githubusercontent.com/25688193/36981748-4a1fcab8-20d1-11e8-8413-aa395b4f59f4.png) が、x の各選択肢 ![image](https://user-images.githubusercontent.com/25688193/36981793-68098230-20d1-11e8-8649-b539c7a44df1.png) に付与する確率を ![image](https://user-images.githubusercontent.com/25688193/36981826-80c014a6-20d1-11e8-9d07-9fed56358419.png) と書くと、<br>
+![image](https://user-images.githubusercontent.com/25688193/36981854-90916ec0-20d1-11e8-95d4-fced440e87de.png)
+
+の関係が成り立つ。（確率の定義より）<br>
+
+この偶然手番での確率分布 ![image](https://user-images.githubusercontent.com/25688193/36981748-4a1fcab8-20d1-11e8-8413-aa395b4f59f4.png) の具体的な形は、<br>
+過去のデータからの（客観的な）統計的手法で推定される確率分布であったり、<br>
+プレイヤーが自らの限定的な情報や知識から、主観的な判断により推定される確率分布であったりする。<br>
 
 
+<a id="ID_1-4-1-4"></a>
+
+##### ④ 情報分割：U
 > 記載中...
+
+
+
 
 ---
 
