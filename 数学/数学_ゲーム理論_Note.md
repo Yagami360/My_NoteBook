@@ -31,7 +31,12 @@
             1. [利得支配 [payoff dominate] とリスク支配 [risk dominate]](#ID_1-3-6-1)
         1. [戦略形ゲームの応用例](#ID_1-3-7)
             1. [クールノー複占市場](#ID_1-3-7-1)
-    1. 展開形ゲーム [game in extensive form]
+    1. [展開形ゲーム [game in extensive form]](#ID_1-4)
+        1. [展開形ゲームを構成する要素](#ID_1-4-1)
+            1. [ゲームの木 [game tree]](#ID_1-4-1-1)
+            1. [プレイヤー分割 [player partition]](#ID_1-4-1-2)
+            1. [偶然手番の確率分布族](#ID_1-4-1-3)
+            1. [xxx](#ID_1-4-1-4)
     1. 繰り返しゲーム
         1. 繰り返し囚人のジレンマ
         1. 繰り返しゲームのナッシュ均衡点に関する基本的な定理
@@ -916,6 +921,9 @@ max 項の最大化は、![image](https://user-images.githubusercontent.com/2568
 
 <!----------------------------------------------------------->
 
+<a id="ID_1-4-1"></a>
+
+### 展開形ゲームを構成する要素
 展開形ゲームとは、この例のようなゲームの木を用いて記述されるゲームの１つの表現形式であり、<br>
 形式的には、以下の５つの要素の組<br>
 ![image](https://user-images.githubusercontent.com/25688193/36944372-1e9b96a4-1fde-11e8-84f2-9419b596a7ac.png)<br>
@@ -926,6 +934,54 @@ max 項の最大化は、![image](https://user-images.githubusercontent.com/2568
 - h : 利得関数<br>
 
 から構成される。<br>
+
+<a id="ID_1-4-1-1"></a>
+
+##### ① ゲームの木 [game tree] : K
+![image](https://user-images.githubusercontent.com/25688193/36955566-8f137bf2-206c-11e8-9e78-f91d38cbb809.png)<br>
+ゲームの木（K） は、上図のように、初期点 0 を持つ有限な有向木であり、<br>
+点（ノード）と枝（エッジ）から構成される。<br>
+任意の点 x へ初期点 0 を結ぶ枝とその点（ノード）の系列を、点 x へのパス（道）という。<br>
+ゲームの木では、任意の点 x に対して、初期点 0 からのパスは一意に決まる。<br>
+
+ここで、<br>
+- 任意の異なる点 x, y に対し、点 y が点 x へのパス上に存在するとき、<br>
+  x は y の後にある、或いは、y は x の前にあるといい、x > y で表現する。<br>
+- x > y で、特に x と y が１つの枝で結合されているとき、x と y ノードは隣接しており、<br>
+  x を y の直後の点、或いは、y を x の直前の点という。<br>
+- 点 w が x > w となる点 x を持たない、即ち末端ノードにあるとき、<br>
+  w を木の頂点といい、この頂点からなる集合を W で表す。<br>
+- 木のノードの内、頂点以外の点を、手番 [move] といういい、<br>
+  その全体を集合 X で表す。<br>
+- 手番 x に対して、x と x の直後の点を結ぶ１本の枝を、<br>
+  手番 x における選択肢 [alternative] といい、その全体（２本）を A(x) で表す。<br>
+	
+そして、ゲームの木の１つの頂点に対し、初期点 0 とその頂点を結ぶパスを、ゲームのプレイという。<br>
+言い換えると、ゲームの木におけるゲームのプレイとは、<br>
+初期点 0 から始まって、各手番でプレイヤーが１つの選択肢を選択することによって、<br>
+ゲームが進行し、最後に１つの頂点に到達してゲーム終了することである。<br>
+
+
+<a id="ID_1-4-1-2"></a>
+
+##### ② プレイヤー分割 [player partition] : P
+![image](https://user-images.githubusercontent.com/25688193/36959252-7247d7c6-2084-11e8-9b6f-3c0b4d418cea.png)<br>
+
+プレイヤー分割 ![image](https://user-images.githubusercontent.com/25688193/36959269-8b7e2f06-2084-11e8-883b-6b681e2b37ff.png) は、ゲームの木 K の手番全体である X の分割の１つである。（上図参照）<br>
+0 以外の添字 i =1,2, ... ,n は、このゲームに参加するプレイヤーを表し、集合 ![image](https://user-images.githubusercontent.com/25688193/36959996-6944bc9e-2088-11e8-8592-8d52c20e0d0f.png) は、プレイヤー i の手番の全体を表す。<br>
+又、集合 ![image](https://user-images.githubusercontent.com/25688193/36971560-8d17597a-20af-11e8-86f5-8825ff70b186.png) は、ゲームにおける偶然手番の全体の集合を表す。<br>
+（偶然手番では、プレイヤーの意志とは無関係にある偶然メカニズムにより、枝の選択が行われる。）<br>
+
+すると、<br>
+1. ![image](https://user-images.githubusercontent.com/25688193/36959301-ac89c426-2084-11e8-8c09-f9c1e01f858f.png)<br>
+2. 任意の２人のプレイヤー分割 ![image](https://user-images.githubusercontent.com/25688193/36959353-eb53ca62-2084-11e8-9093-56bc61cfdba6.png) に対して、![image](https://user-images.githubusercontent.com/25688193/36959363-fc33f064-2084-11e8-8338-305642c99673.png)<br>
+3. ![image](https://user-images.githubusercontent.com/25688193/36959379-0d48a700-2085-11e8-94b8-7ca05d2ba4ba.png)<br>
+の関係が成り立つ。<br>
+
+
+<a id="ID_1-4-1-3"></a>
+
+##### ③ 偶然手番の確率分布族 : p
 
 
 > 記載中...
