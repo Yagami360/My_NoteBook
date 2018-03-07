@@ -39,6 +39,14 @@
             1. [情報分割](#ID_1-4-1-4)
             1. [利得関数](#ID_1-4-1-5)
             1. [ゲームのルールと情報完備ゲーム、情報不完備ゲーム](#ID_1-4-1-6)
+        1. [展開形ゲームにおける戦略の概念とナッシュ均衡点](#ID_1-4-2)
+            1. [（展開形ゲームにおける）純戦略 [pure strategy]](#ID_1-4-2-1)
+            1. [（展開形ゲームにおける）混合戦略 [mixed strategy]](#ID_1-4-2-2)
+            1. [局所戦略 [local strategy] と行動戦略 [behavior strategy]](#ID_1-4-2-3)
+        1. 展開形ゲームの分解と合成
+        1. 完全情報ゲーム
+        1. 完全記憶ゲーム
+        1. 情報のインフレーション
     1. 繰り返しゲーム
         1. 繰り返し囚人のジレンマ
         1. 繰り返しゲームのナッシュ均衡点に関する基本的な定理
@@ -929,6 +937,7 @@ max 項の最大化は、![image](https://user-images.githubusercontent.com/2568
 展開形ゲームとは、この例のようなゲームの木を用いて記述されるゲームの１つの表現形式であり、<br>
 形式的には、以下の５つの要素の組<br>
 ![image](https://user-images.githubusercontent.com/25688193/36944372-1e9b96a4-1fde-11e8-84f2-9419b596a7ac.png)<br>
+
 - K : ゲームの木<br>
 - P : プレイヤーの分割<br>
 - p : 偶然手番の確率分布族<br>
@@ -947,6 +956,7 @@ max 項の最大化は、![image](https://user-images.githubusercontent.com/2568
 ゲームの木では、任意の点 x に対して、初期点 0 からのパスは一意に決まる。<br>
 
 ここで、<br>
+
 - 任意の異なる点 x, y に対し、点 y が点 x へのパス上に存在するとき、<br>
   x は y の後にある、或いは、y は x の前にあるといい、x > y で表現する。<br>
 - x > y で、特に x と y が１つの枝で結合されているとき、x と y ノードは隣接しており、<br>
@@ -1002,9 +1012,9 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 
 #### ④ 情報分割：U
 ![image](https://user-images.githubusercontent.com/25688193/37014674-8fdad4ac-2145-11e8-8f50-94281c74d1d9.png)<br>
-プレイヤーが、ある手番でどのような選択を行うかは、<br>
-そのゲームにおける、それ以前の手番（プレイ）の結果で得られる情報に大きく依存する。<br>
-このような構造をモデルに取り入れるために、情報分割の概念を導入する。<br>
+**プレイヤーが、ある手番でどのような選択を行うかは、**<br>
+**そのゲームにおける、それ以前の手番（プレイ）の結果で得られる情報に大きく依存する。**<br>
+**このような構造をモデルに取り入れるために、情報分割の概念を導入する。**<br>
 以下、その詳細について。<br>
 
 情報分割 ![image](https://user-images.githubusercontent.com/25688193/37008787-3102a694-2127-11e8-8f1f-710774cf43bd.png) は、![image](https://user-images.githubusercontent.com/25688193/37008802-420ad39e-2127-11e8-8192-e50d39d6a42e.png) の更なる分割（細分割）であり、<br>
@@ -1040,13 +1050,11 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 利得ベクトル ![image](https://user-images.githubusercontent.com/25688193/37032024-6477314a-2184-11e8-9fcc-ba26ab9ce12f.png) を対応させる。<br>
 （この利得ベクトルの第 i 成分は、プレイヤー i の利得を表している。）<br>
 
-<br>
-
 <!---------------------------------------------------------------------->
 
 <a id="ID_1-4-1-6"></a>
 
-#### ゲームのルールと情報完備ゲーム、情報不完備ゲーム
+#### ☆ ゲームのルールと情報完備ゲーム、情報不完備ゲーム
 展開形ゲームは、（先に見たように）<br>
 ５つの要素（ゲームの木、プレイヤー分割、偶然手番の確率分布族、情報分割、利得関数）で構成されるが、<br>
 これらの５つの要素を、（展開形ゲームにおける）ゲームのルールという。<br>
@@ -1056,16 +1064,17 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 従って、この情報の違いにより、展開形ゲームを分類する。<br>
 
 具体的には、以下の共有知識なるものを定義する。<br>
-- 共有知識<br>
+
+- **共有知識**<br>
  「ゲームのルールを全てのプレイヤー完全に知っていて、更に、他のプレイヤーもゲームのルールを知っている。」<br>
   という事実を、全てのプレイヤーが共通に知っていると仮定する。<br>
   このとき、このゲームのルールは、全てのプレイヤーの共有知識であるという。<br>
 
 そして、共有知識の有無でゲームを、情報完備ゲーム or 情報不完備ゲームに分類する。<br>
-- （展開形ゲームの）情報完備ゲーム [game with complete information]<br>
+- **（展開形ゲームの）情報完備ゲーム [game with complete information]**<br>
   ゲームのルールが、全てのプレイヤーの共有知識である（＝全てのプレイヤーが共有知識を持っている）<br>
   ようなゲーム的状況にある展開形ゲーム<br>
-- （展開形ゲームの）情報不完備ゲーム [game with incomplete information]<br>
+- **（展開形ゲームの）情報不完備ゲーム [game with incomplete information]**<br>
   ゲームのルールが、必ずしも全てのプレイヤーの共有知識でない（＝全てのプレイヤーが共有知識を持っているとは限らない）<br>
   ようなゲーム的状況にある展開形ゲーム<br>
 
@@ -1075,8 +1084,59 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 
 <a id="ID_1-4-2"></a>
 
-### 展開形ゲームにおける戦略の概念とナッシュ均衡点
+### ◎ 展開形ゲームにおける戦略の概念とナッシュ均衡点
+展開形ゲームでは、一般的に、<br>
+各プレイヤーが複数の手番を持ち、実際にゲームをプレイする前に、各手番でどのような選択を行うのかを計画することが出来る。<br>
+このようなプレイヤーの行動、選択計画を、（展開形ゲームにおける）戦略という。<br>
+ここでは、この戦略の概念に含まれる、（展開形ゲームにおける）**純戦略**、**混合戦略**、**局所戦略**、**行動戦略**を見ていく。<br>
+
+
+<a id="ID_1-4-2-1"></a>
+
+#### ☆ （展開形ゲームにおける）純戦略 [pure strategy]
+![image](https://user-images.githubusercontent.com/25688193/37066733-22dca1e6-21ea-11e8-8eb6-e28b15d6cc15.png)<br>
+
+
+例えば、先の複占市場のゲームにおいては、<br>
+![image](https://user-images.githubusercontent.com/25688193/37067273-63ed828e-21ec-11e8-86f3-c90de71e2dfa.png)<br>
+
+企業１（プレイヤー分割 ![image](https://user-images.githubusercontent.com/25688193/37067347-a8332476-21ec-11e8-90ce-344abb3f54f3.png) の情報分割 ![image](https://user-images.githubusercontent.com/25688193/37067361-b649dbcc-21ec-11e8-93c1-09808e0d57b0.png) が対応）の純戦略は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37067367-c66a76ec-21ec-11e8-9883-2baa3425a4ef.png)<br>
+の４通り存在する。<br>
+
+一方、企業２（プレイヤー分割 ![image](https://user-images.githubusercontent.com/25688193/37067385-e0d099d0-21ec-11e8-86a8-0482f1419db8.png) の情報分割 ![image](https://user-images.githubusercontent.com/25688193/37067417-0842b00c-21ed-11e8-9e03-e5f29435086e.png) が対応）の純戦略は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37067434-19c271aa-21ed-11e8-8d17-f93febd2f188.png)<br>
+の２通りのみである。（情報分割が ![image](https://user-images.githubusercontent.com/25688193/37067417-0842b00c-21ed-11e8-9e03-e5f29435086e.png) のみであるため）<br>
+尚、この企業２の情報分割が ![image](https://user-images.githubusercontent.com/25688193/37067417-0842b00c-21ed-11e8-9e03-e5f29435086e.png) のみであるということは、<br>
+企業２が、この分割内のどの手番に存在しているのか把握出来ないことを意味する。<br>
+即ち、企業２は、市場の状態（好景気 or 不景気）や、それに応じた企業１の供給量（高水準 or 低水準）を把握できない。<br>
+それ故に、企業２の戦略は、上表の２種類しか存在し得ない。<br>
+
+
+
+<a id="ID_1-4-2-2"></a>
+
+#### ☆ （展開形ゲームにおける）混合戦略 [mixed strategy]
+![image](https://user-images.githubusercontent.com/25688193/37073990-91cc32ec-220d-11e8-9952-88bc1dda995f.png)<br>
+
+例えば、先の複占市場のゲームにおいては、<br>
+企業１の混合戦略 ![image](https://user-images.githubusercontent.com/25688193/37075382-e4e319b2-2214-11e8-9287-1474cde2db99.png) は、それぞれ以下の表のようになり、<br>
+![image](https://user-images.githubusercontent.com/25688193/37075393-f6e196c0-2214-11e8-8161-336b9232407d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/37075432-1c90b1ee-2215-11e8-9376-494cc6fd4374.png)
+となる。<br>
+
+一方、企業２の混合戦略 q_2 は、それぞれ以下の表のようになり、<br>
+![image](https://user-images.githubusercontent.com/25688193/37075489-5db3172a-2215-11e8-86d7-db95082ea23d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/37075516-86ab2c62-2215-11e8-9b39-c2b5234d0deb.png)<br>
+となる。<br>
+
+
+
+<a id="ID_1-4-2-3"></a>
+
+#### ☆ 局所戦略 [local strategy] と行動戦略 [behaivor strategy]
 > 記載中...
+
 
 <br>
 
