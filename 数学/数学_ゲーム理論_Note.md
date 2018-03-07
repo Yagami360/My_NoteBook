@@ -1135,6 +1135,26 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 <a id="ID_1-4-2-3"></a>
 
 #### ☆ 局所戦略 [local strategy] と行動戦略 [behaivor strategy]
+![image](https://user-images.githubusercontent.com/25688193/37084276-67b9652e-2235-11e8-9586-58443b25c38a.png)<br>
+
+例えば、複占市場ゲームにおいては、<br>
+企業１の局所戦略は、それぞれ以下の表のようになり、<br>
+![image](https://user-images.githubusercontent.com/25688193/37085119-94dcead8-2237-11e8-8e2e-27effaabed4b.png)<br>
+行動戦略 ![image](https://user-images.githubusercontent.com/25688193/37085367-38dc0bbe-2238-11e8-821e-4afafcb4c718.png) は、これらの局所戦略の組み合わせである、<br>
+![image](https://user-images.githubusercontent.com/25688193/37085173-aee31056-2237-11e8-8129-b60b854838c1.png)<br>
+となる。<br>
+
+一方、企業２の局所戦略は、それぞれ以下の表のようになり、<br>
+![image](https://user-images.githubusercontent.com/25688193/37085394-4922ec7c-2238-11e8-84c3-cf9974f664a8.png)<br>
+行動戦略 ![image](https://user-images.githubusercontent.com/25688193/37085449-685cf74a-2238-11e8-85ce-ba72108c84d4.png) は、これらの局所戦略の組み合わせである、<br>
+![image](https://user-images.githubusercontent.com/25688193/37085472-7630417e-2238-11e8-83d1-4814397362ac.png)<br>
+となる。<br>
+
+
+
+<a id="ID_1-4-2-4"></a>
+
+#### ☆ 行動戦略と期待利得
 > 記載中...
 
 
