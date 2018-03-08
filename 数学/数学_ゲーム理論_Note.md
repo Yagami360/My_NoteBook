@@ -43,6 +43,9 @@
             1. [（展開形ゲームにおける）純戦略 [pure strategy]](#ID_1-4-2-1)
             1. [（展開形ゲームにおける）混合戦略 [mixed strategy]](#ID_1-4-2-2)
             1. [局所戦略 [local strategy] と行動戦略 [behavior strategy]](#ID_1-4-2-3)
+            1. [行動戦略と期待利得](#ID_1-4-2-4)
+            1. [展開形ゲームの戦略形ゲームへの標準化](#ID_1-4-2-5)
+            1. [展開形ゲームの戦略とナッシュ均衡点](#ID_1-4-2-6)
         1. 展開形ゲームの分解と合成
         1. 完全情報ゲーム
         1. 完全記憶ゲーム
@@ -1155,6 +1158,87 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 <a id="ID_1-4-2-4"></a>
 
 #### ☆ 行動戦略と期待利得
+展開形ゲームにおける期待利得を導入するための前段階として、いくつかの定義を行う。<br>
+![image](https://user-images.githubusercontent.com/25688193/37091800-d6ad9290-224c-11e8-88a9-9e5896411649.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37091853-01627c6c-224d-11e8-8a4e-5d8ea39d1322.png)：<br>
+  プレイヤーの行動戦略の組。<br>
+- ![image](https://user-images.githubusercontent.com/25688193/37091869-0e839b38-224d-11e8-8cac-629a6cddde01.png)：<br>
+  プレイヤー i が、情報分割の集合 ![image](https://user-images.githubusercontent.com/25688193/37091913-2b9d32c4-224d-11e8-829c-1c5db787d1c9.png) において、枝（選択肢）![image](https://user-images.githubusercontent.com/25688193/37091926-39b105f2-224d-11e8-8bfd-3cdef185c9a3.png) を選択する確率。<br>
+- ![image](https://user-images.githubusercontent.com/25688193/37091943-4879ffda-224d-11e8-8f80-3038122b023b.png)：<br>
+  ゲームの木の頂点 ![image](https://user-images.githubusercontent.com/25688193/37091989-7f66a728-224d-11e8-8e7a-464aa6eeeca0.png) に対して、初期点 0 から w へのパス上に存在する全ての枝の集合。<br>
+  この集合 ![image](https://user-images.githubusercontent.com/25688193/37092017-8efebdb0-224d-11e8-9c0f-1b398a544e6f.png) は、偶然手番の枝の集合 ![image](https://user-images.githubusercontent.com/25688193/37092039-a0360eee-224d-11e8-88f2-2548ea2a9d5b.png) と、プレイヤー i のプレイヤー分割上の枝の集合 ![image](https://user-images.githubusercontent.com/25688193/37092059-af35880c-224d-11e8-8c27-d4288d84e3c5.png) から構成される。<br>
+- ![image](https://user-images.githubusercontent.com/25688193/37092072-be08e3e2-224d-11e8-8fec-4fb528ad25fd.png)：<br>
+  偶然手番の枝の集合 ![image](https://user-images.githubusercontent.com/25688193/37096979-a7c1ae7e-225d-11e8-8606-031594665553.png) に含まれる（偶然手番の）全ての枝 e が選択される確率。<br>
+  即ち、<br>
+  ![image](https://user-images.githubusercontent.com/25688193/37096942-8f9451ee-225d-11e8-887e-7c015ae35071.png)<br>
+
+<br>
+
+<!----------------------------------------------------------->
+
+行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37132787-00e2d828-22d3-11e8-8993-07958456c7e0.png) に従って、ゲームがプレイされる場合において、<br>
+ゲームの木の頂点 ![image](https://user-images.githubusercontent.com/25688193/37132800-17e558de-22d3-11e8-9a97-5945dfa59907.png) に到達する確率、<br>
+即ち、行動戦略 b の組の元での、頂点 w の実現確率 [realizization probability] は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37132839-433ebbd8-22d3-11e8-8a07-8794ad5e6efc.png)<br>
+で定義される。<br>
+そして、![image](https://user-images.githubusercontent.com/25688193/37132861-601757e2-22d3-11e8-97c0-3672964c0e13.png) の場合、頂点 w は、行動戦略 b の元で到達可能であるという。<br>
+
+<br>
+
+<!----------------------------------------------------------->
+
+又、純戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37132901-abb4dc92-22d3-11e8-9789-db59d8e73619.png) の元での、<br>
+頂点 w の実現確率 ![image](https://user-images.githubusercontent.com/25688193/37132925-bcf2ddec-22d3-11e8-8bdf-99441d78ffc7.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37132945-e568b882-22d3-11e8-912f-b127f4043208.png)<br>
+
+<br>
+
+<!----------------------------------------------------------->
+
+更に、混合戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37133252-868479c6-22d5-11e8-839b-c8c25fa3f193.png) によってゲームがプレイされる時の、<br>
+頂点 w が到達される確率 ![image](https://user-images.githubusercontent.com/25688193/37133264-96910906-22d5-11e8-8558-cbbb144afe11.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37133379-6506c0d2-22d6-11e8-8a53-93ae491e8446.png)<br>
+
+<br>
+
+<!----------------------------------------------------------->
+
+これらの実現確率、到達可能な頂点を用いて、展開形ゲームにおける期待利得を定義すること出来る。<br>
+即ち、<br>
+プレイヤーの行動戦略、或いは混合戦略の組を ![image](https://user-images.githubusercontent.com/25688193/37133593-b952f1c8-22d7-11e8-941a-81f74adbe5e2.png) とすると、<br>
+この戦略の組に対する、プレイヤー i の期待利得 ![image](https://user-images.githubusercontent.com/25688193/37133630-f5595f7c-22d7-11e8-98a6-fde9a93c9811.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37133774-9fbf9bca-22d8-11e8-983b-645cc88fda63.png)<br>
+ここで、![image](https://user-images.githubusercontent.com/25688193/37133609-dddd572c-22d7-11e8-834b-255e66eedcc7.png) は、この戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37133593-b952f1c8-22d7-11e8-941a-81f74adbe5e2.png) の元での、頂点 w の実現確率となっており、<br>
+**この期待利得の式は、到達可能な頂点での利得の期待値となっていることが分かる。**<br>
+
+
+<a id="ID_1-4-2-5"></a>
+
+#### ☆ 展開形ゲームの戦略形ゲームへの標準化
+展開形ゲームにおける、プレイヤーの戦略と期待利得の概念から、<br>
+展開形ゲームから戦略形ゲームへの標準化を考えることが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37137607-d505ed32-22e9-11e8-90fa-9e4f5358135b.png)<br>
+
+例えば、先の複占市場の場合、<br>
+![image](https://user-images.githubusercontent.com/25688193/37138301-f42d4248-22ec-11e8-8ea9-2867b0c16379.png)<br>
+上図の展開形ゲームから、以下の表のような戦略形ゲームを構築することが出来る。<br>
+![image](https://user-images.githubusercontent.com/25688193/37138319-04db3212-22ed-11e8-8253-02a5b69416b0.png)<br>
+
+
+<a id="ID_1-4-2-6"></a>
+
+#### ☆ 展開形ゲームの戦略とナッシュ均衡点
+戦略形ゲームにおいて、ナッシュ均衡点を定義することが出来たが、<br>
+展開形ゲームの同様に、ナッシュ均衡点を定義することが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37138837-f3952236-22ee-11e8-9394-0d056eb71973.png)<br>
+
+
+<a id="ID_1-4-3"></a>
+
+### 展開形ゲームの分解と合成
 > 記載中...
 
 
