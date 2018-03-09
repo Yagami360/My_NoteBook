@@ -1289,6 +1289,13 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 <a id="ID_1-4-3-2"></a>
 
 #### ☆ 展開形ゲームの縮約ゲーム [truncated game]
+![image](https://user-images.githubusercontent.com/25688193/37202945-7656a9ca-23cf-11e8-99a0-db7c5daa2f14.png)<br>
+
+例えば、先の複占市場ゲームにおいて、<br>
+部分ゲームでの行動戦略の組として、![image](https://user-images.githubusercontent.com/25688193/37208319-531487b0-23e4-11e8-9f6f-fe7899fefd4f.png) が取られた場合の縮約ゲームは、以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/37208304-3be82024-23e4-11e8-84db-e40474f06f12.png)<br>
+
+
 > 記載中...
 
 
