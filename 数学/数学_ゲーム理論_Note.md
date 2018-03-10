@@ -46,7 +46,10 @@
             1. [行動戦略と期待利得](#ID_1-4-2-4)
             1. [展開形ゲームの戦略形ゲームへの標準化](#ID_1-4-2-5)
             1. [展開形ゲームの戦略とナッシュ均衡点](#ID_1-4-2-6)
-        1. 展開形ゲームの分解と合成
+        1. [展開形ゲームの分解と合成](#ID_1-4-3)
+            1. [展開形ゲームの部分ゲーム](#ID_1-4-3-1)
+            1. [展開形ゲームの縮約ゲーム [truncated game]](#ID_1-4-3-2)
+            1. [展開形ゲームの分解と合成に関するナッシュ均衡点の基本的な定理](#ID_1-4-3-3)
         1. 完全情報ゲーム
         1. 完全記憶ゲーム
         1. 情報のインフレーション
@@ -1211,6 +1214,7 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 ![image](https://user-images.githubusercontent.com/25688193/37133774-9fbf9bca-22d8-11e8-983b-645cc88fda63.png)<br>
 ここで、![image](https://user-images.githubusercontent.com/25688193/37133609-dddd572c-22d7-11e8-834b-255e66eedcc7.png) は、この戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37133593-b952f1c8-22d7-11e8-941a-81f74adbe5e2.png) の元での、頂点 w の実現確率となっており、<br>
 **この期待利得の式は、到達可能な頂点での利得の期待値となっていることが分かる。**<br>
+（「頂点wの実現確率」×「その頂点における利得」を各頂点について計算し和をとったもの）<br>
 
 
 <a id="ID_1-4-2-5"></a>
@@ -1293,9 +1297,71 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 
 例えば、先の複占市場ゲームにおいて、<br>
 部分ゲームでの行動戦略の組として、![image](https://user-images.githubusercontent.com/25688193/37208319-531487b0-23e4-11e8-9f6f-fe7899fefd4f.png) が取られた場合の縮約ゲームは、以下の図のようになる。<br>
-![image](https://user-images.githubusercontent.com/25688193/37208304-3be82024-23e4-11e8-84db-e40474f06f12.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/37237910-ae46286c-245e-11e8-9325-78e935dbb643.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/37237913-b9b44cb0-245e-11e8-9a96-ec0f0dbde558.png)<br>
 
 
+> 記載中...
+
+
+<a id="ID_1-4-3-3"></a>
+
+#### ☆ 展開形ゲームの分解と合成に関するナッシュ均衡点の基本的な定理
+ここでは、展開形ゲームの部分ゲームと縮約ゲームの概念を用いて、<br>
+展開形ゲームの分解と合成に関する、ナッシュ均衡点の基本的な定理を見ていく。<br>
+
+そのために、まず以下の（部分ゲームの）到達可能性を定義する。<br>
+![image](https://user-images.githubusercontent.com/25688193/37218305-5d23c788-2403-11e8-9805-f25f078a7edb.png)<br>
+
+展開形ゲームの分解に関する、ナッシュ均衡点の基本的な定理は、<br>
+以下のような、展開形ゲームにおけるナッシュ均衡点の分解定理と呼ばれるものである。<br>
+![image](https://user-images.githubusercontent.com/25688193/37237818-7f40c59c-245c-11e8-9236-d88d89c1d1bc.png)<br>
+
+この展開形ゲームにおけるナッシュ均衡点の分解定理がもたらす重要な意味は、<br>
+**展開形ゲームのナッシュ均衡点は、均衡プレイ上 [on-equilibrium play] （＝行動戦略がナッシュ均衡点であるようなゲームプレイ）にある全ての部分ゲームに、ナッシュ均衡点を導く（＝元の展開形ゲームでのナッシュ均衡点から、部分ゲームでのナッシュ均衡点を構築できる）ということである！**<br>
+**これはまた、逆説的に言うと、ナッシュ均衡点は、均衡プレイ上にない [off-equilibruim play] 部分ゲームには、必ずしもナッシュ均衡点を導かないということでもある。**<br>
+
+<br>
+
+<!----------------------------------------------------------------------------->
+
+次に、展開形ゲームの合成に関する、ナッシュ均衡点の基本的な定理を見ていく。<br>
+これは、以下のような、展開形ゲームにおけるナッシュ均衡点の合成定理と呼ばれるものである。<br>
+![image](https://user-images.githubusercontent.com/25688193/37238696-37c45978-246f-11e8-8bdb-7a5a36a4bba7.png)<br>
+
+この展開形ゲームにおけるナッシュ均衡点の合成定理より、<br>
+**部分ゲームにおけるナッシュ均衡点と、縮約ゲームにおけるナッシュ均衡点を合成することにより、**<br>
+**元の展開形ゲーム全体におけるナッシュ均衡点が得られることが分かる！**<br>
+
+<br>
+
+以下、この展開形ゲームにおけるナッシュ均衡点の合成定理の応用例として、<br>
+先の複占市場ゲームを考える。<br>
+
+まず、この展開形ゲームにおける部分ゲームとして、以下の図のような部分ゲームを考えると、<br>
+![image](https://user-images.githubusercontent.com/25688193/37238873-1395fd50-2473-11e8-8f00-4e6fe37a35d6.png)<br>
+
+この部分ゲームにおける利得関数は、以下の表のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/37238880-2967774e-2473-11e8-9da1-2636351d0916.png)<br>
+この表より、部分ゲームでのナッシュ均衡点は ![image](https://user-images.githubusercontent.com/25688193/37238882-4227b046-2473-11e8-9c2d-68cad4fd24e6.png) となることが分かる。<br>
+
+
+次に、この部分ゲームとその行動戦略で縮約したゲームは、以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/37239581-bbea63ca-2481-11e8-8c6b-3f92a1fd1916.png)<br>
+この縮約ゲームにおける利得関数は、以下の表のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/37239585-d0fe9420-2481-11e8-8479-b4e7be7af706.png)<br>
+この表より、縮約ゲームでのナッシュ均衡点は ![image](https://user-images.githubusercontent.com/25688193/37239590-e6955fbc-2481-11e8-84fc-a46e332fd883.png) となることが分かる。<br>
+
+従って、この部分ゲームのナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/37238882-4227b046-2473-11e8-9c2d-68cad4fd24e6.png) と縮約ゲームのナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/37239590-e6955fbc-2481-11e8-84fc-a46e332fd883.png) から構成される、<br>
+元の展開形ゲームの行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37239593-1cf8e1be-2482-11e8-9e82-580798f99efb.png) は、<br>
+ナッシュ均衡点の合成定理より、ナッシュ均衡点になる。<br>
+
+
+---
+
+<a id="ID_1-4-4"></a>
+
+### ◎ 完全情報ゲーム [game with perfect information]
 > 記載中...
 
 
