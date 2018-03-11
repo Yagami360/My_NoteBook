@@ -492,11 +492,11 @@ I will add contents as needed!
 
 ## 参考文献
 
-- 微分方程式・上<br>
-    - [amazonで詳細を見る](https://www.amazon.co.jp/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%83%BB%E4%B8%8A-%E4%B8%80%E6%A8%82-%E9%87%8D%E9%9B%84/dp/4621061968/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=NK3FF21082N82QC007EG)<br>
+- 微分方程式―その数学と応用〈上〉<br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E2%80%95%E3%81%9D%E3%81%AE%E6%95%B0%E5%AD%A6%E3%81%A8%E5%BF%9C%E7%94%A8%E3%80%88%E4%B8%8A%E3%80%89-M-%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3/dp/4431708111/ref=pd_sbs_14_2?_encoding=UTF8&psc=1&refRID=FCAMRXMFYAN2TFZDH8YF)<br>
 
-- 微分方程式・下<br>
-    - [amazonで詳細を見る](https://www.amazon.co.jp/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%83%BB%E4%B8%8B-%E4%B8%80%E6%A8%82-%E9%87%8D%E9%9B%84/dp/4621062344/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=0D6NH32C2H69YDZ6A62R)<br>
+- 微分方程式―その数学と応用〈下〉<br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E2%80%95%E3%81%9D%E3%81%AE%E6%95%B0%E5%AD%A6%E3%81%A8%E5%BF%9C%E7%94%A8%E3%80%88%E4%B8%8B%E3%80%89-M-%E3%83%96%E3%83%A9%E3%82%A6%E3%83%B3/dp/443170812X/ref=sr_1_2?s=books&ie=UTF8&qid=1520773446&sr=1-2&keywords=%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E2%80%95%E3%81%9D%E3%81%AE%E6%95%B0%E5%AD%A6%E3%81%A8%E5%BF%9C%E7%94%A8)<br>
 
 - キーポイント微分方程式 (理工系数学のキーポイント 5) </br>
     - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-5-%E4%BD%90%E9%87%8E-%E7%90%86/dp/4000078658?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4000078658)</br>
