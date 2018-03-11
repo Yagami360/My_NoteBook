@@ -1,6 +1,6 @@
 # 微分方程式 [differential equation]
 
-微分方程式のツイートに関しのマイノートです。今後も随時追加予定です。</br>
+微分方程式のツイートに関してのマイノートです。今後も随時追加予定です。</br>
 
 This is my notebook that summarizes about "differential equation". </br>
 I will add contents as needed!
@@ -9,7 +9,6 @@ I will add contents as needed!
 ![twitter_ 2_](https://user-images.githubusercontent.com/25688193/30379666-3ea91eaa-98d2-11e7-97f2-c3c82ac8f1c2.jpg)
 
 ## 項目 [Contents]
-
 1. [概要 [Overview]](#ID_1)
 1. [常微分方程式 [O.D.E : ordinary differential equation]](#ID_2)
     1. [１階微分方程式 [First-order differential equation]](#ID_2-1)
@@ -493,8 +492,15 @@ I will add contents as needed!
 
 ## 参考文献
 
-> キーポイント微分方程式 (理工系数学のキーポイント 5) </br>
-> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-5-%E4%BD%90%E9%87%8E-%E7%90%86/dp/4000078658?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4000078658)</br>
+- 微分方程式・上<br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%83%BB%E4%B8%8A-%E4%B8%80%E6%A8%82-%E9%87%8D%E9%9B%84/dp/4621061968/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=NK3FF21082N82QC007EG)<br>
 
-> キーポイントフーリエ解析 (理工系数学のキーポイント (9))</br>
-> [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-9-%E8%88%B9%E8%B6%8A-%E6%BA%80%E6%98%8E/dp/4000078690)</br>
+- 微分方程式・下<br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F%E3%83%BB%E4%B8%8B-%E4%B8%80%E6%A8%82-%E9%87%8D%E9%9B%84/dp/4621062344/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=0D6NH32C2H69YDZ6A62R)<br>
+
+- キーポイント微分方程式 (理工系数学のキーポイント 5) </br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-5-%E4%BD%90%E9%87%8E-%E7%90%86/dp/4000078658?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4000078658)</br>
+
+- キーポイントフーリエ解析 (理工系数学のキーポイント (9))</br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-9-%E8%88%B9%E8%B6%8A-%E6%BA%80%E6%98%8E/dp/4000078690)</br>
+
