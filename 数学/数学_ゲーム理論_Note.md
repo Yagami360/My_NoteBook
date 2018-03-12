@@ -1598,6 +1598,33 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 <a id="ID_1-5-2"></a>
 
 ### ◎ 完全均衡点 [perfect equilibrium point]
+部分ゲームナッシュ均衡点は、完全情報ゲームのように、<br>
+多くの部分ゲームを持つようなゲームの分析においては、非常に有効となる。<br>
+しかしながら、展開形ゲームが、それ自身以外に部分ゲームを持たないようなゲームにおいては、<br>
+ナッシュ均衡点と部分ゲーム完全均衡点は同値となる。<br>
+
+この点から予想されるように、<br>
+一般の展開形ゲームにおいて、部分ゲーム完全均衡点は、ゲームの解として不適切となる可能性が考えられる。<br>
+
+以下、そのことの詳細を見ていく。<br>
+
+<br>
+
+<!------------------------------------------------------>
+
+まず、以下の図のような３人展開形ゲーム ![image](https://user-images.githubusercontent.com/25688193/37284612-8ca5b2f8-263f-11e8-8feb-4eabb37f35a0.png) を考える。<br>
+![image](https://user-images.githubusercontent.com/25688193/37294029-46cf7ed0-2658-11e8-913c-4356b9f2e302.png)<br>
+この展開形ゲーム ![image](https://user-images.githubusercontent.com/25688193/37284612-8ca5b2f8-263f-11e8-8feb-4eabb37f35a0.png) における、プレイヤー i(i=1,2,3) の行動戦略を<br>
+![image](https://user-images.githubusercontent.com/25688193/37294094-6bbf1796-2658-11e8-88a8-a9dfb7cf14e1.png)<br>
+とする。<br>
+又、プレイヤー全体の行動戦略の組を ![image](https://user-images.githubusercontent.com/25688193/37294176-9121a9a4-2658-11e8-8091-bc59bd89b013.png) と書くことにする。<br>
+
+このゲームは、上図から分かるように、<br>
+![image](https://user-images.githubusercontent.com/25688193/37284612-8ca5b2f8-263f-11e8-8feb-4eabb37f35a0.png) 自身以外の部分ゲームをもたないので（プレイヤー１，２，３を含む部分ゲームは、展開形ゲーム全体のみ）、<br>
+ナッシュ均衡点と部分ゲーム完全均衡点は一致する。<br>
+従って、ナッシュ均衡点を求めてみる。<br>
+
+
 
 > 記載中...
 
