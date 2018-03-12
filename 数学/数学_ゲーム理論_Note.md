@@ -1443,7 +1443,7 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 
 <a id="ID_1-5"></a>
 
-## ◎ ゲームの解とナッシュ均衡点の拡張
+## ■ ゲームの解とナッシュ均衡点の拡張
 ここでは、まず、ゲーム理論における解の意味を改めて考えることで、<br>
 従来のナッシュ均衡点より強い意味での均衡点の存在を定義する。<br>
 
@@ -1454,7 +1454,7 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 
 <a id="ID_1-5-1"></a>
 
-### ☆ 部分ゲーム完全均衡点 [sub game perfect equilibrium point]
+### ◎ 部分ゲーム完全均衡点 [sub game perfect equilibrium point]
 まず、以下のチェーンストアゲームの例を考える。<br>
 ![image](https://user-images.githubusercontent.com/25688193/37266531-1f937f24-25fe-11e8-95cb-e9d748a0d6d2.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/37266543-316f2e64-25fe-11e8-8cc8-503129e4b303.png)<br>
@@ -1597,7 +1597,7 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 
 <a id="ID_1-5-2"></a>
 
-### ☆ 完全均衡点 [perfect equilibrium point]
+### ◎ 完全均衡点 [perfect equilibrium point]
 
 > 記載中...
 
