@@ -58,7 +58,7 @@
         1. [変動ゲーム [perturbed game] と完全均衡点 [perfect equilibrium point]](#ID_1-5-2)
         1. [ベイジアン意思決定理論の立場からの完全均衡点](#ID_1-5-3)
         1. [逐次均衡点 [sequential equilibrium point]](#ID_1-5-4)
-        1. （弱）完全ベイジアン均衡点 [(weakly) perfect Bayesian equilibrium point]
+        1. [（弱）完全ベイジアン均衡点 [(weakly) perfect Bayesian equilibrium point]](#ID_1-5-5)
         1. 完全均衡点の存在定理
         1. 完全均衡点と逐次均衡点の計算方法
         1. 戦略の支配と安定性
@@ -1834,11 +1834,11 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 プレイヤー i の情報分割集合 u が到達され、かつ、u 内の手番 x が到達される条件付き確率を考える。<br>
 この条件付き確率は、ベイズの公式を用いて、<br>
 
-![image](https://user-images.githubusercontent.com/25688193/37360250-02bd0ed4-2733-11e8-8e98-b241b25cc824.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/37445960-146d9b18-285e-11e8-9eb0-1ff8125a6565.png)<br>
 
 ここで着目すべきことは、<br>
 **ベイズの公式から、情報分割集合 u 内の手番 x が到達された条件付き確率を得ることが出来るということは、**<br>
-**情報分割集合 u のどの手番に到達しているかの主観確率を会得したこと**<br>
+**情報分割集合 u のどの手番に到達しているかの事後確率を会得したこと**<br>
 を意味している点である。<br>
 
 そして、変動ゲームでは、<br>
@@ -1870,14 +1870,14 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 変動ゲームにおいて、情報分割集合 u に、ゲームのプレイが到達された時に、<br>
 プレイヤー i の、ベイジアン意思決定理論に基づく最適行動とは、<br>
 他のプレイヤーの行動を前提として、<br>
-ベイズの公式で与えられる、情報分割集合 u 内の手番 x が到達される主観確率 ![image](https://user-images.githubusercontent.com/25688193/37382067-fe4f07e8-2783-11e8-8543-d07c10eaad00.png) のもとでの、<br>
+ベイズの公式で与えられる、情報分割集合 u 内の手番 x が到達される事後確率 ![image](https://user-images.githubusercontent.com/25688193/37382067-fe4f07e8-2783-11e8-8543-d07c10eaad00.png) のもとでの、<br>
 条件付き期待利得 ![image](https://user-images.githubusercontent.com/25688193/37382093-2c7b237c-2784-11e8-9cb1-ceb4b94d7492.png) を最大化する行動戦略である。<br>
 
 次に、変動ゲームでのナッシュ均衡点では、<br>
 ゲームのプレイが、どの情報分割集合に到達してされようとも、<br>
 全てのプレイヤーは、上記の意味での最適行動を選択することを示す。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/37385242-93dc8e7c-2796-11e8-8e08-6275168e8401.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/37446090-a21ed102-285e-11e8-9368-aa9b27ce765e.png)<br>
 
 この定理（変動ゲームにおけるナッシュ均衡点１）より、<br>
 変動ゲームにおけるナッシュ均衡点では、
@@ -1921,7 +1921,7 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 ### ◎ 逐次均衡点 [sequential equilibrium point]
 先のベイジアン意思決定理論の立場からの完全均衡点の導出では、<br>
 変動ゲームというゲームを導入することにより、<br>
-ベイズの公式を用いて、この情報分割集合内でのプレイヤーの主観確率の設定が可能になり、<br>
+ベイズの公式を用いて、この情報分割集合内でのプレイヤーの事後確率の設定が可能になり、<br>
 結果、その予想のもとでの利得最大化、及びナッシュ均衡点、その極限としての完全均衡点を構築することが出来た。<br>
 
 しかしながら、このような操作（変動ゲームの導入、ベイジアンに基づく予想形成）を用いて、<br>
@@ -1939,11 +1939,11 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 <!---------------------------------------------------------------------------------->
 
 そのための前段階として、<br>
-まず、主観確率に基づく予想という意味合いでの ”信念” という用語を定義する。<br>
+まず、事後確率に基づく予想という意味合いでの **”信念”** という用語を定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/37401199-a4707616-27ca-11e8-9a71-08fd6ceff27c.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/37445828-6ddd7980-285d-11e8-9130-846beed9de01.png)<br>
 
-展開形ゲーム Γ での行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37402083-8c8b536a-27cd-11e8-8bec-4c94473a6b75.png) と信念 ρ が与えられたとき、<br>
+展開形ゲーム Γ での行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37402083-8c8b536a-27cd-11e8-8bec-4c94473a6b75.png) と信念（事後確率） ρ が与えられたとき、<br>
 プレイヤー i の情報分割集合 ![image](https://user-images.githubusercontent.com/25688193/37402169-dd999f78-27cd-11e8-9e62-f56068fe288b.png) における条件付き期待利得は、<br>
 ![image](https://user-images.githubusercontent.com/25688193/37412150-b5260094-27e7-11e8-8e74-379fa9db4dbf.png)<br>
 で表現できる。<br>
@@ -1958,21 +1958,87 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 
 又、行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37410823-bf747e2a-27e4-11e8-95ea-dfc3df9dfec3.png) が、完全に確率的であるとき、<br>
 ベイズの公式の分母項が常に正の値になるので、このベイズの公式を用いて、<br>
-行動戦略 b のもとで、信念 ρ が付与する情報分割集合 u 中の手番 x が選択される条件付き確率 ![image](https://user-images.githubusercontent.com/25688193/37412449-47d146ec-27e8-11e8-9c4c-da0045d3311f.png) が定義できる。<br>
-このような信念 ρ を、**行動戦略 b から導かれる信念**という。
+行動戦略 b のもとで、信念（事後確率） ρ が付与する情報分割集合 u 中の手番 x が選択される条件付き確率 ![image](https://user-images.githubusercontent.com/25688193/37412449-47d146ec-27e8-11e8-9c4c-da0045d3311f.png) が定義できる。<br>
+このような信念 ρ を、**行動戦略 b から導かれる信念（事後確率）** という。
 
 <br>
 
 <!---------------------------------------------------------------------------------->
 
+この展開形ゲームにおける信念の概念を導入することにより、<br>
+展開形ゲームにおけるゲームの解としての逐次均衡点を定義できる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37447185-39531dd0-2864-11e8-9eab-cd443bd3c687.png)<br>
+
+<br>
+
+<!---------------------------------------------------------------------------------->
+
+逐次均衡点の定義では、<br>
+逐次均衡点となる戦略の変動は、プレイヤーの予想形成（＝ベイズの公式による事後確率）のみに適用され、<br>
+逐次均衡点の定義の２つ目の条件である、プレイヤーの最適行動（＝利得最大化）の条件とは独立である。<br>
+
+従って、行動戦略の組 b に対して、<br>
+この b と整合的な（＝逐次均衡点の定義の２つ目の条件が成り立つ）予想 ρ が見つかれば、<br>
+この行動戦略の組が逐次均衡点であることを調べるのは、比較的簡単である。<br>
+
+このことを、先の展開形３人ゲームの例で見てみる。<br>
 
 
-> 記載中...
+- タイプ２のナッシュ均衡点：![image](https://user-images.githubusercontent.com/25688193/37420901-4f5648dc-27fb-11e8-8e25-103658af8364.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37420857-2c5ab2fa-27fb-11e8-88fd-43b4f5a68923.png)<br>
+    このタイプ２のナッシュ均衡点でのゲームプレイ（均衡プレイ）では、<br>
+    プレイヤー２の情報分割集合は到達されないが、（上図参照）<br>
+    プレイヤー２の情報分割集合は、ただ１つの手番しか含まないので、<br>
+    仮に予想に反して、このプレイヤー２の情報分割集合が到達された場合においても、<br>
+    プレイヤー２は、このただ１つの手番に確率１を付与するような、自明な信念 ρ を持つ。<br>
+    この信念 ρ は、明らかに収束済みであるので、<br>
+	このプレイヤー２の自明な信念 ρ は、タイプ２のナッシュ均衡点（行動戦略）![image](https://user-images.githubusercontent.com/25688193/37420901-4f5648dc-27fb-11e8-8e25-103658af8364.png) と整合的である。<br>
+	又、プレイヤー２の均衡戦略 R は、プレイヤー３の均衡戦略 R に対して最適でない（利得：4 → 1）ので、<br>
+	（逐次均衡点の条件２より）タイプ２のナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/37420901-4f5648dc-27fb-11e8-8e25-103658af8364.png) は、逐次均衡点でない。<br>
+
+- タイプ１のナッシュ均衡点：![image](https://user-images.githubusercontent.com/25688193/37420935-6d6e36f4-27fb-11e8-9531-44470c4999a6.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37451039-984adab2-2873-11e8-9501-c3182ef1feef.png)<br>
+	このタイプ１のナッシュ均衡点でのゲームプレイ（均衡プレイ）では、<br>
+	プレイヤー３の情報分割集合のみが到達されない。（上図参照）<br>
+    以下、タイプ１のナッシュ均衡点（行動戦略）と整合的な信念を求める。<br>
+	- プレイヤー３の情報分割集合は、２つの手番を持つが、右側の手番（0 → R → L）を x とおく。<br>
+	- タイプ１のナッシュ均衡点に収束する完全に確率的である行動戦略の列を ![image](https://user-images.githubusercontent.com/25688193/37451126-ec84810a-2873-11e8-95ba-1df97d0317de.png) とする。<br>
+	- ここで、この行動戦略の列 ![image](https://user-images.githubusercontent.com/25688193/37451149-02a61caa-2874-11e8-9669-56056604bf29.png) の k 番目の要素 ![image](https://user-images.githubusercontent.com/25688193/37451167-1454c4ce-2874-11e8-94d7-995e9afb0fff.png) において、<br>
+		- プレイヤー１が L を選択する確率（＝微小な不完全さによる変動確率）を ![image](https://user-images.githubusercontent.com/25688193/37451194-3499b87a-2874-11e8-820d-2c783d4ab91c.png) とする。<br>
+		- プレイヤー２が L を選択する確率（＝微小な不完全さによる変動確率）を ![image](https://user-images.githubusercontent.com/25688193/37451222-46a391e4-2874-11e8-9d38-6236e39fae7e.png) とする。<br>
+		- プレイヤー３が R を選択する確率（＝微小な不完全さによる変動確率）を ![image](https://user-images.githubusercontent.com/25688193/37451485-fa3d0582-2874-11e8-87b4-dc34c882eb11.png) とする。<br>
+		- ここで、k → ∞ の操作で、この合理性の微小な不完全さによる変動確率 ![image](https://user-images.githubusercontent.com/25688193/37451521-2127dc6c-2875-11e8-84af-3ba56eb0f291.png) は、0 に収束するとする。<br>
+	- 行動戦略 ![image](https://user-images.githubusercontent.com/25688193/37451167-1454c4ce-2874-11e8-94d7-995e9afb0fff.png) のもとで、プレイヤー３の情報分割集合 u が到達され、その内部の手番 x が到達される条件付き確率は、
+	ベイズの公式より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37451593-543e1e86-2875-11e8-87c9-bea00bccbb00.png)<br>
+    - この条件付き確率 ![image](https://user-images.githubusercontent.com/25688193/37452144-1102f72a-2877-11e8-9524-7d14e46410d4.png) が k → ∞ の操作で収束するならば、逐次均衡点の条件１（整合性）を満たし、<br>
+    この条件付き確率 ![image](https://user-images.githubusercontent.com/25688193/37452144-1102f72a-2877-11e8-9524-7d14e46410d4.png) は、プレイヤー３の整合的な信念となる。<br>
+    - 今、全ての k に対して、![image](https://user-images.githubusercontent.com/25688193/37452220-45a88d1e-2877-11e8-9a2a-ce3e60334030.png) が成り立つとする。（a は 0 以上の実数）<br>
+    このとき、条件付き確率 ![image](https://user-images.githubusercontent.com/25688193/37452144-1102f72a-2877-11e8-9524-7d14e46410d4.png) は、k → ∞ の極限で、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37452243-599642da-2877-11e8-996c-6cc89d6709c9.png)<br>
+    の値に収束する<br>
+    - この収束値 a/(a+1) は、区間 [0,1] で連続なので確率となり、<br>
+    情報分割集合でのプレイヤー３の全ての信念は、タイプ１のナッシュ均衡点と整合的である。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37452679-a67b5b20-2878-11e8-9ef0-998530510ea3.png)<br>
+    - プレイヤー３の信念が、手番 x に与える確率を p とすると、<br>
+	R と L に対する、プレイヤー３の条件付き期待利得は、それぞれ 2×(1−p) と 1×p となるので、<br>
+	2(1−p) ≤ p<br>
+    即ち、2/3 ≤ p ≤ 1 ならば、<br>
+	プレイヤー３の均衡戦略 L は、信念に対して最適である。<br>
 
 
 <br>
 
 ---
+
+<a id="ID_1-5-5"></a>
+
+### ◎ （弱）完全ベイジアン均衡点 [(weakly) perfect Bayesian equilibrium point]
+> 記載中...
+
+---
+
 
 <a name="参考文献"></a>
 
