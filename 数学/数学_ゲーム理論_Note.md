@@ -55,12 +55,14 @@
         1. 情報のインフレーション
     1. [ゲームの解とナッシュ均衡点の拡張](#ID_1-5)
         1. [部分ゲーム完全均衡点 [sub game perfect equilibrium point]](#ID_1-5-1)
-        1. [変動ゲーム [perturbed game] と完全均衡点 [perfect equilibrium point]](#ID_1-5-2)
-        1. [ベイジアン意思決定理論の立場からの完全均衡点](#ID_1-5-3)
-        1. [逐次均衡点 [sequential equilibrium point]](#ID_1-5-4)
+        1. [完全均衡点 [perfect equilibrium point]](#ID_1-5-2)
+            1. [変動ゲーム [perturbed game] と完全均衡点 [perfect equilibrium point]](#ID_1-5-2-1)
+            1. [ベイジアン意思決定理論の立場からの完全均衡点](#ID_1-5-2-2)
+            1. [完全均衡点の計算方法](#ID_1-5-2-3)
+        1. [逐次均衡点 [sequential equilibrium point]](#ID_1-5-3)
+            1. [逐次均衡点の計算](#ID_1-5-3-1)
         1. [（弱）完全ベイジアン均衡点 [(weakly) perfect Bayesian equilibrium point]](#ID_1-5-5)
         1. 完全均衡点の存在定理
-        1. 完全均衡点と逐次均衡点の計算方法
         1. 戦略の支配と安定性
     1. 情報不完備ゲーム
         1. ベイジアン均衡点
@@ -1599,7 +1601,11 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 
 <a id="ID_1-5-2"></a>
 
-### ◎ 変動ゲーム [perturbed game] と完全均衡点 [perfect equilibrium point]
+### ◎ 完全均衡点 [perfect equilibrium point]
+
+<a id="ID_1-5-2-1"></a>
+
+#### ☆ 変動ゲーム [perturbed game] と完全均衡点 [perfect equilibrium point]
 部分ゲームナッシュ均衡点は、完全情報ゲームのように、<br>
 多くの部分ゲームを持つようなゲームの分析においては、非常に有効となる。<br>
 しかしながら、展開形ゲームが、それ自身以外に部分ゲームを持たないようなゲームにおいては、<br>
@@ -1639,7 +1645,7 @@ x での選択肢の集合 A(x) 上の、１つの確率分布 ![image](https://
 の関係式に、計算した期待利得の式を適用すると、<br>
 
 プレイヤー１の最適応答対応は、<br>
-![image](https://user-images.githubusercontent.com/25688193/37297383-ea7575be-2660-11e8-9f19-01bb1b4e1b92.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/37504914-f2b68396-2924-11e8-9ccf-ba68b0e6b5a6.png)<br>
 となる。<br>
 
 同様にして、<br>
@@ -1755,9 +1761,7 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 （ベイズの公式を適用する際に、分母項が常に正の値となることにより、）有効となる。（後述）<br>
 
 
-<a id="ID_1-5-2-1"></a>
-
-#### ☆ 変動ゲーム [perturbed game]
+##### ☆ 変動ゲーム [perturbed game]
 この問題の解決策の別のアプローチとして、<br>
 **プレイヤーの合理性の微小な不完全さに安定性の観点に基づくアプローチ**が考えられる。<br>
 このアプローチにより、プレイヤーの利得最大化行動と矛盾するようなナッシュ均衡点を除外した、<br>
@@ -1786,9 +1790,7 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 で表す。<br>
 
 
-<a id="ID_1-5-2-2"></a>
-
-#### ☆ 完全均衡点 [perfect equilibrium point]
+##### ☆ 完全均衡点 [perfect equilibrium point]
 そして、この変動ゲーム ![image](https://user-images.githubusercontent.com/25688193/37341027-625c9466-2703-11e8-8fae-2938d5954b26.png) に対しても、（展開形ゲーム Γ のときと同様にして）<br>
 ナッシュ均衡点が定義出来るが、<br>
 展開形ゲーム ![image](https://user-images.githubusercontent.com/25688193/37341064-87257a60-2703-11e8-9fe0-8cbd76b7d82b.png) の完全均衡点は、変動ゲーム ![image](https://user-images.githubusercontent.com/25688193/37341027-625c9466-2703-11e8-8fae-2938d5954b26.png) におけるナッシュ均衡点の極限点として、<br>
@@ -1804,9 +1806,9 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 
 ---
 
-<a id="ID_1-5-3"></a>
+<a id="ID_1-5-2-2"></a>
 
-### ◎ ベイジアン意思決定理論の立場からの完全均衡点
+#### ☆ ベイジアン意思決定理論の立場からの完全均衡点
 先の展開形ゲームにおける完全均衡点の導出では、<br>
 変動ゲームに対する合理性の微小な不完全さに対する安定性の観点から導出した。<br>
 ここでは、<br>
@@ -1834,11 +1836,11 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 プレイヤー i の情報分割集合 u が到達され、かつ、u 内の手番 x が到達される条件付き確率を考える。<br>
 この条件付き確率は、ベイズの公式を用いて、<br>
 
-![image](https://user-images.githubusercontent.com/25688193/37445960-146d9b18-285e-11e8-9eb0-1ff8125a6565.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/37513584-d4340082-2948-11e8-9812-307595cb11e1.png)<br>
 
 ここで着目すべきことは、<br>
 **ベイズの公式から、情報分割集合 u 内の手番 x が到達された条件付き確率を得ることが出来るということは、**<br>
-**情報分割集合 u のどの手番に到達しているかの事後確率を会得したこと**<br>
+**情報分割集合 u のどの手番に到達しているかの（主観確率の一種である）事後確率を会得したこと**<br>
 を意味している点である。<br>
 
 そして、変動ゲームでは、<br>
@@ -1916,7 +1918,110 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 
 ---
 
-<a id="ID_1-5-4"></a>
+<a id="ID_1-5-2-3"></a>
+
+#### ☆ 完全均衡点の計算
+以下の３人展開形ゲームを用いて、完全均衡点の具体的な計算方法を示す。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37506052-7f33a17c-292b-11e8-9f80-211fdfa20a80.png)<br>
+
+展開形ゲーム Γ の変動ゲーム ![image](https://user-images.githubusercontent.com/25688193/37506082-99d04b5c-292b-11e8-916f-17ecec4e0910.png) において、<br>
+プレイヤー i(=1,2,3) の行動戦略（行動 R を選択する確率）![image](https://user-images.githubusercontent.com/25688193/37506100-abdd1bcc-292b-11e8-8788-e3da32f232ea.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37506122-c26a736c-292b-11e8-9227-e0a8005e2f37.png)<br>
+の制約を受ける。<br>
+
+ここで、展開形ゲーム Γ における、各プレイヤーの最適応答は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37506215-25582af0-292c-11e8-8683-65e8d136c94e.png)<br>
+であったが（途中計算略）、<br>
+
+変動ゲーム ![image](https://user-images.githubusercontent.com/25688193/37506082-99d04b5c-292b-11e8-916f-17ecec4e0910.png) においては、各プレイヤーの最適応答対応は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37506244-4ae057a2-292c-11e8-82c4-ba879b5cfb08.png)<br>
+となる。<br>
+
+以下、![image](https://user-images.githubusercontent.com/25688193/37506278-72094582-292c-11e8-990e-36e25b7cefac.png) の値によって、３つのケースに場合分けして考える。<br>
+
+1. ![image](https://user-images.githubusercontent.com/25688193/37507014-f7149efe-292f-11e8-88fb-ac406581047e.png) の場合のナッシュ均衡点<br>
+    - この場合、プレイヤー２の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37507054-25bb360a-2930-11e8-809b-a3eb96f5c725.png) の式より、![image](https://user-images.githubusercontent.com/25688193/37507067-39554322-2930-11e8-8e59-733a6bcff803.png) となる。<br>
+    - ![image](https://user-images.githubusercontent.com/25688193/37507082-4ecf1de0-2930-11e8-9edb-80a60dd0afdc.png) が十分に 0 に近い場合（![image](https://user-images.githubusercontent.com/25688193/37507122-72709fe4-2930-11e8-9da7-acaeb5e5a6db.png)）、<br>
+	![image](https://user-images.githubusercontent.com/25688193/37507181-9cbdbe08-2930-11e8-9503-4a35472cc425.png) となるが、<br>
+	このとき、プレイヤー１の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37507829-c827679e-2933-11e8-8381-7f3f95591336.png) の条件の右辺は、![image](https://user-images.githubusercontent.com/25688193/37507865-edd5271a-2933-11e8-8a63-d9770d7a5120.png) となり、<br>
+	今の ![image](https://user-images.githubusercontent.com/25688193/37507014-f7149efe-292f-11e8-88fb-ac406581047e.png) の条件と合わせて、![image](https://user-images.githubusercontent.com/25688193/37507946-428e155a-2934-11e8-81cd-fdf1635f4301.png) の関係が成り立つ。<br>
+	従って、プレイヤー１の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37507829-c827679e-2933-11e8-8381-7f3f95591336.png) の式より、![image](https://user-images.githubusercontent.com/25688193/37507903-14493af8-2934-11e8-91dd-e05d0223e82d.png) の関係が成り立つ。<br>
+    - このとき、プレイヤー３の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37508000-809b228e-2934-11e8-9105-b492439f2955.png) の条件式は、<br>
+    左辺が、![image](https://user-images.githubusercontent.com/25688193/37508031-9fc5e2fc-2934-11e8-938d-03e397dc46af.png)<br>
+    右辺は、![image](https://user-images.githubusercontent.com/25688193/37508055-b749e7ac-2934-11e8-8209-275adb8a71db.png)<br>
+    となり、プレイヤー３の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37508000-809b228e-2934-11e8-9105-b492439f2955.png) の式は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37510181-a812dcd6-293d-11e8-9c66-d00c1421aca6.png)<br>
+    と書き換えられる。<br>
+    - この内、今の条件 ![image](https://user-images.githubusercontent.com/25688193/37507014-f7149efe-292f-11e8-88fb-ac406581047e.png) と矛盾しないのは、<br>
+        - ![image](https://user-images.githubusercontent.com/25688193/37508209-7c86db88-2935-11e8-9e2b-d4599f0a07dd.png) の場合で、![image](https://user-images.githubusercontent.com/25688193/37508250-a403d1c0-2935-11e8-999e-895df1671c6a.png)<br>
+        - ![image](https://user-images.githubusercontent.com/25688193/37508269-b55270bc-2935-11e8-9109-ff75de6d8459.png) の場合で、![image](https://user-images.githubusercontent.com/25688193/37508312-de432c64-2935-11e8-9dad-1ab57117a762.png)<br>
+        の２通りである。<br>
+
+2. ![image](https://user-images.githubusercontent.com/25688193/37506306-92125648-292c-11e8-8c98-80e41e75dbaf.png) の場合のナッシュ均衡点<br>
+    - この場合、プレイヤー２の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37509061-0ce4339e-2939-11e8-9d3b-5218dd89eb9a.png) の式より、![image](https://user-images.githubusercontent.com/25688193/37509104-4713a982-2939-11e8-9428-1d3544e38567.png) となる。<br>
+    - 又、プレイヤー１の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37509132-6fb1121c-2939-11e8-8df7-f5beef0333a3.png) の条件は、![image](https://user-images.githubusercontent.com/25688193/37509151-85ac8ef2-2939-11e8-9b85-1580885dd195.png) となり、<br>
+	プレイヤー１の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37509132-6fb1121c-2939-11e8-8df7-f5beef0333a3.png) の式より、![image](https://user-images.githubusercontent.com/25688193/37509316-2ee04c34-293a-11e8-8d47-f125d9876d7c.png) の関係が成り立つ。<br>
+    - 一方、今の条件 ![image](https://user-images.githubusercontent.com/25688193/37506306-92125648-292c-11e8-8c98-80e41e75dbaf.png) を満たすためには、<br>
+    プレイヤー３の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37508000-809b228e-2934-11e8-9105-b492439f2955.png) の条件式は、![image](https://user-images.githubusercontent.com/25688193/37509369-71c8b73e-293a-11e8-86e2-1b387df9360d.png) となる。<br>
+    左辺：![image](https://user-images.githubusercontent.com/25688193/37509397-8c82358c-293a-11e8-9089-0735ff9078a7.png)<br>
+    右辺：![image](https://user-images.githubusercontent.com/25688193/37509416-a3bd7a9a-293a-11e8-8719-3d95df0a5b40.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37509507-f410f918-293a-11e8-9091-1205118fed6a.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37509443-b624d52a-293a-11e8-8a91-0a49206a4642.png) より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37509548-141209dc-293b-11e8-9b15-fbd35399f8cd.png) が成り立つ。
+
+
+3. ![image](https://user-images.githubusercontent.com/25688193/37510374-35bed4f4-293e-11e8-84e9-6b2fa0297d9d.png) の場合のナッシュ均衡点<br>
+    - この場合、プレイヤー２の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37507054-25bb360a-2930-11e8-809b-a3eb96f5c725.png) の式より、![image](https://user-images.githubusercontent.com/25688193/37507067-39554322-2930-11e8-8e59-733a6bcff803.png) となる。<br>
+    - ![image](https://user-images.githubusercontent.com/25688193/37507082-4ecf1de0-2930-11e8-9edb-80a60dd0afdc.png) が十分に 0 に近い場合（![image](https://user-images.githubusercontent.com/25688193/37507122-72709fe4-2930-11e8-9da7-acaeb5e5a6db.png)）、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37510464-7ca5f1f4-293e-11e8-8cb5-0801af3d3a47.png) となるが、<br>
+    このとき、プレイヤー１の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37509132-6fb1121c-2939-11e8-8df7-f5beef0333a3.png) の条件は、![image](https://user-images.githubusercontent.com/25688193/37510545-cc228490-293e-11e8-8f83-b6628eaeb885.png) となり、<br>
+	プレイヤー１の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37509132-6fb1121c-2939-11e8-8df7-f5beef0333a3.png) の式より、![image](https://user-images.githubusercontent.com/25688193/37510578-ef872490-293e-11e8-886b-6f65cdc80add.png) の関係が成り立つ。<br>
+    - このとき、プレイヤー３の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37508000-809b228e-2934-11e8-9105-b492439f2955.png) の条件式は、<br>
+    左辺が、![image](https://user-images.githubusercontent.com/25688193/37510631-2fe95eae-293f-11e8-9907-cc9e521d9025.png)<br>
+    右辺は、![image](https://user-images.githubusercontent.com/25688193/37510673-492c8774-293f-11e8-97f9-9c5714a6785c.png)<br>
+    となり、プレイヤー３の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37508000-809b228e-2934-11e8-9105-b492439f2955.png) の式は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37510708-6adf96c2-293f-11e8-89ea-fb029a3f7d29.png)<br>
+    と書き換えられる。<br>
+    - ![image](https://user-images.githubusercontent.com/25688193/37510793-adc81392-293f-11e8-97e0-548bcb19261d.png) が十分に 0 に近い場合（ ![image](https://user-images.githubusercontent.com/25688193/37510818-c799a042-293f-11e8-8d44-261d0dee64d6.png) ）、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37510835-d8805982-293f-11e8-9854-9fd225d1eb28.png) の関係が成り立つが、<br>
+    このときの、プレイヤー３の最適応答対応 ![image](https://user-images.githubusercontent.com/25688193/37508000-809b228e-2934-11e8-9105-b492439f2955.png) は、![image](https://user-images.githubusercontent.com/25688193/37510860-f797663a-293f-11e8-9c87-ddcfa1ea014e.png) となり、<br>
+    これは、今の条件 ![image](https://user-images.githubusercontent.com/25688193/37510374-35bed4f4-293e-11e8-84e9-6b2fa0297d9d.png) と矛盾する。<br>
+    従って、このケース（ ![image](https://user-images.githubusercontent.com/25688193/37510374-35bed4f4-293e-11e8-84e9-6b2fa0297d9d.png) ）では、ナッシュ均衡点は存在しない。<br>
+
+<br>
+
+これら３つのケースでの（変動ゲームでの）ナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/37511284-a4c47fc2-2941-11e8-987b-8cd952d6e271.png) をまとめると、以下のようになる。<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37511316-bd9866b2-2941-11e8-8a6f-efec81fe7c54.png) が成り立つ場合、<br>
+    この変動ゲームでのナッシュ均衡点は、![image](https://user-images.githubusercontent.com/25688193/37511423-1e6e54ba-2942-11e8-9e17-54e4dd249b78.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37511550-8f8ee3d0-2942-11e8-9ee0-3e8de6135808.png) が成り立つ場合、<br>
+    この変動ゲームでのナッシュ均衡点は、![image](https://user-images.githubusercontent.com/25688193/37511573-a681aea6-2942-11e8-8a35-634e89461509.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37511721-39b740a0-2943-11e8-9cc5-7405ac77bfc2.png) が成り立つ場合、<br>
+    この変動ゲームでのナッシュ均衡点は、![image](https://user-images.githubusercontent.com/25688193/37511610-d54d38cc-2942-11e8-84e5-ef633912f8a8.png)<br>
+
+
+の極限操作にて、これらのナッシュ均衡点は、<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37511744-4f3742ae-2943-11e8-81fa-bed96a6c9cae.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37511778-69d575fe-2943-11e8-91e5-aa669da120ef.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37511800-7b622d26-2943-11e8-99a2-559cad98a285.png)<br>
+
+に収束する。<br>
+
+変動ゲームにおいて、ナッシュ均衡点に収束するので、<br>
+![image](https://user-images.githubusercontent.com/25688193/37512004-2c988658-2944-11e8-93a0-2f924ec8eff0.png)<br>
+は、元の展開形ゲームにおける完全均衡点である。<br>
+
+<br>
+
+---
+
+<a id="ID_1-5-3"></a>
 
 ### ◎ 逐次均衡点 [sequential equilibrium point]
 先のベイジアン意思決定理論の立場からの完全均衡点の導出では、<br>
@@ -1939,7 +2044,7 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 <!---------------------------------------------------------------------------------->
 
 そのための前段階として、<br>
-まず、事後確率に基づく予想という意味合いでの **”信念”** という用語を定義する。<br>
+まず、**主観確率の一種である事後確率に基づく予想という意味合いでの ”信念”** という用語を定義する。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/37445828-6ddd7980-285d-11e8-9130-846beed9de01.png)<br>
 
@@ -2036,10 +2141,28 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 
 ---
 
-<a id="ID_1-5-5"></a>
+<a id="ID_1-5-3-1"></a>
+
+#### ☆ 逐次均衡点の計算
+以下の３人展開形ゲームを用いて、逐次均衡点の具体的な計算方法を示す。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37516227-cb49fd2a-2950-11e8-899d-fefbc1861a6a.png)<br>
+
+
+> 記載中...
+
+
+<br>
+
+---
+
+<a id="ID_1-5-4"></a>
 
 ### ◎ （弱）完全ベイジアン均衡点 [(weakly) perfect Bayesian equilibrium point]
 > 記載中...
+
+
+<br>
 
 ---
 
