@@ -2148,9 +2148,83 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 
 ![image](https://user-images.githubusercontent.com/25688193/37516227-cb49fd2a-2950-11e8-899d-fefbc1861a6a.png)<br>
 
+この展開形ゲーム Γ において、<br>
+プレイヤー３の情報分割集合は、右側と左側の２つの手番を持つ。<br>
+（＝どちらの手番にゲームのプレイが到達されているのか知りえない。）<br>
 
-> 記載中...
+ゲームのプレイにより、この情報分割集合が到達された際に、<br>
+どの手番が到達されているのか？に関するプレイヤーの信念（事後確率）を、<br>
 
+![image](https://user-images.githubusercontent.com/25688193/37516476-9568f002-2951-11e8-9fbd-1f91f985740d.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37516558-e0783648-2951-11e8-90e6-becaece725e8.png) : プレイヤー３の情報分割集合に内、右側の手番に付与される確率（＝右側の手番が到達されているとする主観確率）<br>
+- ![image](https://user-images.githubusercontent.com/25688193/37516592-f870f1f4-2951-11e8-9187-dec62534f187.png) : プレイヤー３の情報分割集合に内、左側の手番に付与される確率（＝左側の手番が到達されているとする主観確率）<br>
+
+この信念 μ のもとでの、プレイヤー３の最適行動（利得最大化行動）は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37516796-b4695a22-2952-11e8-9f57-5d3ce8451236.png)<br>
+となる。（途中計算略）<br>
+
+以下、この確率 ![image](https://user-images.githubusercontent.com/25688193/37519083-3237bc5c-295b-11e8-8580-4343090b80a4.png) の範囲で場合分けして考える。<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37519119-54559c1e-295b-11e8-85a2-3986696c400c.png) の場合<br>
+    - このときの、プレイヤー３の最適応答は、上式より、![image](https://user-images.githubusercontent.com/25688193/37519294-e9ecf402-295b-11e8-800b-a45e23c76396.png) (R)<br>
+    - すると、これに対するプレイヤー２の最適応答は、![image](https://user-images.githubusercontent.com/25688193/37519345-1791633e-295c-11e8-83d0-2e1c2dbdcd2b.png) (L)<br>
+    - 更に、これらに対する、プレイヤー１の最適応答は、![image](https://user-images.githubusercontent.com/25688193/37519452-7f1f286a-295c-11e8-9fbf-1ec700a74292.png) (R)<br>
+    - 結果的に、最適応答の行動戦略として、![image](https://user-images.githubusercontent.com/25688193/37519558-de33d38c-295c-11e8-9fc8-57ef33b6f72c.png) : (R,L,R) が得られる。<br>
+    - しかしながら、このときの、プレイヤー３の信念 ![image](https://user-images.githubusercontent.com/25688193/37519611-163d81ec-295d-11e8-82ee-78e3390a8613.png) は、<br>
+	![image](https://user-images.githubusercontent.com/25688193/37519119-54559c1e-295b-11e8-85a2-3986696c400c.png) であるため、収束しておらず、この最適応答の行動戦略 b と整合的でない。<br>
+    - 従って、プレイヤー３の信念 μ に対する、逐次均衡点は存在しない。<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37519653-50efb792-295d-11e8-9205-0b12b9a7d8e4.png) の場合<br>
+    - このときの、プレイヤー３の最適応答は、（プレイヤー３の最適応答の式より）![image](https://user-images.githubusercontent.com/25688193/37519875-2ce8af60-295e-11e8-8ccf-0d3f071b6315.png)<br>
+    - すると、これに対するプレイヤー２の最適応答は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37520771-b401166a-2961-11e8-8a20-aabe5354ff1f.png)<br>
+    （途中計算略）<br>
+    - 更に、これらに対するプレイヤー１の最適応答を、上式の範囲で場合分けして考える。<br>    
+        - ![image](https://user-images.githubusercontent.com/25688193/37522109-4e5d64da-2966-11e8-89b1-b6af01124d48.png) の場合<br>
+            上式より、プレイヤー２の最適応答は、![image](https://user-images.githubusercontent.com/25688193/37521997-f48c4138-2965-11e8-9c13-9621084e77a3.png) となる。<br>
+            このときの、プレイヤー１の期待利得は、R を選択すると 1、L を選択すると ![image](https://user-images.githubusercontent.com/25688193/37522136-61e88570-2966-11e8-9879-a97ca4fb9918.png) となるので、<br>
+            プレイヤー１の最適行動は、![image](https://user-images.githubusercontent.com/25688193/37522228-ad983286-2966-11e8-8d5b-96443aa9fa9b.png) となる。<br>
+            結果的に、最適行動の行動戦略として、![image](https://user-images.githubusercontent.com/25688193/37523581-b83acaba-296a-11e8-8b47-e059b2b6c24a.png) が得られる。<br>
+            この行動戦略が、信念 μ と整合的であるか調べるために、<br>
+            プレイヤー１と２の行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37522460-52573bfa-2967-11e8-9adb-b5884cd3576a.png)、プレイヤー３の信念 ![image](https://user-images.githubusercontent.com/25688193/37522496-6eeb0fda-2967-11e8-81c3-8a1579f71acb.png) をベイズの公式に適用すると、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/37522533-92037f16-2967-11e8-95e9-800eeb213727.png)<br>
+            となるが、今、![image](https://user-images.githubusercontent.com/25688193/37522587-b86d60e0-2967-11e8-8e87-9c4243909c1a.png) なので、これをベイズの公式に代入すると、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/37522704-18061de4-2968-11e8-9ce9-abb71ccb947a.png) という関係式が導かれる。<br>
+            この条件 ![image](https://user-images.githubusercontent.com/25688193/37522748-3d801b6a-2968-11e8-873a-ca80ab6a449e.png) を満たし、かつ、![image](https://user-images.githubusercontent.com/25688193/37522772-568aa99a-2968-11e8-8bd4-d11e64b05365.png) に収束する行動戦略の列が存在するので、<br>
+            プレイヤー３の信念 ![image](https://user-images.githubusercontent.com/25688193/37522825-79a3cd94-2968-11e8-938b-b92143bfa202.png) は、行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37523581-b83acaba-296a-11e8-8b47-e059b2b6c24a.png) と整合的である。<br>
+            従って、行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37523581-b83acaba-296a-11e8-8b47-e059b2b6c24a.png) は、信念 ![image](https://user-images.githubusercontent.com/25688193/37523102-4804235a-2969-11e8-8b2b-b59444acc5b1.png) を持つ逐次均衡点である。<br>
+
+        - ![image](https://user-images.githubusercontent.com/25688193/37523696-12bc440a-296b-11e8-8ed6-7f8e0a40ff19.png) の場合<br>
+            このときのプレイヤー２の最適応答は、![image](https://user-images.githubusercontent.com/25688193/37523755-3a9bee1c-296b-11e8-8419-bcf6b77b25c2.png) となる。<br>
+            このときの、プレイヤー１の期待利得の大小関係（計算略）より、プレイヤー１の最適行動は、![image](https://user-images.githubusercontent.com/25688193/37523846-80a76d00-296b-11e8-8794-3b9a4e5331ef.png) となる。<br>
+            結果的に、最適行動の行動戦略として、![image](https://user-images.githubusercontent.com/25688193/37523980-e073fbfe-296b-11e8-805f-ed851b9e2a24.png) が得られる。<br>
+            先の議論と同様にして、<br>
+            ベイズの公式から導かれる条件 ![image](https://user-images.githubusercontent.com/25688193/37522748-3d801b6a-2968-11e8-873a-ca80ab6a449e.png) を満たし、<br>
+            かつ、![image](https://user-images.githubusercontent.com/25688193/37522772-568aa99a-2968-11e8-8bd4-d11e64b05365.png) に収束する行動戦略の列が存在するので、<br>
+            プレイヤー３の信念 ![image](https://user-images.githubusercontent.com/25688193/37522825-79a3cd94-2968-11e8-938b-b92143bfa202.png) は、行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37523980-e073fbfe-296b-11e8-805f-ed851b9e2a24.png) と整合的である。<br>
+            従って、行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37523980-e073fbfe-296b-11e8-805f-ed851b9e2a24.png) は、信念 ![image](https://user-images.githubusercontent.com/25688193/37523102-4804235a-2969-11e8-8b2b-b59444acc5b1.png) を持つ逐次均衡点である。<br>
+
+        - ![image](https://user-images.githubusercontent.com/25688193/37523721-21c87644-296b-11e8-8b17-66057f372d52.png) の場合<br>
+            このときのプレイヤー２の最適応答は、![image](https://user-images.githubusercontent.com/25688193/37524122-373d6934-296c-11e8-90d5-e96153ee659e.png) となる。<br>
+            これらに対するプレイヤー１の最適行動は、![image](https://user-images.githubusercontent.com/25688193/37532087-5ec0c324-2981-11e8-8743-d3cb5723b558.png) となる。<br>
+            結果的に、最適行動の行動戦略として、![image](https://user-images.githubusercontent.com/25688193/37532114-7493d042-2981-11e8-92eb-bdc7902a564e.png) が得られる。<br>
+            この行動戦略は、ベイズの公式から導かれる条件 ![image](https://user-images.githubusercontent.com/25688193/37522748-3d801b6a-2968-11e8-873a-ca80ab6a449e.png) を満たさないので、<br>
+            プレイヤー３の信念 ![image](https://user-images.githubusercontent.com/25688193/37522825-79a3cd94-2968-11e8-938b-b92143bfa202.png) は、行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37532114-7493d042-2981-11e8-92eb-bdc7902a564e.png) と整合的ではない。<br>
+            従って、この行動戦略の組 b は、逐次均衡点ではない。<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37519671-60fbddb4-295d-11e8-827b-b859bd463b65.png) の場合<br>
+    - このときのプレイヤー３の最適行動は、![image](https://user-images.githubusercontent.com/25688193/37532771-50306182-2983-11e8-980b-ba1af9b0ca00.png) (L) となる。<br>
+    - すると、これに対するプレイヤー２の最適応答は、![image](https://user-images.githubusercontent.com/25688193/37532806-6a5a59d2-2983-11e8-9916-8a318ac00833.png)(R)<br>
+    - 結果的に、最適応答の行動戦略として、![image](https://user-images.githubusercontent.com/25688193/37532834-8916d710-2983-11e8-97ea-6a12810f231c.png) : (R,L,L) が得られる。<br>
+    - この行動戦略が、信念 μ と整合的であるか調べるために、<br>
+        プレイヤー１と２の行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37522460-52573bfa-2967-11e8-9adb-b5884cd3576a.png)、プレイヤー３の信念 ![image](https://user-images.githubusercontent.com/25688193/37522496-6eeb0fda-2967-11e8-81c3-8a1579f71acb.png) をベイズの公式に適用すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/37522533-92037f16-2967-11e8-95e9-800eeb213727.png)<br>
+        となるが、今、![image](https://user-images.githubusercontent.com/25688193/37519671-60fbddb4-295d-11e8-827b-b859bd463b65.png) なので、これをベイズの公式に代入すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/37532996-02a4925c-2984-11e8-90a7-4225f8bc20fa.png) という関係式が導かれる。<br>
+        このベイズの公式から導かれる条件を満たし、かつ、![image](https://user-images.githubusercontent.com/25688193/37533032-1c77909e-2984-11e8-88e8-7dda82d70d6b.png) に収束する行動戦略の列が存在するので、<br>
+        プレイヤー３の信念 ![image](https://user-images.githubusercontent.com/25688193/37522496-6eeb0fda-2967-11e8-81c3-8a1579f71acb.png) は、行動戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37532834-8916d710-2983-11e8-97ea-6a12810f231c.png) と整合的である。<br>
+        従って、この行動戦略の組 b は、逐次均衡点である。<br>
 
 <br>
 
