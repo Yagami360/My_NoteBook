@@ -2251,6 +2251,31 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 <a id="ID_1-5-5"></a>
 
 ### ◎ 完全均衡点の存在定理
+ここでは、まず、戦略形ゲームにおける完全均衡点を定義し、戦略形ゲームにおける完全均衡点の存在定理を示す。<br>
+その後、展開形ゲームにおける完全均衡点の存在定理を示す。<br>
+
+
+今、![image](https://user-images.githubusercontent.com/25688193/37553306-b24cb93a-2a08-11e8-9799-61dcb87322d3.png) を戦略形 n 人ゲームとする。<br>
+このとき、展開形ゲームのときと同様にして、<br>
+戦略形ゲーム G の変動ゲーム<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37553308-c4af801c-2a08-11e8-8640-efeb202264a8.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37553311-d4e1af6e-2a08-11e8-8441-8a8f3c9bfd1d.png)<br>
+    プレイヤー i の全ての純戦略 s_i∈S_i  に対して、正の確率 η(s_i )  を付与する関数。<br>
+    プレイヤーの合理性の微小な不完全さに起因する。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37553321-2e0ca9e0-2a09-11e8-907d-2075e77677ee.png)<br>
+
+を定義することが出来る。<br>
+
+ここで、混合戦略がある微小な一定の確率以上で変動するように、<br>
+この変動ゲームにおける全ての混合戦略に対して、<br>
+![image](https://user-images.githubusercontent.com/25688193/37553825-6de5ab12-2a12-11e8-9803-c3c3f9d838f8.png)<br>
+という条件を課す。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37556712-1d13f5f6-2a3d-11e8-93d5-18ac1a51c1aa.png)<br>
+
+
 
 > 記載中...
 
