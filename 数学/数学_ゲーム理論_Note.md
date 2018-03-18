@@ -63,7 +63,8 @@
             1. [逐次均衡点の計算](#ID_1-5-3-1)
         1. [（弱）完全ベイジアン均衡点 [(weakly) perfect Bayesian equilibrium point]](#ID_1-5-4)
         1. [完全均衡点の存在定理](#ID_1-5-5)
-        1. 戦略の支配と安定性
+        1. [戦略の支配と安定性](#ID_1-5-6)
+        1. 応用例
     1. 情報不完備ゲーム
         1. ベイジアン均衡点
         1. ベイジアンゲーム
@@ -2315,14 +2316,25 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 - i : 情報分割集合 ![image](https://user-images.githubusercontent.com/25688193/37564032-29c5aaee-2ad1-11e8-8648-5cd03d6c1d5b.png) をもつ、元の展開形ゲーム Γ のプレイヤー i<br>
 - ![image](https://user-images.githubusercontent.com/25688193/37564042-47d7a4d8-2ad1-11e8-9189-8280845f94d3.png) : 元の展開形ゲーム Γ における純戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37564070-b0fc45fe-2ad1-11e8-91a0-413eeb14f70b.png) に対するプレイヤー i の期待利得<br>
 
+このようにして、展開形ゲームから構成される戦略形ゲーム<br>
+![image](https://user-images.githubusercontent.com/25688193/37564126-c09c82ac-2ad2-11e8-9301-97fd9f1068de.png)<br>
+を、**元の展開形ゲームのエージェント標準形 [agent normal form]** という。<br>
 
+![image](https://user-images.githubusercontent.com/25688193/37565599-7328c798-2aef-11e8-8bbe-cbd4457edb1c.png)<br>
+
+<br>
+
+---
+
+<a id="ID_1-5-6"></a>
+
+### ◎ 戦略の支配と安定性
 
 > 記載中...
 
 <br>
 
 ---
-
 
 <a name="参考文献"></a>
 
