@@ -2275,6 +2275,46 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 
 ![image](https://user-images.githubusercontent.com/25688193/37556712-1d13f5f6-2a3d-11e8-93d5-18ac1a51c1aa.png)<br>
 
+![image](https://user-images.githubusercontent.com/25688193/37563089-4db20782-2abc-11e8-85a9-f1561af8aadf.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37563108-fb208e8e-2abc-11e8-8c81-758a11cdea3b.png)<br>
+展開形ゲームでのナッシュ均衡点では、<br>
+プレイヤーの利得最大化行動が、行動戦略の全体に対して行われるのに対して、<br>
+**展開形ゲームでの局所均衡点は、**<br>
+**プレイヤーの利得最大化行動が、各々の情報分割集合内に対して行われるのが特徴的である。**<br>
+
+それ故、「展開形ゲームのナッシュ均衡点 ⇒ 展開形ゲームの局所均衡点」の関係は成り立つが、<br>
+この逆の、「展開形ゲームの局所均衡点 ⇒ 展開形ゲームのナッシュ均衡点」の関係は成り立たない。<br>
+
+<br>
+
+<!------------------------------------------------------------------------>
+
+しかしながら、変動ゲームにおいては、<br>
+以下の定理が示すように、ナッシュ均衡点と、局所均衡点は同値となる。<br>
+![image](https://user-images.githubusercontent.com/25688193/37563228-655be67a-2abf-11e8-8a13-1b05a7ce504a.png)<br>
+
+<br>
+
+<!------------------------------------------------------------------------>
+
+展開形ゲーム Γ における完全均衡点の存在定理の前段階として、<br>
+まず、展開形ゲーム Γ から、以下のような標準形ゲームを構成する。<br>
+
+今、展開形ゲーム Γ において、<br>
+偶然手番を除く、全ての情報分割集合に対して、![image](https://user-images.githubusercontent.com/25688193/37563856-24c3fe00-2acd-11e8-8872-e3299eee70b4.png) という番号付けを行う。<br>
+
+そして、この各情報分割集合 ![image](https://user-images.githubusercontent.com/25688193/37563866-52de73e2-2acd-11e8-8c45-9eb7d076c6cb.png) に対して、<br>
+この情報分割集合内での局所戦略を選択する１人のエージェント j なるものを考える。<br>
+このエージェント j の純戦略の集合は、これに対応する情報分割集合 ![image](https://user-images.githubusercontent.com/25688193/37563872-899506e4-2acd-11e8-9345-840584ec0409.png) での選択肢の全体 ![image](https://user-images.githubusercontent.com/25688193/37563882-b8163754-2acd-11e8-99fb-038f39d26ca4.png) となる。<br>
+![image](https://user-images.githubusercontent.com/25688193/37564002-b2e8c172-2ad0-11e8-873e-eeca50294d31.png)<br>
+全てのエージェントの純戦略の組 a=(a_1,a_2,…,a_n )  に対して、<br>
+エージェント j の利得を、<br>
+![image](https://user-images.githubusercontent.com/25688193/37564019-f9b6688e-2ad0-11e8-973a-d4a9e991fd5c.png)<br>
+
+- i : 情報分割集合 ![image](https://user-images.githubusercontent.com/25688193/37564032-29c5aaee-2ad1-11e8-8648-5cd03d6c1d5b.png) をもつ、元の展開形ゲーム Γ のプレイヤー i<br>
+- ![image](https://user-images.githubusercontent.com/25688193/37564042-47d7a4d8-2ad1-11e8-9189-8280845f94d3.png) : 元の展開形ゲーム Γ における純戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37564070-b0fc45fe-2ad1-11e8-91a0-413eeb14f70b.png) に対するプレイヤー i の期待利得<br>
+
 
 
 > 記載中...
