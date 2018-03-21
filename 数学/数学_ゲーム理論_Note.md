@@ -2380,20 +2380,20 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 この展開形ゲームにおける変動ゲームのナッシュ均衡点の計算の結果をまとめると、<br>
 プレイヤー１，２の合理性の微小な不完全さ ![image](https://user-images.githubusercontent.com/25688193/37643817-1fd6656a-2c65-11e8-9377-f584649864f8.png) の範囲に応じて、以下のようになった。（先の計算結果参照）<br>
 
-- A : ![image](https://user-images.githubusercontent.com/25688193/37644056-e1e12ce4-2c65-11e8-8075-eb3c133478f4.png) が成り立つ場合<br>
+- 領域 A : ![image](https://user-images.githubusercontent.com/25688193/37644056-e1e12ce4-2c65-11e8-8075-eb3c133478f4.png)<br>
     この変動ゲームでのナッシュ均衡点は、![image](https://user-images.githubusercontent.com/25688193/37644215-615c170e-2c66-11e8-8c59-d40d89d50dbe.png)<br>
     ![image](https://user-images.githubusercontent.com/25688193/37644289-aa1c8cc6-2c66-11e8-8dbe-678ab972b269.png) の極限操作にて、このナッシュ均衡点は、<br>
     ![image](https://user-images.githubusercontent.com/25688193/37644315-c17a2ba8-2c66-11e8-9ddb-30cab5451cd7.png) に収束する。<br>
     変動ゲームにおいて、ナッシュ均衡点に収束するので、<br>
     この均衡点は、元の展開形ゲームにおける完全均衡点である。<br>
 
-- C : ![image](https://user-images.githubusercontent.com/25688193/37644102-0b825afa-2c66-11e8-87c5-d3c2949b0369.png) が成り立つ場合<br>
+- 領域 C : ![image](https://user-images.githubusercontent.com/25688193/37644102-0b825afa-2c66-11e8-87c5-d3c2949b0369.png)<br>
     ![image](https://user-images.githubusercontent.com/25688193/37644289-aa1c8cc6-2c66-11e8-8dbe-678ab972b269.png) の極限操作にて、このナッシュ均衡点は、![image](https://user-images.githubusercontent.com/25688193/37644464-4284e760-2c67-11e8-8dca-61929a087dc3.png)<br>
     ![image](https://user-images.githubusercontent.com/25688193/37644371-f08e6918-2c66-11e8-828a-f806689b71c3.png) に収束する。<br>
     変動ゲームにおいて、ナッシュ均衡点に収束するので、<br>
     この均衡点は、元の展開形ゲームにおける完全均衡点である。<br>
 
-- B : ![image](https://user-images.githubusercontent.com/25688193/37644136-2b34e3fe-2c66-11e8-8f77-669988085498.png) が成り立つ場合<br>
+- 領域 B : ![image](https://user-images.githubusercontent.com/25688193/37644136-2b34e3fe-2c66-11e8-8f77-669988085498.png)<br>
     ![image](https://user-images.githubusercontent.com/25688193/37644289-aa1c8cc6-2c66-11e8-8dbe-678ab972b269.png) の極限操作にて、このナッシュ均衡点は、![image](https://user-images.githubusercontent.com/25688193/37644495-643ce7a4-2c67-11e8-9e58-2ca8d9fa53be.png)<br>
     ![image](https://user-images.githubusercontent.com/25688193/37644546-832510c4-2c67-11e8-85f2-d153a90e9e6f.png) に収束する。<br>
     変動ゲームにおいて、ナッシュ均衡点に収束するので、<br>
@@ -2408,7 +2408,27 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 
 ![image](https://user-images.githubusercontent.com/25688193/37642450-782ccbe6-2c60-11e8-9450-57af6a980783.png)<br>
 
-> 記載中...
+- 領域 A : ![image](https://user-images.githubusercontent.com/25688193/37644056-e1e12ce4-2c65-11e8-8075-eb3c133478f4.png)<br>
+    上図の青で塗りつぶた領域が対応している。<br>
+    上図の青矢印で示したように、<br>
+    この領域での変動ゲームのナッシュ均衡点は、完全均衡点 ![image](https://user-images.githubusercontent.com/25688193/37698217-edc523de-2d24-11e8-9303-207d7c7f37dd.png) に収束する。<br>
+    そして、その完全均衡点の安定性は、この領域 A 内で保証される。<br>
+
+- 領域 B : ![image](https://user-images.githubusercontent.com/25688193/37644136-2b34e3fe-2c66-11e8-8f77-669988085498.png)<br>
+    上図の緑で塗りつぶた領域が対応している。<br>
+    上図の緑矢印で示したように、<br>
+    この領域での変動ゲームのナッシュ均衡点は、完全均衡点 ![image](https://user-images.githubusercontent.com/25688193/37698268-3f066906-2d25-11e8-8ce3-4eda102c361f.png) に収束する。<br>
+    そして、その完全均衡点の安定性は、この領域 B 内で保証される。<br>
+
+- 領域 C : ![image](https://user-images.githubusercontent.com/25688193/37644102-0b825afa-2c66-11e8-87c5-d3c2949b0369.png)<br>
+    上図の赤線領域が対応している。<br>
+    この曲線 C 上の変動ゲームでは、<br>
+    ナッシュ均衡点を適当に選択すれば、それらは全て完全均衡点 ![image](https://user-images.githubusercontent.com/25688193/37698286-5fdca898-2d25-11e8-95e1-eb971a50b634.png) に収束する。<br>
+    そして、この完全均衡点の安定性は、曲線 C 上での変動ゲームに対してのみ保証される。<br>
+    これは、プレイヤー１と２の合理性が互いに強い相関がある（![image](https://user-images.githubusercontent.com/25688193/37698303-7b338c4c-2d25-11e8-89c6-01d75366d23f.png) に対する = の関係式）ことを示しており、<br>
+    このような状況は、限定的なものとなってしまう。<br>
+
+**このように、完全均衡点の安定性は、変動ゲームの列のとり方（ η のとり方）に依存している。**
 
 <br>
 
@@ -2417,7 +2437,45 @@ R と表示している領域は、その領域でのプレイヤー２と３の
 完全均衡点の安定性に関する、<br>
 このような変動ゲームの列の選択への依存性を解決するために、**強完全均衡点**を導入する。<br>
 
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/37701516-a616306a-2d32-11e8-9cf5-19e38696c475.png)<br>
+
+- cf : 完全均衡点
+    > ![image](https://user-images.githubusercontent.com/25688193/37701301-bff511be-2d31-11e8-8f5d-db26079247b8.png)<br>
+
+<br>
+
+完全均衡点の定義では、<br>
+変動ゲームの列 ![image](https://user-images.githubusercontent.com/25688193/37700714-de73fe04-2d2f-11e8-8a5f-f51294ad94d9.png) が存在することを **必要として**、<br>
+それらが２つの収束性（連続性）<br>
+
+1. 展開形ゲーム Γ を構成する全ての枝 c に対して、![image](https://user-images.githubusercontent.com/25688193/37700801-3a606b58-2d30-11e8-9d6d-70e4df33ff3e.png)<br>
+    （＝変動要因である η が 0 に近づき、その結果、戦略が変動しなくなる。）<br>
+
+2. 変動ゲーム ![image](https://user-images.githubusercontent.com/25688193/37700867-6502e6d8-2d30-11e8-98f6-fc59bc0b7e20.png) のナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/37700904-8008c38a-2d30-11e8-9314-669e1e274602.png) が存在して、![image](https://user-images.githubusercontent.com/25688193/37701004-cac0f2a8-2d30-11e8-8725-834d7f1aeda0.png)<br>
+    （＝変動ゲームでのナッシュ均衡点が、元の展開形ゲームでの均衡点に収束する。）<br>
+
+に関する条件を満たすような均衡点であった。<br>
+
+一方、強完全均衡点の定義では、<br>
+１つ目の収束性（連続性）に関する条件を満たすような<br>
+変動ゲームの列 ![image](https://user-images.githubusercontent.com/25688193/37700714-de73fe04-2d2f-11e8-8a5f-f51294ad94d9.png) が存在することを **前提として**、<br>
+それらが、２つ目の収束性（連続性）に関する条件を満たすような均衡点である。<br>
+
+従って、<br>
+完全均衡点では、展開形ゲーム Γ からどのような変動ゲーム ![image](https://user-images.githubusercontent.com/25688193/37701623-fe2358dc-2d32-11e8-8c05-5835202856b7.png) を構成しようとも、<br>
+その変動ゲームにおいて、連続的に変化出来る（＝収束する）均衡点である。<br>
+**これにより、強完全均衡点は、完全均衡点よりも強い安定性を持つ。**<br>
+
+<br>
+
+<!------------------------------------------------------------------------>
+
+**しかしながら、先の展開形３人ゲームのように、強完全均衡点は必ずしも存在するとは限らない。**<br>
+以下、このことの簡単な条件を見ていく。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37710289-885c0630-2d50-11e8-80ac-f79c20428c3b.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37710918-83dffc86-2d52-11e8-8f35-e15c964c5957.png)<br>
 
 
 ---
