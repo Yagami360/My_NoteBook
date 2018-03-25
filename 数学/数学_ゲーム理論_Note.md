@@ -69,7 +69,8 @@
     1. [情報不完備ゲーム [game with incomplete information]](#ID_1-6)
         1. [情報不完備ゲームの定式化](#ID_1-6-1)
         1. [ベイジアンゲームと情報不完備ゲーム](#ID_1-6-2)
-        1. ベイジアン均衡点
+        1. [ベイジアン均衡点](#ID_1-6-3)
+        1. [ベイジアンゲームの例](#ID_1-6-4)
         1. 相関均衡点
     1. 繰り返しゲーム
         1. 繰り返し囚人のジレンマ
@@ -2626,10 +2627,74 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 ![image](https://user-images.githubusercontent.com/25688193/37863719-7a1602e4-2fa6-11e8-9eb1-10cec5fc3e9f.png)<br>
 
+このベイジアンゲーム ![image](https://user-images.githubusercontent.com/25688193/37872831-a5ab9b0e-304a-11e8-9b6d-e765d6f77450.png) は、以下のようにプレイされる。<br>
 
+1. 全てのプレイヤーのタイプの組 ![image](https://user-images.githubusercontent.com/25688193/37872847-d3a5d0ce-304a-11e8-9106-d8bb02773d72.png) が、確率分布 ![image](https://user-images.githubusercontent.com/25688193/37872851-eb297e94-304a-11e8-8c65-7aa5dbe8ad8f.png) にもとづいて実現される。<br>
+2. プレイヤー i は、自分のタイプ ![image](https://user-images.githubusercontent.com/25688193/37872854-fdb5f236-304a-11e8-82c1-7d49c43a77ce.png) の実現値のみを知った上で、<br>
+    他のプレイヤーとは独立に、自身の行動戦略 ![image](https://user-images.githubusercontent.com/25688193/37873668-63a715e6-305c-11e8-84c2-4f2a2416689f.png) を選択する。（![image](https://user-images.githubusercontent.com/25688193/37873684-a6249f4c-305c-11e8-927d-40f4ab6d5cbc.png)）<br>
+3. ゲームのプレイの最後に、プレイヤー i は、利得 ![image](https://user-images.githubusercontent.com/25688193/37872860-29a97868-304b-11e8-823a-06b17fae829f.png) を得る。<br>
+
+又、ベイジアンゲームは、情報完備ゲームであるが、（プレイヤーのタイプが）<br>
+ハーサニの情報不完備ゲーム理論では、<br>
+情報不完備ゲームと、ベイジアンゲームを（ゲーム理論的には）同値とみなす。（＝ベイズの同値仮説）<br>
+（これにより、ベイジアンゲームを情報不完備ゲームと呼ぶことが多いが、本来は違うゲーム的状況を表している。）<br>
+
+- ベイズの同値仮説<br>
+    情報不完備ゲームと、そこから導かれるベイジアンゲームは、<br>
+    プレイヤーの戦略上の観点からは、同値であり、<br>
+    プレイヤーの戦略の選択は、どちらのルールでも同じ決定ルール（解概念）に従う。<br>
+	
+以下では、情報不完備ゲーム ![image](https://user-images.githubusercontent.com/25688193/37872875-52cb0ba8-304b-11e8-85ca-a8f6ef12e775.png) を、情報完備ゲームであるベイジアンゲーム ![image](https://user-images.githubusercontent.com/25688193/37872877-622ce9f4-304b-11e8-8f81-375e9e232088.png) に変換して分析する。<br>
+
+---
+
+<a id="ID_1-6-3"></a>
+
+### ◎ ベイジアン均衡点
 
 > 記載中...
 
+---
+
+<a id="ID_1-6-4"></a>
+
+### ◎ ベイジアンゲームの例
+ベイジアンゲームの例として、<br>
+先の男女ゲームをベイジアンゲームの枠組みで考える。<br>
+
+このゲームの利得関数の表は、以下のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/37875007-3d5a9ec2-3074-11e8-9e28-ce0905b8345d.png)<br>
+
+ここで、このゲームをベイジアンゲームに拡張するために、<br>
+各プレイヤーの個人情報であるタイプの概念を導入する。
+
+1. タイプ１（ ![image](https://user-images.githubusercontent.com/25688193/37875029-93aec5fa-3074-11e8-8648-4515b41dcb4c.png) ）：ボクシングのほうが、バレエより好きである。<br>
+2. タイプ２（ ![image](https://user-images.githubusercontent.com/25688193/37875035-a9cebdea-3074-11e8-9d05-f71b23a1880e.png) ）：バレエのほうが、ボクシングより好きである。<br>
+
+そして、このタイプの組み合わせ (i, j) に応じたゲーム ![image](https://user-images.githubusercontent.com/25688193/37875045-bc76e62a-3074-11e8-89b8-6761be18553c.png) を考える。<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37875051-dbf5b940-3074-11e8-915c-22152c80be5c.png) の男女ゲーム<br>
+	プレイヤー１（男性）のタイプが、タイプ１で、<br>
+	プレイヤー２（女性）のタイプが、タイプ２である場合（ 1, 2 ）の利得関数の表は<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37875056-ef1f1bba-3074-11e8-9fa7-0b2ed982f41a.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37875070-3b6d9d48-3075-11e8-916f-0f0f7122b521.png) の男女ゲーム<br>
+    プレイヤー１（男性）のタイプが、タイプ１で、<br>
+	プレイヤー２（女性）のタイプが、タイプ１である場合（ 1, 1 ）の利得関数の表は<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37875080-5620232c-3075-11e8-8b2f-368355249379.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37875099-af059eea-3075-11e8-81ec-e7397b34a36a.png) の男女ゲーム<br>
+    プレイヤー１（男性）のタイプが、タイプ２で、<br>
+    プレイヤー２（女性）のタイプが、タイプ２である場合（ 2, 2 ）の利得関数の表は<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37875105-c14ef11e-3075-11e8-8f79-d2d9041413f6.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/37875226-3d26ee80-3077-11e8-9750-ec29a0e48417.png) の男女ゲーム<br>
+    プレイヤー１（男性）のタイプが、タイプ２で、<br>
+    プレイヤー２（女性）のタイプが、タイプ１である場合（ 2, 1 ）の利得関数の表は<br>
+    ![image](https://user-images.githubusercontent.com/25688193/37875261-6610b150-3077-11e8-89ed-9a4b53e6d0b8.png)<br>
+
+
+> 記載中...
 
 ---
 
