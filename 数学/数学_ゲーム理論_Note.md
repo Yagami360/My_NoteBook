@@ -68,8 +68,8 @@
         1. [各種均衡点の応用例](#ID_1-5-8)
     1. [情報不完備ゲーム [game with incomplete information]](#ID_1-6)
         1. [情報不完備ゲームの定式化](#ID_1-6-1)
+        1. [ベイジアンゲームと情報不完備ゲーム](#ID_1-6-2)
         1. ベイジアン均衡点
-        1. ベイジアンゲーム
         1. 相関均衡点
     1. 繰り返しゲーム
         1. 繰り返し囚人のジレンマ
@@ -2610,6 +2610,21 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 以上の準備をもとに、情報不完備ゲームは以下のように定義できる。<br>
 ![image](https://user-images.githubusercontent.com/25688193/37831324-66087228-2ee8-11e8-9601-616bd0b4aa97.png)<br>
 
+
+<a id="ID_1-6-2"></a>
+
+### ◎ ベイジアンゲームと情報不完備ゲーム
+ハーサニの理論では、更に、<br>
+この主観的同時確率分布の族、即ちプレイヤー i(=1,2, ... ,n) がもつ条件付き確率の族<br>
+![image](https://user-images.githubusercontent.com/25688193/37863370-77a1f654-2fa0-11e8-8b55-50056f8708dd.png)<br>
+に以下のような、整合性に関する条件を仮定する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37863414-16ca4c2c-2fa1-11e8-903e-0d089b251219.png)<br>
+
+情報不完備ゲームにおいて、上記の意味で、プレイヤー主観確率が整合性であるならば、<br>
+次のようなベイジアンゲームと呼ばれる、情報完備ゲームを構築することが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37863719-7a1602e4-2fa6-11e8-9eb1-10cec5fc3e9f.png)<br>
 
 
 
