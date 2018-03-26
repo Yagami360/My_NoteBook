@@ -2693,6 +2693,53 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
     プレイヤー２（女性）のタイプが、タイプ１である場合（ 2, 1 ）の利得関数の表は<br>
     ![image](https://user-images.githubusercontent.com/25688193/37875261-6610b150-3077-11e8-89ed-9a4b53e6d0b8.png)<br>
 
+女性のタイプに関する、男性の主観確率（予想）は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37891337-ee21cdb2-310e-11e8-87b4-e48d73e6c9ab.png)<br>
+
+男性のタイプに関する、女性の主観確率（予想）は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37891350-02b8e260-310f-11e8-8012-9598be9e5195.png)<br>
+
+男性と女性の予想（主観確率）が、整合性であるとは、<br>
+主観的同時確率 ![image](https://user-images.githubusercontent.com/25688193/37891638-f20ef822-310f-11e8-8a65-09835dc06c32.png) が存在して、これが全てのプレイヤー（男性＆女性）で等しいことを要求するので、<br>
+![image](https://user-images.githubusercontent.com/25688193/37891874-d30b353e-3110-11e8-86c2-d50511f13a99.png)<br>
+という関係式が成り立つ。<br>
+
+この（第３式 /第１式）より、<br>
+![image](https://user-images.githubusercontent.com/25688193/37893063-dcd7cd44-3114-11e8-8c7a-019a11dc8a9e.png)<br>
+
+又、（第４式 /第２式）より、<br>
+![image](https://user-images.githubusercontent.com/25688193/37893091-ef43648e-3114-11e8-8331-2d02a00fecb3.png)<br>
+
+よって、<br>
+![image](https://user-images.githubusercontent.com/25688193/37893128-0bcaf4be-3115-11e8-8d6b-c446313c4b22.png)<br>
+
+という関係式が成り立つ。<br>
+
+今、![image](https://user-images.githubusercontent.com/25688193/37893173-2eeb8116-3115-11e8-9eb2-b61dea99db50.png) のときを考えると、<br>
+これらは、この関係式を満たすので、<br>
+
+女性のタイプに関する、男性の主観確率（予想）は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37893206-4df9de2c-3115-11e8-9eea-2d6fcbb8b323.png)<br>
+
+男性のタイプに関する、女性の主観確率（予想）は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37893259-6bfa3f8e-3115-11e8-90db-6d8d22ed0f4a.png)<br>
+
+又、![image](https://user-images.githubusercontent.com/25688193/37893364-b99964cc-3115-11e8-81a3-ad697a3a84f4.png) のとき ![image](https://user-images.githubusercontent.com/25688193/37893394-d7d6f882-3115-11e8-87d9-33c4e4c644af.png) が成り立つので、<br>
+男性のタイプと女性のタイプの（主観的）同時確率分布 ![image](https://user-images.githubusercontent.com/25688193/37893633-9cacccb8-3116-11e8-8cb6-ca8bb0cfbb5a.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/37893664-b155b44a-3116-11e8-8100-1a2d0f33b290.png)<br>
+
+この（主観的）同時確率分布 ![image](https://user-images.githubusercontent.com/25688193/37893633-9cacccb8-3116-11e8-8cb6-ca8bb0cfbb5a.png) による、偶然手番をもつ展開形ゲームは、<br>
+以下の図のように表現できる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/37897168-8073432e-3120-11e8-81c4-1e3acd4d500e.png)<br>
+
+ベイジアンゲームにおいて、<br>
+プレイヤー i は、自分のタイプ ![image](https://user-images.githubusercontent.com/25688193/37902854-c5b74ed4-3130-11e8-9d29-fc86971059b4.png) の実現値のみを知った上で、<br>
+他のプレイヤーとは独立に、自身の行動戦略 ![image](https://user-images.githubusercontent.com/25688193/37902884-da3ace26-3130-11e8-91cb-e1d3d4ae9714.png) を選択する（ ![image](https://user-images.githubusercontent.com/25688193/37902928-07cfca26-3131-11e8-915e-188c6b5da402.png) ）ので、<br>
+プレイヤー i の純戦略は、以下の表のような４通りの組み合わせになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/37902958-21017666-3131-11e8-8005-20e89b617318.png)<br>
+
+
 
 > 記載中...
 
