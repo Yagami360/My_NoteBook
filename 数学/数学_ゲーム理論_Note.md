@@ -2601,12 +2601,7 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 ハーサニによる情報不完備ゲームの理論では、これに加えて、<br>
 このような不確実性下でのプレイヤーの意思決定に関して、以下のベイジアン仮説を採用する。<br>
 
-- ベイジアン仮説 [Bayesian hypothesis]<br>
-    プレイヤー i (=1,2, ... ,n) は、<br>
-	自身のタイプを除いた他のプレイヤーのタイプ ![image](https://user-images.githubusercontent.com/25688193/37831209-09d53054-2ee8-11e8-9c5c-0e90890a5d69.png) の真の値を予想する。<br>
-	この予想は主観確率となり、同時確率分布の式<br>
-    ![image](https://user-images.githubusercontent.com/25688193/37831276-38db7ca0-2ee8-11e8-8092-03b31711c6ff.png)<br>
-    で表現され、プレイヤー i は、この同時確率分布を最大化する。<br>
+![image](https://user-images.githubusercontent.com/25688193/38017648-9713082e-32ad-11e8-8806-95080c7a7d10.png)<br>
 
 以上の準備をもとに、情報不完備ゲームは以下のように定義できる。<br>
 ![image](https://user-images.githubusercontent.com/25688193/37831324-66087228-2ee8-11e8-9601-616bd0b4aa97.png)<br>
@@ -2629,7 +2624,8 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 このベイジアンゲーム ![image](https://user-images.githubusercontent.com/25688193/37872831-a5ab9b0e-304a-11e8-9b6d-e765d6f77450.png) は、以下のようにプレイされる。<br>
 
-1. 全てのプレイヤーのタイプの組 ![image](https://user-images.githubusercontent.com/25688193/37872847-d3a5d0ce-304a-11e8-9106-d8bb02773d72.png) が、確率分布 ![image](https://user-images.githubusercontent.com/25688193/37872851-eb297e94-304a-11e8-8c65-7aa5dbe8ad8f.png) にもとづいて実現される。<br>
+1. 全てのプレイヤーのタイプの組 ![image](https://user-images.githubusercontent.com/25688193/37872847-d3a5d0ce-304a-11e8-9106-d8bb02773d72.png) が、<br>
+    確率分布 ![image](https://user-images.githubusercontent.com/25688193/37872851-eb297e94-304a-11e8-8c65-7aa5dbe8ad8f.png) （全てのタイプの組み合わせに正の確率を付与する確率分布）にもとづいて実現される。<br>
 2. プレイヤー i は、自分のタイプ ![image](https://user-images.githubusercontent.com/25688193/37872854-fdb5f236-304a-11e8-82c1-7d49c43a77ce.png) の実現値のみを知った上で、<br>
     他のプレイヤーとは独立に、自身の行動戦略 ![image](https://user-images.githubusercontent.com/25688193/37873668-63a715e6-305c-11e8-84c2-4f2a2416689f.png) を選択する。（![image](https://user-images.githubusercontent.com/25688193/37873684-a6249f4c-305c-11e8-927d-40f4ab6d5cbc.png)）<br>
 3. ゲームのプレイの最後に、プレイヤー i は、利得 ![image](https://user-images.githubusercontent.com/25688193/37872860-29a97868-304b-11e8-823a-06b17fae829f.png) を得る。<br>
@@ -2674,7 +2670,7 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 情報不完備ゲーム ![image](https://user-images.githubusercontent.com/25688193/37956894-84acbc46-31e7-11e8-8e10-bddac4eaeb0d.png) から構成されるベイジアンゲーム ![image](https://user-images.githubusercontent.com/25688193/37956927-9b97d2ba-31e7-11e8-8d8e-ede8818539a0.png) において、<br>
 全てのプレイヤーの戦略の組 ![image](https://user-images.githubusercontent.com/25688193/37956992-cd3eebbe-31e7-11e8-8b98-ab27ad44c4f1.png) に対してのプレイヤー i の期待利得は、<br>
-![image](https://user-images.githubusercontent.com/25688193/37957072-01106210-31e8-11e8-9783-03aff8d8b52e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38023143-70e15278-32bc-11e8-801f-2edcfa463849.png)<br>
 と定義できる。<br>
 
 このベイジアンゲームにおけるナッシュ均衡点と、情報不完備ゲームにおけるベイジアン均衡点に関して、<br>
@@ -2778,7 +2774,7 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 この（主観的）同時確率分布 ![image](https://user-images.githubusercontent.com/25688193/37893633-9cacccb8-3116-11e8-8cb6-ca8bb0cfbb5a.png) による、偶然手番をもつ展開形ゲームは、<br>
 以下の図のように表現できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/37897168-8073432e-3120-11e8-81c4-1e3acd4d500e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38023249-b83f6196-32bc-11e8-9313-ba2c45392ec7.png)<br>
 
 ベイジアンゲームにおいて、<br>
 プレイヤー i は、自分のタイプ ![image](https://user-images.githubusercontent.com/25688193/37902854-c5b74ed4-3130-11e8-9d29-fc86971059b4.png) の実現値のみを知った上で、<br>
