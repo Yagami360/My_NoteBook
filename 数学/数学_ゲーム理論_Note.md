@@ -2885,7 +2885,23 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
     	２人のプレイヤーがトリガー戦略を用いるとき、プレイヤーの割引利得和は、<br>
 	    ![image](https://user-images.githubusercontent.com/25688193/38084650-afbf96f4-3388-11e8-9453-d7fa9aa7dce8.png)<br>
     	となる。<br>
-        > 記載中...
+        
+		プレイヤー１が、ゲームの t 回目のプレイにおいて、行動を C → D に変更したとすると、<br>
+		（プレイヤー２はトリガー戦略を用いるので）t+1 以降のゲームプレイにおいて、<br>
+		行動 D が選択され続けることになる。<br>
+		従って、”t 回目以降の”ゲームプレイでのプレイヤー１の割引利得は、<br>
+		![image](https://user-images.githubusercontent.com/25688193/38089896-e1070ad6-339b-11e8-991e-36219b54fb8c.png)<br>
+		となる。<br>
+
+		この２つの割引利得和（行動 C のトリガー戦略継続、t 回目で行動 C→D）を比較すると、<br>
+		![image](https://user-images.githubusercontent.com/25688193/38084690-d62fd074-3388-11e8-8235-f185146384ae.png) の関係式より、<br>
+		![image](https://user-images.githubusercontent.com/25688193/38090032-50dcbcca-339c-11e8-8295-7e9253b3693f.png)<br>
+		となる。<br>
+		
+		つまり、行動を C → D に変更することで、長期的な利得が下がるために、<br>
+		プレイヤーが戦略を変更する動機を持たず、このときのトリガー戦略の組はナッシュ均衡点である。<br>
+
+<br>
 
 又、しっぺ返し戦略に対して、以下の性質が成り立つ。<br>
 
@@ -2895,8 +2911,26 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 	であるならば、**しっぺ返し戦略の組は、このゲームのナッシュ均衡点となる。**<br>
 
     - （証明）<br>
-        > 記載中...
+		２人のプレイヤーが共にしっぺ返し戦略を用いるとき、プレイヤーの割引利得和は、<br>
+		![image](https://user-images.githubusercontent.com/25688193/38098159-3e5f844a-33b2-11e8-9687-1bf2c49a8f5b.png)<br>
+		となる。<br>
 
+		プレイヤー１が、ゲームの t 回目のプレイにおいて、行動を C → D に変更したとすると、<br>
+		すると、t+1 回目以降のゲームプレイにおいて、<br>
+		プレイヤー２の行動は、しっぺ返し戦略の元、行動 C or D が選択されることになる。<br>
+        このときの t+1 回目以降のゲームプレイの様子を樹形図で書くと、以下の図のようになる。<br>
+        <br>
+        又、このゲームプレイの樹形図の行動の組を遷移図で書き直すと、以下の図のようになる。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/38098202-5b30aae0-33b2-11e8-80ed-a008eb2c80c5.png)<br>
+        又、このゲームプレイの樹形図の行動の組を遷移図で書き直すと、以下の図のようになる。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/38099397-76655114-33b5-11e8-8bd9-9200f288b96c.png)<br>
+
+        この行動の組の遷移図より、<br>
+        プレイヤー１が、しっぺ返し戦略からどのように戦略を離脱しても、割引利得和が大きくならないためには、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/38102024-eebc534a-33bc-11e8-853e-a7489be2fdc0.png)<br>
+        の３つの条件を満たせば良いことが分かる。<br>
+
+        > 記載中...
 
 <br>
 
