@@ -75,7 +75,7 @@
     1. [繰り返しゲーム [repeated game]](#ID_1-7)
         1. [繰り返し囚人のジレンマ](#ID_1-7-1)
         1. [（無限回）繰り返しゲームの定式化](#ID_1-7-2)
-        1. [フォーク定理](#ID_1-7-2)
+        1. [フォーク定理（繰り返しゲームにおけるナッシュ均衡点の基本定理）](#ID_1-7-2)
         1. 完全フォーク定理
     1. 交渉ゲーム
         1. ナッシュ交渉解
@@ -2954,7 +2954,52 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 <a id="ID_1-7-3"></a>
 
-### ◎ フォーク定理
+### ◎ フォーク定理（繰り返しゲームにおけるナッシュ均衡点の基本定理）
+ここでは、繰り返しゲームにおけるナッシュ均衡点の基本定理であるフォーク定理をみていく。<br>
+そのためにまず、繰り返しゲームにおけるナッシュ均衡点を定義する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38133868-e74b057c-344b-11e8-8ed6-5882d277e63d.png)<br>
+
+先の繰り返し囚人のジレンマゲームでみたように、<br>
+ナッシュ均衡点は、均衡点から離脱したプレイヤーに対して、処罰行動を与えているとみなすことも出来る。<br>
+この処罰行動の内、最も基本的な処罰の方法は、プレイヤーに対してミニマックス行動を用いることである。<br>
+（他のプレイヤーがプレイヤー i に対するミニマックス行動を選択すれば、<br>
+このプレイヤー i は、高々ミニマックス利得しか得られなくなるので、ミニマックス行動は、処罰行動を与える。）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38135276-3f103100-3452-11e8-8ce8-230984d76ae4.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38137061-692ef31c-345d-11e8-8e02-516c940b25e0.png)<br>
+
+この個人合理的の概念を用いて、<br>
+以下のような繰り返しゲームにおけるナッシュ均衡点と割引因子の値に関しての重要な定理（フォーク定理）が示せる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38139880-52cec890-346c-11e8-8498-fbbff1d371a9.png)<br>
+
+<br>
+
+<!----------------------------------------------------------->
+
+このフォーク定理の内容を、囚人のジレンマゲームで考える。<br>
+
+（例）囚人のジレンマゲームの利得関数<br>
+![image](https://user-images.githubusercontent.com/25688193/38141067-88d692a6-3471-11e8-91b2-b482801a10cf.png)<br>
+
+純戦略による実現可能な利得ベクトルの集合（下図）を見やすくするために、<br>
+プレイヤー i の行動集合を区間 ![image](https://user-images.githubusercontent.com/25688193/38141113-b2423c9e-3471-11e8-86c9-6bf10e243a3d.png) の範囲で連続化する。<br>
+
+協力行動（C）：![image](https://user-images.githubusercontent.com/25688193/38141199-02278516-3472-11e8-8391-f8fe32d2a6e6.png)<br>
+裏切り行動（D）：![image](https://user-images.githubusercontent.com/25688193/38142109-1d7c4ece-3476-11e8-94a0-ca8163b07994.png)<br>
+⇒ ![image](https://user-images.githubusercontent.com/25688193/38142307-c638b390-3476-11e8-8e02-f55938f5b047.png) は、純戦略の選択確率となっている。<br>
+
+行動の組 ![image](https://user-images.githubusercontent.com/25688193/38142285-ac7c9f5c-3476-11e8-87ae-ece7aa9c8012.png) に対して、プレイヤーの利得を<br>
+![image](https://user-images.githubusercontent.com/25688193/38142720-6fd51b72-3478-11e8-8850-c504af7a63b6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38142741-7fc922bc-3478-11e8-9f5e-f642a1b41a2d.png)<br>
+
+このような実現可能な利得ベクトルび実現可能領域の集合 ![image](https://user-images.githubusercontent.com/25688193/38142827-e3a0d352-3478-11e8-9c0b-b20f79d3f8a8.png) を図示すると、<br>
+以下のようになる。<br>
+
+<br>
+
 > 記載中...
 
 <br>
