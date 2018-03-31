@@ -3012,6 +3012,24 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 <a id="ID_1-7-4"></a>
 
 ### ◎ 完全フォーク定理
+![image](https://user-images.githubusercontent.com/25688193/38162508-4e9e1788-351d-11e8-807a-3f9d6d672545.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38162410-b4a6efa2-351b-11e8-84e9-e21d46a9bd63.png) : 割引因子 δ をもつ成分ゲーム G の繰り返しゲーム<br>
+- ![image](https://user-images.githubusercontent.com/25688193/38162415-ded4e324-351b-11e8-9fad-3d2e688ecc1f.png) : 繰り返しゲーム ![image](https://user-images.githubusercontent.com/25688193/38162410-b4a6efa2-351b-11e8-84e9-e21d46a9bd63.png) におけるプレイヤー i の戦略<br>
+- ![image](https://user-images.githubusercontent.com/25688193/38162423-efad8bce-351b-11e8-8a49-445a7e743bc8.png) : t 回目のゲームプレイまでのゲームの履歴（上図の赤線部分）<br>
+- ![image](https://user-images.githubusercontent.com/25688193/38162436-248ac1e0-351c-11e8-8719-a8ce1b9197f8.png) : 繰り返しゲーム ![image](https://user-images.githubusercontent.com/25688193/38162410-b4a6efa2-351b-11e8-84e9-e21d46a9bd63.png) の履歴 ![image](https://user-images.githubusercontent.com/25688193/38162431-0d6ea2ba-351c-11e8-99f5-61bf55b5289d.png) 以降の部分ゲーム<br>
+- ![image](https://user-images.githubusercontent.com/25688193/38162470-dc2c80c2-351c-11e8-9d54-3420cd75cbc9.png) : 戦略 ![image](https://user-images.githubusercontent.com/25688193/38162415-ded4e324-351b-11e8-9fad-3d2e688ecc1f.png) が部分ゲーム ![image](https://user-images.githubusercontent.com/25688193/38162436-248ac1e0-351c-11e8-8719-a8ce1b9197f8.png) に導く戦略（上図の赤線部分）で、<br>
+    部分ゲームにおける m 回目の任意の履歴（上図の赤点線部分）![image](https://user-images.githubusercontent.com/25688193/38162475-ef205028-351c-11e8-817b-6fe188107a2b.png) に対し、以下の式で定義出来る。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38162482-022edd10-351d-11e8-931c-83a7ecf48d65.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38163751-3062847c-3534-11e8-9d31-095e2beef2fd.png)<br>
+この繰り返しゲームにおける部分ゲーム完全均衡点の定義は、<br>
+先に定義した以下の展開形ゲームにおける部分ゲーム完全均衡点の一般的な定義を、<br>
+繰り返しゲームに適用したものとなっている。<br>
+
+- cf :<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38163757-4bdffd42-3534-11e8-889e-1f614194af52.png)
+
 
 > 記載中...
 
