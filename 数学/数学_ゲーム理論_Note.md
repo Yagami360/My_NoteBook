@@ -3030,6 +3030,42 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 - cf :<br>
     ![image](https://user-images.githubusercontent.com/25688193/38163757-4bdffd42-3534-11e8-889e-1f614194af52.png)
 
+<br>
+
+<!--------------------------------------------------------------->
+
+まず、繰り返し囚人のジレンマゲームでのしっぺ返し戦略が、部分ゲーム完全均衡点になるか否かを見てみる。<br>
+
+（例）ナッシュ均衡点が部分ゲーム完全均衡点とはならない例（繰り返し囚人のジレンマゲームでのしっぺ返し戦略）<br>
+![image](https://user-images.githubusercontent.com/25688193/38172161-f10b7dd4-35e1-11e8-9c7e-3518ef7ea2f8.png)<br>
+繰り返し囚人のジレンマゲームにおけるしっぺ返し戦略は、先にみたように、<br>
+割引因子 δ が十分に大きい時（δ≥1/9）、このゲームにおけるナッシュ均衡点となる。<br>
+しっぺ返し戦略は、初手として C を選択し、以降は前回の相手の選択と同じ選択を行う戦略であった。<br>
+従って、<br>
+
+1. プレイヤー１、２が初期手番として、D, C を選択すると、<br>
+	履歴 ![image](https://user-images.githubusercontent.com/25688193/38172165-1108a378-35e2-11e8-8abe-c9b0edf84658.png) 以降のゲーム（部分ゲーム）のプレイの推移は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38172167-260d61d2-35e2-11e8-8eb5-e0e7251d6c1c.png)<br>
+	となる。<br>
+	プレイヤー１が C でプレイヤー２が D を選択したときの、プレイヤー２の利得は 6。<br>
+	プレイヤー１が D でプレイヤー２が C を選択したときの、プレイヤー２の利得は -4。<br>
+	よって、このときの履歴 ![image](https://user-images.githubusercontent.com/25688193/38172165-1108a378-35e2-11e8-8abe-c9b0edf84658.png) 以降の部分ゲームの割引利得和は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38172179-549e10f0-35e2-11e8-92f2-1486ac32376e.png)<br>
+
+2. プレイヤー２が、２回目のゲームプレイ以降に、初期行動が C であるしっぺ返し戦略に変更すると、<br>
+	履歴 ![image](https://user-images.githubusercontent.com/25688193/38172165-1108a378-35e2-11e8-8abe-c9b0edf84658.png) 以降のゲーム（部分ゲーム）のプレイの推移は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38172210-cce5ac76-35e2-11e8-8bd8-d98a038eeb23.png)<br>
+	となる。<br>
+	プレイヤー１、２共に C を選択したときの、プレイヤー２の利得は 5。<br>
+	よって、このときの履歴 ![image](https://user-images.githubusercontent.com/25688193/38172165-1108a378-35e2-11e8-8abe-c9b0edf84658.png) 以降の部分ゲームの割引利得和は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38172218-f722a5de-35e2-11e8-82f6-c1ea686fd7f5.png)<br>
+
+今、δ≥1/9 のとき<br>
+![image](https://user-images.githubusercontent.com/25688193/38172225-323087fe-35e3-11e8-852b-bcdc66a11715.png)<br>
+となるので、<br>
+しっぺ返し戦略は、履歴 ![image](https://user-images.githubusercontent.com/25688193/38172165-1108a378-35e2-11e8-8abe-c9b0edf84658.png) 以降の部分ゲームに対して、ナッシュ均衡点を導かない。<br>
+従って、しっぺ返し戦略は、この繰り返し囚人のジレンマゲームの部分ゲーム完全均衡点とはならない。<br>
+
 
 > 記載中...
 
