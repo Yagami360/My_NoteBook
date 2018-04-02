@@ -2975,7 +2975,7 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 この個人合理的の概念を用いて、<br>
 以下のような繰り返しゲームにおけるナッシュ均衡点と割引因子の値に関しての重要な定理（フォーク定理）が示せる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/38139880-52cec890-346c-11e8-8498-fbbff1d371a9.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38190529-95b8a59c-369f-11e8-939b-45aa43efc714.png)<br>
 
 <br>
 
@@ -3072,11 +3072,11 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 繰り返しゲームの部分ゲーム完全均衡点を構成するために、<br>
 まず、繰り返しゲームの成分ゲームにおけるナッシュ均衡点を処罰とする戦略を考える。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/38186477-2c5c2382-368e-11e8-8c03-2589996ef735.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38190578-df39eca8-369f-11e8-84a7-498752110598.png)<br>
 
 - cf :<br>
     ![image](https://user-images.githubusercontent.com/25688193/38186494-4646158c-368e-11e8-9736-350cc82633a1.png)<br>
-    ![image](https://user-images.githubusercontent.com/25688193/38186528-6f21a9bc-368e-11e8-891b-d3707bf18a32.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38190529-95b8a59c-369f-11e8-939b-45aa43efc714.png)<br>
 
 この定理より、割引因子が十分に大きい時、<br>
 全てのプレイヤーが成分ゲーム G のナッシュ均衡点より、<br>
@@ -3092,6 +3092,35 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 <a id="ID_1-7-5"></a>
 
 ### ◎ 有限回繰り返しゲーム
+ここまでは、ゲームのプレイが際限なく、無限回繰り返されるゲームを見てきたが、<br>
+次に、ゲームのプレイが有限回のみ行われるような繰り返しゲームを見ていく。（有限回繰り返しゲーム）<br>
+
+戦略形ゲームを ![image](https://user-images.githubusercontent.com/25688193/38190093-adf58fd2-369d-11e8-999e-5ac6ed9218e3.png) とすると、これから構成される有限ゲームは、![image](https://user-images.githubusercontent.com/25688193/38190071-950cce40-369d-11e8-8d17-0b12074548b9.png) と書ける。<br>
+ここで、T は、ゲームプレイの回数であり、全てのプレイヤーの共有知識である。<br>
+無限回繰り返しゲームの時と同様にして、全てのプレイヤーは、過去のゲームプレイの結果を完全に知ることが出来る。<br>
+
+<br>
+
+<!-------------------------------------------------------------------------------->
+
+そして、有限回繰り返しゲーム ![image](https://user-images.githubusercontent.com/25688193/38190071-950cce40-369d-11e8-8d17-0b12074548b9.png) における戦略は、無限回繰り返しゲーム ![image](https://user-images.githubusercontent.com/25688193/38189302-7d9a161c-369a-11e8-8e32-b69be1a3876d.png) の場合と同様に定義出来る。<br>
+
+具体的には、有限回繰り返しゲーム ![image](https://user-images.githubusercontent.com/25688193/38190071-950cce40-369d-11e8-8d17-0b12074548b9.png) において、<br>
+プレイヤーの戦略の組 s=(s_1,s_2,…,s_n )  に対して、各ゲームプレイにおける履歴からなる行動の組の列<br>
+![image](https://user-images.githubusercontent.com/25688193/38190817-f65e6476-36a0-11e8-8455-7bf9daf2e1a2.png)<br>
+が定まる。<br>
+
+この行動の組の列（履歴）![image](https://user-images.githubusercontent.com/25688193/38191537-22a2614c-36a4-11e8-9085-470f96a0bcc5.png) に対する、各プレイヤー i の評価基準として、<br>
+平均利得<br>
+![image](https://user-images.githubusercontent.com/25688193/38191567-3c72303e-36a4-11e8-928e-40ca3d67a393.png)<br>
+を考える。<br>
+
+すると、（無限回繰り返しゲーム ![image](https://user-images.githubusercontent.com/25688193/38189302-7d9a161c-369a-11e8-8e32-b69be1a3876d.png) の場合と同様にして、）<br>
+有限回繰り返しゲーム ![image](https://user-images.githubusercontent.com/25688193/38190071-950cce40-369d-11e8-8d17-0b12074548b9.png) における、ナッシュ均衡点、部分ゲーム完全均衡点を定義することが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38196297-28f7c5dc-36bd-11e8-8887-905a2dd67a7a.png)<br>
+
+
 
 > 記載中...
 
