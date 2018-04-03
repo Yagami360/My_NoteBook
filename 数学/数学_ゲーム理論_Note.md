@@ -80,7 +80,7 @@
         1. [有限回繰り返しゲーム](#ID_1-7-5)
     1. [交渉ゲーム](#ID_1-8)
         1. [交渉問題の定式化](#ID_1-8-1)
-        1. ナッシュ交渉解
+        1. [ナッシュ交渉解の公理](#ID_1-8-2)
     1. 進化ゲーム
         1. 進化的に安定な戦略 [ESS : evolutionaly stable strategy]
         1. 中立的に安定な戦略 [NSS : neutrally stable strategy]
@@ -3183,8 +3183,67 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 ![image](https://user-images.githubusercontent.com/25688193/38238885-3c1c9698-3766-11e8-9424-5242381f709a.png)<br>
 
+次に、交渉理論の基本的な概念を定義する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38243073-647e67e6-3771-11e8-8063-b437a296c83b.png)<br>
+
+<br>
+
+<!------------------------------------------------------------------->
+
+先の例では、交渉問題として、利得分配をめぐる交渉の例をみたが、<br>
+次に、行動の選択をめぐる交渉問題の例をみてみる。<br>
+
+（例）男女の争い（２人交渉問題）<br>
+![image](https://user-images.githubusercontent.com/25688193/38244808-bd10e2a8-3776-11e8-8591-11f13ea2a323.png)<br>
+
+この男女ゲームのナッシュ均衡点は、既にみたように、以下の３つのナッシュ均衡点をもつ。<br>
+① 純戦略によるナッシュ均衡点１：(ボクシング, ボクシング)<br>
+② 純戦略によるナッシュ均衡点２：(バレエ, バレエ)<br>
+③ 混合戦略によるナッシュ均衡点：( (3/5,2/5), (2/5,3/5))<br>
+
+これらのナッシュ均衡点は、男女間のコンフリクトを解決するような解ではない。<br>
+即ち、２つの純戦略によるナッシュ均衡点は、パレート最適であるが、<br>
+どちらのナッシュ均衡点を選ぶかに関して、男女間のコンフリクトが発生する。<br>
+又、混合戦略によるナッシュ均衡点は、パレート最適ではない。<br>
+
+この男女ゲームにおいて、男女間の話し合いにより互いの戦略を決定できるケースを考える。<br>
+このコンフリクトの自然な解決法は、<br>
+２つの純戦略によるナッシュ均衡点（ (ボクシング, ボクシング) or (バレエ, バレエ) ）を、<br>
+それぞれ確率 1/2 で選択するようにする解決法である。<br>
+このような戦略を、２人の**相関戦略 [correlated strategy]** という。<br>
+
+<br>
+
+<!----------------------------------------------------------------->
+
+次に、一般の戦略形ゲームから、どのようにして交渉問題が構築されるのか見てみる。<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38245680-1754fb5c-377a-11e8-9cb3-d1431681632c.png) : 戦略形２人ゲーム<br>
+- ![image](https://user-images.githubusercontent.com/25688193/38245696-25bd7598-377a-11e8-9eaf-38c22c717aaa.png) : プレイヤー i の純戦略の集合<br>
+- ![image](https://user-images.githubusercontent.com/25688193/38245712-361c3348-377a-11e8-8a39-d89de4616d04.png) : プレイヤー i の利得関数<br>
+- ![image](https://user-images.githubusercontent.com/25688193/38245809-91d801ee-377a-11e8-8011-25fc213d4969.png) : 純戦略の組で、プレイヤーの相関純戦略 [correlated pure strategy] という。<br>
+- ![image](https://user-images.githubusercontent.com/25688193/38245830-a0de5a1c-377a-11e8-885d-cee21f702fa1.png) 上の同時確率分布 q : プレイヤーの相関混合戦略 [correlated mixed strategy] という。<br>
+
+このプレイヤーの期待利得 ![image](https://user-images.githubusercontent.com/25688193/38245845-b8ce3908-377a-11e8-80f2-b4312480cd62.png) によるベクトル（＝期待利得ベクトル）の全体が、<br>
+プレイヤーの実現可能集合 U となる。<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/38245859-c89db78c-377a-11e8-9d65-29dd02319ab9.png)<br>
+
+男女ゲームの例では、下図の (-1,-1) - (1,2) - (2,1) で結ばれる三角形内部部分（赤線内）が、<br>
+相関混合戦略による実現可能集合 U となる。<br>
+![image](https://user-images.githubusercontent.com/25688193/38249217-e94852fc-3785-11e8-84f0-d86c59b69f43.png)<br>
 
 
+> 記載中...
+
+<br>
+
+---
+
+<a id="ID_1-8-2"></a>
+
+### ◎ ナッシュ交渉解の公理
 > 記載中...
 
 <br>
