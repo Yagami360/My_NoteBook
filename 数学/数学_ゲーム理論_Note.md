@@ -3293,8 +3293,35 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 ![image](https://user-images.githubusercontent.com/25688193/38266696-496fcb8c-37b4-11e8-81b6-2dbe186ab404.png)<br>
 
-<br>
+![image](https://user-images.githubusercontent.com/25688193/38291043-e6b5cc48-3818-11e8-86e8-819acb0678af.png)<br>
 
+これらの準備の元で、ナッシュ交渉解 f が満たすべき４つの公理を挙げていく。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38296120-55384b2a-382b-11e8-96d3-8940949bb54a.png)<br>
+
+この公理１（パレート最適性）は、<br>
+合理的プレイヤーによる交渉の合意点として、以下の意味で自然なものとなっている。<br>
+即ち、例えば、２つの利得ベクトル ![image](https://user-images.githubusercontent.com/25688193/38296166-74d669b2-382b-11e8-8913-6827207c28e5.png) と ![image](https://user-images.githubusercontent.com/25688193/38296206-9b2ed0d6-382b-11e8-8b74-385ba53bf1e6.png) において、<br>
+![image](https://user-images.githubusercontent.com/25688193/38296256-c815b5ba-382b-11e8-94a5-9368684cc636.png) が成り立つような場合を考えると、<br>
+プレイヤー１は、（より利得の高い）利得ベクトル ![image](https://user-images.githubusercontent.com/25688193/38296166-74d669b2-382b-11e8-8913-6827207c28e5.png) を好んで選択すると思われる。<br>
+プレイヤー２にとっては、![image](https://user-images.githubusercontent.com/25688193/38296277-deaefe9e-382b-11e8-83c2-3a39e9dd2c36.png) となるので、２つの利得ベクトルに差異はないが、<br>
+この利得ベクトル ![image](https://user-images.githubusercontent.com/25688193/38296166-74d669b2-382b-11e8-8913-6827207c28e5.png) に反対する理由も存在しない。<br>
+従って、プレイヤー１，２は、話し合いにおいて、利得ベクトル ![image](https://user-images.githubusercontent.com/25688193/38296166-74d669b2-382b-11e8-8913-6827207c28e5.png) を好んで選択すると思われる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38296871-a99310f4-382d-11e8-888c-b697c0ca852f.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38296961-f7f0ca8e-382d-11e8-8529-7fc956af655e.png)<br>
+
+この公理３（効用の正１次変換からの独立性）は、<br>
+交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38299264-7c186eb0-3834-11e8-87e3-cf333934343b.png) が、交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38299297-92e2cd7a-3834-11e8-8a54-e5330ba16373.png) から正１次変換から得られる時に、<br>
+これら２つの交渉問題は、実質的は、同じ状況を記述していることを意味している。<br>
+これは、例えば、利得の配分問題で、利得として円とドルどちらを採用しようが、<br>
+そのゲーム的状況は本質的は変わらないといったものである。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38299327-b0dce9b4-3834-11e8-84b0-53e7f0f06e57.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38301488-a4abf88c-383a-11e8-905e-d49619ec33f0.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38301509-b617772c-383a-11e8-9542-2144191b2946.png)<br>
 
 > 記載中...
 
