@@ -80,7 +80,8 @@
         1. [有限回繰り返しゲーム](#ID_1-7-5)
     1. [交渉ゲーム](#ID_1-8)
         1. [交渉問題の定式化](#ID_1-8-1)
-        1. [ナッシュ交渉解の公理](#ID_1-8-2)
+        1. [ナッシュ交渉解 [Nash bargaining solution]](#ID_1-8-2)
+        1. [非協力交渉モデル](#ID_1-8-3)
     1. 進化ゲーム
         1. 進化的に安定な戦略 [ESS : evolutionaly stable strategy]
         1. 中立的に安定な戦略 [NSS : neutrally stable strategy]
@@ -3248,7 +3249,7 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 <a id="ID_1-8-2"></a>
 
-### ◎ ナッシュ交渉解の公理
+### ◎ ナッシュ交渉解 [Nash bargaining solution]
 交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38264790-0ad5c5c0-37af-11e8-9e5b-1b746c52032e.png) において、主に問題となるのは、<br>
 
 1. （他からの強制なしに）プレイヤー間の自発的な話し合いにより、協力の合意が実現するか？<br>
@@ -3323,12 +3324,107 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 ![image](https://user-images.githubusercontent.com/25688193/38301488-a4abf88c-383a-11e8-905e-d49619ec33f0.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/38301509-b617772c-383a-11e8-9542-2144191b2946.png)<br>
 
-> 記載中...
+<br>
+
+<!-------------------------------------------------------------------------->
+
+そして、この４つの公理系から、交渉問題の解（＝ナッシュ交渉解）を一意に導出することが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38347061-d9a162e0-38d3-11e8-83b9-bd0b576163dd.png)<br>
+
+この定理で述べられているところの、<br>
+４つの公理から、ナッシュ交渉解が一意に定まるという点を見てみる。<br>
+
+- 交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38311135-6214f6d0-3859-11e8-88d1-3ca906544f2b.png) から、公理３の効用の１次変換<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38346686-bd295624-38d1-11e8-9f47-2a27c38504d0.png)<br>
+    によって、（交渉不一致点 d をづらすことにより、）交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38311178-8441a21c-3859-11e8-9616-e076468b0513.png) を構成出来る。<br>
+    このとき、ナッシュ交渉解 f は、公理３によって、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38311213-95a3f2d0-3859-11e8-9aca-5b919cf67ed6.png)<br>
+    と書ける。<br>
+    従って、一般性を失うことなく、<br>
+    交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38311178-8441a21c-3859-11e8-9616-e076468b0513.png) において、![image](https://user-images.githubusercontent.com/25688193/38311510-546e2bc2-385a-11e8-9ee0-c20222b4527e.png) を仮定してもよい。<br>
+
+- 最初に、実現可能集合として、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38315019-86bd6978-3862-11e8-8dbc-ea9fa3a73e2d.png)<br>
+    を考える。<br>
+    このとき、交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38315103-b516d52a-3862-11e8-967b-41760dbce794.png) は対称であるので、<br>
+    公理１と公理２より、この交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38315103-b516d52a-3862-11e8-967b-41760dbce794.png) の交渉解は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38315689-f352a30e-3863-11e8-8652-3516389db47c.png)<br>
+    でなくてはならない。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38347497-d1bff73c-38d6-11e8-9789-7edf7faac9a0.png)<br>
+
+- 次に、実現可能集合として、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38347205-fb571866-38d4-11e8-9d57-d8740f81336d.png)<br>
+	を考える。<br>
+    この実現可能集合からなる交渉問題は、効用の１次変換<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38347221-0ecbbbc2-38d5-11e8-9bc8-7d23fd28d002.png)<br>
+	によって、<br>
+	交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38347246-2ab95010-38d5-11e8-8354-b5adb9005c1b.png) を、交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38347258-3d319f04-38d5-11e8-9f4e-33352f5f29de.png) に変換することが出来る。<br>
+    ここで、![image](https://user-images.githubusercontent.com/25688193/38347290-7f12c416-38d5-11e8-8ff3-d8f4d7764782.png) なので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38347301-9326ba16-38d5-11e8-9252-fe133a4cbb9a.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38347313-aa3f18ec-38d5-11e8-9b5f-e9e1960fa89d.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38347511-e824f75c-38d6-11e8-9f88-7b9c27f89f69.png)<br>
+
+以上のことより、<br>
+交渉領域が直線で表せる場合（上図の赤線部分）において、ナッシュ交渉解は、<br>
+原点 0 を通り、この直線に直交するような直線（＝各プレイヤーの利得を最大化するような方向）とのただ１つの交点で、<br>
+一意に与えられることが分かる。（上図の２つの図の赤丸部分）<br>
+
+
+次に、一般的な交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38348878-5e50b440-38df-11e8-9639-131d0053a0f9.png) のナッシュ交渉解が、どのようにして一意に定まるのか見てみる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38349620-e2b1e904-38e2-11e8-9814-6c6492457919.png)<br>
+
+- 今、実現可能集合 U は、凸集合なので、<br>
+    この集合を含むパレート最適な境界線（赤線部分）を含む多面体 S からなる交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38350387-0c634830-38e6-11e8-961e-90621356f19c.png) を構成出来る。<br>
+    （公理４より、交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38350420-266907a6-38e6-11e8-856a-471abd887268.png) と交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38350435-36a3bde6-38e6-11e8-9839-455d5b9d2038.png) は等しい。）<br>
+- 先に見たように、交渉領域が直線（赤線部分）で与えられる交渉問題は、ただ１つのナッシュ交渉解 ![image](https://user-images.githubusercontent.com/25688193/38350495-7b2722a0-38e6-11e8-8002-3e290987c8aa.png) をもつ。<br>
+- 交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38350420-266907a6-38e6-11e8-856a-471abd887268.png) と交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38350435-36a3bde6-38e6-11e8-9839-455d5b9d2038.png) は等しいので、<br>
+    この S でのナッシュ交渉解 ![image](https://user-images.githubusercontent.com/25688193/38350495-7b2722a0-38e6-11e8-8002-3e290987c8aa.png) は、U でのナッシュ交渉解にもなる。<br>
+- 更に、ナッシュ交渉解の定義にあるナッシュ積は、d=0 のとき、![image](https://user-images.githubusercontent.com/25688193/38350604-f5165f68-38e6-11e8-89c6-0f5d485ac8d9.png) という双曲線になるが、<br>
+	これはパレート最適な直線（赤線部分）と点 ![image](https://user-images.githubusercontent.com/25688193/38350495-7b2722a0-38e6-11e8-8002-3e290987c8aa.png) で接する。<br>
+    （＝双曲線の傾きが ![image](https://user-images.githubusercontent.com/25688193/38350627-0cfc0b78-38e7-11e8-95d9-57b8f7ea9532.png) となるため）<br>
+	これは、点 ![image](https://user-images.githubusercontent.com/25688193/38350495-7b2722a0-38e6-11e8-8002-3e290987c8aa.png) が、交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38350420-266907a6-38e6-11e8-856a-471abd887268.png) の交渉領域上で、２人のプレイヤーのナッシュ積 ![image](https://user-images.githubusercontent.com/25688193/38350646-267c5f08-38e7-11e8-8963-2573ab3f6ae4.png) を最大化する点であることを意味しており、その意味でも、点 ![image](https://user-images.githubusercontent.com/25688193/38350495-7b2722a0-38e6-11e8-8002-3e290987c8aa.png) が、ナッシュ交渉解となることが分かる。<br>
+
 
 <br>
 
 ---
 
+<a id="ID_1-8-3"></a>
+
+### ◎ 非協力交渉モデル
+先の議論で、公理論的アプローチによって導出した、ナッシュ交渉解が、<br>
+交渉におけるプレイヤーの戦略的な利得最大化の帰結として説明出来る。<br>
+ここでは、このナッシュによる非協力交渉モデルを見ていく。<br>
+
+交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38351383-24c359a2-38ea-11e8-97f3-0658daabcbf4.png) を考える。<br>
+このとき、ナッシュ交渉解の公理３（効用の正１次変換）より、<br>
+この問題の一般性を失うことなく d=0 とすることが出来る。<br>
+
+以下では、議論を単純化するために、（交渉問題の定義の条件に加えて）以下の２つの仮定が成り立つものとする。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38356549-fcaef906-38fa-11e8-9e64-8e4c5a8b0abd.png)<br>
+
+２つ目の仮定の行う前に、以下のような最大利得ベクトル m を定義する。<br>
+実現可能集合 U の個人合理性を満たすような利得ベクトルの内、プレイヤー i の最大利得を、以下のように定義する。<br>
+![image](https://user-images.githubusercontent.com/25688193/38356634-378df55e-38fb-11e8-9851-df9136bf65ef.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38354541-f6af67da-38f4-11e8-9525-3b8e24cb5876.png)<br>
+
+（交渉問題の定義の条件に加えて）この２つの仮定を満たすような、交渉問題 ![image](https://user-images.githubusercontent.com/25688193/38354585-161a0242-38f5-11e8-9a62-22fc13d3f32d.png) の例は、以下の図のようになる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38358138-6d2681d2-38ff-11e8-8a57-0f015498dd45.png)<br>
+
+<br>
+
+<!----------------------------------------------------------->
+
+> 記載中...
+
+<br>
+
+---
 
 <a name="参考文献"></a>
 
