@@ -3445,6 +3445,26 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 次に、この近似アプローチについて見ていく。<br>
 
+ナッシュの要求ゲームの利得関数 ![image](https://user-images.githubusercontent.com/25688193/38379716-8b420438-393c-11e8-9b3b-13d10800cfd3.png) は、その定義<br>
+![image](https://user-images.githubusercontent.com/25688193/38379737-a1fbd668-393c-11e8-83ce-72ce5cad95cc.png)<br>
+から分かるように、実現可能集合 U の境界で不連続である。（＝微分不可能）<br>
+従って、微分可能になるように、微分可能な関数で近似することを考える。<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38379788-c907cc80-393c-11e8-933d-2e86f0e88fe7.png) : プレイヤーの要求の組 ![image](https://user-images.githubusercontent.com/25688193/38379818-db31af3e-393c-11e8-83f9-f16a13e22fb7.png) が実現可能である確率<br>
+    この確率 ![image](https://user-images.githubusercontent.com/25688193/38379788-c907cc80-393c-11e8-933d-2e86f0e88fe7.png) は、以下の条件を満たす。<br>
+    - ![image](https://user-images.githubusercontent.com/25688193/38379868-08b7265a-393d-11e8-8880-5ea0e86737a8.png) から区間 [0, 1] への微分可能な関数で、<br>
+    実現可能集合 U 上で ![image](https://user-images.githubusercontent.com/25688193/38379899-1cc540be-393d-11e8-8817-5668cf46a5af.png) となる。<br>
+
+要求の組 ![image](https://user-images.githubusercontent.com/25688193/38379929-3722e07e-393d-11e8-93a8-7db039dbb29e.png) に対して、プレイヤー i の期待利得は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38379970-5a41cf20-393d-11e8-8dda-fdcafe44bc0a.png)<br>
+で与えられる。（値とその確率分布の積）<br>
+
+要求ゲームの元の利得関数 ![image](https://user-images.githubusercontent.com/25688193/38379716-8b420438-393c-11e8-9b3b-13d10800cfd3.png) では、<br>
+プレイヤーの要求の組 ![image](https://user-images.githubusercontent.com/25688193/38379818-db31af3e-393c-11e8-83f9-f16a13e22fb7.png) が実現可能集合 U の外に僅かでも外れれば、合意は成立せず、<br>
+結果、プレイヤーの利得は 0 になってしまう。<br>
+
+一方、変動ゲーム ![image](https://user-images.githubusercontent.com/25688193/38379716-8b420438-393c-11e8-9b3b-13d10800cfd3.png) では、このような場合（＝実現可能集合外部に外れる）でも、<br>
+正の確率で、合意が成立する可能性が存在する。<br>
 
 > 記載中...
 
