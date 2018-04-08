@@ -81,8 +81,8 @@
     1. [交渉ゲーム](#ID_1-8)
         1. [交渉問題の定式化](#ID_1-8-1)
         1. [ナッシュ交渉解 [Nash bargaining solution]](#ID_1-8-2)
-        1. [非協力交渉モデル１（ナッシュによるモデル）](#ID_1-8-3)
-        1. [非協力交渉モデル２（ルービンシュタインによるモデル）](#ID_1-8-4)
+        1. [非協力交渉モデル１（要求ゲーム）](#ID_1-8-3)
+        1. [非協力交渉モデル２（提案応答ゲーム）](#ID_1-8-4)
     1. 進化ゲーム
         1. 進化的に安定な戦略 [ESS : evolutionaly stable strategy]
         1. 中立的に安定な戦略 [NSS : neutrally stable strategy]
@@ -3394,7 +3394,7 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 <a id="ID_1-8-3"></a>
 
-### ◎ 非協力交渉モデル１（ナッシュによるモデル）
+### ◎ 非協力交渉モデル１（要求ゲーム）
 先の議論で、公理論的アプローチによって導出した、ナッシュ交渉解が、<br>
 交渉におけるプレイヤーの戦略的な利得最大化の帰結として説明出来る。<br>
 ここでは、このナッシュによる非協力交渉モデルを見ていく。<br>
@@ -3483,10 +3483,77 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 <a id="ID_1-8-4"></a>
 
-### ◎ 非協力交渉モデル２（ルービンシュタインによるモデル）
+### ◎ 非協力交渉モデル２（提案応答ゲーム）
+現実の多くの交渉では、合意が実現するまで、提案と応答が繰り返されることが多い。<br>
+このような挙動をモデルに取り込んだのが、ルービンシュタインによる非協力交渉モデルである。<br>
+このモデルでは、プレイヤーの**時間選好 [time preference]** が合意の実現に、重要な役割を果たす。<br>
+
+以下、その詳細を見ていく。<br>
+
+- 今、２人のプレイヤー１，２が、一定の金額 M の配分について交渉するケースを考える。<br>
+    （議論の簡単のため、M=1 とおく。）<br>
+- 交渉の実現可能な分配の集合を、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38431683-fb23519e-39ff-11e8-80d7-052dadc6eccc.png)<br>
+    とする。（ ![image](https://user-images.githubusercontent.com/25688193/38431698-0f3e4a30-3a00-11e8-929d-b018a9529c1e.png) は、プレイヤー i の分配額）<br>
+- 分配に関して合意がなされなければ、各々の分配額は 0 となる。<br>
+
+そして、以下のようなルールでゲームプレイされる。<br>
+
+1. ラウンド１<br>
+    まず始めに、プレイヤー１が分配 ![image](https://user-images.githubusercontent.com/25688193/38431762-4c2e97d8-3a00-11e8-8d6c-227ee90f1513.png) を提案する。<br>
+	次に、プレイヤー２が提案 ![image](https://user-images.githubusercontent.com/25688193/38431803-755f6c4a-3a00-11e8-9420-10b7269900ff.png) を受け入れるか否か決定する。<br>
+	もしプレイヤー２が提案を受け入れると、ゲームは終了し、提案 ![image](https://user-images.githubusercontent.com/25688193/38431803-755f6c4a-3a00-11e8-9420-10b7269900ff.png) が合意される。<br>
+    もしプレイヤー２が提案を拒否すると、ゲームは次のラウンドに進むことになる。<br>
+
+2. ラウンド２<br>
+	プレイヤー２が、分配 ![image](https://user-images.githubusercontent.com/25688193/38431962-f0a46b1c-3a00-11e8-9cee-e780bf57a4bc.png) を提案する。<br>
+	プレイヤー１が、その提案を受け入れるか否か決定する。<br>
+	もしプレイヤー１が提案を受け入れると、ゲームは終了し、提案 ![image](https://user-images.githubusercontent.com/25688193/38431987-029a7e74-3a01-11e8-93e1-5bd04637930f.png) が合意される。<br>
+	もしプレイヤー１が提案を拒否すると、ゲームは次のラウンドに進むことになる。<br>
+    以降、同様のルールが適用されていく。<br>
+
+3. 交渉では、合意が実現するまで、プレイヤー１，２が提案を繰り返す。<br>
+    奇数ラウンドでは、プレイヤー１が提案し、偶数ラウンドでは、プレイヤー２が提案する。<br>
+
+このゲームは、提案応答ゲームと呼ばれ、ゲームの木が無限の長さをもつ完全情報ゲームとして定式化される。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38452274-b776d6a6-3a7b-11e8-9730-a1ea77b9ff7c.png)<br>
+
+以下、この提案応答ゲーム Γ を定式化する。<br>
+
+- この提案応答ゲーム Γ の起こりうる結果の全体は、![image](https://user-images.githubusercontent.com/25688193/38452510-9473a49a-3a80-11e8-8a59-00aa48d9d968.png) と書ける。<br>
+    （d : 合意が実現しないという結果、T : 自然数）<br>
+
+- そして、プレイヤー i は、ゲームの結果に対して、以下のような効用関数 ![image](https://user-images.githubusercontent.com/25688193/38452520-b2361968-3a80-11e8-91dd-21073e0d929e.png) をもつとする。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38452529-e177f3d6-3a80-11e8-85cb-d1c54b71d5e0.png)<br>
+
+- また、この提案応答ゲーム Γ における、プレイヤーの純戦略は、以下のように定義出来る。<br>
+    - プレイヤー１の戦略 ![image](https://user-images.githubusercontent.com/25688193/38452533-046847b0-3a81-11e8-819f-b228a9dd2dbd.png) は、関数列 ![image](https://user-images.githubusercontent.com/25688193/38452537-19acfeae-3a81-11e8-9257-9d5eababb3c9.png) で、<br>
+        1. ラウンド t が奇数の場合、![image](https://user-images.githubusercontent.com/25688193/38452541-378dc282-3a81-11e8-9f06-221b06f12cb4.png)<br>
+        ![image](https://user-images.githubusercontent.com/25688193/38452550-644f7540-3a81-11e8-9f4f-8558fca65c0a.png) は、実現可能集合 X の (t-1) 個の直積集合で、ラウンド t 以前に拒否された提案の全体である。<br>
+        これは、また、提案応答ゲームのルールより、ラウンド t 以前のゲームプレイの履歴の集合となる。<br>
+        2. ラウンド t が偶数の場合、![image](https://user-images.githubusercontent.com/25688193/38452571-c88b8512-3a81-11e8-9df0-0fabe51f64d0.png)<br>
+
+    - プレイヤー２の戦略 ![image](https://user-images.githubusercontent.com/25688193/38452682-e358277c-3a83-11e8-8c32-813c23402a81.png) は、関数列 ![image](https://user-images.githubusercontent.com/25688193/38452686-f7b5c04e-3a83-11e8-88c8-2ace4f232297.png) で、<br>
+        1. ラウンド t が奇数の場合、![image](https://user-images.githubusercontent.com/25688193/38452693-23fb8102-3a84-11e8-9ccd-572f824c2a24.png)<br>
+        2. ラウンド t が偶数の場合、![image](https://user-images.githubusercontent.com/25688193/38452700-35389e96-3a84-11e8-8578-0eba8da226ea.png)<br>
+
+- そして、このプレイヤーの戦略の組 ![image](https://user-images.githubusercontent.com/25688193/38454215-f560e976-3a9d-11e8-9c3d-4abc516fef01.png) に対して、ゲームの結果（＝分配）![image](https://user-images.githubusercontent.com/25688193/38454218-0a829b60-3a9e-11e8-8ea6-cc97226d15aa.png) が一意に定まる。<br>
+    このとき、戦略の組 ![image](https://user-images.githubusercontent.com/25688193/38454215-f560e976-3a9d-11e8-9c3d-4abc516fef01.png) に対するプレイヤー i の利得は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38454229-3641d3d8-3a9e-11e8-80e3-79a31b13e511.png)<br>
+    で定義出来る。<br>
+
+この提案応答ゲームに対して、以下のナッシュ均衡点に関する定理が成り立つ。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38464032-a8463a84-3b41-11e8-85fb-9d8b38b5feb6.png)<br>
+
+この定理は、全てのパレート最適な利得ベクトルが、<br>
+提案応答ゲームにおけるナッシュ均衡点として実現されることを示している。<br>
+
 
 > 記載中...
 
+<br>
 
 ---
 
