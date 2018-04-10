@@ -3550,8 +3550,39 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 この定理は、全てのパレート最適な利得ベクトルが、<br>
 提案応答ゲームにおけるナッシュ均衡点として実現されることを示している。<br>
 
+これは、前述の要求ゲームにおけるナッシュ均衡点の結論と同じであるが、<br>
+要求ゲームとは異なり、提案応答ゲームでは、部分ゲーム完全均衡点が一意に存在し、<br>
+更に、将来利得に対する割引因子 δ が１に近づくにつれて、ナッシュ均衡点の利得ベクトルは、ナッシュ交渉解に収束する。<br>
 
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/38540336-9c3b0418-3cd6-11e8-9b43-e75a04b331ea.png)<br>
+
+この提案応答ゲームにおける部分ゲーム完全均衡点では、<br>
+最初のラウンドで合意が実現し、その際の利得分配は、（この定理の条件１にあるように）<br>
+![image](https://user-images.githubusercontent.com/25688193/38542897-0c2654f6-3cde-11e8-8bb6-fb34acec0a6b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38542938-22da612e-3cde-11e8-9f8a-2b14084cb488.png)<br>
+によって特徴づけられる。<br>
+
+つまり、提案者は応答者に対し、<br>
+次のラウンド以降の交渉で得られる割引利得（ ![image](https://user-images.githubusercontent.com/25688193/38543081-8b71461c-3cde-11e8-8c4c-cc64b359b801.png) ）と等しい利得を提案する。<br>
+（即ち、定理の条件１の関係式：![image](https://user-images.githubusercontent.com/25688193/38543129-b04565ea-3cde-11e8-9a52-86eb033bd5f7.png) ）<br>
+これは、言い換えると、<br>
+利得配分は、応答者にとって、受諾と拒否が無差別になるレベルで合意されることを意味している。<br>
+
+特に、２人のプレイヤーが同じ割引因子をもつとき、（![image](https://user-images.githubusercontent.com/25688193/38543369-5e40e638-3cdf-11e8-9862-81722ab26582.png)）<br>
+利得配分の式は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38543393-6eaf054a-3cdf-11e8-9fd7-253b018a509d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38543440-80c2beca-3cdf-11e8-802c-8b687a0b5c85.png)<br>
+となる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38543487-99513eda-3cdf-11e8-8dde-009ce26b6a3c.png)<br>
+
+ここで、プレイヤー１の提案 ![image](https://user-images.githubusercontent.com/25688193/38547645-92a33ede-3cea-11e8-993a-50691d9e58e0.png) とプレイヤー２の提案 ![image](https://user-images.githubusercontent.com/25688193/38547674-a8c6adb8-3cea-11e8-8b44-2bf38dc9e97f.png) は、<br>
+同じナッシュ積 ![image](https://user-images.githubusercontent.com/25688193/38547701-bdb5aa76-3cea-11e8-98b5-99e05d4c51e0.png) をもち、<br>
+利得配分は、提案者側に有利になる。（上図参照）<br>
+
+そして、プレイヤー１と２の割引因子 δ が限りなく１に近い時、<br>
+２人の提案 ![image](https://user-images.githubusercontent.com/25688193/38547747-ddee0216-3cea-11e8-843b-b79ed9ef9632.png) は、ナッシュ交渉解 ![image](https://user-images.githubusercontent.com/25688193/38547771-f0f5a652-3cea-11e8-80c4-636380d99f1e.png) に近づく。<br>
+
 
 <br>
 
