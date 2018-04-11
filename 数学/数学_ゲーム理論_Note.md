@@ -83,7 +83,9 @@
         1. [ナッシュ交渉解 [Nash bargaining solution]](#ID_1-8-2)
         1. [非協力交渉モデル１（要求ゲーム）](#ID_1-8-3)
         1. [非協力交渉モデル２（提案応答ゲーム）](#ID_1-8-4)
-    1. 進化ゲーム
+    1. 協力ゲーム
+        1. 協力ゲームの定式化
+    1. [進化ゲーム [evolutionary game]](#ID_1-10)
         1. 進化的に安定な戦略 [ESS : evolutionaly stable strategy]
         1. 中立的に安定な戦略 [NSS : neutrally stable strategy]
         1. レプリケータ・ダイナミクス
@@ -3582,6 +3584,16 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 
 そして、プレイヤー１と２の割引因子 δ が限りなく１に近い時、<br>
 ２人の提案 ![image](https://user-images.githubusercontent.com/25688193/38547747-ddee0216-3cea-11e8-843b-b79ed9ef9632.png) は、ナッシュ交渉解 ![image](https://user-images.githubusercontent.com/25688193/38547771-f0f5a652-3cea-11e8-80c4-636380d99f1e.png) に近づく。<br>
+
+
+<br>
+
+---
+
+<a id="ID_1-10"></a>
+
+## ■ 進化ゲーム [evolutionary game]
+> 記載中...
 
 
 <br>
