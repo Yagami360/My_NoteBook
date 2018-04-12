@@ -87,8 +87,7 @@
         1. 協力ゲームの定式化
     1. [進化ゲーム [evolutionary game]](#ID_1-10)
         1. [進化的に安定な戦略 [ESS : evolutionaly stable strategy]](#ID_1-10-1)
-        1. 中立的に安定な戦略 [NSS : neutrally stable strategy]
-        1. レプリケータ・ダイナミクス
+        1. [レプリケータ・ダイナミクス](#ID_1-10-2)
     1. [参考文献](#参考文献)
 
 ---
@@ -3728,8 +3727,77 @@ n 人戦略形ゲーム ![image](https://user-images.githubusercontent.com/25688
 この意味で、混合戦略 p からなる集団は、（異なる戦略の侵入に対して、）安定な集団である。<br>
 
 以上の概念を、進化的に安定な戦略（ESS）として、以下のように定義する。<br>
+![image](https://user-images.githubusercontent.com/25688193/38623154-dd7af44c-3ddf-11e8-8d3b-49c5b293f5f4.png)<br>
+
+この進化的に安定な戦略（ESS）に対して、以下の定理が成り立つ。<br>
+![image](https://user-images.githubusercontent.com/25688193/38629879-391ce11a-3df0-11e8-8a17-d7ce7870ad33.png)<br>
+
+以下、この進化的に安定な戦略（ESS）を、進化生物学での基本的なゲームを例に、実際に解いてみる。<br>
+
+（例）タカ-ハトゲーム [Hawk-Dove game]<br>
+![image](https://user-images.githubusercontent.com/25688193/38630340-99d89c5a-3df1-11e8-9cb6-491add28352a.png)<br>
+
+- 同じ集団からランダムに選ばれた２つの生物個体が、縄張りや餌などをめぐり対立するゲーム的状況を考える。<br>
+- ２つの生物個体が、選択可能な純戦略は、タカ戦略（H）とハト戦略（D）である。<br>
+- タカ戦略（H）は攻撃的な戦略であり、（この問題においては）相手が負傷するまで戦うような戦略である。<br>
+- 一方、ハト戦略（D）は穏健な戦略であり、（この問題においては）双方が負傷するまでは戦わないような戦略である。<br>
+- それぞれの生物個体が勝つ確率はランダムな 1/2 である。<br>
+- 勝者は、資源の価値 V を独占することが出来る。<br>
+- 敗者は、負傷し、負傷コスト C を支払うことになる。<br>
+
+このようなタカハトゲームにおいて、進化的に安定な戦略（ESS）を探す。<br>
+
+1. ![image](https://user-images.githubusercontent.com/25688193/38631322-63d1e3e8-3df4-11e8-8615-d9081f415670.png) のとき、タカ戦略 H は ESS であることを示す。<br>
+	![image](https://user-images.githubusercontent.com/25688193/38631322-63d1e3e8-3df4-11e8-8615-d9081f415670.png) のとき、タカ戦略（H）がハト戦略（D）を弱く支配する。<br>
+	従って、任意の ![image](https://user-images.githubusercontent.com/25688193/38657442-338b3132-3e5b-11e8-80ab-0c2e88b45dbc.png) に対して、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38657461-43bc2674-3e5b-11e8-825d-1df751e1eab5.png)<br>
+	
+	ESS の定義より、タカ戦略（H）は ESS であると言える。<br>
+
+2. ![image](https://user-images.githubusercontent.com/25688193/38657480-6609ba20-3e5b-11e8-8670-80c744361a7e.png) のとき、<br>
+	確率 ![image](https://user-images.githubusercontent.com/25688193/38657498-7c2bb650-3e5b-11e8-88b1-dba4b8b88994.png) でタカ戦略（H）をとり、確率 ![image](https://user-images.githubusercontent.com/25688193/38657509-8ea6095c-3e5b-11e8-9088-2f48c3989b81.png) でハト戦略（D）をとる混合戦略は、ESS であることを示す。<br>
+
+	定理（ESSと進化の均衡条件、進化の安定条件）より、ESS はナッシュ均衡点でもある。<br>
+	純戦略の組 (H,H) と (D,D) は、その利得行列よりナッシュ均衡点ではないので、<br>
+	ある混合戦略 p がナッシュ均衡点となり、又、ESS でもあることになる。<br>
+	今、この混合戦略 p を、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38659264-c4f825a0-3e63-11e8-84f0-144047087efd.png)<br>
+    とすると、（ ![image](https://user-images.githubusercontent.com/25688193/38659252-b2bdbd8c-3e63-11e8-983c-f3f2d605b880.png) : タカ戦略が選択される確率）<br>
+    混合戦略のナッシュ均衡点の性質より、<br>
+    <br>
+	この ![image](https://user-images.githubusercontent.com/25688193/38659252-b2bdbd8c-3e63-11e8-983c-f3f2d605b880.png) は、V<C の関係より、![image](https://user-images.githubusercontent.com/25688193/38659300-ee09504a-3e63-11e8-9942-026ad66caf4f.png) となる。<br>
+	従って、混合戦略 ![image](https://user-images.githubusercontent.com/25688193/38659352-2226ad00-3e64-11e8-8b1c-047d8ca377a2.png) は存在し、ESS である。<br>
 
 <br>
+
+<!----------------------------------------------------------------->
+
+ESS と各均衡点の関係性に関する定理は、以下のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/38668353-ce5124e2-3e7e-11e8-8a6c-83309a731290.png)<br>
+
+ESS の存在性に関する定理は、以下のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/38668423-e0e7cec6-3e7e-11e8-9cc4-d33efad1d8cd.png)<br>
+
+先のタカハトゲームでは、ESS は存在したが、<br>
+戦略形２人対称ゲーム（進化ゲーム）において、ESS は必ずしも存在するとは限らない。<br>
+そのことを以下の例で示す。<br>
+
+（例）じゃんけんゲーム<br>
+![image](https://user-images.githubusercontent.com/25688193/38668509-0cf2491a-3e7f-11e8-8b10-3e7d0d038cd3.png)<br>
+
+このゲームは、ただ１つのナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/38675601-44079036-3e93-11e8-9a9c-fd79d888d2c1.png) を持つ。<br>
+この ![image](https://user-images.githubusercontent.com/25688193/38675668-6e3f46be-3e93-11e8-9473-c2c803b90248.png) と任意の ε に対して、<br>
+![image](https://user-images.githubusercontent.com/25688193/38675702-8f91adfc-3e93-11e8-9f88-b3315c376e5d.png)<br>
+つまり、ESS であるための条件 ![image](https://user-images.githubusercontent.com/25688193/38675760-cc701f9c-3e93-11e8-8dfa-a189f354840d.png) が成り立たないので、<br>
+このゲームの ESS は存在しない。<br>
+
+<br>
+
+---
+
+<a id="ID_1-10-2"></a>
+
+### ◎ レプリケータ動学
 
 > 記載中...
 
