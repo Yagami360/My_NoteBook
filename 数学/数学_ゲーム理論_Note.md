@@ -3798,6 +3798,54 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 <a id="ID_1-10-2"></a>
 
 ### ◎ レプリケータ動学
+先の ESS の概念は、母集団が単一の混合戦略から構成される単型集団から導入した。<br>
+次に、各純戦略を採用するプレイヤーが、ある確率分布に従って分布しているような状態、<br>
+即ち、母集団が複数の戦略から構成される多型集団から考える。<br>
+
+今、各プレイヤーが、それぞれ１つの純戦略を採用している大規模集団（母集団）があったとする。<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38722580-4aab12c2-3f39-11e8-9838-88cbc170b5b7.png) : 集団内の純戦略 i の割合（確率）<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38722614-653d2c10-3f39-11e8-9063-97433fa61b9f.png) : 純戦略の確率分布<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38723429-00376aa8-3f3c-11e8-95e8-71c989b10874.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38723487-360af73a-3f3c-11e8-90ce-6640c73b18e6.png) : 純戦略 i を採用するプレイヤーと、純戦略 j を採用するプレイヤーが対戦する時の利得。<br>
+    A は成分 ![image](https://user-images.githubusercontent.com/25688193/38723514-49bb06e4-3f3c-11e8-9c3e-fe4023ebc17f.png) からなる n×n の利得行列<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38723555-653078aa-3f3c-11e8-909b-3302dfc49636.png)<br>
+
+このときの、純戦略 i を採用するプレイヤーの期待利得は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38723584-8326f578-3f3c-11e8-861f-634dff9efc87.png)<br>
+
+又、この集団での平均利得は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38726125-4605b62c-3f44-11e8-8b72-7654ad565ad8.png)<br>
+
+プレイヤーの利得（適応度）は、（生物学からの観点に従うと）親の個体が次世代に残せる子の期待値とみなせる。<br>
+すると、次世代で純戦略 i を採用するプレイヤーの個体数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38726209-80c8c286-3f44-11e8-9f9e-2834299c5606.png)<br>
+
+又、次世代での総個体数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38726231-8e31d73c-3f44-11e8-8d83-e5f4be4a86ee.png)<br>
+
+従って、次世代において純戦略 i を採用するプレイヤーの割合 ![image](https://user-images.githubusercontent.com/25688193/38726945-963dd9d8-3f46-11e8-9068-66cab20d6582.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38726974-abf8c0bc-3f46-11e8-958c-bc07943c7f96.png)<br>
+となる。<br>
+
+よって、（集団が親世代から子世代に推移するときの）割合の変化は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38726996-bec67d38-3f46-11e8-8524-bcd170759ef9.png)<br>
+であり、時間を連続的にして、上式の差分方程式を微分方程式に書き換えると、<br>
+![image](https://user-images.githubusercontent.com/25688193/38727024-d214edac-3f46-11e8-8442-6487fe17c397.png)<br>
+
+ここで、この微分方程式の動学的な性質は、分母の項を除外した式<br>
+![image](https://user-images.githubusercontent.com/25688193/38727049-e3068ad0-3f46-11e8-826b-b9414fba1a7a.png)<br>
+
+と変わらないので、この分母項を除外した式が、進化ゲームの基本的なモデルとして提案されている。<br>
+
+これらの議論をまとめると、以下のような定義となる。<br>
+![image](https://user-images.githubusercontent.com/25688193/38727098-06e09da6-3f47-11e8-8c49-82a13fe04834.png)<br>
+
+<br>
+
+<!----------------------------------------------------------------------------->
 
 > 記載中...
 
