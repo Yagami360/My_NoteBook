@@ -3892,9 +3892,52 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 
 <a id="ID_1-10-2-2"></a>
 
-#### ☆ レプリケーターダイナミクスの例
+#### ☆ レプリケーター・ダイナミクスの例
+
+（例）タカ - ハトゲームのレプリケーター・ダイナミクス<br>
+![image](https://user-images.githubusercontent.com/25688193/38765725-e94af762-4001-11e8-8df1-df5f59c6a6ad.png)<br>
+
+先にも見たように、![image](https://user-images.githubusercontent.com/25688193/38765734-01d23e58-4002-11e8-8d01-68865aa103d3.png) のとき、<br>
+確率 ![image](https://user-images.githubusercontent.com/25688193/38765742-2027bd9c-4002-11e8-89b0-7f56ebc6e2ed.png) でタカ戦略（H）をとり、確率 ![image](https://user-images.githubusercontent.com/25688193/38765749-30398454-4002-11e8-9c23-8147856b7d1d.png) でハト戦略（D）をとる混合戦略は、ESS である。<br>
+
+今、集団内でタカ戦略（H）をとるプレイヤーの割合を ![image](https://user-images.githubusercontent.com/25688193/38765755-572108da-4002-11e8-83bb-b7a73fb76bde.png) とし、<br>
+その戦略分布を ![image](https://user-images.githubusercontent.com/25688193/38769044-8c0fd744-4037-11e8-809c-566750598e0f.png) とすると、<br>
+このゲームのレプリケーター・ダイナミクスは、以下の微分方程式で記述される。<br>
+![image](https://user-images.githubusercontent.com/25688193/38765767-7ab0637c-4002-11e8-88a5-9923b8313272.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38766314-4781b330-400b-11e8-93d9-feab2a6fa238.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38766318-5b74f1d6-400b-11e8-865b-0372efcb7f17.png)<br>
+
+従って、このレプリケーター・ダイナミクスは、<br>
+３つの平衡点 ![image](https://user-images.githubusercontent.com/25688193/38766327-73ab0b50-400b-11e8-9f1b-b0628606f8f2.png) を持つことが分かる。<br>
+ここで、![image](https://user-images.githubusercontent.com/25688193/38767234-a8af1af0-4018-11e8-892e-f62dcb5f68d7.png) のときは、![image](https://user-images.githubusercontent.com/25688193/38767238-bed95fca-4018-11e8-8ad3-f48a29913a86.png) であり、![image](https://user-images.githubusercontent.com/25688193/38767246-dfdf3032-4018-11e8-9da5-ee6a8c3d8115.png) のときは、![image](https://user-images.githubusercontent.com/25688193/38767262-0addc9c4-4019-11e8-9b76-42b4b47e0a3e.png) なので、<br>
+３つの平衡点の内、![image](https://user-images.githubusercontent.com/25688193/38767272-217d684c-4019-11e8-9142-128c470070e2.png) のみが漸近安定な平衡点である。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38769068-f09c76b8-4037-11e8-875c-a6e044552062.png)<br>
+
+<br>
+
+<!-------------------------------------------------------------------->
+
+（例）じゃんけんゲームのレプリケーター・ダイナミクス<br>
+![image](https://user-images.githubusercontent.com/25688193/38769034-5defbbea-4037-11e8-9477-4aead37df5ba.png)<br>
+
+先に見たように、このゲームの唯一のナッシュ均衡点は、![image](https://user-images.githubusercontent.com/25688193/38769031-49354026-4037-11e8-8735-b002a78b8c3b.png) であり、ESS は存在しない。<br>
+
+集団の戦略分布を ![image](https://user-images.githubusercontent.com/25688193/38769078-1a8e9afa-4038-11e8-811c-b2ee3c5c6c9e.png) とすると、<br>
+レプリケーター・ダイナミクスの微分方程式<br>
+![image](https://user-images.githubusercontent.com/25688193/38769083-3384b396-4038-11e8-9ee1-97ee212bfe62.png)<br>
+の各項は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38769089-46ec9ee4-4038-11e8-9e59-651d2a25dcb2.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38769095-5773d958-4038-11e8-9b7e-445f6362a83b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38769110-7aedd794-4038-11e8-8fef-fb18a3446c81.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38769114-892f6958-4038-11e8-9aaf-e39bae41bace.png)<br>
+
+よって、このゲームのレプリケーター・ダイナミクスは、以下の微分方程式になる。<br>
+![image](https://user-images.githubusercontent.com/25688193/38769119-a092a510-4038-11e8-8c97-793e8bc56ea7.png)<br>
 
 > 記載中...
+
+<br>
 
 ---
 
