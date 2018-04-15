@@ -90,7 +90,7 @@
         1. [レプリケータ・ダイナミクス [RD : replicator dynamics]](#ID_1-10-2)
             1. [レプリケータ・ダイナミクスの解の性質](#ID_1-10-2-1)
             1. [レプリケータ・ダイナミクスの例](#ID_1-10-2-2)
-        1. 社会進化の動学ゲーム
+        1. [社会進化の動学ゲーム](#ID_1-10-3)
     1. [参考文献](#参考文献)
 
 ---
@@ -3934,6 +3934,24 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 
 よって、このゲームのレプリケーター・ダイナミクスは、以下の微分方程式になる。<br>
 ![image](https://user-images.githubusercontent.com/25688193/38769119-a092a510-4038-11e8-8c97-793e8bc56ea7.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38775046-ab3ee85a-40b2-11e8-9786-7a4b419b6efa.png) 上の関数 ![image](https://user-images.githubusercontent.com/25688193/38775049-bcb76ca6-40b2-11e8-844a-f18a195fa8aa.png) を定義すると、<br>
+この関数 ![image](https://user-images.githubusercontent.com/25688193/38775151-1e12b980-40b6-11e8-9fd7-e6867e1a3e31.png) は、ナッシュ均衡点 ![image](https://user-images.githubusercontent.com/25688193/38775156-3991c3fe-40b6-11e8-9a9b-e437af79ca10.png) で最大値をとり、<br>
+レプリケーター・ダイナミクスの解曲線 ![image](https://user-images.githubusercontent.com/25688193/38775158-595ee46e-40b6-11e8-977f-9d4db27fa97e.png) 上で、<br>
+![image](https://user-images.githubusercontent.com/25688193/38775162-6b329df2-40b6-11e8-93a0-04e1ec6b9d0c.png)<br>
+
+よって、レプリケーター・ダイナミクスの ![image](https://user-images.githubusercontent.com/25688193/38775046-ab3ee85a-40b2-11e8-9786-7a4b419b6efa.png) 内の解曲線 ![image](https://user-images.githubusercontent.com/25688193/38775158-595ee46e-40b6-11e8-977f-9d4db27fa97e.png) 上で、<br>
+この関数 ![image](https://user-images.githubusercontent.com/25688193/38775151-1e12b980-40b6-11e8-9fd7-e6867e1a3e31.png) は一定値をとり、解曲線 ![image](https://user-images.githubusercontent.com/25688193/38775158-595ee46e-40b6-11e8-977f-9d4db27fa97e.png) と ![image](https://user-images.githubusercontent.com/25688193/38775151-1e12b980-40b6-11e8-9fd7-e6867e1a3e31.png) の等高線は一致する。（下図）<br>
+![image](https://user-images.githubusercontent.com/25688193/38775176-aff2df92-40b6-11e8-9c23-3b94bfba07cc.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38775279-49c6ac46-40b9-11e8-9ac2-30b2a4e96a93.png)<br>
+
+<br>
+
+---
+
+<a id="ID_1-10-3"></a>
+
+### ◎ 社会進化の動学ゲーム
 
 > 記載中...
 
