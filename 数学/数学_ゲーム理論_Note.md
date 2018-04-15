@@ -3810,7 +3810,10 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 - ![image](https://user-images.githubusercontent.com/25688193/38722580-4aab12c2-3f39-11e8-9838-88cbc170b5b7.png) : 集団内の純戦略 i の割合（確率）<br>
 
 - ![image](https://user-images.githubusercontent.com/25688193/38722614-653d2c10-3f39-11e8-9063-97433fa61b9f.png) : 純戦略の確率分布<br>
-    ![image](https://user-images.githubusercontent.com/25688193/38723429-00376aa8-3f3c-11e8-95e8-71c989b10874.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38723429-00376aa8-3f3c-11e8-95e8-71c989b10874.png)![image](https://user-images.githubusercontent.com/25688193/38776044-85dd9d0e-40cb-11e8-8a35-c427c82d3753.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38776043-73df7b9a-40cb-11e8-882c-1fe4684b4765.png) : 純戦略の分布の集合（確率の条件より、自由度は - 1 され、n-1 ）
+    <br>
 
 - ![image](https://user-images.githubusercontent.com/25688193/38723487-360af73a-3f3c-11e8-90ce-6640c73b18e6.png) : 純戦略 i を採用するプレイヤーと、純戦略 j を採用するプレイヤーが対戦する時の利得。<br>
     A は成分 ![image](https://user-images.githubusercontent.com/25688193/38723514-49bb06e4-3f3c-11e8-9c3e-fe4023ebc17f.png) からなる n×n の利得行列<br>
@@ -3952,6 +3955,46 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 <a id="ID_1-10-3"></a>
 
 ### ◎ 社会進化の動学ゲーム
+先のレプリケーター・ダイナミクスは、<br>
+親から子世代へ行動様式（戦略）などの表現型が、遺伝メカニズムにより継承され、<br>
+適応度の高い親個体ほど、より多くの子孫を残せるという、自然淘汰、生物進化のプロセスをモデル化するものであった。<br>
+これに対して、社会現象の行動継承のダイナミクスは、より多様で広範囲に複雑である。<br>
+ここでは、社会進化の基本モデルを見ていく。<br>
+
+社会システムにおけるある１つの集団について考える。<br>
+ここでの集団は、同じ属性をもつ多数のプレイヤー（男性、女性、組織等）から構成されるものとする。<br>
+又、集団の各プレイヤーは、n 個の純戦略 ![image](https://user-images.githubusercontent.com/25688193/38776058-c6341b1c-40cb-11e8-8f65-78cbc8751d24.png) の内、１つを採用しているものとする。<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38776125-e4128262-40cc-11e8-9f95-9670ea66f957.png) : 集団内の純戦略 i の割合（確率）<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38776129-f664fd14-40cc-11e8-8c5c-458a35840b94.png) : 純戦略の確率分布<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38776136-1191c95a-40cd-11e8-8052-f0af1f0eaa0e.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38776143-26defe9a-40cd-11e8-83e2-cb24dec57c67.png) : 純戦略の分布の集合（確率の条件より、自由度は - 1 され、n-1 ）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38776150-57cb34a6-40cd-11e8-8f3b-ec1853d9e9c8.png)<br>
+
+- ![image](https://user-images.githubusercontent.com/25688193/38776156-7fa25630-40cd-11e8-8eb6-898832dbe992.png) : 集団の戦略分布（確率分布）が x であるときに、純戦略 ![image](https://user-images.githubusercontent.com/25688193/38776161-95360da2-40cd-11e8-8767-9ffd2a96bb21.png) を採用するプレイヤーの利得。<br>
+    A は成分 ![image](https://user-images.githubusercontent.com/25688193/38776166-b2cb136c-40cd-11e8-90af-80784c2a7238.png) からなる n×n の利得行列<br>
+    ![image](https://user-images.githubusercontent.com/25688193/38776169-c9247d74-40cd-11e8-9225-5e900d2d6b24.png)<br>
+
+ここで、集団の戦略分布 ![image](https://user-images.githubusercontent.com/25688193/38776186-f0cadfda-40cd-11e8-882f-46914c2f9459.png) と利得 ![image](https://user-images.githubusercontent.com/25688193/38776192-ff18ef00-40cd-11e8-85b2-48787ef2e098.png) の組み合わせ ![image](https://user-images.githubusercontent.com/25688193/38776199-10a23f56-40ce-11e8-8056-2c12ebb504d4.png) を**集団ゲーム**という。<br>
+
+この集団ゲームにおけるプレイヤーは、集団内でランダムで他のプレイヤーと対戦するものとする。<br>
+このときの、純戦略 ![image](https://user-images.githubusercontent.com/25688193/38776161-95360da2-40cd-11e8-8767-9ffd2a96bb21.png) を採用するプレイヤーの期待利得は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38776276-4f9ec0f2-40cf-11e8-9e97-67754f538bc7.png)<br>
+
+又、集団内での平均利得は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38776291-73947f92-40cf-11e8-8277-dd64bb3674ac.png)<br>
+
+集団ゲームにおいても、（戦略形ゲームと同様にして）ナッシュ均衡点を以下のように導入することが出来る。<br>
+![image](https://user-images.githubusercontent.com/25688193/38776498-965801b8-40d2-11e8-827d-68531dfebb36.png)<br>
+
+この集団ゲームにおけるナッシュ均衡点に関して、以下の性質が成り立つ。<br>
+![image](https://user-images.githubusercontent.com/25688193/38776537-6273ac3e-40d3-11e8-8698-5ae382ab01bd.png)<br>
+
+<br>
+
+<!--------------------------------------------------------------------->
 
 > 記載中...
 
