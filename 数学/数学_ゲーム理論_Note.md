@@ -91,6 +91,8 @@
             1. [レプリケータ・ダイナミクスの解の性質](#ID_1-10-2-1)
             1. [レプリケータ・ダイナミクスの例](#ID_1-10-2-2)
         1. [社会進化の動学ゲーム](#ID_1-10-3)
+            1. [社会進化の動学ゲームの解の性質](#ID_1-10-3-1)
+            1. [社会進化の動学ゲームの例](#ID_1-10-3-2)
     1. [参考文献](#参考文献)
 
 ---
@@ -3995,6 +3997,45 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 <br>
 
 <!--------------------------------------------------------------------->
+
+本題の社会進化の動学ゲームは、以下のように定義できる。<br>
+![image](https://user-images.githubusercontent.com/25688193/38778359-955077d4-40f3-11e8-8138-e5c84a0fa376.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38777584-625f9d18-40e5-11e8-9a31-d253cd5c806b.png)<br>
+
+
+利得単調な動学ゲームでは、より高い利得を得る純戦略の割合が、より高い成長率（ ![image](https://user-images.githubusercontent.com/25688193/38777603-da4d5e28-40e5-11e8-9d5f-ec46e7e73f4f.png) ）で増加する。<br>
+以下、このことを例を使って見ていく。<br>
+
+（例）技術標準の選択ゲーム<br>
+![image](https://user-images.githubusercontent.com/25688193/38777683-ce21311e-40e6-11e8-8247-97a524316843.png)<br>
+
+技術 A のシェアを ![image](https://user-images.githubusercontent.com/25688193/38778400-2ddfe2e6-40f4-11e8-9c63-1276fe64f6f0.png) とし、技術 B のシェアを ![image](https://user-images.githubusercontent.com/25688193/38778412-3e3b1ebc-40f4-11e8-9525-34909833be29.png) とし、 
+![image](https://user-images.githubusercontent.com/25688193/38778413-50ef1df6-40f4-11e8-8dc6-cb16871915fd.png) とおく。<br>
+
+このとき、技術 A の製品を購入する消費者の利得は、![image](https://user-images.githubusercontent.com/25688193/38778417-61dc0f48-40f4-11e8-958e-386cf7b49ff6.png)<br>
+技術 B の製品を購入する消費者の利得は、![image](https://user-images.githubusercontent.com/25688193/38778423-753a575c-40f4-11e8-93d6-f16ca91a6290.png)<br>
+すると、この動学ゲームでは、<br>
+![image](https://user-images.githubusercontent.com/25688193/38778427-897205b2-40f4-11e8-9f72-7dfa8b20e3b2.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38778434-9a5a3dae-40f4-11e8-9ee3-991429fcb73d.png)<br>
+が成り立ち、利得単調的であることが分かる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38779604-a615acc6-4105-11e8-91f2-fba1ccfff0c8.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38779612-bb3eed10-4105-11e8-9e17-65591f9c9da7.png) の範囲では、技術 B の製品を購入する消費者の利得のほうが大きいので、<br>
+技術 B の製品シェアが増加し、![image](https://user-images.githubusercontent.com/25688193/38779621-cae9dfd6-4105-11e8-9e05-be00b6bb3b77.png) の値に収束し、技術 B が標準技術となる。<br>
+逆に、![image](https://user-images.githubusercontent.com/25688193/38779622-d9cbb1fa-4105-11e8-9ce0-290b129ada54.png) の範囲では、技術 A の製品を購入する消費者の利得のほうが大きいので、<br>
+技術 A の製品シェアが増加し、![image](https://user-images.githubusercontent.com/25688193/38779625-e8570b5c-4105-11e8-9023-9e482c05b0df.png) の値に収束し、技術 A が標準技術となる。<br>
+
+このように、このゲームにおいては、どの技術が（業界等の）標準となるかは、技術的な優劣だけではなく、<br>
+新しい技術が導入された初期状態での技術の普及の程度に大きく依存する。<br>
+（このような現象を、社会進化の歴史経路依存性という。）<br>
+
+<br>
+
+<a id="ID_1-10-3-1"></a>
+
+#### ☆ 社会進化の動学ゲームの解の性質
 
 > 記載中...
 
