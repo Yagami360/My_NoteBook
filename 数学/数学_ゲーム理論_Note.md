@@ -85,6 +85,7 @@
         1. [非協力交渉モデル２（提案応答ゲーム）](#ID_1-8-4)
     1. 協力ゲーム
         1. 協力ゲームの定式化
+        1. コアの理論
     1. [進化ゲーム [evolutionary game]](#ID_1-10)
         1. [進化的に安定な戦略 [ESS : evolutionaly stable strategy]](#ID_1-10-1)
         1. [レプリケータ・ダイナミクス [RD : replicator dynamics]](#ID_1-10-2)
@@ -3801,7 +3802,7 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 
 <a id="ID_1-10-2"></a>
 
-### ◎ レプリケータ動学
+### ◎ レプリケータ動学（レプリケーター・ダイナミクス）
 先の ESS の概念は、母集団が単一の混合戦略から構成される単型集団から導入した。<br>
 次に、各純戦略を採用するプレイヤーが、ある確率分布に従って分布しているような状態、<br>
 即ち、母集団が複数の戦略から構成される多型集団から考える。<br>
@@ -3898,7 +3899,7 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 
 #### ☆ レプリケーター・ダイナミクスの例
 
-（例）タカ - ハトゲームのレプリケーター・ダイナミクス<br>
+##### タカ - ハトゲームのレプリケーター・ダイナミクス
 ![image](https://user-images.githubusercontent.com/25688193/38765725-e94af762-4001-11e8-8df1-df5f59c6a6ad.png)<br>
 
 先にも見たように、![image](https://user-images.githubusercontent.com/25688193/38765734-01d23e58-4002-11e8-8d01-68865aa103d3.png) のとき、<br>
@@ -3920,9 +3921,7 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 
 <br>
 
-<!-------------------------------------------------------------------->
-
-（例）じゃんけんゲームのレプリケーター・ダイナミクス<br>
+##### じゃんけんゲームのレプリケーター・ダイナミクス<br>
 ![image](https://user-images.githubusercontent.com/25688193/38769034-5defbbea-4037-11e8-9477-4aead37df5ba.png)<br>
 
 先に見たように、このゲームの唯一のナッシュ均衡点は、![image](https://user-images.githubusercontent.com/25688193/38769031-49354026-4037-11e8-8735-b002a78b8c3b.png) であり、ESS は存在しない。<br>
@@ -3948,6 +3947,56 @@ ESS の存在性に関する定理は、以下のようになる。<br>
 この関数 ![image](https://user-images.githubusercontent.com/25688193/38775151-1e12b980-40b6-11e8-9fd7-e6867e1a3e31.png) は一定値をとり、解曲線 ![image](https://user-images.githubusercontent.com/25688193/38775158-595ee46e-40b6-11e8-977f-9d4db27fa97e.png) と ![image](https://user-images.githubusercontent.com/25688193/38775151-1e12b980-40b6-11e8-9fd7-e6867e1a3e31.png) の等高線は一致する。（下図）<br>
 ![image](https://user-images.githubusercontent.com/25688193/38775176-aff2df92-40b6-11e8-9c23-3b94bfba07cc.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/38775279-49c6ac46-40b9-11e8-9ac2-30b2a4e96a93.png)<br>
+
+<br>
+
+##### 共通利害ゲームのレプリケーター・ダイナミクス（協力の進化）
+ナッシュ均衡点は、必ずしもパレート最適ではないが、<br>
+パレート最適なナッシュ均衡点と、パレート最適でないナッシュ均衡点が複数個存在するようなゲームでは、<br>
+そのどちらのナッシュ均衡点が、進化的に安定な戦略（ESS）になるだろうか？という疑問が残る。<br>
+この疑問に対する１つの知見を導くために、以下のようなゲームを考える。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38807180-cba1d058-41b6-11e8-8442-8fd4e1c0e44c.png)<br>
+
+上表のような利得関係を持つゲームを考える。<br>
+このゲームでは、２人のプレイヤーは常に同じ利得を得るので、**共通利害ゲーム [game of common interest]** という。<br>
+
+このゲームに対し、外部からの侵入者が互いに協力する（＝**秘密の握手 [secret handshake]** ）というプレイヤー戦略（m）を集団に織り込んで拡張する。<br>
+具体的には、侵入者たちがお互いにしか認識できないようなシグナルをやり取りし、シグナルを出すプレイヤーと対戦するときは、相手が同じ侵入者であると認識し、互いに有利なように協力（c）の戦略を取るが、そうでないときは、非協力（nc）の戦略を取る。<br>
+このとき、利得関係は以下の表のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/38807243-f629ea72-41b6-11e8-81f1-b4750705da61.png)<br>
+
+元の共通利害ゲームでは、
+純戦略からなるナッシュ均衡点 (c,c) , (nc,nc) の２つが存在し、そのどちらも ESS である。<br>
+又、混合戦略からなるナッシュ均衡点は、ESS である。<br>
+
+これに対し、秘密の握手を侵入者を織り込んだゲームでは、<br>
+純戦略からなるナッシュ均衡点 (c,c) , (m,m) の２つのナッシュ均衡点が存在し、そのどちらも ESS となるが、<br>
+元の共通利害ゲームで、ESS であった (nc,nc) の戦略は、もはや ESS ではなくなる。<br>
+（ (nc,nc) 戦略は、(m,m) 戦略により支配されるため）<br>
+
+この秘密の握手を織り込んだゲームでの（侵入者の協力の）進化のダイナミクスを調べるために、レプリケーター・ダイナミクスを適用する。<br>
+各々の戦略（nc, c, m）の集団内での比率を ![image](https://user-images.githubusercontent.com/25688193/38810697-8a164ad6-41c2-11e8-919a-0909928db88d.png) とすると、<br>
+![image](https://user-images.githubusercontent.com/25688193/38810715-9b7a8e72-41c2-11e8-926d-3d50841e6d7e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38810761-b2eedd92-41c2-11e8-8ece-74dcbc699746.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38810788-c5dfd258-41c2-11e8-90d0-c06ff9e1a8b6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38810815-d6ee64b0-41c2-11e8-8852-b25ec31c10d9.png)<br>
+の関係が成り立つので、レプリケーター・ダイナミクスの微分方程式 ![image](https://user-images.githubusercontent.com/25688193/38810847-f068e60e-41c2-11e8-9b35-c83a984f9cd9.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38810898-117eeaf0-41c3-11e8-82fa-32c0d9d2422c.png)<br>
+
+ここで、![image](https://user-images.githubusercontent.com/25688193/38811980-00945f92-41c6-11e8-9d3c-bd08e5daab02.png) の関係より、戦略 c と戦略 m の割合の変化は、<br>
+![image](https://user-images.githubusercontent.com/25688193/38812028-1ccb5332-41c6-11e8-86fc-084780d91a3b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/38812130-5eba025c-41c6-11e8-8d3c-aedad581ef0f.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/38812162-7b78579a-41c6-11e8-91e1-20cfa37ffc94.png) の位相図を書くと、以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/38812824-4cf382bc-41c8-11e8-8210-502c8aab9954.png)<br>
+
+この位相図から分かるように、平衡点状態にない戦略は、初期状態から、ESS である (c,c) , (m,m) のどちらかに収束する。<br>
+特に、パレート最適でないナッシュ均衡点 (nc, nc) 及び、その近傍の全ての初期状態は、ESS である (m,m) に収束する。<br>
+
+即ち、パレート最適でないナッシュ均衡点で均衡している集団は、<br>
+秘密の握手を戦略とする侵入者によって、乗っ取られる。<br>
+
 
 <br>
 
