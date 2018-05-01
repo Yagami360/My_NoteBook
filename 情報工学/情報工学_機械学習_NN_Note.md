@@ -67,6 +67,8 @@ I will add contents as needed.
     1. 一般物体認識を学習した CNN と転移学習
     1. タイル型畳み込み [Tiled convolution]<br>（プーリング層における移動不変性 [location invariant]の拡張）
     1. 逆畳み込みネットワーク [deconvolutional network]<br>（CNN の可視化）
+    1. VGG-16
+    1. VGG-19
 1. [リカレントニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
     1. [リカレントニューラルネットワークのアーキテクチャの種類](#ID_4-1)
         1. [隠れ層間で回帰構造をもつネットワーク](#ID_4-1-1)
@@ -92,6 +94,12 @@ I will add contents as needed.
     1. [GAN [Generative Adversarial Network]（敵対的ネットワーク）](#ID_10-1)
         1. [DCGAN [Deep Convolutional GAN]](#ID_10-1-1)
     1. VAE [Variational Autoencoder]
+1. [一般物体検出 [object detection]](#ID_11)
+    1. R-CNN
+    1. Faster R-CNN
+    1. YOLO v1
+    1. [SSD [Single Shot Detecter]（単発検出器）](#ID_11-4)
+    1. YOLO v2
 1. [（外部リンク）ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
 1. [参考文献](#参考文献)
 
@@ -693,9 +701,84 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 > 記載中...
 
+<br>
+
+---
+
+<a id="ID_11"></a>
+
+## ■ 一般物体検出 [object detection]
+> 記載中...
+
+<a id="ID_11-4"></a>
+
+### ◎ SSD [single shot detector]（単発検出器）
+
+- 参考サイト
+    - [元論文 : arXiv](https://arxiv.org/pdf/1512.02325.pdf)<br>
+    - [Qiita : SSD:Single Shot Multibox Detector](https://qiita.com/de0ta/items/1ae60878c0e177fc7a3a)<br>
+        - SSD の論文の日本語訳<br>
+    - https://www.slideshare.net/KazukiMotohashi2/rcnn<br>
+        - スライドの 37 ページ目から SSD の解説有り（Keras でのコード付き）  <br>
+    - http://segafreder.hatenablog.com/entry/2018/03/11/152515<br>
 
 
+<a id="ID_11-4-1"></a>
 
+#### ☆ モデル（アーキテクチャ）
+![image](https://user-images.githubusercontent.com/25688193/39470270-9ea03230-4d77-11e8-9ec5-f86dadd82514.png)<br>
+
+- SSD の基本的なアーキテクチャは、上図のように、フィードフォワード型（順方向）の CNN をベースに構成される。<br>
+
+- ネットワークの最小の部分のレイヤーは、画像分類にに使用される標準的なアーキテクチャ（上図では VGG-16）に基づいて構成され、これをベースネットワークという。このベースネットワークで、特徴量を検出する。<br>
+
+- その後のレイヤーは、検出のための補助的な構造であり、主な特徴 [key features] は以下のようになる。<br>
+	- 検出のためのマルチスケール特徴マップ<br>
+    畳み込み特徴レイヤーを、（途中で打ち切られている）ベースネットワークの最後尾に追加している。<br>
+    これらのレイヤーは、特徴マップのサイズを小さくさせ（上図）、マルチスケールでの検出の予想を可能にする。（下図）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/39470645-ca231574-4d79-11e8-865d-b384a4b4bbd6.png)<br>
+
+	検出を予想するための畳み込みモデルは、各特徴レイヤーにおいて異なっている。（モデル図の青線元のレイヤー）<br>
+	（※ YOLO では、対照的に１つのスケールの特徴マップを扱っている）<br>
+
+	要は直感的には、<br>
+	「多層 CNN では、conv 層や pooling 層で、特徴マップがダウンサンプリングされて、後段に行くほど、特徴マップのグリッドサイズが小さくなるが、<br>
+	このことは、各々の層の特徴マップには、色々なサイズの物体を検出出来る情報が含まれていることを意味している。<br>
+	従って、SSD モデルの後段の特徴マップの各グリッドでは、大きな物体の情報。前段では、小さな物体の情報を取得することが出来る。<br>
+	そして、各グリッドにおける特徴量を使用して、バウンディングボックスのアスペクト比、所属クラス、座標のオフセットを学習させる。」<br>
+    というのが、基本的なコンセプトである。<br>
+
+- xxx<br>
+
+> 記載中...
+
+<br>
+
+<a id="ID_11-4-2"></a>
+
+#### ☆ アルゴリズムの概要
+![image](https://user-images.githubusercontent.com/25688193/39470521-48ddd422-4d79-11e8-9423-48320d13c8c1.png)<br>
+
+- SSD が訓練中に必要とするのは、<br>
+入力画像（上図の(a)）と、各物体それぞれの正解ボックス（デフォルトボックスの内、各物体が収まるボックス。上図の赤枠と青枠）のみである。<br>
+	
+- 畳み込み処理のやり方 [in a convolutional fashion] （どの層の畳み込み？）において、<br>
+いくつかの特徴マップでの各位置（左上座標）において、異なるアスペクト比デフォルトボックスの少数のセット（上記例では４個）を、<br>
+異なるスケールの特徴マップ内（例えば、上記の (b) の 8×8 の特徴マップ内、(c) の４×４の特徴マップ内）で評価する。<br>
+	
+- そして、これらのデフォルトボックスそれぞれにおいて、<br>
+形状のオフセット loc : ![image](https://user-images.githubusercontent.com/25688193/39470381-5d7065d6-4d78-11e8-88f6-eabc19bbb20c.png) と、全ての物体カテゴリー ![image](https://user-images.githubusercontent.com/25688193/39470406-7c7ca066-4d78-11e8-851e-c3c67423b306.png) に関する確信度 conf を予想する。<br>
+	- w : デフォルトボックスの幅、h : デフォルトの高さ、cx,cy : デフォルトボックスの左上座標
+
+- 訓練時には、最初にこれらのデフォルトボックスと正解 [ground truth] ボックスのマッチ度を図る。<br>
+上図の例では、２つのデフォルトボックスの内、１つ目はネコ、２つ目はイヌとマッチさせているが、<br>
+この組み合わせは正 [positive] として扱われ、残りは負 [negative] として扱われる。<br>
+	
+- モデルの誤差（損失関数）は、<br>
+位置特定誤差 [localization loss] （例えば、Smooth L1）と、確信度誤差 [confidence loss] （例えば、softmax）との間の重み付き和 [weighted sum] である。<br>
+
+
+> 記載中...
 
 <br>
 
@@ -716,6 +799,9 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 > Python機械学習プログラミング 達人データサイエンティストによる理論と実践 (impress top gear)</br>
 > [amazonで詳細を見る](https://www.amazon.co.jp/Python%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-%E9%81%94%E4%BA%BA%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AB%E3%82%88%E3%82%8B%E7%90%86%E8%AB%96%E3%81%A8%E5%AE%9F%E8%B7%B5-impress-top-gear/dp/4844380605)
+
+> [第2版]Python機械学習プログラミング 達人データサイエンティストによる理論と実践 (impress top gear)</br>
+> [amazonで詳細を見る](https://www.amazon.co.jp/Python-%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0-%E9%81%94%E4%BA%BA%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%83%88%E3%81%AB%E3%82%88%E3%82%8B%E7%90%86%E8%AB%96%E3%81%A8%E5%AE%9F%E8%B7%B5-impress-gear/dp/4295003379?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4295003379)
 
 > TensorFlow機械学習クックブック Pythonベースの活用レシピ60+</br>
 > [amazonで詳細を見る](https://www.amazon.co.jp/TensorFlow%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%82%AF%E3%83%83%E3%82%AF%E3%83%96%E3%83%83%E3%82%AF-Python%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E6%B4%BB%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%9460-impress-top-gear/dp/4295002003?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4295002003)
