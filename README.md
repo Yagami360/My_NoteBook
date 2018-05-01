@@ -1,7 +1,6 @@
 # My_NoteBook
 
-サイエンス、テクノロジー、エンジニア関連情報を記載したオンラインマイノートを Markdown 形式で保管したリポジトリです。<br>
-（プログラムコードではありません）
+サイエンス、テクノロジー、エンジニア関連情報を記載したオンラインマイノートを Markdown 形式で保管したリポジトリです。（プログラムコードではありません）
 
 This repository describe about my note (markdown format) related to science, tech, engineers from basic to applied. <br>
 
@@ -76,7 +75,6 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
         - Visual Studio Code
         - PyCharm
         - RStudio
-        - Vim
     - デザイン・パターン [design pattern]
     - 通信プロトコル [Communications protocol]
         - OSI 参照モデル[OSI reference model]
