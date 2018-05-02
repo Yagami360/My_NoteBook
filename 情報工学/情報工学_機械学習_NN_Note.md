@@ -840,20 +840,17 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 	これにより、正解ボックスに複数に重なり合っているデフォルトボックスについて、高いスコア予想が可能になる。<br>
 
 - **「訓練の目的（損失関数）」**<br>
-    SSD の学習は、複数の物体カテゴリーを扱うことを考慮して行われる。<br>
-    - ![image](https://user-images.githubusercontent.com/25688193/39517780-dc2b5cc8-4e3b-11e8-969d-210e7ef09cba.png) : カテゴリー p での i 番目のデフォルトボックスと j 番目の正解ボックスのマッチング（０：不一致、１；一致）<br>
-    上記のマッチング戦略で、![image](https://user-images.githubusercontent.com/25688193/39518118-e0cf7308-4e3c-11e8-9f25-c654b358ffc1.png) を得ることが出来る。（0.5 でマッチしたとするため）<br>
-
-    SSD の損失関数は、位置特定誤差（loc）と確信度誤差の重み付き和（conf）であり、以下の式で与えられる。<br>
+    SSD の損失関数は、位置特定誤差（loc）と確信度誤差（conf）の重み付き和であり、<br>
+    （SSD の学習は、複数の物体カテゴリーを扱うことを考慮して行われるため２つの線形和をとる。）以下の式で与えられる。<br>
     ![image](https://user-images.githubusercontent.com/25688193/39518203-34d9c2fa-4e3d-11e8-8f49-b2319d2ef85c.png)<br>
 
     ここで、上式の位置特定誤差 ![image](https://user-images.githubusercontent.com/25688193/39518249-56dfca66-4e3d-11e8-926a-3928d5c800e4.png) は、<br>
 	予想されたボックス（l）と正解ボックス（g）の間の Smooth L1 誤差（関数）であり、以下の式で与えられる。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/39518284-6d3eb6dc-4e3d-11e8-9e78-9bf0a7dbbc70.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/39549447-d55ee236-4e98-11e8-997f-c2d0034aa0f7.png)<br>
 
 	又、確信度誤差 ![image](https://user-images.githubusercontent.com/25688193/39518316-89254b4a-4e3d-11e8-9ee7-e583f941bc62.png) は、<br>
-	複数のクラスの確信度（c）に対する softmax 誤差（関数）であり、以下の式で与えられる。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/39518395-cb18f3f8-4e3d-11e8-8967-fa76022589e6.png)<br>
+	所属クラスのカテゴリ（c）に対する softmax cross entropy 誤差（関数）であり、以下の式で与えられる。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/39549244-17c08608-4e98-11e8-8c72-08299eea27d5.png)<br>
 
 - **ハードネガティブマイニング [hard negative mining]**<br>
 	マッチング工程の後、有効なデフォルトボックスの数が多い場合多くのデフォルトボックスは、負 [negative] に判定され、正と負の訓練データの比率が不均衡になってしまう。<br>
