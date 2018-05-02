@@ -839,7 +839,7 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 	jaccard overlap が 0.5 の値よりも大きいデフォルトボックスを正解ボックスと判定させ、学習させる。<br>
 	これにより、正解ボックスに複数に重なり合っているデフォルトボックスについて、高いスコア予想が可能になる。<br>
 
-- **「訓練の目的（損失関数）」**<br>
+- **「損失関数」**<br>
     SSD の損失関数は、位置特定誤差（loc）と確信度誤差（conf）の重み付き和であり、<br>
     （SSD の学習は、複数の物体カテゴリーを扱うことを考慮して行われるため２つの線形和をとる。）以下の式で与えられる。<br>
     ![image](https://user-images.githubusercontent.com/25688193/39518203-34d9c2fa-4e3d-11e8-8f49-b2319d2ef85c.png)<br>
