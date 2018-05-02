@@ -98,7 +98,7 @@ I will add contents as needed.
     1. R-CNN
     1. Faster R-CNN
     1. YOLO v1
-    1. [SSD [Single Shot Detecter]（単発検出器）](#ID_11-4)
+    1. [SSD [Single Shot muitibox Detecter]（単発検出器）](#ID_11-4)
     1. YOLO v2
 1. [（外部リンク）ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
 1. [参考文献](#参考文献)
@@ -712,7 +712,7 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_11-4"></a>
 
-### ◎ SSD [single shot detector]（単発検出器）
+### ◎ SSD [single shot muitibox detector]（単発検出器）
 
 - 参考サイト
     - [元論文 : arXiv](https://arxiv.org/pdf/1512.02325.pdf)<br>
