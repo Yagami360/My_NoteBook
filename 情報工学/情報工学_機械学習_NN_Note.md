@@ -97,9 +97,10 @@ I will add contents as needed.
 1. [一般物体検出 [object detection]](#ID_11)
     1. R-CNN
     1. Faster R-CNN
-    1. YOLO v1
     1. [SSD [Single Shot muitibox Detecter]（単発検出器）](#ID_11-4)
-    1. YOLO v2
+    1. YOLO
+        1. YOLO v1
+        1. YOLO v2
 1. [（外部リンク）ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
 1. [参考文献](#参考文献)
 
@@ -712,7 +713,7 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_11-4"></a>
 
-### ◎ SSD [single shot muitibox detector]（単発検出器）
+### ◎ SSD [Single Shot muitibox Detector]（単発検出器）
 
 - 参考サイト
     - [元論文 : arXiv](https://arxiv.org/pdf/1512.02325.pdf)<br>
@@ -721,7 +722,8 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
     - https://www.slideshare.net/KazukiMotohashi2/rcnn<br>
         - スライドの 37 ページ目から SSD の解説有り（Keras でのコード付き）  <br>
     - http://segafreder.hatenablog.com/entry/2018/03/11/152515<br>
-
+    - https://www.slideshare.net/takanoriogata1121/ssd-single-shot-multibox-detector-eccv2016<br>
+    - https://www.slideshare.net/ren4yu/single-shot<br>
 
 <a id="ID_11-4-1"></a>
 
@@ -747,8 +749,8 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
     これらのレイヤーは、特徴マップのサイズを小さくさせ（上図）、マルチスケールでの検出の予想を可能にする。（下図）<br>
     ![image](https://user-images.githubusercontent.com/25688193/39470645-ca231574-4d79-11e8-865d-b384a4b4bbd6.png)<br>
 
-    	検出を予想するための畳み込みモデルは、各特徴レイヤーにおいて異なっている。（モデル図の青線元のレイヤー）<br>
-	    （※ YOLO では、対照的に１つのスケールの特徴マップを扱っている）<br>
+    検出を予想するための畳み込みモデルは、各特徴レイヤーにおいて異なっている。（モデル図の青線元のレイヤー）<br>
+	（※ YOLO では、対照的に１つのスケールの特徴マップを扱っている）<br>
 
     - **「検出のための、畳み込み予想器」**<br>
 		ベースネットワークの後尾に追加された各特徴レイヤーは、<br>
@@ -873,9 +875,6 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 	この各画像中の領域（サンプルパッチ）のサイズは、元の画像サイズの 0.1倍 ~ 1.0倍で、アスペクト比は 1/2 ~ 1.0 倍である。<br>
 	但し、サンプルパッチの中に正解ボックスの中心座標が存在する場合は、正解ボックスの重複部分はそのままにする。<br>
 	（サイズやアスペクト比を元の画像から変更しない）<br>
-
-
-> 記載中...
 
 <br>
 
