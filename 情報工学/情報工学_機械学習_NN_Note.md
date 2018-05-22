@@ -725,6 +725,11 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
     - https://www.slideshare.net/takanoriogata1121/ssd-single-shot-multibox-detector-eccv2016<br>
     - https://www.slideshare.net/ren4yu/single-shot<br>
 
+- Python & TensorFlow での実装。<br>
+  ChainerCV や OpenCV にある実装済み or 学習済み SSD モジュールのような高レベル API 使用せずに実装している。
+    - https://github.com/Yagami360/MachineLearning_Exercises_Python_TensorFlow/tree/master/ObjectDetection_SSD_TensorFlow
+
+
 <a id="ID_11-4-1"></a>
 
 #### ☆ モデル（アーキテクチャ）
@@ -758,8 +763,8 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 		p 個のチャンネルをもつサイズ m×n の特徴レイヤーに対しての、<br>
 		潜在的なパラメータ予想のための基本要素は、3×3×p の小さなカーネル（カーネル行列）であり、<br>
 		このカーネルは、予想カテゴリ（所属クラス）の **検出スコア（物体の中心座標が含まれているなら１となるようなスコア）**、<br>
-        又は、デフォルトボックス（オフセット前のバウンディングボックス）の座標に関してのオフセット値を生成（算出）する。<br>
-		又、バウンディングボックスの座標オフセットの出力値は、各特徴マップの位置に対するデフォルトボックスの位置（オフセット前のバウンディングボックス）に対して測定される。<br>
+        又は、デフォルトボックスの座標に関してのオフセット値を生成（算出）する。<br>
+		又、バウンディングボックスの座標オフセットの出力値は、各特徴マップの位置に対するデフォルトボックスの位置に対して測定される。<br>
 	
 		SSD モデルは、（前述のように）いくつかの特徴レイヤーを、ベースネットワークの最後に追加するが、<br>
 		**これらの特徴レイヤーは、異なるスケールとアスペクト比のデフォルトボックスに対するオフセット値と、それに付随する確信度を予測する。**<br>
@@ -875,6 +880,15 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 	この各画像中の領域（サンプルパッチ）のサイズは、元の画像サイズの 0.1倍 ~ 1.0倍で、アスペクト比は 1/2 ~ 1.0 倍である。<br>
 	但し、サンプルパッチの中に正解ボックスの中心座標が存在する場合は、正解ボックスの重複部分はそのままにする。<br>
 	（サイズやアスペクト比を元の画像から変更しない）<br>
+
+
+#### ☆ 物体検出（推論）フェイズ
+
+- non-maximum suppression アルゴリズム
+
+    参考サイト：<br>
+    - [物体検出におけるNon-Maximum Suppressionのアルゴリズム](https://meideru.com/archives/353)<br>
+
 
 <br>
 
