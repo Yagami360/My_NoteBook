@@ -94,7 +94,7 @@ I will add contents as needed.
     1. [GAN [Generative Adversarial Network]（敵対的ネットワーク）](#ID_10-1)
         1. [DCGAN [Deep Convolutional GAN]](#ID_10-1-1)
     1. VAE [Variational Autoencoder]
-1. [一般物体検出 [object detection]](#ID_11)
+1. [ニューラルネットワーク、ディープラーニングによる物体検出 [object detection]](#ID_11)
     1. R-CNN
     1. Faster R-CNN
     1. [SSD [Single Shot muitibox Detecter]（単発検出器）](#ID_11-4)
@@ -708,8 +708,8 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 <a id="ID_11"></a>
 
-## ■ 一般物体検出 [object detection]
-> 記載中...
+## ■ ニューラルネットワーク、ディープラーニングによる物体検出 [object detection]
+> [18/05/31] 別記事（コンピュータビジョン - 一般物体検出）に移行予定
 
 <a id="ID_11-4"></a>
 
@@ -887,10 +887,16 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 #### ☆ 物体検出（推論）フェイズ
 
-- non-maximum suppression アルゴリズム
+##### top-k filtering
+クラス所属の確信度が上位 k 個のもののみを抽出する。<br>
 
-    参考サイト：<br>
-    - [物体検出におけるNon-Maximum Suppressionのアルゴリズム](https://meideru.com/archives/353)<br>
+##### non-maximum suppression アルゴリズム
+推論されたデータに対し、バウンディングボックスの重複防止のために non-maximum suppression アルゴリズムを適用する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/40741748-2c50bcaa-6487-11e8-803a-aa06e40ab72c.png)<br>
+
+参考サイト：<br>
+- [物体検出におけるNon-Maximum Suppressionのアルゴリズム](https://meideru.com/archives/353)<br>
 
 
 <br>
