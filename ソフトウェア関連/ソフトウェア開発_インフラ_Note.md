@@ -1,4 +1,4 @@
-# インフラ
+# PCネットワーク（WEB）、インフラ関連
 
 ## 目次 [Contents]
 
@@ -99,5 +99,35 @@
 <a id="ID_3-2-2"></a>
 
 #### ☆　パブリッククラウド [public cloud]
+![image](https://user-images.githubusercontent.com/25688193/41385096-7c622ebc-6fb4-11e8-9864-8a90ddd56d2e.png)<br>
+インタネットを介して、”不特定多数に提供される”サービス。
+自社でデータセンターを保有しなくて済むので、サーバーやネットワークなどのインフラに関する初期費用が不要となる。<br>
+提供するサービスにより、**IaaS（イアース、アイアース） / PaaS（パース） / SaaS（サース）** などが存在する。<br>
 
+![image](https://user-images.githubusercontent.com/25688193/41385123-a7c5b402-6fb4-11e8-872b-6fa54237e49a.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/41385487-f14e9c5e-6fb6-11e8-8bc6-e53726a39e03.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/41385504-0841d976-6fb7-11e8-8025-8592cc21d159.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/41385951-b3b6c3f0-6fb9-11e8-997b-b51535142cdd.png)<br>
+
+<a id="ID_3-2-3"></a>
+
+#### ☆ プライベートクラウド [private cloud]
+![image](https://user-images.githubusercontent.com/25688193/41386506-989d9ed8-6fbc-11e8-9191-0154b10ece76.png)<br>
+
+特定の企業グループにのみ提供されるクラウドサービス。<br>
+利用者が限定されるため、セキュリティが担保しやすく、又、独自の機能やサービスを追加しやすいことが利点として挙げられる。
+
+
+#### ☆ クラウドとオンプレミスの選択
+
+##### クラウドが適しているケース
+一般的に、クラウドが向いているシステムには以下のようなケースが挙げられる。<br>
+
+- トラフィックが変動しやすいシステム<br>
+	システムには、従業員向けシステム（勤怠管理システム、経理システム等）もあれば、
+	コンシューマ向け（予約システム、オンラインショッピング、オンラインゲームのバックエンド、動画配信等）も存在する。<br>
+	前者の従業員向けシステムでは、利用者が限定されるためトラフィックの予想がしやすい。<br>
 
