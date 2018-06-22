@@ -82,7 +82,7 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
         - RStudio
     - デザイン・パターン [design pattern]
     - 通信プロトコル [Communications protocol]
-        - OSI 参照モデル[OSI reference model]
+        - [OSI 参照モデル[OSI reference model]](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md#ID_3-3-2)
         - HTTP [Hypertext Transfer Protocol]
     - [Docker（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md)
     
