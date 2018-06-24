@@ -7,8 +7,7 @@ This repository describe about my note (markdown format) related to science, tec
 GitHub でドキュメントのバージョン管理出来るので、ここの内容を元にホームページ作成中。<br>
 以下、作成中のホームページへのリンクです。
 
-> はてなブログ
->> [星の本棚](http://yagami12.hatenablog.com/)
+> [はてなブログ｜星の本棚](http://yagami12.hatenablog.com/)
 
 <!--
 > GitHub Pages & Jekyll で作成中のホームページ
