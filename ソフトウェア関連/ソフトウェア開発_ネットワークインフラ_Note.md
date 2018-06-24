@@ -391,7 +391,7 @@ Linux ファイルシステムは、Linux でハードディスクや USB メモ
 Linux カーネルでは、**VFS [Virtual File System]（仮想ファイルシステム）** という仕組みを用いて、このデータへの透過アクセスを可能にしている。<br>
 この VFS では、各デバイスをファイルとし取り扱っているのが特徴である。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/41814032-3084f1ac-777d-11e8-9a4a-00d1c0160b2b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/41815841-5bb123c6-77b1-11e8-9ef9-de24d041101c.png)<br>
 
 Linux で取り扱う主なファイルシステムは、以下の表のようになる。<br>
 ![image](https://user-images.githubusercontent.com/25688193/41815053-7186a228-779a-11e8-9e6b-c62e4418349d.png)<br>
@@ -410,12 +410,28 @@ Linux で取り扱う主なファイルシステムは、以下の表のよう�
 <a id="ID_4-3"></a>
 
 ### ◎ Linux のディレクトリ構成
-> 記載中...
+Linux は、インストールされると Linux カーネルを含む、各種コマンドや設定ファイルがディレクトリに配置される。<br>
+この Linux のディレクトリ一覧は、**FHS [Filesystem Hierarchy Standard]** という規格によって標準化されている。<br>
+現在、多くの主要な Linux ディストリビューションが、この FHS 規格を元にディレクトリを構成している。
+但し、この FHS 規格に完全準拠しているわけではなく、Linux ディストリビューションによって差異は存在する。<br>
+
+以下の図は、Linux 全体のディレクトリ構成である。<br>
+![image](https://user-images.githubusercontent.com/25688193/41815403-ed6cbdbe-77a4-11e8-9a72-9eccaeb1213e.png)<br>
+
+各ディレクトリの概要をもう少し詳しく記載すると、以下の表のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/41816971-e2c5b546-77cc-11e8-8e9b-65e0024d237b.png)<br>
+
 
 <a id="ID_4-4"></a>
 
 ### ◎ Linux のセキュリティ機能
-> 記載中...
+Linux のもつセキュリティ機能の内、代表的なもののみを取り上げる。<br>
+
+- アカウントによる権限設定<br>
+
+- ネットワークフィルタリングによる機能<br>
+
+- SELinux [Security-Enhanced Linux]<br>
 
 ---
 
