@@ -16,12 +16,6 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
 >> ~~[https://yagami360.github.io/My_NoteBook/](https://yagami360.github.io/My_NoteBook/)~~ <br>
 -->
 
-> Twitter : [@yagami_360](https://twitter.com/yagami_360) <br>
-
-<!--
-> Twitter モーメント : [https://twitter.com/yagami_360/moments](https://twitter.com/yagami_360/moments) <br>
--->
-
 ## 項目 [Contents]
 
 - 数学 [Mathematics] / 応用数学 [applied mathematics]
