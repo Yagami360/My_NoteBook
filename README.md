@@ -5,7 +5,7 @@
 This repository describe about my note (markdown format) related to science, tech, engineers from basic to applied. <br>
 
 GitHub でドキュメントのバージョン管理出来るので、ここの内容を元にホームページ作成中。<br>
-以下、作成中のホームページへのリンクです。
+以下、ホームページへのリンクです。
 
 > [はてなブログ｜星の本棚](http://yagami12.hatenablog.com/)
 
