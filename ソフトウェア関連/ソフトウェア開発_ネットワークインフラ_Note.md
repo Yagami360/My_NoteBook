@@ -44,8 +44,10 @@
 		1. [Docker Compose（複数コンテナ一元管理）](#ID_8-4-3)
 		1. [Docker Machine（Docker 実行環境構築）](#ID_8-4-4)
 		1. [Docker Swarm（クラスタ管理）](#ID_8-4-5)
-	1. [Docker の動く仕組み](#ID_8-5)
-		1. [namespace : コンテナを区画化する仕組み](#ID_8-5-1)
+	1. [Docker のコア機能が動く仕組み](#ID_8-5)
+		1. [コンテナを区画化する仕組み（namespace）](#ID_8-5-1)
+		1. [リソース管理の仕組み（cgroups）](#ID_8-5-2)
+		1. [xxx](#ID_8-5-x)
 	1. [xxx](#ID_8-x)
 
 ---
@@ -754,23 +756,52 @@ Docker は、以下の図のようないくつかのコンポーネントから�
 <a id="ID_8-4-1"></a>
 
 #### ☆ Docker Engine（Docker のコア機能）
-
+Docker イメージの生成やコンテナの起動を行うための Docker のコア機能となるコンポーネント。<br>
+Docker コマンドの実行や Dockerfile によるイメージ生成も行う。<br>
 
 <a id="ID_8-4-2"></a>
 
 #### ☆ Docker Registry（イメージ公開・共有）
-
+Docker イメージを公開・共有するためのレジストリ機能となるコンポーネント。<br>
+Docker Hub もこの Docker Resistry コンポーネントを使用している。<br>
 
 <a id="ID_8-4-3"></a>
 
 #### ☆ Docker Compose（複数コンテナ一元管理）
-
+複数のコンテナの構成情報をコードで定義して、コマンドを実行することで、<br>
+アプリケーションの実行環境を構成するコンテナ群を一元管理するためのツール。<br>
 
 <a id="ID_8-4-4"></a>
 
 #### ☆ Docker Machine（Docker 実行環境構築）
-
+クラウド環境（ローカルホスト用の VirtualBox や Amazon Web Service EC2 , Microsoft Azura など）などに Docker の実行環境をコマンドで自動生成するためのツール。<br>
 
 <a id="ID_8-4-5"></a>
 
 #### ☆ Docker Swarm（クラスタ管理）
+複数の Docker ホスト（IPアドレスを割り振られたネットワークノード）をクラスタ化するためのツール。<br>
+Docker Swarm では、クラスタの管理や API の提供を行う役割が Manager となり、Docker コンテナを実行する役割が Node となる。<br>
+
+<br>
+
+
+<a id="ID_8-5"></a>
+
+### ◎ Docker のコア機能が動く仕組み
+ここでは、Docker のコア機能がどうのような仕組みで動いているのか、もう少し詳しく見ていく。<br>
+
+<a id="ID_8-5-1"></a>
+
+#### ☆ コンテナを区画化する仕組み（namespace）
+Docker では、コンテナを区画する技術として、Linux カーネルの namespace（名前空間）という機能を使用している。<br>
+
+Linux OS では、OS 起動時にデフォルトの名前空間が存在し、デフォルトでは全てのプロセスがその名前空間に属する。プロセスの起動時に独立した名前空間でプロセスを実行する指定を行うと、そのプロセスは別の名前空間で実行される。どのリソースを独立・隔離させたいかに応じて、以下の６つの独立した環境を構築できる。<br>
+
+Docker では、これらの Linux カーネルでの namespace 機能を使用して、ホスト上でコンテナを仮想的に隔離する。（※この仕組みは、Docker を使う上では特に意識する必要はないが、Docker の仕組みを理解するのに役立つ。）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/42083118-e88c0452-7bc4-11e8-8463-fb5a536895b7.png)<br>
+
+
+<a id="ID_8-5-2"></a>
+
+#### ☆ リソース管理の仕組み（cgroups）
