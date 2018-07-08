@@ -72,11 +72,10 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
     - ソフトウェアフレームワーク / API / SDK
         - Win32API
         - .NETFramework
-        - MATLAB Simulink
+        - MATLAB / MATLAB Simulink
     - 開発環境
         - Visual Studio
         - Visual Studio Code
-        - PyCharm
         - RStudio
     - デザイン・パターン [design pattern]
     - ネットワーク/ インフラ
@@ -96,7 +95,7 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
     - ゲームエンジン [Game Engine]
     - 各種シェーダー / プログラマブルシェーダー [Shader / Programmable shader]
     - 衝突判定 [Collision detection]
-    - 物理シミュレーション [Physical simulation]
+    - 物理エンジン / 物理シミュレーション [Physical simulation]
 
 - 自動車技術 [Automotive]
     - モデルベース開発 [Model-based development]（作成中）
