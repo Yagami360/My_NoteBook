@@ -32,13 +32,16 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
         - [ニューラルネットワーク [Neural Network] / ディープラーニング [Deep Learning]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_NN_Note.md)
     - [自然言語処理 [NLP : natural language processing]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
 
-
 - 物理学 [Physics]
-    - [電磁気学 [Electromagnetism]（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6/%E7%89%A9%E7%90%86%E5%AD%A6_%E9%9B%BB%E7%A3%81%E6%B0%97%E5%AD%A6.md)
-    - [統計力学 [statistical mechanics]（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6/%E7%89%A9%E7%90%86%E5%AD%A6_%E7%B5%B1%E8%A8%88%E5%8A%9B%E5%AD%A6.md)
+    - 古典力学
+    - 解析力学
     - 剛体力学 [Rigid body dynamics]
+    - [電磁気学 [Electromagnetism]（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6/%E7%89%A9%E7%90%86%E5%AD%A6_%E9%9B%BB%E7%A3%81%E6%B0%97%E5%AD%A6.md)
+    - 量子力学
+    - [統計力学 [statistical mechanics]](http://yagami12.hatenablog.com/entry/2017/10/28/%E7%B5%B1%E8%A8%88%E5%8A%9B%E5%AD%A6)
+    - 熱力学
     - 流体力学 [Fluid mechanics]
-
+    
 - 経済学 [Economics]
     - マクロ経済学 [macroeconomics]
     - ミクロ経済学 [microeconomics]
