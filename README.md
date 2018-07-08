@@ -104,12 +104,12 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
     - 機能安全 [functional safety] / ISO 26262
     - MISRA-C
     - AutomotiveSpice
-    - DRBFM [Design Review Based on Failure Mode]
+    - FMEA [Failure Mode and Effect Analysis] / DRBFM [Design Review Based on Failure Mode]
     - CMMI [Capability Maturity Model Integration]
     - EMC [electromagnetic compatibility] 試験
     - 各種ツール [Tools]
         - CAN 関連 Tools
-            - CANoe
+            - CANoe / CANalyzer
                 - CAPL
             - MVNT
             - CANstress
