@@ -32,7 +32,7 @@ GitHub でドキュメントのバージョン管理出来るので、ここの�
         - [ニューラルネットワーク [Neural Network] / ディープラーニング [Deep Learning]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_NN_Note.md)
     - [自然言語処理 [NLP : natural language processing]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
     - コンピューターグラフィックス [Computer Graphics] / コンピュータービジョン [Computer Vision]
-          - [一般物体検出 [Object Detection]](http://yagami12.hatenablog.com/entry/2017/09/17/111935#ID_11)
+         - [一般物体検出 [Object Detection]](http://yagami12.hatenablog.com/entry/2017/09/17/111935#ID_11)
           
 - 物理学 [Physics]
     - 古典力学
