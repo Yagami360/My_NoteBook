@@ -46,10 +46,10 @@
 
 <br>
 
-**このフーリエ級数は、周期関数であるが、**<br>
-**次に、以下の例で周期関数が、フーリエ級数の形で記述できることを示す。**<br>
+**このフーリエ級数は、周期 2π の周期関数であるが、**<br>
+**次に、以下の例で（周期 2π の）周期関数が、フーリエ級数の形で記述できることを示す。**<br>
 
-- （例）![image](https://user-images.githubusercontent.com/25688193/42732080-437672d4-8855-11e8-9d45-722e499e0bcd.png) をフーリエ級数展開の式で表す。<br>
+- （例）周期 2π の周期関数 ![image](https://user-images.githubusercontent.com/25688193/42732080-437672d4-8855-11e8-9d45-722e499e0bcd.png) をフーリエ級数展開の式で表す。<br>
 
     ![image](https://user-images.githubusercontent.com/25688193/42732085-572a99e0-8855-11e8-82b5-e41bf9c0ca64.png)<br>
     ![image](https://user-images.githubusercontent.com/25688193/42732091-84224d94-8855-11e8-9ead-43b4fddf6a3c.png)<br>
@@ -71,7 +71,7 @@
 この例のように、**周期関数を sin.cos の和の重ね合わせで表すことをフーリエ級数展開とよび、得られた級数をフーリエ級数という。**<br>
 **逆に言えば、このフーリエ級数展開は、全ての周期関数はsin.cos の和の重ね合わせで表せることを示している！**<br>
 
-フーリエ級数の一般的な形（周期 2π→T ）は、<br>
+フーリエ級数の一般的な形（周期 2π→T に一般化）は、<br>
 ![image](https://user-images.githubusercontent.com/25688193/42732560-d83c284c-885e-11e8-91f5-6cf128ac6c3c.png)<br>
 
 フーリエ係数は、<br>
