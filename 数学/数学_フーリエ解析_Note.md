@@ -80,3 +80,17 @@
 ※ 係数 ![image](https://user-images.githubusercontent.com/25688193/42732587-2253433e-885f-11e8-8137-36b9cb2c8aee.png) は、![image](https://user-images.githubusercontent.com/25688193/42732593-3f7e0cfa-885f-11e8-9502-518d1debf8e7.png) より、![image](https://user-images.githubusercontent.com/25688193/42732598-55766408-885f-11e8-9b88-25a1e7aa8a77.png)<br>
 ※ ![image](https://user-images.githubusercontent.com/25688193/42732603-785a383c-885f-11e8-9764-4e49493e1e00.png) の形状は、周期 T の周期関数 ![image](https://user-images.githubusercontent.com/25688193/42732607-89ca5796-885f-11e8-820a-1a6efcba25d0.png) であることによる。<br>
 
+
+<a id="ID_2-1"></a>
+
+### ◎ フーリエ係数の意味
+周期 T のフーリエ級数展開<br>
+![image](https://user-images.githubusercontent.com/25688193/42733401-c3073216-886b-11e8-99f2-10edeeb337ec.png)<br>
+において、<br>
+正の整数 n に対する関数（＝基底ベクトルとなる）![image](https://user-images.githubusercontent.com/25688193/42733414-fb16cb62-886b-11e8-87c1-6fc285a2c56f.png) は、周期 T/n の周期関数である。<br>
+従って、これらの関数の係数であるフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/42733427-243673a8-886c-11e8-9582-7d27e674cb1c.png) は、周期関数 f(t) の中に、周期 T/n で変動する成分がどの程度含まれているのか（＝振幅の大きさ）を示している。<br>
+
+例えば、先の周期関数 ![image](https://user-images.githubusercontent.com/25688193/42733435-498672f2-886c-11e8-91df-f6fe74d3cd9c.png) の例では、<br>
+そのフーリエ級数 ![image](https://user-images.githubusercontent.com/25688193/42733447-89a9dea0-886c-11e8-844c-41b7b735677b.png) の各項は以下の図のようになり、元の周期関数はこれらの重ね合わせで表現できるが、各フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/42733427-243673a8-886c-11e8-9582-7d27e674cb1c.png) は、各項の振幅の大きさに対応していることが分かる。<br>
+![image](https://user-images.githubusercontent.com/25688193/42733454-9fd0676c-886c-11e8-8b4d-89cdc9b28cdf.png)<br>
+
