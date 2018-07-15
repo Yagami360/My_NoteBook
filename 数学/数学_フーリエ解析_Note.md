@@ -94,3 +94,49 @@
 そのフーリエ級数 ![image](https://user-images.githubusercontent.com/25688193/42733447-89a9dea0-886c-11e8-844c-41b7b735677b.png) の各項は以下の図のようになり、元の周期関数はこれらの重ね合わせで表現できるが、各フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/42733427-243673a8-886c-11e8-9582-7d27e674cb1c.png) は、各項の振幅の大きさに対応していることが分かる。<br>
 ![image](https://user-images.githubusercontent.com/25688193/42733454-9fd0676c-886c-11e8-8b4d-89cdc9b28cdf.png)<br>
 
+<br>
+
+次に、フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/42734566-41c85746-8881-11e8-9357-37a1d16e7db5.png) が、偶関数・奇関数の観点から、周期関数 ![image](https://user-images.githubusercontent.com/25688193/42734575-553295f8-8881-11e8-8ec4-84713313acaf.png) のどのような性質を表しているのか見てみる。<br>
+そのためにまず、以下の性質が成り立つことを示す。<br>
+
+- （性質）<br>
+	周期 T の周期関数 ![image](https://user-images.githubusercontent.com/25688193/42734575-553295f8-8881-11e8-8ec4-84713313acaf.png) は、必ず、同じ周期 T をもつ偶関数 ![image](https://user-images.githubusercontent.com/25688193/42734587-7d9675d2-8881-11e8-86d9-87607425a184.png) と奇関数 ![image](https://user-images.githubusercontent.com/25688193/42734591-901b46ba-8881-11e8-95db-419d5e078ca8.png) の和、<br>
+	即ち、![image](https://user-images.githubusercontent.com/25688193/42734599-ab9aff70-8881-11e8-8426-aa2055cd246d.png) で記述できる。<br>
+    <br>
+    （証明）<br>
+    まず、周期関数 ![image](https://user-images.githubusercontent.com/25688193/42734575-553295f8-8881-11e8-8ec4-84713313acaf.png) から、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/42734610-e6259772-8881-11e8-8a61-54e6f2911e85.png)<br>
+    が成り立つような関数 ![image](https://user-images.githubusercontent.com/25688193/42734612-fca4b9b0-8881-11e8-91d1-92e442b5980b.png) を作ると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/42734622-23ac716a-8882-11e8-9a52-0e7bdb6ba12d.png)<br>
+    より、![image](https://user-images.githubusercontent.com/25688193/42734599-ab9aff70-8881-11e8-8426-aa2055cd246d.png) の関係は成り立つ。<br>
+    <br>
+    次に、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/42734646-8d4e00ca-8882-11e8-95ee-16203d8d4561.png)<br>
+    の関係より、この ![image](https://user-images.githubusercontent.com/25688193/42734587-7d9675d2-8881-11e8-86d9-87607425a184.png) は偶関数であることが分かる。<br>
+    <br>
+	更に、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/42734669-ecfbcd86-8882-11e8-957b-87525ce9941a.png)<br>
+    の関係より、この ![image](https://user-images.githubusercontent.com/25688193/42734591-901b46ba-8881-11e8-95db-419d5e078ca8.png) は奇関数であることが分かる。<br>
+    <br>
+	従って、<br>
+	周期関数 ![image](https://user-images.githubusercontent.com/25688193/42734575-553295f8-8881-11e8-8ec4-84713313acaf.png) は、（同じ周期を持つ）偶関数 ![image](https://user-images.githubusercontent.com/25688193/42734587-7d9675d2-8881-11e8-86d9-87607425a184.png) と奇関数 ![image](https://user-images.githubusercontent.com/25688193/42734591-901b46ba-8881-11e8-95db-419d5e078ca8.png) の和で記述できる。<br>
+
+<br>
+
+ここで、周期関数 ![image](https://user-images.githubusercontent.com/25688193/42734575-553295f8-8881-11e8-8ec4-84713313acaf.png) のフーリエ級数展開の式<br>
+![image](https://user-images.githubusercontent.com/25688193/42734811-f8e47678-8884-11e8-929c-ffcd841d71f2.png)<br>
+と、先の性質<br>
+![image](https://user-images.githubusercontent.com/25688193/42734825-3cca3242-8885-11e8-91b2-aeb3977ec266.png)<br>
+を見比べると、<br>
+偶関数 ![image](https://user-images.githubusercontent.com/25688193/42734587-7d9675d2-8881-11e8-86d9-87607425a184.png) と奇関数 ![image](https://user-images.githubusercontent.com/25688193/42734591-901b46ba-8881-11e8-95db-419d5e078ca8.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/42734846-965c574a-8885-11e8-82f1-565af80cf65a.png)<br>
+
+従って、同じ周期の変動成分（＝振幅の大きさ）に対応しているフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/42734856-c084ea3c-8885-11e8-9a6c-ec04cdb03099.png) の内、<br>
+![image](https://user-images.githubusercontent.com/25688193/42734861-dd64b52e-8885-11e8-848c-e5ae219f72f0.png)
+ は偶関数の成分（＝cos 成分）、![image](https://user-images.githubusercontent.com/25688193/42734873-03f0c886-8886-11e8-815e-a013dc60a2e3.png) は奇関数の成分（＝sin 成分）を表している。<br>
+言い換えると、<br>
+**周期関数は、一般的に偶関数成分と奇関数成分を含んでいるが、**<br>
+**これら２つの成分を表現するのに、２つの係数 ![image](https://user-images.githubusercontent.com/25688193/42734856-c084ea3c-8885-11e8-9a6c-ec04cdb03099.png) が必要であることを示している。**
+
+
+
