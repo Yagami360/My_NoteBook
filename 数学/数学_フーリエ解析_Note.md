@@ -4,6 +4,9 @@
 
 1. [概要](#ID_1)
 1. [フーリエ級数展開](#ID_2)
+    1. [フーリエ係数の意味](#ID_2-1)
+    1. [フーリエ級数の収束性](#ID_2-2)
+    1. [xxx](#ID_2-x)
 1. xxx
 
 ---
@@ -161,7 +164,44 @@
 
 <br>
 
+最後に、フーリエ級数展開における定数 ![image](https://user-images.githubusercontent.com/25688193/42750487-5d2ffc2c-8922-11e8-9d97-fb080133302b.png) は、周期関数 f(t) の t に依存せず変動しない成分を表しているが、**この ![image](https://user-images.githubusercontent.com/25688193/42750487-5d2ffc2c-8922-11e8-9d97-fb080133302b.png) は、周期関数 f(t)  の（１周期 0 ~ T での）平均値となっている。**<br>
+![image](https://user-images.githubusercontent.com/25688193/42750533-82d43402-8922-11e8-9799-0976921d5662.png)<br>
+
+<br>
+
+<a id="ID_2-2"></a>
+
+### ◎ フーリエ級数の収束性
+周期関数をフーリエ級数の形で表すと、一般的に、無限個の cos,sin の和になるが、このような場合に、この級数和が、ある点や関数に収束するのか否かの収束性に関する議論は重要な問題である。<br>
+
+先に見たように、周期 T の周期関数 f(t) が与えれたときに、そのフーリエ級数展開は、<br>
+![image](https://user-images.githubusercontent.com/25688193/42757352-a75f2cc4-893a-11e8-8fef-f34160b6094e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/42757402-e5f19094-893a-11e8-8e0e-d1fe0edc51a7.png)<br>
+
+多くの場合、この展開式は無限個の sin,cos の和になる。<br>
+しかしならが実際上では、無限個の和を足し合わせることは無可能であるので、適当な大きな整数 N を決めて、n=N の後まで足し合わせて途中で打ち切ることになる。<br>
+この途中で打ち切って作った関数を ![image](https://user-images.githubusercontent.com/25688193/42757423-01b207be-893b-11e8-9f91-55a9d4506bbb.png) と書くことにすると、<br>
+![image](https://user-images.githubusercontent.com/25688193/42757439-133ffc02-893b-11e8-8b44-214ff31b7f05.png)<br>
+となる。<br>
+
+今、フーリエ級数展開の収束性について考えるために、無限個の級数和である右辺が、元の周期関数 f(t) に等しいといえるための条件を ![image](https://user-images.githubusercontent.com/25688193/42757423-01b207be-893b-11e8-9f91-55a9d4506bbb.png) で表現すること考えると、<br>
+これは、「どの t に対しても N を大きくしていったときに、![image](https://user-images.githubusercontent.com/25688193/42757423-01b207be-893b-11e8-9f91-55a9d4506bbb.png) が元の周期関数 f(t) に際限なく近づく」ことを考えていることになる。<br>
+これを式で書くと、<br>
+![image](https://user-images.githubusercontent.com/25688193/42757522-600844c2-893b-11e8-9344-ec7c007af9a0.png)<br>
+と記述できる。<br>
+
+次の課題は、どんな周期関数 f(t) に対して上式の収束性が成り立つのか？ということである。<br>
 
 
+#### ☆ 滑らかな関数なら収束する
+一般的に、滑らかな周期関数のフーリエ級数の収束性に関しては、以下の性質が成り立つ。<br>
+
+- （性質）<br>
+	周期関数 f(t) が滑らかな関数（＝微分可能な関数でその導関数も連続）であれば、<br>
+	![image](https://user-images.githubusercontent.com/25688193/42760582-df864cb2-8945-11e8-969f-e77e506dffee.png) の関係が成り立ち、フーリエ級数は元の周期関数 f(t) に収束する。<br>
+
+<br>
+
+次に、必ずしも（任意の点で）滑らかではない関数に関しての収束性を考える。<br>
 
 
