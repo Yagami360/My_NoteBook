@@ -138,5 +138,30 @@
 **周期関数は、一般的に偶関数成分と奇関数成分を含んでいるが、**<br>
 **これら２つの成分を表現するのに、２つの係数 ![image](https://user-images.githubusercontent.com/25688193/42734856-c084ea3c-8885-11e8-9a6c-ec04cdb03099.png) が必要であることを示している。**
 
+<br>
+
+次にフーリエ級数展開の式において、正の整数 n に対して、フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/42734856-c084ea3c-8885-11e8-9a6c-ec04cdb03099.png) に関係する部分を取り出してまとめた式に変形すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/42749897-480e70a0-8920-11e8-9d01-2eb4b47c0b7c.png)<br>
+この式は、cos , sin からなる同じ周期 T/n の２つの変動成分 ![image](https://user-images.githubusercontent.com/25688193/42734856-c084ea3c-8885-11e8-9a6c-ec04cdb03099.png) の和が、
+振幅 ![image](https://user-images.githubusercontent.com/25688193/42748767-55aa337e-891c-11e8-9184-4d2a16aa3657.png) をもつ周期 T/n の１つの変動成分の形で表現できることを示している。<br>
+従って、この振幅 ![image](https://user-images.githubusercontent.com/25688193/42748767-55aa337e-891c-11e8-9184-4d2a16aa3657.png) は、周期関数 f(t) に含まれる周期 T/n の変動成分の大きさに対応しているといえる。<br>
+
+一般的に、ある周期関数が与えれた時に、そのフーリエ級数展開でのどの周期の変動成分が大きいのかを見分けるのは容易ではない。<br>
+このような場合に、与えれた周期関数のフーリエ級数展開を行い、![image](https://user-images.githubusercontent.com/25688193/42748767-55aa337e-891c-11e8-9184-4d2a16aa3657.png) を計算すれば、どの周期成分が大きいのかを即座に知ることが出来る。<br>
+
+- （例）周期関数 ![image](https://user-images.githubusercontent.com/25688193/42749965-853b9232-8920-11e8-9bd3-635414e029a6.png) の ![image](https://user-images.githubusercontent.com/25688193/42748767-55aa337e-891c-11e8-9184-4d2a16aa3657.png) を計算し、どの周期の変動成分が大きのかを判断<br>
+
+    この周期関数のフーリエ係数は<br>
+    ![image](https://user-images.githubusercontent.com/25688193/42750002-a3b295f8-8920-11e8-9b5a-220a19e7e715.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/42750043-b7ee2712-8920-11e8-894f-663c52663032.png)<br>
+    従って、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/42750062-cf794d6c-8920-11e8-9233-1607f49aed63.png) となり、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/42750099-e7ea8550-8920-11e8-86d2-18ce88054bef.png) が成り立つので、<br>
+    n=1 となる周期 2π(=2π/1)  の変動成分が最も大きく、続いて n=2 となる周期 π(=2π/2)  の変動成分が大きい・・・ということが分かる。<br>
+
+<br>
+
+
+
 
 
