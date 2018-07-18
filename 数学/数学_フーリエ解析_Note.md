@@ -209,8 +209,36 @@
 ![image](https://user-images.githubusercontent.com/25688193/42810191-4abee1ae-89f2-11e8-8aaf-2e92d1d571ef.png)<br>
 
 このような区分的に連続な関数であっても、そのフーリエ級数展開は、関数が滑らかな区間ごとに部分積分して、その和をとれば計算できる。<br>
-
 一方で、このフーリエ級数は元の周期関数に収束するのかの問題は自明ではない。<br>
 
-<br>
+この収束性に関する問題を考える際には、<br>
+まず、「sin,cos 関数や定数関数は、いずれも連続関数なので、それらに定数（フーリエ係数）をかけて有限項足し合わせた関数である ![image](https://user-images.githubusercontent.com/25688193/42876125-ac006180-8ac0-11e8-8564-b331b8cf9bca.png) も連続関数になる。」<br>
+という性質に注意が必要となる。この性質は、N をいくら大きくしていっても成り立つ。<br>
+従って、N を大きくしていったときの連続関数 ![image](https://user-images.githubusercontent.com/25688193/42876125-ac006180-8ac0-11e8-8564-b331b8cf9bca.png) が、元の周期関数 f(t)  の不連続点付近でどのように振る舞うのかが焦点となる。<br>
+
+このような問題を扱うための、具体的として、先の ![image](https://user-images.githubusercontent.com/25688193/42810121-256f413c-89f2-11e8-9f6d-8a698957f3c0.png) を周期 2π で周期的に拡張した関数を、n=N までの有限項で打ち切ったフーリエ級数 ![image](https://user-images.githubusercontent.com/25688193/42876125-ac006180-8ac0-11e8-8564-b331b8cf9bca.png) を考える。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/42883576-e942009c-8ad6-11e8-8005-7a8ad8618434.png)<br>
+n≥2 の場合は、部分積分を利用して計算すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/42883607-04cb8874-8ad7-11e8-8f9b-c13115453569.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/42883626-141328be-8ad7-11e8-9905-87dc1f49f1d6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/42883701-4a41d6b0-8ad7-11e8-81da-4e35f0102c23.png)<br>
+従って、フーリエ級数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/42883739-6d0c0d50-8ad7-11e8-9876-2b9e20fd6482.png)<br>
+n=N までの有限項で打ち切ったフーリエ級数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/42883768-86f0fdd4-8ad7-11e8-9079-7607cece8add.png)<br>
+
+ここで、各 N 値 に対する ![image](https://user-images.githubusercontent.com/25688193/42883817-9fae20d6-8ad7-11e8-9be7-b312a273d4b6.png) のグラフは以下の図のようになる。<br>
+
+- 全体図<br>
+![image](https://user-images.githubusercontent.com/25688193/42897397-dc418060-8afa-11e8-9830-519bcf5ee6bc.png)<br>
+
+- t=0 付近の拡大図<br>
+![image](https://user-images.githubusercontent.com/25688193/42897427-f7ee3c36-8afa-11e8-9a77-6e9d77f80397.png)<br>
+
+- t<0 で t=0 付近の領域の拡大図<br>
+![image](https://user-images.githubusercontent.com/25688193/42897453-080f597e-8afb-11e8-8146-caddd32dbd66.png)<br>
+
+- t>0 で t=0 付近の拡大図<br>
+![image](https://user-images.githubusercontent.com/25688193/42897496-25de0cb6-8afb-11e8-8d49-717c430f4823.png)<br>
 
