@@ -196,9 +196,7 @@
 #### ☆ 滑らかな関数なら収束する
 一般的に、滑らかな周期関数のフーリエ級数の収束性に関しては、以下の性質が成り立つ。<br>
 
-- （性質）<br>
-	周期関数 f(t) が滑らかな関数（＝微分可能な関数でその導関数も連続）であれば、<br>
-	![image](https://user-images.githubusercontent.com/25688193/42760582-df864cb2-8945-11e8-969f-e77e506dffee.png) の関係が成り立ち、フーリエ級数は元の周期関数 f(t) に収束する。<br>
+![image](https://user-images.githubusercontent.com/25688193/42906355-dfba91c6-8b15-11e8-9a19-906bcb95602a.png)<br>
 
 <br>
 
@@ -230,15 +228,21 @@ n=N までの有限項で打ち切ったフーリエ級数は、<br>
 
 ここで、各 N 値 に対する ![image](https://user-images.githubusercontent.com/25688193/42883817-9fae20d6-8ad7-11e8-9be7-b312a273d4b6.png) のグラフは以下の図のようになる。<br>
 
-- 全体図<br>
+- 全体図（N=2,5,20）<br>
 ![image](https://user-images.githubusercontent.com/25688193/42897397-dc418060-8afa-11e8-9830-519bcf5ee6bc.png)<br>
 
-- t=0 付近の拡大図<br>
+- t=0 付近の拡大図（N=2,5,20,40,70,100）<br>
 ![image](https://user-images.githubusercontent.com/25688193/42897427-f7ee3c36-8afa-11e8-9a77-6e9d77f80397.png)<br>
 
-- t<0 で t=0 付近の領域の拡大図<br>
+- t<0 で t=0 付近の領域の拡大図（N=2,5,20,40,70,100）<br>
 ![image](https://user-images.githubusercontent.com/25688193/42897453-080f597e-8afb-11e8-8146-caddd32dbd66.png)<br>
 
-- t>0 で t=0 付近の拡大図<br>
+- t>0 で t=0 付近の拡大図（N=2,5,20,40,70,100）<br>
 ![image](https://user-images.githubusercontent.com/25688193/42897496-25de0cb6-8afb-11e8-8d49-717c430f4823.png)<br>
 
+図からわかるように、不連続点である t=0 での ![image](https://user-images.githubusercontent.com/25688193/42906446-1eb0965a-8b16-11e8-9069-0ab0c860672e.png) の値が、N の増加と共に、1/2(=0.5) の値に近づいていることが分かる。<br>
+ここで、この 1/2(=0.5) という値は、t の値が正→0 に近づいていく極限での f(t) の値を意味する f(0+0)=0 と、t の値が負→0 に近づいていく極限での f(t) の値を意味する f(0−0)=0 との平均値となっている。<br>
+
+このような性質は、この例に限らず一般的にも成り立ち、以下のように表すことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/42906841-2604059e-8b17-11e8-8a2b-7e0a93b2fc67.png)<br>
