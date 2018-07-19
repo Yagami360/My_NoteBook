@@ -102,11 +102,8 @@
 次に、フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/42734566-41c85746-8881-11e8-9357-37a1d16e7db5.png) が、偶関数・奇関数の観点から、周期関数 ![image](https://user-images.githubusercontent.com/25688193/42734575-553295f8-8881-11e8-8ec4-84713313acaf.png) のどのような性質を表しているのか見てみる。<br>
 そのためにまず、以下の性質が成り立つことを示す。<br>
 
-- （性質）<br>
-	周期 T の周期関数 ![image](https://user-images.githubusercontent.com/25688193/42734575-553295f8-8881-11e8-8ec4-84713313acaf.png) は、必ず、同じ周期 T をもつ偶関数 ![image](https://user-images.githubusercontent.com/25688193/42734587-7d9675d2-8881-11e8-86d9-87607425a184.png) と奇関数 ![image](https://user-images.githubusercontent.com/25688193/42734591-901b46ba-8881-11e8-95db-419d5e078ca8.png) の和、<br>
-	即ち、![image](https://user-images.githubusercontent.com/25688193/42734599-ab9aff70-8881-11e8-8426-aa2055cd246d.png) で記述できる。<br>
-    <br>
-    （証明）<br>
+![image](https://user-images.githubusercontent.com/25688193/42907000-9032b76c-8b17-11e8-9f46-cf933a18537d.png)<br>
+- （証明）<br>
     まず、周期関数 ![image](https://user-images.githubusercontent.com/25688193/42734575-553295f8-8881-11e8-8ec4-84713313acaf.png) から、<br>
     ![image](https://user-images.githubusercontent.com/25688193/42734610-e6259772-8881-11e8-8a61-54e6f2911e85.png)<br>
     が成り立つような関数 ![image](https://user-images.githubusercontent.com/25688193/42734612-fca4b9b0-8881-11e8-91d1-92e442b5980b.png) を作ると、<br>
@@ -235,14 +232,31 @@ n=N までの有限項で打ち切ったフーリエ級数は、<br>
 ![image](https://user-images.githubusercontent.com/25688193/42897427-f7ee3c36-8afa-11e8-9a77-6e9d77f80397.png)<br>
 
 - t<0 で t=0 付近の領域の拡大図（N=2,5,20,40,70,100）<br>
-![image](https://user-images.githubusercontent.com/25688193/42897453-080f597e-8afb-11e8-8146-caddd32dbd66.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/42931346-6d4886ba-8b7a-11e8-8529-90514f7bee4a.png)<br>
 
 - t>0 で t=0 付近の拡大図（N=2,5,20,40,70,100）<br>
-![image](https://user-images.githubusercontent.com/25688193/42897496-25de0cb6-8afb-11e8-8d49-717c430f4823.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/42931434-9bc4b7c0-8b7a-11e8-92ac-ac288ca01754.png)<br>
 
 図からわかるように、不連続点である t=0 での ![image](https://user-images.githubusercontent.com/25688193/42906446-1eb0965a-8b16-11e8-9069-0ab0c860672e.png) の値が、N の増加と共に、1/2(=0.5) の値に近づいていることが分かる。<br>
 ここで、この 1/2(=0.5) という値は、t の値が正→0 に近づいていく極限での f(t) の値を意味する f(0+0)=0 と、t の値が負→0 に近づいていく極限での f(t) の値を意味する f(0−0)=0 との平均値となっている。<br>
 
-このような性質は、この例に限らず一般的にも成り立ち、以下のように表すことが出来る。<br>
-
+このような性質は、この例に限らず一般的にも成り立ち、以下のようなことが言える。<br>
 ![image](https://user-images.githubusercontent.com/25688193/42906841-2604059e-8b17-11e8-8a2b-7e0a93b2fc67.png)<br>
+
+一方、不連続点以外の t に対しては、（任意の点で）滑らかな関数のときと同じように、以下の性質が成り立つ。<br>
+![image](https://user-images.githubusercontent.com/25688193/42928607-bc3d9e8e-8b72-11e8-9d2f-a9cfe4e2a916.png)<br>
+
+しかしながら、不連続点 t=0 からわずかに離れた正領域や負領域の拡大図を見てみると（上図）、<br>
+不連続点のすぐ近くに、小さな膨らみが見られる。（負領域では上に凸な膨らみ、正領域では下に凸な膨らみ）
+そして、この膨らみの高さとへこみの深さは、N の値が大きくなっても 0 に近づかず、むしろ大きくなっていっていることが分かる。<br>
+又、膨らみの位置は、N の増加とともに不連続点に近づいていることが分かる。<br>
+
+不連続点付近で発生するこのような現象は、**ギブスの現象**と呼ぶ。<br>
+**このギブスの現象は、区分的に滑らかな関数が不連続点を持てば必ず発生する現象である。**<br>
+
+因みに、このギブスの現象に関して、詳しい計算より、<br>
+大きい N に対しては、大体 ![image](https://user-images.githubusercontent.com/25688193/42932261-ce4abb5c-8b7c-11e8-96b9-e2ec728dfd8d.png) がへこみの位置であり、その反対方向の ![image](https://user-images.githubusercontent.com/25688193/42932338-fb79ce38-8b7c-11e8-9114-bcfe6ecd6997.png) が膨らみの位置であることがわかっている（詳細計算略）<br>
+そして、不連続点の両側での膨らみの高さ、へこみの深さは、不連続点での値 {f(t_0+0)−f(t_0−0)}  の約９％になることがわかっている。<br>
+
+このギブスの現象は、一見すると、区分的に滑らかな関数の不連続点以外の収束性（元の周期関数 f(t) への収束）と矛盾するように思える。<br>
+しかし実際には、大きな N の値に対しては矛盾は生じない。<br>
