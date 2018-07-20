@@ -283,3 +283,29 @@ n=N までの有限項で打ち切ったフーリエ級数は、<br>
 以下の性質に言い換えられる。<br>
 ![image](https://user-images.githubusercontent.com/25688193/42998225-6383803c-8c54-11e8-9f0c-0a9f0e79790b.png)<br>
 
+<br>
+
+ここまで、各点収束や一様収束の議論をしてきたが、もう１つ重要な収束性に関する概念として、平均収束というものが挙げられる。<br>
+![image](https://user-images.githubusercontent.com/25688193/43009309-47c03484-8c78-11e8-9b59-3e9d986ebb49.png)<br>
+
+より一般的に定義すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43009660-3645d622-8c79-11e8-8df4-e68ffdcadb13.png)<br>
+
+前述のように、周期関数 f(t) が滑らかな場合は、そのフーリエ級数が f(t) に一様収束する。<br>
+このとき、一様収束の定義にある ε の代わりに、正の数 ![image](https://user-images.githubusercontent.com/25688193/43018258-0cf22940-8c94-11e8-93b0-98e1f2dc7923.png) を用いると、<br>
+一様収束の定義より、![image](https://user-images.githubusercontent.com/25688193/43018274-1dae4a5c-8c94-11e8-87a8-ea4777ac8162.png) のような N に対して、<br>
+![image](https://user-images.githubusercontent.com/25688193/43018311-3798553e-8c94-11e8-9be4-718421a99816.png)<br>
+の関係が成り立つ。<br>
+
+従って、平均収束の定義にある ![image](https://user-images.githubusercontent.com/25688193/43018328-4788a656-8c94-11e8-9ac7-6a86ab1c6166.png) に対して、<br>
+![image](https://user-images.githubusercontent.com/25688193/43018385-7b9fee5e-8c94-11e8-83f2-709ccde07822.png)<br>
+の関係が成り立つので、平均収束の定義が成り立つことが分かる。<br>
+つまり、フーリエ級数が一様収束するならば、必ず平均収束することが言える。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/43018634-37fc2cfc-8c95-11e8-9a1d-94e82250efbb.png)<br>
+
+次に、区分的に滑らかな周期関数のフーリエ級数を考えると、先に述べたように、各点収束はするが、一様収束はしない。<br>
+そのため、滑らかな関数のときほど簡単な議論ではないが、区分的に滑らかな関数に対しても、平均収束することがわかっている。（詳細略）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/43018667-4bc77d4a-8c95-11e8-87e1-ef31ec36c403.png)<br>
+
