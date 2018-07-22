@@ -6,8 +6,8 @@
 1. [フーリエ級数展開](#ID_2)
     1. [フーリエ係数の意味](#ID_2-1)
     1. [フーリエ級数の収束性](#ID_2-2)
-    1. [xxx](#ID_2-x)
-1. xxx
+1. [複素フーリエ級数](#ID_3)
+1. [xxx](#ID_x-x)
 
 ---
 
@@ -308,4 +308,82 @@ n=N までの有限項で打ち切ったフーリエ級数は、<br>
 そのため、滑らかな関数のときほど簡単な議論ではないが、区分的に滑らかな関数に対しても、平均収束することがわかっている。（詳細略）<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/43018667-4bc77d4a-8c95-11e8-87e1-ef31ec36c403.png)<br>
+
+<br>
+
+最後に、この平均収束に関連した重要な式（ベッセルの不等式、パーシバルの等式）を導く。<br>
+
+平均収束の定義にある ![image](https://user-images.githubusercontent.com/25688193/43018328-4788a656-8c94-11e8-9ac7-6a86ab1c6166.png) を、フーリエ級数展開の形で変形すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43034210-63f2f60a-8d13-11e8-8143-1f325dab7817.png)<br>
+最後の項を積分すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43034216-795a8972-8d13-11e8-9578-55419156b023.png)<br>
+ここで、<br>
+![image](https://user-images.githubusercontent.com/25688193/43034220-8932d35e-8d13-11e8-9115-16ccdcfee84f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43034222-a15adb8e-8d13-11e8-9a96-b94dd0906763.png)<br>
+の関係式と、フーリエ係数の定義<br>
+![image](https://user-images.githubusercontent.com/25688193/43034237-e393d280-8d13-11e8-88cc-7c841432e5fb.png)<br>
+より、<br>
+![image](https://user-images.githubusercontent.com/25688193/43034241-f76e8db8-8d13-11e8-9424-bc23a6146b6a.png)<br>
+よって、<br>
+![image](https://user-images.githubusercontent.com/25688193/43034271-7920337a-8d14-11e8-84aa-a3d40eb35a13.png)<br>
+
+ここで、平均収束に定義にある ![image](https://user-images.githubusercontent.com/25688193/43037588-a55778ce-8d49-11e8-9e85-a926ea8900c9.png) の被積分関数 ![image](https://user-images.githubusercontent.com/25688193/43037595-b8474298-8d49-11e8-8fa3-87b93ef38321.png) は、<br>
+任意の t に対して、0 以上となる関数なので、![image](https://user-images.githubusercontent.com/25688193/43037599-ca272a50-8d49-11e8-84cb-9002f8af78ca.png) は 0 以上である。<br>
+従って、上式は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43037622-0de65658-8d4a-11e8-987c-8a415cb355e5.png)<br>
+となり、変形すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43037605-e2ac6e32-8d49-11e8-8cda-049f81a29a43.png)<br>
+N は任意の正の整数なので、N→∞ において、<br>
+![image](https://user-images.githubusercontent.com/25688193/43037629-21c65b32-8d4a-11e8-92ff-b0b06aa2cc84.png)<br>
+が成り立つ。
+この２つの不等式を、**ベッセルの不等式**という。<br>
+
+<br>
+
+区分的に滑らかな周期関数に対しては、平均収束の定義にある ![image](https://user-images.githubusercontent.com/25688193/43037599-ca272a50-8d49-11e8-84cb-9002f8af78ca.png) は、N→∞ で 0 に収束するので、<br>
+上記ベッセルの不等式の等式部分が成り立ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/43038497-9471d166-8d54-11e8-9be8-76789498834a.png)<br>
+この等式を **パーシバルの等式** という。（この式の意味は後述）<br>
+
+---
+
+<a id="ID_3"></a>
+
+## ■ 複素フーリエ級数
+これまでのフーリエ級数は、全て実数で扱ってきたが、複素数を使ったフーリエ級数である複素フーリエ級数なるものが考えられる。<br>
+この複素フーリエ級数は、これまでの実数でのフーリエ級数（実フーリエ級数）と本質的に同じものであるが、複素フーリエ級数を使用すると、フーリエ級数に関する多くの公式が簡単になり、又、計算量も軽減できるようになるメリットが存在する。<br>
+
+実フーリエ級数の式は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43044696-78e576a4-8de6-11e8-8a42-2fa7dfaf11f0.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43044704-9dce5ae4-8de6-11e8-86bf-b97e2288c5b2.png)<br>
+であるが、これを複素数で書き換えることを考える。<br>
+複素数で書き換えるにあって、最も重要な式は、以下のオイラーの公式である。<br>
+![image](https://user-images.githubusercontent.com/25688193/43044712-b92e4f2e-8de6-11e8-9a82-7c976a86744d.png)<br>
+ここで、θ は任意の実数であり、フーリエ級数の式で出てくる 2nπt/T 項を使用して書き換えると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43044721-ebf400e8-8de6-11e8-937d-cd91cde0e651.png)<br>
+フーリエ級数のときと同様にして、n に関する級数和をとると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43044728-0c6ccaa8-8de7-11e8-8b6e-4d007e12e083.png)<br>
+ここで、![image](https://user-images.githubusercontent.com/25688193/43044731-1f5f1ec2-8de7-11e8-9b4b-9898504f95de.png) は複素数の定数であり、実部と虚部で書くと、![image](https://user-images.githubusercontent.com/25688193/43044740-40d77ab8-8de7-11e8-8dd6-2a8af9429943.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43044955-7bca84dc-8dea-11e8-9ea1-63abad3cc957.png)<br>
+虚数部が０にするために、n についての和の部分を −∞ ~ ∞ の範囲に拡張すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43044962-9e91b3b4-8dea-11e8-937d-be89d6dbec64.png)<br>
+この式の虚数部を０にするために、正の n に対する ![image](https://user-images.githubusercontent.com/25688193/43044967-b3341f96-8dea-11e8-8c14-32addefbd067.png) と、負の n に対する ![image](https://user-images.githubusercontent.com/25688193/43044967-b3341f96-8dea-11e8-8c14-32addefbd067.png) の関係式を調べる。<br>
+k を正の整数とし、-k を負の整数として、虚数部の級数和を n=k, n=-k の項に分解すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43045498-79c039ac-8df4-11e8-95a1-9e15fe7f46ef.png)<br>
+となるので、<br>
+![image](https://user-images.githubusercontent.com/25688193/43045500-9dd195e8-8df4-11e8-8a99-f839cb8224cf.png)<br>
+複素数で表すと、<br>
+![image](https://user-images.githubusercontent.com/25688193/43045504-be64a55c-8df4-11e8-9b42-8c8c4051ddab.png)<br>
+の場合に、虚数部は０になる。<br>
+
+実際にフーリエ級数の式に代入すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43045798-3e8fa984-8dfa-11e8-955e-6c707fd18137.png)<br>
+この式と実フーリエ級数の式を比較すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43045846-f8f6c212-8dfa-11e8-8813-6291ec74d9bd.png)<br>
+複素係数で表記すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43045850-0991c61c-8dfb-11e8-8a0f-dcc618eff163.png)<br>
+
+従って、複素フーリエ級数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43045855-1b42255a-8dfb-11e8-9f81-641719d171dd.png)<br>
+
 
