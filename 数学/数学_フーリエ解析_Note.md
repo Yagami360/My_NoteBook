@@ -403,7 +403,25 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43111622-007a480a-8f2d-11e8-82c1-e98113c44158.png)<br>
 となる。<br>
 
+<br>
 
+- （例）複素フーリエ係数を直接計算<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43142272-fea95708-8f92-11e8-80fa-a83238c93046.png)<br>
+    を周期 2π 間隔で周期的に拡張した周期関数の複素フーリエ係数を、実フーリエ係数からではなく、直接計算する。<br>
 
+    ![image](https://user-images.githubusercontent.com/25688193/43149430-5957484a-8fa2-11e8-9737-25e0b9d25a6f.png)<br>
+    ここで、オイラーの公式より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43149148-b9ea07fc-8fa1-11e8-9c50-1fef809f5d30.png)<br>
+    の関係が成り立つので、<br>
 
+    - 0 以外の偶数の n に対しては、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/43149468-6c5c7ab4-8fa2-11e8-857e-d7ea3a2b827f.png)<br>
+    
+    - 奇数の n に対しては、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/43150453-ee492c32-8fa4-11e8-8eaf-47180ecd578a.png)<br>
+
+    - n=0 の場合は、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/43150507-11e13612-8fa5-11e8-8e59-68d311705191.png)<br>
+
+<br>
 
