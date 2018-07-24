@@ -391,9 +391,17 @@ k を正の整数とし、-k を負の整数として、虚数部の級数和を
 で求まる実フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/43048796-5003823e-8e28-11e8-9cf4-7334aaeeebad.png) から求めており、これでは計算量の削減になっていない。<br>
 そこで、次に、複素フーリエ係数を直接計算することを考える。<br>
 複素フーリエ級数の式の両辺に ![image](https://user-images.githubusercontent.com/25688193/43048806-6a081758-8e28-11e8-8d08-4dadfc56a29a.png) をかけて、0~T の範囲で積分すると、<br>
-![image](https://user-images.githubusercontent.com/25688193/43048811-7779e4fc-8e28-11e8-9cdc-3955b7e258ff.png)<br>
-
-
+![image](https://user-images.githubusercontent.com/25688193/43049119-5a154d98-8e2d-11e8-9961-3e487cbd7a36.png)<br>
+ここで、右辺の積分項は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43111365-dd6b1ad4-8f2b-11e8-932a-de6b62e9a9cf.png)<br>
+k=0 の場合は、被積分項が 1 になるので、<br>
+![image](https://user-images.githubusercontent.com/25688193/43111383-f2162046-8f2b-11e8-8229-dd962b53d931.png)<br>
+従って、<br>
+![image](https://user-images.githubusercontent.com/25688193/43111425-2ea3d774-8f2c-11e8-96d3-6440e7d45f31.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43111436-3d054b18-8f2c-11e8-8df1-b3e6e42af9f5.png)<br>
+以上の結果をまとめると、周期 T の周期関数 f(t) の複素フーリエ級数展開は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43111622-007a480a-8f2d-11e8-82c1-e98113c44158.png)<br>
+となる。<br>
 
 
 
