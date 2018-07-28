@@ -531,3 +531,21 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 
 <br>
 
+次に、完全直交関数系の定義で定義した ![image](https://user-images.githubusercontent.com/25688193/43357444-a2cb1d68-92bc-11e8-889f-4f35126add4a.png) を別の形（パーシバルの等式）に書き直すことを考える。<br>
+![image](https://user-images.githubusercontent.com/25688193/43358491-d32aa436-92cd-11e8-9d9e-693acf92ab4f.png)<br>
+ここで、![image](https://user-images.githubusercontent.com/25688193/43358503-ede64f14-92cd-11e8-8426-2faa03aa9f99.png) の関係式より、<br>
+![image](https://user-images.githubusercontent.com/25688193/43358746-6d5425ac-92d1-11e8-84c3-768b8f92970b.png)<br>
+従って、直交関数系 ![image](https://user-images.githubusercontent.com/25688193/43358751-878cebd4-92d1-11e8-997e-dbe087e3635c.png) が完全であるための条件 lim_(N→∞) I_N=0 は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43358885-e0623096-92d3-11e8-97b9-5d58bc4bba3e.png)<br>
+と書き直せる。<br>
+
+ここで、パーシバルの等式 ![image](https://user-images.githubusercontent.com/25688193/43359300-24961a46-92db-11e8-8c9e-4c6efb2343e4.png) と、この完全直交関数系であるための条件 ![image](https://user-images.githubusercontent.com/25688193/43359304-3bcf24fa-92db-11e8-8335-9f92b745149e.png) を比較すると、<br>
+フーリエ展開における関数 ![image](https://user-images.githubusercontent.com/25688193/43359316-6f9a6ace-92db-11e8-8c5d-3e1eadd79cc0.png) に対応する展開係数は ![image](https://user-images.githubusercontent.com/25688193/43359329-86052254-92db-11e8-988a-28b81db65184.png) であることが分かる。<br>
+又、直交性の条件 ![image](https://user-images.githubusercontent.com/25688193/43359340-b28d5788-92db-11e8-8565-6ed900e39691.png) を、フーリエ級数に対応するように p=0, q=T で n=m の場合で計算すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43359344-d69e9ae2-92db-11e8-8d31-41d2881999d8.png) のときは、![image](https://user-images.githubusercontent.com/25688193/43359351-e5e2c550-92db-11e8-862b-3efa3be35bea.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43359356-fa6af182-92db-11e8-83dd-f25e54cbc3f0.png) のときは、![image](https://user-images.githubusercontent.com/25688193/43359360-09d0217e-92dc-11e8-909c-6e2d6d111032.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43359365-1fb33792-92dc-11e8-9fda-a0af308d5168.png) のときは、![image](https://user-images.githubusercontent.com/25688193/43359360-09d0217e-92dc-11e8-909c-6e2d6d111032.png)<br>
+従って、完全直交関数系であるための条件 ![image](https://user-images.githubusercontent.com/25688193/43359369-3d78a28a-92dc-11e8-87aa-6385c701e33c.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43359374-55219112-92dc-11e8-8249-2849182fcfb6.png)<br>
+となり、パーシバルの等式になっていることが分かる。<br>
+
