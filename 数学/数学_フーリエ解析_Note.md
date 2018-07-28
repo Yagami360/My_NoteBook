@@ -479,7 +479,7 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 
 <br>
 
-<a id="ID_3-2"></a>
+<a id="ID_4-2"></a>
 
 ### ◎ 直交級数（一般化フーリエ級数）
 区間 p≤t≤q で定義される関数 f(t) を、直交性 ![image](https://user-images.githubusercontent.com/25688193/43352723-01815ffc-9263-11e8-9002-f588d3bc1e3f.png) を満たす直交関数系 ![image](https://user-images.githubusercontent.com/25688193/43352732-202fdc44-9263-11e8-99ec-d09295a5b9f8.png) の各関数の重ね合わせで表現すると、<br>
@@ -497,7 +497,7 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 
 <br>
 
-<a id="ID_3-3"></a>
+<a id="ID_4-3"></a>
 
 ### ◎ 完全な直交関数系
 直交級数展開<br>
