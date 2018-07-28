@@ -9,6 +9,7 @@
 1. [複素フーリエ級数](#ID_3)
 1. [直交級数としてのフーリエ級数（関数解析視点でのフーリエ級数）](#ID_4)
     1. [関数同士の直交（直交関数系）](#ID_4-1)
+    1. [直交級数（一般化フーリエ級数）](#ID_4-2)
 1. [xxx](#ID_x)
 
 ---
@@ -465,5 +466,32 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 
 一般的には、関数直交系というと、上記の被積分項に重み ρ(t) を付けた　![image](https://user-images.githubusercontent.com/25688193/43217788-8182be9a-907d-11e8-8e1a-2b022dc1bc8c.png) で扱うが、<br>
 ここでは重み１のケース ρ(t)=1 を考える。<br>
+
+この関数系の直交性は、ベクトルにおける直交性（内積が０）を一般化した概念であり、<br>
+各関数が１つのベクトルに対応し、積分部分が、２つのベクトルである ![image](https://user-images.githubusercontent.com/25688193/43313589-7784ad32-91cb-11e8-873c-d9e3d44ec11b.png) の内積に対応する。<br>
+従って、直交関数系は、互いに直交するベクトルの集合のようなものであるであると言える。<br>
+
+直交関数系において、更に、大きさが１（![image](https://user-images.githubusercontent.com/25688193/43313678-c090cfb0-91cb-11e8-81a1-1ec860d2597e.png)）になるようなケース、<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/43313698-d1ad139e-91cb-11e8-9a5a-f15c4becef8c.png)<br>
+が成り立つ場合、この関数系を正規直交系と呼ぶ。<br>
+
+<br>
+
+<a id="ID_3-2"></a>
+
+### ◎ 直交級数（一般化フーリエ級数）
+区間 p≤t≤q で定義される関数 f(t) を、直交性 ![image](https://user-images.githubusercontent.com/25688193/43352723-01815ffc-9263-11e8-9002-f588d3bc1e3f.png) を満たす直交関数系 ![image](https://user-images.githubusercontent.com/25688193/43352732-202fdc44-9263-11e8-99ec-d09295a5b9f8.png) の各関数の重ね合わせで表現すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43352738-3d8eaa22-9263-11e8-86de-760c8c9a9c7c.png)<br>
+とかける。<br>
+ここで、![image](https://user-images.githubusercontent.com/25688193/43352740-4e60c024-9263-11e8-9b04-cfc1a0057adf.png) は係数であり、<br>
+両辺に右から ![image](https://user-images.githubusercontent.com/25688193/43352751-6650df16-9263-11e8-9afa-48053899c9e8.png) をかけて、t=p~q までの範囲で積分した式、<br>
+![image](https://user-images.githubusercontent.com/25688193/43355995-158cfb74-92a3-11e8-94b9-f9318ef56397.png)<br>
+よって、<br>
+![image](https://user-images.githubusercontent.com/25688193/43356002-3e82c996-92a3-11e8-8727-2ba0bf9a09f1.png)<br>
+このようにして求まる関数 f(t) を、**直交展開級数** といい、定数 ![image](https://user-images.githubusercontent.com/25688193/43356028-f53af88e-92a3-11e8-87ee-f5140c9ca220.png) を **展開係数** という。<br>
+
+この観点から見ると、実フーリエ級数展開は、直交関数系 ![image](https://user-images.githubusercontent.com/25688193/43356179-e3317b06-92a6-11e8-99b8-b790d6477e50.png) による直交級数展開であり、実フーリエ級数は、この級数の展開係数である。<br>
+直交級数としては、このフーリエ級数展開以外にも多くのものが存在するが（ルジャンドル多項式等）、フーリエ級数が最もよく使われるので、その意味で、直交級数を **一般化フーリエ級数** と呼ぶこともある。<br>
 
 
