@@ -12,6 +12,7 @@
     1. [直交級数（一般化フーリエ級数）](#ID_4-2)
     1. [完全な直交関数系](#ID_4-3)
     1. [ルジャンドル多項式](#ID_4-4)
+    1. [最適な直交級数の選択](#ID_4-5)
 1. [xxx](#ID_x)
 
 ---
@@ -583,7 +584,7 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43361493-a2c7fb8a-930a-11e8-8189-b0908deaf6bd.png)<br>
 が得られ、![image](https://user-images.githubusercontent.com/25688193/43361500-df3a160c-930a-11e8-969a-7e8adab46e14.png) は直交関数系である。といった具合である。<br>
 
-このようにして得られた関数系  ![image](https://user-images.githubusercontent.com/25688193/43361508-172a1ce2-930b-11e8-849d-055fbba46175.png) は、**ルジャンドル多項式** と呼ばれる。<br>
+このようにして得られた関数系 ![image](https://user-images.githubusercontent.com/25688193/43361508-172a1ce2-930b-11e8-849d-055fbba46175.png) は、**ルジャンドル多項式** と呼ばれる。<br>
 そして、**このルジャンドル多項式からなる関数系は、”完全な”直交関数系である。**<br>
 
 従って、−1≤t≤1 という区間で、区分的に滑らかな任意の関数 f(t) は、級数展開の形<br>
@@ -591,4 +592,14 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 で表現することが出来る。<br>
 そして、この級数展開を、**ルジャンドル級数展開** という。<br>
 
+このルジャンドル級数展開の展開係数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43361805-a03750d6-9315-11e8-8ceb-6860f7a42c92.png)<br>
+※ 級数展開の場合展開係数の式 ![image](https://user-images.githubusercontent.com/25688193/43361811-01135d32-9316-11e8-8101-10a023547a8a.png) において、![image](https://user-images.githubusercontent.com/25688193/43361813-1d180d34-9316-11e8-85c3-eb07fee7239e.png) とおいた式<br>
+※ ![image](https://user-images.githubusercontent.com/25688193/43361818-465abf8e-9316-11e8-87f7-90f8d4e9290c.png) は、![image](https://user-images.githubusercontent.com/25688193/43361826-72203284-9316-11e8-9f13-f3c80cd85f12.png) において、![image](https://user-images.githubusercontent.com/25688193/43361832-92ca7d0a-9316-11e8-90ca-b3702fdf063b.png) とおいた式 ![image](https://user-images.githubusercontent.com/25688193/43361838-b2bd3e04-9316-11e8-80b7-4fae7e4bf842.png) から求まり、![image](https://user-images.githubusercontent.com/25688193/43361850-f631bcc8-9316-11e8-86ea-d6ca022e34b9.png) となる。（計算略）<br>
+
+<br>
+
+<a id="ID_4-5"></a>
+
+### ◎ 最適な直交級数の選択
 
