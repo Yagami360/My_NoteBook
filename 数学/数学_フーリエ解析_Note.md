@@ -564,6 +564,31 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 <a id="ID_4-4"></a>
 
 ### ◎ ルジャンドル多項式
+完全な直交関数系には、様々な種類が存在するが、完全直交関数系に基づく直交級数は、フーリエ級数の仲間になる。ここでは、このフーリエ級数の仲間の１例としてルジャンドル多項式を見てみる。<br>
 
+今、−1≤t≤1 という区間で、区分的に滑らかな関数 f(t) を、直交関数系を用いて級数展開することを考える。
+
+まず最初に思いつくのは、べき関数からなる関数系 ![image](https://user-images.githubusercontent.com/25688193/43360571-8673f604-92f2-11e8-8127-922ad8a137eb.png) であるが、これは直交性の条件を満たさず、残念ながら直交関数系ではない（証明略）
+<br>
+
+次に、多項式の０次・１次・２次・・・からなる関数系において、各々の要素が直交性の条件を満たすように、０次から n 次までの多項式が直交性の条件を満たす時に、次の次数 n+1 の多項式も直交性の条件を満たすように式を構築するようにすることを考える。<br>
+
+具体的には、まず０次の多項式（定数）![image](https://user-images.githubusercontent.com/25688193/43360585-d1a594c0-92f2-11e8-8ba6-bcb4d8e60a48.png) と１次の多項式 ![image](https://user-images.githubusercontent.com/25688193/43360593-f5de2d16-92f2-11e8-9fc6-1d7577c74842.png) に対しては、<br>
+直交性の条件 ![image](https://user-images.githubusercontent.com/25688193/43361401-c55db272-9308-11e8-822e-a2c107e5dd2a.png) を満たすので、![image](https://user-images.githubusercontent.com/25688193/43361406-e7fd2e3e-9308-11e8-8a6b-efac903796d7.png) は直交関数系である。<br>
+次に、２次の多項式 ![image](https://user-images.githubusercontent.com/25688193/43361444-aa80f6d4-9309-11e8-9e0c-d51cc91ebc76.png) に対しては、<br>
+![image](https://user-images.githubusercontent.com/25688193/43361406-e7fd2e3e-9308-11e8-8a6b-efac903796d7.png) と共に直交するという条件を満たすようにするめには、![image](https://user-images.githubusercontent.com/25688193/43361453-f0b75602-9309-11e8-9c6b-cf7a8bf3bb50.png) となるようにする（計算略）と、![image](https://user-images.githubusercontent.com/25688193/43361464-0e309108-930a-11e8-916f-a2d33f0a6302.png) は直交関数系である。<br>
+これらの作業を繰り返すと、<br>
+![image](https://user-images.githubusercontent.com/25688193/43361483-4fb59db2-930a-11e8-8d19-7656f6075d84.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43361486-66dd94c2-930a-11e8-82fc-cfac6200a1b5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43361493-a2c7fb8a-930a-11e8-8189-b0908deaf6bd.png)<br>
+が得られ、![image](https://user-images.githubusercontent.com/25688193/43361500-df3a160c-930a-11e8-969a-7e8adab46e14.png) は直交関数系である。といった具合である。<br>
+
+このようにして得られた関数系  ![image](https://user-images.githubusercontent.com/25688193/43361508-172a1ce2-930b-11e8-849d-055fbba46175.png) は、**ルジャンドル多項式** と呼ばれる。<br>
+そして、**このルジャンドル多項式からなる関数系は、”完全な”直交関数系である。**<br>
+
+従って、−1≤t≤1 という区間で、区分的に滑らかな任意の関数 f(t) は、級数展開の形<br>
+![image](https://user-images.githubusercontent.com/25688193/43361535-1239feb8-930c-11e8-8c9c-77c5408a4c25.png)<br>
+で表現することが出来る。<br>
+そして、この級数展開を、**ルジャンドル級数展開** という。<br>
 
 
