@@ -13,6 +13,7 @@
     1. [完全な直交関数系](#ID_4-3)
     1. [ルジャンドル多項式](#ID_4-4)
     1. [最適な直交級数の選択](#ID_4-5)
+1. [フーリエ変換](#ID_5)
 1. [xxx](#ID_x)
 
 ---
@@ -613,4 +614,46 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 
 もう１つ重要な要素としては、級数展開時の各級数の収束の速さである。<br>
 これは、ある関数を級数和で近似するのに、たくさんの項が必要なのか、或いは少数の項で済むのかの問題であるが、解の関数を近似する数値計算では、特に重要になってくる。<br>
+
+<!--
+- （例）<br>
+    以下の関数のフーリエ級数展開とルジャンドル級数展開の収束の差を調べる。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43371149-f5c913ca-93c6-11e8-98ba-9fe88db38cce.png)<br>
+    <br>
+    ① まず、ルジャンドル級数の展開係数を求める。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43371153-0f576814-93c7-11e8-9e22-8173cfd97b09.png)<br>
+	この例題の関数 f(t) は、偶関数（![image](https://user-images.githubusercontent.com/25688193/43371180-b0fe7568-93c7-11e8-883f-b1ba7dd41c47.png)）であり、<br>
+	又、ルジャンドル多項式 ![image](https://user-images.githubusercontent.com/25688193/43371159-3a50590e-93c7-11e8-99e0-ddd708f1d935.png) は奇関数（![image](https://user-images.githubusercontent.com/25688193/43371199-1ce90946-93c8-11e8-8aa7-c1b271e8c9a2.png)）なので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43371211-498523f4-93c8-11e8-875b-5cfd4cef20fa.png)<br>
+-->
+
+---
+
+<a id="ID_5"></a>
+
+## ■ フーリエ変換
+フーリエ級数展開では、周期関数が sin,cos の和で表現できることが分かったが、同様にして、非周期関数も、様々な周期の sin,cos の和で表現できないかを考える。<br>
+
+この問題を考えるための例として、以下のような関数を考える。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/43378907-988c7812-9404-11e8-8025-4cfe00e38c53.png)<br>
+この関数は、t→±∞ としても値が０のままであるので、非周期関数である。<br>
+
+次に、この非周期関数 ![image](https://user-images.githubusercontent.com/25688193/43379018-3c15c4f2-9405-11e8-81ab-c98423327181.png) の代わりに、以下のような周期関数 ![image](https://user-images.githubusercontent.com/25688193/43379038-5a5765ba-9405-11e8-8ce4-b063d3d69a9a.png) を考える。<br>
+![image](https://user-images.githubusercontent.com/25688193/43379120-cb4c3b2e-9405-11e8-9a3a-4c450a8317b1.png)<br>
+
+２つの関数を比較すると、M→∞ とすると、![image](https://user-images.githubusercontent.com/25688193/43383768-fadcb2fe-9416-11e8-8fec-80f2dc53fa45.png) となることが分かる。<br>
+そこで、まず周期関数である ![image](https://user-images.githubusercontent.com/25688193/43379038-5a5765ba-9405-11e8-8ce4-b063d3d69a9a.png) のフーリエ級数（※周期関数はフーリエ級数展開可能）を求め、次に M→∞ としたときにどうなるのかを見てみる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/43379038-5a5765ba-9405-11e8-8ce4-b063d3d69a9a.png) は偶関数なので、そのフーリエ級数展開は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43382747-c101d5c6-9413-11e8-9b58-9978a6ed231a.png)<br>
+具体的に計算すると、<br>
+<br>
+
+ここで、このフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/43382825-053c1ddc-9414-11e8-90b1-ffc462a4b4e0.png) は、正の整数 n に対する周期の三角関数の変動成分の大きさを表しているが、以降では、周期の代わりに、波数 ![image](https://user-images.githubusercontent.com/25688193/43382871-2b19ddb4-9414-11e8-9dc5-1e4eef943305.png) を用いてこれら各変動成分を区別していくことにする。<br>
+
+次に、M→∞ とした場合に、このフーリエ係数 a_n  がどのようになるのかを調べる。<br>
+そのために、![image](https://user-images.githubusercontent.com/25688193/43404733-28c716fa-9453-11e8-9bf8-41a3acc05931.png) に ![image](https://user-images.githubusercontent.com/25688193/43404790-4c1c6f42-9453-11e8-8631-f099518c01b8.png) をかけて、M を消去し、k に依存した式を導くと、<br>
+![image](https://user-images.githubusercontent.com/25688193/43404848-713c2bfa-9453-11e8-9b6d-2081a959e283.png)<br>
+
 
