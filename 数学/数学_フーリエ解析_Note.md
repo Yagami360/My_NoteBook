@@ -653,7 +653,23 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 ここで、このフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/43382825-053c1ddc-9414-11e8-90b1-ffc462a4b4e0.png) は、正の整数 n に対する周期の三角関数の変動成分の大きさを表しているが、以降では、周期の代わりに、波数 ![image](https://user-images.githubusercontent.com/25688193/43382871-2b19ddb4-9414-11e8-9dc5-1e4eef943305.png) を用いてこれら各変動成分を区別していくことにする。<br>
 
 次に、M→∞ とした場合に、このフーリエ係数 a_n  がどのようになるのかを調べる。<br>
-そのために、![image](https://user-images.githubusercontent.com/25688193/43404733-28c716fa-9453-11e8-9bf8-41a3acc05931.png) に ![image](https://user-images.githubusercontent.com/25688193/43404790-4c1c6f42-9453-11e8-8631-f099518c01b8.png) をかけて、M を消去し、k に依存した式を導くと、<br>
-![image](https://user-images.githubusercontent.com/25688193/43404848-713c2bfa-9453-11e8-9b6d-2081a959e283.png)<br>
+そのために、![image](https://user-images.githubusercontent.com/25688193/43404733-28c716fa-9453-11e8-9bf8-41a3acc05931.png) に ![image](https://user-images.githubusercontent.com/25688193/43404790-4c1c6f42-9453-11e8-8631-f099518c01b8.png) をかけて、M を消去し、k に依存した式 ![image](https://user-images.githubusercontent.com/25688193/43408682-ec27bd80-945c-11e8-9a11-aeb0fa7c494e.png) を導くと、<br>
+![image](https://user-images.githubusercontent.com/25688193/43408717-feb57b18-945c-11e8-9739-31fb84040449.png)<br>
+となり、フーリエ係数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43408787-24bc0192-945d-11e8-9247-97e9b71dff16.png)<br>
+とかける。<br>
 
+従って、フーリエ級数展開の式は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43408913-71fa7d12-945d-11e8-9155-d417b49a3268.png)<br>
+ここで、この式の第２項である ![image](https://user-images.githubusercontent.com/25688193/43409204-3bd6c0c8-945e-11e8-9f60-0eb95e52a9d4.png) の部分を図示すると以下の図のようになる。<br>
+<br>
+この図からわかるように、長方形の幅は、k=2π/T=n/M の関係より、一番左（a_0  の部分）のもので 1/2M となり、それ以外は 1/M である。<br>
+従って、この長方形の面積の和は、フーリエ級数展開の式の第２項の部分 ![image](https://user-images.githubusercontent.com/25688193/43410337-8618a7e8-9461-11e8-966c-32a862befcc2.png) になっている。<br>
+そして、M→∞ とすると、この長方形の幅は０に近づき、関数 a ̂(k)  cos⁡(kt)  の面積（積分）![image](https://user-images.githubusercontent.com/25688193/43410405-b8e2c6fe-9461-11e8-82b9-0e1fc515ef36.png) に近づく。<br>
+![image](https://user-images.githubusercontent.com/25688193/43422073-94891c14-9483-11e8-9417-fbb673dc41ba.png)<br>
+よって、<br>
+![image](https://user-images.githubusercontent.com/25688193/43410441-d5a51ce2-9461-11e8-9669-b29ae0d3e71e.png)<br>
+となり、また ![image](https://user-images.githubusercontent.com/25688193/43410464-ef5a0d82-9461-11e8-9fc5-24e821c7f99b.png) の関係より、<br>
+![image](https://user-images.githubusercontent.com/25688193/43410554-31eed60a-9462-11e8-8754-49962dd8c42e.png)<br>
+が成り立つ。<br>
 
