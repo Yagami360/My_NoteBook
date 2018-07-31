@@ -670,6 +670,40 @@ k=0 の場合は、被積分項が 1 になるので、<br>
 よって、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43410441-d5a51ce2-9461-11e8-9669-b29ae0d3e71e.png)<br>
 となり、また ![image](https://user-images.githubusercontent.com/25688193/43410464-ef5a0d82-9461-11e8-9fc5-24e821c7f99b.png) の関係より、<br>
-![image](https://user-images.githubusercontent.com/25688193/43410554-31eed60a-9462-11e8-8754-49962dd8c42e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43423725-1e08262a-9488-11e8-95cc-e12f9383827e.png)<br>
 が成り立つ。<br>
 
+<br>
+
+次に、一般的な周期関数 ![image](https://user-images.githubusercontent.com/25688193/43427083-13b50034-9493-11e8-827c-2765a9d6941f.png)（周期 T）の場合を考える<br>
+この周期関数 ![image](https://user-images.githubusercontent.com/25688193/43427083-13b50034-9493-11e8-827c-2765a9d6941f.png) をフーリエ級数展開すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43427166-65487fc0-9493-11e8-9868-f6c76c202efa.png)<br>
+波数 k で書き換えると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43427190-7c40b38c-9493-11e8-8361-2beb694e6de8.png)<br>
+
+T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://user-images.githubusercontent.com/25688193/43427700-c14c58f8-9495-11e8-849f-c980b05d8aef.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43427726-de6c344e-9495-11e8-9390-6ce722a3c4c5.png)<br>
+に書き換えられるので、これを使用してフーリエ級数を書き換えると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43427757-004a2562-9496-11e8-8808-d54e59de3c26.png)<br>
+この式に対して、周期 T→∞ とすると、先の例と同じように、<br>
+{} 内の部分（赤字部分）は、![image](https://user-images.githubusercontent.com/25688193/43427781-1851f4dc-9496-11e8-89b5-d0899b016dfc.png) に近づいていく。<br>
+
+従って、<br>
+![image](https://user-images.githubusercontent.com/25688193/43427815-410b833e-9496-11e8-9733-ea27633ce9b7.png)<br>
+ここで、以下のような複素数の関数を導入する。<br>
+![image](https://user-images.githubusercontent.com/25688193/43428099-839a3e88-9497-11e8-9525-c61446cd275b.png)<br>
+そして、この関数に、先の ![image](https://user-images.githubusercontent.com/25688193/43428992-10c3f868-949c-11e8-8406-496c3a4fa559.png) を代入すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43429047-5943f3e0-949c-11e8-8646-cf778b524d95.png)<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/43429088-86c22ea4-949c-11e8-9b48-acc59269a7f5.png)<br>
+が成り立つ。<br>
+この式を用いて、関数 f(t) から F(k) を求めることを、関数の **フーリエ変換** と呼ぶ。<br>
+（関数 F(k) を関数 f(t) のフーリエ変換と呼んでもよい。）<br>
+
+次に、![image](https://user-images.githubusercontent.com/25688193/43465115-a0687d10-9517-11e8-950c-db77f5ba8723.png) を k について、−∞~∞ の範囲で積分すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43467374-8a04b9e4-951c-11e8-8cc3-2fba5b975b84.png)<br>
+ここで、![image](https://user-images.githubusercontent.com/25688193/43467446-aca9555e-951c-11e8-9c68-f6ab5b1c3336.png) の関係より、<br>
+![image](https://user-images.githubusercontent.com/25688193/43467534-d4aa0b34-951c-11e8-97ed-ed5f58c11803.png)<br>
+の関係が成り立つ。<br>
+この式を用いて、関数 F(k) から f(t) を求めることを、関数のフーリエ逆変換と呼ぶ。<br>
+（関数 f(t) を関数 F(k) のフーリエ変換と呼んでもよい。）<br>
