@@ -707,3 +707,45 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 の関係が成り立つ。<br>
 この式を用いて、関数 F(k) から f(t) を求めることを、関数のフーリエ逆変換と呼ぶ。<br>
 （関数 f(t) を関数 F(k) のフーリエ変換と呼んでもよい。）<br>
+
+- （例）関数 ![image](https://user-images.githubusercontent.com/25688193/43490179-953639c6-955a-11e8-8fab-ae9e77afa45f.png) のフーリエ変換を求める。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43490194-a67120fc-955a-11e8-98b1-c7a73f3d3537.png)<br>
+
+    ![image](https://user-images.githubusercontent.com/25688193/43490215-bfc38806-955a-11e8-848b-0b2525e37437.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43494120-2bf31350-956c-11e8-9b00-a81679c3bb87.png)<br>
+
+<br>
+
+フーリエ変換の式の F(k) に、フーリエ逆変換の結果の式を代入した式<br>
+![image](https://user-images.githubusercontent.com/25688193/43494136-4435d2c2-956c-11e8-9532-6d945686625c.png)<br>
+が得られる。<br>
+この式は、フーリエ変換を再度フーリエ逆変換すると、元に戻るという性質を記述した式であり、**フーリエの積分公式** と呼ばれる。<br>
+
+<br>
+
+次に、f(t) が偶関数で、f(−t)=f(t)  を満たす場合を考えると、<br>
+フーリエ係数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43494169-657239f8-956c-11e8-8700-ce6f1f82db55.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43494203-91030584-956c-11e8-9535-9fce978f6a5c.png)<br>
+従って、![image](https://user-images.githubusercontent.com/25688193/43494217-aec2fc8c-956c-11e8-8ef5-d13b0156a70d.png) の関係より、<br>
+![image](https://user-images.githubusercontent.com/25688193/43494288-0a66d77a-956d-11e8-9ae5-64f537250f3d.png)<br>
+が成り立つ。<br>
+この場合（＝f(t) が偶関数）の a ̂(k) は、関数 f(t) のフーリエ余弦変換と呼ばれる。<br>
+（２つの目の式は、その逆変換）<br>
+
+又、f(t) が奇関数で、f(−t)=−f(t) を満たす場合を考えると、同様にして、<br>
+![image](https://user-images.githubusercontent.com/25688193/43494389-89a816fc-956d-11e8-9a79-610899f0c45c.png)<br>
+が成り立つ。<br>
+この場合（＝f(t) が奇関数）の b ̂(k) は、関数 f(t) の **フーリエ正弦変換** と呼ばれる。<br>
+（２つの目の式は、その逆変換）<br>
+
+
+<a id="ID_5-1"></a>
+
+### ◎ フーリエ変換は何を表しているか
+フーリエ級数は、周期関数 f(t) を様々な波数 k を持つ sin,cos 関数の変動成分の重ね合わせとして表現しており、各成分は、１つ・２つと数えられるものであった。（離散スペクトル）<br>
+一方、フーリエ変換も、非周期関数 f(t) を様々な波数 k を持つ sin,cos 関数の変動成分の重ね合わせとして表現しるが、各変動成分の波数 k が、任意の実数の値となり、連続的な値をとり得る。（連続スペクトル）
+そして、この重ね合わせの密度（＝）が、a ̂(k),b ̂(k)  に比例する。<br>
+
+従って、**与えられた非周期関数 f(t)  のフーリエ変換を求めることにより、この関数 f(t)  の中に、どの波数（或いは周期）の変動成分が多く含まれているか？或いは、波数や周期でみてどのような範囲の変動成分を含んでいるか？を調べることが出来る。**<br>
+
