@@ -14,6 +14,9 @@
     1. [ルジャンドル多項式](#ID_4-4)
     1. [最適な直交級数の選択](#ID_4-5)
 1. [フーリエ変換](#ID_5)
+    1. [フーリエ変換は何を表しているか](#ID_5-1)
+    1. [フーリエ変換出来る関数と出来ない関数](#ID_5-2)
+    1. [フーリエ変換の計算](#ID_5-3)
 1. [xxx](#ID_x)
 
 ---
@@ -763,4 +766,24 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
     この関数の絶対値の −∞ < t < ∞ 区間での積分は、<br>
     ![image](https://user-images.githubusercontent.com/25688193/43543851-32e2a522-960c-11e8-847e-31fb2dd8aae1.png)<br>
     となり、有限の値をとるので、この関数 ![image](https://user-images.githubusercontent.com/25688193/43543876-4484120c-960c-11e8-8af2-30f0a0245d01.png) は絶対可積分であり、フーリエ変換は存在する。<br>
+
+
+
+<a id="ID_5-3"></a>
+
+### ◎ フーリエ変換の計算
+フーリエ変換は、以下のような作用素の記号で書き表すのが、意味が分かりやすく便利である。<br>
+![image](https://user-images.githubusercontent.com/25688193/43550627-346c9b06-961f-11e8-982a-59c8865433b2.png)<br>
+
+今、２つの関数 ![image](https://user-images.githubusercontent.com/25688193/43550654-49127bf2-961f-11e8-80d9-935cd46dda36.png) がフーリエ変換をもつとする。<br>
+このとき、この２つの関数の各々に実数 ![image](https://user-images.githubusercontent.com/25688193/43550676-5c81114e-961f-11e8-8791-e8c6f741e5d3.png) をかけて足し合わせた関数 ![image](https://user-images.githubusercontent.com/25688193/43550709-70751718-961f-11e8-84d4-f2a20c48ee3c.png) のフーリエ変換がどうなるのかを見てみる。<br>
+![image](https://user-images.githubusercontent.com/25688193/43550821-cb382f00-961f-11e8-953b-98cf899333dc.png)<br>
+つまり、（![image](https://user-images.githubusercontent.com/25688193/43557077-f97f8930-963d-11e8-93bb-a193e0432d33.png) とすると分かるように）２つの関数の和のフーリエ変換は、各々の関数のフーリエ変換の和となる。<br>
+又、（![image](https://user-images.githubusercontent.com/25688193/43557101-138938e4-963e-11e8-8f94-b68b7d24149a.png) とすると分かるように）ある関数の定数倍のフーリエ変換は、元の関数のフーリエ変換の定数倍となることが分かる。<br>
+これらの関係は、**フーリエ変換についての重ね合わせの原理** と呼ばれる。<br>
+この原理を使えば、例えば、フーリエ変換がわかっている２つの関数があって、その関数の和のフーリエ変換を求めたい場合に、これを直ちに計算することが出来る。<br>
+
+尚、フーリエ逆変換についても重ね合わせの原理が成り立つ。<br>
+![image](https://user-images.githubusercontent.com/25688193/43558481-b8883218-9644-11e8-891a-7cd5c7ec3a90.png)<br>
+
 
