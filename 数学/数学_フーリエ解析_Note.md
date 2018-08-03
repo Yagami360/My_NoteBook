@@ -786,4 +786,20 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 尚、フーリエ逆変換についても重ね合わせの原理が成り立つ。<br>
 ![image](https://user-images.githubusercontent.com/25688193/43558481-b8883218-9644-11e8-891a-7cd5c7ec3a90.png)<br>
 
+次に、関数 f(t/q) のフーリエ変換を考える。<br>
+関数 f(t/q) は、関数 f(t) を t 軸方向に q 倍伸縮した関数であるが、<br>
+そのフーリエ変換は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43625027-a8f19a60-9725-11e8-87a7-f7ecabc51215.png)<br>
+※ 左辺の (k) は、フーリエ変換の結果が、k に依存するという意味。<br>
+※ 右辺の (qk) は、フーリエ変換の結果が、k → qk に置き換えたものになる意味。<br>
 
+- （例）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43645428-d2bfeb5c-976c-11e8-8611-bff05a1fe5e4.png)<br>
+    のフーリエ変換の結果を用いて、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43645470-f29d2192-976c-11e8-938a-01f3f754e6a0.png)<br>
+    のフーリエ変換を求める。<br>
+
+    f(t) は、区分的に滑らかな関数で、かつ、絶対可積分なので、フーリエ変換が存在し、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43645510-15abca62-976d-11e8-8aa5-191bbf4b04f2.png)<br>
+    一方、f ̂(t) は、f(t) を t 軸方向に q 倍したものであり、f ̂(t)=f(t/q) の関係が成り立つ。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43645552-3d3ffe18-976d-11e8-83b4-b59849731d76.png)<br>
