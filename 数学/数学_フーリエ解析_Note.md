@@ -840,7 +840,24 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 <br>
 
 次に、区分的に滑らかで絶対可積分、かつ ![image](https://user-images.githubusercontent.com/25688193/43679241-145a4b5c-985d-11e8-92c9-06706a662d86.png) を満たす関数 f(t) のフーリエ変換と、
-この関数を積分して得られる関数 ![image](https://user-images.githubusercontent.com/25688193/43679246-26df5132-985d-11e8-95dd-28f6da829611.png)（区分的に滑らかで絶対可積分であるとする）のフーリエ変換の間の関係性について調べてみる。![image](https://user-images.githubusercontent.com/25688193/43679421-c3a50b90-985f-11e8-9c06-a032cd6c682a.png)<br>
+この関数を積分して得られる関数 ![image](https://user-images.githubusercontent.com/25688193/43679246-26df5132-985d-11e8-95dd-28f6da829611.png)（区分的に滑らかで絶対可積分であるとする）のフーリエ変換の間の関係性について調べてみる。<br>
+![image](https://user-images.githubusercontent.com/25688193/43679940-c82c4e30-9869-11e8-8478-67106826e5bb.png)<br>
 
+- （例）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43679974-8e0850ea-986a-11e8-8baa-c03bc33d0644.png)<br>
+    のフーリエ変換を、この関数の２階導関数 f′′(t) から求める。<br>
 
+    ![image](https://user-images.githubusercontent.com/25688193/43679976-b47474f2-986a-11e8-870d-29d1a1aa4f6c.png)<br>
+	ここで、f′(t),f′′(t) 共に、区分的に滑らかで絶対可積分な関数である。<br>
+	次に、f′′(t) のフーリエ変換を求めると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43679987-fd0b3962-986a-11e8-88fe-0e564ccaf31a.png)<br>
+	ここで、f′ (t) は t→−∞ で 0 となる関数なので、![image](https://user-images.githubusercontent.com/25688193/43679989-1d1ce228-986b-11e8-8502-d71896c0f053.png) の関係が成り立ち、<br>
+	![image](https://user-images.githubusercontent.com/25688193/43679994-3ab096d6-986b-11e8-82c0-16a77c644455.png) の条件が成り立つ。<br>
+	同様に、f(t) は t→−∞ で 0 となる関数なので、![image](https://user-images.githubusercontent.com/25688193/43679999-58c5dfa0-986b-11e8-894f-1bd3b0bf305f.png) の関係が成り立ち、<br>
+	![image](https://user-images.githubusercontent.com/25688193/43680003-83e3efc4-986b-11e8-8a4d-8ae77f325e26.png) の条件が成り立つので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43680013-a5ff87e4-986b-11e8-92ec-1287e9fcc271.png)<br>
+    が成り立ち、結果、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43680018-b80588f8-986b-11e8-9a09-265813374cbc.png)<br>
+
+<br>
 
