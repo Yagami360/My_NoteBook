@@ -825,6 +825,7 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 	従って、<br>
     ![image](https://user-images.githubusercontent.com/25688193/43672238-bd37a50e-97e4-11e8-8f48-f8d49f3e2987.png)<br>
 
+
 <a id="ID_5-3-1"></a>
 
 #### ☆ 微分・積分した関数のフーリエ変換
@@ -860,4 +861,9 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
     ![image](https://user-images.githubusercontent.com/25688193/43680018-b80588f8-986b-11e8-9a09-265813374cbc.png)<br>
 
 <br>
+
+<a id="ID_5-3-2"></a>
+
+#### ☆ 合成積（畳み込み）、積のフーリエ変換とパーシバルの等式
+
 
