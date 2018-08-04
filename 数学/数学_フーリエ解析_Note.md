@@ -786,6 +786,8 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 尚、フーリエ逆変換についても重ね合わせの原理が成り立つ。<br>
 ![image](https://user-images.githubusercontent.com/25688193/43558481-b8883218-9644-11e8-891a-7cd5c7ec3a90.png)<br>
 
+<br>
+
 次に、関数 f(t/q) のフーリエ変換を考える。<br>
 関数 f(t/q) は、関数 f(t) を t 軸方向に q 倍伸縮した関数であるが、<br>
 そのフーリエ変換は、<br>
@@ -803,3 +805,42 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
     ![image](https://user-images.githubusercontent.com/25688193/43645510-15abca62-976d-11e8-8aa5-191bbf4b04f2.png)<br>
     一方、f ̂(t) は、f(t) を t 軸方向に q 倍したものであり、f ̂(t)=f(t/q) の関係が成り立つ。<br>
     ![image](https://user-images.githubusercontent.com/25688193/43645552-3d3ffe18-976d-11e8-83b4-b59849731d76.png)<br>
+
+<br>
+
+次に、関数 f(t) を t 軸方向に β だけずらした関数 f(t−β) のフーリエ変換を考える。<br>
+![image](https://user-images.githubusercontent.com/25688193/43672176-a0018be0-97e3-11e8-9a21-ecaddbb5edc1.png)<br>
+即ち、ある関数を t 軸方向に β だけずらした関数のフーリエ変換は、元の関数のフーリエ変換に e^(−ikβ)  をかけたものとなる。<br>
+従って、元の関数のフーリエ変換が分かっている時は、このフーリエ変換の結果を用いて、元の関数を t 軸方向に任意の量だけずらした関数のフーリエ変換を容易に計算できる。<br>
+
+- （例）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43672206-394345f0-97e4-11e8-99be-991c63be9a88.png)<br>
+    のフーリエ変換の結果を用いて、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43672212-568ef960-97e4-11e8-84ad-1a7ee81b6d6e.png)<br>
+    のフーリエ変換を求める。<br>
+
+    f(t) は、区分的に滑らかな関数で、かつ、絶対可積分なので、フーリエ変換が存在し、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43672217-75d18e8c-97e4-11e8-8acb-7af940077a02.png)<br>
+    一方、f ̂(t) は、f(t) を t 軸方向に β だけずらしたものであり、f ̂(t)=f(t−β) の関係が成り立つ。<br>
+	従って、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43672238-bd37a50e-97e4-11e8-8f48-f8d49f3e2987.png)<br>
+
+<a id="ID_5-3-1"></a>
+
+#### ☆ 微分・積分した関数のフーリエ変換
+フーリエ変換を利用して偏微分方程式を解く際には、ある関数のフーリエ変換と、その関数を微分・積分した関数のフーリエ変換の間の関係性を知っておくことが必要になる。<br>
+更に、時系列データなどの離散データの解析にも、この関係性についての知識がしばしば必要になる。<br>
+
+そこでまず、区分的に滑らかで絶対可積分な関数 f(t) のフーリエ変換と、<br>
+この関数を微分した関数（導関数）f′(t) のフーリエ変換の間の関係性を調べてみる。<br>
+（ここで、導関数 f′(t) も区分的に滑らかな関数であるとする。）<br>
+![image](https://user-images.githubusercontent.com/25688193/43672691-6073a660-97ee-11e8-8241-82d867c624e3.png)<br>
+即ち、ある関数の導関数のフーリエ変換は、元の関数のフーリエ変換に ik をかけたものになる。<br>
+
+<br>
+
+次に、区分的に滑らかで絶対可積分、かつ ![image](https://user-images.githubusercontent.com/25688193/43679241-145a4b5c-985d-11e8-92c9-06706a662d86.png) を満たす関数 f(t) のフーリエ変換と、
+この関数を積分して得られる関数 ![image](https://user-images.githubusercontent.com/25688193/43679246-26df5132-985d-11e8-95dd-28f6da829611.png)（区分的に滑らかで絶対可積分であるとする）のフーリエ変換の間の関係性について調べてみる。![image](https://user-images.githubusercontent.com/25688193/43679421-c3a50b90-985f-11e8-9c06-a032cd6c682a.png)<br>
+
+
+
