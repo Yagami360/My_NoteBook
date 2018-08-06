@@ -17,6 +17,9 @@
     1. [フーリエ変換は何を表しているか](#ID_5-1)
     1. [フーリエ変換出来る関数と出来ない関数](#ID_5-2)
     1. [フーリエ変換の計算](#ID_5-3)
+        1. [微分・積分した関数のフーリエ変換](#ID_5-3-1)
+        1. [合成積（畳み込み）、積のフーリエ変換とパーシバルの等式](#ID_5-3-2)
+        1. [ガウス関数のフーリエ変換](#ID_5-3-3)
 1. [xxx](#ID_x)
 
 ---
@@ -903,5 +906,34 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 
 <br>
 
+次に、２つの関数 f(t),g(t) がそれぞれフーリエ変換 F(k),G(k) をもつ場合に、<br>
+この２つの関数の積 f(t)×g(t) のフーリエ変換を F(k),G(k) を用いて比較的簡単に表せないかを調べてみる。<br>
+![image](https://user-images.githubusercontent.com/25688193/43694766-f6384f70-996f-11e8-851c-c9233d5d237a.png)<br>
+
+ここで、g(t)=f(t) で k=0 のときは、<br>
+![image](https://user-images.githubusercontent.com/25688193/43698236-ef431c5e-9983-11e8-805a-1e4197683720.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43698294-2835d1e6-9984-11e8-9bea-3f618a6bcdff.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43698316-4055a274-9984-11e8-816c-fa103c89740f.png) の関係より、<br>
+![image](https://user-images.githubusercontent.com/25688193/43698330-5bdb1cb8-9984-11e8-8bef-ed81cd7dc8bd.png)<br>
+が成り立つ。<br>
+この式は、フーリエ変換に対するパーシバルの等式と呼ばれており、先のフーリエ級数の収束性のところで取り上げた、パーシバルの等式と類似のものである。（この式の意味については、後述）<br>
+
+
+<a id="ID_5-3-3"></a>
+
+#### ☆ ガウス関数のフーリエ変換
+最後に、応用上しばしば利用されるガウス関数 ![image](https://user-images.githubusercontent.com/25688193/43701426-1f80b4c8-9991-11e8-8721-629c2fbb0682.png) のフーリエ変換について調べてみる。<br>
+![image](https://user-images.githubusercontent.com/25688193/43701475-405abe00-9991-11e8-9a12-e64a477785e3.png)<br>
+両辺を k で微分すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43701621-d23a3bfc-9991-11e8-9e00-6647f3d28ce2.png)<br>
+この式は、F(k)  に関しての微分方程式になっており、その解は<br>
+![image](https://user-images.githubusercontent.com/25688193/43708914-7eb4582c-99a6-11e8-8d67-8721d00a49ae.png)<br>
+となる。（計算略）<br>
+ここで、F(0) は、k=0 のときの値で β に依存し<br>
+![image](https://user-images.githubusercontent.com/25688193/43708969-9e5617ec-99a6-11e8-8ad0-4c66fdf94ea2.png)<br>
+従って、両式を比較すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43709046-ce7455d8-99a6-11e8-8c26-c1757e8a9646.png)<br>
+この微分方程式の解は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43709071-ddac5424-99a6-11e8-8a91-26b2c7fc18ef.png)<br>
 
 
