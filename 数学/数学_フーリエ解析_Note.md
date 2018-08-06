@@ -777,7 +777,7 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 
 今、２つの関数 ![image](https://user-images.githubusercontent.com/25688193/43550654-49127bf2-961f-11e8-80d9-935cd46dda36.png) がフーリエ変換をもつとする。<br>
 このとき、この２つの関数の各々に実数 ![image](https://user-images.githubusercontent.com/25688193/43550676-5c81114e-961f-11e8-8791-e8c6f741e5d3.png) をかけて足し合わせた関数 ![image](https://user-images.githubusercontent.com/25688193/43550709-70751718-961f-11e8-84d4-f2a20c48ee3c.png) のフーリエ変換がどうなるのかを見てみる。<br>
-![image](https://user-images.githubusercontent.com/25688193/43550821-cb382f00-961f-11e8-953b-98cf899333dc.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43691118-01752692-9952-11e8-8b32-788c709d8580.png)<br>
 つまり、（![image](https://user-images.githubusercontent.com/25688193/43557077-f97f8930-963d-11e8-93bb-a193e0432d33.png) とすると分かるように）２つの関数の和のフーリエ変換は、各々の関数のフーリエ変換の和となる。<br>
 又、（![image](https://user-images.githubusercontent.com/25688193/43557101-138938e4-963e-11e8-8f94-b68b7d24149a.png) とすると分かるように）ある関数の定数倍のフーリエ変換は、元の関数のフーリエ変換の定数倍となることが分かる。<br>
 これらの関係は、**フーリエ変換についての重ね合わせの原理** と呼ばれる。<br>
@@ -791,7 +791,7 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 次に、関数 f(t/q) のフーリエ変換を考える。<br>
 関数 f(t/q) は、関数 f(t) を t 軸方向に q 倍伸縮した関数であるが、<br>
 そのフーリエ変換は、<br>
-![image](https://user-images.githubusercontent.com/25688193/43625027-a8f19a60-9725-11e8-87a7-f7ecabc51215.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43691126-2a6319e2-9952-11e8-84ba-8dae853b0971.png)<br>
 ※ 左辺の (k) は、フーリエ変換の結果が、k に依存するという意味。<br>
 ※ 右辺の (qk) は、フーリエ変換の結果が、k → qk に置き換えたものになる意味。<br>
 
@@ -809,7 +809,7 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 <br>
 
 次に、関数 f(t) を t 軸方向に β だけずらした関数 f(t−β) のフーリエ変換を考える。<br>
-![image](https://user-images.githubusercontent.com/25688193/43672176-a0018be0-97e3-11e8-9a21-ecaddbb5edc1.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43691132-4cb50f3c-9952-11e8-805f-00cd9f0c6a61.png)<br>
 即ち、ある関数を t 軸方向に β だけずらした関数のフーリエ変換は、元の関数のフーリエ変換に e^(−ikβ)  をかけたものとなる。<br>
 従って、元の関数のフーリエ変換が分かっている時は、このフーリエ変換の結果を用いて、元の関数を t 軸方向に任意の量だけずらした関数のフーリエ変換を容易に計算できる。<br>
 
@@ -835,14 +835,14 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 そこでまず、区分的に滑らかで絶対可積分な関数 f(t) のフーリエ変換と、<br>
 この関数を微分した関数（導関数）f′(t) のフーリエ変換の間の関係性を調べてみる。<br>
 （ここで、導関数 f′(t) も区分的に滑らかな関数であるとする。）<br>
-![image](https://user-images.githubusercontent.com/25688193/43672691-6073a660-97ee-11e8-8241-82d867c624e3.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43691137-6d91fb98-9952-11e8-8a37-18ab48f3b122.png)<br>
 即ち、ある関数の導関数のフーリエ変換は、元の関数のフーリエ変換に ik をかけたものになる。<br>
 
 <br>
 
 次に、区分的に滑らかで絶対可積分、かつ ![image](https://user-images.githubusercontent.com/25688193/43679241-145a4b5c-985d-11e8-92c9-06706a662d86.png) を満たす関数 f(t) のフーリエ変換と、
 この関数を積分して得られる関数 ![image](https://user-images.githubusercontent.com/25688193/43679246-26df5132-985d-11e8-95dd-28f6da829611.png)（区分的に滑らかで絶対可積分であるとする）のフーリエ変換の間の関係性について調べてみる。<br>
-![image](https://user-images.githubusercontent.com/25688193/43679940-c82c4e30-9869-11e8-8478-67106826e5bb.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43691149-904cf020-9952-11e8-8a33-113bf809b684.png)<br>
 
 - （例）<br>
     ![image](https://user-images.githubusercontent.com/25688193/43679974-8e0850ea-986a-11e8-8baa-c03bc33d0644.png)<br>
@@ -865,5 +865,43 @@ T=2Mπ より、M に依存しないフーリエ係数の形 ![image](https://us
 <a id="ID_5-3-2"></a>
 
 #### ☆ 合成積（畳み込み）、積のフーリエ変換とパーシバルの等式
+区分的に滑らかで絶対可積分な２つの関数 f(t),g(t) が与えれたときに、<br>
+f(t) と g(t) の畳み込み（合成積）を、<br>
+![image](https://user-images.githubusercontent.com/25688193/43689986-a4186914-993d-11e8-9663-1d3ace4649d0.png)<br>
+によって定義する。<br>
+この畳み込みは、関数 g(t) を平行移動しながら関数 f(t) に重ね足し合わせる２項演算になっている。<br>
+![image](https://user-images.githubusercontent.com/25688193/43689952-d161a648-993c-11e8-9859-d7b6c087dbba.png)<br>
+
+ここで、積分変数を ![image](https://user-images.githubusercontent.com/25688193/43690017-50258034-993e-11e8-997b-530d889f263c.png) に変えると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43690029-6e5f618c-993e-11e8-814b-003e9a9bdfbb.png)<br>
+となるので、畳み込み演算は、交換則が成り立つ。<br>
+
+この畳み込み演算は、応用上の観点からしばしば利用されるが、<br>
+**畳み込みのフーリエ変換は、これを構成する２つの関数 f(t) のフーリエ変換と g(t) のフーリエ変換を用いて、簡単な形で表せる。**<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/43691155-e39a568c-9952-11e8-8a12-e0a31901b13b.png)<br>
+即ち、**２つの関数の畳み込み（合成積）のフーリエ変換は、それぞれの関数のフーリエ変換の積となる。**<br>
+
+- （例）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43692109-6fd012d4-995f-11e8-97a3-493c649e8b44.png)<br>
+    この２つの関数の畳み込みは、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43692121-8c3a6762-995f-11e8-99b5-b88fb0e1500b.png)<br>
+    となるが、２つの関数から畳み込みのフーリエ変換を求める。<br>
+
+    f(t) を t 軸方向に β=1 だけずらした関数 ![image](https://user-images.githubusercontent.com/25688193/43692134-bdb780b8-995f-11e8-9d9c-791978779968.png) を考えると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43692140-d72a7d0c-995f-11e8-9323-ec5c1727e983.png)<br>
+    すると、f ̂(t) は、区分的に滑らかな関数で、かつ、絶対可積分なので、フーリエ変換が存在し、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43692148-faf4628e-995f-11e8-9630-4b1d527e8c10.png)<br>
+    平行移動した関数のフーリエ変換と元の関数フーリエ変換の間の関係 ![image](https://user-images.githubusercontent.com/25688193/43692164-23fedc7c-9960-11e8-912d-34cd4634ce08.png) より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43692169-3b3ce58c-9960-11e8-8872-7f8b6cc39748.png)<br>
+    同様にして、g(t) を t 軸方向に β=−1 だけずらした関数 ![image](https://user-images.githubusercontent.com/25688193/43692179-53f7b412-9960-11e8-891a-5ea8c78697c3.png) を考えると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43692198-7ed73c20-9960-11e8-9b1d-9982ee745ce1.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43692207-9203aa0e-9960-11e8-9fb6-60eb017ac413.png)<br>
+
+    従って、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43692219-b0daccb4-9960-11e8-9ec2-81499bb2619f.png)<br>
+
+<br>
+
 
 
