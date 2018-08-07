@@ -20,6 +20,7 @@
         1. [微分・積分した関数のフーリエ変換](#ID_5-3-1)
         1. [合成積（畳み込み）、積のフーリエ変換とパーシバルの等式](#ID_5-3-2)
         1. [ガウス関数のフーリエ変換](#ID_5-3-3)
+1. [偏微分方程式への応用](#ID_6)
 1. [xxx](#ID_x)
 
 ---
@@ -945,5 +946,50 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 となり、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43747650-3649c10a-9a26-11e8-9da0-f42a6781341f.png)<br>
 が成り立つ。<br>
+
+---
+
+<a id="ID_6"></a>
+
+## ■ 偏微分方程式への応用
+ここでは、偏微分方程式の例として熱伝導方程式を扱い、<br>
+偏微分方程式の解法にフーリエ級数やフーリエ変換がどのように利用されるのかを見ていく。<br>
+
+熱伝導方程式は、以下のような偏微分方程式で表現される方程式である。<br>
+![image](https://user-images.githubusercontent.com/25688193/43776161-f462cdfe-9a89-11e8-82ff-20a79e97ca44.png)<br>
+ここで、初期状態として、t=0 における温度分布を f(x) とする。<br>
+即ち、![image](https://user-images.githubusercontent.com/25688193/43776214-19ae2a0e-9a8a-11e8-975a-6b147a43ac26.png) であるとする。<br>
+
+まず初めに、下図のように長さ L のリング状の細い棒での熱伝導現象を取り扱う。<br>
+![image](https://user-images.githubusercontent.com/25688193/43776234-2d5493a4-9a8a-11e8-9d17-2e5826aa06bf.png)<br>
+
+このとき、棒のリング状に沿った座標系を x とすると、<br>
+棒の長さ L でリングを一周するので、![image](https://user-images.githubusercontent.com/25688193/43776477-fb72d048-9a8a-11e8-8b14-cacea93cddb3.png) は同じ点となり、<br>
+境界条件として、<br>
+![image](https://user-images.githubusercontent.com/25688193/43776654-73da9dcc-9a8b-11e8-867d-7cc7127f3757.png)<br>
+が成り立つ。（周期的境界条件）<br>
+
+この解 u(x,t) と初期分布 f(x) の周期性に着目し、フーリエ級数を利用することを考える。<br>
+解 u(x,t) をフーリエ級数展開すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43776991-789c1006-9a8c-11e8-9ce4-a881d40ed431.png)<br>
+※ u(x,t) が t にも依存することを反映して、フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/43777024-95200f3e-9a8c-11e8-843f-70a820e7eb30.png) も t の関数になっている。<br>
+
+このフーリエ級数を、元の熱伝導方程式に代入し項別の偏微分を計算すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43806688-faffe128-9adf-11e8-9d8e-c7cbcd00c238.png)<br>
+両辺に cos⁡(2mπx/L) をかけて、x=0~L の範囲で積分すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43806709-15403060-9ae0-11e8-9276-d6383e9a3c0b.png)<br>
+ここで、直交性条件<br>
+![image](https://user-images.githubusercontent.com/25688193/43806739-34d394d0-9ae0-11e8-8b1f-d314e0578992.png)<br>
+より、<br>
+![image](https://user-images.githubusercontent.com/25688193/43806767-4e281b40-9ae0-11e8-8b91-eaaa3ad9bf00.png)<br>
+この微分方程式は、微分しても解が変わらないので、指数関数となり、<br>
+![image](https://user-images.githubusercontent.com/25688193/43806795-7403891c-9ae0-11e8-9a34-0a31ea4552b8.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43806823-8c812044-9ae0-11e8-9171-731a915a12e5.png) に関しても同様にして、両辺に sin⁡(2mπx/L) をかけて、x=0~L の範囲で積分し、計算すると（途中計算略）<br>
+![image](https://user-images.githubusercontent.com/25688193/43806849-a3a25216-9ae0-11e8-8646-1cb26cd92649.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43807002-6f4d123e-9ae1-11e8-964f-2cb97fcd78a6.png) に関しては、両辺をそのまま x=0~L の範囲で積分し、計算すると（途中計算略）<br>
+![image](https://user-images.githubusercontent.com/25688193/43807019-807dd26e-9ae1-11e8-8019-0cacc18d1a2c.png)<br>
+これらの結果を代入すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43807183-3da0cee6-9ae2-11e8-8616-503284590ab4.png)<br>
+この解は、先の熱伝導方程式の解であるが、初期条件を考慮してないので、初期条件を満たすように係数の値を設定する。<br>
 
 
