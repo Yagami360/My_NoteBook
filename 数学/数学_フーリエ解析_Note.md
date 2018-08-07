@@ -936,4 +936,14 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 この微分方程式の解は、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43709071-ddac5424-99a6-11e8-8a91-26b2c7fc18ef.png)<br>
 
+次に、パーシバルの等式 ![image](https://user-images.githubusercontent.com/25688193/43747554-933cd2b8-9a25-11e8-86ef-912f0bf1c10a.png) に、ガウス関数の f(t) と先の ![image](https://user-images.githubusercontent.com/25688193/43747563-a9389e1c-9a25-11e8-81e4-8894b96ee7f4.png) を代入すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43747571-bed68630-9a25-11e8-8ce5-d933e0e5613a.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43747585-d266b472-9a25-11e8-8eba-b6c1c9a056c1.png) の関係より、上式は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43747603-e9289338-9a25-11e8-9f66-2d108b4498b8.png)<br>
+よって、<br>
+![image](https://user-images.githubusercontent.com/25688193/43747630-1adaa8c6-9a26-11e8-9257-d94680ca1502.png)<br>
+となり、<br>
+![image](https://user-images.githubusercontent.com/25688193/43747650-3649c10a-9a26-11e8-9da0-f42a6781341f.png)<br>
+が成り立つ。<br>
+
 
