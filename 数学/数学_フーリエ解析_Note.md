@@ -1012,3 +1012,43 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 先の熱伝導方程式では、長さ L のリング状の棒での熱伝導方程式を考えたが、この条件が周期性をもつために、フーリエ級数展開を利用できた。<br>
 次に、無限に長い棒での熱伝導方程式のような **（周期性を持たない）無限領域を考える。このような場合には、フーリエ変換が利用できる。**<br>
 
+今、無限に長い棒での熱伝導を考えるので、-∞ < x < ∞ という無限領域での温度 u(x,t) の分布を考えることになる。<br>
+そして、x→±∞ では、温度 u(x,t) は定常状態となりために一定値 0 をとるとし、温度 u(x,t) は、この無限遠からのズレの温度で定義する。<br>
+即ち、境界条件として、任意の t に対し、![image](https://user-images.githubusercontent.com/25688193/43812088-8eca8ad8-9afa-11e8-977e-663835fba0d9.png) が成り立つとする。<br>
+又、温度は絶対可積分（ ![image](https://user-images.githubusercontent.com/25688193/43812044-616e5632-9afa-11e8-90ef-cd56b491bd24.png) ）であるとし、<br>
+初期の温度分布も境界条件（ ![image](https://user-images.githubusercontent.com/25688193/43812103-a18f6f44-9afa-11e8-9da4-3aa6aaadf032.png) ）、絶対可積分（ ![image](https://user-images.githubusercontent.com/25688193/43812063-781fe95e-9afa-11e8-913f-248639965691.png) ）を満たすとする。<br>
+**従って、この温度分布 u(x,t)  についてのフーリエ変換を適用することが出来る。**<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/43812247-497040ee-9afb-11e8-9093-62b209faa942.png)<br>
+※ ここで、フーリエ変換前の被積分関数 u(x,t) が t にも依存するので、フーリエ変換後の関数 F(k,t) も t に依存する。<br>
+
+ここで、フーリエ変換 F(k,t) は、周期関数の場合のフーリエ係数に対応するものであったので、先の長さが一定のリング状の棒に対する熱伝導方程式の解法と似た方法で、解が導けると考えられる。<br>
+熱伝導方程式の両辺にを ![image](https://user-images.githubusercontent.com/25688193/43812949-a4c22e46-9afe-11e8-92d4-095f517a6f23.png) かけて x=−∞~∞ の範囲で積分すると、<br>
+左辺は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43812987-c0358880-9afe-11e8-9649-2b3f96786eaa.png)<br>
+右辺は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43813014-e0702010-9afe-11e8-9471-20c9c6c8f3de.png)<br>
+従って、熱伝導方程式は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43813042-fee72db8-9afe-11e8-8d45-a5e69c8146e9.png)<br>
+微分しても形が変わらないので、この微分方程式の解は、指数関数となり、<br>
+![image](https://user-images.githubusercontent.com/25688193/43813187-80c7b140-9aff-11e8-9715-7d00e9685ce0.png)<br>
+
+この F(k,t) が求まると、熱伝導方程式の解 u(x,t) は、F(k,t) のフーリエ逆変換から求まり、<br>
+![image](https://user-images.githubusercontent.com/25688193/43814914-e7aa230e-9b07-11e8-81b6-550e44dc8399.png)<br>
+このフーリエ逆変換の式は、熱伝導方程式の解 u(x,t) を、様々な波数 k の変動成分の重ね合わせとして表した式であり、先の一定の長さのリング状の棒での熱伝導方程式の場合での、フーリエ級数展開の式に相当するものである。<br>
+両者の違いは、前者が境界条件を満たす変動成分が、とびとびの波数（or 周期）しかもてなかってために、無限個の和で表現されたのに対し、<br>
+後者は、無限に長い棒なので、どんな実数の値の波数（or 周期）が許されるために、積分で表現される点である。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/43816199-7d454802-9b0e-11e8-989e-248716786b48.png) の結果を代入すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43816235-a096d834-9b0e-11e8-89a7-5c9c023ebd9c.png)<br>
+ここで、F(k,0) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43817135-f626ef74-9b12-11e8-9a4e-9f2c5ee01072.png)<br>
+なので、<br>
+![image](https://user-images.githubusercontent.com/25688193/43817191-2793a502-9b13-11e8-8cad-5b35c90aa767.png)<br>
+ここで、ガウス関数の積分の公式を使用すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43817239-5b3c21fe-9b13-11e8-9b70-97471fc53e0c.png)<br>
+となるので、<br>
+![image](https://user-images.githubusercontent.com/25688193/43817252-6d124872-9b13-11e8-8cee-b20fb0e1091a.png)<br>
+
+
+
