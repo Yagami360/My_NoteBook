@@ -24,7 +24,7 @@
     1. [一定の長さのリング状の棒での熱伝導方程式](#ID_6-1)
     1. [無限に長い棒での熱伝導方程式](#ID_6-2)
     1. [線形の偏微分方程式への応用](#ID_6-3)
-1. [エネルギースペクトル（パワースペクトル）への応用](#ID_7)
+1. [エネルギースペクトル、パワースペクトルへの応用](#ID_7)
 1. [xxx](#ID_x)
 
 ---
@@ -1074,4 +1074,29 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 
 <a id="ID_7"></a>
 
-## ■ エネルギースペクトル（パワースペクトル）への応用
+## ■ エネルギースペクトル、パワースペクトルへの応用
+ある現象の実験や数値シミュレーションにおいて、変数 t の関数 f(t)  としてのデータが得られた時に、そのデータの特徴に関する情報を引き出すために様々な計算や手法が用いられるが、よく使用される計算に、エネルギースペクトルの計算がある。<br>
+ここでは、まず、エネルギースペクトルとはどういうものかを見ていく。<br>
+
+周期 T の周期関数 f(t) が与えられているとすると、そのフーリエ級数は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43877384-6835eb08-9bd4-11e8-9d76-75f830f751cf.png)<br>
+となる。（最右辺は加法定理 ![image](https://user-images.githubusercontent.com/25688193/43875033-f5490d0a-9bc9-11e8-980e-7802a37853df.png) より成り立つ。）<br>
+このときこの式は、振幅 ![image](https://user-images.githubusercontent.com/25688193/43875049-09eca6fe-9bca-11e8-95c4-b918f36de3ba.png) で周期 ![image](https://user-images.githubusercontent.com/25688193/43875064-1a61e27e-9bca-11e8-940d-089b086164e5.png) をもつsin 関数の変動成分の和となっていることが分かる。<br>
+
+次に、この中の１つの変動成分 ![image](https://user-images.githubusercontent.com/25688193/43875083-2fd9da4e-9bca-11e8-8da3-80da1d1f81ec.png) に対応する状態のエネルギーについて考える。<br>
+![image](https://user-images.githubusercontent.com/25688193/43875105-46ba5e78-9bca-11e8-9bcc-825b80eb243d.png)<br>
+今、上図のようにバネ（バネ係数 K）に接続されている静止している物体 x があるとすると、<br>
+この物体のエネルギー（弾性エネルギー）E は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43875142-5f05d160-9bca-11e8-937f-393b8139bcd5.png)<br>
+となるが、この弾性エネルギーにより、振幅 A の単振動が発生する。<br>
+即ち、![image](https://user-images.githubusercontent.com/25688193/43875209-9dee5cc6-9bca-11e8-8063-234ccd2f4db0.png) という振動状態（単振動）のもつエネルギーは ![image](https://user-images.githubusercontent.com/25688193/43875277-d6cafe6e-9bca-11e8-8624-4c649cb53797.png) に比例する。<br>
+従って、**各 n=1,2,... に対する、![image](https://user-images.githubusercontent.com/25688193/43875277-d6cafe6e-9bca-11e8-8624-4c649cb53797.png) の値は、各周期 ![image](https://user-images.githubusercontent.com/25688193/43875064-1a61e27e-9bca-11e8-940d-089b086164e5.png) の変動成分のもつエネルギーの分布となっていることが分かる。**<br>
+その意味で、![image](https://user-images.githubusercontent.com/25688193/43878283-2edcff86-9bd9-11e8-95c5-ff2ac99df63d.png) という値の列を、**エネルギースペクトル** と呼ぶ。<br>
+
+又、フーリエ級数に関するパーシバルの等式は、このエネルギースペクトルを使うと、<br>
+![image](https://user-images.githubusercontent.com/25688193/43878342-87d5bc36-9bd9-11e8-8593-1e33c4ba6750.png)<br>
+この式は、![image](https://user-images.githubusercontent.com/25688193/43878365-afa4cbbc-9bd9-11e8-8cad-3e7a87f768f7.png) の１周期（T）に渡っての積分が、<br>
+各周期の変動成分 ![image](https://user-images.githubusercontent.com/25688193/43878376-c90f12d8-9bd9-11e8-89ae-72607b39b433.png) と定数成分 ![image](https://user-images.githubusercontent.com/25688193/43878413-f584ff94-9bd9-11e8-9bae-9ed18021318d.png) のエネルギー ![image](https://user-images.githubusercontent.com/25688193/43878450-2e6112ee-9bda-11e8-9e4a-895888c03300.png) を足し合わせたものに比例することを意味している。<br>
+
+- （例）<br>
+
