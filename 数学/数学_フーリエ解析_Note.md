@@ -1091,7 +1091,7 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 となるが、この弾性エネルギーにより、振幅 A の単振動が発生する。<br>
 即ち、![image](https://user-images.githubusercontent.com/25688193/43875209-9dee5cc6-9bca-11e8-8063-234ccd2f4db0.png) という振動状態（単振動）のもつエネルギーは ![image](https://user-images.githubusercontent.com/25688193/43875277-d6cafe6e-9bca-11e8-8624-4c649cb53797.png) に比例する。<br>
 従って、**各 n=1,2,... に対する、![image](https://user-images.githubusercontent.com/25688193/43875277-d6cafe6e-9bca-11e8-8624-4c649cb53797.png) の値は、各周期 ![image](https://user-images.githubusercontent.com/25688193/43875064-1a61e27e-9bca-11e8-940d-089b086164e5.png) の変動成分のもつエネルギーの分布となっていることが分かる。**<br>
-その意味で、![image](https://user-images.githubusercontent.com/25688193/43878283-2edcff86-9bd9-11e8-95c5-ff2ac99df63d.png) という値の列を、**エネルギースペクトル** と呼ぶ。<br>
+その意味で、![image](https://user-images.githubusercontent.com/25688193/43878283-2edcff86-9bd9-11e8-95c5-ff2ac99df63d.png) という値の列を、**（離散的）エネルギースペクトル** と呼ぶ。<br>
 
 又、フーリエ級数に関するパーシバルの等式は、このエネルギースペクトルを使うと、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43878342-87d5bc36-9bd9-11e8-8593-1e33c4ba6750.png)<br>
@@ -1099,4 +1099,26 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 各周期の変動成分 ![image](https://user-images.githubusercontent.com/25688193/43878376-c90f12d8-9bd9-11e8-89ae-72607b39b433.png) と定数成分 ![image](https://user-images.githubusercontent.com/25688193/43878413-f584ff94-9bd9-11e8-9bae-9ed18021318d.png) のエネルギー ![image](https://user-images.githubusercontent.com/25688193/43878450-2e6112ee-9bda-11e8-9e4a-895888c03300.png) を足し合わせたものに比例することを意味している。<br>
 
 - （例）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43882292-25a7bd78-9bea-11e8-9236-d6cc19b64df8.png)<br>
+    を周期 2π で周期的に拡張した関数 ![image](https://user-images.githubusercontent.com/25688193/43882306-35924d0c-9bea-11e8-8ec3-5f2be44c253a.png) のエネルギースペクトルを求める。<br>
+
+    フーリエ係数を計算すると（途中計算略）、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43882334-4cf44e96-9bea-11e8-9f8c-ae0090a90234.png)<br>
+    よって、エネルギースペクトル ![image](https://user-images.githubusercontent.com/25688193/43882379-693db4e8-9bea-11e8-99aa-66609b93e993.png) は、![image](https://user-images.githubusercontent.com/25688193/43882398-7b40027c-9bea-11e8-8796-265bb2375cda.png) の関係より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43882423-90476a66-9bea-11e8-9925-ecc27bd819f0.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43883519-5857dba0-9bee-11e8-8bf3-dffc2d030aa4.png)<br>
+
+<br>
+
+次に、区分的に滑らかで絶対可積分な非周期関数 f(t) のデータについて考える。<br>
+![image](https://user-images.githubusercontent.com/25688193/43884772-f5531296-9bf1-11e8-8015-3d121a1204d0.png)<br>
+この ![image](https://user-images.githubusercontent.com/25688193/43895582-c649642c-9c10-11e8-9640-a278c28500ca.png) は、先に述べたように、<br>
+波数 k の変動成分 ![image](https://user-images.githubusercontent.com/25688193/43895613-dea5770e-9c10-11e8-9867-7d23d3249476.png) の、波数の１区間幅あたりの大きさの密度に比例している。<br>
+
+そして、フーリエ変換の導出のところで見たように、<br>
+![image](https://user-images.githubusercontent.com/25688193/43895654-ff508f52-9c10-11e8-882c-f69a56cb4b2b.png)<br>
+の関係より、<br>
+![image](https://user-images.githubusercontent.com/25688193/43895684-18d834de-9c11-11e8-9509-3ed194438d4f.png)<br>
+とかけるので、被積分項は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43895789-71027f84-9c11-11e8-82e7-e0da98ed3719.png)<br>
 
