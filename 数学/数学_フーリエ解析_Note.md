@@ -25,6 +25,8 @@
     1. [無限に長い棒での熱伝導方程式](#ID_6-2)
     1. [線形の偏微分方程式への応用](#ID_6-3)
 1. [エネルギースペクトル、パワースペクトルへの応用](#ID_7)
+    1. [離散的エネルギースペクトル](#ID_7-1)
+    1. [連続的エネルギースペクトル](#ID_7-2)
 1. [xxx](#ID_x)
 
 ---
@@ -1078,6 +1080,9 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 ある現象の実験や数値シミュレーションにおいて、変数 t の関数 f(t)  としてのデータが得られた時に、そのデータの特徴に関する情報を引き出すために様々な計算や手法が用いられるが、よく使用される計算に、エネルギースペクトルの計算がある。<br>
 ここでは、まず、エネルギースペクトルとはどういうものかを見ていく。<br>
 
+<a id="ID_7-1"></a>
+
+### ◎ 離散的エネルギースペクトル
 周期 T の周期関数 f(t) が与えられているとすると、そのフーリエ級数は、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43877384-6835eb08-9bd4-11e8-9d76-75f830f751cf.png)<br>
 となる。（最右辺は加法定理 ![image](https://user-images.githubusercontent.com/25688193/43875033-f5490d0a-9bc9-11e8-980e-7802a37853df.png) より成り立つ。）<br>
@@ -1110,6 +1115,9 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 
 <br>
 
+<a id="ID_7-2"></a>
+
+### ◎ 連続的エネルギースペクトル
 次に、区分的に滑らかで絶対可積分な非周期関数 f(t) のデータについて考える。<br>
 ![image](https://user-images.githubusercontent.com/25688193/43884772-f5531296-9bf1-11e8-8015-3d121a1204d0.png)<br>
 この ![image](https://user-images.githubusercontent.com/25688193/43895582-c649642c-9c10-11e8-9640-a278c28500ca.png) は、先に述べたように、<br>
@@ -1121,4 +1129,21 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43895684-18d834de-9c11-11e8-9509-3ed194438d4f.png)<br>
 とかけるので、被積分項は、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43895789-71027f84-9c11-11e8-82e7-e0da98ed3719.png)<br>
+
+よって、![image](https://user-images.githubusercontent.com/25688193/43933786-b6b8583a-9c86-11e8-8c7c-1df8aa3ed653.png) が、波数 k の変動成分の振幅 ![image](https://user-images.githubusercontent.com/25688193/43933809-cfa4624e-9c86-11e8-9b24-3db2b651c044.png) の２乗 ![image](https://user-images.githubusercontent.com/25688193/43933832-ea280404-9c86-11e8-8192-7bd08a155a0e.png) に比例するので、<br>
+先のフーリエ級数の場合と同様な議論から、<br>
+![image](https://user-images.githubusercontent.com/25688193/43933786-b6b8583a-9c86-11e8-8c7c-1df8aa3ed653.png) **は、波数 k の変動成分の波数の１区間幅あたりのエネルギー密度に比例する。**<br>
+**その意味で、各 k に対する ![image](https://user-images.githubusercontent.com/25688193/43933786-b6b8583a-9c86-11e8-8c7c-1df8aa3ed653.png) の値の分布を、非周期関数の（連続的な）エネルギースペクトルと呼ぶ。** <br>
+
+- （例）<br>
+    非周期関数<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43936563-fd9256ae-9c93-11e8-9084-f383c5bed22e.png)<br>
+    のエネルギースペクトルを求める。<br>
+
+    この関数のフーリエ変換は（途中計算略）、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43936667-87f67000-9c94-11e8-8cbb-8c3be3c341cf.png)<br>
+    従って、エネルギースペクトルは、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43936697-b2d47db2-9c94-11e8-9747-d4df083d7882.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/43936523-d011e532-9c93-11e8-8844-22a292c13094.png)<br>
+
 
