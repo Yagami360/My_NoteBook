@@ -27,6 +27,7 @@
 1. [エネルギースペクトル、パワースペクトルへの応用](#ID_7)
     1. [離散的エネルギースペクトル](#ID_7-1)
     1. [連続的エネルギースペクトル](#ID_7-2)
+    1. [エネルギースペクトルの例](#ID_7-3)
 1. [xxx](#ID_x)
 
 ---
@@ -1113,7 +1114,6 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
     ![image](https://user-images.githubusercontent.com/25688193/43882423-90476a66-9bea-11e8-9925-ecc27bd819f0.png)<br>
     ![image](https://user-images.githubusercontent.com/25688193/43883519-5857dba0-9bee-11e8-8bf3-dffc2d030aa4.png)<br>
 
-<br>
 
 <a id="ID_7-2"></a>
 
@@ -1145,5 +1145,21 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
     従って、エネルギースペクトルは、<br>
     ![image](https://user-images.githubusercontent.com/25688193/43936697-b2d47db2-9c94-11e8-9747-d4df083d7882.png)<br>
     ![image](https://user-images.githubusercontent.com/25688193/43936523-d011e532-9c93-11e8-8844-22a292c13094.png)<br>
+
+
+<a id="ID_7-3"></a>
+
+### ◎ エネルギースペクトルの例
+ここでは、いくつかの関数 f(t) に対して、そのエネルギースペクトル ![image](https://user-images.githubusercontent.com/25688193/43951024-f5865f80-9ccc-11e8-9671-49cedbb5f5e7.png) を具体的に求めることで、関数の波形 f(t) とエネルギースペクトル ![image](https://user-images.githubusercontent.com/25688193/43951024-f5865f80-9ccc-11e8-9671-49cedbb5f5e7.png) の間の対応関係について調べてみる。<br>
+
+まず、以下の関数のエネルギースペクトルを求める。<br>
+![image](https://user-images.githubusercontent.com/25688193/43951073-179439f8-9ccd-11e8-84be-050dfc86ea1d.png)<br>
+この関数とフーリエ級数を比較すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43951107-2b80aa46-9ccd-11e8-964d-d6a1fb677276.png)<br>
+従って、エネルギースペクトル ![image](https://user-images.githubusercontent.com/25688193/43951143-44b8bb84-9ccd-11e8-948e-bd5b7c4792ce.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43951178-6425b062-9ccd-11e8-9d44-8e229aedb938.png)<br>
+関数とそのエネルギースペクトルを図示すると、以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/43987069-0c336366-9d56-11e8-9c46-2c7e422e51f2.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43986981-ea19302c-9d54-11e8-981a-d3d273ca57b7.png)<br>
 
 
