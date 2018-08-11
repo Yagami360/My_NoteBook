@@ -1158,8 +1158,48 @@ f(t) と g(t) の畳み込み（合成積）を、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43951107-2b80aa46-9ccd-11e8-964d-d6a1fb677276.png)<br>
 従って、エネルギースペクトル ![image](https://user-images.githubusercontent.com/25688193/43951143-44b8bb84-9ccd-11e8-948e-bd5b7c4792ce.png) は、<br>
 ![image](https://user-images.githubusercontent.com/25688193/43951178-6425b062-9ccd-11e8-9d44-8e229aedb938.png)<br>
-関数とそのエネルギースペクトルを図示すると、以下の図のようになる。<br>
+関数とそのエネルギースペクトルを図示すると、以下の図のようになり、<br>
+n=1 の cos⁡(t) 成分が最もエネルギーが高いことが分かる。<br>
 ![image](https://user-images.githubusercontent.com/25688193/43987069-0c336366-9d56-11e8-9c46-2c7e422e51f2.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/43986981-ea19302c-9d54-11e8-981a-d3d273ca57b7.png)<br>
 
+この関数 f(t) において、１周期に１つの山と谷という波の基本構造を構築しているのは、n=1 の変動成分 cos⁡(t) である。<br>
+その意味で、この場合の n=1 の変動成分を **基本波成分** と呼ぶ。<br>
+これに対して、n=2 以降の変動成分を **高周波成分** と呼ぶ。<br>
+
+これらの言葉を持ちると、この関数 f(t) の波形は、<br>
+高周波成分が存在することにより、基本波成分の波形（今の場合 cos 波形）は歪んでいるとみなすことも出来る。<br>
+従って、基本波成分のエネルギーと高周波成分のエネルギーの比である、<br>
+![image](https://user-images.githubusercontent.com/25688193/43987669-705d0e24-9d5f-11e8-8237-27216a110ca2.png)<br>
+を基本波成分の波形の歪みの指数の目安として使用することが出来る。<br>
+
+<br>
+
+次に、以下の関数のエネルギースペクトルを求める。<br>
+![image](https://user-images.githubusercontent.com/25688193/43987875-58c54d54-9d63-11e8-9673-409bfb355959.png)<br>
+この関数と（周期 T=20π での）フーリエ級数を比較すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43987880-8700a8e4-9d63-11e8-9505-5474c5363024.png)<br>
+従って、エネルギースペクトル ![image](https://user-images.githubusercontent.com/25688193/43987884-9b0db75a-9d63-11e8-81c4-e3fde0de0c92.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/43987886-b05d58fe-9d63-11e8-9936-fa66b3475509.png)<br>
+関数とそのエネルギースペクトルを図示すると、以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/43987913-561862c0-9d64-11e8-8509-0d6e12d74caa.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43987906-3000b4d4-9d64-11e8-8e1e-96fb92326a29.png)<br>
+この例のように、複雑な波形の形状をもつ関数の場合でも、<br>
+そのエネルギースペクトルは少数の変動成分（今の場合 n=7,10 の sin 成分）だけに集中していることがある。<br>
+
+<br>
+
+次に、以下のような関数（振幅変調波）のエネルギースペクトルを求めてみる。<br>
+![image](https://user-images.githubusercontent.com/25688193/43989003-f3f7600a-9d7c-11e8-9721-746e2de06fd6.png)<br>
+※ ここで、この関数は、周期 20π で振動している成分の振幅が ![image](https://user-images.githubusercontent.com/25688193/43989010-0b514842-9d7d-11e8-990a-4313eb325159.png) であるという解釈出来る。（下図参照）<br>
+　 そして、この振動の変化は、sin⁡(t) の変化に比べてゆっくりと変化している。<br>
+　 このようなゆっくりとした振幅変調と呼ばれ、このような関数の波形は振幅変調波と呼ばれる。<br>
+
+この関数のエネルギースペクトルを求めるために、三角関数の積を和に変換すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43989049-ab656584-9d7d-11e8-93ba-562915d5d620.png)<br>
+この関数と（周期 T=20π での）フーリエ級数を比較すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/43989059-c5f91198-9d7d-11e8-99eb-6d4d7544d6bf.png)<br>
+関数とそのエネルギースペクトルを図示すると、以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/43989117-a11b674e-9d7e-11e8-944b-5fe3f2adb445.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/43989090-42d45844-9d7e-11e8-8506-4661166cc772.png)<br>
 
