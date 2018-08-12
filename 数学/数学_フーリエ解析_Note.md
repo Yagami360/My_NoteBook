@@ -28,6 +28,8 @@
     1. [離散的エネルギースペクトル](#ID_7-1)
     1. [連続的エネルギースペクトル](#ID_7-2)
     1. [エネルギースペクトルの例](#ID_7-3)
+    1. [パワースペクトル](#ID_7-4)
+1. [参考文献](#参考文献)
 1. [xxx](#ID_x)
 
 ---
@@ -1202,4 +1204,39 @@ n=1 の cos⁡(t) 成分が最もエネルギーが高いことが分かる。<b
 関数とそのエネルギースペクトルを図示すると、以下の図のようになる。<br>
 ![image](https://user-images.githubusercontent.com/25688193/43989117-a11b674e-9d7e-11e8-944b-5fe3f2adb445.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/43989090-42d45844-9d7e-11e8-8506-4661166cc772.png)<br>
+
+
+<a id="ID_7-4"></a>
+
+### ◎ パワースペクトル
+エネルギースペクトルによく似た概念に、パワースペクトルというものがある。<br>
+ここでは、このパワースペクトルの意味とエネルギースペクトルとの関連について調べていく。<br>
+
+今、ある関数 f(t) が −∞ < t < ∞ の範囲で与えられているとする。<br>
+このとき、先に見たように、f(t) が周期関数であるならば、そのフーリエ級数展開から、（離散的）エネルギースペクトル ![image](https://user-images.githubusercontent.com/25688193/43998569-54cf2ff0-9e33-11e8-823c-19dea42bd974.png) が計算できた。<br>
+或いは、非周期関数であっても、絶対可積分であれば、フーリエ変換より、（連続的）エネルギースペクトル ![image](https://user-images.githubusercontent.com/25688193/43998573-65da023e-9e33-11e8-987e-4dc4d1d9f0c6.png) が計算できた。<br>
+
+しかしながら、関数 f(t) が周期関数ではなく（非周期関数）、かつ、絶対可積分でない場合では、フーリエ級数展開もフーリエ変換も使えないので、エネルギースペクトルを算出することが出来ない。<br>
+そこで、このような関数 f(t) の代わりに、−T/2≤t≤T/2  という幅 T の区間で区切った関数<br>
+![image](https://user-images.githubusercontent.com/25688193/43998580-948eca2e-9e33-11e8-9695-7a0db6c4b4d1.png)<br>
+を考える。<br>
+このように定義した関数は、絶対可積分であり、又、区分的に滑らかであると仮定すると、そのフーリエ変換 ![image](https://user-images.githubusercontent.com/25688193/43998584-b33a5470-9e33-11e8-8628-7a427b8f68cc.png) が存在し、<br>
+![image](https://user-images.githubusercontent.com/25688193/43998587-c4f26194-9e33-11e8-8e0f-c37446d9a7ab.png)<br>
+この式において、被積分関数 f(t) が絶対可積分でなく、t→± ∞ で０に近づかないために、<br>
+このフーリエ変換から計算したエネルギースペクトル ![image](https://user-images.githubusercontent.com/25688193/43998573-65da023e-9e33-11e8-987e-4dc4d1d9f0c6.png) は、T→∞ で無限大に発散してしまう。<br>
+そこで、エネルギースペクトルを区間幅 T で割った量に対し、T→∞ の極限を考える。<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/43998642-428be890-9e35-11e8-86e4-c5e3e12ea184.png)<br>
+このように定義した量は、有限の値となり、<br>
+これを **関数 f(t) のパワースペクトルという。**<br>
+
+
+---
+
+<a id="参考文献"></a>
+
+## ■ 参考文献
+
+- キーポイントフーリエ解析 (理工系数学のキーポイント (9))<br>
+    - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-9-%E8%88%B9%E8%B6%8A-%E6%BA%80%E6%98%8E/dp/4000078690?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4000078690)<br>
 
