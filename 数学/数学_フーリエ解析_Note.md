@@ -1229,6 +1229,29 @@ n=1 の cos⁡(t) 成分が最もエネルギーが高いことが分かる。<b
 ![image](https://user-images.githubusercontent.com/25688193/43998642-428be890-9e35-11e8-86e4-c5e3e12ea184.png)<br>
 このように定義した量は、有限の値となり、<br>
 これを **関数 f(t) のパワースペクトルという。**<br>
+この定義から分かるように、パワースペクトルは、絶対可積分でなく、t→± ∞ で０に近づかないような、いつまでも変動が続く関数 f(t)  に対ての、変数 t の１区間幅あたりのエネルギースペクトルの値となっている。<br>
+
+このエネルギースペクトルの定義に反して、実際の実験や数値シミュレーションでは、無限に長い t の区間に対しての関数 f(t) のデータを得ることは不可能であるので、<br>
+ある適当に決めた区間幅 T に対する<br>
+![image](https://user-images.githubusercontent.com/25688193/44012240-a0ad501c-9ef8-11e8-8c47-6ea19bdd1486.png)<br>
+をパワースペクトル P(k) の近似値として採用することになる。<br>
+
+この ![image](https://user-images.githubusercontent.com/25688193/44015236-056a5a9c-9f0b-11e8-9071-de01459503eb.png) をパワースペクトル P(k) の近似値として採用するにあたっては、定義にある区間幅 T の値が無限→有限になったことでの影響を把握しておく必要がある。<br>
+そこで、まず、<br>
+![image](https://user-images.githubusercontent.com/25688193/44015255-197ad0ca-9f0b-11e8-974d-70480355c047.png)<br>
+とおく。<br>
+このとき、f(t) は広い範囲の t に渡って変動するが、十分大きい t では０に近づくような絶対可積分な関数であると仮定する。<br>
+両辺のフーリエ変換を求めると、（フーリエ変換の積の公式より）<br>
+![image](https://user-images.githubusercontent.com/25688193/44015312-51c710ec-9f0b-11e8-897a-1c9c1af34aec.png)<br>
+ここで、このフーリエ変換後の関数 F(k) と W(k) のグラフは、以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44016066-6f936398-9f0e-11e8-99f8-5a4459a9e71c.png)<br>
+この図からわかるように、
+W(k−s) は k=s を中心とした偶関数であり、<br>
+W(k)=0 となる最小の正の k の値は 2π/T となるので、W(k−s) は大雑把に 2π/T 程度の幅を持つことになる。<br>
+従って、W(k−s) の値が微小でないのは、k=s の付近のみとなるので、<br>
+上式の ![image](https://user-images.githubusercontent.com/25688193/44017218-7a990ffa-9f12-11e8-97cc-3ef98745e9c2.png) の被積分関数に W(k−s) を乗算した F(s)W(k−s) でも ![image](https://user-images.githubusercontent.com/25688193/44017218-7a990ffa-9f12-11e8-97cc-3ef98745e9c2.png) のよい近似となる。
+そして、このフーリエ逆変換から求まる関数である f(t)w(t) も、f(t) のよい近似となる。<br>
+
 
 
 ---
