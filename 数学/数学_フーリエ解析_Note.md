@@ -29,8 +29,8 @@
     1. [連続的エネルギースペクトル](#ID_7-2)
     1. [エネルギースペクトルの例](#ID_7-3)
     1. [パワースペクトル](#ID_7-4)
+1. [離散データのフーリエ解析](#ID_8)
 1. [参考文献](#参考文献)
-1. [xxx](#ID_x)
 
 ---
 
@@ -1252,6 +1252,49 @@ W(k)=0 となる最小の正の k の値は 2π/T となるので、W(k−s) は
 上式の ![image](https://user-images.githubusercontent.com/25688193/44017218-7a990ffa-9f12-11e8-97cc-3ef98745e9c2.png) の被積分関数に W(k−s) を乗算した F(s)W(k−s) でも ![image](https://user-images.githubusercontent.com/25688193/44017218-7a990ffa-9f12-11e8-97cc-3ef98745e9c2.png) のよい近似となる。
 そして、このフーリエ逆変換から求まる関数である f(t)w(t) も、f(t) のよい近似となる。<br>
 
+- （例）<br>
+    f(t)=cos⁡(t) に対して、パワースペクトルの近似値 ![image](https://user-images.githubusercontent.com/25688193/44070851-13fd5f1c-9fc1-11e8-9977-1ff6563dfae6.png) を計算する。<br>
+
+    ![image](https://user-images.githubusercontent.com/25688193/44070867-26c26f48-9fc1-11e8-817e-4299feb8f9b8.png)<br>
+    k→+1 では、![image](https://user-images.githubusercontent.com/25688193/44070898-4feba1f0-9fc1-11e8-9537-cc9a685d6be9.png) となり、![image](https://user-images.githubusercontent.com/25688193/44070949-8844540c-9fc1-11e8-8029-d96f1365ce91.png) を満たす。<br>
+    k→−1 では、![image](https://user-images.githubusercontent.com/25688193/44070910-6215dd5a-9fc1-11e8-8b53-93b281d27427.png) となり、![image](https://user-images.githubusercontent.com/25688193/44070926-74fe7b48-9fc1-11e8-82a7-55880e4d36ad.png) を満たす。<br>
+    従って、任意の k に対して ![image](https://user-images.githubusercontent.com/25688193/44070979-9e8ce80a-9fc1-11e8-98a4-172c9e28b4a3.png) は定められ、パワースペクトルは、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44070998-b0564310-9fc1-11e8-9ae6-e9bff45c71b8.png)<br>
+    となる。<br>
+
+---
+
+<a id="ID_8"></a>
+
+## ■ 離散データのフーリエ解析
+M 個の等分割された離散データ ![image](https://user-images.githubusercontent.com/25688193/44134042-e878fb84-a09d-11e8-91cb-0a0321d49501.png) の元となる周期 T の周期関数 f(t) の複素フーリエ級数展開は、<br>
+![image](https://user-images.githubusercontent.com/25688193/44133803-a85ddc6e-a09c-11e8-8576-f509dd19d8e4.png)<br>
+この式は、すべての t に対する関数 f(t) の値（＝連続データ）が分かっていれば計算できる。（フーリエ係数の積分を計算でき、結果フーリエ展開も計算できる。）<br>
+しかし今のように、離散データ ![image](https://user-images.githubusercontent.com/25688193/44133835-d77bfd96-a09c-11e8-8746-920fa2396c6b.png) しか与えられたない場合では、この式の積分を厳密には計算できない。<br>
+とはいえ、この積分を近似的に計算することは可能である。<br>
+
+具体的には、以下のようになる。<br>
+まず、幅 ∆t の区間 ![image](https://user-images.githubusercontent.com/25688193/44133866-096779d4-a09d-11e8-85be-c4628f3c6689.png) の範囲において、
+フーリエ係数の被積分関数 ![image](https://user-images.githubusercontent.com/25688193/44133884-234ba7b2-a09d-11e8-9a17-41c5c21ac893.png) が一定値 ![image](https://user-images.githubusercontent.com/25688193/44134076-1bbb05aa-a09e-11e8-9dcf-115205bbd2d1.png) となると仮定する。<br>
+
+ここで、<br>
+![image](https://user-images.githubusercontent.com/25688193/44136170-b905cb26-a0a6-11e8-9da8-29506e07a9fe.png)<br>
+の実部 ![image](https://user-images.githubusercontent.com/25688193/44136157-a8e4e3d0-a0a6-11e8-9ac7-67e74f3de847.png) は以下の図のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44136193-cbf2e192-a0a6-11e8-9f4f-8c29eae441e9.png)<br>
+この図より、<br>
+先の仮定（一定値 ![image](https://user-images.githubusercontent.com/25688193/44134076-1bbb05aa-a09e-11e8-9dcf-115205bbd2d1.png)）は、この実部の関数を上図の階段部分の関数で近似していることに対応していることが分かる。<br>
+従って、この仮定のもとでのフーリエ係数の近似は、先の積分を t 区間の M 個の和で置き換えた<br>
+![image](https://user-images.githubusercontent.com/25688193/44136720-c7f3118c-a0a8-11e8-9cf1-c726981165e8.png)<br>
+※ このフーリエ係数の近似式 ![image](https://user-images.githubusercontent.com/25688193/44136741-d9471c8a-a0a8-11e8-9b5f-ea03521c2ebf.png) は、サンプリング周期 ∆t を細かくしてサンプリング数 M を増やしていくほど、元のフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44136748-e77d40fe-a0a8-11e8-8ad6-d35f5feb32f1.png) に近づく。<br>
+
+ここで、**このフーリエ係数の近似式 ![image](https://user-images.githubusercontent.com/25688193/44136741-d9471c8a-a0a8-11e8-9b5f-ea03521c2ebf.png) は、元のフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44136748-e77d40fe-a0a8-11e8-8ad6-d35f5feb32f1.png) にはない次のような性質を持っている。**<br>
+![image](https://user-images.githubusercontent.com/25688193/44139138-265564ca-a0b1-11e8-93d0-2f8be09adfa0.png)<br>
+
+一方、通常の複素フーリエ係数と同様にして、以下のような性質も成り立つ。<br>
+![image](https://user-images.githubusercontent.com/25688193/44139156-37f1dd26-a0b1-11e8-8a13-cf1981c40a43.png)<br>
+
+この２つの性質より、以下の関係式が成り立つ。<br>
+![image](https://user-images.githubusercontent.com/25688193/44183006-41e25480-a144-11e8-83a2-f4593cac94c4.png)<br>
 
 
 ---
@@ -1262,4 +1305,3 @@ W(k)=0 となる最小の正の k の値は 2π/T となるので、W(k−s) は
 
 - キーポイントフーリエ解析 (理工系数学のキーポイント (9))<br>
     - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90-%E7%90%86%E5%B7%A5%E7%B3%BB%E6%95%B0%E5%AD%A6%E3%81%AE%E3%82%AD%E3%83%BC%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88-9-%E8%88%B9%E8%B6%8A-%E6%BA%80%E6%98%8E/dp/4000078690?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4000078690)<br>
-
