@@ -1296,6 +1296,25 @@ M 個の等分割された離散データ ![image](https://user-images.githubuse
 この２つの性質より、以下の関係式が成り立つ。<br>
 ![image](https://user-images.githubusercontent.com/25688193/44183006-41e25480-a144-11e8-83a2-f4593cac94c4.png)<br>
 
+この性質は、M が偶数である場合<br>
+![image](https://user-images.githubusercontent.com/25688193/44214104-4c373980-a1aa-11e8-9d35-cb76e31bd9a9.png)<br>
+に対する ![image](https://user-images.githubusercontent.com/25688193/44214136-5eb17300-a1aa-11e8-8389-398a44f38e5a.png) の値と関連付けられることを意味している。<br>
+この結果と複素フーリエ係数の周期性より、<br>
+![image](https://user-images.githubusercontent.com/25688193/44214155-712bac80-a1aa-11e8-9e25-a5435548fd9b.png)<br>
+に対する ![image](https://user-images.githubusercontent.com/25688193/44214136-5eb17300-a1aa-11e8-8389-398a44f38e5a.png) の値と関連付けられることを意味している。<br>
+この結果と複素フーリエ係数の周期性より、<br>
+![image](https://user-images.githubusercontent.com/25688193/44214231-9c160080-a1aa-11e8-802a-1f0e10638e8e.png)<br>
+に対する ![image](https://user-images.githubusercontent.com/25688193/44214136-5eb17300-a1aa-11e8-8389-398a44f38e5a.png) が求まれば、他のすべての m に対する値も自動的に定まる。<br>
+従って、情報として意味を持つのは、![image](https://user-images.githubusercontent.com/25688193/44214259-b2bc5780-a1aa-11e8-9756-6651bceb7d98.png) に対する ![image](https://user-images.githubusercontent.com/25688193/44214136-5eb17300-a1aa-11e8-8389-398a44f38e5a.png) のみである。<br>
+
+このことをまとめると、以下のような性質になる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44214600-8523de00-a1ab-11e8-8a8c-bd48a7770ca5.png)<br>
+
+この性質より、フーリエ級数展開の近似式は以下のように書き換えられる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44215105-a507d180-a1ac-11e8-9ff8-8a6f3627f1f3.png)<br>
+特に、離散データ ![image](https://user-images.githubusercontent.com/25688193/44215312-27909100-a1ad-11e8-886e-48f1c24d9a42.png) に対しては、この式は<br>
+![image](https://user-images.githubusercontent.com/25688193/44215476-9d94f800-a1ad-11e8-9886-66e0b254957c.png)<br>
+
 
 ---
 
