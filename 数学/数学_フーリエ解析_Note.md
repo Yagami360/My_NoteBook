@@ -30,6 +30,9 @@
     1. [エネルギースペクトルの例](#ID_7-3)
     1. [パワースペクトル](#ID_7-4)
 1. [離散データのフーリエ解析](#ID_8)
+    1. [離散データのフーリエ級数展開](#ID_8-1)
+        1. [サンプリング周期の決め方](#ID_8-1-1)
+    1. [離散データのフーリエ変換](#ID_8-2)
 1. [参考文献](#参考文献)
 
 ---
@@ -1267,7 +1270,11 @@ W(k)=0 となる最小の正の k の値は 2π/T となるので、W(k−s) は
 <a id="ID_8"></a>
 
 ## ■ 離散データのフーリエ解析
-M 個の等分割された離散データ ![image](https://user-images.githubusercontent.com/25688193/44134042-e878fb84-a09d-11e8-91cb-0a0321d49501.png) の元となる周期 T の周期関数 f(t) の複素フーリエ級数展開は、<br>
+
+<a id="ID_8-1"></a>
+
+### ◎ 離散データのフーリエ級数展開
+M 個の等分割された離散データ ![image](https://user-images.githubusercontent.com/25688193/44249799-8b0dd380-a22c-11e8-9d3b-eabb8edf724c.png) の元となる周期 T の周期関数 f(t) の複素フーリエ級数展開は、<br>
 ![image](https://user-images.githubusercontent.com/25688193/44133803-a85ddc6e-a09c-11e8-8576-f509dd19d8e4.png)<br>
 この式は、すべての t に対する関数 f(t) の値（＝連続データ）が分かっていれば計算できる。（フーリエ係数の積分を計算でき、結果フーリエ展開も計算できる。）<br>
 しかし今のように、離散データ ![image](https://user-images.githubusercontent.com/25688193/44133835-d77bfd96-a09c-11e8-8746-920fa2396c6b.png) しか与えられたない場合では、この式の積分を厳密には計算できない。<br>
@@ -1288,10 +1295,10 @@ M 個の等分割された離散データ ![image](https://user-images.githubuse
 ※ このフーリエ係数の近似式 ![image](https://user-images.githubusercontent.com/25688193/44136741-d9471c8a-a0a8-11e8-9b5f-ea03521c2ebf.png) は、サンプリング周期 ∆t を細かくしてサンプリング数 M を増やしていくほど、元のフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44136748-e77d40fe-a0a8-11e8-8ad6-d35f5feb32f1.png) に近づく。<br>
 
 ここで、**このフーリエ係数の近似式 ![image](https://user-images.githubusercontent.com/25688193/44136741-d9471c8a-a0a8-11e8-9b5f-ea03521c2ebf.png) は、元のフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44136748-e77d40fe-a0a8-11e8-8ad6-d35f5feb32f1.png) にはない次のような性質を持っている。**<br>
-![image](https://user-images.githubusercontent.com/25688193/44139138-265564ca-a0b1-11e8-93d0-2f8be09adfa0.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44249820-a7aa0b80-a22c-11e8-9b67-314bae627731.png)<br>
 
 一方、通常の複素フーリエ係数と同様にして、以下のような性質も成り立つ。<br>
-![image](https://user-images.githubusercontent.com/25688193/44139156-37f1dd26-a0b1-11e8-8a13-cf1981c40a43.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44249845-c0b2bc80-a22c-11e8-92e0-e4844043c657.png)<br>
 
 この２つの性質より、以下の関係式が成り立つ。<br>
 ![image](https://user-images.githubusercontent.com/25688193/44183006-41e25480-a144-11e8-83a2-f4593cac94c4.png)<br>
@@ -1308,13 +1315,77 @@ M 個の等分割された離散データ ![image](https://user-images.githubuse
 従って、情報として意味を持つのは、![image](https://user-images.githubusercontent.com/25688193/44214259-b2bc5780-a1aa-11e8-9756-6651bceb7d98.png) に対する ![image](https://user-images.githubusercontent.com/25688193/44214136-5eb17300-a1aa-11e8-8389-398a44f38e5a.png) のみである。<br>
 
 このことをまとめると、以下のような性質になる。<br>
-![image](https://user-images.githubusercontent.com/25688193/44214600-8523de00-a1ab-11e8-8a8c-bd48a7770ca5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44249871-e213a880-a22c-11e8-9149-b254eb9d2363.png)<br>
 
 この性質より、フーリエ級数展開の近似式は以下のように書き換えられる。<br>
 ![image](https://user-images.githubusercontent.com/25688193/44215105-a507d180-a1ac-11e8-9ff8-8a6f3627f1f3.png)<br>
 特に、離散データ ![image](https://user-images.githubusercontent.com/25688193/44215312-27909100-a1ad-11e8-886e-48f1c24d9a42.png) に対しては、この式は<br>
 ![image](https://user-images.githubusercontent.com/25688193/44215476-9d94f800-a1ad-11e8-9886-66e0b254957c.png)<br>
+この式は、離散データ ![image](https://user-images.githubusercontent.com/25688193/44249751-497d2880-a22c-11e8-92c4-66c976e02bca.png) に対して、意味のある複素フーリエ係数だけ用いてフーリエ級数展開した近似式と解釈することが出来るが、<br>
+実はこの近似式は厳密に成り立つ式となる。（後述）<br>
 
+このことを示すため、先の式 ![image](https://user-images.githubusercontent.com/25688193/44218269-4fcfbe00-a1b4-11e8-9331-837125e7503d.png) を書き換えることを考える。<br>
+![image](https://user-images.githubusercontent.com/25688193/44218301-61b16100-a1b4-11e8-8621-0a25625d3778.png)<br>
+この内、負の m に対する項は、<br>
+![image](https://user-images.githubusercontent.com/25688193/44218334-742b9a80-a1b4-11e8-8a6f-b0778c0e7e00.png)<br>
+従って、以下の式に書き換えられる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44218364-87d70100-a1b4-11e8-82cc-81c7b6af56d0.png)<br>
+
+次に、このフーリエ級数展開の近似式 ![image](https://user-images.githubusercontent.com/25688193/44218859-8c4fe980-a1b5-11e8-97fa-9a110d44fc7f.png) に、複素フーリエ係数の近似式 ![image](https://user-images.githubusercontent.com/25688193/44218885-9d005f80-a1b5-11e8-8356-5d29ef1aa8c5.png) を代入すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/44218915-af7a9900-a1b5-11e8-824c-c7974de071f6.png)<br>
+ここで、上式の指数関数の和の部分の式に対して、<br>
+![image](https://user-images.githubusercontent.com/25688193/44246554-c226b980-a219-11e8-96a9-753949ac3800.png)<br>
+が成り立つ。<br>
+更に、今の場合 ![image](https://user-images.githubusercontent.com/25688193/44246569-d23e9900-a219-11e8-92ce-27b101864d37.png) でなので、![image](https://user-images.githubusercontent.com/25688193/44246597-e6829600-a219-11e8-851c-d1fc2a74120d.png) となるケースは存在しない。<br>
+
+この関係を利用すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/44246626-1762cb00-a21a-11e8-92f1-e8eb1776e62e.png)<br>
+従って、**このフーリエ係数展開の式 ![image](https://user-images.githubusercontent.com/25688193/44246649-35c8c680-a21a-11e8-895c-fb639d73f3a7.png) は、近似式ではなく厳密に成り立つ式となっている。**<br>
+
+以上の結果をまとめると、<br>
+M 個の離散データ ![image](https://user-images.githubusercontent.com/25688193/44249751-497d2880-a22c-11e8-92c4-66c976e02bca.png) に対するフーリエ級数展開は、以下のようになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44249744-39654900-a22c-11e8-9d72-14fac8231049.png)<br>
+※ 和をとる m の値の範囲は −M/2≤m≤M/2 とするのが自然だが、<br>
+　 複素フーリエ係数の周期性より、m=0~(M−1) の和で表現できる。<br>
+※ この式は近似式ではなく、厳密に成り立つ式になっている。<br>
+
+<br>
+
+- （例）<br>
+	関数 f(t)=cos⁡(t) に対して、<br>
+	連続データに対する複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44252994-0f665380-a239-11e8-9cf0-a9bb0a143b73.png) と離散データに対する複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44253046-3755b700-a239-11e8-9b26-d7522d6e089a.png) を求め、両者を比較する。<br>
+
+    まず、連続データに対する複素フーリエ係数を求める。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44253079-58b6a300-a239-11e8-9c48-40502bffced5.png)<br>
+    ここで、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44253271-075ae380-a23a-11e8-8d23-c4a7865a1631.png)<br>
+    の関係式より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44253296-1fcafe00-a23a-11e8-94eb-eaee2edf44b2.png)<br>
+
+	次に、離散データに対する複素フーリエ係数を求める。<br>
+	M 個の離散データ ![image](https://user-images.githubusercontent.com/25688193/44253338-3ffabd00-a23a-11e8-958d-fc1ca9741d23.png) を考えると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44253366-586ad780-a23a-11e8-993d-4939447ff066.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44253394-6e789800-a23a-11e8-81ce-8547c9c29e32.png)<br>
+    ここで、先の指数部の和の関係<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44253436-9405a180-a23a-11e8-96cb-c99e75ceb0f8.png)<br>
+    を、オイラーの公式を用いて実部と虚部に分けると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44253863-f01cf580-a23b-11e8-82c3-f8111fb3ab4e.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44253885-0034d500-a23c-11e8-893b-03011bdd54ab.png)<br>
+    この関係式を使用すると、先の ![image](https://user-images.githubusercontent.com/25688193/44254034-8a7d3900-a23c-11e8-8811-b5b5416e2983.png) は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44254080-b1d40600-a23c-11e8-9add-23697b1eba68.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44255016-a46c4b00-a23f-11e8-96c8-18e79ac90680.png)<br> 
+
+<br>
+
+<a id="ID_8-1-1"></a>
+
+#### ☆ サンプリング周期の決め方
+> 記載中...
+
+<a id="ID_8-2"></a>
+
+### ◎ 離散データのフーリエ変換
+> 記載中...
 
 ---
 
