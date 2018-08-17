@@ -1380,7 +1380,28 @@ M 個の離散データ ![image](https://user-images.githubusercontent.com/25688
 <a id="ID_8-1-1"></a>
 
 #### ☆ サンプリング周期の決め方
-> 記載中...
+周期 T の周期関数 f(t) に対応した、離散データ ![image](https://user-images.githubusercontent.com/25688193/44272370-963a2100-a277-11e8-95be-8f6fc8fd0ec1.png) のサンプリング周期 ∆t をどのように決めたらよいのかを考えてみる。<br>
+
+まず、サンプリング周期 ∆t が小さいほど、離散データ ![image](https://user-images.githubusercontent.com/25688193/44272370-963a2100-a277-11e8-95be-8f6fc8fd0ec1.png) に元の連続データの情報が多く含まれていると考えられるので、<br>
+そこから計算した（離散データの）フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44272442-d6999f00-a277-11e8-9513-9d558f66d205.png) も正しい値（＝連続値での値）![image](https://user-images.githubusercontent.com/25688193/44272480-f0d37d00-a277-11e8-8011-f8c55f7e7e78.png) に近づくことになる。<br>
+一方で、サンプリング周期 ∆t を小さくすると、データの個数 M が増加し、結果として計算負荷が増えるので、その観点からは、サンプリング周期 ∆t は大きいほうが望ましい。<br>
+
+サンプリング周期 ∆t に関しては、このような相反する性質があるが、以下、具体例で見てみる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44272568-35f7af00-a278-11e8-9575-0a7e7f58310e.png)<br>
+を周期的に拡張した関数 f(t) に関して、<br>
+この関数を元にする離散データ ![image](https://user-images.githubusercontent.com/25688193/44272370-963a2100-a277-11e8-95be-8f6fc8fd0ec1.png) から計算したフーリエ係数の値が、サンプリング周期 ∆t の値によって、どのように変わるのかを見てみる。<br>
+
+まず、連続データに対するフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44272480-f0d37d00-a277-11e8-8011-f8c55f7e7e78.png) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/44272613-545daa80-a278-11e8-9892-54dc4c576feb.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44272861-ecf42a80-a278-11e8-86e6-2af7f5c08a99.png)<br>
+
+次に、M 個の離散データに対するフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44272442-d6999f00-a277-11e8-9513-9d558f66d205.png) は、<br>
+
+1. M=30 で サンプリング周期 ∆t=2π/30 の場合<br>
+
+2. M=6 で サンプリング周期 ∆t=2π/6 の場合<br>
+
+
 
 <a id="ID_8-2"></a>
 
