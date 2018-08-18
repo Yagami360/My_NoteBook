@@ -1398,10 +1398,42 @@ M 個の離散データ ![image](https://user-images.githubusercontent.com/25688
 次に、M 個の離散データに対するフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44272442-d6999f00-a277-11e8-9513-9d558f66d205.png) は、<br>
 
 1. M=30 で サンプリング周期 ∆t=2π/30 の場合<br>
+	このときの離散データを ![image](https://user-images.githubusercontent.com/25688193/44273966-eadf9b00-a27b-11e8-9204-4825563f2285.png) とすると、<br>
+	関数 f(t) のプロット ![image](https://user-images.githubusercontent.com/25688193/44273966-eadf9b00-a27b-11e8-9204-4825563f2285.png)、複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44273994-0185f200-a27c-11e8-84a0-6f64bda860f0.png) の実部 ![image](https://user-images.githubusercontent.com/25688193/44274024-13679500-a27c-11e8-94e6-a57192934e9f.png)・虚部 ![image](https://user-images.githubusercontent.com/25688193/44274094-3db95280-a27c-11e8-8c53-db93d00049c1.png) は下図のようになる。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44274110-4dd13200-a27c-11e8-9c5e-9017bf813d4c.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44294923-08dbe880-a2da-11e8-8625-e59bd48da55f.png)<br>
+    <br>
+	この図からわかるように、<br>
+	この場合の離散データのフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44273994-0185f200-a27c-11e8-84a0-6f64bda860f0.png) は、正しいフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44274142-5cb7e480-a27c-11e8-9a8e-5c11b2e9443f.png) の値をよく近似出来ているが、<br>
+    m がデータ数 M=30 付近では、正しい値である０から大きくずれた値となっている。<br>
 
 2. M=6 で サンプリング周期 ∆t=2π/6 の場合<br>
+	このときの離散データを ![image](https://user-images.githubusercontent.com/25688193/44296174-f1115e00-a2f3-11e8-81dc-9fb06c4d09d1.png) とすると、<br>
+    関数 f(t) のプロット ![image](https://user-images.githubusercontent.com/25688193/44296174-f1115e00-a2f3-11e8-81dc-9fb06c4d09d1.png)、複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44273994-0185f200-a27c-11e8-84a0-6f64bda860f0.png) の実部 ![image](https://user-images.githubusercontent.com/25688193/44274024-13679500-a27c-11e8-94e6-a57192934e9f.png)・虚部 ![image](https://user-images.githubusercontent.com/25688193/44274094-3db95280-a27c-11e8-8c53-db93d00049c1.png) は下図のようになる。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44296200-90ceec00-a2f4-11e8-879c-38385bbe1a2a.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44296201-9fb59e80-a2f4-11e8-8e31-64be8f6447f5.png)<br>
+	この図からわかるように、<br>
+	この場合の離散データのフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44273994-0185f200-a27c-11e8-84a0-6f64bda860f0.png) は、<br>
+	m がデータ数 ![image](https://user-images.githubusercontent.com/25688193/44296214-1b175000-a2f5-11e8-86f3-6d6d8047c548.png) の領域でも、正しい値（＝連続データに対する複素フーリエ係数）から大きくずれた値となっている。<br>
+
+<br>
+
+ここで、M=6 の場合に見られたような、m≤M/2 の領域での複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44299339-d6a8a600-a32e-11e8-8a58-3f2729d073a1.png) のズレの原因について考えてみる。<br>
+そのためにまず、以下の周期 2π の周期関数のフーリエ係数を調べる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44299346-ecb66680-a32e-11e8-8580-fb2dfb10cf0f.png)<br>
+
+まず、連続データに対する複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44299350-08217180-a32f-11e8-8312-a063bd1b58ee.png) を求めると、<br>
+![image](https://user-images.githubusercontent.com/25688193/44299356-1b344180-a32f-11e8-897a-eeeca13eee5e.png)<br>
+
+次に、M=6 の離散データ ![image](https://user-images.githubusercontent.com/25688193/44299361-369f4c80-a32f-11e8-94e4-3b46259cda9f.png) の関数を考えると、<br>
+![image](https://user-images.githubusercontent.com/25688193/44299362-49198600-a32f-11e8-8d2d-eea76fe17735.png)<br>
+上式は、この離散データでは、cos⁡(t) と cos⁡(5t) は区別できないことを意味している。（下図参照）<br>
+![image](https://user-images.githubusercontent.com/25688193/44299455-0658ad80-a331-11e8-81f5-900c0389d418.png)<br>
+従って、この離散データに対する複素フーリエ係数の値 ![image](https://user-images.githubusercontent.com/25688193/44299370-6e0df900-a32f-11e8-8f5e-23758beb2db2.png) は、![image](https://user-images.githubusercontent.com/25688193/44299378-8e3db800-a32f-11e8-9079-90d815f4fdc1.png) の場合と同じようになる。<br>
 
 
+
+<br>
 
 <a id="ID_8-2"></a>
 
