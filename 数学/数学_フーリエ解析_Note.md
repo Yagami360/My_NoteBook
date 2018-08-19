@@ -1429,8 +1429,22 @@ M 個の離散データ ![image](https://user-images.githubusercontent.com/25688
 ![image](https://user-images.githubusercontent.com/25688193/44299362-49198600-a32f-11e8-8d2d-eea76fe17735.png)<br>
 上式は、この離散データでは、cos⁡(t) と cos⁡(5t) は区別できないことを意味している。（下図参照）<br>
 ![image](https://user-images.githubusercontent.com/25688193/44299455-0658ad80-a331-11e8-81f5-900c0389d418.png)<br>
-従って、この離散データに対する複素フーリエ係数の値 ![image](https://user-images.githubusercontent.com/25688193/44299370-6e0df900-a32f-11e8-8f5e-23758beb2db2.png) は、![image](https://user-images.githubusercontent.com/25688193/44299378-8e3db800-a32f-11e8-9079-90d815f4fdc1.png) の場合と同じようになる。<br>
+従って、この離散データに対する複素フーリエ係数の値 ![image](https://user-images.githubusercontent.com/25688193/44305558-6e50d780-a3b5-11e8-934a-73e8b8fe6b37.png) は、![image](https://user-images.githubusercontent.com/25688193/44305568-8aed0f80-a3b5-11e8-8d17-d3e99361c1c0.png) の場合と同じようになる。<br>
 
+ここで、先の f(t)=cos⁡(t) の場合の複素フーリエ係数の値<br>
+![image](https://user-images.githubusercontent.com/25688193/44305573-a6f0b100-a3b5-11e8-897a-45d6e92ccf05.png)<br>
+の結果を、M=6 のときで２倍したものが、f(t)=2 cos⁡(t)（M=6）の場合の複素フーリエ係数となるので、![image](https://user-images.githubusercontent.com/25688193/44305577-b7089080-a3b5-11e8-9341-9aa8eab7874d.png)<br>
+となる。<br>
+
+このように、複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44305582-e4553e80-a3b5-11e8-92ab-e984985861de.png) における m=5(=M−1) の変動成分の寄与が、<br>
+離散データの複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44305587-0bac0b80-a3b6-11e8-9e6c-ea4c09a89152.png) においては、m=1 の方に一緒に入ってしまう。（下式の比較参照）
+![image](https://user-images.githubusercontent.com/25688193/44305591-1d8dae80-a3b6-11e8-997c-b1c7c677bff8.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44305623-dce26500-a3b6-11e8-89ad-271bcb8a7a3d.png)<br>
+
+この性質は、この例題（f(t)=cos⁡(2t),M=6）に限らず一般的に起きて、<br>
+![image](https://user-images.githubusercontent.com/25688193/44305627-07342280-a3b7-11e8-9d30-a80e43b3e9cc.png)<br>
+という関係式が成り立つ。（証明略）<br>
+**この式のように、離散データから計算される複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44305587-0bac0b80-a3b6-11e8-9e6c-ea4c09a89152.png) において、元の連続データに含まれる大きな m（＝今の場合 m=5）で短周期の変動成分からの寄与が、小さい m（＝今の場合 m=1）に対する ![image](https://user-images.githubusercontent.com/25688193/44305587-0bac0b80-a3b6-11e8-9e6c-ea4c09a89152.png) の中に入ってしまう現象をエイリアシングという。**<br>
 
 
 <br>
