@@ -1446,6 +1446,13 @@ M 個の離散データ ![image](https://user-images.githubusercontent.com/25688
 という関係式が成り立つ。（証明略）<br>
 **この式のように、離散データから計算される複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44305587-0bac0b80-a3b6-11e8-9e6c-ea4c09a89152.png) において、元の連続データに含まれる大きな m（＝今の場合 m=5）で短周期の変動成分からの寄与が、小さい m（＝今の場合 m=1）に対する ![image](https://user-images.githubusercontent.com/25688193/44305587-0bac0b80-a3b6-11e8-9e6c-ea4c09a89152.png) の中に入ってしまう現象をエイリアシングという。**<br>
 
+このエイリアシングの考えを用いると、先の関数<br>
+![image](https://user-images.githubusercontent.com/25688193/44309205-070b4580-a3fe-11e8-9c05-00c9f125bd32.png)<br>
+を周期的に拡張した関数 f(t) に対しての、<br>
+M=6 の場合の離散データ ![image](https://user-images.githubusercontent.com/25688193/44309207-1d190600-a3fe-11e8-9e87-4e99296bc0ac.png) から計算した複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44309213-302bd600-a3fe-11e8-946f-dd1ceafa687f.png) の値が、<br>
+m≤M/2 である m=0,1,2 のときでも正しい値である連続データに対する複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44309228-594c6680-a3fe-11e8-8cc4-64575e2823d9.png) からズレているのは、このエイリアシングの影響であると言える。<br>
+即ち、この関数 f(t) の複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44309213-302bd600-a3fe-11e8-946f-dd1ceafa687f.png) は、m≥M/2 である m=4,5,6 などでも０に近くない値をとるので、この影響が、![image](https://user-images.githubusercontent.com/25688193/44309235-94e73080-a3fe-11e8-80f2-1dda4d23c25d.png) の式の和の部分の形として影響を及ぼしていると考えられる。<br>
+
 
 <br>
 
