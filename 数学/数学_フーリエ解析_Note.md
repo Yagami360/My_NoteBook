@@ -1462,13 +1462,29 @@ m≤M/2 である m=0,1,2 のときでも正しい値である連続データに
 このような場合でも、もし何かしらの理由である程度以上の大きい m に対して、![image](https://user-images.githubusercontent.com/25688193/44320691-90faf300-a47e-11e8-8678-dc0a8fca36b3.png) が m に対しての減少関数であることが分かっているならば、充分大きい M に対しては、![image](https://user-images.githubusercontent.com/25688193/44320711-a4a65980-a47e-11e8-884e-6a89014990a8.png) の値からエイリアシングによるフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44320738-c1429180-a47e-11e8-86a3-429db6d0fe82.png) の誤差の影響を見積もれる。<br>
 しかしそれすらも分かってない時は、この誤差を ![image](https://user-images.githubusercontent.com/25688193/44320738-c1429180-a47e-11e8-86a3-429db6d0fe82.png) の値から見積もることは出来ない。<br>
 
-
 <br>
 
 <a id="ID_8-2"></a>
 
 ### ◎ 離散データのフーリエ変換
-> 記載中...
+t の長い区間に渡って大量のデータが得られているようなケースでは、コンピューターのデータの処理限界の関係から、一部の t 区間のデータのみ使用することになる。<br>
+
+このような場合では、t 区間のある区間幅 T だけ０でない値を持ち、それ以外では０になるような関数 f(t) を考え、そこから得られる離散データを考えることになる。<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/44322769-f56f7f80-a489-11e8-8177-7c03c5333868.png)<br>
+そして、この（絶対可積分な）関数 f(t) に対するフーリエ係数を、離散データ ![image](https://user-images.githubusercontent.com/25688193/44322781-061ff580-a48a-11e8-8ac9-88d8529e08e9.png) を用いて近似的に表わすことを考える。<br>
+具体的には、f(t) のフーリエ変換 F(k) は、<br>
+![image](https://user-images.githubusercontent.com/25688193/44323444-066dc000-a48d-11e8-8194-48250ffaa44e.png)<br>
+となるが、この積分を近似的にあらわすことを考える。<br>
+
+このフーリエ変換の式の被積分関数の実部 f(t)cos⁡(kt) は、例えば、以下の図のような曲線状となる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44323465-1ab1bd00-a48d-11e8-8d89-1556ea0f2056.png)<br>
+この曲線を上図の階段部分で近似すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/44323671-cce98480-a48d-11e8-8b57-9df836709b57.png)<br>
+虚数部 f(t)sin⁡(kt) に関しても同様にして考えると、フーリエ変換の近似式 ![image](https://user-images.githubusercontent.com/25688193/44323712-07ebb800-a48e-11e8-862b-0fad792b625b.png) として、<br>
+![image](https://user-images.githubusercontent.com/25688193/44323725-1c2fb500-a48e-11e8-8ce0-8bf7c9456355.png)<br>
+を得ることが出来る。<br>
+
 
 ---
 
