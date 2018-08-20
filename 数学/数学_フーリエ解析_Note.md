@@ -1485,6 +1485,40 @@ t の長い区間に渡って大量のデータが得られているようなケ
 ![image](https://user-images.githubusercontent.com/25688193/44323725-1c2fb500-a48e-11e8-8ce0-8bf7c9456355.png)<br>
 を得ることが出来る。<br>
 
+ここで、先に述べたように、<br>
+幅 T の区間外では０とした関数 f(t) のフーリエ変換は、波数 k=2π/T 程度の分解能しか持たない。<br>
+そこで、フーリエ変換の近似式 ![image](https://user-images.githubusercontent.com/25688193/44344136-e230d400-a4ca-11e8-9e99-9349a18ba1b0.png) の持っている分解能である 2π/T の間隔をもつ波数 ![image](https://user-images.githubusercontent.com/25688193/44344179-fe347580-a4ca-11e8-84a3-b480f2325400.png) に対するフーリエ変換の近似式 ![image](https://user-images.githubusercontent.com/25688193/44344136-e230d400-a4ca-11e8-9e99-9349a18ba1b0.png) の値のみを考えることにする。<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/44344235-1dcb9e00-a4cb-11e8-815d-585e0dcc1c93.png)<br>
+を離散データのフーリエ変換と考える。<br>
+と殆ど同じ形であり、定数倍 T の違いでしかない。（![image](https://user-images.githubusercontent.com/25688193/44344783-7ea7a600-a4cc-11e8-8f37-f2dbf1ce4b86.png)）<br>
+従って、離散データの複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44344816-90894900-a4cc-11e8-9714-0a4e12e6f502.png) と同じく、周期性の関係<br>
+![image](https://user-images.githubusercontent.com/25688193/44344864-a5fe7300-a4cc-11e8-8ed2-ad7df9c51141.png)<br>
+及び、<br>
+![image](https://user-images.githubusercontent.com/25688193/44344911-c2021480-a4cc-11e8-8951-2a3c8b416972.png)<br>
+の関係式を満たす。<br>
+
+<br>
+
+次に、フーリエ逆変換<br>
+![image](https://user-images.githubusercontent.com/25688193/44346256-7b161e00-a4d0-11e8-98a4-2b2454240d22.png)<br>
+を、離散データを用いて近似的に表現することを考える。<br>
+
+まず、サンプリング周期 ∆t=T/M の離散データによって表せる最も周期の短い変動成分の周期は、m=M/2 時の 2T/M であり、これは波数 ![image](https://user-images.githubusercontent.com/25688193/44347359-8c602a00-a4d2-11e8-8a50-40e512caf8a9.png) に対応する。<br>
+
+ここで、以下では、フーリエ逆変換の式の積分範囲を ![image](https://user-images.githubusercontent.com/25688193/44347445-ccbfa800-a4d2-11e8-9960-751071b61878.png) に限定する。<br>
+すると、先の離散データのフーリエ級数展開のときの近似（積分→和）と同様にして、<br>
+離散データに対するフーリエ逆変換の近似式は、<br>
+![image](https://user-images.githubusercontent.com/25688193/44347719-89196e00-a4d3-11e8-9100-6e6be5ec7f92.png)<br>
+と表現できる。<br>
+更に、![image](https://user-images.githubusercontent.com/25688193/44347958-2d031980-a4d4-11e8-84c0-4763776a5b11.png) で書き直すと、<br>
+![image](https://user-images.githubusercontent.com/25688193/44348058-66d42000-a4d4-11e8-974f-a619b626684c.png)<br>
+となる。<br>
+
+そして、この式の ![image](https://user-images.githubusercontent.com/25688193/44348241-dcd88700-a4d4-11e8-952a-595a1c3dedbb.png) に、先の ![image](https://user-images.githubusercontent.com/25688193/44348271-ef52c080-a4d4-11e8-93f6-df4782c5c32d.png) を代入すると、<br>
+離散データのフーリエ逆変換 ![image](https://user-images.githubusercontent.com/25688193/44348309-00033680-a4d5-11e8-979f-e22063f5e84a.png) が、連続データから生成される離散データ ![image](https://user-images.githubusercontent.com/25688193/44348323-0ee9e900-a4d5-11e8-9c7e-540a1a1d75c4.png) に等しいことが示せる。<br>
+
+
 
 ---
 
