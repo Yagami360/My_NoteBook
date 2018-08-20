@@ -1453,6 +1453,15 @@ M=6 の場合の離散データ ![image](https://user-images.githubusercontent.c
 m≤M/2 である m=0,1,2 のときでも正しい値である連続データに対する複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44309228-594c6680-a3fe-11e8-8cc4-64575e2823d9.png) からズレているのは、このエイリアシングの影響であると言える。<br>
 即ち、この関数 f(t) の複素フーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44309213-302bd600-a3fe-11e8-946f-dd1ceafa687f.png) は、m≥M/2 である m=4,5,6 などでも０に近くない値をとるので、この影響が、![image](https://user-images.githubusercontent.com/25688193/44309235-94e73080-a3fe-11e8-80f2-1dda4d23c25d.png) の式の和の部分の形として影響を及ぼしていると考えられる。<br>
 
+<br>
+
+ここまでの議論から分かるように、ある周期 T の周期関数 f(t)  のフーリエ係数の精度の良い近似値を、離散データから得るためには、m≥M/2 に対する連続データのフーリエ係数 c_m の値が０に近い値である必要がある。<br>
+よって、サンプリング周期の決め方に関して、![image](https://user-images.githubusercontent.com/25688193/44320493-4cbb2300-a47d-11e8-9738-79a1e88ebca8.png)（＝周期が ![image](https://user-images.githubusercontent.com/25688193/44320511-65c3d400-a47d-11e8-8c92-8e893c1790c9.png) 以下の変動成分）に対して、![image](https://user-images.githubusercontent.com/25688193/44320525-78d6a400-a47d-11e8-81ee-45c8a4fc330e.png) の値が十分０に近いことが分かっている場合には、この ![image](https://user-images.githubusercontent.com/25688193/44320540-90ae2800-a47d-11e8-8d79-6380f8ca3cfd.png) から決まるサンプリング周期 ![image](https://user-images.githubusercontent.com/25688193/44320555-a91e4280-a47d-11e8-9fad-13b6b3eb814d.png) を用いれば良い。<br>
+
+しかし、与えられた周期関数 f(t)  に対して、このような m_0  の値が予めわかっていることは稀である。<br>
+このような場合でも、もし何かしらの理由である程度以上の大きい m に対して、![image](https://user-images.githubusercontent.com/25688193/44320691-90faf300-a47e-11e8-8678-dc0a8fca36b3.png) が m に対しての減少関数であることが分かっているならば、充分大きい M に対しては、![image](https://user-images.githubusercontent.com/25688193/44320711-a4a65980-a47e-11e8-884e-6a89014990a8.png) の値からエイリアシングによるフーリエ係数 ![image](https://user-images.githubusercontent.com/25688193/44320738-c1429180-a47e-11e8-86a3-429db6d0fe82.png) の誤差の影響を見積もれる。<br>
+しかしそれすらも分かってない時は、この誤差を ![image](https://user-images.githubusercontent.com/25688193/44320738-c1429180-a47e-11e8-86a3-429db6d0fe82.png) の値から見積もることは出来ない。<br>
+
 
 <br>
 
