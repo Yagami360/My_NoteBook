@@ -1,6 +1,7 @@
 # My_NoteBook
 
-サイエンス、テクノロジー、エンジニア関連情報を記載したオンラインマイノートを Markdown 形式で保管したリポジトリです。（プログラムコードではありません）
+サイエンス、テクノロジー、エンジニア関連情報を記載したオンラインマイノートを Markdown 形式で保管したリポジトリです。（プログラムコードではありません）<br>
+質問事項があれば、[Issue](https://github.com/Yagami360/My_NoteBook/issues) で質問してください。答えられる範囲で回答します。<br>
 
 This repository describe about my note (markdown format) related to science, tech, engineers from basic to applied. <br>
 
