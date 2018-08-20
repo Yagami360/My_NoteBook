@@ -1517,8 +1517,14 @@ t の長い区間に渡って大量のデータが得られているようなケ
 
 そして、この式の ![image](https://user-images.githubusercontent.com/25688193/44348241-dcd88700-a4d4-11e8-952a-595a1c3dedbb.png) に、先の ![image](https://user-images.githubusercontent.com/25688193/44348271-ef52c080-a4d4-11e8-93f6-df4782c5c32d.png) を代入すると、<br>
 離散データのフーリエ逆変換 ![image](https://user-images.githubusercontent.com/25688193/44348309-00033680-a4d5-11e8-979f-e22063f5e84a.png) が、連続データから生成される離散データ ![image](https://user-images.githubusercontent.com/25688193/44348323-0ee9e900-a4d5-11e8-9c7e-540a1a1d75c4.png) に等しいことが示せる。<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/44349114-36da4c00-a4d7-11e8-965e-273e74629cab.png)<br>
 
-
+**以上の結果をまとめると、離散データに対するフーリエ変換、フーリエ逆変換は、**<br>
+![image](https://user-images.githubusercontent.com/25688193/44349860-f2e84680-a4d8-11e8-9639-4dc7c506ec40.png)<br>
+**と表すことが出来る。**<br>
+これらの式は、離散データに対する式なので、<br>
+それぞれ、**離散デフーリエ変換**、**離散フーリエ逆変換** と呼ばれる。<br>
 
 ---
 
