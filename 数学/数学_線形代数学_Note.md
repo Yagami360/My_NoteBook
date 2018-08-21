@@ -9,7 +9,6 @@ This is my notebook that summarizes about "linear algebra". I will add contents 
 ![_](https://user-images.githubusercontent.com/25688193/30373543-a1127a20-98bc-11e7-822d-351aeb6b131d.gif)
 
 ## 項目 [Contents]
-
 1. [概要、全体 MAP [Overview]](#ID_1)
 1. [ベクトル [vector]](#ID_2)
     1. [ベクトル空間 [vector space]](#ID_2-1)
@@ -92,7 +91,26 @@ This is my notebook that summarizes about "linear algebra". I will add contents 
 
 ### ベクトル空間 [vector space]
 ![twitter_ _2-1_170525](https://user-images.githubusercontent.com/25688193/29313678-452ed686-81f6-11e7-8114-56f516ad806a.png)
+
+<!--
 ![twitter_ _2-2_170525](https://user-images.githubusercontent.com/25688193/29313682-45583314-81f6-11e7-86d0-cb72ac49bb97.png)
+-->
+
+- （例）<br>
+    １階の線形微分方程式<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44380172-d124a900-a544-11e8-93d9-0f34dac15bec.png)<br>
+    において、方程式の解（ベクトル）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44380222-03cea180-a545-11e8-8ef5-f24a5abc5996.png)<br>
+    のすべてからなる集合 V はベクトル空間であることを示す。<br>
+
+	１階の線形微分方程式の解 ![image](https://user-images.githubusercontent.com/25688193/44384028-b7d82880-a555-11e8-9d88-7d0f64fc95a6.png) に対して、公理 (1),(2),(5),(6) は自明に成り立つ。<br>
+	また、【定理１】より (7),(8) も成り立つ。<br>
+    公理 (3) は、![image](https://user-images.githubusercontent.com/25688193/44384118-084f8600-a556-11e8-9dcd-cde4884ed788.png) に対して、![image](https://user-images.githubusercontent.com/25688193/44384210-61b7b500-a556-11e8-8c6f-65f5c606f41c.png)<br>
+    公理 (4) は、![image](https://user-images.githubusercontent.com/25688193/44384499-5a44db80-a557-11e8-964a-d60c4c174b52.png) とすると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44384542-7fd1e500-a557-11e8-8bf2-358cd892d0f5.png)<br>
+    つまり、![image](https://user-images.githubusercontent.com/25688193/44384499-5a44db80-a557-11e8-964a-d60c4c174b52.png) は、この微分方程式の解であり、集合 V に含まれるので成り立つ。（公理(4)を満たす）<br>
+    よって、１階の線形微分方程式の解全体の集合はベクトル空間となる！<br>
+
 
 <a id="ID_2-1-1"></a>
 
