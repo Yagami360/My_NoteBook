@@ -9,8 +9,9 @@
         1. [線形独立（一次独立）と線形従属（一次従属）の幾何学的イメージ](#ID_2-2-1)    
     1. [基底ベクトル](#ID_2-3)
     1. [ベクトルの次元](#ID_2-4)
-1. 関数空間
-    1. バナッハ空間 [Banach space]
+1. [関数空間](#ID_3)
+    1. [ノルムとノルム空間](#ID_3-1)
+    1. [バナッハ空間 [Banach space]](#ID_3-2)
     1. ヒルベルト空間 [Hilbert space]
         1. ヒルベルト空間の完全正規直交基底
     1. フーリエ級数展開
@@ -207,6 +208,47 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 
 ---
+
+<a id="ID_3"></a>
+
+## ■ 関数空間
+関数解析で扱う関数空間は、収束の概念などの位相的な性質をもつベクトル空間である。<br>
+ここで、この収束の概念とは、
+有次元ベクトル空間において、ベクトルの列 ![image](https://user-images.githubusercontent.com/25688193/44466778-1c7dab00-a65c-11e8-89d8-4f7f0ee1b465.png) とあるベクトル ![image](https://user-images.githubusercontent.com/25688193/44467081-ee4c9b00-a65c-11e8-9a34-44426b74fa69.png) の距離 ![image](https://user-images.githubusercontent.com/25688193/44467213-3ff52580-a65d-11e8-92f7-09f40d909d8c.png) が０に収束することである。
+（このとき、ベクトルの列 ![image](https://user-images.githubusercontent.com/25688193/44466778-1c7dab00-a65c-11e8-89d8-4f7f0ee1b465.png) あるベクトル ![image](https://user-images.githubusercontent.com/25688193/44467081-ee4c9b00-a65c-11e8-9a34-44426b74fa69.png) に収束するという。）<br>
+
+
+<a id="ID_3-1"></a>
+
+### ◎ ノルムとノルム空間
+ベクトルの長さに相当するいくつかの基本的性質のみ抽出すれば、より抽象的な概念として、より一般的な空間にも、ベクトルの長さに相当する概念を導入することが出来る。<br>
+そしてその概念こそがノルムとなる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44467877-f6a5d580-a65e-11e8-8c5b-a6b1180245e6.png)<br>
+
+- （例）<br>
+    n 次元の複素ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/44469680-ff000f80-a662-11e8-9b4b-d78dddceadbb.png) において、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44469744-2060fb80-a663-11e8-8631-6e7cff12570a.png)<br>
+    を定義すれば、ノルムの４つの条件式が成り立つので（計算略）、この ![image](https://user-images.githubusercontent.com/25688193/44469772-2d7dea80-a663-11e8-83c1-6eab48dc62ac.png) はノルムである。<br>
+    <br>
+    又、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44470057-c9a7f180-a663-11e8-8d28-3b68b64d6d41.png)<br>
+	もノルムの４つの条件式が成り立つので（計算略）、ノルムとなる。<br>
+	
+	このように１つの空間に導入し得るノルムは１つとは限らない。<br>
+
+
+
+
+
+<a id="ID_3-2"></a>
+
+### ◎ バナッハ空間 [Banach space]
+> 記載中...
+
+
+---
+
 
 <a id="参考文献"></a>
 
