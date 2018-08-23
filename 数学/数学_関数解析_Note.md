@@ -11,7 +11,9 @@
     1. [ベクトルの次元](#ID_2-4)
 1. [関数空間](#ID_3)
     1. [ノルムとノルム空間](#ID_3-1)
-    1. [バナッハ空間 [Banach space]](#ID_3-2)
+    1. [収束と極限](#ID_3-2)
+    1. [Cauchy 列（基本列）と完備性](#ID_3-3)
+    1. [バナッハ空間 [Banach space]](#ID_3-4)
     1. ヒルベルト空間 [Hilbert space]
         1. ヒルベルト空間の完全正規直交基底
     1. フーリエ級数展開
@@ -238,13 +240,45 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 	このように１つの空間に導入し得るノルムは１つとは限らない。<br>
 
 
+<a id="ID_3-3"></a>
+
+### ◎ 収束と極限
+![image](https://user-images.githubusercontent.com/25688193/44505648-85593780-a6dd-11e8-9b15-d0dcfbfd5533.png)<br>
 
 
+<a id="ID_3-4"></a>
 
-<a id="ID_3-2"></a>
+### ◎ Cauchy 列（基本列）と完備性
+ノルム空間 X 内の点列 {u_n }={u_1,u_2,…}  が X の収束列であるならば、ノルム空間の４つ目の条件に対応する式は０に近づく。即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/44506078-c2262e00-a6df-11e8-9237-94053a895f5f.png)<br>
+書き換えると、<br>
+![image](https://user-images.githubusercontent.com/25688193/44506126-e4b84700-a6df-11e8-877d-8d85b606ad1b.png)<br>
+
+ここで、このような条件を満たす点列に対して、以下のような Caucy 列が定義される。<br>
+![image](https://user-images.githubusercontent.com/25688193/44507810-f05b3c00-a6e6-11e8-9f6f-713e2c6c4424.png)<br>
+
+次に、このように定義した Cauchy 列は、収束列であるかを考える。<br>
+実数体 R ではこのことは成り立つ。（＝Cauchy 列は、収束列である。）<br>
+従って、コーシー列は、実数体 R の中に極限を持ち、このことが、実数体 R の完備性（＝hole がない）となる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44507865-1d0f5380-a6e7-11e8-9eb2-0523dae14153.png)<br>
+
+実数体 R は、コーシー列が収束し極限をもつので、完備であったが、<br>
+一般のノルム空間は、必ずしも、コーシー列が収束し完備であるとは限らない。<br>
+
+
+<a id="ID_3-5"></a>
 
 ### ◎ バナッハ空間 [Banach space]
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/44508109-0f0e0280-a6e8-11e8-9db4-61e32552669a.png)<br>
+
+- （例）<br>
+    閉区間 [a,b] 内の複数空間 C[a,b] は、ノルム<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44508696-2b12a380-a6ea-11e8-8b80-66ec7343808d.png)<br>
+    に関して、完備であるか調べる。<br>
+    <br>
+    > 記載中...
+
+
 
 
 ---
