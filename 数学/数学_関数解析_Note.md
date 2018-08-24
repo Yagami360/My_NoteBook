@@ -305,6 +305,35 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 ![image](https://user-images.githubusercontent.com/25688193/44532622-78b0ff80-a72e-11e8-8af4-621f813582a6.png)<br>
 従って、ノルムの４つの条件が成り立つので、![image](https://user-images.githubusercontent.com/25688193/44532645-89fa0c00-a72e-11e8-9c5f-1468a9db78e1.png) はノルムである。<br>
 
+![image](https://user-images.githubusercontent.com/25688193/44565493-53120d80-a7a3-11e8-86f1-0446f8ddec71.png)<br>
+
+この定義から分かるように、ヒルベルト空間はバナッハ空間の一種であり、<br>
+ヒルベルト空間の位相構造は、バナッハ空間と同様にしてノルムから構築されている。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44565319-77211f00-a7a2-11e8-9ff2-157b150aae9d.png)<br>
+
+<br>
+
+ヒルベルト空間においては、以下のような３平方の定理や中線定理が成り立つ。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44566141-d41ed400-a7a6-11e8-86a9-c370cd2db070.png)<br>
+
+この３平方の定理は、任意の内積空間で成り立つが、n → ∞ として級数を無限和、即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/44566225-4f808580-a7a7-11e8-8475-9083683bf956.png)<br>
+とした場合には、完備性の条件を課さなければならない（級数和が収束するため）。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44568472-e7836c80-a7b1-11e8-89c2-63ae4db871e5.png)<br>
+
+この中線定理が成り立つ時、２つのベクトル ![image](https://user-images.githubusercontent.com/25688193/44566449-9753dc80-a7a8-11e8-87f7-04b594781c87.png) は、内積の条件を満たすので、内積となる。<br>
+更に、![image](https://user-images.githubusercontent.com/25688193/44566466-b488ab00-a7a8-11e8-9dca-1e1a237722f9.png) と一致するので、<br>
+**バナッハ空間がヒルベルト空間であるための必要十分条件は、（バナッハ空間を構築している）ノルムに対し、中線定理が成り立っていることである。**<br>
+
+<br>
+
+- （例）　ヒルベルト空間の例<br>
+    <br>
 
 
 ---
