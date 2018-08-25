@@ -10,17 +10,23 @@
         1. [線形独立（一次独立）と線形従属（一次従属）の幾何学的イメージ](#ID_2-2-1)    
     1. [基底ベクトル](#ID_2-3)
     1. [ベクトルの次元](#ID_2-4)
-1. [距離空間](#ID_x)
-1. [点列の収束と極限](#ID_x)
-1. [ノルムとノルム空間](#ID_3-1)
-    1. [Cauchy 列（基本列）と完備性](#ID_x)
+1. [点列の収束と極限](#ID_3)
+    1. [点列の収束と極限に関する有用な性質](#ID_3-1)
+    1. [上極限と下極限](#ID_3-2)
+1. [距離空間](#ID_4)
+    1. [距離空間の例](#ID_4-1)
+    1. [距離空間における収束、極限とコーシー列（基本列）](#ID_4-2)
+    1. [完備距離空間](#ID_4-3)
+1. [ノルムとノルム空間](#ID_5)
+    1. [ノルム空間の例](#ID_5-1)
+    1. [ノルム空間における Cauchy 列（基本列）と完備性](#ID_5-x)
     1. ノルムの位相構造
-1. 内積空間
-1. [バナッハ空間 [Banach space]](#ID_x)
-    1. バナッハ空間の例
-1. [ヒルベルト空間 [Hilbert space]](#ID_x)
-    1. 三平方の定理、中線定理
-    1. ヒルベルト空間の例
+1. [内積空間](#ID_6)
+1. [バナッハ空間 [Banach space]](#ID_7)
+    1. [バナッハ空間の例](#ID_7-1)
+1. [ヒルベルト空間 [Hilbert space]](#ID_8)
+    1. [三平方の定理、中線定理](#ID_8-1)
+    1. [ヒルベルト空間の例](#ID_8-2)
     1. ヒルベルト空間の完全正規直交基底
 1. フーリエ級数展開とフーリエ変換
 1. ルジャンドル級数展開
@@ -197,11 +203,6 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 	従って、このベクトルの組 ![image](https://user-images.githubusercontent.com/25688193/44454707-2c36c880-a637-11e8-92bb-512e4217dd44.png) は、この２×２の正方行列によって張られる（生成される）ベクトル空間の基底ベクトルであり、その次元は dimV=4 である。
 
 
-<a id="ID_x"></a>
-
-## ■ 距離空間
-> 記載中...
-
 <!--
 ## ■ 関数空間
 関数解析で扱う関数空間は、収束の概念などの位相的な性質をもつベクトル空間である。<br>
@@ -210,7 +211,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 （このとき、ベクトルの列 ![image](https://user-images.githubusercontent.com/25688193/44466778-1c7dab00-a65c-11e8-89d8-4f7f0ee1b465.png) あるベクトル ![image](https://user-images.githubusercontent.com/25688193/44467081-ee4c9b00-a65c-11e8-9a34-44426b74fa69.png) に収束するという。）<br>
 -->
 
-<a id="ID_x"></a>
+<a id="ID_3"></a>
 
 ## ■ 点列の収束と極限
 世の中には、有限回の計算で完全な解が求まらないような問題が多く存在する。<br>
@@ -227,8 +228,10 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 ![image](https://user-images.githubusercontent.com/25688193/44616438-8085b680-a88a-11e8-8f6a-840bb7368a56.png)<br>
 
-<br>
 
+<a id="ID_3-1"></a>
+
+### ◎ 点列の収束・極限に関しての有用な性質
 次に、実数列の収束・極限に関して、いくつかの有用な性質を見てみる。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44615364-b3708000-a873-11e8-9e8a-10a7e7e08907.png)<br>
@@ -253,8 +256,10 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 ![image](https://user-images.githubusercontent.com/25688193/44615736-6ba22680-a87c-11e8-8fca-00085e6f01b0.png)<br>
 > このコーシー列の判定条件と、ε−N 論法におよる収束の定義の違いは？
 
-<br>
 
+<a id="ID_3-2"></a>
+
+### ◎ 上極限と下極限
 ここで、実数列が収束するという条件は、厳しい条件になるが、これより弱い条件として、上極限と下極限という概念が存在する。<br>
 これは、収束するかわからないような実数列に対しても、大きな n に対して振る舞いを把握した場合に用いることが出来る。<br>
 
@@ -262,22 +267,69 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 ![image](https://user-images.githubusercontent.com/25688193/44616016-d6eef700-a882-11e8-93e8-c092dda07dec.png)<br>
 
----
 
-> 削除予定...<br>
-![image](https://user-images.githubusercontent.com/25688193/44505648-85593780-a6dd-11e8-9b15-d0dcfbfd5533.png)<br>
+<a id="ID_4"></a>
+
+## ■ 距離空間
+距離を用いると、一般の点列の収束や極限の議論が、実数列のときと同じようにすることが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44616678-23403400-a88f-11e8-8136-761bf039e318.png)<br>
+
+ここで、距離空間は、ベクトル空間ではなく集合に対して定義されることに注意。<br>
+（後述のノルム空間は、ベクトル空間に対して定義される。）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44616618-07885e00-a88e-11e8-84c8-d465f53a53af.png)<br>
 
 
----
+<a id="ID_4-1"></a>
+
+### ◎ 距離空間の例
+- （例）１次元の実数での距離空間 ![image](https://user-images.githubusercontent.com/25688193/44617235-3a385380-a89a-11e8-872c-d2e044880018.png)<br>
+	実数全体の集合 R において、任意の点 ![image](https://user-images.githubusercontent.com/25688193/44617249-4e7c5080-a89a-11e8-95f9-47423b364be4.png) に対して、<br>
+	距離を ![image](https://user-images.githubusercontent.com/25688193/44617257-5e943000-a89a-11e8-8dcb-58a20c8cadfb.png) で定義することにより、この写像 d が距離の３つの条件を満たすので（計算略）、<br>
+	![image](https://user-images.githubusercontent.com/25688193/44617235-3a385380-a89a-11e8-872c-d2e044880018.png) は距離空間になる。<br>
+
+- （例）N 次元の実数での距離空間 ![image](https://user-images.githubusercontent.com/25688193/44617266-8daaa180-a89a-11e8-8dd4-ff92f7fd6397.png)<br>
+	N 次元実ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/44617289-dc583b80-a89a-11e8-8aa7-c23db4796daa.png) において、任意のベクトル ![image](https://user-images.githubusercontent.com/25688193/44617282-c77ba800-a89a-11e8-8a9a-4202f21bb577.png) に対して、<br>
+	距離を<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44617296-f3972900-a89a-11e8-9c4f-84456a0f5820.png)<br>
+    で定義することにより、この写像 d が距離の３つの条件を満たすので（計算略）、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44617266-8daaa180-a89a-11e8-8dd4-ff92f7fd6397.png) は距離空間になる。<br>
 
 
-<a id="ID_x"></a>
+<a id="ID_4-2"></a>
+
+### ◎ 距離空間における収束、極限とコーシー列（基本列）
+距離空間における点列 ![image](https://user-images.githubusercontent.com/25688193/44617800-89838180-a8a4-11e8-8d8f-8ccfd7ed20de.png) の収束の概念は、以下のコーシー列（基本列）により定義される。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44617805-9b652480-a8a4-11e8-9652-7dcf608922ef.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44617838-9bb1ef80-a8a5-11e8-8adb-6d6356c9c82a.png)<br>
+
+そして、**”点列が実数列であるとき、実数列がコーシー列であることと、この実数列がある実数に収束することは等価である！”**（証明略）<br>
+逆に、一般の点列に対しては、必ずしもこの関係は成り立たない。（証明略）<br>
+
+因みに、点列がある極限に収束するためには、当然ながら極限の情報が必要となるが、<br>
+コーシー列の定義では、この極限の情報を必要としていないので、点列がコーシー列であることを示すのに原理上は極限の情報は必要ないことに注意。<br>
+
+
+<a id="ID_4-3"></a>
+
+### ◎ 完備距離空間
+> 記載中...
+
+
+<a id="ID_5"></a>
 
 ## ■ ノルムとノルム空間
 ベクトルの長さに相当するいくつかの基本的性質のみ抽出すれば、より抽象的な概念として、より一般的な空間にも、ベクトルの長さに相当する概念を導入することが出来る。<br>
 そしてその概念こそがノルムとなる。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44467877-f6a5d580-a65e-11e8-8c5b-a6b1180245e6.png)<br>
+
+<a id="ID_5-1"></a>
+
+### ◎ ノルム、ノルム空間の例
 
 - （例）<br>
     n 次元の複素ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/44469680-ff000f80-a662-11e8-9b4b-d78dddceadbb.png) において、<br>
@@ -293,7 +345,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 <a id="ID_x"></a>
 
-## ■ Cauchy 列（基本列）と完備性
+### ◎ ノルム空間における Cauchy 列（基本列）と完備性
 ノルム空間 X 内の点列 {u_n }={u_1,u_2,…}  が X の収束列であるならば、ノルム空間の４つ目の条件に対応する式は０に近づく。即ち、<br>
 ![image](https://user-images.githubusercontent.com/25688193/44506078-c2262e00-a6df-11e8-9237-94053a895f5f.png)<br>
 書き換えると、<br>
@@ -310,12 +362,21 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 実数体 R は、コーシー列が収束し極限をもつので、完備であったが、<br>
 一般のノルム空間は、必ずしも、コーシー列が収束し完備であるとは限らない。<br>
 
+<a id="ID_6"></a>
 
-<a id="ID_x"></a>
+## ■ 内積空間
+> 記載中...
+
+
+
+<a id="ID_7"></a>
 
 ## ■ バナッハ空間 [Banach space]
 ![image](https://user-images.githubusercontent.com/25688193/44508109-0f0e0280-a6e8-11e8-9db4-61e32552669a.png)<br>
 
+<a id="ID_7-1"></a>
+
+### ◎ バナッハ空間の例
 - （例）<br>
     閉区間 [a,b] 内の複数空間 C[a,b] は、ノルム<br>
     ![image](https://user-images.githubusercontent.com/25688193/44508696-2b12a380-a6ea-11e8-8b80-66ec7343808d.png)<br>
@@ -324,7 +385,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
     > 記載中...
 
 
-<a id="ID_x"></a>
+<a id="ID_8"></a>
 
 ## ■ ヒルベルト空間 [Hilbert space]
 ユークリッド空間では、先に定義した長さ（ノルム）の概念の他に、２つのベクトル間の角度を表す内積の概念も兼ね備える。<br>
@@ -357,8 +418,10 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 ![image](https://user-images.githubusercontent.com/25688193/44565319-77211f00-a7a2-11e8-9ff2-157b150aae9d.png)<br>
 
-<br>
 
+<a id="ID_8-1"></a>
+
+### ◎ ３平方の定理や中線定理
 ヒルベルト空間においては、以下のような３平方の定理や中線定理が成り立つ。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44566141-d41ed400-a7a6-11e8-86a9-c370cd2db070.png)<br>
@@ -375,7 +438,11 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 更に、![image](https://user-images.githubusercontent.com/25688193/44566466-b488ab00-a7a8-11e8-9dca-1e1a237722f9.png) と一致するので、<br>
 **バナッハ空間がヒルベルト空間であるための必要十分条件は、（バナッハ空間を構築している）ノルムに対し、中線定理が成り立っていることである。**<br>
 
-<br>
+
+<a id="ID_8-2"></a>
+
+### ◎ ヒルベルト空間の例
+> 記載中...
 
 - （例）　ヒルベルト空間の例<br>
     <br>
