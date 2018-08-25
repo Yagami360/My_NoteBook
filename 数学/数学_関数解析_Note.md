@@ -227,6 +227,40 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 ![image](https://user-images.githubusercontent.com/25688193/44614660-f3c80200-a863-11e8-959c-652d3ca96490.png)<br>
 
+<br>
+
+次に、実数列の収束・極限に関して、いくつかの有用な性質を見てみる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44615364-b3708000-a873-11e8-9e8a-10a7e7e08907.png)<br>
+
+- （証明）<br>
+	実数列の定義（ ![image](https://user-images.githubusercontent.com/25688193/44615381-2a0d7d80-a874-11e8-91b0-119d3c29143d.png) ）において、ε=1 としても、ある有限な ![image](https://user-images.githubusercontent.com/25688193/44615392-617c2a00-a874-11e8-9bc9-2c26c65dd682.png) が存在し、<br>
+	![image](https://user-images.githubusercontent.com/25688193/44615397-71940980-a874-11e8-93e6-43d3c4cf0f7a.png) が成り立つので、絶対値の部分を変形すると、<br>
+	![image](https://user-images.githubusercontent.com/25688193/44615400-82447f80-a874-11e8-8176-ca5c246e89c3.png) を得る。<br>
+    <br>
+	一方、![image](https://user-images.githubusercontent.com/25688193/44615410-a99b4c80-a874-11e8-9dff-774b8a59f419.png) は、有限個の実数なので、<br>
+	これら ![image](https://user-images.githubusercontent.com/25688193/44615413-c0da3a00-a874-11e8-9a8d-7e27e36f39e8.png) の最小値は、![image](https://user-images.githubusercontent.com/25688193/44615418-d3ed0a00-a874-11e8-9bb8-ea93c28f13dd.png) であり、下に有界である。<br>
+	逆に、これら ![image](https://user-images.githubusercontent.com/25688193/44615413-c0da3a00-a874-11e8-9a8d-7e27e36f39e8.png) の最大値は、![image](https://user-images.githubusercontent.com/25688193/44615423-e5cead00-a874-11e8-8797-126466180caf.png) であり、上に有界である。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44615573-ffbdbf00-a877-11e8-8402-cfa20c0730fa.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44615576-23810500-a878-11e8-822a-d3e24400fb5d.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44615736-6ba22680-a87c-11e8-8fca-00085e6f01b0.png)<br>
+> このコーシー列の判定条件と、ε−N 論法におよる収束の定義の違いは？
+
+<br>
+
+ここで、実数列が収束するという条件は、厳しい条件になるが、これより弱い条件として、上極限と下極限という概念が存在する。<br>
+これは、収束するかわからないような実数列に対しても、大きな n に対して振る舞いを把握した場合に用いることが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44616010-c474bd80-a882-11e8-91ed-488b16d67d9b.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44616016-d6eef700-a882-11e8-93e8-c092dda07dec.png)<br>
 
 ---
 
