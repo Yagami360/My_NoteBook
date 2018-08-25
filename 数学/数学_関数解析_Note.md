@@ -1,4 +1,5 @@
 # 関数解析
+関数解析の基本事項を記載したマイノートです。随時追記中。<br>
 
 ## 目次 [Contents]
 
@@ -9,16 +10,20 @@
         1. [線形独立（一次独立）と線形従属（一次従属）の幾何学的イメージ](#ID_2-2-1)    
     1. [基底ベクトル](#ID_2-3)
     1. [ベクトルの次元](#ID_2-4)
-1. [関数空間](#ID_3)
-    1. [ノルムとノルム空間](#ID_3-1)
-    1. [収束と極限](#ID_3-2)
-    1. [Cauchy 列（基本列）と完備性](#ID_3-3)
-    1. [バナッハ空間 [Banach space]](#ID_3-4)
-    1. [ヒルベルト空間 [Hilbert space]](#ID_3-5)
-        1. ヒルベルト空間の完全正規直交基底
-    1. フーリエ級数展開
-    1. フーリエ変換
-    1. ルジャンドル多項式、ルジャンドル級数展開
+1. [距離空間](#ID_x)
+1. [点列の収束と極限](#ID_x)
+1. [ノルムとノルム空間](#ID_3-1)
+    1. [Cauchy 列（基本列）と完備性](#ID_x)
+    1. ノルムの位相構造
+1. 内積空間
+1. [バナッハ空間 [Banach space]](#ID_x)
+    1. バナッハ空間の例
+1. [ヒルベルト空間 [Hilbert space]](#ID_x)
+    1. 三平方の定理、中線定理
+    1. ヒルベルト空間の例
+    1. ヒルベルト空間の完全正規直交基底
+1. フーリエ級数展開とフーリエ変換
+1. ルジャンドル級数展開
 1. 作用素
     1. 線形作用素
     1. コンパクト作用素
@@ -30,8 +35,7 @@
 <a id="ID_1"></a>
 
 ## ■ 概要
-> 記載中...
-
+![image](https://user-images.githubusercontent.com/25688193/44614207-3c2ef200-a85b-11e8-8021-266ab01abd92.png)<br>
 
 ---
 
@@ -39,22 +43,6 @@
 
 ## ■ 線形空間（ベクトル空間）
 ![image](https://user-images.githubusercontent.com/25688193/44356650-e40a8f80-a4ea-11e8-8401-40d46d43542a.png)<br>
-
-<!--
-![image](https://user-images.githubusercontent.com/25688193/44353953-7a3ab780-a4e3-11e8-9e0f-2579f21944cf.png)<br>
-> 集合 X の任意の２つの要素 u,v に対して、<br>
-u と v の和 ![image](https://user-images.githubusercontent.com/25688193/44354106-e87f7a00-a4e3-11e8-8772-f94af35b3da4.png) 及び、α と u の積 αu∈X が定義されていて、<br>
-それらが、以下の８つの条件を満たす時、この集合 X は、複素線形空間（又は実線形空間）であるという。（但し、α,β は任意の複素数又は実数、u,v,w∈X）<br>
-そして、この線形空間の要素のことをベクトルという。<br>
-> 1. 加法の結合律：![image](https://user-images.githubusercontent.com/25688193/44354146-faf9b380-a4e3-11e8-8f49-be3f2b015a9c.png)<br>
->2. 加法の可換律：![image](https://user-images.githubusercontent.com/25688193/44354928-22518000-a4e6-11e8-90ad-77cd1536c210.png)<br>
->3. 加法単位元の存在：ゼロベクトル ![image](https://user-images.githubusercontent.com/25688193/44354956-34cbb980-a4e6-11e8-8f96-4805890bfc8b.png) が存在して、任意の u∈X に対して、![image](https://user-images.githubusercontent.com/25688193/44354973-43b26c00-a4e6-11e8-9ef2-1076500371ad.png) が成り立つ<br>
->4. 加法逆元の存在：任意の u∈X に対して、加法逆元 −u∈X が存在して、![image](https://user-images.githubusercontent.com/25688193/44355162-cdfad000-a4e6-11e8-9567-1cd45f156057.png)<br>
->5. 加法に対するスカラー乗法の分配律：α(u+v)=αu+αv<br>
->6. 体の加法に対するスカラー乗法の分配律：(α+β)u=αu+βu<br> 
->7. 体の乗法とスカラー乗法の両方条件：(αβ)u=α(βu)  <br>
->8. スカラー乗法の単位元の存在：1u=u<br>
--->
 
 ![image](https://user-images.githubusercontent.com/25688193/44385151-7ba6c700-a559-11e8-8b16-b6ec0ee1130f.png)<br>
 
@@ -209,20 +197,49 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 	従って、このベクトルの組 ![image](https://user-images.githubusercontent.com/25688193/44454707-2c36c880-a637-11e8-92bb-512e4217dd44.png) は、この２×２の正方行列によって張られる（生成される）ベクトル空間の基底ベクトルであり、その次元は dimV=4 である。
 
 
----
+<a id="ID_x"></a>
 
-<a id="ID_3"></a>
+## ■ 距離空間
+> 記載中...
 
+<!--
 ## ■ 関数空間
 関数解析で扱う関数空間は、収束の概念などの位相的な性質をもつベクトル空間である。<br>
 ここで、この収束の概念とは、
 有次元ベクトル空間において、ベクトルの列 ![image](https://user-images.githubusercontent.com/25688193/44466778-1c7dab00-a65c-11e8-89d8-4f7f0ee1b465.png) とあるベクトル ![image](https://user-images.githubusercontent.com/25688193/44467081-ee4c9b00-a65c-11e8-9a34-44426b74fa69.png) の距離 ![image](https://user-images.githubusercontent.com/25688193/44467213-3ff52580-a65d-11e8-92f7-09f40d909d8c.png) が０に収束することである。
 （このとき、ベクトルの列 ![image](https://user-images.githubusercontent.com/25688193/44466778-1c7dab00-a65c-11e8-89d8-4f7f0ee1b465.png) あるベクトル ![image](https://user-images.githubusercontent.com/25688193/44467081-ee4c9b00-a65c-11e8-9a34-44426b74fa69.png) に収束するという。）<br>
+-->
+
+<a id="ID_x"></a>
+
+## ■ 点列の収束と極限
+世の中には、有限回の計算で完全な解が求まらないような問題が多く存在する。<br>
+このような問題では、厳密解への収束が保証される数列（点列）が利用される。<br>
+
+すべての収束や極限概念の基本は、実数列にあるので、
+ここでは、この最も単純な実数列を例に収束や極限の概念を定義している。<br>
+（数ある数列や点列のうち、具体的に実数列のみを扱うことで一般性は失われるが、実数列で考えたほうがわかりやすいのと、実数列での収束、極限の概念は他の点列でも当てはまることが多いので、実数列のみを取り扱う。）<br>
+
+実数列 ![image](https://user-images.githubusercontent.com/25688193/44614560-53bda900-a862-11e8-8512-e98571abd5a3.png) がある極限値 α に収束することを、<br>
+![image](https://user-images.githubusercontent.com/25688193/44614571-6df78700-a862-11e8-8c04-4c6c4dd63caf.png) や ![image](https://user-images.githubusercontent.com/25688193/44614627-32a98800-a863-11e8-84ae-bfa683351626.png)<br>
+などで表現するが、この意味を曖昧さがないように説明するにはどのようにしたら良いだろうか？<br>
+この答えとして、以下に定義する ε−N 論法 による定義がある。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44614660-f3c80200-a863-11e8-959c-652d3ca96490.png)<br>
 
 
-<a id="ID_3-1"></a>
+---
 
-### ◎ ノルムとノルム空間
+> 削除予定...<br>
+![image](https://user-images.githubusercontent.com/25688193/44505648-85593780-a6dd-11e8-9b15-d0dcfbfd5533.png)<br>
+
+
+---
+
+
+<a id="ID_x"></a>
+
+## ■ ノルムとノルム空間
 ベクトルの長さに相当するいくつかの基本的性質のみ抽出すれば、より抽象的な概念として、より一般的な空間にも、ベクトルの長さに相当する概念を導入することが出来る。<br>
 そしてその概念こそがノルムとなる。<br>
 
@@ -240,15 +257,9 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 	このように１つの空間に導入し得るノルムは１つとは限らない。<br>
 
 
-<a id="ID_3-3"></a>
+<a id="ID_x"></a>
 
-### ◎ 収束と極限
-![image](https://user-images.githubusercontent.com/25688193/44505648-85593780-a6dd-11e8-9b15-d0dcfbfd5533.png)<br>
-
-
-<a id="ID_3-4"></a>
-
-### ◎ Cauchy 列（基本列）と完備性
+## ■ Cauchy 列（基本列）と完備性
 ノルム空間 X 内の点列 {u_n }={u_1,u_2,…}  が X の収束列であるならば、ノルム空間の４つ目の条件に対応する式は０に近づく。即ち、<br>
 ![image](https://user-images.githubusercontent.com/25688193/44506078-c2262e00-a6df-11e8-9237-94053a895f5f.png)<br>
 書き換えると、<br>
@@ -266,9 +277,9 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 一般のノルム空間は、必ずしも、コーシー列が収束し完備であるとは限らない。<br>
 
 
-<a id="ID_3-5"></a>
+<a id="ID_x"></a>
 
-### ◎ バナッハ空間 [Banach space]
+## ■ バナッハ空間 [Banach space]
 ![image](https://user-images.githubusercontent.com/25688193/44508109-0f0e0280-a6e8-11e8-9db4-61e32552669a.png)<br>
 
 - （例）<br>
@@ -279,9 +290,9 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
     > 記載中...
 
 
-<a id="ID_3-6"></a>
+<a id="ID_x"></a>
 
-### ◎ ヒルベルト空間 [Hilbert space]
+## ■ ヒルベルト空間 [Hilbert space]
 ユークリッド空間では、先に定義した長さ（ノルム）の概念の他に、２つのベクトル間の角度を表す内積の概念も兼ね備える。<br>
 この内積の概念は、例えば、３次元空間では、<br>
 ![image](https://user-images.githubusercontent.com/25688193/44511871-c52b1980-a6f3-11e8-8e51-3bf5afd7c130.png)<br>
@@ -334,6 +345,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 - （例）　ヒルベルト空間の例<br>
     <br>
+
 
 
 ---
