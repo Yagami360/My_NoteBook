@@ -225,7 +225,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 などで表現するが、この意味を曖昧さがないように説明するにはどのようにしたら良いだろうか？<br>
 この答えとして、以下に定義する ε−N 論法 による定義がある。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/44614660-f3c80200-a863-11e8-959c-652d3ca96490.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44616438-8085b680-a88a-11e8-8f6a-840bb7368a56.png)<br>
 
 <br>
 
