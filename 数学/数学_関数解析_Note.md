@@ -41,7 +41,9 @@
 <a id="ID_1"></a>
 
 ## ■ 概要
-![image](https://user-images.githubusercontent.com/25688193/44614207-3c2ef200-a85b-11e8-8021-266ab01abd92.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44618657-2221fd80-a8b5-11e8-85dd-caaa4b8d2c9e.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44618903-c3ab4e00-a8b9-11e8-8426-59eda8f1af4a.png)<br>
 
 ---
 
@@ -50,7 +52,7 @@
 ## ■ 線形空間（ベクトル空間）
 ![image](https://user-images.githubusercontent.com/25688193/44356650-e40a8f80-a4ea-11e8-8401-40d46d43542a.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/44385151-7ba6c700-a559-11e8-8b16-b6ec0ee1130f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44618648-13d3e180-a8b5-11e8-9160-c5b5544aa5e0.png)<br>
 
 - （例）<br>
     １階の線形微分方程式<br>
@@ -316,7 +318,16 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 <a id="ID_4-3"></a>
 
 ### ◎ 完備距離空間
-> 記載中...
+先の議論で、距離空間 X におけて点列が収束するとはどういう意味であるかはわかったが、<br>
+距離空間 X が与えられたときに、ある点列の極限が、その距離空間に存在するか？という問題の解決方法として、極限の候補にあたりをつけ、都度先の収束・極限の条件を満たすか確認する方法も考えられるが、この方法は不便である。<br>
+
+そのような場合に、実数列の場合のとき（＝実数列がコーシー列なら収束する）と同じように、点列の情報だけで極限の存在性が判別できれば便利である。<br>
+そのために以下のような、完備な空間というものを考える。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44618533-a0c96b80-a8b2-11e8-8ea6-c1169b348985.png)<br>
+
+
+
 
 
 <a id="ID_5"></a>
