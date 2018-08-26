@@ -327,6 +327,18 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 ![image](https://user-images.githubusercontent.com/25688193/44618533-a0c96b80-a8b2-11e8-8ea6-c1169b348985.png)<br>
 
 
+- （例）完備距離空間ではない例<br>
+    有理数の実数列 ![image](https://user-images.githubusercontent.com/25688193/44628101-d040ac80-a974-11e8-8bd0-68c1e88eb2f0.png) は、距離空間 ![image](https://user-images.githubusercontent.com/25688193/44624893-f8f58180-a935-11e8-94da-3e66b3aab318.png) 内において、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44624896-162a5000-a936-11e8-88d7-c8282479014c.png) に収束するので、この収束先に一意に決まり（収束先の一意性の性質）、![image](https://user-images.githubusercontent.com/25688193/44624898-27735c80-a936-11e8-87a7-4e98bbff916b.png) 以外のいかなる実数にも収束しない。<br>
+    また、この実数列 ![image](https://user-images.githubusercontent.com/25688193/44628126-4218f600-a975-11e8-8a7d-b09460299143.png) は、有理数 Q の如何なる点にも収束しない。<br>
+    <br>
+	ここで、距離空間において、点列がある点に収束するならば、その点列はコーシー列になるので（コーシー列の基本性質）、<br>
+	この実数列 ![image](https://user-images.githubusercontent.com/25688193/44628126-4218f600-a975-11e8-8a7d-b09460299143.png) は、距離空間 ![image](https://user-images.githubusercontent.com/25688193/44624893-f8f58180-a935-11e8-94da-3e66b3aab318.png) のコーシー列になる。<br>
+    そして、有理数の距離空間 ![image](https://user-images.githubusercontent.com/25688193/44628393-e00ebf80-a979-11e8-89a8-c7235400f083.png) のコーシー列でもある。<br>
+    <br>
+	従って、この有理数の距離空間 ![image](https://user-images.githubusercontent.com/25688193/44628393-e00ebf80-a979-11e8-89a8-c7235400f083.png) は、完備”でない”距離空間になる。<br>
+	（一方、実数の距離空間 ![image](https://user-images.githubusercontent.com/25688193/44628399-f61c8000-a979-11e8-9d00-97e43453a8d2.png) は、完備な距離空間である。）<br>
+
 
 
 
