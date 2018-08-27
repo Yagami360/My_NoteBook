@@ -348,6 +348,20 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 	従って、この有理数の距離空間 ![image](https://user-images.githubusercontent.com/25688193/44628393-e00ebf80-a979-11e8-89a8-c7235400f083.png) は、完備”でない”距離空間になる。<br>
 	（一方、実数の距離空間 ![image](https://user-images.githubusercontent.com/25688193/44628399-f61c8000-a979-11e8-9d00-97e43453a8d2.png) は、完備な距離空間である。）<br>
 
+- （例）距離空間 ![image](https://user-images.githubusercontent.com/25688193/44646962-b1472680-aa17-11e8-9714-156772648b3b.png)<br>
+    距離空間 ![image](https://user-images.githubusercontent.com/25688193/44646962-b1472680-aa17-11e8-9714-156772648b3b.png) が完備であるかを調べる。<br>
+    <br>
+	コーシー列と完備性の関係（＝任意のコーシー列が収束するなら、その距離空間は完備）より、<br>
+	![image](https://user-images.githubusercontent.com/25688193/44647032-dfc50180-aa17-11e8-8cb0-9f117108eceb.png) からなる点列 ![image](https://user-images.githubusercontent.com/25688193/44647082-084cfb80-aa18-11e8-99c2-4bea7f707284.png) が ![image](https://user-images.githubusercontent.com/25688193/44647178-45b18900-aa18-11e8-84d0-a95c09eb3802.png) のコーシー列であるとき、<br>
+	この点列が ![image](https://user-images.githubusercontent.com/25688193/44647178-45b18900-aa18-11e8-84d0-a95c09eb3802.png) 内のある点に収束するのか調べれば良い。（収束すれば完備）<br>
+    <br>
+	点列 ![image](https://user-images.githubusercontent.com/25688193/44647082-084cfb80-aa18-11e8-99c2-4bea7f707284.png) はコーシー列であるので、<br>
+	任意の ε>0 に対して、ある ![image](https://user-images.githubusercontent.com/25688193/44647279-92955f80-aa18-11e8-938c-5b8abfd535dc.png) が存在して、n,m>N ならば、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44647299-a345d580-aa18-11e8-9567-6d0e00e54bf7.png)<br>
+    従って、任意の j に対して、（ j = 1 ~ ∞ の無限和なので、）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44647344-c3759480-aa18-11e8-801d-ee3aad97cdf4.png)<br>
+	ここで、j を固定し、実数列 ![image](https://user-images.githubusercontent.com/25688193/44648575-6c71be80-aa1c-11e8-89b9-a9c0d34e6c1e.png) を定義すると、<br>
+	上記の関係より、この実数列 ![image](https://user-images.githubusercontent.com/25688193/44648575-6c71be80-aa1c-11e8-89b9-a9c0d34e6c1e.png) は、実数空間 R のコーシー列になっていることが分かる。<br>
 
 
 
