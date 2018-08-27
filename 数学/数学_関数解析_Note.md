@@ -298,6 +298,15 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
     で定義することにより、この写像 d が距離の３つの条件を満たすので（計算略）、<br>
     ![image](https://user-images.githubusercontent.com/25688193/44617266-8daaa180-a89a-11e8-8dd4-ff92f7fd6397.png) は距離空間になる。<br>
 
+- （例）距離空間 ![image](https://user-images.githubusercontent.com/25688193/44642760-a5079d00-aa08-11e8-9f88-55859165e6a2.png)<br>
+    実数 p≥1 に対して、条件 ![image](https://user-images.githubusercontent.com/25688193/44642855-0d567e80-aa09-11e8-8601-903c43c32f43.png) （和が有限の値で絶対可積分）を満たすような、<br>
+    すべての実数列 ![image](https://user-images.githubusercontent.com/25688193/44642948-98d00f80-aa09-11e8-8860-408390d55e3d.png) からなる集合を ![image](https://user-images.githubusercontent.com/25688193/44642986-c321cd00-aa09-11e8-9fff-cce6ba905fc8.png) と定義する。<br>
+    すると、この集合 ![image](https://user-images.githubusercontent.com/25688193/44642986-c321cd00-aa09-11e8-9fff-cce6ba905fc8.png) 内の任意の ![image](https://user-images.githubusercontent.com/25688193/44646432-ea7e9700-aa15-11e8-8af7-23045c1b86e7.png) に対して、![image](https://user-images.githubusercontent.com/25688193/44643286-ec8f2880-aa0a-11e8-970b-d87f93af6709.png) となり、<br>
+    距離<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44643304-003a8f00-aa0b-11e8-856a-e720c9ad681b.png)<br>
+    が定義出来る。<br>
+    そして、そこから構成される、![image](https://user-images.githubusercontent.com/25688193/44642760-a5079d00-aa08-11e8-9f88-55859165e6a2.png) は距離空間となる。（計算略）<br>
+
 
 <a id="ID_4-2"></a>
 
