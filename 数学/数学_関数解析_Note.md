@@ -410,7 +410,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/44725141-9b1c9180-ab0f-11e8-93ae-d3ff257b052b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44764472-d27c5400-ab8a-11e8-8950-3afaeb718750.png)<br>
     ※ この定義の条件（ ![image](https://user-images.githubusercontent.com/25688193/44724450-b38bac80-ab0d-11e8-95ea-535fa99872bf.png) ）は、<br>
     　 距離空間 X,Y の開球 ![image](https://user-images.githubusercontent.com/25688193/44724481-c7371300-ab0d-11e8-99df-03d73a5cbb91.png) の言葉を用いると、以下のように表現できる。<br>
     　 ![image](https://user-images.githubusercontent.com/25688193/44724516-df0e9700-ab0d-11e8-8536-bcb83b5b82ac.png)<br>
@@ -426,6 +426,36 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 ![image](https://user-images.githubusercontent.com/25688193/44734971-1f7a0f00-ab26-11e8-847d-ec63b7523f8a.png)<br>
     ※ 特に、距離空間 X 自身がコンパクト集合であるとき、この距離空間 X をコンパクト空間という。<br>
 
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44763247-56cbd880-ab85-11e8-9109-835ed48b7623.png)<br>
+- （証明略）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44763268-6f3bf300-ab85-11e8-9e60-f1125c5ed413.png)<br>
+    ※ 先の「距離空間のコンパクト」に関する定理は、一般の距離空間で成り立っていたが、この定理では、距離空間 ![image](https://user-images.githubusercontent.com/25688193/44763302-a7433600-ab85-11e8-9896-dd19ae8f33ad.png) に限定することで、３つ目の命題も必要十分条件の関係で成り立つようになる。<br>
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44764917-fd67a780-ab8c-11e8-96af-c34e8824b8a7.png)
+- （証明）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44770055-b1732d80-aba1-11e8-951b-408a9011c688.png) を連続写像 f による S の像 f(S) の開被覆とする。即ち、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44770075-c6e85780-aba1-11e8-8838-bfb9482108d0.png)<br>
+	が成り立つとする。<br>
+	このとき、U から適当な有限個の開集合を選ぶことにより、f(S) が被覆できることを示せばよい。<br>
+	（このとき、f(S) はコンパクト集合）<br>
+    <br>
+    ![image](https://user-images.githubusercontent.com/25688193/44770117-e8e1da00-aba1-11e8-88a0-770aa91af7e5.png)<br>
+    まず、写像 f を逆写像した ![image](https://user-images.githubusercontent.com/25688193/44770145-04e57b80-aba2-11e8-87e7-e3d86e0bc55c.png) は、”X の” 開集合となり（証明略）、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44770195-33fbed00-aba2-11e8-8049-80dbd7eafbf8.png)<br>
+    の関係が成り立つので、この逆写像による集合族 ![image](https://user-images.githubusercontent.com/25688193/44770703-d7013680-aba3-11e8-9b96-781d99548470.png) は、元の部分集合 S の開被覆になっていることが分かる。<br>
+    ここで、S は X のコンパクト集合なので、この開被覆からうまく選んだ有限個の開集合<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44770747-f730f580-aba3-11e8-8a12-82b113870218.png) から、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44770789-1af43b80-aba4-11e8-8fbf-25cafdb4c8fa.png)<br>
+    とすることが出来る。<br>
+    従って、f(S) は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44770927-7faf9600-aba4-11e8-889c-197792af9ad3.png)<br>
+    この ![image](https://user-images.githubusercontent.com/25688193/44770946-90600c00-aba4-11e8-8997-4c736656f108.png) の関係より、f(S) はコンパクト集合であると言える。<br>
 
 
 
