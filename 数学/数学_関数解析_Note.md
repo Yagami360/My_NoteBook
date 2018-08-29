@@ -18,9 +18,12 @@
     1. [距離空間における収束、極限とコーシー列（基本列）](#ID_4-2)
     1. [完備距離空間](#ID_4-3)
         1. [完備距離空間の例](#ID_4-3-1)
-        1. [【補足】開集合、閉集合](#ID_4-3-2)
-        1. [【補足】写像の連続性](#ID_4-3-3)
-        1. [【補足】コンパクト集合](#ID_4-3-4)
+        1. [開集合、閉集合](#ID_4-3-2)
+        1. [写像の連続性](#ID_4-3-3)
+        1. [コンパクト集合](#ID_4-3-4)
+        1. 縮小写像の不動点定理
+        1. ベールの定理
+        1. 可分性
 1. [ノルムとノルム空間](#ID_5)
     1. [ノルム空間の例](#ID_5-1)
     1. [ノルム空間における Cauchy 列（基本列）と完備性](#ID_5-x)
@@ -384,20 +387,20 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 <a id="ID_4-3-2"></a>
 
-#### ☆ 【補足】開集合、閉集合
+#### ☆ 開集合、閉集合
 > 記載中...
 
 
 <a id="ID_4-3-3"></a>
 
-#### ☆ 【補足】写像の連続性
+#### ☆ 写像の連続性
 関数の連続性や微分可能性を調べる際に、変数がある値に限りなく近づく状況を想定し、対応する関数値 f の振る舞いを調べることになる。<br>
 この際に、変数が連続的で離散データのように順番を表すインデックスが存在しないので、「変数がある値に限りなく近づく」ということを、予め明確に定義しておく必要がある。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44725301-ed5db280-ab0f-11e8-9933-b9041b208836.png)<br>
-※ この定義の条件（ ![image](https://user-images.githubusercontent.com/25688193/44718323-ac0ed800-aafa-11e8-9ab1-0d736b9693de.png) ）は、<br>
-　 距離空間 X,Y の開球 ![image](https://user-images.githubusercontent.com/25688193/44718354-c2b52f00-aafa-11e8-9630-fcf49a817304.png) の言葉を用いると、以下のように表現できる。<br>
-　 ![image](https://user-images.githubusercontent.com/25688193/44718384-d52f6880-aafa-11e8-902c-8a537bf9ba79.png)<br>
+    ※ この定義の条件（ ![image](https://user-images.githubusercontent.com/25688193/44718323-ac0ed800-aafa-11e8-9ab1-0d736b9693de.png) ）は、<br>
+    　 距離空間 X,Y の開球 ![image](https://user-images.githubusercontent.com/25688193/44718354-c2b52f00-aafa-11e8-9630-fcf49a817304.png) の言葉を用いると、以下のように表現できる。<br>
+    　 ![image](https://user-images.githubusercontent.com/25688193/44718384-d52f6880-aafa-11e8-902c-8a537bf9ba79.png)<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44723739-d2893f00-ab0b-11e8-8c8c-171c4188b519.png)<br>
 - （証明略）<br>
@@ -408,15 +411,22 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44725141-9b1c9180-ab0f-11e8-93ae-d3ff257b052b.png)<br>
-※ この定義の条件（ ![image](https://user-images.githubusercontent.com/25688193/44724450-b38bac80-ab0d-11e8-95ea-535fa99872bf.png) ）は、<br>
-　 距離空間 X,Y の開球 ![image](https://user-images.githubusercontent.com/25688193/44724481-c7371300-ab0d-11e8-99df-03d73a5cbb91.png) の言葉を用いると、以下のように表現できる。<br>
-　 ![image](https://user-images.githubusercontent.com/25688193/44724516-df0e9700-ab0d-11e8-8536-bcb83b5b82ac.png)<br>
+    ※ この定義の条件（ ![image](https://user-images.githubusercontent.com/25688193/44724450-b38bac80-ab0d-11e8-95ea-535fa99872bf.png) ）は、<br>
+    　 距離空間 X,Y の開球 ![image](https://user-images.githubusercontent.com/25688193/44724481-c7371300-ab0d-11e8-99df-03d73a5cbb91.png) の言葉を用いると、以下のように表現できる。<br>
+    　 ![image](https://user-images.githubusercontent.com/25688193/44724516-df0e9700-ab0d-11e8-8536-bcb83b5b82ac.png)<br>
 
 
 <a id="ID_4-3-4"></a>
 
-#### ☆ 【補足】コンパクト集合
-> 記載中...
+#### ☆ コンパクト集合
+コンパクト性は、距離空間の部分集合に関する性質である。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44733911-8e099d80-ab23-11e8-838b-be35918cd437.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44734971-1f7a0f00-ab26-11e8-847d-ec63b7523f8a.png)<br>
+    ※ 特に、距離空間 X 自身がコンパクト集合であるとき、この距離空間 X をコンパクト空間という。<br>
+
+
 
 
 
