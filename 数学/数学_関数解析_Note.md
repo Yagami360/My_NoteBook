@@ -21,7 +21,7 @@
         1. [開集合、閉集合](#ID_4-3-2)
         1. [写像の連続性](#ID_4-3-3)
         1. [コンパクト集合](#ID_4-3-4)
-        1. 縮小写像の不動点定理
+        1. [縮小写像の不動点定理](#ID_4-3-5)
         1. ベールの定理
         1. 可分性
 1. [ノルムとノルム空間](#ID_5)
@@ -474,6 +474,23 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 	更に、先の定理（距離空間のコンパクト性と点列コンパクト）は、f(S) が（有界）閉集合であることを保証しているので、![image](https://user-images.githubusercontent.com/25688193/44785351-8c93b000-abcb-11e8-95af-1a92807ec999.png) となる ![image](https://user-images.githubusercontent.com/25688193/44785387-aa611500-abcb-11e8-8360-36efc1131baa.png) が存在する。<br>
     <br>
     最小値の存在証明に関しても、同様の方法で示せる。<br>
+
+
+<a id="ID_4-3-5"></a>
+
+#### ☆ 縮小写像の不動点定理
+集合 X で定義された写像 T:X→X に対して、<br>
+z∈X が存在して、T(z)=z（＝写像後も変わらず自分自身に写像される点）となるとき、<br>
+この点 z は、写像 T の不動点 [fixed point] であるという。 <br>
+ここでは、写像 T の不動点全体からなる集合を ![image](https://user-images.githubusercontent.com/25688193/44793963-6e857a00-abe2-11e8-9d1f-d94fdbb2d8b9.png) と表記することにする。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44796509-0b96e180-abe8-11e8-810f-32a26474697a.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44797201-91675c80-abe9-11e8-97e4-5acb35ee9793.png)<br>
+
+この縮小写像を用いれば、繰り返し縮小写像することでどんどん距離が短くなるので、<br>
+以下の図のように極限となる不動点が表現できる。<br>
+![image](https://user-images.githubusercontent.com/25688193/44799479-f5d8ea80-abee-11e8-93b4-da643ea9b6d2.png)<br>
 
 
 
