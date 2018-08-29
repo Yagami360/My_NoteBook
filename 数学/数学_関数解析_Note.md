@@ -457,6 +457,23 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
     ![image](https://user-images.githubusercontent.com/25688193/44770927-7faf9600-aba4-11e8-889c-197792af9ad3.png)<br>
     この ![image](https://user-images.githubusercontent.com/25688193/44770946-90600c00-aba4-11e8-8997-4c736656f108.png) の関係より、f(S) はコンパクト集合であると言える。<br>
 
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44784468-bf887480-abc8-11e8-92a0-bbc72ca57c33.png)<br>
+- （証明）<br>
+    まず、最大値の存在について示す。<br>
+	先の定理（連続写像によるコンパクト集合の像）より、コンパクトな部分集合 S の像 f(S) は、写像先の集合 R のコンパクト集合になる。<br>
+	このことと、先の定理（距離空間のコンパクト性と点列コンパクト）より、R は有界集合となる。<br>
+	従って、ワイエルシュトラスの公理（上に有界な任意の部分集合 A⊂R に対し、上限 ![image](https://user-images.githubusercontent.com/25688193/44784560-0d04e180-abc9-11e8-8a71-304bdd0fe19a.png) が存在する）より、f(S)∈R（有界集合）に上限 ![image](https://user-images.githubusercontent.com/25688193/44784589-273ebf80-abc9-11e8-8bac-de32bff6a446.png) が存在する。<br>
+    <br>
+	最大値の存在証明のためには、この上限 ![image](https://user-images.githubusercontent.com/25688193/44784633-49d0d880-abc9-11e8-87ce-adf864d8c4d4.png) が ![image](https://user-images.githubusercontent.com/25688193/44784672-68cf6a80-abc9-11e8-9e0c-91974dd7c5f1.png) となることを示せばよい。<br>
+	上限の定義から、任意の x∈S に対し、![image](https://user-images.githubusercontent.com/25688193/44784694-7be23a80-abc9-11e8-9218-14961cc01341.png) が成り立つが、<br>
+	![image](https://user-images.githubusercontent.com/25688193/44784714-8d2b4700-abc9-11e8-99bb-64918b2b9f5c.png)<br>
+	となる実数列 ![image](https://user-images.githubusercontent.com/25688193/44784742-a03e1700-abc9-11e8-85f2-53af2983c799.png) をとることが出来る。<br>
+    この実数列 ![image](https://user-images.githubusercontent.com/25688193/44784742-a03e1700-abc9-11e8-85f2-53af2983c799.png) は、![image](https://user-images.githubusercontent.com/25688193/44785291-59e9b780-abcb-11e8-9793-6cd0f859f7df.png) を満たす。<br>
+	更に、先の定理（距離空間のコンパクト性と点列コンパクト）は、f(S) が（有界）閉集合であることを保証しているので、![image](https://user-images.githubusercontent.com/25688193/44785351-8c93b000-abcb-11e8-95af-1a92807ec999.png) となる ![image](https://user-images.githubusercontent.com/25688193/44785387-aa611500-abcb-11e8-8360-36efc1131baa.png) が存在する。<br>
+    <br>
+    最小値の存在証明に関しても、同様の方法で示せる。<br>
 
 
 
