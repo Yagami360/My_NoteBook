@@ -619,12 +619,61 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_5-5"></a>
 
 ### ◎ ノルムの等価性
-> 記載中...
+２種類のノルムに対して、互いに等価であるということを、<br>
+「等価なノルムを用いる限り、点列がある点に収束するか否かの結論は不変」という視点で定義する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44864413-8e886c80-acba-11e8-948d-53e45a7cf86c.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44864603-06569700-acbb-11e8-9800-aa3aeb66f289.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44892843-0342c180-ad22-11e8-9657-ffd7106ec69b.png)<br>
+
+- （証明）<br>
+    A) まず、前提準備として以下のようなことを考える。<br>
+	ベクトル空間 X の基底 ![image](https://user-images.githubusercontent.com/25688193/44892896-5157c500-ad22-11e8-841a-61f229306a47.png) を１つ固定すると、任意の ![image](https://user-images.githubusercontent.com/25688193/44892929-6df3fd00-ad22-11e8-8133-d1160a56f393.png) は、![image](https://user-images.githubusercontent.com/25688193/44892954-95e36080-ad22-11e8-849d-38d1a4441265.png) と表現でき、![image](https://user-images.githubusercontent.com/25688193/44893055-55381700-ad23-11e8-9450-c263fcde0c58.png) が一意に決まり、ノルムとして、以下のようなノルム（ノルムの公理を満たす）が定まる。![image](https://user-images.githubusercontent.com/25688193/44893200-c6c49500-ad24-11e8-977c-05d9a41d8fc8.png)<br>
+    <br>
+
+    B) 次に、ベクトル空間 X に定義可能なノルムを任意に選び、これを関数 ![image](https://user-images.githubusercontent.com/25688193/44893104-ced00500-ad23-11e8-8107-e5da96e7324e.png) で表現することにする。この定理の主張（有限次元空間のノルムはすべて等価）を確認するためには、
+    ２つの正数 ![image](https://user-images.githubusercontent.com/25688193/44893230-04c1b900-ad25-11e8-85f0-12804f126e4d.png) が存在して、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44893251-1905b600-ad25-11e8-9d73-457932c7e66b.png)<br>
+    が成り立つことを示せばよい。<br>
+    <br>
+        i. ベクトル空間 X の基底 ![image](https://user-images.githubusercontent.com/25688193/44892896-5157c500-ad22-11e8-841a-61f229306a47.png) で表現される任意の ![image](https://user-images.githubusercontent.com/25688193/44893285-4fdbcc00-ad25-11e8-9576-5637c06bdb56.png) に対して、<br>
+        その ![image](https://user-images.githubusercontent.com/25688193/44893104-ced00500-ad23-11e8-8107-e5da96e7324e.png) によるノルムは、以下のように変形できる。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44894109-2a50c180-ad29-11e8-8ed7-8ae11e92b47f.png)<br>
+        従って、![image](https://user-images.githubusercontent.com/25688193/44894168-6ab03f80-ad29-11e8-9aae-fdd118fca47e.png) と比較すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44894190-9b907480-ad29-11e8-9fe5-8b248284e119.png)<br>
+        が成り立つことが分かる。<br>
+        <br>
+        ii. ノルムに対して成り立つ性質（![image](https://user-images.githubusercontent.com/25688193/44894430-abf51f00-ad2a-11e8-93b6-697fd2ef2861.png)）より、<br>
+        任意の ![image](https://user-images.githubusercontent.com/25688193/44894462-ce873800-ad2a-11e8-8401-302e774a9419.png) に対して、（先の (B.i) の関係式より）<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44894523-1dcd6880-ad2b-11e8-801c-ad81eb6843cd.png)<br>
+        となる。<br>
+        従って、ノルム関数 ![image](https://user-images.githubusercontent.com/25688193/44893104-ced00500-ad23-11e8-8107-e5da96e7324e.png) の写像先を有限にした、関数 ![image](https://user-images.githubusercontent.com/25688193/44901306-fafa7e80-ad41-11e8-9bb1-b570ee588293.png) は、<br>
+        ユークリッド空間 ![image](https://user-images.githubusercontent.com/25688193/44898809-e5358b00-ad3a-11e8-8078-3ca2333badc9.png) 上で定義された連続関数になり、<br>
+        更に、![image](https://user-images.githubusercontent.com/25688193/44898762-c8995300-ad3a-11e8-9ef4-7cf3e9c5ee40.png) の関係も成り立つ。<br>
+        <br>
+        iii. ここで、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44900850-b02c3700-ad40-11e8-9c93-f7fda511faa4.png)<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44900866-c33f0700-ad40-11e8-92ec-e41b02748f3b.png)<br>
+        を定義すると、<br>
+        この ![image](https://user-images.githubusercontent.com/25688193/44900904-e23d9900-ad40-11e8-8fa0-4e2b9f6555e3.png) は、R^N  の有限閉集合なので、先のハイネ・ボネルの被覆定理より、コンパクト集合となり、<br>
+        更に、先の最大値・最小値の定理より、関数 ![image](https://user-images.githubusercontent.com/25688193/44900946-04cfb200-ad41-11e8-82ef-6d43cebbfa13.png) は、![image](https://user-images.githubusercontent.com/25688193/44901115-77d92880-ad41-11e8-9aaf-b6c31115b031.png) で ![image](https://user-images.githubusercontent.com/25688193/44900904-e23d9900-ad40-11e8-8fa0-4e2b9f6555e3.png) 内の最小値を持つことが保証されている。<br>
+        従って、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44901915-950ef680-ad43-11e8-9101-74df09ff5c50.png)<br>
+        の関係が成り立つ。この関係式を変形すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44902047-ee772580-ad43-11e8-80b7-9083d503d5ff.png)<br>
+    <br>
+    まとえると、![image](https://user-images.githubusercontent.com/25688193/44902014-d1daed80-ad43-11e8-9ff3-a12952ed5778.png) 及び ![image](https://user-images.githubusercontent.com/25688193/44902047-ee772580-ad43-11e8-80b7-9083d503d5ff.png) の関係より、<br>
+	![image](https://user-images.githubusercontent.com/25688193/44902084-0189f580-ad44-11e8-9d97-991fe33a2005.png) の関係が成り立ち、これはノルムの等価性の条件となるので、<br>
+	ベクトル空間 X の有限次元空間 R^N  の任意のノルムは、等価になるといえる。<br>
 
 
 <a id="ID_5-6"></a>
 
-### ◎ ノルム空間において線形多様体
+### ◎ ノルム空間における線形多様体
 > 記載中...
 
 
