@@ -34,7 +34,8 @@
     1. ノルムの位相構造
 1. [内積空間](#ID_6)
     1. [内積空間におけるベクトルの直交性](#ID_6-1)
-    1. [内積空間の性質（コーシー・シュワルツの不等式、三角不等式、中線定理）](#ID_6-2)
+    1. [内積空間の性質と内積から誘導されるノルム](#ID_6-2)
+    1. [内積空間における正規直交系](#ID_6-3)
     1. [xxx](#ID_6-x)
 1. [バナッハ空間 [Banach space]](#ID_7)
     1. [バナッハ空間の例](#ID_7-1)
@@ -707,12 +708,37 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 <a id="ID_6-2"></a>
 
-### ◎ 内積空間の性質（コーシー・シュワルツの不等式、三角不等式、中線定理）
+### ◎ 内積空間の性質と内積から誘導されるノルム
 内積空間 X の任意の ![image](https://user-images.githubusercontent.com/25688193/44941811-43687980-ade0-11e8-80ef-94b721dfb524.png) に対して、![image](https://user-images.githubusercontent.com/25688193/44941844-ee793300-ade0-11e8-963b-b191f96c492e.png) を定義するとき、この写像 ![image](https://user-images.githubusercontent.com/25688193/44941848-0b156b00-ade1-11e8-9095-47fca2878f90.png) は、ノルムの公理を満たし、ノルムとなる。<br>
 このとこを内積から誘導される（＝自然に道簿行かれる）ノルムというが、このノルムの公理を満たすことを示すために、以下の性質が使用される。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/44941883-98f15600-ade1-11e8-8926-516f52a99f26.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44941979-d0143700-ade2-11e8-9135-6ce7834c6d13.png)<br>
+- （証明略）<br>
 
+![image](https://user-images.githubusercontent.com/25688193/44942057-7f9dd900-ade4-11e8-842a-7df1e49d26d5.png)<br>
+- （証明略）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44942070-b542c200-ade4-11e8-825c-b0b561922960.png)
+- （証明略）<br>
+
+この三平方の定理は、任意の内積空間で成り立つが、n→∞ として級数を無限和、即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/44942079-e28f7000-ade4-11e8-8998-80d3afeec3c2.png)<br>
+とした場合には、完備性の条件を課さなければならない（級数和が収束するため）。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44942232-6565fa00-ade8-11e8-9690-404f4b6a3245.png)<br>
+- （証明略）<br>
+
+ここで、内積空間 ![image](https://user-images.githubusercontent.com/25688193/44942349-baeed680-ade9-11e8-9ca8-f7a578df0cd3.png) において、任意の ![image](https://user-images.githubusercontent.com/25688193/44942352-cb9f4c80-ade9-11e8-8205-bc45e188cc9d.png) に対して ![image](https://user-images.githubusercontent.com/25688193/44942354-dc4fc280-ade9-11e8-958d-8f0eb5d00b65.png) がノルムの公理を満たし、ノルムになることを示す。<br>
+まず、公理の条件１（ ![image](https://user-images.githubusercontent.com/25688193/44942361-f9849100-ade9-11e8-9e64-4340c78d62af.png) ）と条件２（ ![image](https://user-images.githubusercontent.com/25688193/44942367-115c1500-adea-11e8-9e65-ece98f880b27.png) ）は明らかである。<br>
+条件３（ ![image](https://user-images.githubusercontent.com/25688193/44942369-2a64c600-adea-11e8-9645-d0fefbd0c777.png) ）は、![image](https://user-images.githubusercontent.com/25688193/44942375-41a3b380-adea-11e8-9427-89789b912bb6.png) の関係より成り立つことが分かる。<br>
+条件４（ ![image](https://user-images.githubusercontent.com/25688193/44942382-74e64280-adea-11e8-9f91-0ae040565ba5.png) ）は、三角不等式となっており、先の（内積空間における）三角不等式の関係から成り立つ。（尚、この三角不等式自体は、シュワルツの不等式から導かれる。）<br>
+従って、ノルムの公理が成り立つので、![image](https://user-images.githubusercontent.com/25688193/44942354-dc4fc280-ade9-11e8-958d-8f0eb5d00b65.png) はノルムである。<br>
+そして、このようなノルムを、**内積から誘導されるノルム** という。<br>
+
+
+<a id="ID_6-3"></a>
+
+### ◎ 内積空間における正規直交系
 
 
 
