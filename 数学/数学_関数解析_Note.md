@@ -33,6 +33,9 @@
     1. [ノルム空間における閉部分空間、線形多様体、閉凸集合](#ID_5-6)
     1. ノルムの位相構造
 1. [内積空間](#ID_6)
+    1. [内積空間におけるベクトルの直交性](#ID_6-1)
+    1. [内積空間の性質（コーシー・シュワルツの不等式、三角不等式、中線定理）](#ID_6-2)
+    1. [xxx](#ID_6-x)
 1. [バナッハ空間 [Banach space]](#ID_7)
     1. [バナッハ空間の例](#ID_7-1)
 1. [ヒルベルト空間 [Hilbert space]](#ID_8)
@@ -537,7 +540,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 この概念こそが **ノルム** となる。<br>
 そして、ノルム空間の２つのベクトル間の距離は、２つのベクトルの差を表すベクトルのノルムとして定義され、この距離によってノルム空間は距離空間になる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/44841292-fa001900-ac7d-11e8-9423-62d2b02cda8b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44925102-54859c00-ad88-11e8-891d-f565e25d9101.png)<br>
 
 <!--
 ベクトルの長さに相当するいくつかの基本的性質のみ抽出すれば、より抽象的な概念として、より一般的な空間にも、ベクトルの長さに相当する概念を導入することが出来る。<br>
@@ -679,18 +682,37 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 ![image](https://user-images.githubusercontent.com/25688193/44905992-b2958d80-ad4e-11e8-8d35-5221bd45efd9.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/44919811-4e3bf380-ad79-11e8-999b-014f0654bd24.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44921490-a674f480-ad7d-11e8-9766-197427c89368.png)<br>
 
 ※ この線形多様体の定義と一般の多様体との関係性は？<br>
-→ 平行移動前の空間がベクトル空間の部分空間なので、多様体でもある？<br>
-→ 接ベクトル空間が関連してくる？<br>
+→ 線形多様体はアフィン空間のことであり、アフィン空間は最も単純な多様体でもあるため、線形多様体ともいう。<br>
 
+![image](https://user-images.githubusercontent.com/25688193/44922224-c5748600-ad7f-11e8-80c4-2660fef723d5.png)<br>
 
 
 <a id="ID_6"></a>
 
 ## ■ 内積空間
-> 記載中...
+次に、実数体 R 上のベクトル空間に内積を構築することを考える。<br>
+この内積を用いると、ベクトル空間の要素（点）間に直交性などの幾何学的構造を持ち込むことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44925593-cb6f6480-ad89-11e8-91de-e4abf8523652.png)<br>
+
+
+<a id="ID_6-1"></a>
+
+### ◎ 内積空間におけるベクトルの直交性
+![image](https://user-images.githubusercontent.com/25688193/44925622-d9bd8080-ad89-11e8-9d4a-adb9c86c635d.png)<br>
+
+
+<a id="ID_6-2"></a>
+
+### ◎ 内積空間の性質（コーシー・シュワルツの不等式、三角不等式、中線定理）
+内積空間 X の任意の ![image](https://user-images.githubusercontent.com/25688193/44941811-43687980-ade0-11e8-80ef-94b721dfb524.png) に対して、![image](https://user-images.githubusercontent.com/25688193/44941844-ee793300-ade0-11e8-963b-b191f96c492e.png) を定義するとき、この写像 ![image](https://user-images.githubusercontent.com/25688193/44941848-0b156b00-ade1-11e8-9095-47fca2878f90.png) は、ノルムの公理を満たし、ノルムとなる。<br>
+このとこを内積から誘導される（＝自然に道簿行かれる）ノルムというが、このノルムの公理を満たすことを示すために、以下の性質が使用される。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44941883-98f15600-ade1-11e8-8926-516f52a99f26.png)<br>
+
 
 
 
