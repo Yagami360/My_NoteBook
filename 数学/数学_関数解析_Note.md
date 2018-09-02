@@ -861,7 +861,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_x-x"></a>
 
 ### ◎ ノルム空間における有界線形作用素
-![image](https://user-images.githubusercontent.com/25688193/44958388-757df680-af1a-11e8-9730-66f8e3d5c9b0.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44960344-ef24dd00-af38-11e8-87b4-50910c9f92a5.png)<br>
 
 
 <a id="ID_x-x"></a>
