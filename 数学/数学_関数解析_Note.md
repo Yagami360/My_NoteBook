@@ -46,12 +46,12 @@
     1. ヒルベルト空間の完全正規直交基底
 1. 関数解析視点でのフーリエ級数展開とフーリエ変換
 1. 関数解析視点でのルジャンドル級数展開
-1. [作用素](#ID_x)
+1. [作用素](#ID_A)
     1. 線形作用素
-    1. [ノルム空間における有界線形作用素](#ID_x-x)
-        1. 作用素ノルム
-        1. 有界線形汎関数
-        1. 線形写像の連続性
+    1. [ノルム空間における有界線形作用素](#ID_A-2)
+        1. [作用素ノルム](#ID_A-2-1)
+        1. [有界線形汎関数](#ID_A-2-2)
+        1. [線形写像の連続性](#ID_A-2-3)
     1. コンパクト作用素
 1. [xxx](#ID_x)
 1. [参考文献](#参考文献)
@@ -423,7 +423,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/44855533-3a738d00-aca6-11e8-9851-f1a5531731da.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44960739-c522e900-af3f-11e8-9573-c87a694ef08e.png)<br>
     ※ この定義の条件（ ![image](https://user-images.githubusercontent.com/25688193/44724450-b38bac80-ab0d-11e8-95ea-535fa99872bf.png) ）は、<br>
     　 距離空間 X,Y の開球 ![image](https://user-images.githubusercontent.com/25688193/44724481-c7371300-ab0d-11e8-99df-03d73a5cbb91.png) の言葉を用いると、以下のように表現できる。<br>
     　 ![image](https://user-images.githubusercontent.com/25688193/44724516-df0e9700-ab0d-11e8-8536-bcb83b5b82ac.png)<br>
@@ -619,7 +619,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_5-4"></a>
 
 ### ◎ ノルム空間における写像の連続性
-![image](https://user-images.githubusercontent.com/25688193/44855839-eae19100-aca6-11e8-9b9b-cf4bf61dcd8b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44960785-7b86ce00-af40-11e8-8d20-04b5b623bfb3.png)<br>
 
 - cf : 距離空間における写像の連続性<br>
     ![image](https://user-images.githubusercontent.com/25688193/44855533-3a738d00-aca6-11e8-9851-f1a5531731da.png)<br>
@@ -854,29 +854,42 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 ---
 
-<a id="ID_x"></a>
+<a id="ID_A"></a>
 
 ## ■ 作用素
 
-<a id="ID_x-x"></a>
+<a id="ID_A-2"></a>
 
 ### ◎ ノルム空間における有界線形作用素
 ![image](https://user-images.githubusercontent.com/25688193/44960344-ef24dd00-af38-11e8-87b4-50910c9f92a5.png)<br>
 
 
-<a id="ID_x-x"></a>
+<a id="ID_A-2-1"></a>
 
-### ◎ ノルム空間における作用素ノルム
+#### ☆ ノルム空間における作用素ノルム
 ![image](https://user-images.githubusercontent.com/25688193/44958609-96941680-af1d-11e8-93f6-f1d752ff9851.png)<br>
 
 - 【参考】 [関数解析メモ](https://www.yasuhisay.info/entry/20110517/1305608183)
 
-<a id="ID_x-x"></a>
+<a id="ID_A-2-2"></a>
 
-### ◎ ノルム空間における有界線形汎関数
+#### ☆ ノルム空間における有界線形汎関数
 ![image](https://user-images.githubusercontent.com/25688193/44958868-e4f6e480-af20-11e8-9551-935618e2ba45.png)<br>
 
 - 【参考】[汎関数微分](http://eman-physics.net/analytic/functional.html)
+
+
+<a id="ID_A-2-3"></a>
+
+#### ☆ 線形写像の連続性
+ノルム空間のような位相構造を持つ空間においては、先に記載したように線形写像の連続性についての概念を構築することが出来た。（[参照](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#ID_5-4)）<br>
+
+以下の定理で示すように、有限次元の（＝有界な）ノルム空間においては、線形写像は必ず連続である。<br>
+（従って、非連続な不連続線形作用素の議論が意味を持つのは、無限次元の空間を扱う場合になる。）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44960837-7a09d580-af41-11e8-8de6-f331919bb09a.png)<br>
+
+
 
 ---
 
@@ -884,6 +897,9 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="参考文献"></a>
 
 ## ■ 参考文献
+
+- 工学のための関数解析 (工学のための数学) <br>
+    - [amazon で詳細を見る](https://www.amazon.co.jp/%E5%B7%A5%E5%AD%A6%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90-%E5%B7%A5%E5%AD%A6%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E6%95%B0%E5%AD%A6-%E5%B1%B1%E7%94%B0-%E5%8A%9F/dp/4901683624/ref=sr_1_1?ie=UTF8&qid=1535919962&sr=8-1&keywords=%E5%B7%A5%E5%AD%A6%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90)<br>
 
 - 関数解析 共立数学講座 (15)<br>
     - [amazon で詳細を見る](https://www.amazon.co.jp/%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90-%E5%85%B1%E7%AB%8B%E6%95%B0%E5%AD%A6%E8%AC%9B%E5%BA%A7-15-%E9%BB%92%E7%94%B0-%E6%88%90%E4%BF%8A/dp/4320011066?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4320011066)<br>
