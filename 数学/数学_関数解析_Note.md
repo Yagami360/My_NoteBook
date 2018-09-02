@@ -763,10 +763,11 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_6-3-2"></a>
 
 #### ☆ ベッセルの不等式
-![image](https://user-images.githubusercontent.com/25688193/44955887-d6df9e80-aef5-11e8-9216-81429f1e3667.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44955992-9f71f180-aef7-11e8-9c79-cabbe0c0230b.png)<br>
 
 - 【参考】（フーリエ級数における）ベッセルの不等式 [My_NoteBook/数学/数学_フーリエ解析_Note.md/フーリエ級数の収束性](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E7%B4%9A%E6%95%B0%E3%81%AE%E5%8F%8E%E6%9D%9F%E6%80%A7)
 
+- 【参考】【問題2.2】の(1)と(2)、2.3 Besselの不等式とParsevalの等式とで、フーリエ級数の平均収束から導出されるベッセルの不等式と、正規直交系視点のベッセルの不等式が結びつく。[２．フーリエ解析入門(２)　　　Besselの不等式とParsevalの等式](http://math-lab.main.jp/fourier02.html)
 
 <a id="ID_7"></a>
 
