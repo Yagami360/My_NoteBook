@@ -37,7 +37,7 @@
     1. [内積空間の性質と内積から誘導されるノルム](#ID_6-2)
     1. [内積空間における正規直交系](#ID_6-3)
         1. [グラム・シュミットの直交化法](#ID_6-3-1)
-    1. [xxx](#ID_6-x)
+        1. [ベッセルの不等式](#ID_6-3-2)
 1. [バナッハ空間 [Banach space]](#ID_7)
     1. [バナッハ空間の例](#ID_7-1)
 1. [ヒルベルト空間 [Hilbert space]](#ID_8)
@@ -749,12 +749,23 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 又、この極大な正規直交系は、内積空間が完備であれば（＝ヒルベルト空間においては）、完全正規直交基底となる。<br>
 
-- 【参考】完全直交系 : [星の本棚 / フーリエ解析 / 直交級数としてのフーリエ級数](!https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md#ID_4)<br>
+- 【参考】完全直交系 : [My_NoteBook/数学/数学_フーリエ解析_Note.md/直交級数としてのフーリエ級数](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md#ID_4)<br>
+
 
 <a id="ID_6-3-1"></a>
 
 #### ☆ グラム・シュミットの直交化法
-![image](https://user-images.githubusercontent.com/25688193/44946192-5441db00-ae32-11e8-9494-446b91222589.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44955677-4fdcf700-aef2-11e8-953f-e551f0c186b9.png)<br>
+
+- 【参考】 [【線形空間編】シュミットの直交化法を画像で直感的に解説](https://oguemon.com/study/linear-algebra/gram-schmidt/)<br>
+
+
+<a id="ID_6-3-2"></a>
+
+#### ☆ ベッセルの不等式
+![image](https://user-images.githubusercontent.com/25688193/44955887-d6df9e80-aef5-11e8-9216-81429f1e3667.png)<br>
+
+- 【参考】（フーリエ級数における）ベッセルの不等式 [My_NoteBook/数学/数学_フーリエ解析_Note.md/フーリエ級数の収束性](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E7%B4%9A%E6%95%B0%E3%81%AE%E5%8F%8E%E6%9D%9F%E6%80%A7)
 
 
 <a id="ID_7"></a>
