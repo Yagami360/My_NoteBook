@@ -929,7 +929,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 今、議論の対象空間として、<br>
 m×n 行列の全てからなる集合 ![image](https://user-images.githubusercontent.com/25688193/44988328-3ce72700-afc5-11e8-86fb-f371d503e7cd.png) 及び、その要素である m×n の有限次元ベクトル ![image](https://user-images.githubusercontent.com/25688193/44988480-bda62300-afc5-11e8-84f1-0bb0a9ab61bb.png) を考え、このベクトル空間に定義される代表的なノルムとその性質をみていく。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/44992103-3fe81480-afd1-11e8-89bd-d3e2c11c84e7.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/44997602-9f9ee980-afea-11e8-9b19-1ece6630b047.png)<br>
 - （証明略）<br>
 
 
