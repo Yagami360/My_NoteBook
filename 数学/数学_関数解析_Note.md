@@ -932,6 +932,25 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ![image](https://user-images.githubusercontent.com/25688193/44997602-9f9ee980-afea-11e8-9b19-1ece6630b047.png)<br>
 - （証明略）<br>
 
+##### 行列の作用素ノルムの例
+
+- （例）行列の作用素ノルムの例１<br>
+	n 次元ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/44997691-379cd300-afeb-11e8-85ad-d3d7fcbef37a.png) から、別の m 次元ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/44997701-497e7600-afeb-11e8-978e-54de63e813bc.png) への線形写像 T:X→Y を、<br>
+	実行列 ![image](https://user-images.githubusercontent.com/25688193/44997719-5ef3a000-afeb-11e8-81b3-3cc77e111148.png) を用いて、![image](https://user-images.githubusercontent.com/25688193/44997730-6fa41600-afeb-11e8-89e2-5acf249e961f.png) のように表現したとする。<br>
+    このとき、![image](https://user-images.githubusercontent.com/25688193/44997740-85194000-afeb-11e8-9cd4-b8ade41457c1.png) のノルムを<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44997764-a5e19580-afeb-11e8-8cc5-bc8532c61840.png)<br>
+    のように定義した場合に、T の作用素ノルム ‖T‖ は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44998079-ad09a300-afed-11e8-9f01-92636abee87b.png)<br>
+    と表現できることを示す。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44997809-f78a2000-afeb-11e8-97aa-225033bf3c0f.png) を満たす任意の ![image](https://user-images.githubusercontent.com/25688193/44997816-07a1ff80-afec-11e8-8cb2-e65d727e3e89.png) に対して、<br>
+	T の作用素ノルムは、定義より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44997841-2902eb80-afec-11e8-9b14-c8e3915ad078.png)<br>
+    と書けるが、この式の ![image](https://user-images.githubusercontent.com/25688193/44997850-4637ba00-afec-11e8-8b12-037167cdd22e.png) の部分を変形すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44998096-daeee780-afed-11e8-9e88-d9d795eaa957.png)<br>
+    従って、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44998107-f954e300-afed-11e8-8994-c19e9c2feb98.png)<br>
+    の関係が成り立つことがわかる。<br>
+    > 記載中...
 
 
 ---
