@@ -18,7 +18,7 @@
     1. [距離空間における収束、極限とコーシー列（基本列）](#ID_4-2)
     1. [完備距離空間](#ID_4-3)
         1. [完備距離空間の例](#ID_4-3-1)
-        1. [開集合、閉集合](#ID_4-3-2)
+        1. 開集合、閉集合
         1. [写像の連続性](#ID_4-3-3)
         1. [コンパクト集合](#ID_4-3-4)
         1. [縮小写像の不動点定理](#ID_4-3-5)
@@ -52,6 +52,8 @@
         1. [作用素ノルム](#ID_A-2-1)
         1. [有界線形汎関数](#ID_A-2-2)
         1. [線形写像の連続性](#ID_A-2-3)
+        1. [【補足】逆写像の存在性](#ID_A-2-4)
+        1. [有界線形写像全体が作るノルム空間](#ID_A-2-5)
     1. コンパクト作用素
 1. [xxx](#ID_x)
 1. [参考文献](#参考文献)
@@ -63,7 +65,9 @@
 ## ■ 概要
 ![image](https://user-images.githubusercontent.com/25688193/44618657-2221fd80-a8b5-11e8-85dd-caaa4b8d2c9e.png)<br>
 
+<!--
 ![image](https://user-images.githubusercontent.com/25688193/44618903-c3ab4e00-a8b9-11e8-8426-59eda8f1af4a.png)<br>
+-->
 
 ---
 
@@ -71,8 +75,6 @@
 
 ## ■ 線形空間（ベクトル空間）
 ![image](https://user-images.githubusercontent.com/25688193/44356650-e40a8f80-a4ea-11e8-8401-40d46d43542a.png)<br>
-
-![image](https://user-images.githubusercontent.com/25688193/44618648-13d3e180-a8b5-11e8-9160-c5b5544aa5e0.png)<br>
 
 - （例）<br>
     １階の線形微分方程式<br>
@@ -300,8 +302,10 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 ここで、距離空間は、ベクトル空間ではなく集合に対して定義されることに注意。<br>
 （後述のノルム空間は、ベクトル空間に対して定義される。）<br>
 
+<!--
+【メモ】
 ![image](https://user-images.githubusercontent.com/25688193/44616618-07885e00-a88e-11e8-84c8-d465f53a53af.png)<br>
-
+-->
 
 <a id="ID_4-1"></a>
 
@@ -397,12 +401,12 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
     ![image](https://user-images.githubusercontent.com/25688193/44706677-61cb2e00-aadd-11e8-8dd6-5a0fd65f6aff.png)<br>
     > 記載中...<br>
 
-
+<!--
 <a id="ID_4-3-2"></a>
 
 #### ☆ 開集合、閉集合
 > 記載中...
-
+-->
 
 <a id="ID_4-3-3"></a>
 
@@ -621,9 +625,10 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 ### ◎ ノルム空間における写像の連続性
 ![image](https://user-images.githubusercontent.com/25688193/44960785-7b86ce00-af40-11e8-8d20-04b5b623bfb3.png)<br>
 
-- cf : 距離空間における写像の連続性<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44855533-3a738d00-aca6-11e8-9851-f1a5531731da.png)<br>
-
+- 【参考】 [距離空間における写像の連続性](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#ID_4-3-3)<br>
+<!--
+![image](https://user-images.githubusercontent.com/25688193/44855533-3a738d00-aca6-11e8-9851-f1a5531731da.png)<br>
+-->
 
 <a id="ID_5-5"></a>
 
@@ -690,8 +695,8 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 ![image](https://user-images.githubusercontent.com/25688193/44921490-a674f480-ad7d-11e8-9766-197427c89368.png)<br>
 
-※ この線形多様体の定義と一般の多様体との関係性は？<br>
-→ 線形多様体はアフィン空間のことであり、アフィン空間は最も単純な多様体でもあるため、線形多様体ともいう。<br>
+> この線形多様体の定義と一般の多様体との関係性は？<br>
+> → 線形多様体はアフィン空間のことであり、アフィン空間は最も単純な多様体でもあるため、線形多様体ともいう。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44922224-c5748600-ad7f-11e8-80c4-2660fef723d5.png)<br>
 
@@ -769,9 +774,10 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 #### ☆ ベッセルの不等式
 ![image](https://user-images.githubusercontent.com/25688193/44955992-9f71f180-aef7-11e8-9c79-cabbe0c0230b.png)<br>
 
-- 【参考】（フーリエ級数における）ベッセルの不等式 [My_NoteBook/数学/数学_フーリエ解析_Note.md/フーリエ級数の収束性](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E7%B4%9A%E6%95%B0%E3%81%AE%E5%8F%8E%E6%9D%9F%E6%80%A7)
+- 【参考】[フーリエ級数におけるベッセルの不等式](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E7%B4%9A%E6%95%B0%E3%81%AE%E5%8F%8E%E6%9D%9F%E6%80%A7)
 
-- 【参考】【問題2.2】の(1)と(2)、2.3 Besselの不等式とParsevalの等式とで、フーリエ級数の平均収束から導出されるベッセルの不等式と、正規直交系視点のベッセルの不等式が結びつく。[２．フーリエ解析入門(２)　　　Besselの不等式とParsevalの等式](http://math-lab.main.jp/fourier02.html)
+- 【参考】[２．フーリエ解析入門(２) | Besselの不等式とParsevalの等式](http://math-lab.main.jp/fourier02.html)
+    - 【問題2.2】の(1)と(2)、2.3 Besselの不等式とParsevalの等式とで、フーリエ級数の平均収束から導出されるベッセルの不等式と、正規直交系視点のベッセルの不等式が結びつく。<br>
 
 <a id="ID_7"></a>
 
@@ -861,8 +867,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_A-2"></a>
 
 ### ◎ ノルム空間における有界線形作用素
-![image](https://user-images.githubusercontent.com/25688193/44960344-ef24dd00-af38-11e8-87b4-50910c9f92a5.png)<br>
-
+![image](https://user-images.githubusercontent.com/25688193/44972011-a863d100-af92-11e8-9332-52bb2669683d.png)<br>
 
 <a id="ID_A-2-1"></a>
 
@@ -870,6 +875,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 ![image](https://user-images.githubusercontent.com/25688193/44958609-96941680-af1d-11e8-93f6-f1d752ff9851.png)<br>
 
 - 【参考】 [関数解析メモ](https://www.yasuhisay.info/entry/20110517/1305608183)
+
 
 <a id="ID_A-2-2"></a>
 
@@ -888,7 +894,26 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 （従って、非連続な不連続線形作用素の議論が意味を持つのは、無限次元の空間を扱う場合になる。）<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44960837-7a09d580-af41-11e8-8de6-f331919bb09a.png)<br>
+- （証明略）図より自明
 
+
+<a id="ID_A-2-4"></a>
+
+#### ☆ 【補足】逆写像の存在性
+![image](https://user-images.githubusercontent.com/25688193/44971756-bebd5d00-af91-11e8-9b5f-5607602c7254.png)<br>
+- （証明略）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/44981112-9d1d9f00-afac-11e8-81d4-f82361cbdef7.png)<br>
+- （証明略）<br>
+
+- Wikipedia より引用<br>
+    ![image](https://user-images.githubusercontent.com/25688193/44972310-ae0de680-af93-11e8-831c-7c31ee3434f6.png)<br>
+
+
+<a id="ID_A-2-5"></a>
+
+#### ☆ 有界線形写像全体が作るノルム空間
+> 記載中...
 
 
 ---
