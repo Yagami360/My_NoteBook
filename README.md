@@ -3,8 +3,6 @@
 サイエンス、テクノロジー、エンジニア関連情報を記載したオンラインマイノートを Markdown 形式で保管したリポジトリです。（プログラムコードではありません）<br>
 質問事項があれば、[Issue](https://github.com/Yagami360/My_NoteBook/issues) にてお願い致します。答えられる範囲で回答します。<br>
 
-This repository describe about my note (markdown format) related to science, tech, engineers from basic to applied. <br>
-
 GitHub でドキュメントのバージョン管理出来るので、ここの内容を元にホームページ作成中。<br>
 以下、ホームページへのリンクです。
 
