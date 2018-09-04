@@ -84,8 +84,8 @@
     ![image](https://user-images.githubusercontent.com/25688193/44380222-03cea180-a545-11e8-8ef5-f24a5abc5996.png)<br>
     のすべてからなる集合 V はベクトル空間であることを示す。<br>
     <br>
-	１階の線形微分方程式の解 ![image](https://user-images.githubusercontent.com/25688193/44384028-b7d82880-a555-11e8-9d88-7d0f64fc95a6.png) に対して、公理 (1),(2),(5),(6) は自明に成り立つ。<br>
-	また、【定理１】より (7),(8) も成り立つ。<br>
+	１階の線形微分方程式の解 ![image](https://user-images.githubusercontent.com/25688193/44384028-b7d82880-a555-11e8-9d88-7d0f64fc95a6.png) に対して、公理 (1),(2),(7),(8) は自明に成り立つ。<br>
+	また、【定理１】より (5),(6) も成り立つ。<br>
     公理 (3) は、![image](https://user-images.githubusercontent.com/25688193/44384118-084f8600-a556-11e8-9dcd-cde4884ed788.png) に対して、![image](https://user-images.githubusercontent.com/25688193/44384210-61b7b500-a556-11e8-8c6f-65f5c606f41c.png)<br>
     公理 (4) は、![image](https://user-images.githubusercontent.com/25688193/44384499-5a44db80-a557-11e8-964a-d60c4c174b52.png) とすると、<br>
     ![image](https://user-images.githubusercontent.com/25688193/44384542-7fd1e500-a557-11e8-8bf2-358cd892d0f5.png)<br>
@@ -950,9 +950,9 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 	n 次元ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/44997691-379cd300-afeb-11e8-85ad-d3d7fcbef37a.png) から、別の m 次元ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/44997701-497e7600-afeb-11e8-978e-54de63e813bc.png) への線形写像 T:X→Y を、<br>
 	実行列 ![image](https://user-images.githubusercontent.com/25688193/44997719-5ef3a000-afeb-11e8-81b3-3cc77e111148.png) を用いて、![image](https://user-images.githubusercontent.com/25688193/44997730-6fa41600-afeb-11e8-89e2-5acf249e961f.png) のように表現したとする。<br>
     このとき、![image](https://user-images.githubusercontent.com/25688193/44997740-85194000-afeb-11e8-9cd4-b8ade41457c1.png) のノルムを<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44997764-a5e19580-afeb-11e8-8cc5-bc8532c61840.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45008929-54afc100-b040-11e8-8811-32f27fc25cf8.png)<br>
     のように定義した場合に、T の作用素ノルム ‖T‖ は、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44998079-ad09a300-afed-11e8-9f01-92636abee87b.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45009020-c851ce00-b040-11e8-8fac-7019734af53a.png)<br>
     と表現できることを示す。<br>
     ![image](https://user-images.githubusercontent.com/25688193/44997809-f78a2000-afeb-11e8-97aa-225033bf3c0f.png) を満たす任意の ![image](https://user-images.githubusercontent.com/25688193/44997816-07a1ff80-afec-11e8-8cb2-e65d727e3e89.png) に対して、<br>
 	T の作用素ノルムは、定義より、<br>
@@ -963,6 +963,17 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     ![image](https://user-images.githubusercontent.com/25688193/44998107-f954e300-afed-11e8-8994-c19e9c2feb98.png)<br>
     の関係が成り立つことがわかる。<br>
     > 記載中...
+
+
+- （例）行列の作用素ノルムの例２<br>
+    先の例と同じ状況下で、ベクトル空間（ノルム空間になる）![image](https://user-images.githubusercontent.com/25688193/45009161-84ab9400-b041-11e8-9a73-37052f67a60b.png) のノルムを、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45009101-31d1dc80-b041-11e8-8b68-efbc7411d997.png)<br>
+    のように定義した場合に、T の作用素ノルム ‖T‖ は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45009204-d2280100-b041-11e8-81d2-97b5bcd28af8.png)<br>
+    と表現できることを示す。<br>
+    <br>
+
+
 
 
 ---
