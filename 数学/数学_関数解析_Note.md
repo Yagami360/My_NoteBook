@@ -64,7 +64,7 @@
 <a id="ID_1"></a>
 
 ## ■ 概要
-![image](https://user-images.githubusercontent.com/25688193/44618657-2221fd80-a8b5-11e8-85dd-caaa4b8d2c9e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45006002-a43ac080-b031-11e8-82bf-bfdbf2349c85.png)<br>
 
 <!--
 ![image](https://user-images.githubusercontent.com/25688193/44618903-c3ab4e00-a8b9-11e8-8426-59eda8f1af4a.png)<br>
