@@ -4,6 +4,8 @@
 ## 目次 [Contents]
 
 1. [概要](#ID_1)
+1. 位相空間
+1. ハウスドルフ空間
 1. [線形空間（ベクトル空間）](#ID_2)
     1. [張る（生成する）](#ID_2-1)
     1. [線形独立（一次独立）と線形従属（一次従属）](#ID_2-2)
@@ -44,8 +46,6 @@
     1. [三平方の定理、中線定理](#ID_8-1)
     1. [ヒルベルト空間の例](#ID_8-2)
     1. ヒルベルト空間の完全正規直交基底
-1. 関数解析視点でのフーリエ級数展開とフーリエ変換
-1. 関数解析視点でのルジャンドル級数展開
 1. [作用素](#ID_A)
     1. 線形作用素
     1. [ノルム空間における有界線形作用素](#ID_A-2)
@@ -56,6 +56,10 @@
         1. [有界線形写像全体が作るノルム空間](#ID_A-2-5)
         1. [行列の作用素ノルム](#ID_A-2-6)
     1. コンパクト作用素
+1. 関数解析視点でのフーリエ級数展開とフーリエ変換
+1. 関数解析視点でのルジャンドル級数展開
+1. スペクトル理論
+    1. コンパクト作用素のスペクトル理論
 1. [xxx](#ID_x)
 1. [参考文献](#参考文献)
 
@@ -952,29 +956,49 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     このとき、![image](https://user-images.githubusercontent.com/25688193/44997740-85194000-afeb-11e8-9cd4-b8ade41457c1.png) のノルムを<br>
     ![image](https://user-images.githubusercontent.com/25688193/45008929-54afc100-b040-11e8-8811-32f27fc25cf8.png)<br>
     のように定義した場合に、T の作用素ノルム ‖T‖ は、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45009020-c851ce00-b040-11e8-8fac-7019734af53a.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45017110-aa489580-b061-11e8-8be8-58085cbbd691.png)<br>
     と表現できることを示す。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44997809-f78a2000-afeb-11e8-97aa-225033bf3c0f.png) を満たす任意の ![image](https://user-images.githubusercontent.com/25688193/44997816-07a1ff80-afec-11e8-8cb2-e65d727e3e89.png) に対して、<br>
+    <br>
+    ![image](https://user-images.githubusercontent.com/25688193/44997809-f78a2000-afeb-11e8-97aa-225033bf3c0f.png) （＝max 条件に対応）を満たす任意の ![image](https://user-images.githubusercontent.com/25688193/44997816-07a1ff80-afec-11e8-8cb2-e65d727e3e89.png) に対して、<br>
 	T の作用素ノルムは、定義より、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44997841-2902eb80-afec-11e8-9b14-c8e3915ad078.png)<br>
-    と書けるが、この式の ![image](https://user-images.githubusercontent.com/25688193/44997850-4637ba00-afec-11e8-8b12-037167cdd22e.png) の部分を変形すると、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44998096-daeee780-afed-11e8-9e88-d9d795eaa957.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45011817-74021a80-b04f-11e8-8096-f99788356ee1.png)<br>
+    と書けるが、この式の ![image](https://user-images.githubusercontent.com/25688193/45011915-f7bc0700-b04f-11e8-82c4-fc8ce4bfa5ba.png) の部分を変形すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45018271-a4a07f00-b064-11e8-9880-5b9e00ff8f91.png)<br>
     従って、<br>
     ![image](https://user-images.githubusercontent.com/25688193/44998107-f954e300-afed-11e8-8994-c19e9c2feb98.png)<br>
     の関係が成り立つことがわかる。<br>
-    > 記載中...
+	ここで、この式の最右辺 ![image](https://user-images.githubusercontent.com/25688193/45011530-e96ceb80-b04d-11e8-9317-01b602379fa2.png) の式との等号は、最大値の達成時に成り立つが、<br>
+	k=p で最大値が達成されるとすると、ノルムが１の単位ベクトル<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45011639-92b3e180-b04e-11e8-8c99-edbb77848e1d.png)<br>
+    で式を表現し直すと、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45011676-baa34500-b04e-11e8-9d1c-155a1a3b33e6.png)<br>
+    となり、反対方向の不等号も成立するので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45011692-cb53bb00-b04e-11e8-9f80-b2f1a4c6d9f5.png)<br>
 
 
 - （例）行列の作用素ノルムの例２<br>
     先の例と同じ状況下で、ベクトル空間（ノルム空間になる）![image](https://user-images.githubusercontent.com/25688193/45009161-84ab9400-b041-11e8-9a73-37052f67a60b.png) のノルムを、<br>
     ![image](https://user-images.githubusercontent.com/25688193/45009101-31d1dc80-b041-11e8-8b68-efbc7411d997.png)<br>
     のように定義した場合に、T の作用素ノルム ‖T‖ は、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45009204-d2280100-b041-11e8-81d2-97b5bcd28af8.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45017583-e6302a80-b062-11e8-9520-a55f7d3fc85e.png)<br>
     と表現できることを示す。<br>
     <br>
-
-
-
+    先の例と同様にして、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45012002-4ff30900-b050-11e8-994b-1e50d5b23fc6.png)（＝max 条件に対応）を満たす任意の ![image](https://user-images.githubusercontent.com/25688193/45012025-6a2ce700-b050-11e8-9887-e2a3b2f6f058.png) に対して、<br>
+    T の作用素ノルムは、定義より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45012120-b6782700-b050-11e8-96e1-197dbccbe0df.png)<br>
+    と書けるが、この式の ![image](https://user-images.githubusercontent.com/25688193/45012187-e7f0f280-b050-11e8-86b9-16823dcc3bd7.png) の部分を変形すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45018522-4758fd80-b065-11e8-8e95-7826d234bda7.png)<br>
+    従って、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45018634-68215300-b065-11e8-8b80-d573fb332d20.png)<br>
+    の関係が成り立つことがわかる。<br>
+	ここで、この式の最右辺 ![image](https://user-images.githubusercontent.com/25688193/45019580-aa4b9400-b067-11e8-85c4-86c3e465cdeb.png) の式との等号は、最大値 max の達成時に成り立つが、<br>
+	j=p で最大値が達成されるとすると、ノルムが１の単位ベクトル<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45019618-c51e0880-b067-11e8-94df-6e66c9b84c6a.png)<br>
+    で式を表現し直すと、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45019680-e848b800-b067-11e8-9715-4ae2554a9c37.png)<br>
+    となり、反対方向の不等号も成立するので、
+    ![image](https://user-images.githubusercontent.com/25688193/45019711-fa2a5b00-b067-11e8-8477-bd6f4156615c.png)<br>
 
 ---
 
