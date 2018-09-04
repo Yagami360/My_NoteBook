@@ -493,6 +493,8 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
     <br>
     最小値の存在証明に関しても、同様の方法で示せる。<br>
 
+- 【参考】[コンパクト性、開被覆 - 大人になってからの再学習](http://zellij.hatenablog.com/entry/20120515/p1)
+
 
 <a id="ID_4-3-5"></a>
 
@@ -531,6 +533,8 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 「完備な距離空間における部分集合を、その閉包（閉集合）が内点を持つか否かという基準で分類すると、2 種類（第１類集合＜疎な集合の和集合で表せる＞、第２種類集合＜疎な集合の和集合で表せない＞）しかない」
 ということを主張している。<br>
 
+- 【参考】[極私的関数解析：ベールの範疇定理](http://www.ne.jp/asahi/music/marinkyo/funkcionala-analitiko/kategorio.html.ja)
+
 
 <a id="ID_4-3-7"></a>
 
@@ -542,6 +546,10 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 ![image](https://user-images.githubusercontent.com/25688193/44834514-61ad6880-ac6c-11e8-8fdc-e596c0840428.png)<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44836036-d4204780-ac70-11e8-9794-6f7be283fb49.png)<br>
+
+- 【参考】[rhidetoのblog : 例16. 稠密性](http://blog.livedoor.jp/rhideto/archives/26364842.html)
+
+- 【参考】[位相空間・質問箱 | 読者からの質問と回答](http://www12.plala.or.jp/echohta/top/QA/QA004.html)
 
 
 <a id="ID_5"></a>
@@ -783,6 +791,8 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_7"></a>
 
 ## ■ バナッハ空間 [Banach space]
+> 要書き換え...
+
 ![image](https://user-images.githubusercontent.com/25688193/44508109-0f0e0280-a6e8-11e8-9db4-61e32552669a.png)<br>
 
 <a id="ID_7-1"></a>
@@ -799,6 +809,8 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_8"></a>
 
 ## ■ ヒルベルト空間 [Hilbert space]
+> 要書き換え...
+
 ユークリッド空間では、先に定義した長さ（ノルム）の概念の他に、２つのベクトル間の角度を表す内積の概念も兼ね備える。<br>
 この内積の概念は、例えば、３次元空間では、<br>
 ![image](https://user-images.githubusercontent.com/25688193/44511871-c52b1980-a6f3-11e8-8e51-3bf5afd7c130.png)<br>
