@@ -6,7 +6,7 @@
 GitHub でドキュメントのバージョン管理出来るので、ここの内容を元にホームページ作成中。<br>
 以下、ホームページへのリンクです。
 
-> [はてなブログ｜星の本棚](http://yagami12.hatenablog.com/)
+> [はてなブログ｜星の本棚](http://yagami12.hatenablog.com/entry/2017/09/17/%E3%81%93%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
 
 <!--
 > GitHub Pages & Jekyll で作成中のホームページ
