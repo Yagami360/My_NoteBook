@@ -795,9 +795,18 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_7"></a>
 
 ## ■ バナッハ空間 [Banach space]
-> 要書き換え...
+先に述べたように、世の中には、有限回の計算で完全な解が求まらないような問題が多く存在する。<br>
+このような問題では、厳密解への収束が保証される数列（点列）が利用されることになる。<br>
+そういったケースでは、収束先が保証されるように、空間に完備性の構造を課した空間を考えることになる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/44508109-0f0e0280-a6e8-11e8-9db4-61e32552669a.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45038040-5eb2dd80-b09b-11e8-8246-205ab245178b.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45037714-91a8a180-b09a-11e8-8a81-2f96dc239dce.png)<br>
+
+
+
+- 【参考】[ノルム空間の完備性](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#ID_5-3)
+
 
 <a id="ID_7-1"></a>
 
