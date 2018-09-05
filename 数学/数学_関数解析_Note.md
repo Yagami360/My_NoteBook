@@ -88,13 +88,13 @@
     ![image](https://user-images.githubusercontent.com/25688193/44380222-03cea180-a545-11e8-8ef5-f24a5abc5996.png)<br>
     のすべてからなる集合 V はベクトル空間であることを示す。<br>
     <br>
-	１階の線形微分方程式の解 ![image](https://user-images.githubusercontent.com/25688193/44384028-b7d82880-a555-11e8-9d88-7d0f64fc95a6.png) に対して、公理 (1),(2),(7),(8) は自明に成り立つ。<br>
+	- １階の線形微分方程式の解 ![image](https://user-images.githubusercontent.com/25688193/44384028-b7d82880-a555-11e8-9d88-7d0f64fc95a6.png) に対して、公理 (1),(2),(7),(8) は自明に成り立つ。<br>
 	また、【定理１】より (5),(6) も成り立つ。<br>
     公理 (3) は、![image](https://user-images.githubusercontent.com/25688193/44384118-084f8600-a556-11e8-9dcd-cde4884ed788.png) に対して、![image](https://user-images.githubusercontent.com/25688193/44384210-61b7b500-a556-11e8-8c6f-65f5c606f41c.png)<br>
     公理 (4) は、![image](https://user-images.githubusercontent.com/25688193/44384499-5a44db80-a557-11e8-964a-d60c4c174b52.png) とすると、<br>
     ![image](https://user-images.githubusercontent.com/25688193/44384542-7fd1e500-a557-11e8-8bf2-358cd892d0f5.png)<br>
     つまり、![image](https://user-images.githubusercontent.com/25688193/44384499-5a44db80-a557-11e8-964a-d60c4c174b52.png) は、この微分方程式の解であり、集合 V に含まれるので成り立つ。（公理(4)を満たす）<br>
-    よって、１階の線形微分方程式の解全体の集合はベクトル空間となる！<br>
+    よって、１階の線形微分方程式の解全体の集合はベクトル空間となる。<br>
 
 <a id="ID_2-1"></a>
 
@@ -121,8 +121,8 @@
     ベクトル空間として、３次元実数空間 ![image](https://user-images.githubusercontent.com/25688193/44393805-9d5f7880-a570-11e8-879c-d75dcebf965b.png) を考え、この空間内のベクトル<br>
     ![image](https://user-images.githubusercontent.com/25688193/44393695-5bcecd80-a570-11e8-9595-f2204b1af3d1.png)<br>
     のベクトルの組 ![image](https://user-images.githubusercontent.com/25688193/44393768-8456c780-a570-11e8-9695-43aad8df20d0.png) が線形従属か線形独立かを調べる。<br>
-    <br>
-    ベクトルの組 ![image](https://user-images.githubusercontent.com/25688193/44393768-8456c780-a570-11e8-9695-43aad8df20d0.png) が線形従属か線形独立かを調べるために、<br>
+
+    - ベクトルの組 ![image](https://user-images.githubusercontent.com/25688193/44393768-8456c780-a570-11e8-9695-43aad8df20d0.png) が線形従属か線形独立かを調べるために、<br>
     ![image](https://user-images.githubusercontent.com/25688193/44394448-2dea8880-a572-11e8-8231-c18875f04b9d.png) を書き下してみると、<br>
     ![image](https://user-images.githubusercontent.com/25688193/44394613-9b96b480-a572-11e8-8c5d-8e571c6314a2.png)<br>
     ② 式より、![image](https://user-images.githubusercontent.com/25688193/44394965-7bb3c080-a573-11e8-833f-6883df4a5fdb.png)<br>
@@ -283,8 +283,10 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44615736-6ba22680-a87c-11e8-8fca-00085e6f01b0.png)<br>
-> このコーシー列の判定条件と、ε−N 論法におよる収束の定義の違いは？
 
+<!--
+> このコーシー列の判定条件と、ε−N 論法におよる収束の定義の違いは？
+-->
 
 <a id="ID_3-2"></a>
 
@@ -373,7 +375,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
     ![image](https://user-images.githubusercontent.com/25688193/44624896-162a5000-a936-11e8-88d7-c8282479014c.png) に収束するので、この収束先に一意に決まり（収束先の一意性の性質）、![image](https://user-images.githubusercontent.com/25688193/44624898-27735c80-a936-11e8-87a7-4e98bbff916b.png) 以外のいかなる実数にも収束しない。<br>
     また、この実数列 ![image](https://user-images.githubusercontent.com/25688193/44628126-4218f600-a975-11e8-8a7d-b09460299143.png) は、有理数 Q の如何なる点にも収束しない。<br>
     <br>
-	ここで、距離空間において、点列がある点に収束するならば、その点列はコーシー列になるので（コーシー列の基本性質）、<br>
+	ここで、距離空間において、点列がある点に収束するならば、その点列は（コーシー列の基本性質より）コーシー列になるので、<br>
 	この実数列 ![image](https://user-images.githubusercontent.com/25688193/44628126-4218f600-a975-11e8-8a7d-b09460299143.png) は、距離空間 ![image](https://user-images.githubusercontent.com/25688193/44624893-f8f58180-a935-11e8-94da-3e66b3aab318.png) のコーシー列になる。<br>
     そして、有理数の距離空間 ![image](https://user-images.githubusercontent.com/25688193/44628393-e00ebf80-a979-11e8-89a8-c7235400f083.png) のコーシー列でもある。<br>
     <br>
@@ -382,8 +384,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 - （例）距離空間 ![image](https://user-images.githubusercontent.com/25688193/44646962-b1472680-aa17-11e8-9714-156772648b3b.png)<br>
     距離空間 ![image](https://user-images.githubusercontent.com/25688193/44646962-b1472680-aa17-11e8-9714-156772648b3b.png) が完備であるかを調べる。<br>
-    <br>
-	コーシー列と完備性の関係（＝任意のコーシー列が収束するなら、その距離空間は完備）より、<br>
+	- コーシー列と完備性の関係（＝任意のコーシー列が収束するなら、その距離空間は完備）より、<br>
 	![image](https://user-images.githubusercontent.com/25688193/44647032-dfc50180-aa17-11e8-8cb0-9f117108eceb.png) からなる点列 ![image](https://user-images.githubusercontent.com/25688193/44647082-084cfb80-aa18-11e8-99c2-4bea7f707284.png) が ![image](https://user-images.githubusercontent.com/25688193/44647178-45b18900-aa18-11e8-84d0-a95c09eb3802.png) のコーシー列であるとき、<br>
 	この点列が ![image](https://user-images.githubusercontent.com/25688193/44647178-45b18900-aa18-11e8-84d0-a95c09eb3802.png) 内のある点に収束するのか調べれば良い。（収束すれば完備）<br>
     <br>
@@ -811,13 +812,71 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_7-1"></a>
 
 ### ◎ バナッハ空間の例
+
+- （例）バナッハ空間の例（有限次元ベクトル空間）<br>
+    ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/45046215-7779be00-b0b0-11e8-8be8-3093850e941c.png) は、任意の種類のノルムのノルム空間で完備であり、<br>
+    バナッハ空間であることを示す。<br>
+
+	- 完備であることを示すためには、ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/45046215-7779be00-b0b0-11e8-8be8-3093850e941c.png) における任意のコーシー列が収束し、極限を持つことを示せばよい。<br>
+    まずは、簡単のため１次元のベクトル空間 R で考える。<br>
+    コーシー列を ![image](https://user-images.githubusercontent.com/25688193/45071170-ef2b0580-b10f-11e8-94b4-397f58010905.png) と記述すると、この点列は有界である（コーシー列の性質）ので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45046359-dfc89f80-b0b0-11e8-9375-575d5dfe998b.png) から構成される点列 ![image](https://user-images.githubusercontent.com/25688193/45071190-0833b680-b110-11e8-8b88-553593ae2452.png) も有界な単調減少点列となり、ある有限な確定値に収束する。<br>
+    従って、![image](https://user-images.githubusercontent.com/25688193/45071220-2c8f9300-b110-11e8-8adc-5edb4c0dea76.png) と書ける。<br>
+    - 次に、![image](https://user-images.githubusercontent.com/25688193/45046748-118e3600-b0b2-11e8-9c2b-8d9a8ae2b41d.png) となることを示す。<br>
+    コーシー列 ![image](https://user-images.githubusercontent.com/25688193/45077847-45587280-b129-11e8-8c5c-51de4be224c5.png) に関しては、任意の正数 ε に対して、ある正の正数 ![image](https://user-images.githubusercontent.com/25688193/45077885-69b44f00-b129-11e8-8fbb-79de07bb28ea.png) が存在し、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45077930-88b2e100-b129-11e8-99ef-f2c8c7679e1c.png)<br>
+    特に、上限 sup で定義されている ![image](https://user-images.githubusercontent.com/25688193/45077960-a41dec00-b129-11e8-93ab-be8e914b690d.png) で書き換えると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45077994-bc8e0680-b129-11e8-8e5c-a76d58d18491.png)<br>
+    更に、n→∞ とすると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45078588-60c47d00-b12b-11e8-8d14-d032c22c345c.png)<br>
+    を得る。（途中計算略）<br>
+    <br>
+    一方で、先の不等号 ![image](https://user-images.githubusercontent.com/25688193/45077885-69b44f00-b129-11e8-8fbb-79de07bb28ea.png) が上限であることを示しており、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45079253-ff9da900-b12c-11e8-9fd1-541372ef98d9.png) が成り立つことがわかる。<br>
+    更に、n→∞ とすると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45079284-15ab6980-b12d-11e8-928e-ab2a5884fb94.png)<br>
+    従って、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45079308-29ef6680-b12d-11e8-9692-e18565287f30.png)<br>
+    となるので、結果として、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45079347-48edf880-b12d-11e8-9b0f-de9c64735c10.png) を得る。<br>
+    即ち、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45081177-98cebe80-b131-11e8-9f2b-11fedd13e218.png)<br>
+    のように収束することが示される。<br>
+    - 次に、先の上限 sup を下限 inf に置き換えて、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45081006-24941b00-b131-11e8-8ab4-f3d2f954bbd3.png) から構成される点列 ![image](https://user-images.githubusercontent.com/25688193/45081036-3fff2600-b131-11e8-910b-523f23d28292.png) が有界な単調増加点列となり、ある確定値に収束する。<br>
+    即ち、コーシー列 ![image](https://user-images.githubusercontent.com/25688193/45081126-75a40f00-b131-11e8-852b-786bc34a21b6.png) の下極限 ![image](https://user-images.githubusercontent.com/25688193/45081280-d59ab580-b131-11e8-80ba-735ec982fa58.png) となることを利用すると、先の証明と同様にして、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45081736-d08a3600-b132-11e8-809e-16050296bed3.png)<br>
+    となる。（途中計算略）<br>
+    最後に、コーシー列の収束先の一意性の性質より、この極限値は一致し、α=β となることがわかる。<br>
+    - 一般の N 次元ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/45081839-fe6f7a80-b132-11e8-9d10-88f2775d0629.png) に対しても、同様の議論が成り立ち、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45081839-fe6f7a80-b132-11e8-9d10-88f2775d0629.png) における任意のコーシー列<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45082508-725e5280-b134-11e8-958c-244ad93ebaeb.png)<br>
+	が収束し、極限を持つので、<br>
+	N 次元ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/45081839-fe6f7a80-b132-11e8-9d10-88f2775d0629.png) は、完備であり、バナッハ空間となる。<br>
+
+<br>
+
+- （例）バナッハ空間の例（距離空間 ![image](https://user-images.githubusercontent.com/25688193/45082619-adf91c80-b134-11e8-8532-67f2d5202b03.png)）<br>
+    距離空間 ![image](https://user-images.githubusercontent.com/25688193/45082619-adf91c80-b134-11e8-8532-67f2d5202b03.png) は、バナッハ空間であることを示す。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45083357-8dca5d00-b136-11e8-9470-eb0a111801c7.png)<br>
+    - 距離空間 ![image](https://user-images.githubusercontent.com/25688193/45082619-adf91c80-b134-11e8-8532-67f2d5202b03.png) は、完備距離空間である。（証明略）<br>
+    又、任意の要素に対して、和とスカラー倍の演算（線形結合）が成り立つので、ベクトル空間でもある。<br>
+    更に、この距離 ![image](https://user-images.githubusercontent.com/25688193/45083151-f9f89100-b135-11e8-93e2-979af6abb402.png) から誘導される<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45083397-ab97c200-b136-11e8-94a0-f319f430abf8.png)<br>
+	は、ノルムの公理を満たすので、ノルムとなり、ノルム空間になる。<br>
+	そして、その完備性から、バナッハ空間になる。<br>
+
+<br>
+
+
+<!--
 - （例）<br>
     閉区間 [a,b] 内の複数空間 C[a,b] は、ノルム<br>
     ![image](https://user-images.githubusercontent.com/25688193/44508696-2b12a380-a6ea-11e8-8b80-66ec7343808d.png)<br>
     に関して、完備であるか調べる。<br>
     <br>
     > 記載中...
-
+-->
 
 <a id="ID_8"></a>
 
@@ -967,8 +1026,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     のように定義した場合に、T の作用素ノルム ‖T‖ は、<br>
     ![image](https://user-images.githubusercontent.com/25688193/45017110-aa489580-b061-11e8-8be8-58085cbbd691.png)<br>
     と表現できることを示す。<br>
-    <br>
-    ![image](https://user-images.githubusercontent.com/25688193/44997809-f78a2000-afeb-11e8-97aa-225033bf3c0f.png) （＝max 条件に対応）を満たす任意の ![image](https://user-images.githubusercontent.com/25688193/44997816-07a1ff80-afec-11e8-8cb2-e65d727e3e89.png) に対して、<br>
+    - ![image](https://user-images.githubusercontent.com/25688193/44997809-f78a2000-afeb-11e8-97aa-225033bf3c0f.png) （＝max 条件に対応）を満たす任意の ![image](https://user-images.githubusercontent.com/25688193/44997816-07a1ff80-afec-11e8-8cb2-e65d727e3e89.png) に対して、<br>
 	T の作用素ノルムは、定義より、<br>
     ![image](https://user-images.githubusercontent.com/25688193/45011817-74021a80-b04f-11e8-8096-f99788356ee1.png)<br>
     と書けるが、この式の ![image](https://user-images.githubusercontent.com/25688193/45011915-f7bc0700-b04f-11e8-82c4-fc8ce4bfa5ba.png) の部分を変形すると、<br>
@@ -991,8 +1049,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     のように定義した場合に、T の作用素ノルム ‖T‖ は、<br>
     ![image](https://user-images.githubusercontent.com/25688193/45017583-e6302a80-b062-11e8-9520-a55f7d3fc85e.png)<br>
     と表現できることを示す。<br>
-    <br>
-    先の例と同様にして、<br>
+    - 先の例と同様にして、<br>
     ![image](https://user-images.githubusercontent.com/25688193/45012002-4ff30900-b050-11e8-994b-1e50d5b23fc6.png)（＝max 条件に対応）を満たす任意の ![image](https://user-images.githubusercontent.com/25688193/45012025-6a2ce700-b050-11e8-9887-e2a3b2f6f058.png) に対して、<br>
     T の作用素ノルムは、定義より、<br>
     ![image](https://user-images.githubusercontent.com/25688193/45012120-b6782700-b050-11e8-96e1-197dbccbe0df.png)<br>
