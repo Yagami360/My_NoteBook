@@ -385,27 +385,26 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 - （例）距離空間 ![image](https://user-images.githubusercontent.com/25688193/44646962-b1472680-aa17-11e8-9714-156772648b3b.png)<br>
     距離空間 ![image](https://user-images.githubusercontent.com/25688193/44646962-b1472680-aa17-11e8-9714-156772648b3b.png) が完備であるかを調べる。<br>
 	- コーシー列と完備性の関係（＝任意のコーシー列が収束するなら、その距離空間は完備）より、<br>
-	![image](https://user-images.githubusercontent.com/25688193/44647032-dfc50180-aa17-11e8-8cb0-9f117108eceb.png) からなる点列 ![image](https://user-images.githubusercontent.com/25688193/44647082-084cfb80-aa18-11e8-99c2-4bea7f707284.png) が ![image](https://user-images.githubusercontent.com/25688193/44647178-45b18900-aa18-11e8-84d0-a95c09eb3802.png) のコーシー列であるとき、<br>
-	この点列が ![image](https://user-images.githubusercontent.com/25688193/44647178-45b18900-aa18-11e8-84d0-a95c09eb3802.png) 内のある点に収束するのか調べれば良い。（収束すれば完備）<br>
-    <br>
-	点列 ![image](https://user-images.githubusercontent.com/25688193/44647082-084cfb80-aa18-11e8-99c2-4bea7f707284.png) はコーシー列であるので、<br>
-	任意の ε>0 に対して、ある ![image](https://user-images.githubusercontent.com/25688193/44647279-92955f80-aa18-11e8-938c-5b8abfd535dc.png) が存在して、n,m>N ならば、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44647299-a345d580-aa18-11e8-9567-6d0e00e54bf7.png)<br>
-    従って、任意の j に対して、（ j = 1 ~ ∞ の無限和なので、）<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44647344-c3759480-aa18-11e8-801d-ee3aad97cdf4.png)<br>
-	ここで、j を固定し、実数列 ![image](https://user-images.githubusercontent.com/25688193/44648575-6c71be80-aa1c-11e8-89b9-a9c0d34e6c1e.png) を定義すると、<br>
-	上記の関係より、この実数列 ![image](https://user-images.githubusercontent.com/25688193/44648575-6c71be80-aa1c-11e8-89b9-a9c0d34e6c1e.png) は、実数空間 R のコーシー列になっていることが分かる。<br>
-    そして、実数空間 R は完備であるので、![image](https://user-images.githubusercontent.com/25688193/44648575-6c71be80-aa1c-11e8-89b9-a9c0d34e6c1e.png) は収束し、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44705309-347c8100-aad9-11e8-9c0d-85483e02a86c.png)<br>
-    が成り立つ。<br>
-    <br>
-	次に、![image](https://user-images.githubusercontent.com/25688193/44706125-8c1bec00-aadb-11e8-89b0-8098ca2878d9.png) は、点列 ![image](https://user-images.githubusercontent.com/25688193/44706144-9ccc6200-aadb-11e8-8903-9fee78b58ce4.png) の有力な収束先の候補であるが、<br>
-	実際に、![image](https://user-images.githubusercontent.com/25688193/44706403-6fcc7f00-aadc-11e8-81ab-41b553dbf8bc.png) となり ![image](https://user-images.githubusercontent.com/25688193/44706436-870b6c80-aadc-11e8-9777-e2bf8eaa7821.png) となることを示す。<br>
-    先の<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44706612-23357380-aadd-11e8-90df-a38964ed9fd9.png)<br>
-    の関係より、任意の ![image](https://user-images.githubusercontent.com/25688193/44706659-4d873100-aadd-11e8-9e0d-cb982747ab0b.png) に対して、n,m>N ならば、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/44706677-61cb2e00-aadd-11e8-8dd6-5a0fd65f6aff.png)<br>
-    > 記載中...<br>
+	    ![image](https://user-images.githubusercontent.com/25688193/44647032-dfc50180-aa17-11e8-8cb0-9f117108eceb.png) からなる点列 ![image](https://user-images.githubusercontent.com/25688193/44647082-084cfb80-aa18-11e8-99c2-4bea7f707284.png) が ![image](https://user-images.githubusercontent.com/25688193/44647178-45b18900-aa18-11e8-84d0-a95c09eb3802.png) のコーシー列であるとき、<br>
+	    この点列が ![image](https://user-images.githubusercontent.com/25688193/44647178-45b18900-aa18-11e8-84d0-a95c09eb3802.png) 内のある点に収束するのか調べれば良い。（収束すれば完備）<br>
+        <br>
+	    点列 ![image](https://user-images.githubusercontent.com/25688193/44647082-084cfb80-aa18-11e8-99c2-4bea7f707284.png) はコーシー列であるので、<br>
+	    任意の ε>0 に対して、ある ![image](https://user-images.githubusercontent.com/25688193/44647279-92955f80-aa18-11e8-938c-5b8abfd535dc.png) が存在して、n,m>N ならば、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44647299-a345d580-aa18-11e8-9567-6d0e00e54bf7.png)<br>
+        従って、任意の j に対して、（ j = 1 ~ ∞ の無限和なので、）<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44647344-c3759480-aa18-11e8-801d-ee3aad97cdf4.png)<br>
+	    ここで、j を固定し、実数列 ![image](https://user-images.githubusercontent.com/25688193/44648575-6c71be80-aa1c-11e8-89b9-a9c0d34e6c1e.png) を定義すると、<br>
+	    上記の関係より、この実数列 ![image](https://user-images.githubusercontent.com/25688193/44648575-6c71be80-aa1c-11e8-89b9-a9c0d34e6c1e.png) は、実数空間 R のコーシー列になっていることが分かる。<br>
+        そして、実数空間 R は完備であるので、![image](https://user-images.githubusercontent.com/25688193/44648575-6c71be80-aa1c-11e8-89b9-a9c0d34e6c1e.png) は収束し、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44705309-347c8100-aad9-11e8-9c0d-85483e02a86c.png)<br>
+        が成り立つ。<br>
+	- 次に、![image](https://user-images.githubusercontent.com/25688193/44706125-8c1bec00-aadb-11e8-89b0-8098ca2878d9.png) は、点列 ![image](https://user-images.githubusercontent.com/25688193/44706144-9ccc6200-aadb-11e8-8903-9fee78b58ce4.png) の有力な収束先の候補であるが、<br>
+	    実際に、![image](https://user-images.githubusercontent.com/25688193/44706403-6fcc7f00-aadc-11e8-81ab-41b553dbf8bc.png) となり ![image](https://user-images.githubusercontent.com/25688193/44706436-870b6c80-aadc-11e8-9777-e2bf8eaa7821.png) となることを示す。<br>
+        先の<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44706612-23357380-aadd-11e8-90df-a38964ed9fd9.png)<br>
+        の関係より、任意の ![image](https://user-images.githubusercontent.com/25688193/44706659-4d873100-aadd-11e8-9e0d-cb982747ab0b.png) に対して、n,m>N ならば、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/44706677-61cb2e00-aadd-11e8-8dd6-5a0fd65f6aff.png)<br>
+        > 記載中...<br>
 
 <!--
 <a id="ID_4-3-2"></a>
@@ -818,41 +817,41 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
     バナッハ空間であることを示す。<br>
 
 	- 完備であることを示すためには、ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/45046215-7779be00-b0b0-11e8-8be8-3093850e941c.png) における任意のコーシー列が収束し、極限を持つことを示せばよい。<br>
-    まずは、簡単のため１次元のベクトル空間 R で考える。<br>
-    コーシー列を ![image](https://user-images.githubusercontent.com/25688193/45071170-ef2b0580-b10f-11e8-94b4-397f58010905.png) と記述すると、この点列は有界である（コーシー列の性質）ので、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45046359-dfc89f80-b0b0-11e8-9375-575d5dfe998b.png) から構成される点列 ![image](https://user-images.githubusercontent.com/25688193/45071190-0833b680-b110-11e8-8b88-553593ae2452.png) も有界な単調減少点列となり、ある有限な確定値に収束する。<br>
-    従って、![image](https://user-images.githubusercontent.com/25688193/45071220-2c8f9300-b110-11e8-8adc-5edb4c0dea76.png) と書ける。<br>
+        まずは、簡単のため１次元のベクトル空間 R で考える。<br>
+        コーシー列を ![image](https://user-images.githubusercontent.com/25688193/45071170-ef2b0580-b10f-11e8-94b4-397f58010905.png) と記述すると、この点列は有界である（コーシー列の性質）ので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45046359-dfc89f80-b0b0-11e8-9375-575d5dfe998b.png) から構成される点列 ![image](https://user-images.githubusercontent.com/25688193/45071190-0833b680-b110-11e8-8b88-553593ae2452.png) も有界な単調減少点列となり、ある有限な確定値に収束する。<br>
+        従って、![image](https://user-images.githubusercontent.com/25688193/45071220-2c8f9300-b110-11e8-8adc-5edb4c0dea76.png) と書ける。<br>
     - 次に、![image](https://user-images.githubusercontent.com/25688193/45046748-118e3600-b0b2-11e8-9c2b-8d9a8ae2b41d.png) となることを示す。<br>
-    コーシー列 ![image](https://user-images.githubusercontent.com/25688193/45077847-45587280-b129-11e8-8c5c-51de4be224c5.png) に関しては、任意の正数 ε に対して、ある正の正数 ![image](https://user-images.githubusercontent.com/25688193/45077885-69b44f00-b129-11e8-8fbb-79de07bb28ea.png) が存在し、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45077930-88b2e100-b129-11e8-99ef-f2c8c7679e1c.png)<br>
-    特に、上限 sup で定義されている ![image](https://user-images.githubusercontent.com/25688193/45077960-a41dec00-b129-11e8-93ab-be8e914b690d.png) で書き換えると、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45077994-bc8e0680-b129-11e8-8e5c-a76d58d18491.png)<br>
-    更に、n→∞ とすると、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45078588-60c47d00-b12b-11e8-8d14-d032c22c345c.png)<br>
-    を得る。（途中計算略）<br>
-    <br>
-    一方で、先の不等号 ![image](https://user-images.githubusercontent.com/25688193/45077885-69b44f00-b129-11e8-8fbb-79de07bb28ea.png) が上限であることを示しており、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45079253-ff9da900-b12c-11e8-9fd1-541372ef98d9.png) が成り立つことがわかる。<br>
-    更に、n→∞ とすると、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45079284-15ab6980-b12d-11e8-928e-ab2a5884fb94.png)<br>
-    従って、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45079308-29ef6680-b12d-11e8-9692-e18565287f30.png)<br>
-    となるので、結果として、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45079347-48edf880-b12d-11e8-9b0f-de9c64735c10.png) を得る。<br>
-    即ち、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45081177-98cebe80-b131-11e8-9f2b-11fedd13e218.png)<br>
-    のように収束することが示される。<br>
+        コーシー列 ![image](https://user-images.githubusercontent.com/25688193/45077847-45587280-b129-11e8-8c5c-51de4be224c5.png) に関しては、任意の正数 ε に対して、ある正の正数 ![image](https://user-images.githubusercontent.com/25688193/45077885-69b44f00-b129-11e8-8fbb-79de07bb28ea.png) が存在し、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45077930-88b2e100-b129-11e8-99ef-f2c8c7679e1c.png)<br>
+        特に、上限 sup で定義されている ![image](https://user-images.githubusercontent.com/25688193/45077960-a41dec00-b129-11e8-93ab-be8e914b690d.png) で書き換えると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45077994-bc8e0680-b129-11e8-8e5c-a76d58d18491.png)<br>
+        更に、n→∞ とすると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45078588-60c47d00-b12b-11e8-8d14-d032c22c345c.png)<br>
+        を得る。（途中計算略）<br>
+        <br>
+        一方で、先の不等号 ![image](https://user-images.githubusercontent.com/25688193/45077885-69b44f00-b129-11e8-8fbb-79de07bb28ea.png) が上限であることを示しており、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45079253-ff9da900-b12c-11e8-9fd1-541372ef98d9.png) が成り立つことがわかる。<br>
+        更に、n→∞ とすると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45079284-15ab6980-b12d-11e8-928e-ab2a5884fb94.png)<br>
+        従って、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45079308-29ef6680-b12d-11e8-9692-e18565287f30.png)<br>
+        となるので、結果として、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45079347-48edf880-b12d-11e8-9b0f-de9c64735c10.png) を得る。<br>
+        即ち、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45081177-98cebe80-b131-11e8-9f2b-11fedd13e218.png)<br>
+        のように収束することが示される。<br>
     - 次に、先の上限 sup を下限 inf に置き換えて、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45081006-24941b00-b131-11e8-8ab4-f3d2f954bbd3.png) から構成される点列 ![image](https://user-images.githubusercontent.com/25688193/45081036-3fff2600-b131-11e8-910b-523f23d28292.png) が有界な単調増加点列となり、ある確定値に収束する。<br>
-    即ち、コーシー列 ![image](https://user-images.githubusercontent.com/25688193/45081126-75a40f00-b131-11e8-852b-786bc34a21b6.png) の下極限 ![image](https://user-images.githubusercontent.com/25688193/45081280-d59ab580-b131-11e8-80ba-735ec982fa58.png) となることを利用すると、先の証明と同様にして、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45081736-d08a3600-b132-11e8-809e-16050296bed3.png)<br>
-    となる。（途中計算略）<br>
-    最後に、コーシー列の収束先の一意性の性質より、この極限値は一致し、α=β となることがわかる。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45081006-24941b00-b131-11e8-8ab4-f3d2f954bbd3.png) から構成される点列 ![image](https://user-images.githubusercontent.com/25688193/45081036-3fff2600-b131-11e8-910b-523f23d28292.png) が有界な単調増加点列となり、ある確定値に収束する。<br>
+        即ち、コーシー列 ![image](https://user-images.githubusercontent.com/25688193/45081126-75a40f00-b131-11e8-852b-786bc34a21b6.png) の下極限 ![image](https://user-images.githubusercontent.com/25688193/45081280-d59ab580-b131-11e8-80ba-735ec982fa58.png) となることを利用すると、先の証明と同様にして、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45081736-d08a3600-b132-11e8-809e-16050296bed3.png)<br>
+        となる。（途中計算略）<br>
+        最後に、コーシー列の収束先の一意性の性質より、この極限値は一致し、α=β となることがわかる。<br>
     - 一般の N 次元ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/45081839-fe6f7a80-b132-11e8-9d10-88f2775d0629.png) に対しても、同様の議論が成り立ち、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45081839-fe6f7a80-b132-11e8-9d10-88f2775d0629.png) における任意のコーシー列<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45082508-725e5280-b134-11e8-958c-244ad93ebaeb.png)<br>
-	が収束し、極限を持つので、<br>
-	N 次元ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/45081839-fe6f7a80-b132-11e8-9d10-88f2775d0629.png) は、完備であり、バナッハ空間となる。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45081839-fe6f7a80-b132-11e8-9d10-88f2775d0629.png) における任意のコーシー列<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45082508-725e5280-b134-11e8-958c-244ad93ebaeb.png)<br>
+	    が収束し、極限を持つので、<br>
+	    N 次元ベクトル空間 ![image](https://user-images.githubusercontent.com/25688193/45081839-fe6f7a80-b132-11e8-9d10-88f2775d0629.png) は、完備であり、バナッハ空間となる。<br>
 
 <br>
 
