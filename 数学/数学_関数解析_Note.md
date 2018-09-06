@@ -43,7 +43,9 @@
 1. [バナッハ空間 [Banach space]](#ID_7)
     1. [バナッハ空間の例](#ID_7-1)
     1. [有界線形写像全体の集合が作るバナッハ空間と共役空間](#ID_7-2)
-    1. [xxx](#ID_7-x)
+    1. [一様有界性の定理](#ID_7-3)
+    1. [開写像定理](#ID_7-4)
+    1. [閉グラフ定理](#ID_7-5)
 1. [ヒルベルト空間 [Hilbert space]](#ID_8)
     1. [三平方の定理、中線定理](#ID_8-1)
     1. [ヒルベルト空間の例](#ID_8-2)
@@ -286,6 +288,7 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 
 ![image](https://user-images.githubusercontent.com/25688193/44615736-6ba22680-a87c-11e8-8fca-00085e6f01b0.png)<br>
 
+> 【メモ】<br>
 > このコーシー列の判定条件と、ε−N 論法におよる収束の定義の違いは？
 
 
@@ -710,6 +713,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 ![image](https://user-images.githubusercontent.com/25688193/44921490-a674f480-ad7d-11e8-9766-197427c89368.png)<br>
 
+> 【メモ】<br>
 > この線形多様体の定義と一般の多様体との関係性は？<br>
 > → 線形多様体はアフィン空間のことであり、アフィン空間は最も単純な多様体でもあるため、線形多様体ともいう。<br>
 
@@ -894,6 +898,8 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45091389-40a5b580-b14d-11e8-83e0-d2ccce407df3.png)<br>
+
+> 【メモ】<br>
 > なぜ、数あるバナッハ空間の中でも、わざわざ有界線形汎関数全体上で共役空間を定義しているのか？<br>
 > → （Wikipedia から引用）「一般に双対空間には、代数的双対と連続的双対の二種類が用いられており、代数的双対は任意のベクトル空間に対して定義することができるが、位相線型空間を扱うときは代数的双対よりもその部分線型空間として、連続線型汎関数全体の成す連続的双対空間を考えるのが自然である。」<br>
 
@@ -903,6 +909,72 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
     - [物理のかぎしっぽ | 双対空間](http://hooktail.sub.jp/vectoranalysis/DualSpace/)
     - [双対ベクトル空間](https://ja.wikipedia.org/wiki/%E5%8F%8C%E5%AF%BE%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E7%A9%BA%E9%96%93)
     - [檜山正幸のキマイラ飼育記 | 本日の線形代数：双対空間と共役空間](http://d.hatena.ne.jp/m-hiyama/20080911/1221106941)
+
+
+<a id="ID_7-3"></a>
+
+### ◎ 一様有界性の定理
+先に見たように、関数解析の線形理論には、corner stones （礎石、基本理念）と呼ばれる４大定理（一様有界性の定理、開写像定理、閉グラフ定理、ハーン・バナッハの定理）が存在する。<br>
+この内、ハーン・バナッハの定理以外の３定理は、いずれも完備性がポイントとなっており、ベールの定理から導かれる。<br>
+ここでは、まず、１つ目の一様有界性の定理を見てみる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45143431-4905fb00-b1f6-11e8-9652-515f54e0f038.png)<br>
+
+> 【メモ】<br>
+> 一様有界性の定理、主張は強いの分かるけど（バナッハ空間→ノルム空間への全部の有界線形関数を有界づける定数の存在）、具体的に何に応用できるのかイマイチわからぬ。<br>
+
+- （証明）<br>
+    - まず、有界線形写像の点列のインデックス n∈N とノルム値の上のしきい値 k∈N に依存する<br>
+        バナッハ空間 X の部分集合<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45143623-b6b22700-b1f6-11e8-9911-8017c404bc4c.png)<br>
+        を導入する。<br>
+    - バナッハ空間 X からノルム空間 Y への有界線形写像 ![image](https://user-images.githubusercontent.com/25688193/45108347-5334e480-b177-11e8-9e99-329409f32755.png) が、連続写像（＝区間幅から区間幅への写像）であること、<br>
+        又、![image](https://user-images.githubusercontent.com/25688193/45108473-a4dd6f00-b177-11e8-97ad-eec552ade6f6.png) の関係を利用すると、<br>
+	    バナッハ空間 X の部分集合 ![image](https://user-images.githubusercontent.com/25688193/45108404-765f9400-b177-11e8-8bbe-a4792438e531.png) が閉部分集合であることが導かれる。（途中計算略）<br>
+	    更に、有界線形写像の点列のインデックス n∈N に対しての積集合<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45143665-d34e5f00-b1f6-11e8-8a54-5855f2835bd1.png)<br>
+        も閉集合になることが導びかれる。（途中計算略）<br>
+    - このバナッハ空間 X の部分積集合 ![image](https://user-images.githubusercontent.com/25688193/45108701-511f5580-b178-11e8-89b0-d449e4de12d3.png) が閉集合であることと、<br>
+        定理の条件（任意の ![image](https://user-images.githubusercontent.com/25688193/45109246-f4249f00-b179-11e8-89ab-bf7452e615a7.png) に対して、ある正数 M>0 が存在）より、<br>
+        任意の ![image](https://user-images.githubusercontent.com/25688193/45109246-f4249f00-b179-11e8-89ab-bf7452e615a7.png) に対して、ある正数 ![image](https://user-images.githubusercontent.com/25688193/45109287-0e5e7d00-b17a-11e8-86d5-c3903d95c7df.png) が存在し、<br>
+        更に、![image](https://user-images.githubusercontent.com/25688193/45109324-27672e00-b17a-11e8-9181-3f95a62648ab.png) に対して ![image](https://user-images.githubusercontent.com/25688193/45109346-3a79fe00-b17a-11e8-8131-77ad019c119e.png) となるので、<br>
+        ベールの定理が適用できる条件<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45108733-65fbe900-b178-11e8-8b2f-79b00b723249.png)<br>
+        が導びかれる。<br>
+    - ベールの定理より、部分集合 ![image](https://user-images.githubusercontent.com/25688193/45146124-2deab980-b1fd-11e8-9938-30e4d65579c8.png) は少なくとも１つの内点を持つので、<br>
+        少なくとも１つの（内点を与える）正のインデックス ![image](https://user-images.githubusercontent.com/25688193/45146160-46f36a80-b1fd-11e8-927a-090f4d12ece5.png) に対して、<br>
+        ある内点 ![image](https://user-images.githubusercontent.com/25688193/45146242-70ac9180-b1fd-11e8-8bcb-1ae8fa4e714b.png) と r>0 が存在して、![image](https://user-images.githubusercontent.com/25688193/45146392-c6813980-b1fd-11e8-8940-3f6e5ab57a89.png) となり、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45146335-a6517a80-b1fd-11e8-9b87-e05b97f77402.png)<br>
+		を得る。<br>
+		このことから、全ての n∈N について、以下の関係が成り立つ。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45146459-def15400-b1fd-11e8-89e5-e6a730cc507b.png)<br>
+        更に、作用素ノルムの表現の等価性の関係<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45146848-96866600-b1fe-11e8-95d6-e0db0af1c408.png)<br>
+        から、全ての n に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45146873-a736dc00-b1fe-11e8-92e1-20fc1b41ddd2.png)<br>
+        が成り立つので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45146905-b7e75200-b1fe-11e8-8b5c-fed8b8ffa400.png)<br>
+        となる。<br>
+        従って、全ての作用素ノルムを有界づける共通の定数 M が存在するので、バナッハ空間からノルム空間への有界線形写像全体の点列は一様有界である。<br>
+
+
+- 【参考】
+    - [ベールの定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%99%E3%83%BC%E3%83%AB%E3%81%AE%E5%AE%9A%E7%90%86)
+    - [一様有界性 [Wikipedia]](https://ja.wikipedia.org/wiki/%E4%B8%80%E6%A7%98%E6%9C%89%E7%95%8C%E6%80%A7)
+
+
+<a id="ID_7-4"></a>
+
+### ◎ 開写像定理
+> 記載中...
+
+
+<a id="ID_7-5"></a>
+
+### ◎ 閉グラフ定理
+> 記載中...
+
+
 
 
 <a id="ID_8"></a>
