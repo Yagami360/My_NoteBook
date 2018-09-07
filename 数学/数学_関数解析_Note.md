@@ -46,12 +46,12 @@
     1. [一様有界性の定理](#ID_7-3)
     1. [開写像定理](#ID_7-4)
     1. [閉グラフ定理](#ID_7-5)
-    1. バナッハ空間における基底（シャウダー基底）
+    1. [バナッハ空間における基底（シャウダー基底）](#ID_7-6)
 1. [ヒルベルト空間 [Hilbert space]](#ID_8)
     1. [ヒルベルト空間の例](#ID_8-1)
     1. ヒルベルト空間における三平方の定理、中線定理
     1. [自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞](#ID_8-3)
-    1. ヒルベルト空間における基底
+    1. [ヒルベルト空間の正規直交系とフーリエ級数](#ID_8-4)
 1. [作用素](#ID_A)
     1. 線形作用素
     1. [ノルム空間における有界線形作用素](#ID_A-2)
@@ -990,6 +990,11 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 - （証明略）ベールの定理を利用して証明できる<br>
 
 
+<a id="ID_7-6"></a>
+
+### ◎ バナッハ空間における基底（シャウダー基底）
+> 記載中...
+
 
 <a id="ID_8"></a>
 
@@ -1003,54 +1008,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 ![image](https://user-images.githubusercontent.com/25688193/45199581-765eb180-b2a7-11e8-9171-6a50764a667c.png)<br>
 
 
-<a id="ID_8-1"></a>
-
-### ◎ ヒルベルト空間の例
-
-- （例）N 次元ユークリッド空間<br>
-    N 次元ユークリッド空間<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45200576-80cf7a00-b2ac-11e8-9b0c-d0ae76de35ae.png) において、任意の ![image](https://user-images.githubusercontent.com/25688193/45200657-c68c4280-b2ac-11e8-8091-5df4225a1b07.png) に対して、<br>
-	内積を、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45200799-7e215480-b2ad-11e8-8b60-daef005efc72.png)<br>
-    内積から誘導されるノルム<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45200826-972a0580-b2ad-11e8-9319-539c53b80464.png)<br>
-    を定義すると、ヒルベルト空間になることを示す。<br>
-    <br>
-    - 先のバナッハ空間の例（[参照](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B)）より、N 次元ベクトル空間は、バナッハ空間である。<br>
-    従って、ユークリッド空間はバナッハ空間であり、<br>
-    更に、内積 ![image](https://user-images.githubusercontent.com/25688193/45200799-7e215480-b2ad-11e8-8b60-daef005efc72.png) を定義しているので、ヒルベルト空間になる。<br>
-    
-<br>
-
-- （例）距離空間 ![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png)<br>
-    距離空間 ![image](https://user-images.githubusercontent.com/25688193/45082619-adf91c80-b134-11e8-8532-67f2d5202b03.png) の p=2 のときの距離空間 ![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png) は、ヒルベルト空間であることを示す。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45201505-a52d5580-b2b0-11e8-926f-445009032369.png)<br>
-    <br>
-    - 先のバナッハ空間の例（[参照](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B)）より、この距離空間 ![image](https://user-images.githubusercontent.com/25688193/45082619-adf91c80-b134-11e8-8532-67f2d5202b03.png) は、バナッハ空間である。<br>
-        従って、p=2 のときの距離空間 ![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png) もバナッハ空間である。<br>
-    - ここで、p=2 のときの内積とノルムを<br>
-        ![image](https://user-images.githubusercontent.com/25688193/45201595-1836cc00-b2b1-11e8-9ea2-b053db2a09b7.png)<br>
-        のように定義すると、<br>
-        これらはノルムと内積の公理を満たすので、![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png) は、ヒルベルト空間となる。<br>
-
-
-<a id="ID_8-3"></a>
-
-### ◎ 自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞
-ここでは、（バナッハ空間の項目で述べた）閉グラフ定理の簡単な応用で導かれる定理を見ていく。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45207851-1f1b0a00-b2c4-11e8-98f1-78ff8ce4c3b2.png)<br>
-
-- （証明略）証明の方針のみ記載<br>
-    ヒルベルト空間 X の直積集合 X×X のグラフ<br>
-    ![image](https://user-images.githubusercontent.com/25688193/45209311-a0c06700-b2c7-11e8-9c94-7686ea80fbd5.png)<br>
-    が、閉集合になることを示せばよい。<br>
-
-
-- 【参照】<br>
-    - [閉グラフ定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E9%96%89%E3%82%B0%E3%83%A9%E3%83%95%E5%AE%9A%E7%90%86)<br>
-
-
+<!--
 ## ■ （旧）ヒルベルト空間 [Hilbert space]
 > 要書き換え...
 
@@ -1084,8 +1042,40 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 ![image](https://user-images.githubusercontent.com/25688193/44565319-77211f00-a7a2-11e8-9ff2-157b150aae9d.png)<br>
 
+-->
 
 <a id="ID_8-1"></a>
+
+### ◎ ヒルベルト空間の例
+
+- （例）N 次元ユークリッド空間<br>
+    N 次元ユークリッド空間<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45200576-80cf7a00-b2ac-11e8-9b0c-d0ae76de35ae.png) において、任意の ![image](https://user-images.githubusercontent.com/25688193/45200657-c68c4280-b2ac-11e8-8091-5df4225a1b07.png) に対して、<br>
+	内積を、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45200799-7e215480-b2ad-11e8-8b60-daef005efc72.png)<br>
+    内積から誘導されるノルム<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45200826-972a0580-b2ad-11e8-9319-539c53b80464.png)<br>
+    を定義すると、ヒルベルト空間になることを示す。<br>
+    <br>
+    - 先のバナッハ空間の例（[参照](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B)）より、N 次元ベクトル空間は、バナッハ空間である。<br>
+    従って、ユークリッド空間はバナッハ空間であり、<br>
+    更に、内積 ![image](https://user-images.githubusercontent.com/25688193/45200799-7e215480-b2ad-11e8-8b60-daef005efc72.png) を定義しているので、ヒルベルト空間になる。<br>
+    
+<br>
+
+- （例）距離空間 ![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png)<br>
+    距離空間 ![image](https://user-images.githubusercontent.com/25688193/45082619-adf91c80-b134-11e8-8532-67f2d5202b03.png) の p=2 のときの距離空間 ![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png) は、ヒルベルト空間であることを示す。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45201505-a52d5580-b2b0-11e8-926f-445009032369.png)<br>
+    <br>
+    - 先のバナッハ空間の例（[参照](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E7%A9%BA%E9%96%93%E3%81%AE%E4%BE%8B)）より、この距離空間 ![image](https://user-images.githubusercontent.com/25688193/45082619-adf91c80-b134-11e8-8532-67f2d5202b03.png) は、バナッハ空間である。<br>
+        従って、p=2 のときの距離空間 ![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png) もバナッハ空間である。<br>
+    - ここで、p=2 のときの内積とノルムを<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45201595-1836cc00-b2b1-11e8-9ea2-b053db2a09b7.png)<br>
+        のように定義すると、<br>
+        これらはノルムと内積の公理を満たすので、![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png) は、ヒルベルト空間となる。<br>
+
+
+<a id="ID_8-2"></a>
 
 ### ◎ （旧）３平方の定理や中線定理
 > 要書き換え...
@@ -1106,7 +1096,30 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 更に、![image](https://user-images.githubusercontent.com/25688193/44566466-b488ab00-a7a8-11e8-9dca-1e1a237722f9.png) と一致するので、<br>
 **バナッハ空間がヒルベルト空間であるための必要十分条件は、（バナッハ空間を構築している）ノルムに対し、中線定理が成り立っていることである。**<br>
 
----
+
+<a id="ID_8-3"></a>
+
+### ◎ 自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞
+ここでは、（バナッハ空間の項目で述べた）閉グラフ定理の簡単な応用で導かれる定理を見ていく。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45207851-1f1b0a00-b2c4-11e8-98f1-78ff8ce4c3b2.png)<br>
+
+- （証明略）証明の方針のみ記載<br>
+    ヒルベルト空間 X の直積集合 X×X のグラフ<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45209311-a0c06700-b2c7-11e8-9c94-7686ea80fbd5.png)<br>
+    が、閉集合になることを示せばよい。<br>
+
+
+- 【参照】<br>
+    - [閉グラフ定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E9%96%89%E3%82%B0%E3%83%A9%E3%83%95%E5%AE%9A%E7%90%86)<br>
+
+
+<a id="ID_8-4"></a>
+
+### ◎ ヒルベルト空間の正規直交系とフーリエ級数
+> 記載中...
+
+
 
 <a id="ID_A"></a>
 
