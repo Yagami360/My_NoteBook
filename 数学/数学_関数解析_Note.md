@@ -52,6 +52,8 @@
     1. ヒルベルト空間における三平方の定理、中線定理
     1. [自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞](#ID_8-3)
     1. [ヒルベルト空間の正規直交系とフーリエ級数](#ID_8-4)
+    1. [ヒルベルト空間の極大な正規直交系](#ID_8-5)
+    1. [可分なヒルベルト空間と完全正規直交系](#ID_8-6)
 1. [作用素](#ID_A)
     1. 線形作用素
     1. [ノルム空間における有界線形作用素](#ID_A-2)
@@ -1121,8 +1123,27 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_8-4"></a>
 
 ### ◎ ヒルベルト空間の正規直交系とフーリエ級数
+![image](https://user-images.githubusercontent.com/25688193/45229497-eb120a00-b300-11e8-9118-6f3ca25e0f98.png)<br>
+
+- （証明略）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45229532-fc5b1680-b300-11e8-8081-594bffdf3d04.png)<br>
+
+- 【参考】
+    - [フーリエ解析](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md)
+    - [弱位相 | Wikipedia](https://ja.wikipedia.org/wiki/%E5%BC%B1%E4%BD%8D%E7%9B%B8)
+
+
+<a id="ID_8-5"></a>
+
+### ◎ ヒルベルト空間の極大な正規直交系
 > 記載中...
 
+
+<a id="ID_8-5"></a>
+
+### ◎ 可分なヒルベルト空間と完全正規直交系
+> 記載中...
 
 
 <a id="ID_A"></a>
@@ -1137,9 +1158,10 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_A-2-1"></a>
 
 #### ☆ ノルム空間における作用素ノルム
-![image](https://user-images.githubusercontent.com/25688193/44958609-96941680-af1d-11e8-93f6-f1d752ff9851.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45227558-c49da000-b2fb-11e8-9003-4721609b9ce1.png)<br>
 
-- 【参考】 [関数解析メモ](https://www.yasuhisay.info/entry/20110517/1305608183)
+- 【参考】
+    - [関数解析メモ](https://www.yasuhisay.info/entry/20110517/1305608183)
 
 
 <a id="ID_A-2-2"></a>
@@ -1243,7 +1265,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     ![image](https://user-images.githubusercontent.com/25688193/45019618-c51e0880-b067-11e8-94df-6e66c9b84c6a.png)<br>
     で式を表現し直すと、<br>
     ![image](https://user-images.githubusercontent.com/25688193/45019680-e848b800-b067-11e8-9715-4ae2554a9c37.png)<br>
-    となり、反対方向の不等号も成立するので、
+    となり、反対方向の不等号も成立するので、<br>
     ![image](https://user-images.githubusercontent.com/25688193/45019711-fa2a5b00-b067-11e8-8477-bd6f4156615c.png)<br>
 
 ---
