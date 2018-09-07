@@ -50,7 +50,7 @@
 1. [ヒルベルト空間 [Hilbert space]](#ID_8)
     1. [ヒルベルト空間の例](#ID_8-1)
     1. ヒルベルト空間における三平方の定理、中線定理
-    1. [自己共役性と有界性（閉グラフ定理の応用）](#ID_8-3)
+    1. [自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞](#ID_8-3)
     1. ヒルベルト空間における基底
 1. [作用素](#ID_A)
     1. 線形作用素
@@ -74,7 +74,7 @@
 <a id="ID_1"></a>
 
 ## ■ 概要
-![image](https://user-images.githubusercontent.com/25688193/45199621-aefe8b00-b2a7-11e8-9c90-8c1245c77ef0.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45209187-44f5de00-b2c7-11e8-8848-f4f064c81b99.png)<br>
 
 <!--
 ![image](https://user-images.githubusercontent.com/25688193/44618903-c3ab4e00-a8b9-11e8-8426-59eda8f1af4a.png)<br>
@@ -980,7 +980,12 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 次に、関数解析の線形理論の４大定理の２つ目の定理として、閉グラフ定理をみていく。<br>
 この定理は、線形写像の有界性を示すための定理になっており、微分方程式の解析や量子力学などで広く応用されている。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/45161533-11637700-b227-11e8-931b-6d597630029e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45208471-9f8e3a80-b2c5-11e8-827d-0f1e9d059cc1.png)<br>
+
+> ノルム空間 X からノルム空間 Y への連続線型作用素 A のグラフ<br>
+> ![image](https://user-images.githubusercontent.com/25688193/45208511-b765be80-b2c5-11e8-9d31-4cd78f904701.png)<br>
+> が閉集合であることは容易に確認できるが、<br>
+> その逆（閉集合⇒有界線形写像）を主張するのが閉グラフ定理であり、作用素の連続性の証明に多用される。<br>
 
 - （証明略）ベールの定理を利用して証明できる<br>
 
@@ -1026,14 +1031,24 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
     - ここで、p=2 のときの内積とノルムを<br>
         ![image](https://user-images.githubusercontent.com/25688193/45201595-1836cc00-b2b1-11e8-9ea2-b053db2a09b7.png)<br>
         のように定義すると、<br>
-        これらはノルムと内積の公理を満たすので、![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png) は、ヒルベルト空間となる。
+        これらはノルムと内積の公理を満たすので、![image](https://user-images.githubusercontent.com/25688193/45201471-731bf380-b2b0-11e8-9f17-9c0e6fcfc356.png) は、ヒルベルト空間となる。<br>
 
 
 <a id="ID_8-3"></a>
 
-### ◎ 自己共役性と有界性（閉グラフ定理の応用）
-> 記載中...
+### ◎ 自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞
+ここでは、（バナッハ空間の項目で述べた）閉グラフ定理の簡単な応用で導かれる定理を見ていく。<br>
 
+![image](https://user-images.githubusercontent.com/25688193/45207851-1f1b0a00-b2c4-11e8-98f1-78ff8ce4c3b2.png)<br>
+
+- （証明略）証明の方針のみ記載<br>
+    ヒルベルト空間 X の直積集合 X×X のグラフ<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45209311-a0c06700-b2c7-11e8-9c94-7686ea80fbd5.png)<br>
+    が、閉集合になることを示せばよい。<br>
+
+
+- 【参照】<br>
+    - [閉グラフ定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E9%96%89%E3%82%B0%E3%83%A9%E3%83%95%E5%AE%9A%E7%90%86)<br>
 
 
 ## ■ （旧）ヒルベルト空間 [Hilbert space]
@@ -1090,9 +1105,6 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 この中線定理が成り立つ時、２つのベクトル ![image](https://user-images.githubusercontent.com/25688193/44566449-9753dc80-a7a8-11e8-87f7-04b594781c87.png) は、内積の条件を満たすので、内積となる。<br>
 更に、![image](https://user-images.githubusercontent.com/25688193/44566466-b488ab00-a7a8-11e8-9dca-1e1a237722f9.png) と一致するので、<br>
 **バナッハ空間がヒルベルト空間であるための必要十分条件は、（バナッハ空間を構築している）ノルムに対し、中線定理が成り立っていることである。**<br>
-
-
-
 
 ---
 
