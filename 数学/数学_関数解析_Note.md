@@ -54,6 +54,7 @@
     1. [ヒルベルト空間における正規直交系とフーリエ級数](#ID_8-4)
     1. [ヒルベルト空間における極大な正規直交系](#ID_8-5)
     1. [可分なヒルベルト空間と完全正規直交系](#ID_8-6)
+        1. [ヒルベルト空間における完全正規直交系の例](#ID_8-6-1)
 1. [作用素](#ID_A)
     1. 線形作用素
     1. [ノルム空間における有界線形作用素](#ID_A-2)
@@ -1203,6 +1204,44 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 - 【参考】<br>
     - [稠密、可分性](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E7%A8%A0%E5%AF%86-dense%E5%8F%AF%E5%88%86%E6%80%A7-separable)<br>
     - [バナッハ空間における基底（シャウダー基底）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%9F%BA%E5%BA%95%E3%82%B7%E3%83%A3%E3%82%A6%E3%83%80%E3%83%BC%E5%9F%BA%E5%BA%95)<br>
+
+<a id="ID_8-6-1"></a>
+
+#### ☆ ヒルベルト空間における完全正規直交系の例
+
+- （例）ヒルベルト空間における完全正規直交系の例（L2ノルム）<br>
+    可算個の点列 ![image](https://user-images.githubusercontent.com/25688193/45254506-5c5ec500-b3b4-11e8-8227-42c18856423f.png) を以下のように定義する。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45254379-0db02b80-b3b2-11e8-9a13-d478a52886b7.png)<br>
+    <br>
+    このとき、この点列から構成されるベクトルの組 ![image](https://user-images.githubusercontent.com/25688193/45254389-228cbf00-b3b2-11e8-9836-db3b275d32fc.png) は、<br>
+    ヒルベルト空間 ![image](https://user-images.githubusercontent.com/25688193/45254392-451ed800-b3b2-11e8-88c7-0f528f9203ab.png)（＝ノルムが、![image](https://user-images.githubusercontent.com/25688193/45254401-65e72d80-b3b2-11e8-87c7-3c364a0d3e44.png) で定義）の正規直交系となる。（計算略）<br>
+    更に、このヒルベルト空間内の任意のベクトル ![image](https://user-images.githubusercontent.com/25688193/45254409-89aa7380-b3b2-11e8-9dc0-292f2667f88c.png) に対して、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45254415-af377d00-b3b2-11e8-85ab-cacaaa1b3232.png)<br>
+    が成り立つので、パーシバルの等式<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45254428-ed34a100-b3b2-11e8-9838-2983215137d4.png)<br>
+	が成り立ち、ヒルベルト空間における正規直交系の定義より、<br>
+	この正規直交系 ![image](https://user-images.githubusercontent.com/25688193/45254389-228cbf00-b3b2-11e8-9836-db3b275d32fc.png) は、極大な正規直交系であり、完全正規直交系になる。<br>
+
+<br>
+
+- （例）ヒルベルト空間における完全正規直交系の例（フーリエ正弦級数展開）<br>
+	区間 [0:1] の可算個の点列（関数列） ![image](https://user-images.githubusercontent.com/25688193/45254506-5c5ec500-b3b4-11e8-8227-42c18856423f.png) を以下のように定義する。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45254576-895fa780-b3b5-11e8-89cc-e1d4ca0982eb.png)<br>
+    <br>
+    このとき、この点列から構成されるベクトルの組 ![image](https://user-images.githubusercontent.com/25688193/45254389-228cbf00-b3b2-11e8-9836-db3b275d32fc.png) は、<br>
+    ヒルベルト空間 ![image](https://user-images.githubusercontent.com/25688193/45254587-a6947600-b3b5-11e8-86b7-2a3ddb12fc52.png)（＝ノルムが、![image](https://user-images.githubusercontent.com/25688193/45254401-65e72d80-b3b2-11e8-87c7-3c364a0d3e44.png) で定義）の正規直交系となる。（計算略）<br>
+    更に、この正規直交系 ![image](https://user-images.githubusercontent.com/25688193/45254389-228cbf00-b3b2-11e8-9836-db3b275d32fc.png) は、このヒルベルト空間 ![image](https://user-images.githubusercontent.com/25688193/45254587-a6947600-b3b5-11e8-86b7-2a3ddb12fc52.png) の完全正規直交系にもなる。（計算略）<br>
+    従って、このヒルベルト空間内の任意のベクトル ![image](https://user-images.githubusercontent.com/25688193/45254601-ea877b00-b3b5-11e8-9919-8b7ea3b0732a.png) に対して、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45254725-d3498d00-b3b7-11e8-9bb9-3a18261dd337.png)<br>
+	の強収束の関係が成り立つので、<br>
+	ヒルベルト空間内の任意のベクトル ![image](https://user-images.githubusercontent.com/25688193/45254601-ea877b00-b3b5-11e8-9919-8b7ea3b0732a.png) は、以下のような線形結合の形で表現できる。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45254734-01c76800-b3b8-11e8-89ce-f3245c657608.png)<br>
+    この内積を積分の形で表現しなおすと、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45254742-16a3fb80-b3b8-11e8-846f-a58af46d1340.png)<br>
+    この式は、フーリエ正弦級数展開に他ならない。<br>
+
+<br>
+
 
 <a id="ID_A"></a>
 
