@@ -51,8 +51,8 @@
     1. [ヒルベルト空間の例](#ID_8-1)
     1. ヒルベルト空間における三平方の定理、中線定理
     1. [自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞](#ID_8-3)
-    1. [ヒルベルト空間の正規直交系とフーリエ級数](#ID_8-4)
-    1. [ヒルベルト空間の極大な正規直交系](#ID_8-5)
+    1. [ヒルベルト空間における正規直交系とフーリエ級数](#ID_8-4)
+    1. [ヒルベルト空間における極大な正規直交系](#ID_8-5)
     1. [可分なヒルベルト空間と完全正規直交系](#ID_8-6)
 1. [作用素](#ID_A)
     1. 線形作用素
@@ -1141,7 +1141,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 <a id="ID_8-5"></a>
 
-### ◎ ヒルベルト空間の極大な正規直交系
+### ◎ ヒルベルト空間における極大な正規直交系
 ![image](https://user-images.githubusercontent.com/25688193/45236142-00ddfa00-b316-11e8-98f6-e6f8f3bf899e.png)
 
 > 【メモ】<br>
@@ -1150,16 +1150,59 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 - （証明略）<br>
 
-- 【参考】
-    - [フーリエ級数の収束性（パーシバルの等式）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E7%B4%9A%E6%95%B0%E3%81%AE%E5%8F%8E%E6%9D%9F%E6%80%A7)
-    - [（内積空間における）ベッセルの不等式](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%99%E3%83%83%E3%82%BB%E3%83%AB%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F)
+- 【参考】<br>
+    - [フーリエ級数の収束性（パーシバルの等式）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E7%B4%9A%E6%95%B0%E3%81%AE%E5%8F%8E%E6%9D%9F%E6%80%A7)<br>
+    - [（内積空間における）ベッセルの不等式](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%99%E3%83%83%E3%82%BB%E3%83%AB%E3%81%AE%E4%B8%8D%E7%AD%89%E5%BC%8F)<br>
 
 
 <a id="ID_8-5"></a>
 
-### ◎ 可分なヒルベルト空間と完全正規直交系
-> 記載中...
+### ◎ 可分なヒルベルト空間における完全正規直交系
+![image](https://user-images.githubusercontent.com/25688193/45251309-d8d6b100-b37e-11e8-9799-05b699f540ef.png)<br>
 
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45251338-5995ad00-b37f-11e8-8cc7-8b93fe74f246.png)<br>
+
+- （証明）<br>
+    - まず、a ⇒ b の関係（無限次元のヒルベルト空間が可分ならば、このヒルベルト空間は可算個の極大な正規直交系を持つ）を証明する。<br>
+        - ヒルベルト空間における可分性の定義は、ヒルベルト空間の稠密な部分集合として、可算集合が存在することであるので、<br>
+            ヒルベルト空間 H の稠密な可算集合（部分集合になる）![image](https://user-images.githubusercontent.com/25688193/45251356-a8dbdd80-b37f-11e8-9f48-d60ad5a486ce.png) が存在する。<br>
+            この稠密な可算集合 D から、適当にベクトルを選び、ベクトルの組を作ると、<br>
+            任意の正数 m∈N に対して、これらベクトルの組で張られるベクトル空間<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45251463-7501b780-b381-11e8-8318-d19b910f1d46.png)<br>
+            から、線形独立なベクトルの組 ![image](https://user-images.githubusercontent.com/25688193/45251467-8945b480-b381-11e8-8553-46b2511c58f9.png) を得ることが出来る。<br>
+            こうして得られた線形独立なベクトルの組 ![image](https://user-images.githubusercontent.com/25688193/45251467-8945b480-b381-11e8-8553-46b2511c58f9.png) に対して、グラム・シュミットの直交化法を適用すれば、正規直交系 ![image](https://user-images.githubusercontent.com/25688193/45251476-b6926280-b381-11e8-988e-437f05dd2171.png) を構成することが出来る。<br>
+        - 以下、この正規直交系 U が、極大な正規直交系であることを示すために、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45251558-2523f000-b383-11e8-880a-1ebd577c7619.png) の存在（極大な正規直交系に直交する他のベクトル）を仮定した上で、その矛盾を導く。（極大な正規直交系に対して、直交する他のこの直交系に含まれないベクトルは存在しないため）<br>
+        - まず、極大な正規直交系に直交するならば、稠密な可算集合 ![image](https://user-images.githubusercontent.com/25688193/45251356-a8dbdd80-b37f-11e8-9f48-d60ad5a486ce.png) にも直交するので、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45251571-64ead780-b383-11e8-9a25-6e878f399f97.png) である。<br>
+        - 又、稠密な可算集合 D の稠密性（＝ヒルベルト空間に触する）より、<br>
+            この稠密な部分集合 D 内の点列 ![image](https://user-images.githubusercontent.com/25688193/45251632-649f0c00-b384-11e8-9195-b9fb4d1105ba.png) の中に、<br>
+            極大な正規直交系と直交するベクトル ![image](https://user-images.githubusercontent.com/25688193/45251648-94e6aa80-b384-11e8-8061-9c2a3a5b9041.png) に収束する、即ち、![image](https://user-images.githubusercontent.com/25688193/45251656-b8a9f080-b384-11e8-970f-95240b3584aa.png) となるものが存在する。<br>
+        - しかしながら、これらのことは（![image](https://user-images.githubusercontent.com/25688193/45251732-1c80e900-b386-11e8-90ea-cc5e71513ea5.png) ）、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45251747-53ef9580-b386-11e8-8afa-98614d692856.png)<br>
+            の関係より、矛盾する。<br>
+            従って、このような ![image](https://user-images.githubusercontent.com/25688193/45251648-94e6aa80-b384-11e8-8061-9c2a3a5b9041.png) は存在せず、正規直交系 U が、極大な正規直交系である。<br>
+            そして、a ⇒ b の関係（無限次元のヒルベルト空間が可分ならば、このヒルベルト空間は可算個の極大な正規直交系を持つ）が成り立つ。<br>
+            <br>
+    - 次に、b ⇒ a の関係（無限次元のヒルベルト空間が可算個の極大な正規直交系をもつならば、このヒルベルト空間は可分）を証明する。<br>
+        - このときは、無限次元のヒルベルト空間 H は、可算個のベクトルの組からなる極大な正規直交系 ![image](https://user-images.githubusercontent.com/25688193/45251476-b6926280-b381-11e8-988e-437f05dd2171.png) を持つので、これらの線形結合全体の集合 E も、また可算集合になり、稠密な部分集合になる。<br>
+            従って、b ⇒ a の関係（無限次元のヒルベルト空間が可算個の極大な正規直交系をもつならば、このヒルベルト空間は可分）が成り立つ。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45250799-ecc9e500-b375-11e8-95ef-8f565e73cc59.png)
+
+- （証明略）<br>
+
+<br>
+
+- 【参考】<br>
+    - [稠密、可分性](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E7%A8%A0%E5%AF%86-dense%E5%8F%AF%E5%88%86%E6%80%A7-separable)<br>
+    - [バナッハ空間における基底（シャウダー基底）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%9F%BA%E5%BA%95%E3%82%B7%E3%83%A3%E3%82%A6%E3%83%80%E3%83%BC%E5%9F%BA%E5%BA%95)<br>
 
 <a id="ID_A"></a>
 
