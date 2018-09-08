@@ -1252,15 +1252,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 ![image](https://user-images.githubusercontent.com/25688193/45256784-70b3b980-b3d6-11e8-93b0-3efd274a5455.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/45256941-d3a65000-b3d8-11e8-9d24-0473e6fe2146.png)<br>
-
-ここで、弱収束の定義において、下図のように、<br>
-任意の固定されたベクトル ![image](https://user-images.githubusercontent.com/25688193/45256987-60e9a480-b3d9-11e8-9892-22c0763de507.png) として、単位ベクトル ![image](https://user-images.githubusercontent.com/25688193/45256997-84145400-b3d9-11e8-8ab7-b2977bcea032.png) を選ぶと、![image](https://user-images.githubusercontent.com/25688193/45257000-91c9d980-b3d9-11e8-9361-eff99969c1ba.png) は、![image](https://user-images.githubusercontent.com/25688193/45257009-aefea800-b3d9-11e8-8f39-68cd1182c2d6.png) の単位ベクトル ![image](https://user-images.githubusercontent.com/25688193/45256997-84145400-b3d9-11e8-8ab7-b2977bcea032.png) 上への射影成分となる。<br>
-従って、![image](https://user-images.githubusercontent.com/25688193/45257022-fe44d880-b3d9-11e8-8e95-20b14242d01d.png)（弱収束）となるとき、<br>
-n が増加して、![image](https://user-images.githubusercontent.com/25688193/45257009-aefea800-b3d9-11e8-8f39-68cd1182c2d6.png) の単位ベクトル ![image](https://user-images.githubusercontent.com/25688193/45256997-84145400-b3d9-11e8-8ab7-b2977bcea032.png) が直交に近づくにつれ、この射影成分は０に近づいていく。<br>
-この様子が、どの座標成分で見ても、点列 ![image](https://user-images.githubusercontent.com/25688193/45257026-13216c00-b3da-11e8-9718-e167b2e4142d.png) が ![image](https://user-images.githubusercontent.com/25688193/45257045-4a901880-b3da-11e8-8993-c1b02aafcd3a.png) に収束しているように見える。（下図参照）<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45257137-406f1980-b3dc-11e8-9a0e-bc6ce05b010f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45257182-ed499680-b3dc-11e8-8bf2-8c33312dadf0.png)<br>
 
 - 【参考】
     - [弱位相 | Wikipedia](https://ja.wikipedia.org/wiki/%E5%BC%B1%E4%BD%8D%E7%9B%B8)
