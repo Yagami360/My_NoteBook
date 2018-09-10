@@ -1469,8 +1469,10 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/45303145-0faff100-b550-11e8-8a6c-2f407b641201.png)<br>
-- （証明略）<br>
+![image](https://user-images.githubusercontent.com/25688193/45305156-ad0d2400-b554-11e8-93e5-3c34a1da5dd8.png)<br>
+- （証明）<br>
+
+    > 記載中...<br>
 
 
 ---
