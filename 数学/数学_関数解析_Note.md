@@ -1439,7 +1439,38 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <a id="ID_B-1-3"></a>
 
 #### ☆ ヒルベルト空間の閉部分空間への直交射影の線形性・冪等性・自己共役性
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/45298996-21d86200-b545-11e8-8113-6a420f7be1cc.png)<br>
+- （証明略）図より自明に成り立つ。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45299702-5baa6800-b547-11e8-8428-fce63d1314de.png)<br>
+- （証明）<br>
+    - 直交分解の定理より、直交写像 ![image](https://user-images.githubusercontent.com/25688193/45300772-38cd8300-b54a-11e8-97fc-13546c7bce2b.png) に関して、任意のベクトル ![image](https://user-images.githubusercontent.com/25688193/45300804-4d118000-b54a-11e8-85ff-f1def170b5f6.png) は、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45300858-6fa39900-b54a-11e8-84d4-52cec0876a4e.png)<br>
+        のように、一意に分解出来る。<br>
+        これを利用すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45300906-8fd35800-b54a-11e8-9fcc-3a9bc667da54.png)<br>
+    - 更に、任意の ![image](https://user-images.githubusercontent.com/25688193/45301084-1c7e1600-b54b-11e8-84d9-5498a12d214b.png) に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45301279-94e4d700-b54b-11e8-9de2-97404cfd70bf.png) となるので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45301328-b5149600-b54b-11e8-8392-0fab15e6894c.png)<br>
+        となり、この定理は成り立つ。<br>
+
+- 【参考】<br>
+    - [ノルム空間における有界線形作用素](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E4%BD%9C%E7%94%A8%E7%B4%A0)<br>
+    - [ノルム空間における作用素ノルム](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%83%8E%E3%83%AB%E3%83%A0)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45302140-7f70ac80-b54d-11e8-98eb-fa2c1aa68ce8.png)<br>
+
+- 【参考】<br>
+    - [自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E8%87%AA%E5%B7%B1%E5%85%B1%E5%BD%B9%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%81%A8%E6%9C%89%E7%95%8C%E6%80%A7%E9%96%89%E3%82%B0%E3%83%A9%E3%83%95%E5%AE%9A%E7%90%86%E3%81%AE%E5%BF%9C%E7%94%A8)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45303145-0faff100-b550-11e8-8a6c-2f407b641201.png)<br>
+- （証明略）<br>
 
 
 ---
