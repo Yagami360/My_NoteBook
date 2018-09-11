@@ -67,16 +67,14 @@
         1. [行列の作用素ノルム](#ID_A-2-6)
     1. コンパクト作用素
     1. リースの表現定理
-1. 関数解析視点でのフーリエ級数展開とフーリエ変換
-1. 関数解析視点でのルジャンドル級数展開
 1. [射影定理とその応用](#ID_B)
     1. [ヒルベルト空間における凸射影定理と直交射影定理](#ID_B-1)
         1. [ヒルベルト空間における凸射影の非拡大性](#ID_B-1-1)
         1. [ヒルベルト空間における直交分解](#ID_B-1-2)
         1. [ヒルベルト空間の閉部分空間への直交射影の線形性・冪等性・自己共役性](#ID_B-1-3)
         1. [ヒルベルト空間における和空間への直交射影](#ID_B-1-4)
-    1. [線形多様体への直交射影と正規方程式](#ID_B-2)
-        1. 正規方程式とグラム行列
+    1. [ヒルベルト空間における線形多様体への直交射影と正規方程式](#ID_B-2)
+        1. [ヒルベルト空間における直交射影と正規方程式・グラム行列](#ID_B-2-1)
         1. 線形多様体への直交写像と最小ノルム点
         1. 等式線形制約条件で定義される線形多様体への射影
         1. ムーア・ペンローズの一般逆写像
@@ -1489,8 +1487,43 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 <a id="ID_B-2"></a>
 
-### ◎ 線形多様体への直交射影と正規方程式
-> 記載中...
+### ◎ ヒルベルト空間における線形多様体への直交射影と正規方程式
+ヒルベルト空間では、有限次元の部分集合は、”常に”閉集合となる（先のノルム空間における閉部分空間に関する定理より）が、以下の定理で示すように、**この有界線形部分空間への直交射影の計算は、次元の数だけ未知数を求める線形連立方程式の問題に帰着される。**<br>
+（※ このことは、有限次元部分空間への直交射影が、線形代数におけるガウスの消去法を用いて有限回の四則演算で計算できることを意味している。）<br>
+
+従って、有限次元部分空間への直交射影の計算原理を把握しておくことにより、応用上の諸問題（凸最適化問題、最小２乗推定、一般逆写像等）に、直交射影定理をうまく活用することが可能となる。<br>
+
+- 【参考】<br>
+    - [ノルム空間における閉部分空間、線形多様体、閉凸集合](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E9%96%89%E9%83%A8%E5%88%86%E7%A9%BA%E9%96%93%E7%B7%9A%E5%BD%A2%E5%A4%9A%E6%A7%98%E4%BD%93%E9%96%89%E5%87%B8%E9%9B%86%E5%90%88)<br>
+
+
+<a id="ID_B-2-1"></a>
+
+#### ☆ ヒルベルト空間における直交射影と正規方程式・グラム行列
+![image](https://user-images.githubusercontent.com/25688193/45365752-30437e00-b618-11e8-942a-6b8c0730e100.png)<br>
+- （証明）<br>
+    - まず、「![image](https://user-images.githubusercontent.com/25688193/45364307-c4abe180-b614-11e8-88e4-6d97e5535639.png)」⇔「![image](https://user-images.githubusercontent.com/25688193/45364357-e5743700-b614-11e8-8b66-95b424382006.png) が正規方程式の解」の関係を示す。<br>
+        図より、![image](https://user-images.githubusercontent.com/25688193/45364392-fcb32480-b614-11e8-9a80-f5ef14900697.png) となるので、直交射影定理より、<br>
+        部分空間中のベクトル ![image](https://user-images.githubusercontent.com/25688193/45364456-25d3b500-b615-11e8-8a02-c3439113e59a.png) に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45364518-51569f80-b615-11e8-916b-2b570ab17634.png)<br>
+        の関係が成り立つが、この式を変形すると、正規方程式なる。<br>
+        従って、![image](https://user-images.githubusercontent.com/25688193/45364590-7d722080-b615-11e8-9a8b-fdbbbb89e91a.png) となるための必要十分条件が、正規方程式の解の存在となる。<br>
+    - 次に、「グラム行列 G が正則行列で解が存在する（＝逆行列が存在する）」 ⇔ 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次独立」 の関係を示すために、<br>
+        その対偶である 「グラム行列 G の行ベクトルが一次従属」 ⇔ 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次従属」の関係を示す。<br>
+        - 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次従属」 ⇒ 「グラム行列 G の行ベクトルが一次従属」の証明<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次従属である場合には、![image](https://user-images.githubusercontent.com/25688193/45366263-63d2d800-b619-11e8-8fb7-9fc199fc2a65.png) となる非ゼロな係数ベクトル ![image](https://user-images.githubusercontent.com/25688193/45366299-7b11c580-b619-11e8-9230-b3cac8b13065.png) が存在する。<br>
+            このとき、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45366344-9aa8ee00-b619-11e8-893c-17c431fa8ae2.png)<br>
+            となるので、グラム行列 G の行ベクトルが一次従属となる。<br>
+        - 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が、一次従属」 ⇐ 「グラム行列 G の行ベクトルが一次従属」の証明<br>
+            グラム行列 G の行ベクトルが一次従属である場合には、![image](https://user-images.githubusercontent.com/25688193/45366964-15bed400-b61b-11e8-81d1-4d2a230ede83.png) となる非ゼロな係数ベクトル ![image](https://user-images.githubusercontent.com/25688193/45366992-28d1a400-b61b-11e8-91d7-ee7920178ce3.png) が存在する。<br>
+            このとき、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45367050-4dc61700-b61b-11e8-870c-e55aec572539.png)<br>
+            となるので、![image](https://user-images.githubusercontent.com/25688193/45367098-6b937c00-b61b-11e8-8fe9-43674d82f619.png) となり、![image](https://user-images.githubusercontent.com/25688193/45367145-86fe8700-b61b-11e8-9fd7-eef9233813f2.png) が、一次従属となる。<br>
+
+- 【参考】<br>
+    - [ヒルベルト空間における凸射影定理と直交射影定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%87%B8%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86%E3%81%A8%E7%9B%B4%E4%BA%A4%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86)<br>
+
 
 ---
 
