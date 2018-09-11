@@ -75,7 +75,7 @@
         1. [ヒルベルト空間における和空間への直交射影](#ID_B-1-4)
     1. [ヒルベルト空間における線形多様体への直交射影と正規方程式](#ID_B-2)
         1. [ヒルベルト空間における直交射影と正規方程式・グラム行列](#ID_B-2-1)
-        1. 線形多様体への直交写像と最小ノルム点
+        1. [ヒルベルト空間における線形多様体への直交写像と最小ノルム点](#ID_B-2-2)
         1. 等式線形制約条件で定義される線形多様体への射影
         1. ムーア・ペンローズの一般逆写像
         1. ムーア・ペンローズの一般逆写像の特異値分解表現
@@ -1304,7 +1304,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 （従って、非連続な不連続線形作用素の議論が意味を持つのは、無限次元の空間を扱う場合になる。）<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44960837-7a09d580-af41-11e8-8de6-f331919bb09a.png)<br>
-- （証明略）図より自明
+- （証明略）２次元空間においては、図より自明に成り立つ。
 
 
 <a id="ID_A-2-4"></a>
@@ -1432,19 +1432,19 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ![image](https://user-images.githubusercontent.com/25688193/45293044-03b53680-b532-11e8-8fa4-50285f17059c.png)<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45293072-1465ac80-b532-11e8-94b6-23cc5a039979.png)<br>
-- （証明略）図より自明に成り立つ。<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
 
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45293239-876f2300-b532-11e8-8fc7-501c438abe1c.png)<br>
-- （証明略）図より自明に成り立つ。<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
 
 
 <a id="ID_B-1-3"></a>
 
 #### ☆ ヒルベルト空間の閉部分空間への直交射影の線形性・冪等性・自己共役性
 ![image](https://user-images.githubusercontent.com/25688193/45298996-21d86200-b545-11e8-8113-6a420f7be1cc.png)<br>
-- （証明略）図より自明に成り立つ。<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
 
 <br>
 
@@ -1482,7 +1482,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 #### ☆ ヒルベルト空間における和空間への直交写像
 ![image](https://user-images.githubusercontent.com/25688193/45313302-7d1c4b80-b569-11e8-881d-bdf402ddf0cb.png)<br>
-- （証明略）図より自明に成り立つ。<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
 
 
 <a id="ID_B-2"></a>
@@ -1500,7 +1500,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <a id="ID_B-2-1"></a>
 
 #### ☆ ヒルベルト空間における直交射影と正規方程式・グラム行列
-![image](https://user-images.githubusercontent.com/25688193/45365752-30437e00-b618-11e8-942a-6b8c0730e100.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45376136-08611400-b632-11e8-8380-1dd597e92828.png)<br>
 - （証明）<br>
     - まず、「![image](https://user-images.githubusercontent.com/25688193/45364307-c4abe180-b614-11e8-88e4-6d97e5535639.png)」⇔「![image](https://user-images.githubusercontent.com/25688193/45364357-e5743700-b614-11e8-8b66-95b424382006.png) が正規方程式の解」の関係を示す。<br>
         図より、![image](https://user-images.githubusercontent.com/25688193/45364392-fcb32480-b614-11e8-9a80-f5ef14900697.png) となるので、直交射影定理より、<br>
@@ -1523,6 +1523,13 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 - 【参考】<br>
     - [ヒルベルト空間における凸射影定理と直交射影定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%87%B8%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86%E3%81%A8%E7%9B%B4%E4%BA%A4%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86)<br>
+
+
+<a id="ID_B-2-2"></a>
+
+#### ☆ ヒルベルト空間における線形多様体への直交写像と最小ノルム点
+![image](https://user-images.githubusercontent.com/25688193/45378672-0f3f5500-b639-11e8-9d33-25149e9069bb.png)<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
 
 
 ---
