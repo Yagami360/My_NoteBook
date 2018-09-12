@@ -1535,19 +1535,24 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <a id="ID_B-2-3"></a>
 
 #### ☆ ヒルベルト空間における等式線形制約条件下での線形方程式の解集合と線形多様体への射影
-![image](https://user-images.githubusercontent.com/25688193/45416170-44d85280-b6ba-11e8-9df3-1ab3db1e7e4d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45438925-77eb0800-b6f3-11e8-98f6-22c5d8b19905.png)<br>
 - （証明略）３次元空間においては、図より自明に、線形方程式の解集合が線形多様体になる。<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/45416930-f330c780-b6bb-11e8-9e4b-4ac98993b5dc.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45439004-ab2d9700-b6f3-11e8-809c-ae2b83562c3d.png)<br>
 - （証明略）３次元空間においては、図より自明に、V∩M が最小ノルム点になる。<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/45417284-c3ce8a80-b6bc-11e8-9a43-86fe481605a5.png)
-- （証明）<br>
-    > 記載中...
+![image](https://user-images.githubusercontent.com/25688193/45439668-699deb80-b6f5-11e8-9ab5-e5661cf1b4a8.png)<br>
+- （証明略）３次元空間においては、図より自明に、![image](https://user-images.githubusercontent.com/25688193/45439923-05c7f280-b6f6-11e8-9e05-90e85025bff7.png) が、線形方程式 ![image](https://user-images.githubusercontent.com/25688193/45439958-1aa48600-b6f6-11e8-8efa-bd1a8e6e14ee.png) の解となる。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45441056-07df8080-b6f9-11e8-85b7-1b06c49b6fd7.png)<br>
+- （証明略）<br>
+	３次元空間においては、図より自明に、正規方程式 ![image](https://user-images.githubusercontent.com/25688193/45441241-85a38c00-b6f9-11e8-93ec-f33c46761031.png) の解は、![image](https://user-images.githubusercontent.com/25688193/45441297-a23fc400-b6f9-11e8-87a0-421ba3b745e4.png) であるので、成り立つ。<br>
 
 
 
