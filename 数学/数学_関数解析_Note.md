@@ -65,6 +65,9 @@
         1. [【補足】逆写像の存在性](#ID_A-2-4)
         1. [有界線形写像全体が作るノルム空間](#ID_A-2-5)
         1. [行列の作用素ノルム](#ID_A-2-6)
+    1. [ムーア・ペンローズの一般化逆写像](#ID_A-3)
+        1. [ムーア・ペンローズの一般化逆写像の特異値分解表現](#ID_A-3-1)
+            1. 【補足】特異値分解
     1. コンパクト作用素
     1. リースの表現定理
 1. [射影定理とその応用](#ID_B)
@@ -77,9 +80,6 @@
         1. [ヒルベルト空間における直交射影と正規方程式・グラム行列](#ID_B-2-1)
         1. [ヒルベルト空間における線形多様体への直交写像と最小ノルム点](#ID_B-2-2)
         1. [ヒルベルト空間における等式線形制約条件下での線形方程式の解集合と線形多様体への射影](#ID_B-2-3)
-        1. ムーア・ペンローズの一般逆写像
-        1. ムーア・ペンローズの一般逆写像の特異値分解表現
-            1. 【補足】特異値分解
 1. スペクトル理論への応用
     1. レゾルベント集合
     1. コンパクト作用素のスペクトル理論
@@ -1392,6 +1392,30 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     ![image](https://user-images.githubusercontent.com/25688193/45019711-fa2a5b00-b067-11e8-8477-bd6f4156615c.png)<br>
 
 
+<a id="ID_A-3"></a>
+
+### ◎ ムーア・ペンローズの一般化逆写像
+![image](https://user-images.githubusercontent.com/25688193/45507532-52323180-b7cd-11e8-910b-1898876cf70d.png)<br>
+- （証明）<br>
+    > 記載中...
+
+- 【参考】<br>
+    - [【解説】 一般逆行列](https://www.slideshare.net/wosugi/ss-79624897)<br>
+    - [ヒルベルト空間における凸射影定理と直交射影定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%87%B8%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86%E3%81%A8%E7%9B%B4%E4%BA%A4%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86)<br>
+    - [ヒルベルト空間における線形多様体への直交射影と正規方程式](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E7%B7%9A%E5%BD%A2%E5%A4%9A%E6%A7%98%E4%BD%93%E3%81%B8%E3%81%AE%E7%9B%B4%E4%BA%A4%E5%B0%84%E5%BD%B1%E3%81%A8%E6%AD%A3%E8%A6%8F%E6%96%B9%E7%A8%8B%E5%BC%8F)<br>
+
+
+<a id="ID_A-3-1"></a>
+
+#### ☆ ムーア・ペンローズの一般化逆写像の特異値分解表現
+> 記載中...
+
+
+##### 【補足】特異値分解
+> 記載中...
+
+
+
 <a id="ID_B"></a>
 
 ## ■ 射影定理とその応用
@@ -1553,6 +1577,14 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ![image](https://user-images.githubusercontent.com/25688193/45441056-07df8080-b6f9-11e8-85b7-1b06c49b6fd7.png)<br>
 - （証明略）<br>
 	３次元空間においては、図より自明に、正規方程式 ![image](https://user-images.githubusercontent.com/25688193/45441241-85a38c00-b6f9-11e8-93ec-f33c46761031.png) の解は、![image](https://user-images.githubusercontent.com/25688193/45441297-a23fc400-b6f9-11e8-87a0-421ba3b745e4.png) であるので、成り立つ。<br>
+
+<br>
+
+- （例）最小分散不偏推定法、カルマンフィルター<br>
+    大雑把には、平均的に真の値を予想できる量（＝不偏推定量）を扱う系のうち、<br>
+    特に未知変数 ![image](https://user-images.githubusercontent.com/25688193/45505548-cd90e480-b7c7-11e8-862d-64ce816f3970.png) の線形結合で表すような不偏推定量 ![image](https://user-images.githubusercontent.com/25688193/45505592-eef1d080-b7c7-11e8-9657-41bef7312bfc.png) を考える。<br>
+    > 記載中...
+
 
 
 
