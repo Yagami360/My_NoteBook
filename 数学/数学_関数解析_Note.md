@@ -20,7 +20,7 @@
     1. [距離空間における収束、極限とコーシー列（基本列）](#ID_4-2)
     1. [完備距離空間](#ID_4-3)
         1. [完備距離空間の例](#ID_4-3-1)
-        1. 開集合、閉集合
+        1. 【補足】開集合、閉集合
         1. [写像の連続性](#ID_4-3-3)
         1. [コンパクト集合](#ID_4-3-4)
         1. [縮小写像の不動点定理](#ID_4-3-5)
@@ -33,7 +33,8 @@
     1. [ノルム空間における写像の連続性](#ID_5-4)
     1. [ノルムの等価性](#ID_5-5)
     1. [ノルム空間における閉部分空間、線形多様体、閉凸集合](#ID_5-6)
-    1. ノルム空間上での微分
+    1. [ノルム空間上での写像の微分](#ID_5-7)
+        1. [ノルム空間上でのガトー微分とフレッシェ微分](#ID_5-7-1)
 1. [内積空間](#ID_6)
     1. [内積空間におけるベクトルの直交性](#ID_6-1)
     1. [内積空間の性質と内積から誘導されるノルム](#ID_6-2)
@@ -737,6 +738,37 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 > → 線形多様体はアフィン空間のことであり、アフィン空間は最も単純な多様体でもあるため、線形多様体ともいう。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44922224-c5748600-ad7f-11e8-80c4-2660fef723d5.png)<br>
+
+
+<a id="ID_5-7"></a>
+
+### ◎ ノルム空間上での写像の微分
+ここまで、特に無限次元の空間中の点列の収束・極限を考えてきたが、<br>
+この収束・極限の概念の延長線上にある微分の概念を、ノルム空間上の写像に対して適用することを考える。<br>
+
+そのためにまず、１変数の実数値関数の微分の定義を簡単に復習する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45536813-7cbbd300-b83d-11e8-81d5-eb5d32ae9264.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45540933-9dd5f100-b848-11e8-8f35-515acd78d789.png)<br>
+- （証明略）図より自明<br>
+
+
+<a id="ID_5-7-1"></a>
+
+#### ☆ ノルム空間上でのガトー微分とフレッシェ微分
+先に見てきた「１変数の実数値関数の微分」は、「多変数の実数値関数の微分」 に一般化出来る。<br>
+更に、通常微分の概念を方向に関して一般化したものとして、「ノルム空間上に定義された写像の微分（ガトー微分、フレッシェ微分）」を見ていく。<br>
+
+これらの概念は、最適化問題や変分法に関する議論を行う際に、都合の良い概念になっており、先に見た、「【性質】（１変数の実数値関数の）微分係数の線形近似による特徴づけ」 と基本的な考えは変わらない。<br>
+
+まず、これらの議論に便利な記法（ランダウの記法）から導入する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45551603-70e60600-b869-11e8-8f38-7547b1897ea1.png)<br>
+
+
+> 記載中...
+
 
 
 <a id="ID_6"></a>
@@ -1601,5 +1633,8 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 - 関数解析 共立数学講座 (15)<br>
     - [amazon で詳細を見る](https://www.amazon.co.jp/%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90-%E5%85%B1%E7%AB%8B%E6%95%B0%E5%AD%A6%E8%AC%9B%E5%BA%A7-15-%E9%BB%92%E7%94%B0-%E6%88%90%E4%BF%8A/dp/4320011066?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4320011066)<br>
 
+- 新版 応用のための関数解析―その考え方と技法 (SGC BOOKS)<br>
+    - [amazon で詳細を見る](https://www.amazon.co.jp/%E6%96%B0%E7%89%88-%E5%BF%9C%E7%94%A8%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90%E2%80%95%E3%81%9D%E3%81%AE%E8%80%83%E3%81%88%E6%96%B9%E3%81%A8%E6%8A%80%E6%B3%95-SGC-BOOKS-%E5%90%89%E7%94%B0/dp/4781911463?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4781911463)<br>
+
 - カーネル法入門―正定値カーネルによるデータ解析 (シリーズ 多変量データの統計科学)<br>
-    - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95%E5%85%A5%E9%96%80%E2%80%95%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%A4%9A%E5%A4%89%E9%87%8F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%B5%B1%E8%A8%88%E7%A7%91%E5%AD%A6-%E7%A6%8F%E6%B0%B4-%E5%81%A5%E6%AC%A1/dp/4254128088?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4254128088)
+    - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95%E5%85%A5%E9%96%80%E2%80%95%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%A4%9A%E5%A4%89%E9%87%8F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%B5%B1%E8%A8%88%E7%A7%91%E5%AD%A6-%E7%A6%8F%E6%B0%B4-%E5%81%A5%E6%AC%A1/dp/4254128088?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4254128088)<br>
