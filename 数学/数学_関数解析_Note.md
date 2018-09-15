@@ -784,15 +784,34 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 #### ☆ フレッシェ微分
 ![image](https://user-images.githubusercontent.com/25688193/45585204-b19e5780-b91b-11e8-95bf-11f33eb74fb9.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/45585357-fd520080-b91d-11e8-8dce-cffeb33fa026.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45588277-2ccc3180-b94d-11e8-803f-c6f5da3c2e4a.png)<br>
 
 
 <a id="ID_5-7-3"></a>
 
 #### ☆ ガトー微分とフレッシェ微分の性質
 ![image](https://user-images.githubusercontent.com/25688193/45585321-7e5cc800-b91d-11e8-8425-50a3eaf529ed.png)<br>
+- （証明略）<br>
 
-> 記載中...
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45588220-5042ac80-b94c-11e8-8e88-9a4ff7bc6160.png)<br>
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45588387-0b6c4500-b94f-11e8-9d7d-afcb1d505c72.png)<br>
+- （証明）<br>
+    - (a) の証明<br>
+        フレッシェ微分の定義<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45588507-d234d480-b950-11e8-9a73-6440c4813d3b.png)<br>
+        を書き換えると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45588511-e1b41d80-b950-11e8-92e6-86665ceaaf65.png)<br>
+        となるようなある有界線形写像 ![image](https://user-images.githubusercontent.com/25688193/45588531-28a21300-b951-11e8-91fa-67e27b3862ed.png) が存在し、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45588581-e3caac00-b951-11e8-855e-0b4a0b327243.png)<br>
+        となるので、<br>
+
+    > 記載中...
 
 
 <a id="ID_6"></a>
