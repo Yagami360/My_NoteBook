@@ -771,8 +771,8 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_5-7-1"></a>
 
 #### ☆ ガトー微分
-![image](https://user-images.githubusercontent.com/25688193/45572327-ed95d600-b8a3-11e8-8692-26cd6a914140.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/45572407-25048280-b8a4-11e8-8b10-3ffdbc4b6ca4.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45585175-448ac200-b91b-11e8-9be9-23aaa99584c5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45585145-b1ea2300-b91a-11e8-915f-8b30673b7252.png)<br>
 
 - 【参考】<br>
     - [ガトー微分とフレッシェ微分：方向微分と勾配の一般化 - 初級Mathマニアの寝言](http://ogyahogya.hatenablog.com/entry/2018/08/29/%E3%82%AC%E3%83%88%E3%83%BC%E5%BE%AE%E5%88%86%E3%81%A8%E3%83%95%E3%83%AC%E3%83%83%E3%82%B7%E3%82%A7%E5%BE%AE%E5%88%86%EF%BC%9A%E6%96%B9%E5%90%91%E5%BE%AE%E5%88%86%E3%81%A8%E5%8B%BE%E9%85%8D%E3%81%AE)<br>
@@ -783,8 +783,16 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_5-7-2"></a>
 
 #### ☆ フレッシェ微分
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/45585204-b19e5780-b91b-11e8-95bf-11f33eb74fb9.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45585220-e9a59a80-b91b-11e8-8ee8-87ae4300958a.png)<br>
 
+
+<a id="ID_5-7-3"></a>
+
+#### ☆ ガトー微分とフレッシェ微分の性質
+![image](https://user-images.githubusercontent.com/25688193/45584923-ce845c00-b916-11e8-9455-69286a35fd3d.png)<br>
+
+> 記載中...
 
 
 <a id="ID_6"></a>
