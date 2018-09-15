@@ -36,7 +36,8 @@
     1. [ノルム空間上での写像の微分（ガトー微分とフレッシェ微分）](#ID_5-7)
         1. [ガトー微分](#ID_5-7-1)
         1. [フレッシェ微分](#ID_5-7-2)
-        1. ガトー微分とフレッシェ微分の性質
+        1. [ガトー微分とフレッシェ微分の性質](#ID_5-7-3)
+        1. [ガトー微分とフレッシェ微分の例](#ID_5-7-4)
 1. [内積空間](#ID_6)
     1. [内積空間におけるベクトルの直交性](#ID_6-1)
     1. [内積空間の性質と内積から誘導されるノルム](#ID_6-2)
@@ -713,7 +714,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
         ![image](https://user-images.githubusercontent.com/25688193/44900850-b02c3700-ad40-11e8-9c93-f7fda511faa4.png)<br>
         ![image](https://user-images.githubusercontent.com/25688193/44900866-c33f0700-ad40-11e8-92ec-e41b02748f3b.png)<br>
         を定義すると、<br>
-        この ![image](https://user-images.githubusercontent.com/25688193/44900904-e23d9900-ad40-11e8-8fa0-4e2b9f6555e3.png) は、R^N  の有限閉集合なので、先のハイネ・ボネルの被覆定理より、コンパクト集合となり、<br>
+        この ![image](https://user-images.githubusercontent.com/25688193/44900904-e23d9900-ad40-11e8-8fa0-4e2b9f6555e3.png) は、![image](https://user-images.githubusercontent.com/25688193/44906024-cfca5c00-ad4e-11e8-827e-f65bd7830e69.png) の有限閉集合なので、先のハイネ・ボネルの被覆定理より、コンパクト集合となり、<br>
         更に、先の最大値・最小値の定理より、関数 ![image](https://user-images.githubusercontent.com/25688193/44900946-04cfb200-ad41-11e8-82ef-6d43cebbfa13.png) は、![image](https://user-images.githubusercontent.com/25688193/44901115-77d92880-ad41-11e8-9aaf-b6c31115b031.png) で ![image](https://user-images.githubusercontent.com/25688193/44900904-e23d9900-ad40-11e8-8fa0-4e2b9f6555e3.png) 内の最小値を持つことが保証されている。<br>
         従って、<br>
         ![image](https://user-images.githubusercontent.com/25688193/44901915-950ef680-ad43-11e8-9101-74df09ff5c50.png)<br>
@@ -771,7 +772,7 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <a id="ID_5-7-1"></a>
 
 #### ☆ ガトー微分
-![image](https://user-images.githubusercontent.com/25688193/45585175-448ac200-b91b-11e8-9be9-23aaa99584c5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45589310-4f1a7b00-b95e-11e8-93cb-14c0f7e4ba48.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/45585306-3342b500-b91d-11e8-9a3f-e284ee7dd92b.png)<br>
 
 - 【参考】<br>
@@ -810,8 +811,37 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
         となるようなある有界線形写像 ![image](https://user-images.githubusercontent.com/25688193/45588531-28a21300-b951-11e8-91fa-67e27b3862ed.png) が存在し、<br>
         ![image](https://user-images.githubusercontent.com/25688193/45588581-e3caac00-b951-11e8-855e-0b4a0b327243.png)<br>
         となるので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45589232-45444800-b95d-11e8-9fcf-56d3bc25767c.png)<br>
+        写像の連続性の条件（写像先での収束 ![image](https://user-images.githubusercontent.com/25688193/45589155-ec27e480-b95b-11e8-873c-c617f5b3f61b.png) ）を満たすので、<br>
+        写像 Φ は連続である。<br>
+        <br>
+    - (b) の証明<br>
+        点 ![image](https://user-images.githubusercontent.com/25688193/45589397-ed5b1080-b95f-11e8-882d-b0234a7156cf.png) における写像 Φ のフレッシェ微分 ![image](https://user-images.githubusercontent.com/25688193/45589407-006de080-b960-11e8-8e50-bc548bed3074.png) を用いると、<br>
+        任意の![image](https://user-images.githubusercontent.com/25688193/45589415-1aa7be80-b960-11e8-8c33-fffa7de12499.png) と ![image](https://user-images.githubusercontent.com/25688193/45589422-2abf9e00-b960-11e8-9769-76ec2d0e0dfd.png) に対して、<br>
+        ガトー微分の定義<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45589429-3dd26e00-b960-11e8-939f-bdaa734f736a.png)<br>
+        の左辺の lim の中身は、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45589434-55a9f200-b960-11e8-8579-c090cb890240.png)<br>
+        となり、ガトー微分の条件<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45589441-812cdc80-b960-11e8-94bc-1186d5a2b02a.png)<br>
+        が成り立つので、フレッシェ微分 ![image](https://user-images.githubusercontent.com/25688193/45589449-9570d980-b960-11e8-8e04-c464d1e00f31.png) は、ガトー微分にもなる。<br>
 
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45590250-b1c84280-b96f-11e8-8b5b-64c2d8cd0580.png)
+
+>【メモ】<br>
+> ノルム空間 Y が内積空間である必要性は？<br>
+> → 一般化された平均値の定理の写像先の対象空間が内積空間であるため。<br>
+
+- （証明）<br>
     > 記載中...
+
+
+<a id="ID_5-7-4"></a>
+
+#### ☆ ガトー微分とフレッシェ微分の例
+> 記載中...
 
 
 <a id="ID_6"></a>
