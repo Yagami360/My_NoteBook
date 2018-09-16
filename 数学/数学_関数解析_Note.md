@@ -835,7 +835,22 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 > → 一般化された平均値の定理の写像先の対象空間が内積空間であるため。<br>
 
 - （証明）<br>
-    > 記載中...
+    D は開集合で、ガトー導関数 Φ′ は連続なので、<br>
+    任意の ε>0 に対して、十分小さな開球<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45595059-bf69e080-b9e0-11e8-8328-6795aab264ed.png)<br>
+    が存在して、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45595084-31dac080-b9e1-11e8-9a87-c46101682378.png)<br>
+	となる。（下図参照）
+    ![image](https://user-images.githubusercontent.com/25688193/45594989-38683880-b9df-11e8-8c0a-6700a7be7cea.png)<br>
+    又、任意の ![image](https://user-images.githubusercontent.com/25688193/45596817-04037500-b9fd-11e8-9589-7be1f35b7f75.png) に対して、一般化された平均値の定理の関係（計算略）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45596821-18e00880-b9fd-11e8-8cb9-967937732afa.png)<br>
+    が適用出来るので、この式を変形すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45596829-2ac1ab80-b9fd-11e8-8044-582ef3a878be.png)<br>
+    従って、先の ![image](https://user-images.githubusercontent.com/25688193/45596845-73796480-b9fd-11e8-8c3a-6f2d39a20214.png) の関係と合わせると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45596848-85f39e00-b9fd-11e8-9502-8a4ea2d38045.png)<br>
+    ガトー微分 ![image](https://user-images.githubusercontent.com/25688193/45596914-bab42500-b9fe-11e8-90f0-69e9e6e89458.png) は、フレッシェ微分の条件<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45596935-0961bf00-b9ff-11e8-8a07-a8624ca69c60.png)<br>
+    も満たすことになり、この場合、ガトー微分はフレッシェ微分でもある。<br>
 
 
 <a id="ID_5-7-4"></a>
