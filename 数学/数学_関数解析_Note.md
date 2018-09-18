@@ -1554,23 +1554,36 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 更に、ノルム空間の共役空間の定義（＝ノルム空間 ![image](https://user-images.githubusercontent.com/25688193/45669330-b1d86600-bb5a-11e8-9b92-30084b14b90c.png) 上に定義された有界線形汎関数全体からなるバナッハ空間 B(X,R) が X の共役空間）より、
 このバナッハ空間 ![image](https://user-images.githubusercontent.com/25688193/45669085-d718a480-bb59-11e8-995a-86638aa464e9.png) は、X の共役空間となる。<br>
 
-- 【参考】<br>
-    - [ノルム空間における有界線形汎関数](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E6%B1%8E%E9%96%A2%E6%95%B0)<br>
-    - [ノルム空間における作用素ノルム](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%83%8E%E3%83%AB%E3%83%A0)<br>
-    - [有界線形写像全体の集合が作るバナッハ空間と共役空間](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E5%86%99%E5%83%8F%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88%E3%81%8C%E4%BD%9C%E3%82%8B%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E7%A9%BA%E9%96%93%E3%81%A8%E5%85%B1%E5%BD%B9%E7%A9%BA%E9%96%93)<br>
+<br>
 
 ここで、リースの表現定理を導入するための前段階として、ノルム空間の有界線形汎関数全体が作る共役空間に関しての以下のような補題を導く。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/45673325-624b6780-bb65-11e8-9739-0e4edc670c42.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45713119-25b15780-bbc9-11e8-8287-3794d05d26f5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45713160-4083cc00-bbc9-11e8-8120-0e49f8af69bf.png)<br>
 - （証明略）３次元空間においては、図より自明<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/45678026-86f90c80-bb70-11e8-97e7-e951b4b79745.png)<br>
-- （証明略）<br>
+![image](https://user-images.githubusercontent.com/25688193/45712249-c6524800-bbc6-11e8-9d26-22ea9966ae4b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45712656-d74f8900-bbc7-11e8-9ec4-8531451493a1.png)<br>
+- （証明）<br>
+    - (a) は、![image](https://user-images.githubusercontent.com/25688193/45713261-8771c180-bbc9-11e8-9052-bd957c745fff.png) の存在性と一意性を示しているが、まず、![image](https://user-images.githubusercontent.com/25688193/45713261-8771c180-bbc9-11e8-9052-bd957c745fff.png) の存在性について示す。<br>
+        - 写像が零写像で ![image](https://user-images.githubusercontent.com/25688193/45716095-de2ec980-bbd0-11e8-833f-b6bb318604ef.png) の場合<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45713294-9fe1dc00-bbc9-11e8-90fe-a466d0819800.png) の関係より、![image](https://user-images.githubusercontent.com/25688193/45713399-e59ea480-bbc9-11e8-8d58-1de29d8eafd9.png) が自明に存在する。<br>
+        - 写像 ![image](https://user-images.githubusercontent.com/25688193/45716121-f1419980-bbd0-11e8-8f58-5e61423d3101.png) の場合、<br>
+            先の補題（ノルム空間の線形汎関数全体が作る共役空間）より、![image](https://user-images.githubusercontent.com/25688193/45716202-2cdc6380-bbd1-11e8-816a-c59aad931835.png) となる単位ベクトルが存在し、<br>
+            ヒルベルト空間中の任意のベクトル ![image](https://user-images.githubusercontent.com/25688193/45716562-3f0ad180-bbd2-11e8-85a8-4c1bef19e62d.png) は、カーネルへの直交射影 ![image](https://user-images.githubusercontent.com/25688193/45716584-55b12880-bbd2-11e8-8bca-b1165dad1e6d.png) を用いて、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45716717-b04a8480-bbd2-11e8-9291-d8635fceec97.png)<br>
+            と表すことが出来る。<br>
+
+
     > 記載中...
 
 
+- 【参考】<br>
+    - [ノルム空間における有界線形汎関数](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E6%B1%8E%E9%96%A2%E6%95%B0)<br>
+    - [ノルム空間における作用素ノルム](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%83%8E%E3%83%AB%E3%83%A0)<br>
+    - [有界線形写像全体の集合が作るバナッハ空間と共役空間](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E5%86%99%E5%83%8F%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88%E3%81%8C%E4%BD%9C%E3%82%8B%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E7%A9%BA%E9%96%93%E3%81%A8%E5%85%B1%E5%BD%B9%E7%A9%BA%E9%96%93)<br>
 
 
 <a id="ID_B"></a>
