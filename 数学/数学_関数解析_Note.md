@@ -74,6 +74,8 @@
             1. 【補足】特異値分解
     1. [リースの表現定理](#ID_A-4)
         1. 内積空間中の線形汎関数の表現
+    1. ハーン・バナッハの定理
+    1. 有界線形作用素の共役作用素
     1. コンパクト作用素
 1. [射影定理とその応用](#ID_B)
     1. [ヒルベルト空間における凸射影定理と直交射影定理](#ID_B-1)
@@ -1539,8 +1541,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <a id="ID_A-4"></a>
 
 ### ◎ リースの表現定理
-ここでは、まず、ヒルベルト空間上に定義された有界線形汎関数は、内積を使って一意に表現できるというリースの表現定理について見ていく。<br>
-次に、必ずしも完備ではない内積空間上に定義された有界線形汎関数は、コーシー列と内積を用いて具体的に表現できることを見ていく。（この内積空間の共役空間を構築するプロセスは、先の述べた空間の完備化のプロセスの具体的になっている。）<br>
+ここでは、ヒルベルト空間上に定義された有界線形汎関数は、内積を使って一意に表現できるというリースの表現定理について見ていく。<br>
 
 <br>
 
@@ -1617,6 +1618,33 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 
 #### ☆ 内積空間上の線形汎関数の表現
+リースの表現定理で、ヒルベルト空間とその共役空間の関係性は明らかになったが、次に、ヒルベルト空間ではないノルム空間の共役空間の場合にはどのようになるのかを考える。<br>
+
+より詳細には、簡単のためノルム空間を内積空間に限定した上で、<br>
+必ずしも完備ではない内積空間上に定義された有界線形汎関数は、コーシー列と内積を用いて具体的に表現できることを見ていく。<br>
+そして、この内積空間の共役空間を構築するプロセスは、先の述べた空間の完備化のプロセスの具体的になっている。<br>
+
+<br>
+
+以下、内積空間 X は、<br>
+内積として ![image](https://user-images.githubusercontent.com/25688193/45741982-df451280-bc33-11e8-87ab-04cf6b29e0f5.png) が定義されており、<br>
+ノルムとして、内積から誘導されたノルム ![image](https://user-images.githubusercontent.com/25688193/45742016-f257e280-bc33-11e8-8f98-2af0e772bd16.png) が定義されているとする。<br>
+
+任意に選ばれたベクトル ![image](https://user-images.githubusercontent.com/25688193/45749785-c0e91200-bc47-11e8-8c20-a2ed804302ff.png) を用いて、<br>
+ノルム空間 X 上の線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45749806-d3fbe200-bc47-11e8-81e2-fe8fc1bb866b.png) を、![image](https://user-images.githubusercontent.com/25688193/45749845-efff8380-bc47-11e8-987f-7320c470aca9.png) のように定義すると、<br>
+この線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45749874-060d4400-bc48-11e8-8cc7-ba9c2913239f.png) 全体が作る集合は、この内積空間 X の共役空間 ![image](https://user-images.githubusercontent.com/25688193/45749947-3e148700-bc48-11e8-9b25-c3861d662b41.png) となり、![image](https://user-images.githubusercontent.com/25688193/45749974-51bfed80-bc48-11e8-9797-44407ee47f98.png) となる。<br>
+又、作用素ノルムは、<br>
+![image](https://user-images.githubusercontent.com/25688193/45750229-2e497280-bc49-11e8-98ff-a23ed9573da6.png)<br>
+となる。<br>
+更に、内積空間からその共役空間への写像 ![image](https://user-images.githubusercontent.com/25688193/45750625-98aee280-bc4a-11e8-9f7e-d24a57723a58.png) は、![image](https://user-images.githubusercontent.com/25688193/45750656-ad8b7600-bc4a-11e8-8cf2-ce550f34e459.png) を線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45750736-ec213080-bc4a-11e8-95b8-3dde698941fb.png) に対応づける１対１の写像（ ![image](https://user-images.githubusercontent.com/25688193/45750856-4ae6aa00-bc4b-11e8-99ea-669060f24cea.png) ）となっており、<br>
+![image](https://user-images.githubusercontent.com/25688193/45751199-a36a7700-bc4c-11e8-92b4-4aafb5ce41af.png)<br>
+となる。<br>
+
+ここで、ノルム空間 X 上の線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45751960-f47b6a80-bc4e-11e8-947f-04eddfe52005.png) は、![image](https://user-images.githubusercontent.com/25688193/45752000-0e1cb200-bc4f-11e8-83ba-d3f6bb16ee5b.png) のように定義されているので、<br>
+「内積の形で表現可能な有界線形汎関数」となっているが、<br>
+逆に、任意の有界線形汎関数は、ノルム空間 X 上の内積で表現できないか？ということを考える。<br>
+
+
 > 記載中...
 
 
