@@ -73,6 +73,7 @@
         1. [ムーア・ペンローズの一般化逆写像の特異値分解表現](#ID_A-3-1)
             1. 【補足】特異値分解
     1. [リースの表現定理](#ID_A-4)
+        1. 内積空間中の線形汎関数の表現
     1. コンパクト作用素
 1. [射影定理とその応用](#ID_B)
     1. [ヒルベルト空間における凸射影定理と直交射影定理](#ID_B-1)
@@ -1564,8 +1565,8 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/45712249-c6524800-bbc6-11e8-9d26-22ea9966ae4b.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/45712656-d74f8900-bbc7-11e8-9ec4-8531451493a1.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45737382-a05d8f80-bc28-11e8-8e4d-fcc7fe93f3cf.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45734425-781d6300-bc1f-11e8-8202-603d2e2e08de.png)<br>
 - （証明）<br>
     - (a) は、![image](https://user-images.githubusercontent.com/25688193/45713261-8771c180-bbc9-11e8-9052-bd957c745fff.png) の存在性と一意性を示しているが、まず、![image](https://user-images.githubusercontent.com/25688193/45713261-8771c180-bbc9-11e8-9052-bd957c745fff.png) の存在性について示す。<br>
         - 写像が零写像で ![image](https://user-images.githubusercontent.com/25688193/45716095-de2ec980-bbd0-11e8-833f-b6bb318604ef.png) の場合<br>
@@ -1575,15 +1576,48 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
             ヒルベルト空間中の任意のベクトル ![image](https://user-images.githubusercontent.com/25688193/45716562-3f0ad180-bbd2-11e8-85a8-4c1bef19e62d.png) は、カーネルへの直交射影 ![image](https://user-images.githubusercontent.com/25688193/45716584-55b12880-bbd2-11e8-8bca-b1165dad1e6d.png) を用いて、<br>
             ![image](https://user-images.githubusercontent.com/25688193/45716717-b04a8480-bbd2-11e8-9291-d8635fceec97.png)<br>
             と表すことが出来る。<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45733196-cd0aaa80-bc1a-11e8-8612-405ee5608a34.png)<br>
+            と表すことが出来る。<br>
+			従って、このベクトル ![image](https://user-images.githubusercontent.com/25688193/45734444-97b48b80-bc1f-11e8-833e-b8e13f51d944.png) の有界線形汎関数 f:H→R による写像先は、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45735508-10691700-bc23-11e8-8407-ee130a193751.png)<br>
+            となり、![image](https://user-images.githubusercontent.com/25688193/45735543-2bd42200-bc23-11e8-8484-9134b7f9cf24.png) の項が、この定理の条件 ![image](https://user-images.githubusercontent.com/25688193/45735559-3c849800-bc23-11e8-85c1-080b0d0b8265.png) を満たしていることが分かる。<br>
+        - 又、コーシー・シュワルツの不等式より、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45735966-99348280-bc24-11e8-9862-9424d15f1eba.png)<br>
+            従って、有界線形汎関数の作用素ノルムに対して、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45736003-a94c6200-bc24-11e8-82a9-1dde5d3d5957.png)<br>
+            の関係が保証される。<br>
+            更に、自明な関係<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45736396-bd449380-bc25-11e8-9adf-537daa1a029b.png)<br>
+            より、作用素ノルムは、![image](https://user-images.githubusercontent.com/25688193/45736065-d862d380-bc24-11e8-9665-8cf25744a5df.png) となる。<br>
+        <br>
+    - 次に、![image](https://user-images.githubusercontent.com/25688193/45736777-ec0f3980-bc26-11e8-9cb2-9ac137de29c2.png) の一意性について示す。<br>
+        ヒルベルト空間中の２つのベクトル ![image](https://user-images.githubusercontent.com/25688193/45736801-fe897300-bc26-11e8-9ea6-99823fb38d9f.png) に関して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45736835-1cef6e80-bc27-11e8-841a-9ee09cd82c09.png)<br>
+        が成り立つとすれば、<br>
+        任意の ![image](https://user-images.githubusercontent.com/25688193/45736907-532cee00-bc27-11e8-8b8e-ab54642aeae7.png) に対して、![image](https://user-images.githubusercontent.com/25688193/45736957-7788ca80-bc27-11e8-929d-3c0e3023af62.png) となるので、<br>
+        任意の ![image](https://user-images.githubusercontent.com/25688193/45736907-532cee00-bc27-11e8-8b8e-ab54642aeae7.png) のうち、![image](https://user-images.githubusercontent.com/25688193/45736979-8e2f2180-bc27-11e8-83ea-f07e18f3157d.png) を選ぶと、![image](https://user-images.githubusercontent.com/25688193/45737027-b880df00-bc27-11e8-993f-f21b9338f726.png)<br>
+        従って、![image](https://user-images.githubusercontent.com/25688193/45737084-d3535380-bc27-11e8-802b-611595def008.png) でなくてはならず、ただ１つのベクトルが存在することになる。<br>
+        <br>
+    - (b) に関しての証明<br>
+        ヒルベルト空間の共役空間中の任意の有界線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45737757-a738d200-bc29-11e8-8aa4-13c56413f373.png) と ![image](https://user-images.githubusercontent.com/25688193/45737921-0c8cc300-bc2a-11e8-8141-9075023e85c1.png) に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45738010-45c53300-bc2a-11e8-889e-cd0be3247047.png)<br>
+        とおくと、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45738355-25e23f00-bc2b-11e8-80c8-ab8844beba5a.png)<br>
+        の関係より、![image](https://user-images.githubusercontent.com/25688193/45738416-54601a00-bc2b-11e8-9d48-e3e6cc2850aa.png) となるので、<br>
+        この写像 Φ は、線形写像になる。<br>
+        <br>
+        更に、(a) より、この線形写像 Φ は同長写像でもある。<br>
 
-
-    > 記載中...
-
+<br>
 
 - 【参考】<br>
     - [ノルム空間における有界線形汎関数](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E6%B1%8E%E9%96%A2%E6%95%B0)<br>
     - [ノルム空間における作用素ノルム](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%83%8E%E3%83%AB%E3%83%A0)<br>
     - [有界線形写像全体の集合が作るバナッハ空間と共役空間](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E5%86%99%E5%83%8F%E5%85%A8%E4%BD%93%E3%81%AE%E9%9B%86%E5%90%88%E3%81%8C%E4%BD%9C%E3%82%8B%E3%83%90%E3%83%8A%E3%83%83%E3%83%8F%E7%A9%BA%E9%96%93%E3%81%A8%E5%85%B1%E5%BD%B9%E7%A9%BA%E9%96%93)<br>
+
+
+#### ☆ 内積空間上の線形汎関数の表現
+> 記載中...
 
 
 <a id="ID_B"></a>
