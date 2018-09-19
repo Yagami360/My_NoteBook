@@ -1560,7 +1560,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 ここで、リースの表現定理を導入するための前段階として、ノルム空間の有界線形汎関数全体が作る共役空間に関しての以下のような補題を導く。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/45713119-25b15780-bbc9-11e8-8287-3794d05d26f5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45756714-86d63b00-bc5c-11e8-99eb-760b03da9836.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/45713160-4083cc00-bbc9-11e8-8120-0e49f8af69bf.png)<br>
 - （証明略）３次元空間においては、図より自明<br>
 
@@ -1642,10 +1642,17 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 ここで、ノルム空間 X 上の線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45751960-f47b6a80-bc4e-11e8-947f-04eddfe52005.png) は、![image](https://user-images.githubusercontent.com/25688193/45752000-0e1cb200-bc4f-11e8-83ba-d3f6bb16ee5b.png) のように定義されているので、<br>
 「内積の形で表現可能な有界線形汎関数」となっているが、<br>
-逆に、任意の有界線形汎関数は、ノルム空間 X 上の内積で表現できないか？ということを考える。<br>
+逆に、”任意の” 有界線形汎関数は、ノルム空間 X 上の内積で表現できないか？ということを考える。<br>
 
+先のリースの表現定理で述べたように、<br>
+ヒルベルト空間 H の場合には、任意の線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45755350-24c80680-bc59-11e8-9f22-c4c9a9d384d7.png) に対して、![image](https://user-images.githubusercontent.com/25688193/45755652-f7c82380-bc59-11e8-93d7-6fa2787ac03f.png) を満たすベクトル ![image](https://user-images.githubusercontent.com/25688193/45755706-10383e00-bc5a-11e8-9cc2-bb2702c0a49c.png) が存在していた。<br>
+一方、内積空間 X の場合は、内積空間 X 上の全ての有界線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45755769-35c54780-bc5a-11e8-9851-e77923344393.png) が、![image](https://user-images.githubusercontent.com/25688193/45755805-4d043500-bc5a-11e8-89b1-5a214989bf10.png) の形で内積表現できるためには、内積空間が完備（＝即ち、ヒルベルト空間）であることが必要になる。（後述）<br>
 
-> 記載中...
+このことを示すために、まず以下の補題で、必ずしも完備ではない内積空間 X が与えられているときに、内積で表現される有界線形汎関数の全体の集合 ![image](https://user-images.githubusercontent.com/25688193/45756177-31e5f500-bc5b-11e8-8a7c-7c492355f872.png) が、内積空間の共役空間 ![image](https://user-images.githubusercontent.com/25688193/45749947-3e148700-bc48-11e8-9b25-c3861d662b41.png) で稠密になり、内積空間 X 上に定義された任意の有界線形汎関数が、「内積で表現される有界線形汎関数」によって、いくらでも精度よく近似可能になることを示す。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45757490-7757f180-bc5e-11e8-870b-db20c8517475.png)<br>
+- （証明）<br>
+    > 記載中...
 
 
 <a id="ID_B"></a>
