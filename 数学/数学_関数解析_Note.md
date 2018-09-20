@@ -1710,9 +1710,47 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ### ◎ ハーン・バナッハの定理
 関数解析における４つの corner stoens （一様有界性の定理、開写像定理、閉グラフ定理、ハーン・バナッハの定理）の１つであるハーン・バナッハの定理は、他の３つの定理をとは異なり。空間の完備性を必要としない。<br>
 
-この定理は、一般的には。ツォルンの補題を用いて、ノルム空間で議論されるが、ここでは簡単のため、内積空間に限定して議論する。<br>
+この定理は、一般的には。、ツォルンの補題を用いてノルム空間で議論されるが、ここでは簡単のため、内積空間に限定して議論する。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45823961-d8003080-bd29-11e8-8fbf-1912a19c6055.png)<br>
+- （証明）<br>
+    先の定理（内積空間上の線形汎関数の表現と構成）の (a) より、<br>
+    有界線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45832236-4ea62980-bd3c-11e8-8d18-38458aca30b4.png) に対して、内積空間の部分空間 M のコーシー列 ![image](https://user-images.githubusercontent.com/25688193/45832291-77c6ba00-bd3c-11e8-9c5a-4203b1b97c3e.png) が存在し、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45832327-8f05a780-bd3c-11e8-84c0-e18db60316f0.png)<br>
+    のように有界線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45832236-4ea62980-bd3c-11e8-8d18-38458aca30b4.png) が表現出来る。<br>
+    <br>
+    逆に、部分空間 M のコーシー列 ![image](https://user-images.githubusercontent.com/25688193/45832291-77c6ba00-bd3c-11e8-9c5a-4203b1b97c3e.png) は、元の内積空間 X のコーシー列でもあるので、<br>
+    先の定理（内積空間上の線形汎関数の表現と構成）の (b) より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45832499-02a7b480-bd3d-11e8-9d62-53900c365301.png)<br>
+    によって、有界線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45832474-ef94e480-bd3c-11e8-9ea5-905e6a1e3974.png) を定義することが出来る。<br>
+    <br>
+    従って、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45832573-371b7080-bd3d-11e8-9614-c568eeeed236.png)<br>
+    となり、この定理の１つ目の式 ![image](https://user-images.githubusercontent.com/25688193/45832588-47335000-bd3d-11e8-9bcc-69fb29a2bfa4.png) は満たされることが分かる。<br>
+    <br>
+    更に、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45832786-d3457780-bd3d-11e8-885f-f16520538f41.png)<br>
+    の関係より、この定理の２つ目の式（＝作用素ノルムが等しい）も満たされることが分かる。<br>
+
+
+<a id="ID_A-7"></a>
+
+### ◎ 有界線形作用素の共役作用素
+![image](https://user-images.githubusercontent.com/25688193/45834616-9334c380-bd42-11e8-9a13-cc781513ba6a.png)<br>
+
+※ リースの表現定理は、ヒルベルト空間に対しての定理なので、厳密には、この内積空間上での共役作用素の定義に対しては、一意性を示せない。（ヒルベルト空間上の共役作用素に対しては、リースの表現定理で共役作用素の一意性を示せる）<br>
+
+この内積空間での一意性を示すための証明は以下の通り。<br>
+
+共役作用素 B の他に、<br>
+![image](https://user-images.githubusercontent.com/25688193/45835341-c5dfbb80-bd44-11e8-800d-bf8211af9a68.png)<br>
+を満たすような写像 C が存在したとすると、<br>
+![image](https://user-images.githubusercontent.com/25688193/45835363-dabc4f00-bd44-11e8-9088-4620d5286316.png)<br>
+従って、共役作用素 B はただ１つのみ存在することが分かる。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45836368-9c745f00-bd47-11e8-8aa4-a4579ef1d0ad.png)<br>
 - （証明）<br>
     > 記載中...
 
