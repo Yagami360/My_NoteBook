@@ -1568,6 +1568,12 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 ![image](https://user-images.githubusercontent.com/25688193/45737382-a05d8f80-bc28-11e8-8e4d-fcc7fe93f3cf.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/45734425-781d6300-bc1f-11e8-8202-603d2e2e08de.png)<br>
+
+<!--
+> 【メモ】<br>
+> 簡単言えば、このリースの表現定理は、射影定理によって直交補空間から非零元を取ってきて、それをグラムシュミットの方法で正規直交化している流れになっている？<br>
+-->
+
 - （証明）<br>
     - (a) は、![image](https://user-images.githubusercontent.com/25688193/45713261-8771c180-bbc9-11e8-9052-bd957c745fff.png) の存在性と一意性を示しているが、まず、![image](https://user-images.githubusercontent.com/25688193/45713261-8771c180-bbc9-11e8-9052-bd957c745fff.png) の存在性について示す。<br>
         - 写像が零写像で ![image](https://user-images.githubusercontent.com/25688193/45716095-de2ec980-bbd0-11e8-833f-b6bb318604ef.png) の場合<br>
@@ -1648,11 +1654,40 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ヒルベルト空間 H の場合には、任意の線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45755350-24c80680-bc59-11e8-9f22-c4c9a9d384d7.png) に対して、![image](https://user-images.githubusercontent.com/25688193/45755652-f7c82380-bc59-11e8-93d7-6fa2787ac03f.png) を満たすベクトル ![image](https://user-images.githubusercontent.com/25688193/45755706-10383e00-bc5a-11e8-9cc2-bb2702c0a49c.png) が存在していた。<br>
 一方、内積空間 X の場合は、内積空間 X 上の全ての有界線形汎関数 ![image](https://user-images.githubusercontent.com/25688193/45755769-35c54780-bc5a-11e8-9851-e77923344393.png) が、![image](https://user-images.githubusercontent.com/25688193/45755805-4d043500-bc5a-11e8-89b1-5a214989bf10.png) の形で内積表現できるためには、内積空間が完備（＝即ち、ヒルベルト空間）であることが必要になる。（後述）<br>
 
-このことを示すために、まず以下の補題で、必ずしも完備ではない内積空間 X が与えられているときに、内積で表現される有界線形汎関数の全体の集合 ![image](https://user-images.githubusercontent.com/25688193/45756177-31e5f500-bc5b-11e8-8a7c-7c492355f872.png) が、内積空間の共役空間 ![image](https://user-images.githubusercontent.com/25688193/45749947-3e148700-bc48-11e8-9b25-c3861d662b41.png) で稠密になり、内積空間 X 上に定義された任意の有界線形汎関数が、「内積で表現される有界線形汎関数」によって、いくらでも精度よく近似可能になることを示す。<br>
+このことを示すために、まず以下の補題で、必ずしも完備ではない内積空間 X が与えられているときに、内積で表現される有界線形汎関数の全体の集合 ![image](https://user-images.githubusercontent.com/25688193/45756177-31e5f500-bc5b-11e8-8a7c-7c492355f872.png) が、内積空間の共役空間 ![image](https://user-images.githubusercontent.com/25688193/45749947-3e148700-bc48-11e8-9b25-c3861d662b41.png) で稠密になり、内積空間 X 上に定義された任意の有界線形汎関数（の作用素ノルム）が、「内積で表現される有界線形汎関数（の作用素ノルム）」によって、いくらでも精度よく近似可能になることを示す。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/45757490-7757f180-bc5e-11e8-870b-db20c8517475.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45804003-eb91a400-bcf5-11e8-90d1-a10f356ec846.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45799647-30630e00-bce9-11e8-911a-b422c9d7c710.png)<br>
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45804177-5a6efd00-bcf6-11e8-8613-020a4e041674.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45800043-90a67f80-bcea-11e8-8a57-dfd11b88c7ad.png)<br>
 - （証明）<br>
+    - (a) の証明<br>
+        有界線形汎関数 f の作用素ノルムは、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45803363-68238300-bcf4-11e8-89af-ad5818bcea75.png)<br>
+        のように上限 sup の形で書けるので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45803548-da946300-bcf4-11e8-8d5b-c9777e230c3e.png)<br>
+        となる点列 ![image](https://user-images.githubusercontent.com/25688193/45803584-f13aba00-bcf4-11e8-83e9-2596a8458d73.png) が存在する。<br>
+        <br>
+    - (b) の証明<br>
+        (a) の ![image](https://user-images.githubusercontent.com/25688193/45804722-d584e300-bcf7-11e8-9748-87fe7049b6c0.png) の関係より、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45804770-f9e0bf80-bcf7-11e8-99ae-62ba72ce1398.png)<br>
+        従って、任意の ε>0 に対して、十分大きな正数 N が存在して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45804836-2a285e00-bcf8-11e8-9b53-e74e4156b582.png)<br>
+        となるので、先の補題（内積で表現される有界線形汎関数の作用素ノルムの誤差評価）より、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45804885-55ab4880-bcf8-11e8-9bcc-7e118192c013.png)<br>
+        即ち、定理にある<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45804905-66f45500-bcf8-11e8-8774-1715ae2e189c.png)<br>
+        の関係が成り立つことが分かる。<br>
+        このことは、内積で表現される有界線形汎関数全体の集合 J(X)  が稠密であることを示している。<br>
+
     > 記載中...
+
+<br>
+
 
 
 <a id="ID_B"></a>
@@ -1665,6 +1700,12 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 これは例えば、フーリエ級数展開が、正規直交系が張る閉部分集合への直交射影の単純な表現を与えていることや、最小２乗推定や一般逆写像やカルマンフィルタの基本的なアイデアも、直交射影定理の応用の１つとなっている。<br>
 
 又、凸射影定理は、直交射影定理を拡張して得られる非線形版であるが、凸最適化問題の基礎となっている。<br>
+
+<!--
+> 【メモ】<br>
+> 射影定理は「平面への射影成分と直交成分にへ分解すること」。解析とは分解することである。<br>
+> 射影定理は完備性（点列コンパクト性）と同義でもある。平面で切って切って切りまくっていく先に収束していく。解析＝分解＝射影定理＝点列完閉性。<br>
+-->
 
 <a id="ID_B-1"></a>
 
