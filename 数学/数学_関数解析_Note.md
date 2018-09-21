@@ -1950,9 +1950,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <a id="ID_A-7-1"></a>
 
 #### ☆ 共役作用素の行列表現（表現行列）
-２つの有限次元空間の間の線形作用素と共役作用素の行列表現（表現行列）を考える。<br>
-
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/45894398-29332180-be09-11e8-9841-d2a9cdedea9a.png)<br>
 
 
 <a id="ID_A-8"></a>
