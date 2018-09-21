@@ -60,6 +60,16 @@
     1. [可分なヒルベルト空間と完全正規直交系](#ID_8-6)
         1. [ヒルベルト空間における完全正規直交系の例](#ID_8-6-1)
     1. [ヒルベルト空間における強収束と弱収束](#ID_8-7)
+1. [ヒルベルト空間と射影定理](#ID_B)
+    1. [ヒルベルト空間における凸射影定理と直交射影定理](#ID_B-1)
+        1. [ヒルベルト空間における凸射影の非拡大性](#ID_B-1-1)
+        1. [ヒルベルト空間における直交分解](#ID_B-1-2)
+        1. [ヒルベルト空間の閉部分空間への直交射影の線形性・冪等性・自己共役性](#ID_B-1-3)
+        1. [ヒルベルト空間における和空間への直交射影](#ID_B-1-4)
+    1. [ヒルベルト空間における線形多様体への直交射影と正規方程式](#ID_B-2)
+        1. [ヒルベルト空間における直交射影と正規方程式・グラム行列](#ID_B-2-1)
+        1. [ヒルベルト空間における線形多様体への直交写像と最小ノルム点](#ID_B-2-2)
+        1. [ヒルベルト空間における等式線形制約条件下での線形方程式の解集合と線形多様体への射影](#ID_B-2-3)
 1. [作用素](#ID_A)
     1. 線形作用素
     1. [ノルム空間における有界線形作用素](#ID_A-2)
@@ -75,18 +85,9 @@
     1. [リースの表現定理](#ID_A-4)
     1. [内積空間中の線形汎関数の表現](#ID_A-5)
     1. [ハーン・バナッハの定理](#ID_A-6)
-    1. 有界線形作用素の共役作用素
+    1. [有界線形作用素の共役作用素](#ID_A-7)
+        1. [自己共役作用素](#ID_A-7-1)
     1. コンパクト作用素
-1. [射影定理とその応用](#ID_B)
-    1. [ヒルベルト空間における凸射影定理と直交射影定理](#ID_B-1)
-        1. [ヒルベルト空間における凸射影の非拡大性](#ID_B-1-1)
-        1. [ヒルベルト空間における直交分解](#ID_B-1-2)
-        1. [ヒルベルト空間の閉部分空間への直交射影の線形性・冪等性・自己共役性](#ID_B-1-3)
-        1. [ヒルベルト空間における和空間への直交射影](#ID_B-1-4)
-    1. [ヒルベルト空間における線形多様体への直交射影と正規方程式](#ID_B-2)
-        1. [ヒルベルト空間における直交射影と正規方程式・グラム行列](#ID_B-2-1)
-        1. [ヒルベルト空間における線形多様体への直交写像と最小ノルム点](#ID_B-2-2)
-        1. [ヒルベルト空間における等式線形制約条件下での線形方程式の解集合と線形多様体への射影](#ID_B-2-3)
 1. スペクトル理論への応用
     1. レゾルベント集合
     1. コンパクト作用素のスペクトル理論
@@ -1392,6 +1393,182 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
     - [弱位相 | Wikipedia](https://ja.wikipedia.org/wiki/%E5%BC%B1%E4%BD%8D%E7%9B%B8)
 
 
+<a id="ID_B"></a>
+
+## ■ ヒルベルト空間と射影定理
+関数解析の最も広く応用展開されるているものの１つとして、ヒルベルト空間における直交射影定理というものが存在する。この直交射影定理は、ピタゴラスの定理の高次元版であり、ユークリッド空間における幾何学的な直感が、高次元空間でも通用することを示している。<br>
+
+更に、直交射影定理は、最も基本的な最適化原理になっており、
+対象となるヒルベルト空間や閉部分集合をうまく設定することにより、多くの応用が可能となる。<br>
+これは例えば、フーリエ級数展開が、正規直交系が張る閉部分集合への直交射影の単純な表現を与えていることや、最小２乗推定や一般逆写像やカルマンフィルタの基本的なアイデアも、直交射影定理の応用の１つとなっている。<br>
+
+又、凸射影定理は、直交射影定理を拡張して得られる非線形版であるが、凸最適化問題の基礎となっている。<br>
+
+<!--
+> 【メモ】<br>
+> 射影定理は「平面への射影成分と直交成分にへ分解すること」。解析とは分解することである。<br>
+> 射影定理は完備性（点列コンパクト性）と同義でもある。平面で切って切って切りまくっていく先に収束していく。解析＝分解＝射影定理＝点列完閉性。<br>
+-->
+
+<a id="ID_B-1"></a>
+
+### ◎ ヒルベルト空間における凸射影定理と直交射影定理
+![image](https://user-images.githubusercontent.com/25688193/45264455-a78ddc00-b477-11e8-8c97-5311a8adfb66.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45264645-cc378300-b47a-11e8-9f5e-480c549c5173.png)<br>
+
+
+<a id="ID_B-1-1"></a>
+
+#### ☆ ヒルベルト空間における凸射影の非拡大性
+![image](https://user-images.githubusercontent.com/25688193/45267002-66a9bd80-b49f-11e8-91ce-8f078411836f.png)<br>
+
+以下の定理は、凸射影が非拡大写像の一例になっていることを示している。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45278610-e0c25c80-b508-11e8-85a3-0c28538550d4.png)<br>
+
+- （証明略）(3) に関しては、図より自明<br>
+
+- 参考<br>
+    - [縮小写像](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E7%B8%AE%E5%B0%8F%E5%86%99%E5%83%8F%E3%81%AE%E4%B8%8D%E5%8B%95%E7%82%B9%E5%AE%9A%E7%90%86)<br>
+
+
+<a id="ID_B-1-2"></a>
+
+#### ☆ ヒルベルト空間における直交分解
+![image](https://user-images.githubusercontent.com/25688193/45293044-03b53680-b532-11e8-8fa4-50285f17059c.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45293072-1465ac80-b532-11e8-94b6-23cc5a039979.png)<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45293239-876f2300-b532-11e8-8fc7-501c438abe1c.png)<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
+
+
+<a id="ID_B-1-3"></a>
+
+#### ☆ ヒルベルト空間の閉部分空間への直交射影の線形性・冪等性・自己共役性
+![image](https://user-images.githubusercontent.com/25688193/45298996-21d86200-b545-11e8-8113-6a420f7be1cc.png)<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45299702-5baa6800-b547-11e8-8428-fce63d1314de.png)<br>
+- （証明）<br>
+    - 直交分解の定理より、直交写像 ![image](https://user-images.githubusercontent.com/25688193/45300772-38cd8300-b54a-11e8-97fc-13546c7bce2b.png) に関して、任意のベクトル ![image](https://user-images.githubusercontent.com/25688193/45300804-4d118000-b54a-11e8-85ff-f1def170b5f6.png) は、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45300858-6fa39900-b54a-11e8-84d4-52cec0876a4e.png)<br>
+        のように、一意に分解出来る。<br>
+        これを利用すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45300906-8fd35800-b54a-11e8-9fcc-3a9bc667da54.png)<br>
+    - 更に、任意の ![image](https://user-images.githubusercontent.com/25688193/45301084-1c7e1600-b54b-11e8-84d9-5498a12d214b.png) に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45301279-94e4d700-b54b-11e8-9de2-97404cfd70bf.png) となるので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45301328-b5149600-b54b-11e8-8392-0fab15e6894c.png)<br>
+        となり、この定理は成り立つ。<br>
+
+- 【参考】<br>
+    - [ノルム空間における有界線形作用素](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E4%BD%9C%E7%94%A8%E7%B4%A0)<br>
+    - [ノルム空間における作用素ノルム](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%83%8E%E3%83%AB%E3%83%A0)
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45302140-7f70ac80-b54d-11e8-98eb-fa2c1aa68ce8.png)<br>
+
+- 【参考】<br>
+    - [自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E8%87%AA%E5%B7%B1%E5%85%B1%E5%BD%B9%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%81%A8%E6%9C%89%E7%95%8C%E6%80%A7%E9%96%89%E3%82%B0%E3%83%A9%E3%83%95%E5%AE%9A%E7%90%86%E3%81%AE%E5%BF%9C%E7%94%A8)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45305156-ad0d2400-b554-11e8-93e5-3c34a1da5dd8.png)<br>
+- （証明）<br>
+    > 記載中...<br>
+
+
+<a id="ID_B-1-4"></a>
+
+#### ☆ ヒルベルト空間における和空間への直交写像
+![image](https://user-images.githubusercontent.com/25688193/45313302-7d1c4b80-b569-11e8-881d-bdf402ddf0cb.png)<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
+
+
+<a id="ID_B-2"></a>
+
+### ◎ ヒルベルト空間における線形多様体への直交射影と正規方程式
+ヒルベルト空間では、有限次元の部分集合は、”常に”閉集合となる（先のノルム空間における閉部分空間に関する定理より）が、以下の定理で示すように、**この有界線形部分空間への直交射影の計算は、次元の数だけ未知数を求める線形連立方程式の問題に帰着される。**<br>
+（※ このことは、有限次元部分空間への直交射影が、線形代数におけるガウスの消去法を用いて有限回の四則演算で計算できることを意味している。）<br>
+
+従って、有限次元部分空間への直交射影の計算原理を把握しておくことにより、応用上の諸問題（凸最適化問題、最小２乗推定、一般逆写像等）に、直交射影定理をうまく活用することが可能となる。<br>
+
+- 【参考】<br>
+    - [ノルム空間における閉部分空間、線形多様体、閉凸集合](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E9%96%89%E9%83%A8%E5%88%86%E7%A9%BA%E9%96%93%E7%B7%9A%E5%BD%A2%E5%A4%9A%E6%A7%98%E4%BD%93%E9%96%89%E5%87%B8%E9%9B%86%E5%90%88)<br>
+
+
+<a id="ID_B-2-1"></a>
+
+#### ☆ ヒルベルト空間における直交射影と正規方程式・グラム行列
+![image](https://user-images.githubusercontent.com/25688193/45376136-08611400-b632-11e8-8380-1dd597e92828.png)<br>
+- （証明）<br>
+    - まず、「![image](https://user-images.githubusercontent.com/25688193/45364307-c4abe180-b614-11e8-88e4-6d97e5535639.png)」⇔「![image](https://user-images.githubusercontent.com/25688193/45364357-e5743700-b614-11e8-8b66-95b424382006.png) が正規方程式の解」の関係を示す。<br>
+        図より、![image](https://user-images.githubusercontent.com/25688193/45364392-fcb32480-b614-11e8-9a80-f5ef14900697.png) となるので、直交射影定理より、<br>
+        部分空間中のベクトル ![image](https://user-images.githubusercontent.com/25688193/45364456-25d3b500-b615-11e8-8a02-c3439113e59a.png) に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45364518-51569f80-b615-11e8-916b-2b570ab17634.png)<br>
+        の関係が成り立つが、この式を変形すると、正規方程式なる。<br>
+        従って、![image](https://user-images.githubusercontent.com/25688193/45364590-7d722080-b615-11e8-9a8b-fdbbbb89e91a.png) となるための必要十分条件が、正規方程式の解の存在となる。<br>
+    - 次に、「グラム行列 G が正則行列で解が存在する（＝逆行列が存在する）」 ⇔ 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次独立」 の関係を示すために、<br>
+        その対偶である 「グラム行列 G の行ベクトルが一次従属」 ⇔ 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次従属」の関係を示す。<br>
+        - 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次従属」 ⇒ 「グラム行列 G の行ベクトルが一次従属」の証明<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次従属である場合には、![image](https://user-images.githubusercontent.com/25688193/45366263-63d2d800-b619-11e8-8fb7-9fc199fc2a65.png) となる非ゼロな係数ベクトル ![image](https://user-images.githubusercontent.com/25688193/45366299-7b11c580-b619-11e8-9230-b3cac8b13065.png) が存在する。<br>
+            このとき、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45366344-9aa8ee00-b619-11e8-893c-17c431fa8ae2.png)<br>
+            となるので、グラム行列 G の行ベクトルが一次従属となる。<br>
+        - 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が、一次従属」 ⇐ 「グラム行列 G の行ベクトルが一次従属」の証明<br>
+            グラム行列 G の行ベクトルが一次従属である場合には、![image](https://user-images.githubusercontent.com/25688193/45366964-15bed400-b61b-11e8-81d1-4d2a230ede83.png) となる非ゼロな係数ベクトル ![image](https://user-images.githubusercontent.com/25688193/45366992-28d1a400-b61b-11e8-91d7-ee7920178ce3.png) が存在する。<br>
+            このとき、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45367050-4dc61700-b61b-11e8-870c-e55aec572539.png)<br>
+            となるので、![image](https://user-images.githubusercontent.com/25688193/45367098-6b937c00-b61b-11e8-8fe9-43674d82f619.png) となり、![image](https://user-images.githubusercontent.com/25688193/45367145-86fe8700-b61b-11e8-9fd7-eef9233813f2.png) が、一次従属となる。<br>
+
+- 【参考】<br>
+    - [ヒルベルト空間における凸射影定理と直交射影定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%87%B8%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86%E3%81%A8%E7%9B%B4%E4%BA%A4%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86)<br>
+
+
+<a id="ID_B-2-2"></a>
+
+#### ☆ ヒルベルト空間における線形多様体への直交写像と最小ノルム点
+![image](https://user-images.githubusercontent.com/25688193/45379505-3b5bd580-b63b-11e8-981e-b9fdbf4769a3.png)<br>
+- （証明略）３次元空間においては、図より自明に成り立つ。<br>
+
+
+<a id="ID_B-2-3"></a>
+
+#### ☆ ヒルベルト空間における等式線形制約条件下での線形方程式の解集合と線形多様体への射影
+![image](https://user-images.githubusercontent.com/25688193/45438925-77eb0800-b6f3-11e8-98f6-22c5d8b19905.png)<br>
+- （証明略）３次元空間においては、図より自明に、線形方程式の解集合が線形多様体になる。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45439004-ab2d9700-b6f3-11e8-809c-ae2b83562c3d.png)<br>
+- （証明略）３次元空間においては、図より自明に、V∩M が最小ノルム点になる。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45439668-699deb80-b6f5-11e8-9ab5-e5661cf1b4a8.png)<br>
+- （証明略）３次元空間においては、図より自明に、![image](https://user-images.githubusercontent.com/25688193/45439923-05c7f280-b6f6-11e8-9e05-90e85025bff7.png) が、線形方程式 ![image](https://user-images.githubusercontent.com/25688193/45439958-1aa48600-b6f6-11e8-8efa-bd1a8e6e14ee.png) の解となる。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45441056-07df8080-b6f9-11e8-85b7-1b06c49b6fd7.png)<br>
+- （証明略）<br>
+	３次元空間においては、図より自明に、正規方程式 ![image](https://user-images.githubusercontent.com/25688193/45441241-85a38c00-b6f9-11e8-93ec-f33c46761031.png) の解は、![image](https://user-images.githubusercontent.com/25688193/45441297-a23fc400-b6f9-11e8-87a0-421ba3b745e4.png) であるので、成り立つ。<br>
+
+<br>
+
+- （例）最小分散不偏推定法、カルマンフィルター<br>
+    大雑把には、平均的に真の値を予想できる量（＝不偏推定量）を扱う系のうち、<br>
+    特に未知変数 ![image](https://user-images.githubusercontent.com/25688193/45505548-cd90e480-b7c7-11e8-862d-64ce816f3970.png) の線形結合で表すような不偏推定量 ![image](https://user-images.githubusercontent.com/25688193/45505592-eef1d080-b7c7-11e8-9657-41bef7312bfc.png) を考える。<br>
+    > 記載中...
+
+
 <a id="ID_A"></a>
 
 ## ■ 作用素
@@ -1751,184 +1928,29 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45836368-9c745f00-bd47-11e8-8aa4-a4579ef1d0ad.png)<br>
-- （証明）<br>
-    > 記載中...
+- （証明略）(a) における、共役作用素が有界線形作用素であることのみ示す。<br>
+    - (a) の証明<br>
+        - まず、共役作用素 ![image](https://user-images.githubusercontent.com/25688193/45864005-7c7a8500-bdb3-11e8-88da-3b368c765ac8.png) が、線形作用素であることを示す。<br>
+            有界線形作用素の共役作用素 ![image](https://user-images.githubusercontent.com/25688193/45863705-50123900-bdb2-11e8-8820-3f7dee678c2d.png) が存在するならば、<br>
+            共役作用素の定義 ![image](https://user-images.githubusercontent.com/25688193/45864692-c82e2e00-bdb5-11e8-99e2-922a9184b400.png) より、<br>
+            任意の ![image](https://user-images.githubusercontent.com/25688193/45863736-7932c980-bdb2-11e8-9276-bb8f6b1249c2.png) と任意の係数 ![image](https://user-images.githubusercontent.com/25688193/45863746-8b146c80-bdb2-11e8-9a7d-20504cce4f43.png) に対して、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45863817-d0d13500-bdb2-11e8-8e8a-e1a59169edbd.png)<br>
+            となるので、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/45864708-db40fe00-bdb5-11e8-96a3-0c8fa5c36015.png)<br>
+            の関係より、共役作用素 ![image](https://user-images.githubusercontent.com/25688193/45864005-7c7a8500-bdb3-11e8-88da-3b368c765ac8.png) は、線形作用素であることが分かる。<br>
+        - 次に、共役作用素 ![image](https://user-images.githubusercontent.com/25688193/45864005-7c7a8500-bdb3-11e8-88da-3b368c765ac8.png) が、有界であることを示す。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45864968-eea09900-bdb6-11e8-80eb-e3525d25541b.png) とおけば、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45865019-155ecf80-bdb7-11e8-9ed7-a47a3a8d2fc9.png)<br>
+        従って、共役作用素 ![image](https://user-images.githubusercontent.com/25688193/45864005-7c7a8500-bdb3-11e8-88da-3b368c765ac8.png) は、有界線形作用素であり、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45865172-94540800-bdb7-11e8-9c90-86bc7c21f8e1.png)<br>
+        の関係が成り立つことが分かる。<br>
 
 
-<a id="ID_B"></a>
+<a id="ID_A-7-1"></a>
 
-## ■ 射影定理とその応用
-関数解析の最も広く応用されるているものの１つとして、ヒルベルト空間における直交射影定理というものが存在する。この直交射影定理は、ピタゴラスの定理の高次元版であり、ユークリッド空間における幾何学的な直感が、高次元空間でも通用することを示している。<br>
+### ◎ 自己共役作用素
+> 記載中...
 
-更に、直交射影定理は、最も基本的な最適化原理になっており、
-対象となるヒルベルト空間や閉部分集合をうまく設定することにより、多くの応用が可能となる。<br>
-これは例えば、フーリエ級数展開が、正規直交系が張る閉部分集合への直交射影の単純な表現を与えていることや、最小２乗推定や一般逆写像やカルマンフィルタの基本的なアイデアも、直交射影定理の応用の１つとなっている。<br>
-
-又、凸射影定理は、直交射影定理を拡張して得られる非線形版であるが、凸最適化問題の基礎となっている。<br>
-
-<!--
-> 【メモ】<br>
-> 射影定理は「平面への射影成分と直交成分にへ分解すること」。解析とは分解することである。<br>
-> 射影定理は完備性（点列コンパクト性）と同義でもある。平面で切って切って切りまくっていく先に収束していく。解析＝分解＝射影定理＝点列完閉性。<br>
--->
-
-<a id="ID_B-1"></a>
-
-### ◎ ヒルベルト空間における凸射影定理と直交射影定理
-![image](https://user-images.githubusercontent.com/25688193/45264455-a78ddc00-b477-11e8-8c97-5311a8adfb66.png)<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45264645-cc378300-b47a-11e8-9f5e-480c549c5173.png)<br>
-
-
-<a id="ID_B-1-1"></a>
-
-#### ☆ ヒルベルト空間における凸射影の非拡大性
-![image](https://user-images.githubusercontent.com/25688193/45267002-66a9bd80-b49f-11e8-91ce-8f078411836f.png)<br>
-
-以下の定理は、凸射影が非拡大写像の一例になっていることを示している。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45278610-e0c25c80-b508-11e8-85a3-0c28538550d4.png)<br>
-
-- （証明略）(3) に関しては、図より自明<br>
-
-- 参考<br>
-    - [縮小写像](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E7%B8%AE%E5%B0%8F%E5%86%99%E5%83%8F%E3%81%AE%E4%B8%8D%E5%8B%95%E7%82%B9%E5%AE%9A%E7%90%86)<br>
-
-
-<a id="ID_B-1-2"></a>
-
-#### ☆ ヒルベルト空間における直交分解
-![image](https://user-images.githubusercontent.com/25688193/45293044-03b53680-b532-11e8-8fa4-50285f17059c.png)<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45293072-1465ac80-b532-11e8-94b6-23cc5a039979.png)<br>
-- （証明略）３次元空間においては、図より自明に成り立つ。<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45293239-876f2300-b532-11e8-8fc7-501c438abe1c.png)<br>
-- （証明略）３次元空間においては、図より自明に成り立つ。<br>
-
-
-<a id="ID_B-1-3"></a>
-
-#### ☆ ヒルベルト空間の閉部分空間への直交射影の線形性・冪等性・自己共役性
-![image](https://user-images.githubusercontent.com/25688193/45298996-21d86200-b545-11e8-8113-6a420f7be1cc.png)<br>
-- （証明略）３次元空間においては、図より自明に成り立つ。<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45299702-5baa6800-b547-11e8-8428-fce63d1314de.png)<br>
-- （証明）<br>
-    - 直交分解の定理より、直交写像 ![image](https://user-images.githubusercontent.com/25688193/45300772-38cd8300-b54a-11e8-97fc-13546c7bce2b.png) に関して、任意のベクトル ![image](https://user-images.githubusercontent.com/25688193/45300804-4d118000-b54a-11e8-85ff-f1def170b5f6.png) は、<br>
-        ![image](https://user-images.githubusercontent.com/25688193/45300858-6fa39900-b54a-11e8-84d4-52cec0876a4e.png)<br>
-        のように、一意に分解出来る。<br>
-        これを利用すると、<br>
-        ![image](https://user-images.githubusercontent.com/25688193/45300906-8fd35800-b54a-11e8-9fcc-3a9bc667da54.png)<br>
-    - 更に、任意の ![image](https://user-images.githubusercontent.com/25688193/45301084-1c7e1600-b54b-11e8-84d9-5498a12d214b.png) に対して、<br>
-        ![image](https://user-images.githubusercontent.com/25688193/45301279-94e4d700-b54b-11e8-9de2-97404cfd70bf.png) となるので、<br>
-        ![image](https://user-images.githubusercontent.com/25688193/45301328-b5149600-b54b-11e8-8392-0fab15e6894c.png)<br>
-        となり、この定理は成り立つ。<br>
-
-- 【参考】<br>
-    - [ノルム空間における有界線形作用素](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E4%BD%9C%E7%94%A8%E7%B4%A0)<br>
-    - [ノルム空間における作用素ノルム](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%83%8E%E3%83%AB%E3%83%A0)
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45302140-7f70ac80-b54d-11e8-98eb-fa2c1aa68ce8.png)<br>
-
-- 【参考】<br>
-    - [自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E8%87%AA%E5%B7%B1%E5%85%B1%E5%BD%B9%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%81%A8%E6%9C%89%E7%95%8C%E6%80%A7%E9%96%89%E3%82%B0%E3%83%A9%E3%83%95%E5%AE%9A%E7%90%86%E3%81%AE%E5%BF%9C%E7%94%A8)<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45305156-ad0d2400-b554-11e8-93e5-3c34a1da5dd8.png)<br>
-- （証明）<br>
-    > 記載中...<br>
-
-
-<a id="ID_B-1-4"></a>
-
-#### ☆ ヒルベルト空間における和空間への直交写像
-![image](https://user-images.githubusercontent.com/25688193/45313302-7d1c4b80-b569-11e8-881d-bdf402ddf0cb.png)<br>
-- （証明略）３次元空間においては、図より自明に成り立つ。<br>
-
-
-<a id="ID_B-2"></a>
-
-### ◎ ヒルベルト空間における線形多様体への直交射影と正規方程式
-ヒルベルト空間では、有限次元の部分集合は、”常に”閉集合となる（先のノルム空間における閉部分空間に関する定理より）が、以下の定理で示すように、**この有界線形部分空間への直交射影の計算は、次元の数だけ未知数を求める線形連立方程式の問題に帰着される。**<br>
-（※ このことは、有限次元部分空間への直交射影が、線形代数におけるガウスの消去法を用いて有限回の四則演算で計算できることを意味している。）<br>
-
-従って、有限次元部分空間への直交射影の計算原理を把握しておくことにより、応用上の諸問題（凸最適化問題、最小２乗推定、一般逆写像等）に、直交射影定理をうまく活用することが可能となる。<br>
-
-- 【参考】<br>
-    - [ノルム空間における閉部分空間、線形多様体、閉凸集合](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%8E%E3%83%AB%E3%83%A0%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E9%96%89%E9%83%A8%E5%88%86%E7%A9%BA%E9%96%93%E7%B7%9A%E5%BD%A2%E5%A4%9A%E6%A7%98%E4%BD%93%E9%96%89%E5%87%B8%E9%9B%86%E5%90%88)<br>
-
-
-<a id="ID_B-2-1"></a>
-
-#### ☆ ヒルベルト空間における直交射影と正規方程式・グラム行列
-![image](https://user-images.githubusercontent.com/25688193/45376136-08611400-b632-11e8-8380-1dd597e92828.png)<br>
-- （証明）<br>
-    - まず、「![image](https://user-images.githubusercontent.com/25688193/45364307-c4abe180-b614-11e8-88e4-6d97e5535639.png)」⇔「![image](https://user-images.githubusercontent.com/25688193/45364357-e5743700-b614-11e8-8b66-95b424382006.png) が正規方程式の解」の関係を示す。<br>
-        図より、![image](https://user-images.githubusercontent.com/25688193/45364392-fcb32480-b614-11e8-9a80-f5ef14900697.png) となるので、直交射影定理より、<br>
-        部分空間中のベクトル ![image](https://user-images.githubusercontent.com/25688193/45364456-25d3b500-b615-11e8-8a02-c3439113e59a.png) に対して、<br>
-        ![image](https://user-images.githubusercontent.com/25688193/45364518-51569f80-b615-11e8-916b-2b570ab17634.png)<br>
-        の関係が成り立つが、この式を変形すると、正規方程式なる。<br>
-        従って、![image](https://user-images.githubusercontent.com/25688193/45364590-7d722080-b615-11e8-9a8b-fdbbbb89e91a.png) となるための必要十分条件が、正規方程式の解の存在となる。<br>
-    - 次に、「グラム行列 G が正則行列で解が存在する（＝逆行列が存在する）」 ⇔ 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次独立」 の関係を示すために、<br>
-        その対偶である 「グラム行列 G の行ベクトルが一次従属」 ⇔ 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次従属」の関係を示す。<br>
-        - 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次従属」 ⇒ 「グラム行列 G の行ベクトルが一次従属」の証明<br>
-            ![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が一次従属である場合には、![image](https://user-images.githubusercontent.com/25688193/45366263-63d2d800-b619-11e8-8fb7-9fc199fc2a65.png) となる非ゼロな係数ベクトル ![image](https://user-images.githubusercontent.com/25688193/45366299-7b11c580-b619-11e8-9230-b3cac8b13065.png) が存在する。<br>
-            このとき、<br>
-            ![image](https://user-images.githubusercontent.com/25688193/45366344-9aa8ee00-b619-11e8-893c-17c431fa8ae2.png)<br>
-            となるので、グラム行列 G の行ベクトルが一次従属となる。<br>
-        - 「![image](https://user-images.githubusercontent.com/25688193/45364976-70a1fc80-b616-11e8-8619-d362b0469cc2.png) が、一次従属」 ⇐ 「グラム行列 G の行ベクトルが一次従属」の証明<br>
-            グラム行列 G の行ベクトルが一次従属である場合には、![image](https://user-images.githubusercontent.com/25688193/45366964-15bed400-b61b-11e8-81d1-4d2a230ede83.png) となる非ゼロな係数ベクトル ![image](https://user-images.githubusercontent.com/25688193/45366992-28d1a400-b61b-11e8-91d7-ee7920178ce3.png) が存在する。<br>
-            このとき、<br>
-            ![image](https://user-images.githubusercontent.com/25688193/45367050-4dc61700-b61b-11e8-870c-e55aec572539.png)<br>
-            となるので、![image](https://user-images.githubusercontent.com/25688193/45367098-6b937c00-b61b-11e8-8fe9-43674d82f619.png) となり、![image](https://user-images.githubusercontent.com/25688193/45367145-86fe8700-b61b-11e8-9fd7-eef9233813f2.png) が、一次従属となる。<br>
-
-- 【参考】<br>
-    - [ヒルベルト空間における凸射影定理と直交射影定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%87%B8%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86%E3%81%A8%E7%9B%B4%E4%BA%A4%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86)<br>
-
-
-<a id="ID_B-2-2"></a>
-
-#### ☆ ヒルベルト空間における線形多様体への直交写像と最小ノルム点
-![image](https://user-images.githubusercontent.com/25688193/45379505-3b5bd580-b63b-11e8-981e-b9fdbf4769a3.png)<br>
-- （証明略）３次元空間においては、図より自明に成り立つ。<br>
-
-
-<a id="ID_B-2-3"></a>
-
-#### ☆ ヒルベルト空間における等式線形制約条件下での線形方程式の解集合と線形多様体への射影
-![image](https://user-images.githubusercontent.com/25688193/45438925-77eb0800-b6f3-11e8-98f6-22c5d8b19905.png)<br>
-- （証明略）３次元空間においては、図より自明に、線形方程式の解集合が線形多様体になる。<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45439004-ab2d9700-b6f3-11e8-809c-ae2b83562c3d.png)<br>
-- （証明略）３次元空間においては、図より自明に、V∩M が最小ノルム点になる。<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45439668-699deb80-b6f5-11e8-9ab5-e5661cf1b4a8.png)<br>
-- （証明略）３次元空間においては、図より自明に、![image](https://user-images.githubusercontent.com/25688193/45439923-05c7f280-b6f6-11e8-9e05-90e85025bff7.png) が、線形方程式 ![image](https://user-images.githubusercontent.com/25688193/45439958-1aa48600-b6f6-11e8-8efa-bd1a8e6e14ee.png) の解となる。<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/45441056-07df8080-b6f9-11e8-85b7-1b06c49b6fd7.png)<br>
-- （証明略）<br>
-	３次元空間においては、図より自明に、正規方程式 ![image](https://user-images.githubusercontent.com/25688193/45441241-85a38c00-b6f9-11e8-93ec-f33c46761031.png) の解は、![image](https://user-images.githubusercontent.com/25688193/45441297-a23fc400-b6f9-11e8-87a0-421ba3b745e4.png) であるので、成り立つ。<br>
-
-<br>
-
-- （例）最小分散不偏推定法、カルマンフィルター<br>
-    大雑把には、平均的に真の値を予想できる量（＝不偏推定量）を扱う系のうち、<br>
-    特に未知変数 ![image](https://user-images.githubusercontent.com/25688193/45505548-cd90e480-b7c7-11e8-862d-64ce816f3970.png) の線形結合で表すような不偏推定量 ![image](https://user-images.githubusercontent.com/25688193/45505592-eef1d080-b7c7-11e8-9657-41bef7312bfc.png) を考える。<br>
-    > 記載中...
 
 
 
