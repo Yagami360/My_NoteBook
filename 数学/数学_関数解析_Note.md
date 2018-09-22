@@ -89,10 +89,16 @@
         1. [共役作用素の行列表現（表現行列）](#ID_A-7-1)
     1. [自己共役作用素（エルミート作用素）](#ID_A-8)
     1. コンパクト作用素
+1. [凸最適化理論への応用](#ID_C)
+    1. [【補足】弱点列コンパクト性と凸集合](#ID_C-1)
+    1. 【補足】凸関数の意味と基本性質
+    1. 【補足】凸関数の最小値の存在性
+    1. 【補足】凸関数の微分の単調性
+    1. 凸最適化問題と変分不等式問題
 1. スペクトル理論への応用
     1. レゾルベント集合
     1. コンパクト作用素のスペクトル理論
-1. 凸最適化理論への応用
+1. 機械学習への応用
 1. [参考文献](#参考文献)
 
 ---
@@ -1967,6 +1973,61 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 - 【参考】<br>
     - [自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E8%87%AA%E5%B7%B1%E5%85%B1%E5%BD%B9%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%81%A8%E6%9C%89%E7%95%8C%E6%80%A7%E9%96%89%E3%82%B0%E3%83%A9%E3%83%95%E5%AE%9A%E7%90%86%E3%81%AE%E5%BF%9C%E7%94%A8)
     - [ヒルベルト空間の閉部分空間への直交射影の線形性・冪等性・自己共役性](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AE%E9%96%89%E9%83%A8%E5%88%86%E7%A9%BA%E9%96%93%E3%81%B8%E3%81%AE%E7%9B%B4%E4%BA%A4%E5%B0%84%E5%BD%B1%E3%81%AE%E7%B7%9A%E5%BD%A2%E6%80%A7%E5%86%AA%E7%AD%89%E6%80%A7%E8%87%AA%E5%B7%B1%E5%85%B1%E5%BD%B9%E6%80%A7)
+
+
+<a id="ID_C"></a>
+
+## ■ 凸最適化問題への応用
+先に見てきた、ヒルベルト空間における射影定理は、無限次元の空間における幾何学的性質を与えてくれた。この射影定理とこれから導入される幾何学的性質は、凸最適化問題にも応用出来る。<br>
+ここでは、「ヒルベルト空間で定義された凸最適化問題」 を考える。<br>
+
+具体的には、以下のようなトピックを取り上げる。<br>
+「凸最適化問題が、変分不等式問題に帰着できること」<br>
+「変分不等式問題は、非線形写像の不動点を求める問題に帰着できること」<br>
+「凸関数がいくつかの条件を満たすとき、不動点のちくじ近似アルゴリズムを用いて、凸最適化問題の解がいくらでも精度良く近似出来ること」<br>
+
+<a id="ID_C-1"></a>
+
+### 【補足】弱点列コンパクト性と凸集合
+先に、ヒルベルト空間における弱収束と強収束の違いを見てきたが、ここでは、関数解析（特に、ヒルベルト空間における射影定理）の凸最適化問題への応用の前段階として、ヒルベルト空間の弱収束点列の弱極限と凸集合との非自明な関係性を見ていく。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45899373-9f3e8500-be17-11e8-8457-239c3ac06bf4.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45899549-1aa03680-be18-11e8-999a-20a8267fac78.png)<br>
+
+- （証明略）step 1：部分列のある実数への収束性の証明のみ記載<br>
+    - step 1：部分列のある実数への収束性の証明<br>
+        ヒルベルト空間 H の有界な点列 ![image](https://user-images.githubusercontent.com/25688193/45902097-56d79500-be20-11e8-85fc-423cfd1e069a.png) に対しては、その有界性より、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45902413-5095e880-be21-11e8-9d4d-ca998ac83b01.png)<br>
+        の関係が成り立つ。<br>
+        このとき、有界な点列 ![image](https://user-images.githubusercontent.com/25688193/45902097-56d79500-be20-11e8-85fc-423cfd1e069a.png) との内積の値からなる点列 ![image](https://user-images.githubusercontent.com/25688193/45902438-699e9980-be21-11e8-8841-dcbf951a85e5.png) もまた、有界な実数列となるので、（ ![image](https://user-images.githubusercontent.com/25688193/45902479-88049500-be21-11e8-987a-a369e2349fa6.png) ）<br>
+        ここで、ハイネ・ボネルの被覆定理より、点列コンパクトなので、<br>
+        有界な点列 ![image](https://user-images.githubusercontent.com/25688193/45902947-10d00080-be23-11e8-8de1-5b683aba0b9b.png) に、少なくとも１つの部分列 ![image](https://user-images.githubusercontent.com/25688193/45902972-234a3a00-be23-11e8-95f0-0c01ab0823e0.png) とある ![image](https://user-images.githubusercontent.com/25688193/45902995-378e3700-be23-11e8-84f1-96afe3da7517.png) が存在して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45903295-21cd4180-be24-11e8-8a43-56ae14f9d630.png)<br>
+        の関係が成り立つ。<br>
+        同様の手続きで、部分列 ![image](https://user-images.githubusercontent.com/25688193/45902972-234a3a00-be23-11e8-95f0-0c01ab0823e0.png) の中に、さらなる部分列 ![image](https://user-images.githubusercontent.com/25688193/45903333-4a553b80-be24-11e8-8455-75237b223cf1.png) とある ![image](https://user-images.githubusercontent.com/25688193/45903348-5ccf7500-be24-11e8-8b27-04d674ac7fce.png) が存在して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45903415-9f914d00-be24-11e8-9b3d-efbf267570fb.png)<br>
+        の関係が成り立つ。<br>
+        同様の議論を繰り返すことにより、部分列 ![image](https://user-images.githubusercontent.com/25688193/45903714-9654b000-be25-11e8-82ca-75a4e54ef47b.png) に対して、ある ![image](https://user-images.githubusercontent.com/25688193/45903731-aa98ad00-be25-11e8-94a7-ad392c14bc80.png) が存在して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/45903758-be441380-be25-11e8-947b-36718f031f69.png)<br>
+        の関係が成り立つことが分かる。<br>
+        <br>
+	- step 2：ヒルベルト空間の部分空間となる線形空間の存在性と、その空間上の有界線形作用素の証明<br>
+	- step 3：ヒルベルト空間の部分空間となる線形空間が閉部分集合になることの証明<br>
+    - step 4：部分列がヒルベルト空間の１点に収束することの証明<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45914250-34279980-be7d-11e8-94a4-2210ad8bde5c.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45914259-4b668700-be7d-11e8-8351-b33fefc5fcc4.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45914272-74871780-be7d-11e8-9c54-af2c5a03b692.png)<br>
+- （証明）<br>
+    > 記載中...
+
+- 【参考】<br>
+    - [ヒルベルト空間における強収束と弱収束](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%BC%B7%E5%8F%8E%E6%9D%9F%E3%81%A8%E5%BC%B1%E5%8F%8E%E6%9D%9F)<br>
+    - [コンパクト集合](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E9%9B%86%E5%90%88)<br>
+
 
 ---
 
