@@ -91,9 +91,9 @@
     1. コンパクト作用素
 1. [凸最適化理論への応用](#ID_C)
     1. [【補足】弱点列コンパクト性と凸集合](#ID_C-1)
-    1. 【補足】凸関数の意味と基本性質
-    1. 【補足】凸関数の最小値の存在性
-    1. 【補足】凸関数の微分の単調性
+    1. [【補足】凸関数と基本性質](#ID_C-2)
+        1. 【補足】凸関数の最小値の存在性
+        1. 【補足】凸関数の微分の単調性
     1. 凸最適化問題と変分不等式問題
 1. スペクトル理論への応用
     1. レゾルベント集合
@@ -482,6 +482,12 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
 #### ☆ コンパクト集合
 コンパクト性は、距離空間の部分集合に関する性質である。<br>
 
+> 【Memo】 コンパクトだと、なぜ嬉しいか？<br>
+> ・コンパクト集合上の連続関数は、最大値と最小値を持つ。（後述の最大値と最小値の定理）<br>
+> → これにより、最適化の議論が行える。<br>
+> ・コンパクト集合上の連続関数は、一様連続。<br>
+> → これにより、近似の議論が可能となる。<br>
+
 ![image](https://user-images.githubusercontent.com/25688193/44733911-8e099d80-ab23-11e8-838b-be35918cd437.png)<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/44734971-1f7a0f00-ab26-11e8-847d-ec63b7523f8a.png)<br>
@@ -536,7 +542,11 @@ z 成分が０でないのは、![image](https://user-images.githubusercontent.c
     <br>
     最小値の存在証明に関しても、同様の方法で示せる。<br>
 
-- 【参考】[コンパクト性、開被覆 - 大人になってからの再学習](http://zellij.hatenablog.com/entry/20120515/p1)
+<br>
+
+- 【参考
+    - [コンパクト性、開被覆 - 大人になってからの再学習](http://zellij.hatenablog.com/entry/20120515/p1)<br>
+    - [有界閉とコンパクト](http://www.misojiro.t.u-tokyo.ac.jp/~murota/lect-kisosuri/compactRn041202.pdf)<br>
 
 
 <a id="ID_4-3-5"></a>
@@ -1920,7 +1930,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <a id="ID_A-7"></a>
 
 ### ◎ 有界線形作用素の共役作用素
-![image](https://user-images.githubusercontent.com/25688193/45834616-9334c380-bd42-11e8-9a13-cc781513ba6a.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45932346-8a97f380-bfb5-11e8-84f4-860a62a5806d.png)<br>
 
 ※ リースの表現定理は、ヒルベルト空間に対しての定理なので、厳密には、この内積空間上での共役作用素の定義に対しては、一意性を示せない。（ヒルベルト空間上の共役作用素に対しては、リースの表現定理で共役作用素の一意性を示せる）<br>
 
@@ -1934,7 +1944,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/45836368-9c745f00-bd47-11e8-8aa4-a4579ef1d0ad.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45932149-fb89dc00-bfb2-11e8-84a9-1a2eb5a4b13a.png)<br>
 - （証明略）(a) における、共役作用素が有界線形作用素であることのみ示す。<br>
     - (a) の証明<br>
         - まず、共役作用素 ![image](https://user-images.githubusercontent.com/25688193/45864005-7c7a8500-bdb3-11e8-88da-3b368c765ac8.png) が、線形作用素であることを示す。<br>
@@ -1962,7 +1972,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <a id="ID_A-8"></a>
 
 ### ◎ 自己共役作用素（エルミート作用素）
-![image](https://user-images.githubusercontent.com/25688193/45881171-5ff74080-bde5-11e8-8f8a-4e2551af9865.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45932235-56700300-bfb4-11e8-8040-6bc6e7d31e29.png)<br>
 
 - （例）自己共役作用素の例（直交射影）<br>
     ヒルベルト空間 H からその部分空間 M⊂H への直交射影 ![image](https://user-images.githubusercontent.com/25688193/45880813-2d007d00-bde4-11e8-928b-706b6f3dd666.png) は、<br>
@@ -2018,15 +2028,48 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/45914250-34279980-be7d-11e8-94a4-2210ad8bde5c.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/45914259-4b668700-be7d-11e8-8351-b33fefc5fcc4.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/45914272-74871780-be7d-11e8-9c54-af2c5a03b692.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45915138-f6ca0880-be8a-11e8-8b2f-1d752e2ae81f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45915149-09dcd880-be8b-11e8-850a-9efa964ccb5b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45915157-224cf300-be8b-11e8-82d6-d2eef2bc69be.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45914336-a9479e80-be7e-11e8-9515-7450d63b5fdc.png)<br>
 - （証明）<br>
     > 記載中...
 
 - 【参考】<br>
     - [ヒルベルト空間における強収束と弱収束](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%BC%B7%E5%8F%8E%E6%9D%9F%E3%81%A8%E5%BC%B1%E5%8F%8E%E6%9D%9F)<br>
     - [コンパクト集合](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E9%9B%86%E5%90%88)<br>
+
+
+<a id="ID_C-2"></a>
+
+### 【補足】凸関数と基本性質
+![image](https://user-images.githubusercontent.com/25688193/45928487-63beca80-bf7f-11e8-91b4-f91b7f6b81c3.png)<br>
+
+>【Memo】<br>
+> 位相空間における下半連続性の定義との違いは？<br>
+> ![image](https://user-images.githubusercontent.com/25688193/45928503-b8624580-bf7f-11e8-9df9-a80ef90db214.png)<br>
+
+- 【参考】<br>
+    - [半連続 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%8D%8A%E9%80%A3%E7%B6%9A)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45928672-78e92880-bf82-11e8-88c9-824308a1c80a.png)<br>
+
+- （例）凸関数の例（D(f) のガトー微分可能な内点に対する関数）<br>
+    > 記載中...
+
+- （例）凸関数の例（自己共役作用素を用いて定義された関数）<br>
+    ヒルベルト空間 H 上に定義された自己共役作用素 A:H→H とヒルベルト空間中のベクトル ![image](https://user-images.githubusercontent.com/25688193/45932375-13af2a80-bfb6-11e8-84aa-124f5cdbb75b.png) を用いた関数<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45932504-f5e2c500-bfb7-11e8-8966-6d4685864d93.png)<br>
+    を定義する。<br>
+    このとき、この関数 ![image](https://user-images.githubusercontent.com/25688193/45932509-0a26c200-bfb8-11e8-80f2-4bcd8f477a79.png) が凸関数となることと、<br>
+    任意の ![image](https://user-images.githubusercontent.com/25688193/45932183-9682b600-bfb3-11e8-9eaf-3d6912fc27a5.png) に対して、![image](https://user-images.githubusercontent.com/25688193/45932595-60483500-bfb9-11e8-85fd-a8e2f30fbfdc.png) が成り立つことが等価であることを示す。<br>
+    <br>
+    任意の ![image](https://user-images.githubusercontent.com/25688193/45932519-24f93680-bfb8-11e8-8ab8-3f5e158f4177.png) に対して、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45932538-75709400-bfb8-11e8-9321-757561f44d93.png)<br>
+    となるので、f:H→R が凸関数であれば、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45932573-30009680-bfb9-11e8-80ff-c01ebe232a00.png)<br>
+    従って、以下のような関係が成り立つ。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45932601-7e159a00-bfb9-11e8-8abb-bfeb071699d9.png)<br>
 
 
 ---
