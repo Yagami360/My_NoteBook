@@ -90,10 +90,10 @@
     1. [自己共役作用素（エルミート作用素）](#ID_A-8)
     1. コンパクト作用素
 1. [凸最適化理論への応用](#ID_C)
-    1. [【補足】ヒルベルト空間における弱点列コンパクト性と凸集合](#ID_C-1)
-    1. [【補足】ヒルベルト空間における凸関数と基本性質](#ID_C-2)
-        1. [【補足】ヒルベルト空間における凸関数の最小値の存在性](#ID_C-2-1)
-        1. 【補足】凸関数の微分の単調性
+    1. [ヒルベルト空間における弱点列コンパクト性と凸集合](#ID_C-1)
+    1. [ヒルベルト空間における凸関数と基本性質](#ID_C-2)
+    1. [ヒルベルト空間における凸関数の最小値の存在性](#ID_C-3)
+    1. [凸関数の微分の単調性](#ID_C-4)
     1. 凸最適化問題と変分不等式問題
 1. スペクトル理論への応用
     1. レゾルベント集合
@@ -2001,7 +2001,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 <a id="ID_C-1"></a>
 
-### 【補足】ヒルベルト空間における弱点列コンパクト性と凸集合
+### ◎ ヒルベルト空間における弱点列コンパクト性と凸集合
 先に、ヒルベルト空間における弱収束と強収束の違いを見てきたが、ヒルベルト空間の弱収束点列の弱極限と凸集合との非自明な関係性を見ていく。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45899373-9f3e8500-be17-11e8-8457-239c3ac06bf4.png)<br>
@@ -2045,7 +2045,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 <a id="ID_C-2"></a>
 
-### 【補足】ヒルベルト空間における凸関数と基本性質
+### ◎ ヒルベルト空間における凸関数と基本性質
 ![image](https://user-images.githubusercontent.com/25688193/45928487-63beca80-bf7f-11e8-91b4-f91b7f6b81c3.png)<br>
 
 >【Memo】<br>
@@ -2075,9 +2075,9 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     ![image](https://user-images.githubusercontent.com/25688193/45932601-7e159a00-bfb9-11e8-8abb-bfeb071699d9.png)<br>
 
 
-<a id="ID_C-2-1"></a>
+<a id="ID_C-3"></a>
 
-#### 【補足】ヒルベルト空間における凸関数と最小値の存在性
+### ◎ ヒルベルト空間における凸関数と最小値の存在性
 ヒルベルト空間における凸集合と凸関数は、以下の定理で示すように、（有限次元のユークリッド空間のときと同様にして）エピグラフという概念によって、関連付けることが可能である。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45942511-b0f17980-c01d-11e8-994d-8ddafbd361a8.png)<br>
@@ -2110,6 +2110,17 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     - [【補足】弱点列コンパクト性と凸集合](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#%E8%A3%9C%E8%B6%B3%E5%BC%B1%E7%82%B9%E5%88%97%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E6%80%A7%E3%81%A8%E5%87%B8%E9%9B%86%E5%90%88)<br>
     - [上極限と下極限](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E4%B8%8A%E6%A5%B5%E9%99%90%E3%81%A8%E4%B8%8B%E6%A5%B5%E9%99%90)<br>
     - [半連続 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%8D%8A%E9%80%A3%E7%B6%9A)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45967816-0f444980-c06a-11e8-8666-78011e2ba1b6.png)<br>
+- （証明略）２次元空間においては、図より自明<br>
+
+
+<a id="ID_C-4"></a>
+
+### ◎ ヒルベルト空間における凸関数の微分の単調性
+> 記載中...
 
 
 ---
