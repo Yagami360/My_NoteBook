@@ -90,9 +90,9 @@
     1. [自己共役作用素（エルミート作用素）](#ID_A-8)
     1. コンパクト作用素
 1. [凸最適化理論への応用](#ID_C)
-    1. [【補足】弱点列コンパクト性と凸集合](#ID_C-1)
-    1. [【補足】凸関数と基本性質](#ID_C-2)
-        1. 【補足】凸関数の最小値の存在性
+    1. [【補足】ヒルベルト空間における弱点列コンパクト性と凸集合](#ID_C-1)
+    1. [【補足】ヒルベルト空間における凸関数と基本性質](#ID_C-2)
+        1. [【補足】ヒルベルト空間における凸関数の最小値の存在性](#ID_C-2-1)
         1. 【補足】凸関数の微分の単調性
     1. 凸最適化問題と変分不等式問題
 1. スペクトル理論への応用
@@ -1996,10 +1996,13 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 「変分不等式問題は、非線形写像の不動点を求める問題に帰着できること」<br>
 「凸関数がいくつかの条件を満たすとき、不動点のちくじ近似アルゴリズムを用いて、凸最適化問題の解がいくらでも精度良く近似出来ること」<br>
 
+そのためにまず、関数解析（特に、ヒルベルト空間における射影定理）の凸最適化問題への応用の前段階として、無限次元であるヒルベルト空間における凸集合や凸関数に関連する性質が、有限次元であるユークリッド空間と同様に成り立つのかを見ていく。<br>
+
+
 <a id="ID_C-1"></a>
 
-### 【補足】弱点列コンパクト性と凸集合
-先に、ヒルベルト空間における弱収束と強収束の違いを見てきたが、ここでは、関数解析（特に、ヒルベルト空間における射影定理）の凸最適化問題への応用の前段階として、ヒルベルト空間の弱収束点列の弱極限と凸集合との非自明な関係性を見ていく。<br>
+### 【補足】ヒルベルト空間における弱点列コンパクト性と凸集合
+先に、ヒルベルト空間における弱収束と強収束の違いを見てきたが、ヒルベルト空間の弱収束点列の弱極限と凸集合との非自明な関係性を見ていく。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45899373-9f3e8500-be17-11e8-8457-239c3ac06bf4.png)<br>
 
@@ -2042,7 +2045,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 <a id="ID_C-2"></a>
 
-### 【補足】凸関数と基本性質
+### 【補足】ヒルベルト空間における凸関数と基本性質
 ![image](https://user-images.githubusercontent.com/25688193/45928487-63beca80-bf7f-11e8-91b4-f91b7f6b81c3.png)<br>
 
 >【Memo】<br>
@@ -2070,6 +2073,43 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     ![image](https://user-images.githubusercontent.com/25688193/45932573-30009680-bfb9-11e8-80ff-c01ebe232a00.png)<br>
     従って、以下のような関係が成り立つ。<br>
     ![image](https://user-images.githubusercontent.com/25688193/45932601-7e159a00-bfb9-11e8-8abb-bfeb071699d9.png)<br>
+
+
+<a id="ID_C-2-1"></a>
+
+#### 【補足】ヒルベルト空間における凸関数と最小値の存在性
+ヒルベルト空間における凸集合と凸関数は、以下の定理で示すように、（有限次元のユークリッド空間のときと同様にして）エピグラフという概念によって、関連付けることが可能である。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45942511-b0f17980-c01d-11e8-994d-8ddafbd361a8.png)<br>
+- （証明略）<br>
+    - (a) の証明<br>
+        図より、エピグラフが凸集合であることと、元の関数 f が凸関数であることが同値なことは自明。<br>
+        又、エピグラフは閉集合であるととと、元の関数 f が下半連続であることが同値なことは自明。<br>
+
+- 【参照】<br>
+    - [凸解析 - 初級Mathマニアの寝言](http://ogyahogya.hatenablog.com/entry/2016/05/19/%E5%87%B8%E8%A7%A3%E6%9E%90)<br>
+    - [エピグラフ (数学) - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%94%E3%82%B0%E3%83%A9%E3%83%95_(%E6%95%B0%E5%AD%A6))<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/45953135-2708d700-c044-11e8-9268-2e709415d1a6.png)<br>
+- （証明）<br>
+    関数 f は下半連続な真凸関数なので、先の定理（エピグラフとその性質）より、点列 ![image](https://user-images.githubusercontent.com/25688193/45956965-d8ad0580-c04e-11e8-87fa-a40e2f0c3b96.png) に対して、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45958403-532b5480-c052-11e8-8e9a-7d7965cfceca.png)<br>
+    ここで、内積部分の項は、![image](https://user-images.githubusercontent.com/25688193/45958439-68a07e80-c052-11e8-8598-0e4d191d3a07.png) の条件より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45958511-92f23c00-c052-11e8-85f7-7b799ee25d92.png)<br>
+    となる。<br>
+    従って、この内積からなる点列 ![image](https://user-images.githubusercontent.com/25688193/45958555-aef5dd80-c052-11e8-80d8-d189c419461d.png) は、有界であり、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45958579-c59c3480-c052-11e8-9a87-ee8723c5c282.png)<br>
+    下極限の定義より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/45958622-e4023000-c052-11e8-8a8c-7dd6798c4ce1.png)<br>
+    > 記載中...
+
+
+- 【参照】<br>
+    - [【補足】弱点列コンパクト性と凸集合](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#%E8%A3%9C%E8%B6%B3%E5%BC%B1%E7%82%B9%E5%88%97%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E6%80%A7%E3%81%A8%E5%87%B8%E9%9B%86%E5%90%88)<br>
+    - [上極限と下極限](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E4%B8%8A%E6%A5%B5%E9%99%90%E3%81%A8%E4%B8%8B%E6%A5%B5%E9%99%90)<br>
+    - [半連続 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%8D%8A%E9%80%A3%E7%B6%9A)<br>
 
 
 ---
