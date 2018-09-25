@@ -2140,7 +2140,37 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
         が導かれる。<br>
         <br>
     - (b) ⇒ (a) の証明<br>
-        > 記載中...
+        ヒルベルト空間上の任意の固定されたベクトル ![image](https://user-images.githubusercontent.com/25688193/46012906-92ff4400-c105-11e8-91c8-e4ba304ebb7a.png) に対しての線形結合 ![image](https://user-images.githubusercontent.com/25688193/46012937-a7434100-c105-11e8-99cf-082e6e68c338.png) を、<br>
+        ガトー微分関係な写像 f で写像した ![image](https://user-images.githubusercontent.com/25688193/46012981-c17d1f00-c105-11e8-8f16-552b1094f0c1.png) を写像先とする写像、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46013007-df4a8400-c105-11e8-815f-0166b7f1f741.png)<br>
+        は、λ=0 or 1 で変数 λ に対して微分可能であり、その微分（導関数）は、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46013068-0e60f580-c106-11e8-867b-46704355c1fa.png)<br>
+        となる。<br>
+        又、ガトー微分での導関数 f′ が定理 (b) の単調写像の条件<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46013098-2a649700-c106-11e8-874d-3f7e2763b3d2.png)<br>
+        を満たすので、<br>
+        任意の ![image](https://user-images.githubusercontent.com/25688193/46013744-17eb5d00-c108-11e8-86ad-c0d8e0dcc8cf.png) に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46013783-2d608700-c108-11e8-87f2-076714c47fe1.png)<br>
+        となるので、この関数 ψ は凸関数であることが保証され（途中計算略）、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46013838-5e40bc00-c108-11e8-95c0-94607ac8e5f9.png)<br>
+        が関係が成り立つ。<br>
+        従って、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46014071-15d5ce00-c109-11e8-8531-b5a484102a44.png)<br>
+        となり、ガトー微分可能な写像 f は凸関数であることが分かる。<br>
+
+- 【参照】<br>
+    - [ガトー微分](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%82%AC%E3%83%88%E3%83%BC%E5%BE%AE%E5%88%86)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46018785-a6b2a680-c115-11e8-8690-380233113a66.png)<br>
+- （証明）<br>
+    > 記載中...
+
+
+- 【参照】<br>
+    - [フレッシェ微分](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%95%E3%83%AC%E3%83%83%E3%82%B7%E3%82%A7%E5%BE%AE%E5%88%86)<br>
+
 
 
 ---
