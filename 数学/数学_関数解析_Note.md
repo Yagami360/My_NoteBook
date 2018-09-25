@@ -1992,11 +1992,12 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ここでは、「ヒルベルト空間で定義された凸最適化問題」 を考える。<br>
 
 具体的には、以下のようなトピックを取り上げる。<br>
-「凸最適化問題が、変分不等式問題に帰着できること」<br>
-「変分不等式問題は、非線形写像の不動点を求める問題に帰着できること」<br>
-「凸関数がいくつかの条件を満たすとき、不動点のちくじ近似アルゴリズムを用いて、凸最適化問題の解がいくらでも精度良く近似出来ること」<br>
+- 「凸最適化問題が、変分不等式問題に帰着できること」<br>
+- 「変分不等式問題は、非線形写像の不動点を求める問題に帰着できること」<br>
+- 「凸関数がいくつかの条件を満たすとき、不動点の逐次近似アルゴリズムを用いて、<br>
+    　凸最適化問題の解がいくらでも精度良く近似出来ること」<br>
 
-そのためにまず、関数解析（特に、ヒルベルト空間における射影定理）の凸最適化問題への応用の前段階として、無限次元であるヒルベルト空間における凸集合や凸関数に関連する性質が、有限次元であるユークリッド空間と同様に成り立つのかを見ていく。<br>
+そのためにの前段階として、まず、無限次元であるヒルベルト空間における凸集合や凸関数に関連する性質が、有限次元であるユークリッド空間と同様に成り立つのかを見ていく。<br>
 
 
 <a id="ID_C-1"></a>
@@ -2056,9 +2057,6 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     - [半連続 - Wikipedia](https://ja.wikipedia.org/wiki/%E5%8D%8A%E9%80%A3%E7%B6%9A)<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45928672-78e92880-bf82-11e8-88c9-824308a1c80a.png)<br>
-
-- （例）凸関数の例（D(f) のガトー微分可能な内点に対する関数）<br>
-    > 記載中...
 
 - （例）凸関数の例（自己共役作用素を用いて定義された関数）<br>
     ヒルベルト空間 H 上に定義された自己共役作用素 A:H→H とヒルベルト空間中のベクトル ![image](https://user-images.githubusercontent.com/25688193/45932375-13af2a80-bfb6-11e8-84aa-124f5cdbb75b.png) を用いた関数<br>
@@ -2120,7 +2118,29 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <a id="ID_C-4"></a>
 
 ### ◎ ヒルベルト空間における凸関数の微分の単調性
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/46001535-7b649300-c0e6-11e8-8493-8f2584dfc0e4.png)<br>
+- （証明）<br>
+    - (a) ⇒ (b) の証明<br>
+        ガトー微分の定義式<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46002801-f7aca580-c0e9-11e8-9240-695c03f91d03.png)<br>
+        は、α∈R に関しての単調減少関数となっているので（計算略）、<br>
+        任意の ∀λ∈R に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46002877-275bad80-c0ea-11e8-929c-376f312877e4.png)<br>
+        の関係が成り立つ。<br>
+        更に、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46003089-a650e600-c0ea-11e8-9c30-9ceaa6c38a82.png)<br>
+        の関係より、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46003123-b799f280-c0ea-11e8-95c8-92237b24c98e.png)<br>
+        この式は、任意の ![image](https://user-images.githubusercontent.com/25688193/46003157-cda7b300-c0ea-11e8-8e2c-d7485daa95b6.png) に対して成り立っているので、<br>
+        ヒルベルト空間中の任意の２点 ![image](https://user-images.githubusercontent.com/25688193/46003253-06e02300-c0eb-11e8-8cae-cfed24d6155a.png) に対しては、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46003280-195a5c80-c0eb-11e8-9551-07eed51c31b7.png)<br>
+        が成り立つことが分かる。<br>
+        この２つの式の両辺を足し合わせると、定理の (b) の単調写像の条件<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46003305-2a0ad280-c0eb-11e8-9b97-abaa1c4e5816.png)<br>
+        が導かれる。<br>
+        <br>
+    - (b) ⇒ (a) の証明<br>
+        > 記載中...
 
 
 ---
