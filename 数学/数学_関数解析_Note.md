@@ -2202,7 +2202,10 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ### ◎ 凸最適化問題と変分不等式問題と不動点問題
 ![image](https://user-images.githubusercontent.com/25688193/46080379-c230b680-c1d4-11e8-95f0-573ab9553df4.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/46082708-a9c39a80-c1da-11e8-9da5-b39cddf06282.png)<br>
+
+<!--
 ![image](https://user-images.githubusercontent.com/25688193/46083243-f6f43c00-c1db-11e8-9dd4-48795244325c.png)<br>
+-->
 
 <br>
 
@@ -2211,7 +2214,30 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 ![image](https://user-images.githubusercontent.com/25688193/46089954-9e786b00-c1ea-11e8-9e8e-e8e1cc9ca657.png)<br>
 - （証明）<br>
-    > 記載中...
+    - (a) ⇒ (b) の証明<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46100940-a691d400-c205-11e8-8884-b58f0de474cd.png)<br>
+        ならば、![image](https://user-images.githubusercontent.com/25688193/46101005-cc1edd80-c205-11e8-9fb0-4f34870f5263.png) の間の点 ![image](https://user-images.githubusercontent.com/25688193/46101040-e1940780-c205-11e8-817a-2be94334cba7.png) に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46101107-0daf8880-c206-11e8-9956-29169d2c26b1.png)<br>
+		が成り立つ。この式を変形して ![image](https://user-images.githubusercontent.com/25688193/46101293-84e51c80-c206-11e8-8237-749ddefe3ddc.png) とすると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46101438-d8f00100-c206-11e8-8c95-e938511b6ca6.png)<br>
+    - (b) ⇒ (a) の証明<br>
+        ガトー微分可能な真凸関数 f の凸性より、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46101723-a1ce1f80-c207-11e8-8fab-6b476fc35ef0.png)<br>
+        変形して、![image](https://user-images.githubusercontent.com/25688193/46101293-84e51c80-c206-11e8-8237-749ddefe3ddc.png) とすると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46101751-b14d6880-c207-11e8-8c58-04437bf64fa6.png)<br>
+    - (b) ⇔ (c) の証明<br>
+        簡単な式変形となってる。<br>
+    - (c) ⇔ (d) の証明<br>
+        凸射影定理にある「凸射影の幾何学特徴付け」の関係<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46100414-49495300-c204-11e8-975b-96b9eaf57e10.png) より<br>
+        (c) の条件と (d) の条件を比較すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46100694-f3c17600-c204-11e8-9c07-625ba066f0a7.png)<br>
+        で対応しているので、(c) ⇔ (d) が成り立つ。<br>
+
+<br>
+
+- 【参照】<br>
+    - [ヒルベルト空間における凸射影定理と直交射影定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%87%B8%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86%E3%81%A8%E7%9B%B4%E4%BA%A4%E5%B0%84%E5%BD%B1%E5%AE%9A%E7%90%86)<br>
 
 
 <a id="ID_C-6"></a>
@@ -2223,13 +2249,22 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 「凸最適化問題 」⇔ 「変分不等式問題」⇔ 「（非線形である直交射影の合成写像に対する）不動点問題」の結論を組み合わせると、<br>
 種々の不動点定理（例えば、縮小写像の不動点定理など）から、変分不等式問題や不動点に関しての逐次近似アルゴリズム（例えば、射影勾配法など）を構築出来ることが分かる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46091313-86eeb180-c1ed-11e8-959a-3bee7de7d4a0.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46098791-1ef59680-c200-11e8-8099-ae57a9168ab2.png)<br>
 - （証明）<br>
-    > 記載中...
+    - (a) の証明<br>
+        直交射影の合成写像（＝非線形写像）![image](https://user-images.githubusercontent.com/25688193/46099558-0ab29900-c202-11e8-9024-5dbca36db754.png) の拡大性に関する式は、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46099508-ec4c9d80-c201-11e8-91b4-fdf91d20f8f2.png)<br>
+        となる。<br>
+		従って、非線形な直交射影の合成写像 ![image](https://user-images.githubusercontent.com/25688193/46099558-0ab29900-c202-11e8-9024-5dbca36db754.png) は、縮小写像になっていることが分かる。<br>
+        <br>
+    - (b) の証明<br>
+        定理にも示しているように、<br>
+        非線形な直交射影の合成写像 ![image](https://user-images.githubusercontent.com/25688193/46099558-0ab29900-c202-11e8-9024-5dbca36db754.png) が、縮小写像になるので、<br>
+        縮小写像の不動点定理より、唯一の不動点 ![image](https://user-images.githubusercontent.com/25688193/46098163-b5c15380-c1fe-11e8-96a4-dc3b2ef34e82.png) に強収束する点列 ![image](https://user-images.githubusercontent.com/25688193/46098178-c40f6f80-c1fe-11e8-8067-1bcaa5c072cd.png) が存在する。<br>
 
 <br>
 
-> 【Memo】凸最適化問題に対する関数解析（主にヒルベルト空間と凸射影）の適用<br>
+> 【Memo】凸最適化問題に対する関数解析（主にヒルベルト空間と凸射影、縮小写像の不動点定理）の適用<br>
 > １．ヒルベルト空間における凸射影（直交射影）の非拡大性 → 縮小写像の不動点定理 → 不動点の逐次近似アルゴリズムの議論が可能になる。<br>
 > ２．凸最適化問題 → ヒルベルト空間における直交射影の合成写像（非線形写像になる）に対する不動点問題に置き換え→直交射影の合成写像（＝非線形写像）の非拡大性 → 種々の不動点定理（縮小写像の不動点定理など） → 不動点の逐次近似アルゴリズムの議論（射影勾配法など）が可能になる。<br>
 
