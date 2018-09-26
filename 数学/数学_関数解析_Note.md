@@ -2165,8 +2165,30 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 ![image](https://user-images.githubusercontent.com/25688193/46018785-a6b2a680-c115-11e8-8690-380233113a66.png)<br>
 - （証明）<br>
-    > 記載中...
-
+    - (a) の証明<br>
+        任意の ∀t∈(0,1) とある２つのベクトル ![image](https://user-images.githubusercontent.com/25688193/46035856-0ec9b280-c13f-11e8-8ff4-e4dcfd6f72a4.png) に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46035905-2a34bd80-c13f-11e8-94df-efafdd5c6783.png)<br>
+        の関係が成り立つので、この距離関数 ![image](https://user-images.githubusercontent.com/25688193/46036037-839cec80-c13f-11e8-8ecf-77090cdbc0de.png) は、凸関数である。<br>
+        更に任意の ![image](https://user-images.githubusercontent.com/25688193/46036112-ae874080-c13f-11e8-824f-9edf5cc66db2.png) に対して、![image](https://user-images.githubusercontent.com/25688193/46036084-9d3e3400-c13f-11e8-823a-bffbaff8cc12.png) となるので、この距離関数 ![image](https://user-images.githubusercontent.com/25688193/46036037-839cec80-c13f-11e8-8ecf-77090cdbc0de.png) は、真凸関数となる。<br>
+        <br>
+    - (b) の２乗距離関数 ![image](https://user-images.githubusercontent.com/25688193/46037542-623dff80-c143-11e8-8ffb-1bbfbf310671.png) の凸性証明<br>
+        任意の ∀t∈(0,1) とある２つのベクトル ![image](https://user-images.githubusercontent.com/25688193/46035856-0ec9b280-c13f-11e8-8ff4-e4dcfd6f72a4.png) に対して、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46037626-a0d3ba00-c143-11e8-86e7-5c6d195119aa.png)<br>
+        の関係が成り立つので、この２乗距離関数 ![image](https://user-images.githubusercontent.com/25688193/46037542-623dff80-c143-11e8-8ffb-1bbfbf310671.png) は、凸関数である。<br>
+        <br>
+    - (b) の２乗距離関数 ![image](https://user-images.githubusercontent.com/25688193/46037542-623dff80-c143-11e8-8ffb-1bbfbf310671.png) のフレッシェ微分可能性の証明<br>
+        任意の ![image](https://user-images.githubusercontent.com/25688193/46067886-d4016200-c1b2-11e8-87f4-be990403df7a.png) に対して、２乗距離関数の変化量は、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46067922-e7143200-c1b2-11e8-80d1-ff7b2b70059d.png)<br>
+        ここで、直交射影 ![image](https://user-images.githubusercontent.com/25688193/46067966-ff844c80-c1b2-11e8-8960-90a91445897c.png) の定義より、この式から以下の２つの不等式が成り立つ。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46067998-19259400-c1b3-11e8-97b2-2c527d6a1e37.png)<br>
+        従って、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46068039-35c1cc00-c1b3-11e8-9fcf-9f7dfb279ec6.png)<br>
+        更に、直交射影 ![image](https://user-images.githubusercontent.com/25688193/46067966-ff844c80-c1b2-11e8-8960-90a91445897c.png) の非拡大性より、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46068114-66a20100-c1b3-11e8-9822-a12cf2b982b2.png)<br>
+        従って、先の不等式<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46068141-76b9e080-c1b3-11e8-9260-bf1fbb33a2e8.png)<br>
+        で ![image](https://user-images.githubusercontent.com/25688193/46068435-1aa38c00-c1b4-11e8-8d50-27e76c14703d.png) とすると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/46068297-d912e100-c1b3-11e8-87fd-99f2bb989b54.png)<br>
 
 - 【参照】<br>
     - [フレッシェ微分](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%95%E3%83%AC%E3%83%83%E3%82%B7%E3%82%A7%E5%BE%AE%E5%88%86)<br>
