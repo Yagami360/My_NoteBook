@@ -2213,10 +2213,10 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <br>
 
 ここで、以下の定理で示すように、<br>
-特別な単調作用素 ![image](https://user-images.githubusercontent.com/25688193/46083283-13907400-c1dc-11e8-92ac-ee4f56fe4158.png) に対しては、直交射影 ![image](https://user-images.githubusercontent.com/25688193/46083311-24d98080-c1dc-11e8-9a07-c66ec90e34fe.png) における μ の設定を工夫することにより、この直交射影 ![image](https://user-images.githubusercontent.com/25688193/46083521-99acba80-c1dc-11e8-9932-98a8e0daff72.png) を縮小写像や非拡大写像にすることが出来る。<br>
+特別な単調作用素 ![image](https://user-images.githubusercontent.com/25688193/46083283-13907400-c1dc-11e8-92ac-ee4f56fe4158.png) に対しては、直交射影の合成写像 ![image](https://user-images.githubusercontent.com/25688193/46083311-24d98080-c1dc-11e8-9a07-c66ec90e34fe.png) における μ の設定を工夫することにより、この直交射影 ![image](https://user-images.githubusercontent.com/25688193/46083521-99acba80-c1dc-11e8-9932-98a8e0daff72.png) を縮小写像や非拡大写像にすることが出来る。<br>
 このことと、先の定理にあった、<br>
 「凸最適化問題 」⇔ 「変分不等式問題」⇔ 「直交射影の不動点問題」の結論を組み合わせると、<br>
-直交射影の不動点定理（不動点問題）から、変分不等式問題の逐次近似アルゴリズムを構築出来ることが分かる。<br>
+種々の不動点定理（例えば、縮小写像の不動点定理）から、変分不等式問題の逐次近似アルゴリズムを構築出来ることが分かる。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/46085472-15a90180-c1e1-11e8-85ec-1f1f66a099dc.png)<br>
 - （証明）<br>
