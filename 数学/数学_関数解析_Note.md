@@ -100,7 +100,7 @@
         1. [Mann の不動点近似定理と射影勾配法の弱収束定理](#ID_C-7-1)
         1. [射影 Landweber 法](#ID_C-7-2)
         1. [並列射影法](#ID_C-7-3)
-        1. ハイブリッド最急降下法
+        1. [ハイブリッド最急降下法](#ID_C-7-4)
         1. アンカー法
 1. スペクトル理論への応用
     1. レゾルベント集合
@@ -1735,9 +1735,6 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 > 記載中...
 
 
-##### 【補足】特異値分解
-> 記載中...
-
 
 <a id="ID_A-4"></a>
 
@@ -1996,7 +1993,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 ## ■ 凸最適化問題への応用
 先に見てきた、ヒルベルト空間における射影定理は、無限次元の空間における幾何学的性質を与えてくれた。この射影定理とこれから導入される幾何学的性質は、凸最適化問題にも応用出来る。<br>
-ここでは、一般化された議論を行うために、「有限次元であるユークリッド空間での凸最適化問題」ではなく、「無限次元であるヒルベルト空間で定義された凸最適化問題」を考えた上で、<br>
+ここでは、一般化された議論を行うために、「有限次元であるユークリッド空間での凸最適化問題」ではなく、「無限次元であるヒルベルト空間での凸最適化問題」を考えた上で、<br>
 以下のようなトピックを取り上げる。<br>
 - 「凸最適化問題が、変分不等式問題に帰着できること」<br>
 - 「変分不等式問題は、非線形写像の不動点を求める問題に帰着できること」<br>
@@ -2311,7 +2308,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 #### ☆ 射影 Landweber 法
 射影 Landweber 法は、逐次近似アルゴリズムの１つであるが、射影勾配法の特別なケースでの一例となっている。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46169205-5c782380-c2d5-11e8-820b-738ca79c118c.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46176625-0e6e1a80-c2eb-11e8-8082-288028f47c1b.png)<br>
 - （証明）<br>
     有界線形作用素 A の共役作用素 ![image](https://user-images.githubusercontent.com/25688193/46164727-b541bf00-c2c9-11e8-8e14-4b51bf57e70d.png) を用いて、関数 Φ を表現し直すことを考える。<br>
     ![image](https://user-images.githubusercontent.com/25688193/46166890-3f405680-c2cf-11e8-90dc-23487d269153.png)<br>
@@ -2334,14 +2331,39 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     <br>
     そして、この結論（![image](https://user-images.githubusercontent.com/25688193/46169254-84678700-c2d5-11e8-8a3f-8aa101de82b7.png) は非拡大写像）に対して、射影勾配法を適用することが出来て、このアルゴリズム（射影 Landweber 法）が導かれる。<br>
 
+- 【参考】<br>
+    - [有界線形作用素の共役作用素](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E6%9C%89%E7%95%8C%E7%B7%9A%E5%BD%A2%E4%BD%9C%E7%94%A8%E7%B4%A0%E3%81%AE%E5%85%B1%E5%BD%B9%E4%BD%9C%E7%94%A8%E7%B4%A0)<br>
+
 
 <a id="ID_C-7-3"></a>
 
 #### ☆ 並列射影法
 並列射影法もまた、逐次近似アルゴリズムの１つであるが、射影勾配法の特別なケースでの一例となっている。<br>
 
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/46176704-51c88900-c2eb-11e8-9bd2-df8177947eab.png)<br>
+- （証明）<br>
+    先の定理（ヒルベルト空間における閉凸集合への２乗距離関数の真凸性とフレッシェ微分）より、<br>
+    閉凸集合への２乗距離関数として定義した Φ に対しては、フレッシェ微分可能となる。<br>
+    従って、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46176292-e29e6500-c2e9-11e8-8a58-7ee9d759c04b.png)<br>
+    のフレッシェ導関数が存在し、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46176427-67897e80-c2ea-11e8-88cd-9547135f616d.png)<br>
+    ここで、![image](https://user-images.githubusercontent.com/25688193/46176773-7cb2dd00-c2eb-11e8-90d6-4857d75c67f7.png) は非拡大写像なので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46176980-30b46800-c2ec-11e8-8102-5e90744aed2b.png)<br>
+    従って、写像 ![image](https://user-images.githubusercontent.com/25688193/46177048-62c5ca00-c2ec-11e8-9590-49a87e13205d.png) は非拡大写像となり、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46177122-a7516580-c2ec-11e8-9b07-ca46bf651a5f.png) である ![image](https://user-images.githubusercontent.com/25688193/46169254-84678700-c2d5-11e8-8a3f-8aa101de82b7.png) も非拡大写像となる。<br>
+    従って、この結論（![image](https://user-images.githubusercontent.com/25688193/46169254-84678700-c2d5-11e8-8a3f-8aa101de82b7.png) は非拡大写像）に対して、射影勾配法を適用することが出来て、このアルゴリズム（並列射影法）が導かれる。<br>
 
+<br>
+
+- 【参考】<br>
+    - [ヒルベルト空間における凸関数の微分の単調性](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%87%B8%E9%96%A2%E6%95%B0%E3%81%AE%E5%BE%AE%E5%88%86%E3%81%AE%E5%8D%98%E8%AA%BF%E6%80%A7)<br>
+
+
+<a id="ID_C-7-4"></a>
+
+#### ☆ ハイブリッド最急降下法
+> 記載中...
 
 
 ---
