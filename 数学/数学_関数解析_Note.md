@@ -99,7 +99,7 @@
     1. [射影勾配法の一般化](#ID_C-7)
         1. [Mann の不動点近似定理と射影勾配法の弱収束定理](#ID_C-7-1)
         1. [射影 Landweber 法](#ID_C-7-2)
-        1. 並列射影法
+        1. [並列射影法](#ID_C-7-3)
         1. ハイブリッド最急降下法
         1. アンカー法
 1. スペクトル理論への応用
@@ -2270,7 +2270,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 > 【Memo】凸最適化問題に対する関数解析（主にヒルベルト空間と凸射影、縮小写像の不動点定理）の適用<br>
 > １．ヒルベルト空間における凸射影（直交射影）の非拡大性 → 縮小写像の不動点定理 → 不動点の逐次近似アルゴリズムの議論が可能になる。<br>
-> ２．凸最適化問題 → ヒルベルト空間における直交射影の合成写像（非線形写像になる）に対する不動点問題に置き換え→直交射影の合成写像（＝非線形写像）の非拡大性 → 種々の不動点定理（縮小写像の不動点定理など） → 不動点の逐次近似アルゴリズムの議論（射影勾配法など）が可能になる。<br>
+> ２．凸最適化問題 → ヒルベルト空間における凸射影（直交射影）と単調写像やガトー微分の合成写像（非線形写像になる）に対する不動点問題に置き換え→この非線形写像の非拡大性 → 種々の不動点定理（縮小写像の不動点定理など） → 不動点の逐次近似アルゴリズムの議論（射影勾配法など）が可能になる。<br>
 
 - 【参照】<br>
     - [縮小写像の不動点定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E7%B8%AE%E5%B0%8F%E5%86%99%E5%83%8F%E3%81%AE%E4%B8%8D%E5%8B%95%E7%82%B9%E5%AE%9A%E7%90%86)<br>
@@ -2303,7 +2303,7 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 以下の定理（射影勾配法の弱収束定理）は、この定理（Mann の不動点近似定理）を凸最適化問題に適用することにより得られる定理である。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46145122-1487db00-c29a-11e8-8904-008f88587434.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46156124-c1228680-c2b3-11e8-9ee8-872dea752451.png)<br>
 - （証明略）<br>
 
 
@@ -2311,6 +2311,35 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 #### ☆ 射影 Landweber 法
 射影 Landweber 法は、逐次近似アルゴリズムの１つであるが、射影勾配法の特別なケースでの一例となっている。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46169205-5c782380-c2d5-11e8-820b-738ca79c118c.png)<br>
+- （証明）<br>
+    有界線形作用素 A の共役作用素 ![image](https://user-images.githubusercontent.com/25688193/46164727-b541bf00-c2c9-11e8-8e14-4b51bf57e70d.png) を用いて、関数 Φ を表現し直すことを考える。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46166890-3f405680-c2cf-11e8-90dc-23487d269153.png)<br>
+    ここで、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46164967-5597e380-c2ca-11e8-905f-c5b4268fccf1.png)<br>
+    従って、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46166917-52ebbd00-c2cf-11e8-9c9c-adfe7fad70d2.png)<br>
+    <br>
+    ここで、先の例題（凸関数の例：自己共役作用素を用いて定義された関数）でみたように、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46165720-4b76e480-c2cc-11e8-8aa7-562ad8b0f3f5.png) に対して、<br>
+    関数 f:H→R が凸関数となることと、<br>
+    任意の ![image](https://user-images.githubusercontent.com/25688193/46165780-6ba6a380-c2cc-11e8-96ed-162577b7ba18.png) に対して、![image](https://user-images.githubusercontent.com/25688193/46165811-8416be00-c2cc-11e8-9645-328212f45a58.png) が成り立つことが等価であるので、<br>
+    今の ![image](https://user-images.githubusercontent.com/25688193/46165880-b1636c00-c2cc-11e8-8a9d-0c19d219a698.png) の関係より、この関数 Φ は凸関数であることが分かる。<br>
+    <br>
+    更に、この関数 Φ のフレッシェ微分（ガトー微分でもある）は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46168449-7add1f80-c2d3-11e8-9637-6d9ee20ac9fc.png)<br>
+    となるので（計算略）、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46168473-8e888600-c2d3-11e8-81be-6c841932ff75.png)<br>
+    となり、フレッシェ微分（ガトー微分でもある）![image](https://user-images.githubusercontent.com/25688193/46169254-84678700-c2d5-11e8-8a3f-8aa101de82b7.png) は非拡大写像であることが分かる。<br>
+    <br>
+    そして、この結論（![image](https://user-images.githubusercontent.com/25688193/46169254-84678700-c2d5-11e8-8a3f-8aa101de82b7.png) は非拡大写像）に対して、射影勾配法を適用することが出来て、このアルゴリズム（射影 Landweber 法）が導かれる。<br>
+
+
+<a id="ID_C-7-3"></a>
+
+#### ☆ 並列射影法
+並列射影法もまた、逐次近似アルゴリズムの１つであるが、射影勾配法の特別なケースでの一例となっている。<br>
 
 > 記載中...
 
