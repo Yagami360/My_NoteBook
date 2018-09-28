@@ -12,6 +12,13 @@
         1. [線形独立（一次独立）と線形従属（一次従属）の幾何学的イメージ](#ID_2-2-1)    
     1. [基底ベクトル](#ID_2-3)
     1. [ベクトルの次元](#ID_2-4)
+    1. [【外部リンク】固有値 [eigenvalue]、固有ベクトル [eigenvector])](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%9B%BA%E6%9C%89%E5%80%A4-eigenvalue%E5%9B%BA%E6%9C%89%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-eigenvector)
+    1. [【外部リンク】行列の対角化 [diagonalization]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E8%A1%8C%E5%88%97%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96-diagonalization)
+    1. [【外部リンク】対角化可能な条件](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%AF%BE%E8%A7%92%E5%8C%96%E5%8F%AF%E8%83%BD%E3%81%AA%E6%9D%A1%E4%BB%B6)
+    1. [【外部リンク】なぜ対角化するのか？](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%81%AA%E3%81%9C%E5%AF%BE%E8%A7%92%E5%8C%96%E3%81%99%E3%82%8B%E3%81%AE%E3%81%8B)
+    1. [【外部リンク】直行行列 [orthogonal matrix] と実対称行列 [symmetric matrix]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E7%9B%B4%E8%A1%8C%E8%A1%8C%E5%88%97-orthogonal-matrix-%E3%81%A8%E5%AE%9F%E5%AF%BE%E7%A7%B0%E8%A1%8C%E5%88%97-symmetric-matrix)
+    1. [【外部リンク】エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97-hermitian-matrix-%E3%81%A8%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97-unitary-matrix-%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96)
+    1. [【外部リンク】ジョルダン標準形 [Jordan normal form]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%B8%E3%83%A7%E3%83%AB%E3%83%80%E3%83%B3%E6%A8%99%E6%BA%96%E5%BD%A2-jordan-normal-form)
 1. [点列の収束と極限](#ID_3)
     1. [点列の収束と極限に関する有用な性質](#ID_3-1)
     1. [上極限と下極限](#ID_3-2)
@@ -53,7 +60,7 @@
     1. [バナッハ空間における基底（シャウダー基底）](#ID_7-6)
 1. [ヒルベルト空間 [Hilbert space]](#ID_8)
     1. [ヒルベルト空間の例](#ID_8-1)
-    1. ヒルベルト空間における三平方の定理、中線定理
+    1. [ヒルベルト空間における三平方の定理、中線定理](#ID_8-2)
     1. [自己共役作用素（エルミート作用素）と有界性＜閉グラフ定理の応用＞](#ID_8-3)
     1. [ヒルベルト空間における正規直交系とフーリエ級数](#ID_8-4)
     1. [ヒルベルト空間における極大な正規直交系](#ID_8-5)
@@ -102,8 +109,10 @@
         1. [並列射影法](#ID_C-7-3)
         1. [ハイブリッド最急降下法](#ID_C-7-4)
         1. [アンカー法](#ID_C-7-5)
-1. スペクトル理論への応用
-    1. レゾルベント集合
+1. [スペクトル理論への応用](#ID_D)
+    1. [【補足】線形代数学で扱う固有値問題、対角化、ジョルダン標準形](#ID_D-1)
+    1. [レゾルベント集合とスペクトル](#ID_D-2)
+    1. エルミート作用素のスペクトル分解定理
     1. コンパクト作用素のスペクトル理論
 1. 機械学習への応用
 1. [参考文献](#参考文献)
@@ -1505,8 +1514,11 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/45305156-ad0d2400-b554-11e8-93e5-3c34a1da5dd8.png)<br>
+<!--
 - （証明）<br>
     > 記載中...<br>
+-->
+- （証明略）<br>
 
 
 <a id="ID_B-1-4"></a>
@@ -1587,11 +1599,12 @@ T:X→X が、必ずしも縮小写像ではないリプシッツ連続な写像
 
 <br>
 
+<!--
 - （例）最小分散不偏推定法、カルマンフィルター<br>
     大雑把には、平均的に真の値を予想できる量（＝不偏推定量）を扱う系のうち、<br>
     特に未知変数 ![image](https://user-images.githubusercontent.com/25688193/45505548-cd90e480-b7c7-11e8-862d-64ce816f3970.png) の線形結合で表すような不偏推定量 ![image](https://user-images.githubusercontent.com/25688193/45505592-eef1d080-b7c7-11e8-9657-41bef7312bfc.png) を考える。<br>
     > 記載中...
-
+-->
 
 <a id="ID_A"></a>
 
@@ -2043,8 +2056,11 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ![image](https://user-images.githubusercontent.com/25688193/45915149-09dcd880-be8b-11e8-850a-9efa964ccb5b.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/45915157-224cf300-be8b-11e8-82d6-d2eef2bc69be.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/45914336-a9479e80-be7e-11e8-9515-7450d63b5fdc.png)<br>
+<!--
 - （証明）<br>
     > 記載中...
+-->
+- （証明略）<br>
 
 - 【参考】<br>
     - [ヒルベルト空間における強収束と弱収束](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md#-%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%BC%B7%E5%8F%8E%E6%9D%9F%E3%81%A8%E5%BC%B1%E5%8F%8E%E6%9D%9F)<br>
@@ -2399,6 +2415,48 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ![image](https://user-images.githubusercontent.com/25688193/46205657-698c2580-c35c-11e8-8802-2ccc373b1d83.png)<br>
 の更新式が導出される。<br>
 そして、この式は、アンカー法の逐次近似アルゴリズムとなっている。<br>
+
+
+<a id="ID_D"></a>
+
+## ■ スペクトル理論への応用
+線形代数学で扱っている固有値問題は、有限次元のユークリッド空間での話であったが、<br>
+この有限次元での固有値問題を一般化し、無限次元での議論に拡張したのが、スペクトル理論である。<br>
+
+無限次元での議論を行う前に、まずは、線形代数学で扱う固有値問題を復習していく。<br>
+
+<a id="ID_D-1"></a>
+
+### 【補足】線形代数学で扱う固有値問題、対角化、ジョルダン標準形
+> 記載中...
+
+- 【参考】
+    - [固有値 [eigenvalue]、固有ベクトル [eigenvector]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%9B%BA%E6%9C%89%E5%80%A4-eigenvalue%E5%9B%BA%E6%9C%89%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-eigenvector)<br>
+    - [行列の対角化 [diagonalization]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E8%A1%8C%E5%88%97%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96-diagonalization)<br>
+    - [エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97-hermitian-matrix-%E3%81%A8%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97-unitary-matrix-%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96)<br>
+    - [ジョルダン標準形 [Jordan normal form]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%B8%E3%83%A7%E3%83%AB%E3%83%80%E3%83%B3%E6%A8%99%E6%BA%96%E5%BD%A2-jordan-normal-form)<br>
+
+<!--
+行列の固有値は、その行列の変換（線形写像、線形変換）により、方向の変わらない特別なベクトル、即ち固有ベクトルと共に出てくる極めて重要な概念である（応用上の観点からも）<br>
+ただ、この固有値は１次方程式 y=ax を考えた場合、ただの比例乗数 a のことを示しており、非常に簡単な概念であるともいえる。言い換えると、１次方程式における比例乗数のことを連立１次方程式に拡張した場合の概念が固有値である。<br>
+
+まずは、簡単のため線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46212314-a530ea80-c370-11e8-8fdd-5368c8ec5a3e.png) で特に１次元ベクトルのケースから考えていくことにする。<br>
+１次元ベクトルは、ただ１つの基底ベクトル ![image](https://user-images.githubusercontent.com/25688193/46212417-e3c6a500-c370-11e8-87a2-89f560cf6dee.png) を用いて、![image](https://user-images.githubusercontent.com/25688193/46221092-0bc10300-c387-11e8-943b-3b89af8e3641.png) と表すことができる。<br>
+この時、線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46212314-a530ea80-c370-11e8-8fdd-5368c8ec5a3e.png) は、![image](https://user-images.githubusercontent.com/25688193/46221135-30b57600-c387-11e8-9a10-830ed7924280.png) となる。<br>
+（※ここで、基底ベクトル ![image](https://user-images.githubusercontent.com/25688193/46212417-e3c6a500-c370-11e8-87a2-89f560cf6dee.png) は１成分のベクトルであり、行列 A も１×１の行列、即ちスカラー定数なので a と置いている。）<br>
+つまり、この線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46221339-ca7d2300-c387-11e8-96f1-5dedf45d526c.png) から、一次式 y= ax が得られることが分かる。<br>
+ここで、この線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46221135-30b57600-c387-11e8-9a10-830ed7924280.png) からは、どのようなベクトルも a 倍されているが、この（１つもスカラー倍されるといった固有な）比例乗数 a のことを固有値 [eigenvalue] と名付ける。<br>
+
+同様にして、２次元ベクトルの線形変換のケースを考えていく。<br>
+
+
+> 記載中...
+-->
+
+<a id="ID_D-2"></a>
+
+### ◎ レゾルベント集合とスペクトル
+> 記載中...
 
 ---
 
