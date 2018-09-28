@@ -2002,6 +2002,10 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 そのための前段階として、まず、無限次元であるヒルベルト空間における凸集合や凸関数に関連する性質が、有限次元であるユークリッド空間と同様に成り立つのかを見ていく。<br>
 
+- 【参照】<br>
+    - [最適化と信号処理（前編）～射影勾配法の２つの一般化～](https://www.jstage.jst.go.jp/article/itej/63/8/63_8_1088/_pdf)<br>
+    - [非拡大写像の不動点表現が拓いた凸最適化の進化と信号処理への応用 (ウェーブレット解析とサンプリング理論)](https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/224328/1/1972-01.pdf)<br>
+
 
 <a id="ID_C-1"></a>
 
@@ -2277,10 +2281,6 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 ### ◎ 射影勾配法の一般化
 先に見たように、凸最適化問題の古典的なアルゴリズム（射影勾配法）を、関数解析の視点（ヒルベルト空間、凸射影、直交射影、非拡大写像、縮小写像の不動点定理など）や不動点理論の視点から捉え直すことにより、凸最適化問題の古典的なアルゴリズム（射影勾配法）の非自明な一般化が可能となる。<br>
 
-- 【参照】<br>
-    - [最適化と信号処理（前編）～射影勾配法の２つの一般化～](https://www.jstage.jst.go.jp/article/itej/63/8/63_8_1088/_pdf)<br>
-    - [非拡大写像の不動点表現が拓いた凸最適化の進化と信号処理への応用 (ウェーブレット解析とサンプリング理論)](https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/224328/1/1972-01.pdf)<br>
-
 
 <a id="ID_C-7-1"></a>
 
@@ -2363,7 +2363,22 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <a id="ID_C-7-4"></a>
 
 #### ☆ ハイブリッド最急降下法
-> 記載中...
+先に述べたように、射影勾配法によって逐次近似を行う点列を生成するためには、![image](https://user-images.githubusercontent.com/25688193/46200669-342c0b80-c34d-11e8-8ff0-049e1b5904dd.png) や ![image](https://user-images.githubusercontent.com/25688193/46200721-4dcd5300-c34d-11e8-84e8-83989e7661b3.png) の非拡大写像の関係式より、閉凸集合への凸射影 ![image](https://user-images.githubusercontent.com/25688193/46200804-908f2b00-c34d-11e8-9ff2-a00803bc50a8.png) の計算が必要となる。<br>
+従って、この凸射影の計算が困難な場合には、射影勾配法では逐次近似を行えないという欠点がある。<br>
+
+しかしながら、凸射影の不動点全体からなる集合 ![image](https://user-images.githubusercontent.com/25688193/46200865-b61c3480-c34d-11e8-920a-8e52b30f627b.png) と、非拡大写像の不動点全体からなる集合 ![image](https://user-images.githubusercontent.com/25688193/46200921-e237b580-c34d-11e8-8767-c30ea04dfb26.png) とが等しく、これらの不動点全体の集合が、ヒルベルト空間の閉凸部分集合 C⊂H となるような場合、<br>
+即ち、![image](https://user-images.githubusercontent.com/25688193/46201077-4195c580-c34e-11e8-932e-ae1f38f0f269.png) となるような場合においては、非拡大写像 T の計算を簡単に行うことが出来るケースが存在する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46204241-7e19ef00-c357-11e8-9179-fe5aee0b8a51.png)<br>
+
+このような場合において、威力を発揮する逐次近似アルゴリズムが、ハイブリッド最急降下法である。<br>
+この逐次近似アルゴリズムは、凸射影 ![image](https://user-images.githubusercontent.com/25688193/46200804-908f2b00-c34d-11e8-9ff2-a00803bc50a8.png) の代わりに、一般の非拡大写像 T を逐次近似を行う点列の生成に利用できるようにしており、<br>
+「非拡大写像 T の不動点全体の集合 Fix(T) 上での凸関数 f の最小化 ![image](https://user-images.githubusercontent.com/25688193/46201258-8a4d7e80-c34e-11e8-99ed-83187340c884.png) を実現する。」<br>
+
+このことを示したのが、以下のハイブリッド最急降下法の収束定理である。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46202157-021ca880-c351-11e8-9908-98fc872e8813.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46204266-9427af80-c357-11e8-8df9-0fe627f6c2ab.png)<br>
 
 
 ---
