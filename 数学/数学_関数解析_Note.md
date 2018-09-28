@@ -20,7 +20,7 @@
     1. [距離空間における収束、極限とコーシー列（基本列）](#ID_4-2)
     1. [完備距離空間](#ID_4-3)
         1. [完備距離空間の例](#ID_4-3-1)
-        1. 【補足】開集合、閉集合
+        <!-- 1. 【補足】開集合、閉集合 -->
         1. [写像の連続性](#ID_4-3-3)
         1. [コンパクト集合](#ID_4-3-4)
         1. [縮小写像の不動点定理](#ID_4-3-5)
@@ -101,7 +101,7 @@
         1. [射影 Landweber 法](#ID_C-7-2)
         1. [並列射影法](#ID_C-7-3)
         1. [ハイブリッド最急降下法](#ID_C-7-4)
-        1. アンカー法
+        1. [アンカー法](#ID_C-7-5)
 1. スペクトル理論への応用
     1. レゾルベント集合
     1. コンパクト作用素のスペクトル理論
@@ -2377,9 +2377,28 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 このことを示したのが、以下のハイブリッド最急降下法の収束定理である。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46202157-021ca880-c351-11e8-9908-98fc872e8813.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46205552-fedaea00-c35b-11e8-8654-675b4dd9af68.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/46204266-9427af80-c357-11e8-8df9-0fe627f6c2ab.png)<br>
 
+<br>
+
+> 【Memo】<br>
+> ハイブリッド最急降下法の機械学習への適用事例<br>
+
+
+<a id="ID_C-7-5"></a>
+
+#### ☆ アンカー法
+ハイブリッド最急降下法の特別な場合として、アンカー法が導かれる。<br>
+具体的には、ハイブリッド最急降下法における凸関数 f として、<br>
+![image](https://user-images.githubusercontent.com/25688193/46205418-7f4d1b00-c35b-11e8-896d-1d59127d1014.png)<br>
+を選ぶと、先のハイブリッド最急降下法における近似点列の更新式<br>
+![image](https://user-images.githubusercontent.com/25688193/46205448-95f37200-c35b-11e8-8589-5a812a6d4bb7.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46205492-bcb1a880-c35b-11e8-89e0-15444f72a447.png)<br>
+の関係より、<br>
+![image](https://user-images.githubusercontent.com/25688193/46205657-698c2580-c35c-11e8-8802-2ccc373b1d83.png)<br>
+の更新式が導出される。<br>
+そして、この式は、アンカー法の逐次近似アルゴリズムとなっている。<br>
 
 ---
 
