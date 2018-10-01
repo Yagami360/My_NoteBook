@@ -2545,9 +2545,16 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     で表現する。<br>
     このジョルダン細胞は、行列で表現すると、<br>
     ![image](https://user-images.githubusercontent.com/25688193/46273707-a1c87980-c591-11e8-9a6b-b6a4c23e88c6.png)<br>
-    > 記載中...
-
-<br>
+    <br>
+    ここで、べき零変換<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46314640-189f5a00-c606-11e8-8b03-d6c57276a8b3.png)<br>
+    において、<br>
+    全ての固有値 ![image](https://user-images.githubusercontent.com/25688193/46314687-37055580-c606-11e8-8974-d3f6d2034454.png) に対して ![image](https://user-images.githubusercontent.com/25688193/46314721-4d131600-c606-11e8-96ef-aac50779d448.png) の場合は、<br>
+    ジョルダン標準形は、固有値を対角成分にもつ通常の対角化行列 ![image](https://user-images.githubusercontent.com/25688193/46273072-fd453800-c58e-11e8-9b99-b416f72132a1.png) によって表現できる。<br>
+	一方で、固有値方程式の解が重根となり、固有値の縮約が発生するケースにおいては、完全正規直交系が得られず、固有ベクトルで空間全体を張ることが出来なくなる。<br>
+    この場合には、![image](https://user-images.githubusercontent.com/25688193/46314914-e2160f00-c606-11e8-8dcf-d5cc7ba5ef69.png) の ![image](https://user-images.githubusercontent.com/25688193/46314940-f6f2a280-c606-11e8-8ed9-06d5f9c4f581.png) のべき乗で一般化された固有値問題<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46315024-42a54c00-c607-11e8-935d-0108fdcb53ef.png)<br>
+    を解いて、一般化固有ベクトルを探すことになるが、ジョルダン標準形は、この方針で、空間全体を張ることの出来る基底ベクトルが構成出来ることを保証している。<br>
 
 <br>
 
@@ -2566,6 +2573,12 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 従って、有限次元から無限次元への拡張を試みるにあたっては、<br>
 この逆写像の作用素 ![image](https://user-images.githubusercontent.com/25688193/46273910-68443e00-c592-11e8-8b55-89698f3fb3fb.png)（＝レゾンベルト作用素）の性質を調べることになる。<br>
 
+![image](https://user-images.githubusercontent.com/25688193/46316034-f4de1300-c609-11e8-8082-667db075b457.png)<br>
+
+> 【メモ】<br>
+> このスペクトルの意味は、固有値に対応した概念であることが、後述のスペクトル分解定理で判明するが、ここでは、抽象的に定義するために、このような定義となっている？<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46318480-9d43a580-c611-11e8-88d5-01d38aa4ccad.png)<br>
 
 > 記載中...
 
