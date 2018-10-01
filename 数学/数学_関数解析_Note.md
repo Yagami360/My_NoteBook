@@ -2423,12 +2423,90 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 線形代数学で扱っている固有値問題は、有限次元のユークリッド空間での話であったが、<br>
 この有限次元での固有値問題を一般化し、無限次元での議論に拡張したのが、スペクトル理論である。<br>
 
-無限次元での議論を行う前に、まずは、線形代数学で扱う固有値問題を復習していく。<br>
-
 <a id="ID_D-1"></a>
 
 ### 【補足】線形代数学で扱う固有値問題、行列の対角化、ジョルダン標準形
+無限次元での議論を行う前に、まずは、線形代数学で扱う固有値問題、行列の対角化、エルミート行列とユニタリー行列、ジョルダン標準形等を復習していく。<br>
+
+- 固有値問題<br>
+    線形代数学で扱う固有値問題は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46264802-bd189200-c55b-11e8-8df2-9f2f6ce5db60.png)<br>
+    となる固有値 ![image](https://user-images.githubusercontent.com/25688193/46264810-ce619e80-c55b-11e8-8bd2-dbcda8af998c.png) と固有ベクトル ![image](https://user-images.githubusercontent.com/25688193/46264818-dcafba80-c55b-11e8-811c-5c619fcee15f.png) を見つけることであるが、<br>
+    この式を変形すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46264832-fa7d1f80-c55b-11e8-8d0d-ef7de70ad4fc.png)<br>
+    となり、これは線形作用素 ![image](https://user-images.githubusercontent.com/25688193/46264873-4cbe4080-c55c-11e8-8e1c-8b8c3c301394.png) のカーネル<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46264887-6eb7c300-c55c-11e8-9503-3994f6017ee4.png)<br>
+    を見つける問題に帰着できる。<br>
+    <br>
+
+<!--
+    行列の固有値は、その行列の変換（線形写像、線形変換）により、方向の変わらない特別なベクトル、即ち固有ベクトルと共に出てくる極めて重要な概念である（応用上の観点からも）<br>
+    ただ、この固有値は１次方程式 y=ax を考えた場合、ただの比例乗数 a のことを示しており、非常に簡単な概念であるともいえる。言い換えると、１次方程式における比例乗数のことを連立１次方程式に拡張した場合の概念が固有値である。<br>
+
+    まずは、簡単のため線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46212314-a530ea80-c370-11e8-8fdd-5368c8ec5a3e.png) で特に１次元ベクトルのケースから考えていくことにする。<br>
+    １次元ベクトルは、ただ１つの基底ベクトル ![image](https://user-images.githubusercontent.com/25688193/46212417-e3c6a500-c370-11e8-87a2-89f560cf6dee.png) を用いて、![image](https://user-images.githubusercontent.com/25688193/46221092-0bc10300-c387-11e8-943b-3b89af8e3641.png) と表すことができる。<br>
+    この時、線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46212314-a530ea80-c370-11e8-8fdd-5368c8ec5a3e.png) は、![image](https://user-images.githubusercontent.com/25688193/46221135-30b57600-c387-11e8-9a10-830ed7924280.png) となる。<br>
+    （※ここで、基底ベクトル ![image](https://user-images.githubusercontent.com/25688193/46212417-e3c6a500-c370-11e8-87a2-89f560cf6dee.png) は１成分のベクトルであり、行列 A も１×１の行列、即ちスカラー定数なので a と置いている。）<br>
+    つまり、この線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46221339-ca7d2300-c387-11e8-96f1-5dedf45d526c.png) から、一次式 y= ax が得られることが分かる。<br>
+    ここで、この線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46221135-30b57600-c387-11e8-9a10-830ed7924280.png) からは、どのようなベクトルも a 倍されているが、この（１つもスカラー倍されるといった固有な）比例乗数 a のことを固有値 [eigenvalue] と名付ける。<br>
+
+    同様にして、２次元ベクトルの線形変換のケースを考えていく。<br>
+
+    > 記載中...
+-->
+
+- 行列の対角化<br>
+    線形変換 ![image](https://user-images.githubusercontent.com/25688193/46264965-07e6d980-c55d-11e8-80e0-2e4e7f3fe542.png) の式として、例えば、以下のような式を考える。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46264969-17662280-c55d-11e8-9ee6-7fe854003900.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46264975-32389700-c55d-11e8-92c8-2f57c81e0518.png)<br>
+    この式は、上図のように直行座標系 ![image](https://user-images.githubusercontent.com/25688193/46264980-47152a80-c55d-11e8-9126-5373fac1c006.png) 上のベクトル ![image](https://user-images.githubusercontent.com/25688193/46264988-6449f900-c55d-11e8-84ee-5702f2173886.png) の線形変換式であるが、<br>
+    この直行座標系の基底ベクトルを<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46265100-9019ae80-c55e-11e8-8ff8-a4d6972c1b6b.png)<br>
+    とすると、この線形変換の式は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46265618-1fc15c00-c563-11e8-94d9-f5f55c6288a9.png)<br>
+    とも書ける。<br>
+    <br>
+    ここで、線形変換の式<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46265636-57c89f00-c563-11e8-9f89-d204ef9993a5.png)<br>
+    の固有値は、先に示したように、![image](https://user-images.githubusercontent.com/25688193/46265641-6911ab80-c563-11e8-81b3-659f46c10513.png) の２つであり、<br>
+    各々の固有値に対応した固有ベクトルは、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46265650-88a8d400-c563-11e8-8608-76e3f1735527.png)<br>
+    であるが、この２つの固有ベクトルを軸方向として採用した新しい座標系の基底は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46265735-6a8fa380-c564-11e8-81cf-03b0dfd50479.png)<br>
+    となり、この新しい座標系から見ると、この線形変換の式は、下図のように、<br>
+    新しい座標系 ![image](https://user-images.githubusercontent.com/25688193/46265727-56e43d00-c564-11e8-96eb-24580b10190e.png) 上のベクトル ![image](https://user-images.githubusercontent.com/25688193/46265745-82ffbe00-c564-11e8-968d-9dae8f90ab73.png) の線形変換式となる。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46265563-94e06180-c562-11e8-98e8-b631cdef708f.png)<br>
+    具体的に中身を計算してみると、<br>
+    固有値が、![image](https://user-images.githubusercontent.com/25688193/46265935-1d143600-c566-11e8-80b6-2da431fa1a25.png) なので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46265948-2f8e6f80-c566-11e8-8fc0-97190d76c1ad.png)<br>
+    行列で表現すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46266032-002c3280-c567-11e8-8335-1ddb819831b2.png)<br>
+    となる。<br>
+    一方、基底変換前の基底ベクトルと、基底変換後の基底ベクトルの関係より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46266865-3a003780-c56d-11e8-9e0a-2307fcb08b8e.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46267547-8b5df600-c570-11e8-9d0f-667d5e5fe857.png)<br>
+    この結果を、元の線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46267568-a7619780-c570-11e8-9f54-b64ec3c041d8.png) に代入すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46267609-daa42680-c570-11e8-9dae-d94d588f0f4a.png)<br>
+	つまり、線形変換の行列 A に対して、その固有ベクトルを列ベクトルとして作った行列 P から、![image](https://user-images.githubusercontent.com/25688193/46267584-bcd6c180-c570-11e8-8a63-21de4230d954.png) という行列を作ると、それは対角成分の値のみが行列Aの固有値で、それ以外の成分が０であるような対角行列になる。<br>
+	このように（固有ベクトルを列ベクトルとする）行列 P を用いて、元の行列 A を対角行列にすることを、対角化 [diagonalization] という。<br>
+    <br>
+- 対角化可能な条件<br>
+	先の２×２の行列 A の場合は、２つの線形独立な固有ベクトルを列ベクトルにもつ行列 P を用いて、
+	元の行列を対角化（![image](https://user-images.githubusercontent.com/25688193/46267584-bcd6c180-c570-11e8-8a63-21de4230d954.png)）することが出来た。<br>
+	このような結果は、２次以上の行列についても成り立つ。<br>
+	即ち、n 次のの正方行列 A が対角化出来るための必要十分条件は、その行列が n 個の線形独立な（＝互いに直交する）固有ベクトルの組を持つことである。<br>
+    （逆に言えば、固有値の縮退 ![image](https://user-images.githubusercontent.com/25688193/46269355-936f6300-c57b-11e8-9f56-3a1bbc7d37b8.png) などにより、n 個の固有ベクトルの組が線形独立でないときは、対角化できない。）<br>
+- 直交行列と実対称行列<br>
+    <br>
+- エルミート行列とユニタリー行列<br>
+    <br>
+- ジョルダン標準形<br>
+    <br>
+
+
 > 記載中...
+
+<br>
 
 - 【参考】
     - [固有値 [eigenvalue]、固有ベクトル [eigenvector]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%9B%BA%E6%9C%89%E5%80%A4-eigenvalue%E5%9B%BA%E6%9C%89%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-eigenvector)<br>
@@ -2436,22 +2514,6 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
     - [エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97-hermitian-matrix-%E3%81%A8%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97-unitary-matrix-%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96)<br>
     - [ジョルダン標準形 [Jordan normal form]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%B8%E3%83%A7%E3%83%AB%E3%83%80%E3%83%B3%E6%A8%99%E6%BA%96%E5%BD%A2-jordan-normal-form)<br>
 
-<!--
-行列の固有値は、その行列の変換（線形写像、線形変換）により、方向の変わらない特別なベクトル、即ち固有ベクトルと共に出てくる極めて重要な概念である（応用上の観点からも）<br>
-ただ、この固有値は１次方程式 y=ax を考えた場合、ただの比例乗数 a のことを示しており、非常に簡単な概念であるともいえる。言い換えると、１次方程式における比例乗数のことを連立１次方程式に拡張した場合の概念が固有値である。<br>
-
-まずは、簡単のため線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46212314-a530ea80-c370-11e8-8fdd-5368c8ec5a3e.png) で特に１次元ベクトルのケースから考えていくことにする。<br>
-１次元ベクトルは、ただ１つの基底ベクトル ![image](https://user-images.githubusercontent.com/25688193/46212417-e3c6a500-c370-11e8-87a2-89f560cf6dee.png) を用いて、![image](https://user-images.githubusercontent.com/25688193/46221092-0bc10300-c387-11e8-943b-3b89af8e3641.png) と表すことができる。<br>
-この時、線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46212314-a530ea80-c370-11e8-8fdd-5368c8ec5a3e.png) は、![image](https://user-images.githubusercontent.com/25688193/46221135-30b57600-c387-11e8-9a10-830ed7924280.png) となる。<br>
-（※ここで、基底ベクトル ![image](https://user-images.githubusercontent.com/25688193/46212417-e3c6a500-c370-11e8-87a2-89f560cf6dee.png) は１成分のベクトルであり、行列 A も１×１の行列、即ちスカラー定数なので a と置いている。）<br>
-つまり、この線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46221339-ca7d2300-c387-11e8-96f1-5dedf45d526c.png) から、一次式 y= ax が得られることが分かる。<br>
-ここで、この線形変換の式 ![image](https://user-images.githubusercontent.com/25688193/46221135-30b57600-c387-11e8-9a10-830ed7924280.png) からは、どのようなベクトルも a 倍されているが、この（１つもスカラー倍されるといった固有な）比例乗数 a のことを固有値 [eigenvalue] と名付ける。<br>
-
-同様にして、２次元ベクトルの線形変換のケースを考えていく。<br>
-
-
-> 記載中...
--->
 
 <a id="ID_D-2"></a>
 
