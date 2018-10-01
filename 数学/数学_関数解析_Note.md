@@ -14,9 +14,9 @@
     1. [ベクトルの次元](#ID_2-4)
     1. [【外部リンク】固有値 [eigenvalue]、固有ベクトル [eigenvector])](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%9B%BA%E6%9C%89%E5%80%A4-eigenvalue%E5%9B%BA%E6%9C%89%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-eigenvector)
     1. [【外部リンク】行列の対角化 [diagonalization]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E8%A1%8C%E5%88%97%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96-diagonalization)
-    1. [【外部リンク】対角化可能な条件](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%AF%BE%E8%A7%92%E5%8C%96%E5%8F%AF%E8%83%BD%E3%81%AA%E6%9D%A1%E4%BB%B6)
-    1. [【外部リンク】なぜ対角化するのか？](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%81%AA%E3%81%9C%E5%AF%BE%E8%A7%92%E5%8C%96%E3%81%99%E3%82%8B%E3%81%AE%E3%81%8B)
-    1. [【外部リンク】直行行列 [orthogonal matrix] と実対称行列 [symmetric matrix]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E7%9B%B4%E8%A1%8C%E8%A1%8C%E5%88%97-orthogonal-matrix-%E3%81%A8%E5%AE%9F%E5%AF%BE%E7%A7%B0%E8%A1%8C%E5%88%97-symmetric-matrix)
+        1. [【外部リンク】対角化可能な条件](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%AF%BE%E8%A7%92%E5%8C%96%E5%8F%AF%E8%83%BD%E3%81%AA%E6%9D%A1%E4%BB%B6)
+        1. [【外部リンク】なぜ対角化するのか？](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%81%AA%E3%81%9C%E5%AF%BE%E8%A7%92%E5%8C%96%E3%81%99%E3%82%8B%E3%81%AE%E3%81%8B)
+    1. [【外部リンク】直交行列 [orthogonal matrix] と実対称行列 [symmetric matrix]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E7%9B%B4%E8%A1%8C%E8%A1%8C%E5%88%97-orthogonal-matrix-%E3%81%A8%E5%AE%9F%E5%AF%BE%E7%A7%B0%E8%A1%8C%E5%88%97-symmetric-matrix)
     1. [【外部リンク】エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97-hermitian-matrix-%E3%81%A8%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97-unitary-matrix-%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96)
     1. [【外部リンク】ジョルダン標準形 [Jordan normal form]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%B8%E3%83%A7%E3%83%AB%E3%83%80%E3%83%B3%E6%A8%99%E6%BA%96%E5%BD%A2-jordan-normal-form)
 1. [点列の収束と極限](#ID_3)
@@ -111,7 +111,7 @@
         1. [アンカー法](#ID_C-7-5)
 1. [スペクトル理論への応用](#ID_D)
     1. [【補足】線形代数学で扱う固有値問題、行列の対角化、ジョルダン標準形](#ID_D-1)
-    1. [レゾルベント集合とスペクトル](#ID_D-2)
+    1. [レゾルベントとスペクトル](#ID_D-2)
     1. エルミート作用素のスペクトル分解定理
     1. コンパクト作用素のスペクトル理論
 1. 機械学習への応用
@@ -2495,16 +2495,59 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 	元の行列を対角化（![image](https://user-images.githubusercontent.com/25688193/46267584-bcd6c180-c570-11e8-8a63-21de4230d954.png)）することが出来た。<br>
 	このような結果は、２次以上の行列についても成り立つ。<br>
 	即ち、n 次のの正方行列 A が対角化出来るための必要十分条件は、その行列が n 個の線形独立な（＝互いに直交する）固有ベクトルの組を持つことである。<br>
-    （逆に言えば、固有値の縮退 ![image](https://user-images.githubusercontent.com/25688193/46269355-936f6300-c57b-11e8-9f56-3a1bbc7d37b8.png) などにより、n 個の固有ベクトルの組が線形独立でないときは、対角化できない。）<br>
+    逆に言えば、固有値の縮退 ![image](https://user-images.githubusercontent.com/25688193/46269355-936f6300-c57b-11e8-9f56-3a1bbc7d37b8.png) （言い換えれば、固有方程式の解が重根）などにより、n 個の線形独立な固有ベクトルを構築できないときは対角化できない。<br>
+    <br>
 - 直交行列と実対称行列<br>
+	先の２×２の正方行列 A の対角化で用いた行列 P は、列を構成する固有ベクトルが線形独立で互いに直交していたが、このような行列を直交行列という。<br>
+    <br>
+    一方で、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46269853-bf401800-c57e-11e8-80a9-1bfecaa61f52.png)<br>
+	のように、全ての要素が実数となるような対称行列（＝対角成分以外が同じ値で ![image](https://user-images.githubusercontent.com/25688193/46272091-6fffe480-c58a-11e8-8b24-2c5bbbb9008f.png)）を、実対称行列と言うが、この実対称行列 A は、直交行列 P によって、必ず対角化可能となる。（一般の実対称行列においても成り立つ）<br>
+    <br>
+	この２×２の実対称行列 A の固有ベクトルは互いに直交するが（計算略）、このことはこの実対称行列 A の２つの固有値が、互いに異なる値であることに起因する。<br>
+    これは,
+    一般の実対称行列においても成り立ち、異なる固有値に対する固有ベクトルは互いに直交する。<br>
+    <br>
+	しかしながら、固有値が固有方程式の重根となるような場合、即ち、固有値の縮退が発生するようなケースにおいては、この行列の固有ベクトルが互いに直交するか否かは保証されない。<br>
+	このような場合には、グラム・シュミットの正規直交化法を用いて、線形独立な固有ベクトルから直交するベクトルを構成し、結果として、対角化出来るようにすることになる。<br>
     <br>
 - エルミート行列とユニタリー行列<br>
+	行列の対角化は、要素が複素数の行列に対しても考えることが出来る。<br>
+	その中で特に重要なのが、エルミート行列になる。<br>
+    このエルミート行列は、以下のように定義される行列である。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46272136-b05f6280-c58a-11e8-9e20-f494beebd464.png)<br>
+    ここで、エルミート行列の要素が複素数ではなく実数であった場合には、![image](https://user-images.githubusercontent.com/25688193/46272275-498e7900-c58b-11e8-8350-c2486ebd1574.png) となるので、この関係式は、![image](https://user-images.githubusercontent.com/25688193/46272091-6fffe480-c58a-11e8-8b24-2c5bbbb9008f.png) となり、実対称行列となる。<br>
+    つまり、実対称行列は、エルミート行列の特別な場合（実数∈複素数）となっている。<br>
+    <br>
+	更に、このことと先の直交行列と実対称行列の関係性より、エルミート行列を対角化するためには、実対称行列における直交行列に対応する行列を考えれば良いことが分かる。<br>
+	それがユニタリー行列と呼ばれる行列である。<br>
+    <br>
+    このユニタリー行列は、以下のように定義される行列 U である。<br>
+    <br>
+    ここで、ユニタリー行列の要素が全て複素数ではなく実数であった場合には、![image](https://user-images.githubusercontent.com/25688193/46272597-b48c7f80-c58c-11e8-9483-aaefa85c8064.png) となるので、この関係式は、![image](https://user-images.githubusercontent.com/25688193/46272613-c5d58c00-c58c-11e8-9147-c3f95602a89f.png) となり、直交行列になる。<br>
     <br>
 - ジョルダン標準形<br>
+	行列の対角化は、複雑な対象を簡単なものに分解するという点において、応用上重要な意味を持つ。<br>
+	しかしながら、どんな行列でも対角化出来るわけではないというのが難点でもある。<br>
+	（これは言い換えると、一般の行列に対しての固有値問題を解いても、必ずしも完全正規直交基底が得られるわけではないことを意味している。）<br>
+
+    そこで、完全には対角化出来なくとも、（＝完全正規直交基底は得られなくとも）出来るだけ対角行列に近い形の行列に変換することを考える。<br>
+    それがジョルダン標準形となる。<br>
     <br>
+    まずは、最も簡単な２×２の行列 A に対して、ジョルダン標準形がどのようになるのかを考える。<br>
+    直交行列 P を用いて、対角化行列 ![image](https://user-images.githubusercontent.com/25688193/46273072-fd453800-c58e-11e8-9b99-b416f72132a1.png) を作ると、この対角化行列は、必ず以下のいずれかの行列になる。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46273111-16e67f80-c58f-11e8-981f-70b7e69d6ceb.png)<br>
+    これら３つの行列が、２×２行列におけるジョルダン標準形である。（※対角化行列も含むことに注意）<br>
+    <br>
+    より一般的には、<br>
+    対角化行列 ![image](https://user-images.githubusercontent.com/25688193/46273072-fd453800-c58e-11e8-9b99-b416f72132a1.png) を、ジョルダン標準形のジョルダン細胞の直和、即ち、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46273348-126e9680-c590-11e8-80b4-72b4e689309f.png)<br>
+    で表現する。<br>
+    このジョルダン細胞は、行列で表現すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46273707-a1c87980-c591-11e8-9a6b-b6a4c23e88c6.png)<br>
+    > 記載中...
 
-
-> 記載中...
+<br>
 
 <br>
 
@@ -2517,7 +2560,13 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 <a id="ID_D-2"></a>
 
-### ◎ レゾルベント集合とスペクトル
+### ◎ レゾンベルトとスペクトル
+先に見たように、有限次元の固有値問題や行列の対角化においては、線形作用素 ![image](https://user-images.githubusercontent.com/25688193/46273842-27e4c000-c592-11e8-8f70-2c4858265021.png) が重要な役割を果たす。<br>
+
+従って、有限次元から無限次元への拡張を試みるにあたっては、<br>
+この逆写像の作用素 ![image](https://user-images.githubusercontent.com/25688193/46273910-68443e00-c592-11e8-8b55-89698f3fb3fb.png)（＝レゾンベルト作用素）の性質を調べることになる。<br>
+
+
 > 記載中...
 
 ---
