@@ -12,13 +12,13 @@
         1. [線形独立（一次独立）と線形従属（一次従属）の幾何学的イメージ](#ID_2-2-1)    
     1. [基底ベクトル](#ID_2-3)
     1. [ベクトルの次元](#ID_2-4)
-    1. [【外部リンク】固有値 [eigenvalue]、固有ベクトル [eigenvector])](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%9B%BA%E6%9C%89%E5%80%A4-eigenvalue%E5%9B%BA%E6%9C%89%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-eigenvector)
-    1. [【外部リンク】行列の対角化 [diagonalization]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E8%A1%8C%E5%88%97%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96-diagonalization)
-        1. [【外部リンク】対角化可能な条件](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%AF%BE%E8%A7%92%E5%8C%96%E5%8F%AF%E8%83%BD%E3%81%AA%E6%9D%A1%E4%BB%B6)
-        1. [【外部リンク】なぜ対角化するのか？](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%81%AA%E3%81%9C%E5%AF%BE%E8%A7%92%E5%8C%96%E3%81%99%E3%82%8B%E3%81%AE%E3%81%8B)
-    1. [【外部リンク】直交行列 [orthogonal matrix] と実対称行列 [symmetric matrix]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E7%9B%B4%E8%A1%8C%E8%A1%8C%E5%88%97-orthogonal-matrix-%E3%81%A8%E5%AE%9F%E5%AF%BE%E7%A7%B0%E8%A1%8C%E5%88%97-symmetric-matrix)
-    1. [【外部リンク】エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97-hermitian-matrix-%E3%81%A8%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97-unitary-matrix-%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96)
-    1. [【外部リンク】ジョルダン標準形 [Jordan normal form]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%B8%E3%83%A7%E3%83%AB%E3%83%80%E3%83%B3%E6%A8%99%E6%BA%96%E5%BD%A2-jordan-normal-form)
+    1. [【外部リンク】固有値 [eigenvalue]、固有ベクトル [eigenvector])](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_5)
+    1. [【外部リンク】行列の対角化 [diagonalization]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6)
+        1. [【外部リンク】対角化可能な条件](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-1)
+        1. [【外部リンク】なぜ対角化するのか？](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-2)
+        1. [【外部リンク】直交行列 [orthogonal matrix] と実対称行列 [symmetric matrix]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-3)
+        1. [【外部リンク】エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-4)
+    1. [【外部リンク】ジョルダン標準形 [Jordan normal form]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_7)
 1. [点列の収束と極限](#ID_3)
     1. [点列の収束と極限に関する有用な性質](#ID_3-1)
     1. [上極限と下極限](#ID_3-2)
@@ -111,7 +111,8 @@
         1. [アンカー法](#ID_C-7-5)
 1. [スペクトル理論への応用](#ID_D)
     1. [【補足】線形代数学で扱う固有値問題、行列の対角化、ジョルダン標準形](#ID_D-1)
-    1. [レゾルベントとスペクトル](#ID_D-2)
+    1. [【補足】行列のイメージの延長と限界](#ID_D-2)
+    1. [レゾルベントとスペクトル](#ID_D-3)
     1. エルミート作用素のスペクトル分解定理
     1. コンパクト作用素のスペクトル理論
 1. 機械学習への応用
@@ -2559,13 +2560,25 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 <br>
 
 - 【参考】
-    - [固有値 [eigenvalue]、固有ベクトル [eigenvector]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E5%9B%BA%E6%9C%89%E5%80%A4-eigenvalue%E5%9B%BA%E6%9C%89%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB-eigenvector)<br>
-    - [行列の対角化 [diagonalization]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E8%A1%8C%E5%88%97%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96-diagonalization)<br>
-    - [エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%A8%E3%83%AB%E3%83%9F%E3%83%BC%E3%83%88%E8%A1%8C%E5%88%97-hermitian-matrix-%E3%81%A8%E3%83%A6%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%BC%E8%A1%8C%E5%88%97-unitary-matrix-%E3%81%AE%E5%AF%BE%E8%A7%92%E5%8C%96)<br>
-    - [ジョルダン標準形 [Jordan normal form]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md#%E3%82%B8%E3%83%A7%E3%83%AB%E3%83%80%E3%83%B3%E6%A8%99%E6%BA%96%E5%BD%A2-jordan-normal-form)<br>
+    - [固有値 [eigenvalue]、固有ベクトル [eigenvector]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_5)<br>
+    - [行列の対角化 [diagonalization]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6)<br>
+    - [エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-4)<br>
+    - [ジョルダン標準形 [Jordan normal form]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_7)<br>
 
 
 <a id="ID_D-2"></a>
+
+### 【補足】行列のイメージの延長と限界
+
+> 【メモ】 行列のイメージの延長と限界<br>
+> • 不連続な線形写像<br>
+> → 要素数が可算無限個（＝非有界な）の（無限次元）行列<br>
+> • 有限次元空間 → 無限次元空間になると、直交系における議論において、”完全”（＝完全直交系）ということが議論できなくなる。<br>
+
+> 記載中...
+
+
+<a id="ID_D-3"></a>
 
 ### ◎ レゾンベルトとスペクトル
 先に見たように、有限次元の固有値問題や行列の対角化においては、線形作用素 ![image](https://user-images.githubusercontent.com/25688193/46273842-27e4c000-c592-11e8-8f70-2c4858265021.png) が重要な役割を果たす。<br>
@@ -2597,6 +2610,3 @@ m×n 行列の全てからなる集合 ![image](https://user-images.githubuserco
 
 - 新版 応用のための関数解析―その考え方と技法 (SGC BOOKS)<br>
     - [amazon で詳細を見る](https://www.amazon.co.jp/%E6%96%B0%E7%89%88-%E5%BF%9C%E7%94%A8%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90%E2%80%95%E3%81%9D%E3%81%AE%E8%80%83%E3%81%88%E6%96%B9%E3%81%A8%E6%8A%80%E6%B3%95-SGC-BOOKS-%E5%90%89%E7%94%B0/dp/4781911463?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4781911463)<br>
-
-- カーネル法入門―正定値カーネルによるデータ解析 (シリーズ 多変量データの統計科学)<br>
-    - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95%E5%85%A5%E9%96%80%E2%80%95%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%A4%9A%E5%A4%89%E9%87%8F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%B5%B1%E8%A8%88%E7%A7%91%E5%AD%A6-%E7%A6%8F%E6%B0%B4-%E5%81%A5%E6%AC%A1/dp/4254128088?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4254128088)<br>
