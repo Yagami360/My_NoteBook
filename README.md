@@ -3,12 +3,6 @@
 サイエンス、テクノロジー、エンジニア関連情報を記載したオンラインマイノートを Markdown 形式で保管したリポジトリです。（プログラムコードではありません）<br>
 質問事項があれば、[Issue](https://github.com/Yagami360/My_NoteBook/issues) にてお願い致します。答えられる範囲で回答します。<br>
 
-<!--
-> GitHub Pages & Jekyll で作成中のホームページ
->> ~~[https://yagami360.github.io/](https://yagami360.github.io/)~~ <br>
->> ~~[https://yagami360.github.io/My_NoteBook/](https://yagami360.github.io/My_NoteBook/)~~ <br>
--->
-
 ## 項目 [Contents]
 
 - 数学 [Mathematics] / 応用数学 [applied mathematics]
@@ -123,9 +117,15 @@
             - IECUBE
             - カバレッジマスターwinAMS
 
-<br>
 
+## ホームページ（はてなブログ）
 GitHub でドキュメントのバージョン管理出来るので、ここの内容を元にホームページ作成中。<br>
 以下、ホームページへのリンクです。<br>
 
 > [はてなブログ｜星の本棚](http://yagami12.hatenablog.com/entry/2017/09/17/%E3%81%93%E3%81%AE%E3%83%96%E3%83%AD%E3%82%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
+
+<!--
+> GitHub Pages & Jekyll で作成中のホームページ
+>> ~~[https://yagami360.github.io/](https://yagami360.github.io/)~~ <br>
+>> ~~[https://yagami360.github.io/My_NoteBook/](https://yagami360.github.io/My_NoteBook/)~~ <br>
+-->
