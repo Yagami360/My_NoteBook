@@ -14,13 +14,13 @@
         1. [線形独立（一次独立）と線形従属（一次従属）の幾何学的イメージ](#ID_2-2-1)    
     1. [基底ベクトル](#ID_2-3)
     1. [ベクトルの次元](#ID_2-4)
-    1. [【外部リンク】固有値 [eigenvalue]、固有ベクトル [eigenvector])](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_5)
-    1. [【外部リンク】行列の対角化 [diagonalization]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6)
-        1. [【外部リンク】対角化可能な条件](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-1)
-        1. [【外部リンク】なぜ対角化するのか？](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-2)
-        1. [【外部リンク】直交行列 [orthogonal matrix] と実対称行列 [symmetric matrix]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-3)
-        1. [【外部リンク】エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-4)
-    1. [【外部リンク】ジョルダン標準形 [Jordan normal form]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_7)
+    1. [【補足（外部リンク）】固有値 [eigenvalue]、固有ベクトル [eigenvector])](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_5)
+    1. [【補足（外部リンク）】行列の対角化 [diagonalization]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6)
+        1. [【補足（外部リンク）】対角化可能な条件](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-1)
+        1. [【補足（外部リンク）】なぜ対角化するのか？](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-2)
+        1. [【補足（外部リンク）】直交行列 [orthogonal matrix] と実対称行列 [symmetric matrix]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-3)
+        1. [【補足（外部リンク）】エルミート行列 [Hermitian matrix] とユニタリー行列 [Unitary matrix] の対角化](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_6-4)
+    1. [【補足（外部リンク）】ジョルダン標準形 [Jordan normal form]](http://yagami12.hatenablog.com/entry/2017/09/15/005747#ID_7)
 1. [点列の収束と極限](#ID_3)
     1. [点列の収束と極限に関する有用な性質](#ID_3-1)
     1. [上極限と下極限](#ID_3-2)
@@ -111,6 +111,7 @@
         1. [並列射影法](#ID_C-7-3)
         1. [ハイブリッド最急降下法](#ID_C-7-4)
         1. [アンカー法](#ID_C-7-5)
+    1. [補足（外部リンク）最適化問題](http://yagami12.hatenablog.com/entry/2017/09/17/101739)
 1. [スペクトル理論への応用](#ID_D)
     1. [【補足】線形代数学で扱う固有値問題、行列の対角化、ジョルダン標準形](#ID_D-1)
     1. [【補足】行列のイメージの延長と限界](#ID_D-2)
@@ -118,6 +119,7 @@
     1. エルミート作用素のスペクトル分解定理
     1. コンパクト作用素のスペクトル理論
 1. 機械学習への応用
+    1. [【外部リンク】カーネル法](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md)
 1. [参考文献](#参考文献)
 
 ---
@@ -125,6 +127,27 @@
 <a id="ID_1"></a>
 
 ## ■ 概要
+線形代数学においては、有限次元のベクトル空間を扱い、そのベクトル空間上の写像（作用素）が、行列によって表現できることを見ていた。<br>
+一方、関数解析では、有限次元を無限次元に一般化した上で、無限次元を扱うときに、有限次元とは異なることは何か？を中心的に議論していくことになる。<br>
+
+その中で特に重要なのが、以下の議論である。<br>
+
+- コンパクト性の問題
+    > 記載中...
+
+- 分解可能性の問題
+    > 記載中...
+
+- 表現可能性の問題（行列のイメージの延長）
+    > 記載中...
+
+- 表現可能性の問題（行列のイメージの限界）
+    > 記載中...
+
+<br>
+
+以下の図は、関数解析で扱う各種空間の関係図である。<br>
+
 ![image](https://user-images.githubusercontent.com/25688193/45209187-44f5de00-b2c7-11e8-8848-f4f064c81b99.png)<br>
 
 <!--
