@@ -36,6 +36,8 @@
 <a id="ID_2"></a>
 
 ## ■ カーネル法の基本的なアイデア
+![image](https://user-images.githubusercontent.com/25688193/46522003-57f6d080-c8bc-11e8-870b-36a887699a4e.png)<br>
+
 > 記載中...
 
 
@@ -188,13 +190,20 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 次に、（次数が）一般の場合 d では、<br>
 多項式カーネル ![image](https://user-images.githubusercontent.com/25688193/46511996-ae4c1b00-c88c-11e8-9066-d73e8da61096.png) を２項定理を用いて展開すると、<br>
 ![image](https://user-images.githubusercontent.com/25688193/46512023-d9366f00-c88c-11e8-96ec-e7398cd8f209.png)<br>
-即ち、多項数カーネルの使用した時の２つのベクトル x ⃗,y ⃗  の次元（次数）の上限は ∑ の形で求めることが出来る！<br>
+即ち、多項数カーネルの使用した時の２つのベクトル ![image](https://user-images.githubusercontent.com/25688193/46524114-bc1c9300-c8c2-11e8-85b1-e96c2d3f3488.png) の次元（次数）の上限は ∑ の形で求めることが出来る！<br>
 
 
 <a id="ID_4"></a>
 
 ## ■ 再生カーネルヒルベルト空間
+![image](https://user-images.githubusercontent.com/25688193/46524502-ffc3cc80-c8c3-11e8-9f6a-0bbaa11406ae.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46524537-1a964100-c8c4-11e8-8de5-6096e1a2c278.png)<br>
+
+
 > 記載中...
+
+- 【参考】<br>
+    - [再生核ヒルベルト空間をなんとなく理解する - 備忘録とか あと あれとか それとか](http://d.hatena.ne.jp/hgshrs/20130331/1364707361)<br>
 
 
 ---
