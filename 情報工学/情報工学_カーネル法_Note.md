@@ -11,6 +11,11 @@
     1. [正定値カーネルの基本的な性質](#ID_3-3)
     1. [関数の内積で表現される正定値カーネル](#ID_3-4)
     1. [正定値カーネルの例](#ID_3-5)
+        1. [線形カーネル（＝通常のユークリッド空間上での内積）](#ID_3-5-1)
+        1. [指数型カーネル](#ID_3-5-2)
+        1. [動径基底関数カーネル（RBFカーネル）[radial bases function kernel]](#ID_3-5-3)
+        1. [ラプラスカーネル](#ID_3-5-4)
+        1. [多項式カーネル](#ID_3-5-5)
 1. [再生カーネルヒルベルト空間](#ID_4)
 1. 各種カーネル法
     1. [【外部リンク】サポートベクターマシン [SVM : Support Vector Machine]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_9)
@@ -76,7 +81,7 @@
 ### ◎ 正定値カーネルの基本的な性質
 次に、この正定値カーネルに関して成り立つ性質をいくつか見てみる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46456486-04b44d80-c7ea-11e8-9024-813e8268e4a6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46507390-358c9500-c873-11e8-88d8-85f6350ab6e5.png)<br>
 - （証明略）<br>
 
 
@@ -99,9 +104,97 @@
 <a id="ID_3-5"></a>
 
 ### ◎ 正定値カーネルの例
+m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.com/25688193/46507423-5fde5280-c873-11e8-8fe5-45cf58eaab55.png) 上で定義されるいくつかの正定値カーネルの例を見ていく。<br>
+
+
+<a id="ID_3-5-1"></a>
+
+#### ☆ 線形カーネル（＝通常のユークリッド空間上での内積）
+![image](https://user-images.githubusercontent.com/25688193/46507919-00357680-c876-11e8-90a8-17315d452ee3.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46507904-e136e480-c875-11e8-8600-fc8920433b6c.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46507932-0f1c2900-c876-11e8-8156-f9c43f67c316.png)<br>
+
+ここで、このカーネルが、確かに正定値カーネルになることを示す。<br>
+この線形カーネルは、先の関数の内積で表現される正定値カーネル ![image](https://user-images.githubusercontent.com/25688193/46512384-9d9ca480-c88e-11e8-9165-8b894c760bb2.png) より、明らかに正定値カーネルであることが分かる。<br>
+
+
+<a id="ID_3-5-2"></a>
+
+#### ☆ 指数型カーネル
+![image](https://user-images.githubusercontent.com/25688193/46508077-b305d480-c876-11e8-8771-3895d12834a9.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46507973-48ed2f80-c876-11e8-9da6-42c785117c49.png)<br>
+
+ここで、このカーネルが、確かに正定値カーネルになることを示す。<br>
+この指数型カーネルを、Tayler 展開すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/46512515-55ca4d00-c88f-11e8-9c12-e0852d81e7ba.png)<br>
+先の正定値カーネルの性質（カーネル線形結合、カーネルの積）より、この展開式の各項の点列<br>
+![image](https://user-images.githubusercontent.com/25688193/46512531-6da1d100-c88f-11e8-9d96-aa859dfbbc42.png)<br>
+の和もまた正定値カーネルとなる。<br>
+更に、![image](https://user-images.githubusercontent.com/25688193/46512561-975af800-c88f-11e8-9e02-ec4b9bb2abd2.png) は、この点列の極限となるが、<br>
+先の正定値カーネルの性質（カーネルの点列の極限）より、この指数型カーネル ![image](https://user-images.githubusercontent.com/25688193/46512572-af327c00-c88f-11e8-819e-14bb53d04cec.png) は、正定値カーネルであることが分かる。<br>
+
+
+<a id="ID_3-5-3"></a>
+
+#### ☆　動径基底関数カーネル（RBFカーネル）[radial bases function kernel]<br>
+![image](https://user-images.githubusercontent.com/25688193/46508767-0299cf80-c87a-11e8-8b5b-5f44c5e5f5b6.png)<br>
+ここで、上式のパラメータ σ は、関数の広がりを制御するパラメータである。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46509874-45f73c80-c880-11e8-84b3-e014a9bd7397.png)<br>
+
+ここで、この RBF カーネル関数を、例えば、SVM（サポートベクターマシン）に適用した場合、このカーネル関数の制御パラメータ σ に関して、一般的に、以下のような関係が成り立つ。<br>
+
+1. 制御パラメータ σ が大きい <br>
+    ⇒ 写像後の特徴ベクトルが離れた位置に写像される<br>
+    ⇒ 入力データ（特徴ベクトル）から離れている広範囲のサポートベクトルが識別関数に寄与する。<br>
+1. 制御パラメータ σ が小さい<br>
+    ⇒ 写像後の特徴ベクトルが近い位置に写像される<br>
+    ⇒ 入力データ（特徴ベクトル）近傍のサポートベクトルが識別関数に寄与する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46510437-e9961c00-c883-11e8-895c-0c7e3ae47da6.png)<br>
+
+ここで、このカーネルが、確かに正定値カーネルになることを示す。<br>
+この RBF カーネルを変形すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/46512708-616a4380-c890-11e8-8080-0a7458bc4ad2.png)<br>
+となるが、先の指数型カーネル ![image](https://user-images.githubusercontent.com/25688193/46512737-7e9f1200-c890-11e8-97c7-b2d6a40d0140.png) が正定値カーネルであったことを利用すると、<br>
+正定値カーネルの性質より、この RBF カーネルも正定値カーネルであることが分かる。<br>
+
+
+<a id="ID_3-5-4"></a>
+
+#### ☆ ラプラスカーネル
+![image](https://user-images.githubusercontent.com/25688193/46509900-7b038f00-c880-11e8-9710-f5e2fbd19028.png)<br>
+
+
+<a id="ID_3-5-5"></a>
+
+#### ☆ 多項式カーネル
+![image](https://user-images.githubusercontent.com/25688193/46509968-f5341380-c880-11e8-97b9-2ff815ffb52c.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46509952-d897db80-c880-11e8-9543-8fc0cb0fa2fb.png)<br>
+
+この関数は、例えば d=2 で、c=1 の場合、<br>
+![image](https://user-images.githubusercontent.com/25688193/46510579-d6378080-c884-11e8-8a81-9f697c431700.png)<br>
+上式の ![image](https://user-images.githubusercontent.com/25688193/46511394-611a7a00-c889-11e8-8ebe-3234348ee96c.png) のみ依存する項目を、<br>
+![image](https://user-images.githubusercontent.com/25688193/46511597-85c32180-c88a-11e8-8453-e69301233521.png)<br>
+のように分離すると、多項式カーネルを<br>
+![image](https://user-images.githubusercontent.com/25688193/46511639-ac815800-c88a-11e8-9fed-6948e84b589e.png)<br>
+の様な６次元の内積演算の形となる。<br>
+即ち、逆に言い換えれば、<br>
+６次元空間でのベクトルの内積演算 ![image](https://user-images.githubusercontent.com/25688193/46511663-d175cb00-c88a-11e8-856d-d9b8cab7f304.png) が、<br>
+先の２次元ベクトルの内積とスカラー積<br>
+![image](https://user-images.githubusercontent.com/25688193/46511690-fc601f00-c88a-11e8-9e5f-985a2ed72757.png)<br>
+の計算で出来ることになる！⇒ 計算量を削減出来る！<br>
+
+次に、（次数が）一般の場合 d では、<br>
+多項式カーネル ![image](https://user-images.githubusercontent.com/25688193/46511996-ae4c1b00-c88c-11e8-9066-d73e8da61096.png) を２項定理を用いて展開すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/46512023-d9366f00-c88c-11e8-96ec-e7398cd8f209.png)<br>
+即ち、多項数カーネルの使用した時の２つのベクトル x ⃗,y ⃗  の次元（次数）の上限は ∑ の形で求めることが出来る！<br>
+
+
+<a id="ID_4"></a>
+
+## ■ 再生カーネルヒルベルト空間
 > 記載中...
-
-
 
 
 ---
