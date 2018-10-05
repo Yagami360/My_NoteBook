@@ -5,7 +5,7 @@
 
 1. [概要](#ID_1)
 1. [カーネル法の基本的なアイデア](#ID_2)
-1. [正定値カーネルと再生カーネルヒルベルト空間](#ID_3)
+1. [正定値カーネル](#ID_3)
     1. [実数の正定値カーネル](#ID_3-1)
     1. [複素数の正定値カーネル](#ID_3-2)
     1. [正定値カーネルの基本的な性質](#ID_3-3)
@@ -196,15 +196,18 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 <a id="ID_4"></a>
 
 ## ■ 再生カーネルヒルベルト空間
-![image](https://user-images.githubusercontent.com/25688193/46524502-ffc3cc80-c8c3-11e8-9f6a-0bbaa11406ae.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/46524537-1a964100-c8c4-11e8-8de5-6096e1a2c278.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46534049-d2861700-c8e1-11e8-9af2-aada39aa5a6f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46534885-a28c4300-c8e4-11e8-9f39-0d1f9c16f434.png)<br>
 
+- cf : リースの表現定理<br>
 
 > 記載中...
 
 - 【参考】<br>
     - [再生核ヒルベルト空間をなんとなく理解する - 備忘録とか あと あれとか それとか](http://d.hatena.ne.jp/hgshrs/20130331/1364707361)<br>
-
+    - [カーネルトリックと関数解析についてまとめてみた](https://qiita.com/muripo_life/items/ac186f740f493c2b2058)<br>
+    - [Reproducing Kernel Hilbert Spaceの数理とMercerの定理 - Obey Your MATHEMATICS.](http://mathetake.hatenablog.com/entry/2016/12/29/223101)<br>
+    - [リースの表現定理](http://yagami12.hatenablog.com/entry/2018/10/03/134340#ID_A-4)<br>
 
 ---
 
