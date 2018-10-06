@@ -257,7 +257,7 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 Moore-Aronszajn の定理より、再生カーネルヒルベルト空間を再解釈（＝特徴付け）したのが以下の図である。
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/46566537-7a8bf680-c95b-11e8-82bd-d158e0457141.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46566609-ba9fa900-c95c-11e8-8c28-a89da4de0f5d.png)<br>
 
 
 
