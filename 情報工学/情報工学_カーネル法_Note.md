@@ -207,7 +207,7 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 <a id="ID_4"></a>
 
 ## ■ 再生カーネルヒルベルト空間
-![image](https://user-images.githubusercontent.com/25688193/46569866-5c8fb780-c996-11e8-8ddb-6cda17d89dc7.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46570783-d4fd7500-c9a4-11e8-8c10-ff42bb8edb7f.png)<br>
 
 > 【メモ】<br>
 > 正定値カーネルの定義、入力データとなる写像元が単なる集合じゃなくてベクトル空間のほうがいいのでは？と思ったけど、入力データによっては、ベクトル空間であったり、内積空間であったり、ノルム空間であったりし得えるから、一般性を確保するために集合で定義しているという理解でいいんかいな？<br>
@@ -224,7 +224,25 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 <a id="ID_4-1"></a>
 
 ### ◎ 再生核の性質
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/46570786-e5adeb00-c9a4-11e8-9808-6a488d874f47.png)<br>
+
+- （証明）<br>
+    正定値カーネルの対称性 ![image](https://user-images.githubusercontent.com/25688193/46570313-0eca7d80-c99d-11e8-98ec-3288108ed8b6.png) やエルミート性 ![image](https://user-images.githubusercontent.com/25688193/46570542-c1500f80-c9a0-11e8-93ee-5054f426b100.png) を利用すると、<br>
+    ２つの再生核 ![image](https://user-images.githubusercontent.com/25688193/46570562-f8262580-c9a0-11e8-8ab7-9be3a8dfa647.png) に対して、再生性の条件より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46570574-20ae1f80-c9a1-11e8-9443-e0be84e7bd0b.png)<br>
+    の関係より、この２つの再生核は同一であるので、再生核は一意に存在することが分かる。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46570791-f78f8e00-c9a4-11e8-85ae-e04b611ede56.png)<br>
+
+- （証明）<br>
+    （複素数の）正定値カーネルの定義の正定性は、<br>
+    任意の整数 ![image](https://user-images.githubusercontent.com/25688193/46570749-64eeef00-c9a4-11e8-9a64-75c92d5e5c62.png) と ![image](https://user-images.githubusercontent.com/25688193/46570752-720bde00-c9a4-11e8-91ea-0fce8c44c128.png) に対して、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46570759-82bc5400-c9a4-11e8-83db-528190290ead.png)<br>
+    であったが、この左辺は、再生核 ![image](https://user-images.githubusercontent.com/25688193/46570796-0d9d4e80-c9a5-11e8-9c81-c746fad53676.png) を用いて、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46570808-2c9be080-c9a5-11e8-9125-defa211438af.png)<br>
+    従って、再生核 ![image](https://user-images.githubusercontent.com/25688193/46570796-0d9d4e80-c9a5-11e8-9c81-c746fad53676.png) は、正定値カーネルである。<br>
 
 
 <a id="ID_4-2"></a>
@@ -258,7 +276,7 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 <a id="ID_4-3"></a>
 
 ### ◎ Moore-Aronszajn の定理
-![image](https://user-images.githubusercontent.com/25688193/46566289-a5278080-c956-11e8-925a-5046cb85b38f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46570820-4fc69000-c9a5-11e8-9eda-9681add6a50f.png)<br>
 
 > 【メモ】<br>
 > 再生カーネルヒルベルト空間、定義だけみても意味分かんないけど、Moore-Aronszajn の定理まで見てみればようやく意味がわかってくる印象<br>
