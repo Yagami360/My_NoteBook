@@ -17,6 +17,10 @@
         1. [ラプラスカーネル](#ID_3-5-4)
         1. [多項式カーネル](#ID_3-5-5)
 1. [再生カーネルヒルベルト空間](#ID_4)
+    1. [再生カーネルヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理](#ID_4-1)
+        1. 【補足】リースの表現定理
+    1. [Moore-Aronszajn の定理](#ID_4-2)
+    1. 再生カーネルの性質
 1. 各種カーネル法
     1. [【外部リンク】サポートベクターマシン [SVM : Support Vector Machine]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_9)
     1. [【外部リンク】カーネル主成分分析 [kernel PCA : kernel Principal Component Analysis]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_2-5-2)
@@ -36,7 +40,7 @@
 <a id="ID_2"></a>
 
 ## ■ カーネル法の基本的なアイデア
-![image](https://user-images.githubusercontent.com/25688193/46522003-57f6d080-c8bc-11e8-870b-36a887699a4e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46556230-fcaaf980-c920-11e8-9140-fcab41de7260.png)<br>
 
 > 記載中...
 
@@ -48,7 +52,7 @@
 <a id="ID_3-1"></a>
 
 ### ◎ 実数の正定値カーネル
-![image](https://user-images.githubusercontent.com/25688193/46429713-182bce00-c782-11e8-8946-086199371178.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46555969-1a2b9380-c920-11e8-8a72-0b7941f3841c.png)<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/46429746-32fe4280-c782-11e8-99e4-8c0f2b30e128.png)<br>
 
@@ -56,10 +60,10 @@
 <a id="ID_3-2"></a>
 
 ### ◎ 複素数の正定値カーネル
-実数ではなく複素数で扱うことにより、理論を展開する上での見通しがよくなることがあるが、これは正定値カーネルに関しても同様である。　（例えば、後述の Bochner の定理など）<br>
+実数ではなく複素数で扱うことにより、理論を展開する上での見通しがよくなることがあるが、これは正定値カーネルに関しても同様である。（例えば、後述の Bochner の定理など）<br>
 そのため、複素数の正定値カーネルなるものを定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46446789-4b3d8400-c7b9-11e8-93b2-b4232f1f4a7b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46556410-88248a80-c921-11e8-9aa3-685f45c0ca2b.png)<br>
 
 ここで、複素数の正定値カーネルでは、実数の正定値カーネルとは異なり、<br>
 （実数の正定値カーネルのときの）対称性の条件 ![image](https://user-images.githubusercontent.com/25688193/46447227-99538700-c7bb-11e8-9e01-0a479bd3116a.png) にあたるエルミート性の条件 ![image](https://user-images.githubusercontent.com/25688193/46447250-acfeed80-c7bb-11e8-90fd-e2a5b850f9df.png) は不要となる。<br>
@@ -84,6 +88,7 @@
 次に、この正定値カーネルに関して成り立つ性質をいくつか見てみる。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/46507390-358c9500-c873-11e8-88d8-85f6350ab6e5.png)<br>
+
 - （証明略）<br>
 
 
@@ -92,6 +97,7 @@
 ### ◎ 関数の内積で表現される正定値カーネル
 以下の定理で示すように、内積空間上での関数の内積は、正定値カーネルになる。
 ![image](https://user-images.githubusercontent.com/25688193/46456509-1990e100-c7ea-11e8-802f-f2fa5be6af6a.png)<br>
+
 - （証明）<br>
     正定値性を示すために、正定値性の条件<br>
     ![image](https://user-images.githubusercontent.com/25688193/46456569-49d87f80-c7ea-11e8-8d0a-51e4c1d2156e.png)<br>
@@ -196,18 +202,64 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 <a id="ID_4"></a>
 
 ## ■ 再生カーネルヒルベルト空間
-![image](https://user-images.githubusercontent.com/25688193/46534049-d2861700-c8e1-11e8-9af2-aada39aa5a6f.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/46534885-a28c4300-c8e4-11e8-9f39-0d1f9c16f434.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46565865-a30df380-c94f-11e8-9c9b-701300d7ecb5.png)<br>
 
-- cf : リースの表現定理<br>
+> 【メモ】<br>
+> 正定値カーネルの定義、入力データとなる写像元が単なる集合じゃなくてベクトル空間のほうがいいのでは？と思ったけど、入力データによっては、ベクトル空間であったり、内積空間であったり、ノルム空間であったりし得えるから、一般性を確保するために集合で定義しているという理解でいいんかいな？<br>
 
-> 記載中...
 
 - 【参考】<br>
     - [再生核ヒルベルト空間をなんとなく理解する - 備忘録とか あと あれとか それとか](http://d.hatena.ne.jp/hgshrs/20130331/1364707361)<br>
     - [カーネルトリックと関数解析についてまとめてみた](https://qiita.com/muripo_life/items/ac186f740f493c2b2058)<br>
     - [Reproducing Kernel Hilbert Spaceの数理とMercerの定理 - Obey Your MATHEMATICS.](http://mathetake.hatenablog.com/entry/2016/12/29/223101)<br>
+    - [線形汎関数を用いた再生カーネルヒルベルト空間の特徴付けとリースの表現定理](http://ibisforest.org/index.php?plugin=attach&refer=K-NEL%2Faddenda%2Fchap6&openfile=riesz.pdf)<br>
     - [リースの表現定理](http://yagami12.hatenablog.com/entry/2018/10/03/134340#ID_A-4)<br>
+
+
+<a id="ID_4-1"></a>
+
+### ◎ 再生カーネルヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理
+![image](https://user-images.githubusercontent.com/25688193/46566361-de142500-c957-11e8-9e54-c964cfbcfbdc.png)<br>
+
+- （証明）<br>
+    リースの表現定理より、線形汎関数が連続（＝有界）であるならば、<br>
+    ヒルベルト空間上の要素（関数）g∈H が存在して、任意のヒルベルト空間上の要素（関数）∀f∈H に対して、有界線形汎関数は内積で表現出来る。即ち、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46566067-1402da80-c953-11e8-8a4c-645e12e4dc4c.png)<br>
+    と表現できる。<br>
+    従って、この中に、L(f) が f(x) となるような ![image](https://user-images.githubusercontent.com/25688193/46566079-27ae4100-c953-11e8-8053-f6418bd97033.png) が存在し、 <br>
+    ![image](https://user-images.githubusercontent.com/25688193/46566091-63490b00-c953-11e8-9c3c-2f0f209f3238.png)<br>
+    の関係が成り立つ。<br>
+
+> 【メモ】<br>
+> 再生性の条件 ![image](https://user-images.githubusercontent.com/25688193/46566137-dce0f900-c953-11e8-8416-0c4d02397343.png) と、リースの表現定理の内積表現 ![image](https://user-images.githubusercontent.com/25688193/46566178-b2dc0680-c954-11e8-882e-54adb5a8e531.png) が対応していることに注目。<br>
+
+
+<a id="ID_4-1-1"></a>
+
+#### 【補足】リースの表現定理
+![image](https://user-images.githubusercontent.com/25688193/45737382-a05d8f80-bc28-11e8-8e4d-fcc7fe93f3cf.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/45734425-781d6300-bc1f-11e8-8202-603d2e2e08de.png)<br>
+
+> 【メモ】<br>
+> 簡単言えば、このリースの表現定理は、射影定理によって直交補空間から非零元を取ってきて、それをグラムシュミットの方法で正規直交化している流れになっている。<br>
+
+
+<a id="ID_4-2"></a>
+
+### ◎ Moore-Aronszajn の定理
+![image](https://user-images.githubusercontent.com/25688193/46566289-a5278080-c956-11e8-925a-5046cb85b38f.png)<br>
+
+> 【メモ】<br>
+> 再生カーネルヒルベルト空間、定義だけみても意味分かんないけど、Moore-Aronszajn の定理まで見てみればようやく意味がわかってくる印象<br>
+
+
+先の再生カーネルヒルベルト空間の線形汎関数を用いた特徴付けと、<br>
+Moore-Aronszajn の定理より、再生カーネルヒルベルト空間を再解釈（＝特徴付け）したのが以下の図である。
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46566537-7a8bf680-c95b-11e8-82bd-d158e0457141.png)<br>
+
+
 
 ---
 
