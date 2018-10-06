@@ -17,10 +17,15 @@
         1. [ラプラスカーネル](#ID_3-5-4)
         1. [多項式カーネル](#ID_3-5-5)
 1. [再生カーネルヒルベルト空間](#ID_4)
-    1. [再生カーネルヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理](#ID_4-1)
+    1. [再生核の性質](#ID_4-1)
+    1. [再生カーネルヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理](#ID_4-2)
         1. 【補足】リースの表現定理
-    1. [Moore-Aronszajn の定理](#ID_4-2)
-    1. 再生カーネルの性質
+    1. [Moore-Aronszajn の定理](#ID_4-3)
+    1. Mercer（マーセル、マーサー）の定理
+        1. 【補足】積分作用素
+        1. 【補足】スペクトル分解
+1. 汎化性能と正則化
+    1. リプレゼンター定理
 1. 各種カーネル法
     1. [【外部リンク】サポートベクターマシン [SVM : Support Vector Machine]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_9)
     1. [【外部リンク】カーネル主成分分析 [kernel PCA : kernel Principal Component Analysis]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_2-5-2)
@@ -202,7 +207,7 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 <a id="ID_4"></a>
 
 ## ■ 再生カーネルヒルベルト空間
-![image](https://user-images.githubusercontent.com/25688193/46565865-a30df380-c94f-11e8-9c9b-701300d7ecb5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46569866-5c8fb780-c996-11e8-8ddb-6cda17d89dc7.png)<br>
 
 > 【メモ】<br>
 > 正定値カーネルの定義、入力データとなる写像元が単なる集合じゃなくてベクトル空間のほうがいいのでは？と思ったけど、入力データによっては、ベクトル空間であったり、内積空間であったり、ノルム空間であったりし得えるから、一般性を確保するために集合で定義しているという理解でいいんかいな？<br>
@@ -217,6 +222,12 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 
 
 <a id="ID_4-1"></a>
+
+### ◎ 再生核の性質
+> 記載中...
+
+
+<a id="ID_4-2"></a>
 
 ### ◎ 再生カーネルヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理
 ![image](https://user-images.githubusercontent.com/25688193/46566361-de142500-c957-11e8-9e54-c964cfbcfbdc.png)<br>
@@ -234,7 +245,7 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 > 再生性の条件 ![image](https://user-images.githubusercontent.com/25688193/46566137-dce0f900-c953-11e8-8416-0c4d02397343.png) と、リースの表現定理の内積表現 ![image](https://user-images.githubusercontent.com/25688193/46566178-b2dc0680-c954-11e8-882e-54adb5a8e531.png) が対応していることに注目。<br>
 
 
-<a id="ID_4-1-1"></a>
+<a id="ID_4-2-1"></a>
 
 #### 【補足】リースの表現定理
 ![image](https://user-images.githubusercontent.com/25688193/45737382-a05d8f80-bc28-11e8-8e4d-fcc7fe93f3cf.png)<br>
@@ -244,7 +255,7 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 > 簡単言えば、このリースの表現定理は、射影定理によって直交補空間から非零元を取ってきて、それをグラムシュミットの方法で正規直交化している流れになっている。<br>
 
 
-<a id="ID_4-2"></a>
+<a id="ID_4-3"></a>
 
 ### ◎ Moore-Aronszajn の定理
 ![image](https://user-images.githubusercontent.com/25688193/46566289-a5278080-c956-11e8-925a-5046cb85b38f.png)<br>
