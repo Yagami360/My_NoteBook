@@ -16,14 +16,20 @@
         1. [動径基底関数カーネル（RBFカーネル）[radial bases function kernel]](#ID_3-5-3)
         1. [ラプラスカーネル](#ID_3-5-4)
         1. [多項式カーネル](#ID_3-5-5)
-1. [再生カーネルヒルベルト空間](#ID_4)
+1. [再生核ヒルベルト空間](#ID_4)
     1. [再生核の性質](#ID_4-1)
-    1. [再生カーネルヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理](#ID_4-2)
+        1. [再生核のテンソル積](#ID_4-1-1)
+    1. [再生核ヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理](#ID_4-2)
         1. 【補足】リースの表現定理
     1. [Moore-Aronszajn の定理](#ID_4-3)
-    1. Mercer（マーセル、マーサー）の定理
-        1. 【補足】積分作用素
-        1. 【補足】スペクトル分解
+        1. [特徴写像とカーネルトリック（Moore - Aronszajn の定理kあらの帰着）](#ID_4-3-1)
+    1. [再生核ヒルベルト空間の具体的な構成](#ID_4-4)
+        1. [線形カーネルの再生核ヒルベルト空間](#ID_4-4-1)
+        1. 有限集合の再生核ヒルベルト空間
+        1. 多項式カーネルの再生核ヒルベルト空間
+1. Mercer（マーセル、マーサー）の定理
+    1. 【補足】積分作用素
+    1. 【補足】スペクトル分解
 1. 汎化性能と正則化
     1. リプレゼンター定理
 1. 各種カーネル法
@@ -206,11 +212,11 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 
 <a id="ID_4"></a>
 
-## ■ 再生カーネルヒルベルト空間
-![image](https://user-images.githubusercontent.com/25688193/46570783-d4fd7500-c9a4-11e8-8c10-ff42bb8edb7f.png)<br>
+## ■ 再生核ヒルベルト空間
+![image](https://user-images.githubusercontent.com/25688193/46570892-a84a5d00-c9a6-11e8-9afd-fa2ca50310fe.png)<br>
 
 > 【メモ】<br>
-> 正定値カーネルの定義、入力データとなる写像元が単なる集合じゃなくてベクトル空間のほうがいいのでは？と思ったけど、入力データによっては、ベクトル空間であったり、内積空間であったり、ノルム空間であったりし得えるから、一般性を確保するために集合で定義しているという理解でいいんかいな？<br>
+> 正定値カーネルや再生核ヒルベルト空間での定義で、入力データとなる集合 X が単なる集合じゃなくてベクトル空間のほうがいいのでは？と思ったけど、入力データによっては、ベクトル空間であったり、内積空間であったり、ノルム空間であったりし得えるから、一般性を確保するために集合で定義しているという理解でいいんかいな？<br>
 
 
 - 【参考】<br>
@@ -245,10 +251,21 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
     従って、再生核 ![image](https://user-images.githubusercontent.com/25688193/46570796-0d9d4e80-c9a5-11e8-9c81-c746fad53676.png) は、正定値カーネルである。<br>
 
 
+<a id="ID_4-1-1"></a>
+
+#### ☆ 再生核のテンソル積
+再生核のテンソル積が、また再生核になることを示すために、まず、再生核ヒルベルト空間のテンソル積なるものを定義する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46577320-f6e80d80-ca1f-11e8-9fb9-d7ae94ddced5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46577331-27c84280-ca20-11e8-9356-df87675ac8f3.png)<br>
+
+> 記載中...
+
+
 <a id="ID_4-2"></a>
 
-### ◎ 再生カーネルヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理
-![image](https://user-images.githubusercontent.com/25688193/46566361-de142500-c957-11e8-9e54-c964cfbcfbdc.png)<br>
+### ◎ 再生核ヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理
+![image](https://user-images.githubusercontent.com/25688193/46570901-d334b100-c9a6-11e8-91c5-563dbbdfbcad.png)<br>
 
 - （証明）<br>
     リースの表現定理より、線形汎関数が連続（＝有界）であるならば、<br>
@@ -276,18 +293,40 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 <a id="ID_4-3"></a>
 
 ### ◎ Moore-Aronszajn の定理
-![image](https://user-images.githubusercontent.com/25688193/46570820-4fc69000-c9a5-11e8-9eda-9681add6a50f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46570911-02e3b900-c9a7-11e8-8e65-117f1f0c4c3b.png)<br>
 
 > 【メモ】<br>
-> 再生カーネルヒルベルト空間、定義だけみても意味分かんないけど、Moore-Aronszajn の定理まで見てみればようやく意味がわかってくる印象<br>
+> 再生核ヒルベルト空間、定義だけみても意味分かんないけど、Moore-Aronszajn の定理まで見てみればようやく意味がわかってくる印象<br>
 
 
-先の再生カーネルヒルベルト空間の線形汎関数を用いた特徴付けと、<br>
-Moore-Aronszajn の定理より、再生カーネルヒルベルト空間を再解釈（＝特徴付け）したのが以下の図である。
+先の再生核ヒルベルト空間の線形汎関数を用いた特徴付けと、<br>
+Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（＝特徴付け）したのが以下の図である。
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/46566609-ba9fa900-c95c-11e8-8c28-a89da4de0f5d.png)<br>
 
+
+<a id="ID_4-3-1"></a>
+
+#### ☆ 特徴写像とカーネルトリック（Moore - Aronszajn の定理からの帰着）
+特徴写像 Φ は、集合 X から再生核ヒルベルト空間への写像 ![image](https://user-images.githubusercontent.com/25688193/46576774-175a9c80-ca0d-11e8-8ca6-4e36fe4365db.png) である。<br>
+このとき、Moore - Aronszajn の定理より、再生核ヒルベルト空間上の任意の２つの要素（関数）∀f,g ∈H の内積は、<br>
+![image](https://user-images.githubusercontent.com/25688193/46576776-3b1de280-ca0d-11e8-9347-0963c4cea248.png)<br>
+
+従って、<br>
+![image](https://user-images.githubusercontent.com/25688193/46576790-81734180-ca0d-11e8-8986-c8112e774a42.png)<br>
+となり、カーネルトリックが成り立っていることが分かる。<br>
+つまり、カーネルトリックは、Moore - Aronszajn の定理からの帰着で自然に導かれる。<br>
+
+
+<a id="ID_4-4"></a>
+
+### ◎ 再生核ヒルベルト空間の具体的構成
+
+<a id="ID_4-4-1"></a>
+
+#### ☆ 線形カーネルの再生核ヒルベルト空間
+> 記載中...
 
 
 ---
@@ -298,6 +337,12 @@ Moore-Aronszajn の定理より、再生カーネルヒルベルト空間を再�
 
 - カーネル法入門―正定値カーネルによるデータ解析 (シリーズ 多変量データの統計科学)<br>
     - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95%E5%85%A5%E9%96%80%E2%80%95%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%A4%9A%E5%A4%89%E9%87%8F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%B5%B1%E8%A8%88%E7%A7%91%E5%AD%A6-%E7%A6%8F%E6%B0%B4-%E5%81%A5%E6%AC%A1/dp/4254128088?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4254128088)<br>
+
+- カーネル多変量解析―非線形データ解析の新しい展開 (シリーズ確率と情報の科学)<br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90%E2%80%95%E9%9D%9E%E7%B7%9A%E5%BD%A2%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90%E3%81%AE%E6%96%B0%E3%81%97%E3%81%84%E5%B1%95%E9%96%8B-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E7%A2%BA%E7%8E%87%E3%81%A8%E6%83%85%E5%A0%B1%E3%81%AE%E7%A7%91%E5%AD%A6-%E8%B5%A4%E7%A9%82-%E6%98%AD%E5%A4%AA%E9%83%8E/dp/4000069713?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4000069713)<br>
+
+- サポートベクターマシン入門<br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%B3%E5%85%A5%E9%96%80-%E3%83%8D%E3%83%AD-%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E3%83%8B%E3%83%BC%E3%83%8B/dp/4320121341?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4320121341)<br>
 
 - はじめてのパターン認識 <br>
     - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98-%E5%B9%B3%E4%BA%95-%E6%9C%89%E4%B8%89/dp/4627849710?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4627849710)<br>
