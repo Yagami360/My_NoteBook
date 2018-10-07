@@ -256,10 +256,20 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 #### ☆ 再生核のテンソル積
 再生核のテンソル積が、また再生核になることを示すために、まず、再生核ヒルベルト空間のテンソル積なるものを定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46577320-f6e80d80-ca1f-11e8-9fb9-d7ae94ddced5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46578354-72a28400-ca39-11e8-9004-3b4754ba6357.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/46577331-27c84280-ca20-11e8-9356-df87675ac8f3.png)<br>
 
-> 記載中...
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46578434-e2fdd500-ca3a-11e8-89ac-6a4dabe401c4.png)<br>
+
+- （証明）<br>
+    テンソル積の定義 ![image](https://user-images.githubusercontent.com/25688193/46578493-c367ac00-ca3c-11e8-91ab-64e46469f925.png) より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46578496-d4182200-ca3c-11e8-9520-18001ccbe5bc.png)<br>
+    内積の式は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46578498-e6925b80-ca3c-11e8-884a-d3b279cea5ff.png)<br>
+    となり、再生性の条件が成り立つので、<br>
+    この ![image](https://user-images.githubusercontent.com/25688193/46578501-fdd14900-ca3c-11e8-9fd7-5f6157301d36.png) は再生核となる。<br>
 
 
 <a id="ID_4-2"></a>
