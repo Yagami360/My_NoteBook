@@ -27,12 +27,19 @@
         1. [線形カーネルの再生核ヒルベルト空間](#ID_4-4-1)
         1. [有限集合上の（エルミート行列の）再生核ヒルベルト空間](#ID_4-4-2)
         1. [多項式カーネルの再生核ヒルベルト空間](#ID_4-4-3)
-        1. ヒルベルト埋め込み写像により再生核ヒルベルト空間の構成
+        1. [ヒルベルト空間への埋め込み写像による再生核ヒルベルト空間の構成](#ID_4-4-4)
             1. RBF カーネルの再生核ヒルベルト空間
             1. ラプラスカーネルの再生核ヒルベルト空間
-1. Mercer（マーセル、マーサー）の定理
-    1. 【補足】積分作用素
-    1. 【補足】スペクトル分解
+            1. 【補足】埋め込み写像
+            1. 【補足】測度論
+        1. ソボレフ空間 [Sobolev space]
+1. [正定値カーネルの理論](#ID_5)
+    1. 負定値カーネル
+    1. Schoenberg の定理
+    1. Bochner の定理
+    1. Mercer（マーセル、マーサー）の定理
+        1. 【補足】積分作用素
+        1. 【補足】スペクトル分解
 1. 汎化性能と正則化
     1. リプレゼンター定理
 1. 各種カーネル法
@@ -341,7 +348,7 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 <a id="ID_4-4-1"></a>
 
 #### ☆ 線形カーネルの再生核ヒルベルト空間
-![image](https://user-images.githubusercontent.com/25688193/46660553-35cdbd00-cbf2-11e8-85f6-32fc6cc4f517.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46706205-36a43480-cc6e-11e8-84b3-925f0f2a6427.png)<br>
 
 - （証明）<br>
     線形カーネルは、先に示したように正定値カーネルである。<br>
@@ -383,7 +390,60 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 <a id="ID_4-4-3"></a>
 
 #### ☆ 多項式カーネルの再生核ヒルベルト空間
+![image](https://user-images.githubusercontent.com/25688193/46706510-cb5b6200-cc6f-11e8-8770-1f77a4cfc12c.png)<br>
+
+- （証明略）<br>
+
+
+<a id="ID_4-4-4"></a>
+
+#### ☆ ヒルベルト埋め込み写像による再生核ヒルベルト空間の構成
+再生核ヒルベルト空間を、他のヒルベルト空間の部分空間として構成する一般的な方法に、埋め込み写像による構成方法が存在する。<br>
+
+- X : 集合<br>
+- ![image](https://user-images.githubusercontent.com/25688193/46723566-1ea2d400-ccb3-11e8-8109-3219a99dd431.png) : 集合 X 上の全ての複素数値関数からなる関数空間<br>
+    各点収束による位相構造を加える。<br>
+- ![image](https://user-images.githubusercontent.com/25688193/46723610-35492b00-ccb3-11e8-9881-fbbf37e0056f.png) : 測度空間<br>
+- ![image](https://user-images.githubusercontent.com/25688193/46723804-a4bf1a80-ccb3-11e8-90eb-06dfdacec36a.png) : L2 空間？<br>
+- H : T×X 上の可測関数。以下の関係が成り立つと仮定する。<br>
+    - ![image](https://user-images.githubusercontent.com/25688193/46723879-d1733200-ccb3-11e8-865f-346a39b17eea.png)<br>
+    - このを基底とした空間が、![image](https://user-images.githubusercontent.com/25688193/46723804-a4bf1a80-ccb3-11e8-90eb-06dfdacec36a.png) になる。即ち、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46723909-e8198900-ccb3-11e8-88c3-e521e3fc3e31.png)<br>
+- ![image](https://user-images.githubusercontent.com/25688193/46723978-097a7500-ccb4-11e8-94d1-73400a0d6330.png) : 以下定義により、埋め込み写像になる。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46724014-1c8d4500-ccb4-11e8-9d31-9f654472601c.png)<br>
+- ![image](https://user-images.githubusercontent.com/25688193/46724098-47779900-ccb4-11e8-81d6-faa0442713df.png) : 埋め込み写像 J の像で与えられるの ![image](https://user-images.githubusercontent.com/25688193/46723566-1ea2d400-ccb3-11e8-8109-3219a99dd431.png) 部分空間<br>
+    埋め込み写像 J が、![image](https://user-images.githubusercontent.com/25688193/46723804-a4bf1a80-ccb3-11e8-90eb-06dfdacec36a.png) と部分空間 ![image](https://user-images.githubusercontent.com/25688193/46724216-83aaf980-ccb4-11e8-8c6e-aba84128c709.png) の間のヒルベルト空間として同型を与える。<br>
+
+
 > 記載中...
+
+>【Memo】<br>
+> 前提知識として、以下の項目が必要？<br>
+> - 埋め込み写像<br>
+> - 測度論（測度空間、測度関数）<br>
+
+
+<a id="ID_4-4-5"></a>
+
+#### ☆ ソボレフ空間 [Soboveb space]
+再生核ヒルベルト空間の重要な例として、ソボレフ空間がある。<br>
+
+
+> 記載中...
+
+
+
+<a id="ID_5"></a>
+
+## ■ 正定値カーネルの理論
+ここでは、正定値カーネルの理論と称して、以下のようなトピックを取り上げる。<br>
+
+- 負定値カーネルと正定値カーネルを関連づける定理である Schoenberg の定理<br>
+- Schoenberg の定理を用いて、正定値カーネルや負定値カーネルから、様々な正定値カーネルを系統的に生成出来ること。<br>
+- ユークリッド空間上での平行移動（アフィン変換）に対して不変な正定値カーネル全体を、その正定値カーネルのフーリエ変換により特徴づけることを主張している Bochner の定理。<br>
+- 正定値カーネルに対する固有値分解である Mercer の定理<br>
+
+
 
 ---
 
