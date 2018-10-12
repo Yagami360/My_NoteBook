@@ -9,8 +9,7 @@
     - [線形代数学 [linear algebra]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E7%B7%9A%E5%BD%A2%E4%BB%A3%E6%95%B0%E5%AD%A6_Note.md)
     - [フーリエ解析 [Fourier analysis]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E3%83%95%E3%83%BC%E3%83%AA%E3%82%A8%E8%A7%A3%E6%9E%90_Note.md)
     - [関数解析 [functional analysis]（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90_Note.md)
-    - 測度論 [measure theory]
-        - ルベーグ積分 [Lebesgue integral]
+    - [測度論 / ルベーグ積分（記載中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E6%B8%AC%E5%BA%A6%E8%AB%96_%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86_Note.md)
     - [微分方程式 [differential equation]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B%E5%BC%8F_Note.md)
     - [統計学 [statistics] / 統計解析 [statistical analysis]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E7%B5%B1%E8%A8%88%E8%A7%A3%E6%9E%90_Note.md)
         - [多変量解析 [multivariate analysis]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90_Note.md)
