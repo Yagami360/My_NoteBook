@@ -144,6 +144,17 @@
 <a id="ID_2-6"></a>
 
 ### ◎ 単関数の積分
+積分に関する一般的な性質（線形性など）を、先の積分の定義から直接導出するのは、困難である。
+そこでまずは、単関数の場合に限定し、更に、積分の性質を確かめるための補助的な量を別途定義した上で、先の積分の定義と関連付けて議論することにする。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46906241-69cf1800-cf3b-11e8-88f7-1cff454bc25c.png)<br>
+
+積分の性質（線形性など）との関連付けて議論するために、このように定義した補助的な量に対して、いくつかの性質を見てみる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46906264-badf0c00-cf3b-11e8-9130-7448cb61c704.png)<br>
+
+- （証明）<br>
+
 > 記載中...
 
 
@@ -164,7 +175,7 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/46905104-c4f80f00-cf29-11e8-8607-767925bd14cc.png)
+![image](https://user-images.githubusercontent.com/25688193/46906249-7f444200-cf3b-11e8-8722-f7342862308b.png)<br>
 
 - （証明）<br>
 
