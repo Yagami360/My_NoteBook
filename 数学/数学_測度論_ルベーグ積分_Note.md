@@ -10,8 +10,11 @@
     1. [可測性（可測関数、可測集合）](#ID_2-3)
     1. [単関数](#ID_2-4)
     1. [積分](#ID_2-5)
+    1. [単関数の積分](#ID_2-6)
+    1. [可測関数の積分](#ID_2-7)
 1. [測度に基づく積分の性質](#ID_3)
     1. [σ-加法族の性質と可測性](#ID_3-1)
+    1. 単調収束定理
     1. ルベーグの収束定理
 1. [参考文献](#参考文献)
 
@@ -107,6 +110,8 @@
 
 ![image](https://user-images.githubusercontent.com/25688193/46900508-38742f00-cede-11e8-92eb-fb785c9f4a86.png)<br>
 
+![image](https://user-images.githubusercontent.com/25688193/46904837-94ae7180-cf25-11e8-9e44-375dcfcf9aa2.png)<br>
+
 
 <a id="ID_2-3"></a>
 
@@ -136,6 +141,12 @@
 ![image](https://user-images.githubusercontent.com/25688193/46903242-2eb5f000-cf0d-11e8-8a81-e6b723b35a8f.png)<br>
 
 
+<a id="ID_2-6"></a>
+
+### ◎ 単関数の積分
+> 記載中...
+
+
 <a id="ID_3"></a>
 
 ## ■ 測度に基づく積分の性質
@@ -147,7 +158,15 @@
 
 まずは、σ-加法族の定義を、可測関数の視点で捉え直す。<br>
 
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/46904861-ea831980-cf25-11e8-850e-6108707db2da.png)<br>
+
+- （証明）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46905104-c4f80f00-cf29-11e8-8607-767925bd14cc.png)
+
+- （証明）<br>
 
 
 ---
