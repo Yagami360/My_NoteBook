@@ -9,11 +9,11 @@
     1. [測度](#ID_2-2)
     1. [可測性（可測関数、可測集合）](#ID_2-3)
     1. [単関数](#ID_2-4)
-    1. [積分](#ID_2-5)
-    1. [単関数の積分](#ID_2-6)
-    1. [可測関数の積分](#ID_2-7)
+    1. [可測関数の積分](#ID_2-5)
 1. [測度に基づく積分の性質](#ID_3)
     1. [σ-加法族の性質と可測性](#ID_3-1)
+    1. [単関数の積分とその性質](#ID_3-2)
+    1. [可測関数の積分の性質](#ID_3-3)
     1. 単調収束定理
     1. ルベーグの収束定理
 1. [参考文献](#参考文献)
@@ -130,20 +130,46 @@
 
 <a id="ID_2-5"></a>
 
-### ◎ 積分
+### ◎ 可測関数の積分
 この σ-加法族、測度、及び、可測関数、単関数を元に、（可測関数に対して）積分が定義できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46903213-f0b8cc00-cf0c-11e8-9a28-c44c0c7b535c.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46918084-77060880-d008-11e8-8ae5-a26d77194f8f.png)<br>
 
 次に、このように定義した積分に対しての積分可能性（＝可積分、可積分関数）を議論するのであるが、<br>
 更に、可積分関数 f に対しての ![image](https://user-images.githubusercontent.com/25688193/46903224-08905000-cf0d-11e8-8220-83357a6f9cb6.png) 条件を利用することで、この可積分性（＝可積分関数）から積分を再定義することも出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46903242-2eb5f000-cf0d-11e8-8a81-e6b723b35a8f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46917935-16c29700-d007-11e8-89ac-3b2bd70ca8f1.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46918032-b718bb80-d007-11e8-9c7a-ee143d2d6f85.png)<br>
 
 
-<a id="ID_2-6"></a>
+<a id="ID_3"></a>
 
-### ◎ 単関数の積分
+## ■ 測度に基づく積分の性質
+
+<a id="ID_3-1"></a>
+
+### ◎ σ-加法族の性質と可測性
+ここでは、先に見てきた関数の可測性の観点から、σ-加法族を再度見直してみる。<br>
+
+まずは、σ-加法族の定義を、可測関数の視点で捉え直す。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46904861-ea831980-cf25-11e8-850e-6108707db2da.png)<br>
+
+- （証明）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46906249-7f444200-cf3b-11e8-8722-f7342862308b.png)<br>
+
+- （証明）<br>
+
+
+<a id="ID_3-2"></a>
+
+### ◎ 単関数の積分とその性質
 積分に関する一般的な性質（線形性など）を、先の積分の定義から直接導出するのは、困難である。
 そこでまずは、単関数の場合に限定し、更に、積分の性質を確かめるための補助的な量を別途定義した上で、先の積分の定義と関連付けて議論することにする。<br>
 
@@ -192,26 +218,17 @@
 - （証明略）<br>
 
 
-<a id="ID_3"></a>
+<a id="ID_3-3"></a>
 
-## ■ 測度に基づく積分の性質
+### ◎ 可測関数の積分の性質
+以下、可測関数の積分に関しての、基本的な性質を見ていく。<br>
 
-<a id="ID_3-1"></a>
 
-### ◎ σ-加法族の性質と可測性
-ここでは、先に見てきた関数の可測性の観点から、σ-加法族を再度見直してみる。<br>
 
-まずは、σ-加法族の定義を、可測関数の視点で捉え直す。<br>
+> 記載中...
 
-![image](https://user-images.githubusercontent.com/25688193/46904861-ea831980-cf25-11e8-850e-6108707db2da.png)<br>
 
-- （証明）<br>
 
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/46906249-7f444200-cf3b-11e8-8722-f7342862308b.png)<br>
-
-- （証明）<br>
 
 
 ---
@@ -220,5 +237,8 @@
 
 ## ■ 参考文献
 
+- ルベーグ積分 理論と計算手法<br>
+    - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86-%E7%90%86%E8%AB%96%E3%81%A8%E8%A8%88%E7%AE%97%E6%89%8B%E6%B3%95-%E5%B2%A9%E7%94%B0-%E8%80%95%E4%B8%80%E9%83%8E/dp/4627054319?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4627054319)<br>
+
 - ルベーグ積分超入門―関数解析や数理ファイナンス理解のために<br>
-    - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86%E8%B6%85%E5%85%A5%E9%96%80%E2%80%95%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90%E3%82%84%E6%95%B0%E7%90%86%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%B3%E3%82%B9%E7%90%86%E8%A7%A3%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB-%E6%A3%AE-%E7%9C%9F/dp/4320017781?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4320017781)
+    - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86%E8%B6%85%E5%85%A5%E9%96%80%E2%80%95%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90%E3%82%84%E6%95%B0%E7%90%86%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%B3%E3%82%B9%E7%90%86%E8%A7%A3%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB-%E6%A3%AE-%E7%9C%9F/dp/4320017781?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4320017781)<br>
