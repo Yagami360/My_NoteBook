@@ -154,8 +154,42 @@
 ![image](https://user-images.githubusercontent.com/25688193/46906264-badf0c00-cf3b-11e8-9130-7448cb61c704.png)<br>
 
 - （証明）<br>
+    合成関数 h の値域 range(h) に関して、以下のような関係が成り立つ。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912850-a8a4b280-cfbb-11e8-991f-4947b47c7fe4.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912861-e570a980-cfbb-11e8-8ac7-c03cca11e1ee.png)<br>
+    更に、関数 ϕ の値域の有限値を定める定数 ![image](https://user-images.githubusercontent.com/25688193/46912854-b78b6500-cfbb-11e8-94fc-02608e52092a.png) に対して、以下のような関係が成り立つ。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912874-36809d80-cfbc-11e8-8009-eff374e1d646.png)<br>
+    この式は、例えば、![image](https://user-images.githubusercontent.com/25688193/46912879-5a43e380-cfbc-11e8-85c3-355ee1a788d5.png) のときは、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912885-6f207700-cfbc-11e8-8482-5f6be6865250.png)<br>
+    となり、下図のように、２つの単関数 f,g の組み合わせによって、![image](https://user-images.githubusercontent.com/25688193/46912890-9d05bb80-cfbc-11e8-96c4-f9b18bf374ab.png) 領域の分割が生じる様子を示している。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912933-c70bad80-cfbd-11e8-85a7-53d1d779f1ed.png)<br>
+    ここで、<br>
+	「値域 range(h) が、可算集合ならば、関数 h の可測性は、y∈range(h) に対して、![image](https://user-images.githubusercontent.com/25688193/46912990-3f26a300-cfbf-11e8-93fc-21eab7f257b5.png) が成り立つことと同値である」<br>
+	という関係（証明略）より、<br>
+	上式の右辺（＝上図に示した分割領域の和集合）が、有限集合であり、σ-加法族 B に属することは、
+	合成関数 h が、B-可測関数であることを意味している。<br>
+	従って、合成関数 h は、単関数である。<br>
 
-> 記載中...
+<br>
+
+この単関数の合成関数の性質を、<br>
+先に定義した積分の性質を確かめるための補助的な量<br>
+![image](https://user-images.githubusercontent.com/25688193/46913036-69c52b80-cfc0-11e8-8065-40b027c2a7b2.png)<br>
+に適用すると、以下のような定理が導かれる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46913017-1226c000-cfc0-11e8-86db-a70781122730.png)<br>
+
+- （証明略）<br>
+
+<br>
+
+この定理から、ここでの主目的であった、<br>
+積分の性質を確かめるための補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) に対する、積分演算で一般的に成り立つ性質（線形性など）の導出と、<br>
+この補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) が、積分の定義に一致する、即ち、![image](https://user-images.githubusercontent.com/25688193/46913072-2c14d280-cfc1-11e8-8c2d-0cbf93264e4b.png) の関係を示すことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46913146-d3ded000-cfc2-11e8-9b74-72b73a7eefd6.png)<br>
+
+- （証明略）<br>
 
 
 <a id="ID_3"></a>
