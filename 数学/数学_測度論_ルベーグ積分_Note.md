@@ -6,17 +6,19 @@
 1. [概要](#ID_1)
 1. [測度に基づく積分の定義](#ID_2)
     1. [σ-加法族（完全加法族）](#ID_2-1)
-    1. [測度](#ID_2-2)
+    1. [測度、測度空間](#ID_2-2)
     1. [可測性（可測関数、可測集合）](#ID_2-3)
     1. [単関数](#ID_2-4)
     1. [可測関数の積分](#ID_2-5)
+        1. ディリクレ関数を用いた積分
 1. [測度に基づく積分の性質](#ID_3)
     1. [σ-加法族の性質と可測性](#ID_3-1)
     1. [単関数の積分とその性質](#ID_3-2)
     1. [可測関数の積分の性質](#ID_3-3)
-    1. [ファトゥの補題](#ID_3-4)
-    1. [単調収束定理](#ID_3-5)
-    1. [ルベーグの収束定理](#ID_3-6)
+    1. [エゴロフの定理](#ID_3-4)
+    1. [ファトゥの補題](#ID_3-5)
+    1. [単調収束定理](#ID_3-6)
+    1. [ルベーグの収束定理](#ID_3-7)
 1. [参考文献](#参考文献)
 
 ---
@@ -106,7 +108,7 @@
 
 <a id="ID_2-2"></a>
 
-### ◎ 測度
+### ◎ 測度、測度空間
 σ-加法族を定義した上で、この σ-加法族 B（＝図形のリストに対応）を測る操作（＝写像） μ に対しての加法性を導入し、以下のように測度として定義する。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/46900508-38742f00-cede-11e8-92eb-fb785c9f4a86.png)<br>
@@ -149,7 +151,7 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/46926936-f974e380-d06d-11e8-953e-0a4733407d94.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46934244-f986da80-d091-11e8-93b7-5ba3034e6ae1.png)<br>
 
 
 <a id="ID_3"></a>
@@ -169,7 +171,7 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/46906249-7f444200-cf3b-11e8-8722-f7342862308b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46934305-3b178580-d092-11e8-8438-4621a26119e6.png)<br>
 
 - （証明）<br>
 
@@ -231,23 +233,35 @@
 以下、可測関数の積分に関しての、基本的な性質を見ていく。<br>
 まずは、測度 μ の有限加法性に起因する性質を見ていく。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46927089-c2eb9880-d06e-11e8-9536-b437894adae7.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46934377-7ca83080-d092-11e8-929b-8ac45931a885.png)<br>
 
 - （証明略）
 
 <br>
 
-次に、σ-加法性に起因する性質を見ていく。
+次に、σ-加法性に起因する性質を見ていく。<br>
 
 > 記載中...
 
 
 <a id="ID_3-4"></a>
 
-### ◎ ファトゥの補題
-単調収束定理やルベーグ収束定理を示すための前段階として、以下のファトｳの補題を示す。<br>
+### ◎ エゴロフの定理
+<!--
+可測関数の積分は、単関数の点列で可測関数を近似した上で定義する方法と、単関数の積分の上限で定義する方法の２通り考えられるが、<br>
+以下に示すエゴロフの定理を用いれば、これらの２つの値が一致することを示すことが出来る。<br>
+-->
 
-![image](https://user-images.githubusercontent.com/25688193/46927362-ecf18a80-d06f-11e8-91d3-7994dc6a04e0.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46936622-e11abe00-d099-11e8-87b5-ef46812714a3.png)<br>
+
+- （証明略）図より自明<br>
+
+<br>
+
+このエゴロフの定理を用いれば、<br>
+積分の基本性質である、「（単関数における）極限と積分の順序の交換可能性」を示すことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46938746-7c626200-d09f-11e8-994d-a91dcc2c36ef.png)<br>
 
 - （証明）<br>
     > 記載中...
@@ -255,13 +269,39 @@
 
 <a id="ID_3-5"></a>
 
-### ◎ 単調収束定理
-先の可測関数の積分の単調増加性の性質を拡張したのが、以下の単調収束定理である。<br>
+### ◎ ファトゥの補題
+単調収束定理やルベーグ収束定理を示すための前段階として、以下のファトゥの補題を示す。<br>
+このファトゥの補題は、このファトゥの補題は、先の単関数に対する極限と積分の交換可能性の性質を、可測関数に拡張したものになっている。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46927376-101c3a00-d070-11e8-96a9-2fcedebc94ea.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46940028-b8e38d00-d0a2-11e8-867b-31b463666293.png)<br>
+
+- （証明略）<br>
+
+
+<a id="ID_3-6"></a>
+
+### ◎ 単調収束定理
+ファトゥの補題を用いれば、以下の単調収束定理を示すことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46934461-cd1f8e00-d092-11e8-8604-df1b855cca42.png)<br>
 
 - （証明）<br>
-    > 記載中...
+    可測集合 A∈B 上で、可測関数の単調増加の点列 ![image](https://user-images.githubusercontent.com/25688193/46940732-64d9a800-d0a4-11e8-93cc-a42a39f3f0c0.png) に対しては、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46940770-78850e80-d0a4-11e8-8054-f292ee538398.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46940789-88045780-d0a4-11e8-81a7-8c6bb514612d.png)<br>
+    の関係が成り立つので、これを、ファトゥの補題の関係式<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46941100-4a53fe80-d0a5-11e8-9619-12dc0c841223.png)<br>
+    に代入すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46941157-6fe10800-d0a5-11e8-834a-015288ce09a0.png)<br>
+    <br>
+    また、積分の単調性の性質 ![image](https://user-images.githubusercontent.com/25688193/46941739-cb5fc580-d0a6-11e8-8c09-c4ce1ea909b1.png) より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46941801-e3374980-d0a6-11e8-9ad5-af7cb7797e4a.png)<br>
+
+
+<a id="ID_3-7"></a>
+
+### ◎ ルベーグ収束定理
+> 記載中...
 
 
 ---
