@@ -14,8 +14,9 @@
     1. [σ-加法族の性質と可測性](#ID_3-1)
     1. [単関数の積分とその性質](#ID_3-2)
     1. [可測関数の積分の性質](#ID_3-3)
-    1. 単調収束定理
-    1. ルベーグの収束定理
+    1. [ファトゥの補題](#ID_3-4)
+    1. [単調収束定理](#ID_3-5)
+    1. [ルベーグの収束定理](#ID_3-6)
 1. [参考文献](#参考文献)
 
 ---
@@ -112,6 +113,12 @@
 
 ![image](https://user-images.githubusercontent.com/25688193/46904837-94ae7180-cf25-11e8-9e44-375dcfcf9aa2.png)<br>
 
+以下、<br>
+![image](https://user-images.githubusercontent.com/25688193/46926806-4efcc080-d06d-11e8-8d58-79ed5486d0ee.png)<br>
+という文言を、この測度空間の言葉を用いて<br>
+![image](https://user-images.githubusercontent.com/25688193/46926820-5d4adc80-d06d-11e8-837e-1f21a5d15572.png)<br>
+と記述する。<br>
+
 
 <a id="ID_2-3"></a>
 
@@ -119,13 +126,13 @@
 先に見た積分対象関数の横方向へのスライスから生じる集合（＝図形の分割）は、以下の定義で定義される可測関数に対して、σ-加法族に属することになる。<br>
 逆に言えば、横方向スライスから生じる集合が、σ-加法族に属するように、可測関数、可測集合なるものを定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46900905-f7334d80-cee4-11e8-8a8e-fc69c4612f0e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46926849-7c496e80-d06d-11e8-8d86-5ce941653fce.png)<br>
 
 
 <a id="ID_2-4"></a>
 
 ### ◎ 単関数
-![image](https://user-images.githubusercontent.com/25688193/46903202-c2d38780-cf0c-11e8-8382-8233d6571899.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46926868-95eab600-d06d-11e8-8ddb-742681bb219f.png)<br>
 
 
 <a id="ID_2-5"></a>
@@ -133,16 +140,16 @@
 ### ◎ 可測関数の積分
 この σ-加法族、測度、及び、可測関数、単関数を元に、（可測関数に対して）積分が定義できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46918084-77060880-d008-11e8-8ae5-a26d77194f8f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46926898-b87ccf00-d06d-11e8-9315-9ff1e9042a23.png)<br>
 
 次に、このように定義した積分に対しての積分可能性（＝可積分、可積分関数）を議論するのであるが、<br>
 更に、可積分関数 f に対しての ![image](https://user-images.githubusercontent.com/25688193/46903224-08905000-cf0d-11e8-8220-83357a6f9cb6.png) 条件を利用することで、この可積分性（＝可積分関数）から積分を再定義することも出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46917935-16c29700-d007-11e8-89ac-3b2bd70ca8f1.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46926929-e2ce8c80-d06d-11e8-9fef-2df2a8cdd641.png)<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/46918032-b718bb80-d007-11e8-9c7a-ee143d2d6f85.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46926936-f974e380-d06d-11e8-953e-0a4733407d94.png)<br>
 
 
 <a id="ID_3"></a>
@@ -173,11 +180,11 @@
 積分に関する一般的な性質（線形性など）を、先の積分の定義から直接導出するのは、困難である。
 そこでまずは、単関数の場合に限定し、更に、積分の性質を確かめるための補助的な量を別途定義した上で、先の積分の定義と関連付けて議論することにする。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46906241-69cf1800-cf3b-11e8-88f7-1cff454bc25c.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46926699-c9791080-d06c-11e8-801c-2c5fe5329b3b.png)<br>
 
 積分の性質（線形性など）との関連付けて議論するために、このように定義した補助的な量に対して、いくつかの性質を見てみる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46906264-badf0c00-cf3b-11e8-9130-7448cb61c704.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46926967-232e0a80-d06e-11e8-8a1a-e0b6df299317.png)<br>
 
 - （証明）<br>
     合成関数 h の値域 range(h) に関して、以下のような関係が成り立つ。<br>
@@ -203,7 +210,7 @@
 ![image](https://user-images.githubusercontent.com/25688193/46913036-69c52b80-cfc0-11e8-8065-40b027c2a7b2.png)<br>
 に適用すると、以下のような定理が導かれる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46913017-1226c000-cfc0-11e8-86db-a70781122730.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46926991-422c9c80-d06e-11e8-8020-02c22ec184b8.png)<br>
 
 - （証明略）<br>
 
@@ -213,7 +220,7 @@
 積分の性質を確かめるための補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) に対する、積分演算で一般的に成り立つ性質（線形性など）の導出と、<br>
 この補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) が、積分の定義に一致する、即ち、![image](https://user-images.githubusercontent.com/25688193/46913072-2c14d280-cfc1-11e8-8c2d-0cbf93264e4b.png) の関係を示すことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46913146-d3ded000-cfc2-11e8-9b74-72b73a7eefd6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46927017-65574c00-d06e-11e8-94d7-ddd0390f6082.png)<br>
 
 - （証明略）<br>
 
@@ -222,13 +229,39 @@
 
 ### ◎ 可測関数の積分の性質
 以下、可測関数の積分に関しての、基本的な性質を見ていく。<br>
+まずは、測度 μ の有限加法性に起因する性質を見ていく。<br>
 
+![image](https://user-images.githubusercontent.com/25688193/46927089-c2eb9880-d06e-11e8-9536-b437894adae7.png)<br>
 
+- （証明略）
+
+<br>
+
+次に、σ-加法性に起因する性質を見ていく。
 
 > 記載中...
 
 
+<a id="ID_3-4"></a>
 
+### ◎ ファトゥの補題
+単調収束定理やルベーグ収束定理を示すための前段階として、以下のファトｳの補題を示す。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46927362-ecf18a80-d06f-11e8-91d3-7994dc6a04e0.png)<br>
+
+- （証明）<br>
+    > 記載中...
+
+
+<a id="ID_3-5"></a>
+
+### ◎ 単調収束定理
+先の可測関数の積分の単調増加性の性質を拡張したのが、以下の単調収束定理である。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/46927376-101c3a00-d070-11e8-96a9-2fcedebc94ea.png)<br>
+
+- （証明）<br>
+    > 記載中...
 
 
 ---
