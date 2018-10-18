@@ -21,6 +21,9 @@
     1. [ルベーグの収束定理](#ID_3-7)
 1. [測度０の集合](#ID_4)
     1. [ほとんどいたるところ [almost everyewhere]](#ID_4-1)
+    1. [積分の定義のほとんどいたるところを用いた表現](#ID_4-2)
+    1. [各種収束定理のほとんどいたるところを用いた表現](#ID_4-3)
+    1. [Lp 空間の完備性と測度の σ-加法性](#ID_4-4)
 1. [参考文献](#参考文献)
 
 ---
@@ -289,12 +292,12 @@
 ### ◎ 単調収束定理
 ファトゥの補題を用いれば、以下の単調収束定理を示すことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46934461-cd1f8e00-d092-11e8-8604-df1b855cca42.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47134171-c6895480-d2e6-11e8-9283-80bc4d7c4a1b.png)<br>
 
 - （証明）<br>
+    定理の参考図にも示しているように、<br>
     可測集合 A∈B 上で、可測関数の単調増加の点列 ![image](https://user-images.githubusercontent.com/25688193/46940732-64d9a800-d0a4-11e8-93cc-a42a39f3f0c0.png) に対しては、<br>
     ![image](https://user-images.githubusercontent.com/25688193/46940770-78850e80-d0a4-11e8-8054-f292ee538398.png)<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46940789-88045780-d0a4-11e8-81a7-8c6bb514612d.png)<br>
     の関係が成り立つので、これを、ファトゥの補題の関係式<br>
     ![image](https://user-images.githubusercontent.com/25688193/46941100-4a53fe80-d0a5-11e8-9619-12dc0c841223.png)<br>
     に代入すると、<br>
@@ -348,9 +351,65 @@
 
 <br>
 
+> 【Memo】 測度論における、ほとんどいたるところ [almost everywhere]<br>
+> 零集合はその定義より、測度０の集合となるが、測度０の集合上での違いは、積分に影響せず無視できるという事実がある。（例えば、リーマン積分では、非連続点は測度０で零集合になり、積分上無視出来る。）<br>
+> そこで、「積分に影響しない例外（今の場合、測度０の零集合）に関しては、無視して取り除く」 ということを表す概念を導入することを考える。この概念こそが、ほとんどいたるところの概念になる。<br>
+> このほとんどいたるところの概念を用いれば、例えば、リーマン積分を<br>
+> 「ほとんどいたるところで連続⇔リーマン積分可能」と表現できる。<br>
+> （※この必要十分条件は、リーマン積分では、非連続点は測度０で零集合になり、積分上無視出来るという性質に起因する。）<br>
+
+<br>
+
 - 【参考】<br>
     - [ほとんどいたるところ - すもう](http://end01nojo.hatenablog.com/entry/2014/12/06/174314)<br>
 
+
+<a id="ID_4-2"></a>
+
+### ◎ 積分の定義のほとんどいたるところを用いた表現
+> 記載中
+
+- 【参考】<br>
+    - [「リーマン積分＜ルベーグ積分」という感覚を味わう - ペンギンは空を飛ぶ](http://peng225.hatenablog.com/entry/2017/11/03/104617)<br>
+
+
+<a id="ID_4-3"></a>
+
+### ◎ 各種収束定理のほとんどいたるところを用いた表現
+ほとんどいたるところで定義された関数を用いると、全ての点で収束するとは言えないような関数列に対しても、
+先の各種収束定理（単調収束定理、ルベーグの収束定理）を適用できるようになる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47142691-71593d00-d2fe-11e8-9f23-f6d3f916d00b.png)<br>
+
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47136083-8aa5bd80-d2ed-11e8-9f3c-bd1c0ce89fb7.png)<br>
+
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47142809-b9785f80-d2fe-11e8-9ecb-ceb0bcb7dc05.png)<br>
+
+- （証明略）<br>
+
+
+<a id="ID_4-4"></a>
+
+### ◎ Lp 空間の完備性と測度の σ-加法性
+![image](https://user-images.githubusercontent.com/25688193/47145929-e714d700-d305-11e8-9de5-13555d9b75b4.png)<br>
+
+<br>
+
+ここで、このLp空間の完備性は、以下の定理とその証明で示すように、
+測度が σ-加法性をもつことに起因している。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47149793-9ace9480-d30f-11e8-8a26-bce5829e7fe6.png)<br>
+
+- （証明）<br>
+    > 記載中...
 
 ---
 
