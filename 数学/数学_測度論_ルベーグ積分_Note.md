@@ -446,7 +446,32 @@
 ![image](https://user-images.githubusercontent.com/25688193/47203516-92cc2e80-d3bb-11e8-916a-9ace98a92f84.png)<br>
 
 - （証明）<br>
-    > 記載中...
+    - (a) の証明<br>
+        - 積分区間の変数 x∈R に対して、c≤x<b とすると、<br>
+            ルベーグ測度は、![image](https://user-images.githubusercontent.com/25688193/47252071-5232ea80-d479-11e8-82ad-1a9c80980694.png)<br>
+        - 積分区間は、細かく分割した積分区間の和の形、即ち、<br>
+            積分区間 ![image](https://user-images.githubusercontent.com/25688193/47252082-8dcdb480-d479-11e8-8156-08b8d53c308c.png) に対して、<br>
+            の形で表現できるので、積分区間 a<c≤x に対しては、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47252092-bce42600-d479-11e8-9bb0-d19dc940ca7d.png)<br>
+            積分に影響しない項 ![image](https://user-images.githubusercontent.com/25688193/47252101-cec5c900-d479-11e8-9ac8-b00ad54539a9.png) を両辺に追加すると、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47252120-3f6ce580-d47a-11e8-81b0-2050efe7adf2.png)<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47253724-3b4cc200-d492-11e8-987f-91f4dbbd886e.png)<br>
+        - 被積分関数 f は連続関数なので、
+            c∈(a,b) に対して、ε-δ 論法で、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47252061-2adc1d80-d479-11e8-8f13-eb2f459c103a.png) が成り立つ。<br>
+            従って、先の式は、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47253745-9bdbff00-d492-11e8-8deb-0210ad04d7f4.png) に対して、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47253752-b01ffc00-d492-11e8-8b51-a57edaddf730.png)<br>
+            従って、関数 ![image](https://user-images.githubusercontent.com/25688193/47253838-1a856c00-d494-11e8-9f6c-97edcfd09293.png) は、c において微分可能であり、微分係数は f(c) に等しい。<br>
+            従って、![image](https://user-images.githubusercontent.com/25688193/47253849-4c96ce00-d494-11e8-884c-10645fdf7cf3.png) の関係（＝原始関数 F の微分が、被積分関数 f）を満たすような原始関数 ![image](https://user-images.githubusercontent.com/25688193/47253838-1a856c00-d494-11e8-9f6c-97edcfd09293.png) が存在する。<br>
+        <br>
+    - (b) の証明<br>
+        積分区間上での原始関数 F は、定数の違いを除いて一意なので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/47254068-6be32a80-d497-11e8-8ef5-ead5f28e1cb3.png)<br>
+        の関係が成り立つ。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/47254074-7f8e9100-d497-11e8-8e71-a9c507c0ed03.png)<br>
+        
+        > 記載中...
 
 
 この定理の (b) の微積分の基本定理により、一次元ルベーグ積分の具体的な計算が与えられる。<br>
