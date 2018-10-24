@@ -37,7 +37,9 @@
         1. [非減少関数の誘導するルベーグ-スティルチェル外測度、１次元ルベーグ外測度](#ID_6-5-3)
 1. [カラテオドリ外測度からの測度の構成](#ID_7)
     1. [カラテオドリ外測度](#ID_7-1)
-    1. [（カラテオドリ外測度に関しての）可測集合](#ID_7-2)
+    1. [カラテオドリ外測度に関しての可測性（可測集合、可測集合族）](#ID_7-2)
+    1. [カラテオドリ外測度に関しての可測集合族の σ-加法性](#ID_7-3)
+    1. 零集合
     1. 完備測度空間
     1. ホップ [Hopf] の拡張定理
 1. [参考文献](#参考文献)
@@ -124,7 +126,7 @@
 <a id="ID_2-1"></a>
 
 ### ◎ σ-加法族（完全加法族）
-![image](https://user-images.githubusercontent.com/25688193/46900339-5e4c0480-cedb-11e8-86de-0659a3a0be3f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47439662-bf32e100-d7e7-11e8-87fc-f2fb8958aa14.png)<br>
 
 
 <a id="ID_2-2"></a>
@@ -610,7 +612,7 @@
 
 <a id="ID_7-2"></a>
 
-### ◎ （カラテオドリ外測度に関しての）可測性
+### ◎ カラテオドリ外測度に関しての可測性（可測集合、可測集合族）
 ![image](https://user-images.githubusercontent.com/25688193/47429220-a4a13d80-d7d0-11e8-9db0-56e25d35d090.png)<br>
 
 - 【参考】
@@ -620,16 +622,27 @@
 
 ![image](https://user-images.githubusercontent.com/25688193/47428405-16c45300-d7ce-11e8-8b46-ee70c1831090.png)<br>
 
-<br>
-
 ![image](https://user-images.githubusercontent.com/25688193/47429299-edf18d00-d7d0-11e8-8fb1-9b16fbe346df.png)<br>
 
 - （証明略）図より自明に成り立つ。<br>
 
+
+<a id="ID_7-3"></a>
+
+### ◎ カラテオドリ外測度に関しての可測集合族の σ-加法性
+![image](https://user-images.githubusercontent.com/25688193/47440405-0e2d4600-d7e9-11e8-9056-6e4f766917d9.png)<br>
+
+- 【参考】<br>
+    - [ユークリッド空間上の σ-加法族（完全加法族）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E6%B8%AC%E5%BA%A6%E8%AB%96_%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86_Note.md#-%CF%83-%E5%8A%A0%E6%B3%95%E6%97%8F%E5%AE%8C%E5%85%A8%E5%8A%A0%E6%B3%95%E6%97%8F)<br>
+
 <br>
 
+![image](https://user-images.githubusercontent.com/25688193/47442182-e5a74b00-d7ec-11e8-9487-1f6ed39c0129.png)<br>
 
-> 記載中...
+- （証明）<br>
+    > 記載中...
+
+
 
 ---
 
@@ -639,6 +652,9 @@
 
 - ルベーグ積分 理論と計算手法<br>
     - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86-%E7%90%86%E8%AB%96%E3%81%A8%E8%A8%88%E7%AE%97%E6%89%8B%E6%B3%95-%E5%B2%A9%E7%94%B0-%E8%80%95%E4%B8%80%E9%83%8E/dp/4627054319?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4627054319)<br>
+
+- 測度・確率・ルベーグ積分 応用への最短コース (KS理工学専門書)<br>
+    - [amazon で詳細を見る](https://www.amazon.co.jp/%E6%B8%AC%E5%BA%A6%E3%83%BB%E7%A2%BA%E7%8E%87%E3%83%BB%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86-%E5%BF%9C%E7%94%A8%E3%81%B8%E3%81%AE%E6%9C%80%E7%9F%AD%E3%82%B3%E3%83%BC%E3%82%B9-KS%E7%90%86%E5%B7%A5%E5%AD%A6%E5%B0%82%E9%96%80%E6%9B%B8-%E5%8E%9F-%E5%95%93%E4%BB%8B/dp/4061565710/ref=sr_1_1?ie=UTF8&qid=1540384467&sr=8-1&keywords=%E6%B8%AC%E5%BA%A6+%E7%A2%BA%E7%8E%87+%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86)<br>
 
 - ルベーグ積分超入門―関数解析や数理ファイナンス理解のために<br>
     - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86%E8%B6%85%E5%85%A5%E9%96%80%E2%80%95%E9%96%A2%E6%95%B0%E8%A7%A3%E6%9E%90%E3%82%84%E6%95%B0%E7%90%86%E3%83%95%E3%82%A1%E3%82%A4%E3%83%8A%E3%83%B3%E3%82%B9%E7%90%86%E8%A7%A3%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AB-%E6%A3%AE-%E7%9C%9F/dp/4320017781?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4320017781)<br>
