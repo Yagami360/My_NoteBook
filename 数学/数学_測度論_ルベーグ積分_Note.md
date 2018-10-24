@@ -574,7 +574,7 @@
 <a id="ID_6-5-1"></a>
 
 #### ☆ 劣加法性と σ-加法性
-![image](https://user-images.githubusercontent.com/25688193/47407151-bebd2a80-d794-11e8-8502-a7abd2d413f9.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47408856-e4016700-d79b-11e8-9c74-b0a06be76910.png)<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/47407163-d4325480-d794-11e8-8162-48170d58c752.png)<br>
 
