@@ -37,11 +37,14 @@
         1. [非減少関数の誘導するルベーグ-スティルチェル外測度、１次元ルベーグ外測度](#ID_6-5-3)
 1. [カラテオドリ外測度からの測度の構成](#ID_7)
     1. [カラテオドリ外測度](#ID_7-1)
-    1. [カラテオドリ外測度に関しての可測性（可測集合、可測集合族）](#ID_7-2)
-    1. [カラテオドリ外測度に関しての可測集合族の σ-加法性](#ID_7-3)
-    1. 零集合
-    1. 完備測度空間
-    1. ホップ [Hopf] の拡張定理
+    1. [（カラテオドリ外測度に関しての）可測集合](#ID_7-2)
+        1. [（有限加法的測度が誘導する外測度に関しての）可測集合](#ID_7-2-1)
+        1. [（カラテオドリ外測度に関しての）可測集合族の σ-加法性](#ID_7-2-2)
+    1. [（カラテオドリ外測度に関しての）零集合](#ID_7-4)
+        1. [（有限加法的測度が誘導する外測度に関しての）零集合](#ID_7-4-1)
+    1. [（カラテオドリ外測度に関しての）完備測度空間](#ID_7-5)
+        1. [（有限加法的測度が誘導する外測度に関しての）完備測度空間](#ID_7-5-1)
+    1. [測度の拡張とホップ [Hopf] の拡張定理](#ID_7-6)
 1. [参考文献](#参考文献)
 
 ---
@@ -95,22 +98,21 @@
     以下、この測度に基づく積分がどうのようなものなのか？の概要を見ていく。<br>
     <br>
     面積を測る操作（＝測度）を、「図形のリストに対して、ある実数値を対応させること」 と考える。<br>
-    即ち、図形のリスト B に対し、面積を測る操作（一種の写像）を、![image](https://user-images.githubusercontent.com/25688193/46858662-bf75c880-ce46-11e8-8904-3170ed8908a9.png) で表記することにする。<br>
+    即ち、図形のリスト B に対し、面積を測る操作（一種の写像）を、![image](https://user-images.githubusercontent.com/25688193/47491178-45513500-d885-11e8-8568-cc7716251563.png)（![image](https://user-images.githubusercontent.com/25688193/47491230-5f8b1300-d885-11e8-96ba-3a93bdee2608.png) は非負値の実数集合）で表記することにする。<br>
     （※この図形のリスト B とは、言い換えれば、ユークリッド空間 ![image](https://user-images.githubusercontent.com/25688193/46858829-298e6d80-ce47-11e8-8994-3d595dd28649.png) の部分集合を要素とする集合族のことである。）<br>
     <br>
     その上で、この操作（写像）μ の加法性を定義するのであるが、この加法性を定めるには、予め図形のリストの形状（大きさ）に関する構造が定まっている必要がある。<br>
     そのためにまずは、以下のように定義される完全加法族なるものを導入する。<br>
     <br>
-    ![image](https://user-images.githubusercontent.com/25688193/46900327-30ff5680-cedb-11e8-96b1-13ed1aae92f7.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47491262-7893c400-d885-11e8-9038-3a77fa461408.png)<br>
     <br>
     その上で、この図形のリスト B を測る操作（＝写像） μ に対しての加法性を導入し、以下のように測度として定義する。<br>
     <br>
-    ![image](https://user-images.githubusercontent.com/25688193/46900335-44aabd00-cedb-11e8-80d0-bea74fc8fda1.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47491319-96612900-d885-11e8-963a-0ea879f822de.png)<br>
     <br>
     この測度の中で、特に面積に関する測度が、ルベーグ積分となる。<br>
     即ち、２次元ルベーグ測度は、以下のように定義される。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46859095-c5b87480-ce47-11e8-8990-e5559cfbb703.png)<br>
-    > 記載中...<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47491384-b42e8e00-d885-11e8-946e-bd7012ceabbf.png)<br>
 
 <br>
 
@@ -126,7 +128,7 @@
 <a id="ID_2-1"></a>
 
 ### ◎ σ-加法族（完全加法族）
-![image](https://user-images.githubusercontent.com/25688193/47439662-bf32e100-d7e7-11e8-87fc-f2fb8958aa14.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47491466-d9bb9780-d885-11e8-87ef-7c76ef446b20.png)<br>
 
 
 <a id="ID_2-2"></a>
@@ -134,14 +136,14 @@
 ### ◎ 測度、測度空間
 σ-加法族を定義した上で、この σ-加法族 B（＝図形のリストに対応）を測る操作（＝写像） μ に対しての加法性を導入し、以下のように測度として定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46900508-38742f00-cede-11e8-92eb-fb785c9f4a86.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47494855-a2e97f80-d88d-11e8-8f44-4129cf102f6a.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46904837-94ae7180-cf25-11e8-9e44-375dcfcf9aa2.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47495115-4cc90c00-d88e-11e8-987e-57743943e2a8.png)<br>
 
 以下、<br>
-![image](https://user-images.githubusercontent.com/25688193/46926806-4efcc080-d06d-11e8-8d58-79ed5486d0ee.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47495146-60747280-d88e-11e8-92b7-ebdd3cab8294.png)<br>
 という文言を、この測度空間の言葉を用いて<br>
-![image](https://user-images.githubusercontent.com/25688193/46926820-5d4adc80-d06d-11e8-837e-1f21a5d15572.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47491814-96155d80-d886-11e8-8617-ccff76fb3993.png)<br>
 と記述する。<br>
 
 
@@ -151,13 +153,13 @@
 先に見た積分対象関数の横方向へのスライスから生じる集合（＝図形の分割）は、以下の定義で定義される可測関数に対して、σ-加法族に属することになる。<br>
 逆に言えば、横方向スライスから生じる集合が、σ-加法族に属するように、可測関数、可測集合なるものを定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47376518-c1d10000-d72d-11e8-9f5c-b9312d3a8649.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47491912-ceb53700-d886-11e8-847f-644fb2c9b158.png)<br>
 
 
 <a id="ID_2-4"></a>
 
 ### ◎ 単関数
-![image](https://user-images.githubusercontent.com/25688193/46926868-95eab600-d06d-11e8-8ddb-742681bb219f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47491965-eb516f00-d886-11e8-8950-654002feea1b.png)<br>
 
 
 <a id="ID_2-5"></a>
@@ -165,7 +167,7 @@
 ### ◎ 可測関数の積分（ルベーグ積分）
 この σ-加法族、測度、及び、可測関数、単関数を元に、可測関数に対しての積分、即ち、ルベーグ積分が定義できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47377212-97804200-d72f-11e8-9640-9a45d64332af.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47492046-19cf4a00-d887-11e8-80c7-6340a3b1df11.png)<br>
 
 > 【Memo】ルベーグ積分の柔軟性と σ-加法族<br>
 > リーマン積分では、最初から定義域を画一的に分割しているが、その故に、あまり融通が利かなかった。<br>
@@ -178,11 +180,11 @@
 次に、このように定義した積分に対しての積分可能性（＝可積分、可積分関数）を議論するのであるが、<br>
 更に、可積分関数 f に対しての ![image](https://user-images.githubusercontent.com/25688193/46903224-08905000-cf0d-11e8-8220-83357a6f9cb6.png) 条件を利用することで、この可積分性（＝可積分関数）から積分を再定義することも出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46926929-e2ce8c80-d06d-11e8-9fef-2df2a8cdd641.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47492141-4be0ac00-d887-11e8-9e17-318abadc9bdd.png)<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/46934244-f986da80-d091-11e8-93b7-5ba3034e6ae1.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47492375-d3c6b600-d887-11e8-85d0-d62c3b1886a7.png)<br>
 
 
 
@@ -201,13 +203,13 @@
 
 まずは、σ-加法族の定義を、可測関数の視点で捉え直す。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46904861-ea831980-cf25-11e8-850e-6108707db2da.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47492483-12f50700-d888-11e8-9fd0-62e30ae8676b.png)<br>
 
 - （証明）<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/46934305-3b178580-d092-11e8-8438-4621a26119e6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47492522-2c964e80-d888-11e8-9a5b-7143abdbefa7.png)<br>
 
 - （証明）<br>
 
@@ -218,11 +220,11 @@
 積分に関する一般的な性質（線形性など）を、先の積分の定義から直接導出するのは、困難である。
 そこでまずは、単関数の場合に限定し、更に、積分の性質を確かめるための補助的な量を別途定義した上で、先の積分の定義と関連付けて議論することにする。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46926699-c9791080-d06c-11e8-801c-2c5fe5329b3b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47492796-c231de00-d888-11e8-900d-3fd655d48395.png)<br>
 
 積分の性質（線形性など）との関連付けて議論するために、このように定義した補助的な量に対して、いくつかの性質を見てみる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46926967-232e0a80-d06e-11e8-8a1a-e0b6df299317.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47492963-248ade80-d889-11e8-8358-96dc965b1fa2.png)<br>
 
 - （証明）<br>
     合成関数 h の値域 range(h) に関して、以下のような関係が成り立つ。<br>
@@ -248,7 +250,7 @@
 ![image](https://user-images.githubusercontent.com/25688193/46913036-69c52b80-cfc0-11e8-8065-40b027c2a7b2.png)<br>
 に適用すると、以下のような定理が導かれる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46926991-422c9c80-d06e-11e8-8020-02c22ec184b8.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493081-6c116a80-d889-11e8-9953-899041fc4b03.png)<br>
 
 - （証明略）<br>
 
@@ -258,7 +260,7 @@
 積分の性質を確かめるための補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) に対する、積分演算で一般的に成り立つ性質（線形性など）の導出と、<br>
 この補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) が、積分の定義に一致する、即ち、![image](https://user-images.githubusercontent.com/25688193/46913072-2c14d280-cfc1-11e8-8c2d-0cbf93264e4b.png) の関係を示すことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46927017-65574c00-d06e-11e8-94d7-ddd0390f6082.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493208-b09d0600-d889-11e8-98fa-e461efeff5d4.png)<br>
 
 - （証明略）<br>
 
@@ -269,7 +271,7 @@
 以下、可測関数の積分に関しての、基本的な性質を見ていく。<br>
 まずは、測度 μ の有限加法性に起因する性質を見ていく。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46934377-7ca83080-d092-11e8-929b-8ac45931a885.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493332-ff4aa000-d889-11e8-94db-bb33ffd164e7.png)<br>
 
 - （証明略）
 
@@ -288,7 +290,7 @@
 以下に示すエゴロフの定理を用いれば、これらの２つの値が一致することを示すことが出来る。<br>
 -->
 
-![image](https://user-images.githubusercontent.com/25688193/46936622-e11abe00-d099-11e8-87b5-ef46812714a3.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493410-2bfeb780-d88a-11e8-92a1-a06dbe960b2a.png)<br>
 
 - （証明略）図より自明<br>
 
@@ -297,7 +299,7 @@
 このエゴロフの定理を用いれば、<br>
 積分の基本性質である、「（単関数における）極限と積分の順序の交換可能性」を示すことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46938746-7c626200-d09f-11e8-994d-a91dcc2c36ef.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493479-53ee1b00-d88a-11e8-9f35-f68851995e69.png)<br>
 
 - （証明）<br>
     > 記載中...
@@ -307,9 +309,9 @@
 
 ### ◎ ファトゥの補題
 単調収束定理やルベーグ収束定理を示すための前段階として、以下のファトゥの補題を示す。<br>
-このファトゥの補題は、このファトゥの補題は、先の単関数に対する極限と積分の交換可能性の性質を、可測関数に拡張したものになっている。<br>
+このファトゥの補題は、先の単関数に対する極限と積分の交換可能性の性質を、可測関数に拡張したものになっている。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46940028-b8e38d00-d0a2-11e8-867b-31b463666293.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493531-77b16100-d88a-11e8-80f6-df238a22824e.png)<br>
 
 - （証明略）<br>
 
@@ -319,7 +321,7 @@
 ### ◎ 単調収束定理
 ファトゥの補題を用いれば、以下の単調収束定理を示すことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47134171-c6895480-d2e6-11e8-9283-80bc4d7c4a1b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493592-9c0d3d80-d88a-11e8-85ce-73e03edd14b6.png)<br>
 
 - （証明）<br>
     定理の参考図にも示しているように、<br>
@@ -340,8 +342,7 @@
 ファトゥの補題から導かれるルベーグ-ファトゥの補題（＝ファトゥの不等式）を用いれば、
 以下のルベーグの収束定理も示すことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46996226-da05b580-d156-11e8-8bbc-e87a861740b2.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/46996194-be9aaa80-d156-11e8-882f-cd39213942a0.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493681-d676da80-d88a-11e8-9d15-035786d893a0.png)<br>
 
 - （証明略）<br>
 
@@ -354,14 +355,14 @@
 <a id="ID_4-1"></a>
 
 ### ◎ ほとんどいたるところ [almost eyerywhere]
-![image](https://user-images.githubusercontent.com/25688193/47011447-f4eb2080-d17c-11e8-97d0-32930af5b06f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493809-2786ce80-d88b-11e8-84e0-c22a332fed84.png)<br>
 
 この零集合は、その定義より、測度０の集合となるが、測度０の集合上での違いは、積分に影響せず無視できるという事実がある。（証明略）<br>
 そこで、積分に影響しない例外（今の場合、測度０の零集合）に関しては、無視する。<br>
 ということを表す概念を導入することを考える。<br>
 この概念こそが、以下のほとんどいたるところの概念になる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47012296-ef8ed580-d17e-11e8-89fe-8c187e02989d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493869-4d13d800-d88b-11e8-9124-b66dd62e7bdb.png)<br>
 
 以下、例を用いて、このほとんどいたるところの概念が、「積分上無視できる部分を除いて」の意味になっていることを示す。<br>
 
@@ -406,19 +407,19 @@
 ほとんどいたるところで定義された関数を用いると、全ての点で収束するとは言えないような関数列に対しても、
 先の各種収束定理（単調収束定理、ルベーグの収束定理）を適用できるようになる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47142691-71593d00-d2fe-11e8-9f23-f6d3f916d00b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47493928-7a608600-d88b-11e8-97c9-a7ce162a181a.png)<br>
 
 - （証明略）<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47136083-8aa5bd80-d2ed-11e8-9f3c-bd1c0ce89fb7.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47494025-af6cd880-d88b-11e8-97c4-02d2c363e0ff.png)<br>
 
 - （証明略）<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47142809-b9785f80-d2fe-11e8-9ecb-ceb0bcb7dc05.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47494119-e9d67580-d88b-11e8-98e5-d263df15e44d.png)<br>
 
 - （証明略）<br>
 
@@ -426,13 +427,13 @@
 <a id="ID_4-4"></a>
 
 ### ◎ Lp 空間の完備性と測度の σ-加法性
-![image](https://user-images.githubusercontent.com/25688193/47145929-e714d700-d305-11e8-9de5-13555d9b75b4.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47494205-15596000-d88c-11e8-8e94-5b5bb35f2a7f.png)<br>
 
 <br>
 
 以下の定理で示すように、L1ノルムは、μ-可積分な関数全体の集合に、距離に対する完備性を持つ（＝コーシー列が収束する）距離を導入する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47149793-9ace9480-d30f-11e8-8a26-bce5829e7fe6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47494247-2b672080-d88c-11e8-8f0f-1e9fc4e24e7d.png)<br>
 
 - （証明）<br>
     > 記載中...
@@ -462,7 +463,7 @@
 ## ■ ルベーグ積分の具体的な計算（一次元ルベーグ積分）
 ルベーグ積分の具体的な計算として、まずは、１次元区間上の積分を見てみる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47201715-d2901780-d3b5-11e8-9461-e0341f0f1e06.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47494305-50f42a00-d88c-11e8-84a7-ca7ad0e151d3.png)<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/47201776-f7848a80-d3b5-11e8-8240-8183781a2857.png)<br>
 
@@ -535,14 +536,14 @@
 <a id="ID_6-2"></a>
 
 ### ◎ 有限加法的測度（ジョルダン測度）
-![image](https://user-images.githubusercontent.com/25688193/47373878-aa8f1400-d727-11e8-8e3f-2b5b9d1970c4.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47494439-957fc580-d88c-11e8-8d5b-68a8bfa06476.png)<br>
 
 <a id="ID_6-2-1"></a>
 
 #### ☆ 非減少関数が誘導する有限加法的測度
 この有限加法的測度の例として、以下のようなものが存在する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47263245-83262480-d538-11e8-9746-83764069bcea.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47494486-b8aa7500-d88c-11e8-86c4-364b5a81a81f.png)<br>
 
 
 <a id="ID_6-3"></a>
@@ -571,19 +572,19 @@
 ### ◎ 有限加法的測度が誘導する外測度
 先の外面積の例では、図形を覆うように配置した有限個の長方形で、図形の面積を評価（＝図形の面積の過大評価の下限）したが、これを有限個→可算無限個の長方形で覆うようした上で、面積を評価するように拡張したのが、以下で定義する外測度である。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47406495-8cf69480-d791-11e8-9617-fd59702eafeb.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47495317-c52fcd00-d88e-11e8-8479-192dffe9ee9c.png)<br>
 
 <a id="ID_6-5-1"></a>
 
 #### ☆ 劣加法性と σ-加法性
-![image](https://user-images.githubusercontent.com/25688193/47408856-e4016700-d79b-11e8-9c74-b0a06be76910.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47495359-e42e5f00-d88e-11e8-810a-a3d44f89a4f6.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47407163-d4325480-d794-11e8-8162-48170d58c752.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47495384-f90af280-d88e-11e8-8d27-054ad0f582ec.png)<br>
 
 <a id="ID_6-5-2"></a>
 
 #### ☆ 有限加法的測度が誘導する外測度の性質
-![image](https://user-images.githubusercontent.com/25688193/47406515-abf52680-d791-11e8-9b24-ddfc06bf4e14.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47495415-10e27680-d88f-11e8-9bef-36c78e0b0495.png)<br>
 
 - （証明略）<br>
 
@@ -607,29 +608,34 @@
 ### ◎ カラテオドリ外測度
 カラテオドリ外測度は、先の有限加法的測度から誘導される外測度を、更に抽象化したものになっている。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47410794-e070de80-d7a1-11e8-9350-52b977409b7e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47495480-34a5bc80-d88f-11e8-8453-b990aa2828fb.png)<br>
 
 
 <a id="ID_7-2"></a>
 
-### ◎ カラテオドリ外測度に関しての可測性（可測集合、可測集合族）
-![image](https://user-images.githubusercontent.com/25688193/47429220-a4a13d80-d7d0-11e8-9db0-56e25d35d090.png)<br>
+### ◎ （カラテオドリ外測度に関しての）可測集合
+![image](https://user-images.githubusercontent.com/25688193/47495563-69197880-d88f-11e8-9b35-4b8e99d0e835.png)<br>
 
 - 【参考】
     - [集合の分割](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E6%B8%AC%E5%BA%A6%E8%AB%96_%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86_Note.md#ID_6-3)
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47428405-16c45300-d7ce-11e8-8b46-ee70c1831090.png)<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47429299-edf18d00-d7d0-11e8-8fb1-9b16fbe346df.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47495600-7f273900-d88f-11e8-949a-28f2bdc07f4b.png)<br>
 
 - （証明略）図より自明に成り立つ。<br>
 
+<a id="ID_7-2-1"></a>
 
-<a id="ID_7-3"></a>
+#### ☆ （有限加法的測度が誘導する外測度に関しての）可測集合
+半加法族 Θ を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47495628-8fd7af00-d88f-11e8-8a35-db5f3bdec584.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、可測集合なるものが導入できる。<br>
 
-### ◎ カラテオドリ外測度に関しての可測集合族の σ-加法性
+![image](https://user-images.githubusercontent.com/25688193/47495747-e8a74780-d88f-11e8-9c11-e95b3704021c.png)<br>
+
+
+<a id="ID_7-2-2"></a>
+
+#### ☆ （カラテオドリ外測度に関しての）可測集合族の σ-加法性
 ![image](https://user-images.githubusercontent.com/25688193/47440405-0e2d4600-d7e9-11e8-9056-6e4f766917d9.png)<br>
 
 - 【参考】<br>
@@ -637,11 +643,56 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47442182-e5a74b00-d7ec-11e8-9487-1f6ed39c0129.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47495871-4176e000-d890-11e8-9853-9ab80ac6e979.png)<br>
 
 - （証明）<br>
     > 記載中...
 
+
+<a id="ID_7-4"></a>
+
+### ◎ （カラテオドリ外測度に関しての）零集合
+![image](https://user-images.githubusercontent.com/25688193/47495914-5d7a8180-d890-11e8-9074-e37679f1d258.png)<br>
+
+<a id="ID_7-4-1"></a>
+
+#### ☆ （有限加法的測度が誘導する外測度に関しての）零集合
+半加法族 Θ を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47495628-8fd7af00-d88f-11e8-8a35-db5f3bdec584.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、零集合なるものが導入できる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47495816-155b5f00-d890-11e8-8ab1-46bfce82e317.png)<br>
+
+
+<a id="ID_7-5"></a>
+
+### ◎ 完備測度
+![image](https://user-images.githubusercontent.com/25688193/47496061-c5c96300-d890-11e8-99f8-c2e802c821db.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47496122-e7c2e580-d890-11e8-93ff-a1bc3eeda08d.png)<br>
+
+- （証明）
+    > 記載中...
+
+
+<a id="ID_7-5-1"></a>
+
+#### ☆ （有限加法的測度が誘導する外測度に関しての）完備測度
+半加法族 Θ を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47495628-8fd7af00-d88f-11e8-8a35-db5f3bdec584.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、完備測度なるものが導入できる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47496169-ff9a6980-d890-11e8-8fef-48f5c3ee9437.png)<br>
+
+- （証明）
+    有限加法的測度が誘導する外測度は、カラテオドリ外測度でもあるので、<br>
+    定理（カラテオドリ外測度の可測集合族への制限と完備測度）より成り立つ。<br>
+
+
+<a id="ID_7-6"></a>
+
+### ◎ 測度の拡張とホップの拡張定理
+![image](https://user-images.githubusercontent.com/25688193/47496573-302ed300-d892-11e8-9d15-76eba5e75d91.png)
+
+> 記載中...
 
 
 ---
