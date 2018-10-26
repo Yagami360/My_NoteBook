@@ -784,13 +784,19 @@
 <a id="ID_8-4"></a>
 
 ### ◎ ルベーグ-スティルチェス測度、１次元ルベーグ測度
-![image](https://user-images.githubusercontent.com/25688193/47547529-c3b6e100-d930-11e8-9a07-936b3d4d5d27.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47560987-f1158600-d954-11e8-8b88-678b87e3b88f.png)<br>
 
 
 <a id="ID_8-5"></a>
 
 ### ◎ ルベーグ積分
-> 記載中...
+このルベーグ可測集合の考えを用いれば、先の σ-加法族に基づくルベーグ積分の定義を、より一般化したルベーグ積分の定義として構築できる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47561034-199d8000-d955-11e8-93b7-12efc2f945ac.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47561329-f9ba8c00-d955-11e8-901f-f63055c831c1.png)<br>
+
+- 【参考】<br>
+    - [σ-加法族に基づくルベーグ積分](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E6%B8%AC%E5%BA%A6%E8%AB%96_%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86_Note.md#-%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86)<br>
 
 
 <a id="ID_9"></a>
@@ -806,6 +812,7 @@
 このボレル集合族を定義域とする測度は、ボレル測度と呼ばれ、一意に定まる測度となる。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/47543411-14244380-d91d-11e8-9cc5-e9940bc91008.png)<br>
+
 
 > 記載中...
 
