@@ -9,7 +9,7 @@
     1. [測度、測度空間](#ID_2-2)
     1. [可測性（可測関数、可測集合）](#ID_2-3)
     1. [単関数](#ID_2-4)
-    1. [可測関数の積分（ルベーグ積分）](#ID_2-5)
+    1. [ルベーグ積分](#ID_2-5)
         1. ディリクレ関数を用いた積分
 1. [測度に基づく積分の性質](#ID_3)
     1. [σ-加法族の性質と可測性](#ID_3-1)
@@ -28,13 +28,11 @@
 1. [有限加法的測度（ジョルダン測度）とそれが誘導する外測度](#ID_6)
     1. [面積の過大評価と過小評価（内面積、外面積）](#ID_6-1)
     1. [有限加法的測度（ジョルダン測度）](#ID_6-2)
-        1. [非減少関数が誘導する有限加法的測度](#ID_6-2-1)
     1. [集合の分割](#ID_6-3)
     1. [半加法族](#ID_6-4)
     1. [有限加法的測度（ジョルダン測度）が誘導する外測度](#ID_6-5)
         1. [劣加法性と σ-加法性](#ID_6-5-1)
         1. [有限加法的測度が誘導する外測度の性質](#ID_6-5-2)
-        1. [非減少関数の誘導するルベーグ-スティルチェル外測度、１次元ルベーグ外測度](#ID_6-5-3)
 1. [カラテオドリ外測度からの測度の構成](#ID_7)
     1. [カラテオドリ外測度](#ID_7-1)
     1. [（カラテオドリ外測度に関しての）可測集合](#ID_7-2)
@@ -46,6 +44,14 @@
         1. [（カラテオドリ外測度に関しての）完備測度](#ID_7-5-1)
         1. [（有限加法的測度が誘導する外測度に関しての）完備測度](#ID_7-5-2)
     1. [測度の拡張とホップ [Hopf] の拡張定理](#ID_7-6)
+1. [ルベーグ測度の構成](#ID_8)
+    1. [非減少関数が誘導する有限加法的測度](#ID_8-1)
+    1. [ルベーグ-スティルチェス外測度、１次元ルベーグ外測度](#ID_8-2)
+    1. [ルベーグ可測集合（ルベーグ外測度に関しての可測集合）](#ID_8-3)
+    1. [ルベーグ-スティルチェス測度、１次元ルベーグ測度](#ID_8-4)
+    1. [ルベーグ積分](#ID_8-5)
+1. [測度の一意性](#ID_9)
+    1. [ボレル集合族、ボレル測度](#ID_9-x)
 1. [参考文献](#参考文献)
 
 ---
@@ -208,7 +214,7 @@
 
 <a id="ID_2-5"></a>
 
-### ◎ 可測関数の積分（ルベーグ積分）
+### ◎ ルベーグ積分
 この σ-加法族、測度、及び、可測関数、単関数を元に、可測関数に対しての積分、即ち、ルベーグ積分が定義できる。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/47492046-19cf4a00-d887-11e8-80c7-6340a3b1df11.png)<br>
@@ -582,13 +588,6 @@
 ### ◎ 有限加法的測度（ジョルダン測度）
 ![image](https://user-images.githubusercontent.com/25688193/47494439-957fc580-d88c-11e8-8d5b-68a8bfa06476.png)<br>
 
-<a id="ID_6-2-1"></a>
-
-#### ☆ 非減少関数が誘導する有限加法的測度
-この有限加法的測度の例として、以下のようなものが存在する。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47494486-b8aa7500-d88c-11e8-86c4-364b5a81a81f.png)<br>
-
 
 <a id="ID_6-3"></a>
 
@@ -638,11 +637,6 @@
 
 > 記載中...
 
-<a id="ID_6-5-3"></a>
-
-#### ☆ 非減少関数の誘導するルベーグ-スティルチェル外測度、１次元ルベーグ外測度
-![image](https://user-images.githubusercontent.com/25688193/47408543-cbdd1800-d79a-11e8-95e6-aa91d73366db.png)<br>
-
 
 <a id="ID_7"></a>
 
@@ -662,36 +656,37 @@
 <a id="ID_7-2"></a>
 
 ### ◎ （カラテオドリ外測度に関しての）可測集合
-![image](https://user-images.githubusercontent.com/25688193/47495563-69197880-d88f-11e8-9b35-4b8e99d0e835.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47545926-c5c97180-d929-11e8-8727-aacb7001c3a9.png)<br>
 
 - 【参考】
     - [集合の分割](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E6%B8%AC%E5%BA%A6%E8%AB%96_%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86_Note.md#ID_6-3)
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47495600-7f273900-d88f-11e8-949a-28f2bdc07f4b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47545952-e98cb780-d929-11e8-9f66-939bee08ec02.png)<br>
 
 - （証明略）図より自明に成り立つ。<br>
+
 
 <a id="ID_7-2-1"></a>
 
 #### ☆ （有限加法的測度が誘導する外測度に関しての）可測集合
 半加法族 Θ を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47495628-8fd7af00-d88f-11e8-8a35-db5f3bdec584.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、可測集合なるものが導入できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47495747-e8a74780-d88f-11e8-9c11-e95b3704021c.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47546041-4daf7b80-d92a-11e8-9f1a-41cc3d3aebe7.png)<br>
 
 
 <a id="ID_7-2-2"></a>
 
 #### ☆ （カラテオドリ外測度に関しての）可測集合族の σ-加法性
-![image](https://user-images.githubusercontent.com/25688193/47440405-0e2d4600-d7e9-11e8-9056-6e4f766917d9.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47546164-ec3bdc80-d92a-11e8-8a4c-291de39925e4.png)<br>
 
 - 【参考】<br>
     - [ユークリッド空間上の σ-加法族（完全加法族）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%95%B0%E5%AD%A6/%E6%95%B0%E5%AD%A6_%E6%B8%AC%E5%BA%A6%E8%AB%96_%E3%83%AB%E3%83%99%E3%83%BC%E3%82%B0%E7%A9%8D%E5%88%86_Note.md#-%CF%83-%E5%8A%A0%E6%B3%95%E6%97%8F%E5%AE%8C%E5%85%A8%E5%8A%A0%E6%B3%95%E6%97%8F)<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47495871-4176e000-d890-11e8-9853-9ab80ac6e979.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47546181-feb61600-d92a-11e8-9a38-cb8b6467e516.png)<br>
 
 - （証明）<br>
     > 記載中...
@@ -700,20 +695,20 @@
 <a id="ID_7-4"></a>
 
 ### ◎ （カラテオドリ外測度に関しての）零集合
-![image](https://user-images.githubusercontent.com/25688193/47495914-5d7a8180-d890-11e8-9074-e37679f1d258.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47546203-1d1c1180-d92b-11e8-80ba-eb663c02c68d.png)<br>
 
 <a id="ID_7-4-1"></a>
 
 #### ☆ （有限加法的測度が誘導する外測度に関しての）零集合
 半加法族 Θ を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47495628-8fd7af00-d88f-11e8-8a35-db5f3bdec584.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、零集合なるものが導入できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47495816-155b5f00-d890-11e8-8ab1-46bfce82e317.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47546220-32913b80-d92b-11e8-9685-d913ca4d55db.png)<br>
 
 
 <a id="ID_7-5"></a>
 
 ### ◎ 完備測度、完備測度空間
-![image](https://user-images.githubusercontent.com/25688193/47496061-c5c96300-d890-11e8-99f8-c2e802c821db.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47543720-995c2800-d91e-11e8-81ce-856e7f7d0379.png)<br>
 
 
 <a id="ID_7-5-1"></a>
@@ -737,10 +732,80 @@
     定理（カラテオドリ外測度の可測集合族への制限と完備測度）より成り立つ。<br>
 
 
+<a id="ID_7-5-3"></a>
+
+#### ☆ 完備測度と完備でない測度の例
+> 記載中...
+
+
 <a id="ID_7-6"></a>
 
 ### ◎ 測度の拡張とホップの拡張定理
-![image](https://user-images.githubusercontent.com/25688193/47496573-302ed300-d892-11e8-9d15-76eba5e75d91.png)
+![image](https://user-images.githubusercontent.com/25688193/47496573-302ed300-d892-11e8-9d15-76eba5e75d91.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47510918-156d5600-d8b4-11e8-90e8-809e5bfe174e.png)<br>
+
+
+<a id="ID_8"></a>
+
+## ■ ルベーグ測度の構成
+ここでは、先のカラテオドリ外測度、有限加法的測度が誘導する外測度での議論を、ルベーグ外測度に適用して、ルベーグ測度の存在を示すことを考える。
+
+<a id="ID_8-1"></a>
+
+#### ◎ 非減少関数が誘導する有限加法的測度
+先に見たの有限加法的測度の例として、以下のようなものが存在する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47545665-64ed6980-d928-11e8-8c28-9cb2f3d91c2b.png)<br>
+
+
+<a id="ID_8-2"></a>
+
+### ◎ ルベーグ-スティルチェス外測度、１次元ルベーグ外測度
+非減少関数が誘導する有限加法的測度に対して、１次元ルベーグ外測度なるものが構築できる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47546559-ca435980-d92c-11e8-930f-88515dd74840.png)<br>
+
+
+<a id="ID_8-3"></a>
+
+### ◎ ルベーグ可測集合（ルベーグ外測度に関しての可測集合）
+ルベーグ-スティルチェル外測度、即ち、非減少関数 v が誘導する有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47547060-e1834680-d92e-11e8-96cf-616c6a9c29e9.png) に対する外測度 ![image](https://user-images.githubusercontent.com/25688193/47547073-f364e980-d92e-11e8-9d13-3c268364f786.png) は、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、可測集合なるものが導入できる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47547090-05468c80-d92f-11e8-92ed-3315276f1b97.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47547122-2909d280-d92f-11e8-975e-e1ee2702d686.png)<br>
+
+
+<a id="ID_8-4"></a>
+
+### ◎ ルベーグ-スティルチェス測度、１次元ルベーグ測度
+![image](https://user-images.githubusercontent.com/25688193/47547529-c3b6e100-d930-11e8-9a07-936b3d4d5d27.png)<br>
+
+
+<a id="ID_8-5"></a>
+
+### ◎ ルベーグ積分
+> 記載中...
+
+
+<a id="ID_9"></a>
+
+## ■ 測度の一意性
+> 記載中...
+
+<a id="ID_9-x"></a>
+
+### ◎ ボレル集合族、ボレル測度
+![image](https://user-images.githubusercontent.com/25688193/47543271-50a36f80-d91c-11e8-80dd-46c09d4bff8a.png)<br>
+
+このボレル集合族を定義域とする測度は、ボレル測度と呼ばれ、一意に定まる測度となる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47543411-14244380-d91d-11e8-9cc5-e9940bc91008.png)<br>
 
 > 記載中...
 
