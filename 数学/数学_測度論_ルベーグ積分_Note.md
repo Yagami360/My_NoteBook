@@ -196,12 +196,13 @@
 
     > ③ １次元ルベーグ外測度<br>
     > ルベーグ-スティルチェス外測度において、<br>
-    > 特に、非減少関数 v ではなく恒等写像 I が誘導するルベーグ-スティルチェル外測度を、１次元ルベーグ外測度 γ(λ, ∙) という。<br>
+    > 特に、非減少関数 v ではなく恒等写像 I が誘導するルベーグ-スティルチェル外測度を、１次元ルベーグ外測度 γ(λ,∙) という。<br>
     > - この非減少関数が誘導する有限加法的測度から構成した、ルベーグ外測度は、劣加法性を持つが、σ-加法性をもたない。<br>
     > - 従って、集合の面積の分割前と分割後の面積が一致しないので、そのままでは、測度になりえない。<br>
 
     > ④ ルベーグ-スティルチェス外測度に関しての可測集合、ルベーグ可測集合<br>
     > ルベーグ-スティルチェス外測度 γ(dv;∙) に対して、σ-加法性の条件<br>
+    > γ(dv;B)=γ(dv;A∩B)+γ(dv;A−B)<br>
     > の関係が成り立つとき、ルベーグ-スティルチェス外測度に関しての可測集合という。<br>
     > 同様にして、一次元ルベーグ外測度に対して、σ-加法性の条件<br>
     > γ(λ;B)=γ(λ;A∩B)+γ(λ;A−B)<br>
@@ -809,7 +810,7 @@
 ### ◎ ルベーグ可測集合（ルベーグ外測度に関しての可測集合）
 ルベーグ-スティルチェル外測度、即ち、非減少関数 v が誘導する有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47547060-e1834680-d92e-11e8-96cf-616c6a9c29e9.png) に対する外測度 ![image](https://user-images.githubusercontent.com/25688193/47547073-f364e980-d92e-11e8-9d13-3c268364f786.png) は、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、可測集合なるものが導入できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47569612-013a5f00-d96f-11e8-9298-b8466b7aa3fa.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47603708-e88f7f00-da2a-11e8-9daa-8cacc84753f4.png)<br>
 
 <br>
 
@@ -872,7 +873,27 @@
 
 - （証明略）<br>
 
+<br>
 
+![image](https://user-images.githubusercontent.com/25688193/47603724-1eccfe80-da2b-11e8-9d23-af628d324fe6.png)<br>
+
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47604649-6c4f6880-da37-11e8-8d4a-0320f65d4323.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47604866-00baca80-da3a-11e8-88aa-bc79451212a5.png)<br>
+
+- （証明）<br>
+    m-可測集合族 ![image](https://user-images.githubusercontent.com/25688193/47604808-796d5700-da39-11e8-8142-75ebb1ee4702.png) は、その定義（＝σ-加法性）より、σ-加法族である。<br>
+    従って、一方、半加法族 Θ は、σ-加法族より弱い条件になっているので、![image](https://user-images.githubusercontent.com/25688193/47604811-8b4efa00-da39-11e8-8e8f-17e11d6fa463.png) の関係が成り立つ。<br>
+    又、半加法族 Θ から生成される σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47604843-d6690d00-da39-11e8-90fb-ed399bf112d8.png) は、半加法族 Θ を含む ”最小の” σ-加法族なので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47604811-8b4efa00-da39-11e8-8e8f-17e11d6fa463.png) の関係より、![image](https://user-images.githubusercontent.com/25688193/47604836-bb969880-da39-11e8-8c09-5e005d435eb9.png) の関係が成り立つ。<br>
+
+<br>
 
 > 記載中...
 
