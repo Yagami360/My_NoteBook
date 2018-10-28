@@ -1,4 +1,4 @@
-# 測度論 [measure theory] / ルベーグ積分
+# 測度論 [measure theory] / ルベーグ積分 [Lebesgue integral]
 測度論とルベーグ積分の基本事項を記載したマイノートです。随時追記中。<br>
 
 ## 目次 [Contents]
@@ -11,20 +11,7 @@
     1. [単関数](#ID_2-4)
     1. [ルベーグ積分（可測関数の積分）](#ID_2-5)
         1. ディリクレ関数を用いた積分
-1. [ルベーグ積分の性質](#ID_3)
-    1. [σ-加法族の性質と可測性](#ID_3-1)
-    1. [単関数の積分とその性質](#ID_3-2)
-    1. [ルベーグ積分の性質（可測関数の積分の性質）](#ID_3-3)
-    1. [エゴロフの定理](#ID_3-4)
-    1. [ファトゥの補題](#ID_3-5)
-    1. [単調収束定理](#ID_3-6)
-    1. [ルベーグの収束定理](#ID_3-7)
-1. [測度０の集合](#ID_4)
-    1. [ほとんどいたるところ [almost everyewhere]](#ID_4-1)
-    1. [積分の定義のほとんどいたるところを用いた表現](#ID_4-2)
-    1. [各種収束定理のほとんどいたるところを用いた表現](#ID_4-3)
-    1. [Lp 空間の完備性と測度の σ-加法性](#ID_4-4)
-1. [ルベーグ積分の具体的な計算（一次元ルベーグ積分）](#ID_5)
+    1. [可積分、可積分関数](#ID_2-6)
 1. [有限加法的測度（ジョルダン測度）とそれが誘導する外測度](#ID_6)
     1. [面積の過大評価と過小評価（内面積、外面積）](#ID_6-1)
     1. [有限加法的測度（ジョルダン測度）](#ID_6-2)
@@ -49,10 +36,25 @@
     1. [ルベーグ可測集合（ルベーグ外測度に関しての可測集合）](#ID_8-3)
     1. [ルベーグ-スティルチェス測度、１次元ルベーグ測度](#ID_8-4)
     1. [ルベーグ積分](#ID_8-5)
-1. [測度の一意性](#ID_9)
+1. [測度の拡張と一意性](#ID_9)
+    1. [集合族から生成される σ-加法族](#ID_9-0)
     1. [測度の拡張とホップ [Hopf] の拡張定理](#ID_9-1)
     1. [拡張の一意性とその応用](#ID_9-2)
     1. [ボレル集合族、ボレル測度](#ID_9-x)
+1. [ルベーグ積分の性質](#ID_3)
+    1. [σ-加法族の性質と可測性](#ID_3-1)
+    1. [単関数の積分とその性質](#ID_3-2)
+    1. [ルベーグ積分の性質（可測関数の積分の性質）](#ID_3-3)
+    1. [エゴロフの定理](#ID_3-4)
+    1. [ファトゥの補題](#ID_3-5)
+    1. [単調収束定理](#ID_3-6)
+    1. [ルベーグの収束定理](#ID_3-7)
+1. [測度０の集合](#ID_4)
+    1. [ほとんどいたるところ [almost everyewhere]](#ID_4-1)
+    1. [積分の定義のほとんどいたるところを用いた表現](#ID_4-2)
+    1. [各種収束定理のほとんどいたるところを用いた表現](#ID_4-3)
+    1. [Lp 空間の完備性と測度の σ-加法性](#ID_4-4)
+1. [ルベーグ積分の具体的な計算（一次元ルベーグ積分）](#ID_5)
 1. [参考文献](#参考文献)
 
 ---
@@ -227,23 +229,27 @@
 ## ■ σ-加法族を定義域とする測度
 ここでは、先の概要で述べたことを、改めて、より一般的な形式で厳密に定義する。<br>
 
+尚、以下の議論では、σ加法族 ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) の対象空間として、d 次元ユークリッド空間 ![image](https://user-images.githubusercontent.com/25688193/47611941-21733680-dab3-11e8-9731-dc66ce51d79c.png) ではなく、より抽象的・一般的な抽象集合 X で定義する。<br>
+こうすることで、ルベーグ積分をより、一般的で広範囲た対象のものとして扱える。<br>
+そして、この抽象集合 X の最も典型的なものが、ユークリッド空間 ![image](https://user-images.githubusercontent.com/25688193/47611941-21733680-dab3-11e8-9731-dc66ce51d79c.png) であるという位置づけになる。<br>
+
 <a id="ID_2-1"></a>
 
 ### ◎ σ-加法族（完全加法族）
-![image](https://user-images.githubusercontent.com/25688193/47491466-d9bb9780-d885-11e8-87ef-7c76ef446b20.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47612010-baef1800-dab4-11e8-9b13-4ca3a6e3257f.png)<br>
 
 
 <a id="ID_2-2"></a>
 
 ### ◎ 測度、測度空間
-σ-加法族を定義した上で、この σ-加法族 B（＝図形のリストに対応）を測る操作（＝写像） μ に対しての加法性を導入し、以下のように測度として定義する。<br>
+σ-加法族を定義した上で、この σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png)（＝図形のリストに対応）を測る操作（＝写像） μ に対しての加法性を導入し、以下のように測度として定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47494855-a2e97f80-d88d-11e8-8f44-4129cf102f6a.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47612223-921d5180-dab9-11e8-8f73-dddc562d7a21.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47495115-4cc90c00-d88e-11e8-987e-57743943e2a8.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47612027-276a1700-dab5-11e8-975c-e7059174cfb4.png)<br>
 
 以下、<br>
-![image](https://user-images.githubusercontent.com/25688193/47495146-60747280-d88e-11e8-92b7-ebdd3cab8294.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47612031-4072c800-dab5-11e8-8748-0054d257b0de.png)<br>
 という文言を、この測度空間の言葉を用いて<br>
 ![image](https://user-images.githubusercontent.com/25688193/47491814-96155d80-d886-11e8-8617-ccff76fb3993.png)<br>
 と記述する。<br>
@@ -255,9 +261,9 @@
 先に見た積分対象関数の横方向へのスライスから生じる集合（＝図形の分割）は、以下の定義で定義される可測関数に対して、σ-加法族に属することになる。<br>
 逆に言えば、横方向スライスから生じる集合が、σ-加法族に属するように、可測関数、可測集合なるものを定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47491912-ceb53700-d886-11e8-847f-644fb2c9b158.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47612192-e83dc500-dab8-11e8-9faf-7965fdc3ac3a.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47606430-982a1880-da4e-11e8-8573-58dc0669dfb7.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47612161-f50de900-dab7-11e8-9279-c6b2af4ed004.png)<br>
 
 
 <a id="ID_2-4"></a>
@@ -271,7 +277,7 @@
 ### ◎ ルベーグ積分（可測関数の積分）
 この σ-加法族、測度、及び、可測関数、単関数を元に、可測関数に対しての積分、即ち、ルベーグ積分が定義できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47606599-6a45d380-da50-11e8-9c7a-3f22513d0482.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47612239-c729a400-dab9-11e8-94a8-0d8de16b1464.png)<br>
 
 > 【Memo】ルベーグ積分の柔軟性と σ-加法族<br>
 > リーマン積分では、最初から定義域を画一的に分割しているが、その故に、あまり融通が利かなかった。<br>
@@ -279,352 +285,19 @@
 > そのため、定義域を柔軟に分割することが出来る。<br>
 > それ故に、ルベーグ積分では、リーマン積分より広い関数を扱うことが出来るのである。<br>
 
-<br>
 
-次に、このように定義した積分に対しての積分可能性（＝可積分、可積分関数）を議論するのであるが、<br>
+<a id="ID_2-6"></a>
+
+### ◎ 可積分、可積分関数
+次に、このように定義したルベーグ積分に対しての積分可能性（＝可積分、可積分関数）を議論するのであるが、<br>
 更に、可積分関数 f に対しての ![image](https://user-images.githubusercontent.com/25688193/46903224-08905000-cf0d-11e8-8220-83357a6f9cb6.png) 条件を利用することで、この可積分性（＝可積分関数）から積分を再定義することも出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47492141-4be0ac00-d887-11e8-9e17-318abadc9bdd.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47612257-72d2f400-daba-11e8-95eb-103c6f7b9115.png)<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47492375-d3c6b600-d887-11e8-85d0-d62c3b1886a7.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47612260-8716f100-daba-11e8-9fd7-6d471f10bbe2.png)<br>
 
-
-
-<a id="ID_3"></a>
-
-## ■ ルベーグ積分の性質
-
-> 【Memo】 リーマン積分 ↔ ルベーグ積分の定理の対応関係<br>
-> |リーマン積分|ルベーグ積分|
-> |---|---|
-> |積分と級数の交換（項別積分）|項別積分|
-> |極限と積分の交換|ルベーグの収束定理|
-> |積分と積分の交換|フビニの定理|
-
-<br>
-
-- 【参考】<br>
-    - [ときわ台学/ルベーグ積分/収束定理](http://www.f-denshi.com/000TokiwaJPN/16lebeg/100lbg.html)<br>
-
-
-<a id="ID_3-1"></a>
-
-### ◎ σ-加法族の性質と可測性
-ここでは、先に見てきた関数の可測性の観点から、σ-加法族を再度見直してみる。<br>
-
-まずは、σ-加法族の定義を、可測関数の視点で捉え直す。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47492483-12f50700-d888-11e8-9fd0-62e30ae8676b.png)<br>
-
-- （証明）<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47492522-2c964e80-d888-11e8-9a5b-7143abdbefa7.png)<br>
-
-- （証明）<br>
-
-
-<a id="ID_3-2"></a>
-
-### ◎ 単関数の積分とその性質
-積分に関する一般的な性質（線形性など）を、先の積分の定義から直接導出するのは、困難である。
-そこでまずは、単関数の場合に限定し、更に、積分の性質を確かめるための補助的な量を別途定義した上で、先の積分の定義と関連付けて議論することにする。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47492796-c231de00-d888-11e8-900d-3fd655d48395.png)<br>
-
-積分の性質（線形性など）との関連付けて議論するために、このように定義した補助的な量に対して、いくつかの性質を見てみる。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47492963-248ade80-d889-11e8-8358-96dc965b1fa2.png)<br>
-
-- （証明）<br>
-    合成関数 h の値域 range(h) に関して、以下のような関係が成り立つ。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46912850-a8a4b280-cfbb-11e8-991f-4947b47c7fe4.png)<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46912861-e570a980-cfbb-11e8-8ac7-c03cca11e1ee.png)<br>
-    更に、関数 ϕ の値域の有限値を定める定数 ![image](https://user-images.githubusercontent.com/25688193/46912854-b78b6500-cfbb-11e8-94fc-02608e52092a.png) に対して、以下のような関係が成り立つ。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46912874-36809d80-cfbc-11e8-8009-eff374e1d646.png)<br>
-    この式は、例えば、![image](https://user-images.githubusercontent.com/25688193/46912879-5a43e380-cfbc-11e8-85c3-355ee1a788d5.png) のときは、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46912885-6f207700-cfbc-11e8-8482-5f6be6865250.png)<br>
-    となり、下図のように、２つの単関数 f,g の組み合わせによって、![image](https://user-images.githubusercontent.com/25688193/46912890-9d05bb80-cfbc-11e8-96c4-f9b18bf374ab.png) 領域の分割が生じる様子を示している。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46912933-c70bad80-cfbd-11e8-85a7-53d1d779f1ed.png)<br>
-    ここで、<br>
-	「値域 range(h) が、可算集合ならば、関数 h の可測性は、y∈range(h) に対して、![image](https://user-images.githubusercontent.com/25688193/46912990-3f26a300-cfbf-11e8-93fc-21eab7f257b5.png) が成り立つことと同値である」<br>
-	という関係（証明略）より、<br>
-	上式の右辺（＝上図に示した分割領域の和集合）が、有限集合であり、σ-加法族 B に属することは、
-	合成関数 h が、B-可測関数であることを意味している。<br>
-	従って、合成関数 h は、単関数である。<br>
-
-<br>
-
-この単関数の合成関数の性質を、<br>
-先に定義した積分の性質を確かめるための補助的な量<br>
-![image](https://user-images.githubusercontent.com/25688193/46913036-69c52b80-cfc0-11e8-8065-40b027c2a7b2.png)<br>
-に適用すると、以下のような定理が導かれる。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47493081-6c116a80-d889-11e8-9953-899041fc4b03.png)<br>
-
-- （証明略）<br>
-
-<br>
-
-この定理から、ここでの主目的であった、<br>
-積分の性質を確かめるための補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) に対する、積分演算で一般的に成り立つ性質（線形性など）の導出と、<br>
-この補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) が、積分の定義に一致する、即ち、![image](https://user-images.githubusercontent.com/25688193/46913072-2c14d280-cfc1-11e8-8c2d-0cbf93264e4b.png) の関係を示すことが出来る。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47493208-b09d0600-d889-11e8-98fa-e461efeff5d4.png)<br>
-
-- （証明略）<br>
-
-
-<a id="ID_3-3"></a>
-
-### ◎ ルベーグ積分の性質（可測空間の積分の性質）
-以下、可測関数の積分に関しての、基本的な性質を見ていく。<br>
-まずは、測度 μ の有限加法性に起因する性質を見ていく。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47493332-ff4aa000-d889-11e8-94db-bb33ffd164e7.png)<br>
-
-- （証明略）
-
-<br>
-
-次に、σ-加法性に起因する性質を見ていく。<br>
-
-> 記載中...
-
-
-<a id="ID_3-4"></a>
-
-### ◎ エゴロフの定理
-<!--
-可測関数の積分は、単関数の点列で可測関数を近似した上で定義する方法と、単関数の積分の上限で定義する方法の２通り考えられるが、<br>
-以下に示すエゴロフの定理を用いれば、これらの２つの値が一致することを示すことが出来る。<br>
--->
-
-![image](https://user-images.githubusercontent.com/25688193/47493410-2bfeb780-d88a-11e8-92a1-a06dbe960b2a.png)<br>
-
-- （証明略）図より自明<br>
-
-<br>
-
-このエゴロフの定理を用いれば、<br>
-積分の基本性質である、「（単関数における）極限と積分の順序の交換可能性」を示すことが出来る。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47493479-53ee1b00-d88a-11e8-9f35-f68851995e69.png)<br>
-
-- （証明）<br>
-    > 記載中...
-
-
-<a id="ID_3-5"></a>
-
-### ◎ ファトゥの補題
-単調収束定理やルベーグ収束定理を示すための前段階として、以下のファトゥの補題を示す。<br>
-このファトゥの補題は、先の単関数に対する極限と積分の交換可能性の性質を、可測関数に拡張したものになっている。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47493531-77b16100-d88a-11e8-80f6-df238a22824e.png)<br>
-
-- （証明略）<br>
-
-
-<a id="ID_3-6"></a>
-
-### ◎ 単調収束定理
-ファトゥの補題を用いれば、以下の単調収束定理を示すことが出来る。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47493592-9c0d3d80-d88a-11e8-85ce-73e03edd14b6.png)<br>
-
-- （証明）<br>
-    定理の参考図にも示しているように、<br>
-    可測集合 A∈B 上で、可測関数の単調増加の点列 ![image](https://user-images.githubusercontent.com/25688193/46940732-64d9a800-d0a4-11e8-93cc-a42a39f3f0c0.png) に対しては、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46940770-78850e80-d0a4-11e8-8054-f292ee538398.png)<br>
-    の関係が成り立つので、これを、ファトゥの補題の関係式<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46941100-4a53fe80-d0a5-11e8-9619-12dc0c841223.png)<br>
-    に代入すると、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46941157-6fe10800-d0a5-11e8-834a-015288ce09a0.png)<br>
-    <br>
-    また、積分の単調性の性質 ![image](https://user-images.githubusercontent.com/25688193/46941739-cb5fc580-d0a6-11e8-8c09-c4ce1ea909b1.png) より、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46941801-e3374980-d0a6-11e8-9ad5-af7cb7797e4a.png)<br>
-
-
-<a id="ID_3-7"></a>
-
-### ◎ ルベーグ収束定理
-ファトゥの補題から導かれるルベーグ-ファトゥの補題（＝ファトゥの不等式）を用いれば、
-以下のルベーグの収束定理も示すことが出来る。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47493681-d676da80-d88a-11e8-9d15-035786d893a0.png)<br>
-
-- （証明略）<br>
-
-
-<a id="ID_4"></a>
-
-## ■ 測度０の集合
-> 記載中...
-
-<a id="ID_4-1"></a>
-
-### ◎ ほとんどいたるところ [almost eyerywhere]
-![image](https://user-images.githubusercontent.com/25688193/47493809-2786ce80-d88b-11e8-84e0-c22a332fed84.png)<br>
-
-この零集合は、その定義より、測度０の集合となるが、測度０の集合上での違いは、積分に影響せず無視できるという事実がある。（証明略）<br>
-そこで、積分に影響しない例外（今の場合、測度０の零集合）に関しては、無視する。<br>
-ということを表す概念を導入することを考える。<br>
-この概念こそが、以下のほとんどいたるところの概念になる。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47493869-4d13d800-d88b-11e8-9124-b66dd62e7bdb.png)<br>
-
-以下、例を用いて、このほとんどいたるところの概念が、「積分上無視できる部分を除いて」の意味になっていることを示す。<br>
-
-- （例）積分上無視できる部分が存在する積分<br>
-    ![image](https://user-images.githubusercontent.com/25688193/47013471-37632c00-d182-11e8-8e1a-e2914809f6ab.png)<br>
-    という関数を 0~1 の範囲で積分 ![image](https://user-images.githubusercontent.com/25688193/47013491-4ea21980-d182-11e8-890d-9a40e6f3dc40.png) することを考える。<br>
-    <br>
-    この関数は x=0.5 以外では、通常の f(x)=x と変わらない関数であり、積分時の分割図形と共に表示すると、以下の図のようになる。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/47013849-7f368300-d183-11e8-97b5-4f8a49ee46cb.png)<br>
-	上図から分かるように、不連続点が寄与する分割長方形の面積は、リーマン積分時の幅を無限に細く取る操作で、無限に小さく出来るので、無視できる。<br>
-	（※このことは、リーマン積分においては、非連続点が測度０で零集合であることを意味している。）<br>
-	即ち、この関数の積分は、![image](https://user-images.githubusercontent.com/25688193/47013981-e05e5680-d183-11e8-9d18-0aad35411043.png) となるのであるが、この f(x) の、積分する上では、x と変わらないという事実を、<br>
-	「ほとんどいたるところ f(x)=x」或いは「f(x)=x a.e」のように、ほとんどいたるところの概念を用いて表現する。<br>
-
-<br>
-
-> 【Memo】 測度論における、ほとんどいたるところ [almost everywhere]<br>
-> 零集合はその定義より、測度０の集合となるが、測度０の集合上での違いは、積分に影響せず無視できるという事実がある。（例えば、リーマン積分では、非連続点は測度０で零集合になり、積分上無視出来る。）<br>
-> そこで、「積分に影響しない例外（今の場合、測度０の零集合）に関しては、無視して取り除く」 ということを表す概念を導入することを考える。この概念こそが、ほとんどいたるところの概念になる。<br>
-> このほとんどいたるところの概念を用いれば、例えば、リーマン積分を<br>
-> 「ほとんどいたるところで連続⇔リーマン積分可能」と表現できる。<br>
-> （※この必要十分条件は、リーマン積分では、非連続点は測度０で零集合になり、積分上無視出来るという性質に起因する。）<br>
-
-<br>
-
-- 【参考】<br>
-    - [ほとんどいたるところ - すもう](http://end01nojo.hatenablog.com/entry/2014/12/06/174314)<br>
-
-
-<a id="ID_4-2"></a>
-
-### ◎ 積分の定義のほとんどいたるところを用いた表現
-> 記載中
-
-- 【参考】<br>
-    - [「リーマン積分＜ルベーグ積分」という感覚を味わう - ペンギンは空を飛ぶ](http://peng225.hatenablog.com/entry/2017/11/03/104617)<br>
-
-
-<a id="ID_4-3"></a>
-
-### ◎ 各種収束定理のほとんどいたるところを用いた表現
-ほとんどいたるところで定義された関数を用いると、全ての点で収束するとは言えないような関数列に対しても、
-先の各種収束定理（単調収束定理、ルベーグの収束定理）を適用できるようになる。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47493928-7a608600-d88b-11e8-97c9-a7ce162a181a.png)<br>
-
-- （証明略）<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47494025-af6cd880-d88b-11e8-97c4-02d2c363e0ff.png)<br>
-
-- （証明略）<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47494119-e9d67580-d88b-11e8-98e5-d263df15e44d.png)<br>
-
-- （証明略）<br>
-
-
-<a id="ID_4-4"></a>
-
-### ◎ Lp 空間の完備性と測度の σ-加法性
-![image](https://user-images.githubusercontent.com/25688193/47494205-15596000-d88c-11e8-8e94-5b5bb35f2a7f.png)<br>
-
-<br>
-
-以下の定理で示すように、L1ノルムは、μ-可積分な関数全体の集合に、距離に対する完備性を持つ（＝コーシー列が収束する）距離を導入する。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47494247-2b672080-d88c-11e8-8f0f-1e9fc4e24e7d.png)<br>
-
-- （証明）<br>
-    > 記載中...
-
-<br>
-
->【Memo】<br>
-> ここで、以下の２つの事実を総括すると、このLp空間の完備性は、測度が σ-加法性をもつことに起因していると言える。<br>
-> - 測度空間（今の場合、L1空間）が、完備であることの条件は、「任意の零集合の部分集合が、また零集合である」（※零集合は、測度０の集合）<br>
-> - σ-加法族の公理の１つである、零集合自身も σ-加法族に含まれる。<br>
-
-<br>
-
->【Memo】<br>
-> 上記の ”L1ノルムは、μ-可積分な関数全体の集合に、完備性を持つ（＝コーシー列が収束）距離を導入する。これをL1空間の完備化という。”<br>
-> の意味での完備の条件は、距離に対する完備の意味である。<br>
-> 一方、測度空間が、完備であることの条件は、「任意の零集合の部分集合が、また零集合である」であるが、これは、測度に対する完備の意味となり、両者は同じ完備の名前でも別の意味となる。<br>
-
-<br>
-
->【Memo】<br>
-> - 完備測度空間？<br>
-
-
-<a id="ID_5"></a>
-
-## ■ ルベーグ積分の具体的な計算（一次元ルベーグ積分）
-ルベーグ積分の具体的な計算として、まずは、１次元区間上の積分を見てみる。<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47494305-50f42a00-d88c-11e8-84a7-ca7ad0e151d3.png)<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47201776-f7848a80-d3b5-11e8-8240-8183781a2857.png)<br>
-
-この原始関数は、以下の定理で示すように、１次元ルベーグ積分では、与えられた可積分関数に対して、原始関数が必ず存在し、積分操作は、原始関数を求めることに一致する。<br>
-（※リーマン積分のときは、連続関数に対して同様の関係が成り立つ。）<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47203516-92cc2e80-d3bb-11e8-916a-9ace98a92f84.png)<br>
-
-- （証明）<br>
-    - (a) の証明<br>
-        - 積分区間の変数 x∈R に対して、c≤x<b とすると、<br>
-            ルベーグ測度は、![image](https://user-images.githubusercontent.com/25688193/47252071-5232ea80-d479-11e8-82ad-1a9c80980694.png)<br>
-        - 積分区間は、細かく分割した積分区間の和の形、即ち、<br>
-            積分区間 ![image](https://user-images.githubusercontent.com/25688193/47252082-8dcdb480-d479-11e8-8156-08b8d53c308c.png) に対して、<br>
-            の形で表現できるので、積分区間 a<c≤x に対しては、<br>
-            ![image](https://user-images.githubusercontent.com/25688193/47252092-bce42600-d479-11e8-9bb0-d19dc940ca7d.png)<br>
-            積分に影響しない項 ![image](https://user-images.githubusercontent.com/25688193/47252101-cec5c900-d479-11e8-9ac8-b00ad54539a9.png) を両辺に追加すると、<br>
-            ![image](https://user-images.githubusercontent.com/25688193/47252120-3f6ce580-d47a-11e8-81b0-2050efe7adf2.png)<br>
-            ![image](https://user-images.githubusercontent.com/25688193/47253724-3b4cc200-d492-11e8-987f-91f4dbbd886e.png)<br>
-        - 被積分関数 f は連続関数なので、
-            c∈(a,b) に対して、ε-δ 論法で、<br>
-            ![image](https://user-images.githubusercontent.com/25688193/47252061-2adc1d80-d479-11e8-8f13-eb2f459c103a.png) が成り立つ。<br>
-            従って、先の式は、<br>
-            ![image](https://user-images.githubusercontent.com/25688193/47253745-9bdbff00-d492-11e8-8deb-0210ad04d7f4.png) に対して、<br>
-            ![image](https://user-images.githubusercontent.com/25688193/47253752-b01ffc00-d492-11e8-8b51-a57edaddf730.png)<br>
-            従って、関数 ![image](https://user-images.githubusercontent.com/25688193/47253838-1a856c00-d494-11e8-9f6c-97edcfd09293.png) は、c において微分可能であり、微分係数は f(c) に等しい。<br>
-            従って、![image](https://user-images.githubusercontent.com/25688193/47253849-4c96ce00-d494-11e8-884c-10645fdf7cf3.png) の関係（＝原始関数 F の微分が、被積分関数 f）を満たすような原始関数 ![image](https://user-images.githubusercontent.com/25688193/47253838-1a856c00-d494-11e8-9f6c-97edcfd09293.png) が存在する。<br>
-        <br>
-    - (b) の証明<br>
-        積分区間上での原始関数 F は、定数の違いを除いて一意なので、<br>
-        ![image](https://user-images.githubusercontent.com/25688193/47254068-6be32a80-d497-11e8-8ef5-ead5f28e1cb3.png)<br>
-        の関係が成り立つ。<br>
-        ![image](https://user-images.githubusercontent.com/25688193/47254074-7f8e9100-d497-11e8-8e71-a9c507c0ed03.png)<br>
-
-        > 記載中...
-
-
-この定理の (b) の微積分の基本定理により、一次元ルベーグ積分の具体的な計算が与えられる。<br>
-以下、いくつかの例で、一次元ルベーグ積分の具体的な計算を見ていく。<br>
-
-> 記載中...
-
-<!--
-<a id="ID_6"></a>
-
-## ■ ルベーグ測度の構成
-ここでは、測度の構成をより一般的な枠組みで展開する。<br>
--->
 
 <a id="ID_6"></a>
 
@@ -852,6 +525,22 @@
 ## ■ 測度の拡張と一意性
 > 記載中...
 
+<a id="ID_9-0"></a>
+
+### ◎ 集合族から生成される σ-加法族
+![image](https://user-images.githubusercontent.com/25688193/47604649-6c4f6880-da37-11e8-8d4a-0320f65d4323.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47604866-00baca80-da3a-11e8-88aa-bc79451212a5.png)<br>
+
+- （証明）<br>
+    m-可測集合族 ![image](https://user-images.githubusercontent.com/25688193/47604808-796d5700-da39-11e8-8142-75ebb1ee4702.png) は、その定義（＝σ-加法性）より、σ-加法族である。<br>
+    従って、一方、半加法族 Θ は、σ-加法族より弱い条件になっているので、![image](https://user-images.githubusercontent.com/25688193/47604811-8b4efa00-da39-11e8-8e8f-17e11d6fa463.png) の関係が成り立つ。<br>
+    又、半加法族 Θ から生成される σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47604843-d6690d00-da39-11e8-90fb-ed399bf112d8.png) は、半加法族 Θ を含む ”最小の” σ-加法族なので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47604811-8b4efa00-da39-11e8-8e8f-17e11d6fa463.png) の関係より、![image](https://user-images.githubusercontent.com/25688193/47604836-bb969880-da39-11e8-8c09-5e005d435eb9.png) の関係が成り立つ。<br>
+
+
 <a id="ID_9-1"></a>
 
 ### ◎ 測度の拡張とホップの拡張定理
@@ -892,20 +581,6 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47604649-6c4f6880-da37-11e8-8d4a-0320f65d4323.png)<br>
-
-<br>
-
-![image](https://user-images.githubusercontent.com/25688193/47604866-00baca80-da3a-11e8-88aa-bc79451212a5.png)<br>
-
-- （証明）<br>
-    m-可測集合族 ![image](https://user-images.githubusercontent.com/25688193/47604808-796d5700-da39-11e8-8142-75ebb1ee4702.png) は、その定義（＝σ-加法性）より、σ-加法族である。<br>
-    従って、一方、半加法族 Θ は、σ-加法族より弱い条件になっているので、![image](https://user-images.githubusercontent.com/25688193/47604811-8b4efa00-da39-11e8-8e8f-17e11d6fa463.png) の関係が成り立つ。<br>
-    又、半加法族 Θ から生成される σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47604843-d6690d00-da39-11e8-90fb-ed399bf112d8.png) は、半加法族 Θ を含む ”最小の” σ-加法族なので、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/47604811-8b4efa00-da39-11e8-8e8f-17e11d6fa463.png) の関係より、![image](https://user-images.githubusercontent.com/25688193/47604836-bb969880-da39-11e8-8c09-5e005d435eb9.png) の関係が成り立つ。<br>
-
-<br>
-
 > 記載中...
 
 
@@ -918,6 +593,332 @@
 
 ![image](https://user-images.githubusercontent.com/25688193/47543411-14244380-d91d-11e8-9cc5-e9940bc91008.png)<br>
 
+
+> 記載中...
+
+---
+
+<a id="ID_3"></a>
+
+## ■ ルベーグ積分の性質
+
+> 【Memo】 リーマン積分 ↔ ルベーグ積分の定理の対応関係<br>
+> |リーマン積分|ルベーグ積分|
+> |---|---|
+> |積分と級数の交換（項別積分）|項別積分|
+> |極限と積分の交換|ルベーグの収束定理|
+> |積分と積分の交換|フビニの定理|
+
+<br>
+
+- 【参考】<br>
+    - [ときわ台学/ルベーグ積分/収束定理](http://www.f-denshi.com/000TokiwaJPN/16lebeg/100lbg.html)<br>
+
+
+<a id="ID_3-1"></a>
+
+### ◎ σ-加法族の性質と可測性
+ここでは、先に見てきた関数の可測性の観点から、σ-加法族を再度見直してみる。<br>
+
+まずは、σ-加法族の定義を、可測関数の視点で捉え直す。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47492483-12f50700-d888-11e8-9fd0-62e30ae8676b.png)<br>
+
+- （証明）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47492522-2c964e80-d888-11e8-9a5b-7143abdbefa7.png)<br>
+
+- （証明）<br>
+
+
+<a id="ID_3-2"></a>
+
+### ◎ 単関数の積分とその性質
+積分に関する一般的な性質（線形性など）を、先の積分の定義から直接導出するのは、困難である。
+そこでまずは、単関数の場合に限定し、更に、積分の性質を確かめるための補助的な量を別途定義した上で、先の積分の定義と関連付けて議論することにする。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47492796-c231de00-d888-11e8-900d-3fd655d48395.png)<br>
+
+積分の性質（線形性など）との関連付けて議論するために、このように定義した補助的な量に対して、いくつかの性質を見てみる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47492963-248ade80-d889-11e8-8358-96dc965b1fa2.png)<br>
+
+- （証明）<br>
+    合成関数 h の値域 range(h) に関して、以下のような関係が成り立つ。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912850-a8a4b280-cfbb-11e8-991f-4947b47c7fe4.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912861-e570a980-cfbb-11e8-8ac7-c03cca11e1ee.png)<br>
+    更に、関数 ϕ の値域の有限値を定める定数 ![image](https://user-images.githubusercontent.com/25688193/46912854-b78b6500-cfbb-11e8-94fc-02608e52092a.png) に対して、以下のような関係が成り立つ。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912874-36809d80-cfbc-11e8-8009-eff374e1d646.png)<br>
+    この式は、例えば、![image](https://user-images.githubusercontent.com/25688193/46912879-5a43e380-cfbc-11e8-85c3-355ee1a788d5.png) のときは、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912885-6f207700-cfbc-11e8-8482-5f6be6865250.png)<br>
+    となり、下図のように、２つの単関数 f,g の組み合わせによって、![image](https://user-images.githubusercontent.com/25688193/46912890-9d05bb80-cfbc-11e8-96c4-f9b18bf374ab.png) 領域の分割が生じる様子を示している。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46912933-c70bad80-cfbd-11e8-85a7-53d1d779f1ed.png)<br>
+    ここで、<br>
+	「値域 range(h) が、可算集合ならば、関数 h の可測性は、y∈range(h) に対して、![image](https://user-images.githubusercontent.com/25688193/46912990-3f26a300-cfbf-11e8-93fc-21eab7f257b5.png) が成り立つことと同値である」<br>
+	という関係（証明略）より、<br>
+	上式の右辺（＝上図に示した分割領域の和集合）が、有限集合であり、σ-加法族 B に属することは、
+	合成関数 h が、B-可測関数であることを意味している。<br>
+	従って、合成関数 h は、単関数である。<br>
+
+<br>
+
+この単関数の合成関数の性質を、<br>
+先に定義した積分の性質を確かめるための補助的な量<br>
+![image](https://user-images.githubusercontent.com/25688193/46913036-69c52b80-cfc0-11e8-8065-40b027c2a7b2.png)<br>
+に適用すると、以下のような定理が導かれる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47493081-6c116a80-d889-11e8-9953-899041fc4b03.png)<br>
+
+- （証明略）<br>
+
+<br>
+
+この定理から、ここでの主目的であった、<br>
+積分の性質を確かめるための補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) に対する、積分演算で一般的に成り立つ性質（線形性など）の導出と、<br>
+この補助的な量 ![image](https://user-images.githubusercontent.com/25688193/46913070-17d0d580-cfc1-11e8-90d0-502dde717076.png) が、積分の定義に一致する、即ち、![image](https://user-images.githubusercontent.com/25688193/46913072-2c14d280-cfc1-11e8-8c2d-0cbf93264e4b.png) の関係を示すことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47493208-b09d0600-d889-11e8-98fa-e461efeff5d4.png)<br>
+
+- （証明略）<br>
+
+
+<a id="ID_3-3"></a>
+
+### ◎ ルベーグ積分の性質
+以下、可測関数の積分に関しての、基本的な性質を見ていく。<br>
+まずは、測度 μ の有限加法性に起因する性質を見ていく。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47611822-92651f00-dab0-11e8-871f-1212939d4612.png)<br>
+
+- （証明略）
+
+<br>
+
+次に、σ-加法性に起因する性質を見ていく。<br>
+
+> 記載中...
+
+
+<a id="ID_3-4"></a>
+
+### ◎ エゴロフの定理
+<!--
+可測関数の積分は、単関数の点列で可測関数を近似した上で定義する方法と、単関数の積分の上限で定義する方法の２通り考えられるが、<br>
+以下に示すエゴロフの定理を用いれば、これらの２つの値が一致することを示すことが出来る。<br>
+-->
+
+![image](https://user-images.githubusercontent.com/25688193/47493410-2bfeb780-d88a-11e8-92a1-a06dbe960b2a.png)<br>
+
+- （証明略）図より自明<br>
+
+<br>
+
+このエゴロフの定理を用いれば、<br>
+積分の基本性質である、「（単関数における）極限と積分の順序の交換可能性」を示すことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47493479-53ee1b00-d88a-11e8-9f35-f68851995e69.png)<br>
+
+- （証明）<br>
+    > 記載中...
+
+
+<a id="ID_3-5"></a>
+
+### ◎ ファトゥの補題
+単調収束定理やルベーグ収束定理を示すための前段階として、以下のファトゥの補題を示す。<br>
+このファトゥの補題は、先の単関数に対する極限と積分の交換可能性の性質を、可測関数に拡張したものになっている。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47493531-77b16100-d88a-11e8-80f6-df238a22824e.png)<br>
+
+- （証明略）<br>
+
+
+<a id="ID_3-6"></a>
+
+### ◎ 単調収束定理
+ファトゥの補題を用いれば、以下の単調収束定理を示すことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47493592-9c0d3d80-d88a-11e8-85ce-73e03edd14b6.png)<br>
+
+- （証明）<br>
+    定理の参考図にも示しているように、<br>
+    可測集合 A∈B 上で、可測関数の単調増加の点列 ![image](https://user-images.githubusercontent.com/25688193/46940732-64d9a800-d0a4-11e8-93cc-a42a39f3f0c0.png) に対しては、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46940770-78850e80-d0a4-11e8-8054-f292ee538398.png)<br>
+    の関係が成り立つので、これを、ファトゥの補題の関係式<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46941100-4a53fe80-d0a5-11e8-9619-12dc0c841223.png)<br>
+    に代入すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46941157-6fe10800-d0a5-11e8-834a-015288ce09a0.png)<br>
+    <br>
+    また、積分の単調性の性質 ![image](https://user-images.githubusercontent.com/25688193/46941739-cb5fc580-d0a6-11e8-8c09-c4ce1ea909b1.png) より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/46941801-e3374980-d0a6-11e8-9ad5-af7cb7797e4a.png)<br>
+
+
+<a id="ID_3-7"></a>
+
+### ◎ ルベーグ収束定理
+ファトゥの補題から導かれるルベーグ-ファトゥの補題（＝ファトゥの不等式）を用いれば、
+以下のルベーグの収束定理も示すことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47493681-d676da80-d88a-11e8-9d15-035786d893a0.png)<br>
+
+- （証明略）<br>
+
+---
+
+<a id="ID_4"></a>
+
+## ■ 測度０の集合
+> 記載中...
+
+<a id="ID_4-1"></a>
+
+### ◎ ほとんどいたるところ [almost eyerywhere]
+![image](https://user-images.githubusercontent.com/25688193/47493809-2786ce80-d88b-11e8-84e0-c22a332fed84.png)<br>
+
+この零集合は、その定義より、測度０の集合となるが、測度０の集合上での違いは、積分に影響せず無視できるという事実がある。（証明略）<br>
+そこで、積分に影響しない例外（今の場合、測度０の零集合）に関しては、無視する。<br>
+ということを表す概念を導入することを考える。<br>
+この概念こそが、以下のほとんどいたるところの概念になる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47493869-4d13d800-d88b-11e8-9124-b66dd62e7bdb.png)<br>
+
+以下、例を用いて、このほとんどいたるところの概念が、「積分上無視できる部分を除いて」の意味になっていることを示す。<br>
+
+- （例）積分上無視できる部分が存在する積分<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47013471-37632c00-d182-11e8-8e1a-e2914809f6ab.png)<br>
+    という関数を 0~1 の範囲で積分 ![image](https://user-images.githubusercontent.com/25688193/47013491-4ea21980-d182-11e8-890d-9a40e6f3dc40.png) することを考える。<br>
+    <br>
+    この関数は x=0.5 以外では、通常の f(x)=x と変わらない関数であり、積分時の分割図形と共に表示すると、以下の図のようになる。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47013849-7f368300-d183-11e8-97b5-4f8a49ee46cb.png)<br>
+	上図から分かるように、不連続点が寄与する分割長方形の面積は、リーマン積分時の幅を無限に細く取る操作で、無限に小さく出来るので、無視できる。<br>
+	（※このことは、リーマン積分においては、非連続点が測度０で零集合であることを意味している。）<br>
+	即ち、この関数の積分は、![image](https://user-images.githubusercontent.com/25688193/47013981-e05e5680-d183-11e8-9d18-0aad35411043.png) となるのであるが、この f(x) の、積分する上では、x と変わらないという事実を、<br>
+	「ほとんどいたるところ f(x)=x」或いは「f(x)=x a.e」のように、ほとんどいたるところの概念を用いて表現する。<br>
+
+<br>
+
+> 【Memo】 測度論における、ほとんどいたるところ [almost everywhere]<br>
+> 零集合はその定義より、測度０の集合となるが、測度０の集合上での違いは、積分に影響せず無視できるという事実がある。（例えば、リーマン積分では、非連続点は測度０で零集合になり、積分上無視出来る。）<br>
+> そこで、「積分に影響しない例外（今の場合、測度０の零集合）に関しては、無視して取り除く」 ということを表す概念を導入することを考える。この概念こそが、ほとんどいたるところの概念になる。<br>
+> このほとんどいたるところの概念を用いれば、例えば、リーマン積分を<br>
+> 「ほとんどいたるところで連続⇔リーマン積分可能」と表現できる。<br>
+> （※この必要十分条件は、リーマン積分では、非連続点は測度０で零集合になり、積分上無視出来るという性質に起因する。）<br>
+
+<br>
+
+- 【参考】<br>
+    - [ほとんどいたるところ - すもう](http://end01nojo.hatenablog.com/entry/2014/12/06/174314)<br>
+
+
+<a id="ID_4-2"></a>
+
+### ◎ 積分の定義のほとんどいたるところを用いた表現
+> 記載中
+
+- 【参考】<br>
+    - [「リーマン積分＜ルベーグ積分」という感覚を味わう - ペンギンは空を飛ぶ](http://peng225.hatenablog.com/entry/2017/11/03/104617)<br>
+
+
+<a id="ID_4-3"></a>
+
+### ◎ 各種収束定理のほとんどいたるところを用いた表現
+ほとんどいたるところで定義された関数を用いると、全ての点で収束するとは言えないような関数列に対しても、
+先の各種収束定理（単調収束定理、ルベーグの収束定理）を適用できるようになる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47493928-7a608600-d88b-11e8-97c9-a7ce162a181a.png)<br>
+
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47494025-af6cd880-d88b-11e8-97c4-02d2c363e0ff.png)<br>
+
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47494119-e9d67580-d88b-11e8-98e5-d263df15e44d.png)<br>
+
+- （証明略）<br>
+
+
+<a id="ID_4-4"></a>
+
+### ◎ Lp 空間の完備性と測度の σ-加法性
+![image](https://user-images.githubusercontent.com/25688193/47494205-15596000-d88c-11e8-8e94-5b5bb35f2a7f.png)<br>
+
+<br>
+
+以下の定理で示すように、L1ノルムは、μ-可積分な関数全体の集合に、距離に対する完備性を持つ（＝コーシー列が収束する）距離を導入する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47494247-2b672080-d88c-11e8-8f0f-1e9fc4e24e7d.png)<br>
+
+- （証明）<br>
+    > 記載中...
+
+<br>
+
+>【Memo】<br>
+> ここで、以下の２つの事実を総括すると、このLp空間の完備性は、測度が σ-加法性をもつことに起因していると言える。<br>
+> - 測度空間（今の場合、L1空間）が、完備であることの条件は、「任意の零集合の部分集合が、また零集合である」（※零集合は、測度０の集合）<br>
+> - σ-加法族の公理の１つである、零集合自身も σ-加法族に含まれる。<br>
+
+<br>
+
+>【Memo】<br>
+> 上記の ”L1ノルムは、μ-可積分な関数全体の集合に、完備性を持つ（＝コーシー列が収束）距離を導入する。これをL1空間の完備化という。”<br>
+> の意味での完備の条件は、距離に対する完備の意味である。<br>
+> 一方、測度空間が、完備であることの条件は、「任意の零集合の部分集合が、また零集合である」であるが、これは、測度に対する完備の意味となり、両者は同じ完備の名前でも別の意味となる。<br>
+
+---
+
+<a id="ID_5"></a>
+
+## ■ ルベーグ積分の具体的な計算（一次元ルベーグ積分）
+ルベーグ積分の具体的な計算として、まずは、１次元区間上の積分を見てみる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47494305-50f42a00-d88c-11e8-84a7-ca7ad0e151d3.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47201776-f7848a80-d3b5-11e8-8240-8183781a2857.png)<br>
+
+この原始関数は、以下の定理で示すように、１次元ルベーグ積分では、与えられた可積分関数に対して、原始関数が必ず存在し、積分操作は、原始関数を求めることに一致する。<br>
+（※リーマン積分のときは、連続関数に対して同様の関係が成り立つ。）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47203516-92cc2e80-d3bb-11e8-916a-9ace98a92f84.png)<br>
+
+- （証明）<br>
+    - (a) の証明<br>
+        - 積分区間の変数 x∈R に対して、c≤x<b とすると、<br>
+            ルベーグ測度は、![image](https://user-images.githubusercontent.com/25688193/47252071-5232ea80-d479-11e8-82ad-1a9c80980694.png)<br>
+        - 積分区間は、細かく分割した積分区間の和の形、即ち、<br>
+            積分区間 ![image](https://user-images.githubusercontent.com/25688193/47252082-8dcdb480-d479-11e8-8156-08b8d53c308c.png) に対して、<br>
+            の形で表現できるので、積分区間 a<c≤x に対しては、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47252092-bce42600-d479-11e8-9bb0-d19dc940ca7d.png)<br>
+            積分に影響しない項 ![image](https://user-images.githubusercontent.com/25688193/47252101-cec5c900-d479-11e8-9ac8-b00ad54539a9.png) を両辺に追加すると、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47252120-3f6ce580-d47a-11e8-81b0-2050efe7adf2.png)<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47253724-3b4cc200-d492-11e8-987f-91f4dbbd886e.png)<br>
+        - 被積分関数 f は連続関数なので、
+            c∈(a,b) に対して、ε-δ 論法で、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47252061-2adc1d80-d479-11e8-8f13-eb2f459c103a.png) が成り立つ。<br>
+            従って、先の式は、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47253745-9bdbff00-d492-11e8-8deb-0210ad04d7f4.png) に対して、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/47253752-b01ffc00-d492-11e8-8b51-a57edaddf730.png)<br>
+            従って、関数 ![image](https://user-images.githubusercontent.com/25688193/47253838-1a856c00-d494-11e8-9f6c-97edcfd09293.png) は、c において微分可能であり、微分係数は f(c) に等しい。<br>
+            従って、![image](https://user-images.githubusercontent.com/25688193/47253849-4c96ce00-d494-11e8-884c-10645fdf7cf3.png) の関係（＝原始関数 F の微分が、被積分関数 f）を満たすような原始関数 ![image](https://user-images.githubusercontent.com/25688193/47253838-1a856c00-d494-11e8-9f6c-97edcfd09293.png) が存在する。<br>
+        <br>
+    - (b) の証明<br>
+        積分区間上での原始関数 F は、定数の違いを除いて一意なので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/47254068-6be32a80-d497-11e8-8ef5-ead5f28e1cb3.png)<br>
+        の関係が成り立つ。<br>
+        ![image](https://user-images.githubusercontent.com/25688193/47254074-7f8e9100-d497-11e8-8e71-a9c507c0ed03.png)<br>
+
+        > 記載中...
+
+
+この定理の (b) の微積分の基本定理により、一次元ルベーグ積分の具体的な計算が与えられる。<br>
+以下、いくつかの例で、一次元ルベーグ積分の具体的な計算を見ていく。<br>
 
 > 記載中...
 
