@@ -37,10 +37,12 @@
     1. [ルベーグ-スティルチェス測度、１次元ルベーグ測度](#ID_8-4)
     1. [ルベーグ積分（より一般化した定義）](#ID_8-5)
 1. [測度の拡張と一意性](#ID_9)
-    1. [集合族から生成される σ-加法族](#ID_9-0)
-    1. [測度の拡張とホップ [Hopf] の拡張定理](#ID_9-1)
-    1. [拡張の一意性とその応用](#ID_9-2)
-    1. [ボレル集合族、ボレル測度](#ID_9-x)
+    1. [σ-有限な有限加法的測度](#ID_9-1)
+    1. [集合族から生成される σ-加法族](#ID_9-2)
+    1. [測度の拡張とホップ [Hopf] の拡張定理](#ID_9-3)
+    1. [測度の拡張の一意性](#ID_9-4)
+    1. [測度空間の完備化](#ID_9-5)
+    1. [ボレル集合族、ボレル測度](#ID_9-A)
 1. [ルベーグ積分の性質](#ID_3)
     1. [σ-加法族の性質と可測性](#ID_3-1)
     1. [単関数の積分とその性質](#ID_3-2)
@@ -525,7 +527,23 @@
 ## ■ 測度の拡張と一意性
 > 記載中...
 
-<a id="ID_9-0"></a>
+<a id="ID_9-1"></a>
+
+### ◎ σ-有限な有限加法的測度
+![image](https://user-images.githubusercontent.com/25688193/47567552-d4d01400-d969-11e8-9e95-e6ecaab79d16.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47567579-e4e7f380-d969-11e8-8596-f8bcc0ab509f.png)<br>
+
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47603724-1eccfe80-da2b-11e8-9d23-af628d324fe6.png)<br>
+
+- （証明略）<br>
+
+
+<a id="ID_9-2"></a>
 
 ### ◎ 集合族から生成される σ-加法族
 ![image](https://user-images.githubusercontent.com/25688193/47604649-6c4f6880-da37-11e8-8d4a-0320f65d4323.png)<br>
@@ -541,7 +559,7 @@
     ![image](https://user-images.githubusercontent.com/25688193/47604811-8b4efa00-da39-11e8-8e8f-17e11d6fa463.png) の関係より、![image](https://user-images.githubusercontent.com/25688193/47604836-bb969880-da39-11e8-8c09-5e005d435eb9.png) の関係が成り立つ。<br>
 
 
-<a id="ID_9-1"></a>
+<a id="ID_9-3"></a>
 
 ### ◎ 測度の拡張とホップの拡張定理
 ![image](https://user-images.githubusercontent.com/25688193/47566075-80c33080-d965-11e8-86c3-9ad717c4d746.png)<br>
@@ -555,9 +573,9 @@
 ![image](https://user-images.githubusercontent.com/25688193/47566385-8b31fa00-d966-11e8-8616-a41cff780a9a.png)<br>
 
 
-<a id="ID_9-2"></a>
+<a id="ID_9-4"></a>
 
-### ◎ 拡張の一意性とその応用
+### ◎ 測度の拡張の一意性
 抽象集合 X 上の σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) が、![image](https://user-images.githubusercontent.com/25688193/47566796-c123ae00-d967-11e8-8aa0-82d38a9df4c1.png) の関係を満たし、<br>
 σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47566753-99344a80-d967-11e8-9b90-e44183bc300e.png) を定義域とする抽象集合 X 上の２つの測度 ![image](https://user-images.githubusercontent.com/25688193/47566831-d6004180-d967-11e8-84ae-b1ab000df360.png) が、
 半加法族 Θ を定義域とする抽象集合 X 上の有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47566876-eca69880-d967-11e8-87e0-33b9ede1cb80.png) を拡張する場合において、<br>
@@ -567,24 +585,41 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47567552-d4d01400-d969-11e8-9e95-e6ecaab79d16.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47630337-8bf3a780-db83-11e8-84ae-7b5c555e85a5.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47567579-e4e7f380-d969-11e8-8596-f8bcc0ab509f.png)<br>
+- （証明）<br>
+	先の補題（半加法族から生成されるσ-加法族と可測集合族）より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47630419-0290a500-db84-11e8-810b-50f0e65d2443.png) の関係が成り立つ。<br>
+    一方、先の補題（σ-有限な有限加法的測度と測度の拡張）より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47630446-29e77200-db84-11e8-9c43-d8dcea5f1aae.png) の関係が成り立つ。<br>
+    <br>
+    従って、任意の ![image](https://user-images.githubusercontent.com/25688193/47630478-5ef3c480-db84-11e8-8de6-06b0a6397ff5.png) の部分を ![image](https://user-images.githubusercontent.com/25688193/47630491-6f0ba400-db84-11e8-91be-dc43df30f34c.png) に置き換えると、<br>
+    ① 測度 ![image](https://user-images.githubusercontent.com/25688193/47630516-93678080-db84-11e8-8305-ac70c71f7fb2.png) は ![image](https://user-images.githubusercontent.com/25688193/47630531-ab3f0480-db84-11e8-96d6-1bbf9d2c0ad7.png) の測度の拡張なので、![image](https://user-images.githubusercontent.com/25688193/47630543-c01b9800-db84-11e8-853f-292d2c1ea79c.png)<br>
+    ② 測度 ![image](https://user-images.githubusercontent.com/25688193/47630579-f0fbcd00-db84-11e8-9c49-1b2e6ef70bf7.png) は ![image](https://user-images.githubusercontent.com/25688193/47630531-ab3f0480-db84-11e8-96d6-1bbf9d2c0ad7.png) の測度の拡張なので、![image](https://user-images.githubusercontent.com/25688193/47630564-d4f82b80-db84-11e8-9886-6aec6c358f0e.png)<br>
 
-- （証明略）<br>
+    従って、この２つの関係式より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47630593-083aba80-db85-11e8-8939-941d67a8e43d.png) となり、![image](https://user-images.githubusercontent.com/25688193/47630614-20123e80-db85-11e8-84c0-79a5f3f892ab.png) の関係が成り立つ。<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47603724-1eccfe80-da2b-11e8-9d23-af628d324fe6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47630662-5b147200-db85-11e8-9fb5-2a4211271689.png)<br>
 
-- （証明略）<br>
+- （証明）<br>
+    先の測度の拡張の一意性 ![image](https://user-images.githubusercontent.com/25688193/47630614-20123e80-db85-11e8-84c0-79a5f3f892ab.png) より、測度を元に行われるルベーグ積分<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47630638-4801a200-db85-11e8-9d88-8c483a5b2d40.png)<br>
+    に関しても一意に定まる。<br>
 
-<br>
 
-> 記載中...
+<a id="ID_9-5"></a>
+
+### ◎ 測度空間の完備化
+測度空間が、完備測度でない場合において、測度が０となる零集合を、積分の計算結果に影響しないものとしてうまく除外できないために、積分の操作が厄介なものとなる。<br>
+このような場合は、以下に定義する完備化という操作によって、測度空間を予め完備にすることになる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47637491-3200db00-db9f-11e8-8d76-f177f09e567a.png)<br>
 
 
-<a id="ID_9-x"></a>
+<a id="ID_9-A"></a>
 
 ### ◎ ボレル集合族、ボレル測度
 ![image](https://user-images.githubusercontent.com/25688193/47543271-50a36f80-d91c-11e8-80dd-46c09d4bff8a.png)<br>
@@ -604,6 +639,8 @@
 
 > 【Memo】 リーマン積分 ↔ ルベーグ積分の定理の対応関係<br>
 > ![image](https://user-images.githubusercontent.com/25688193/47612480-8b450d80-dabe-11e8-9381-1f9d0561bbb5.png)<br>
+
+> 記載中...
 
 <br>
 
