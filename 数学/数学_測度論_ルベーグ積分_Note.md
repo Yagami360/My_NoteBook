@@ -638,9 +638,17 @@
 先に導入したボレル集合族を用いて、ルベーグ測度に対して、定義域を可測集合族からボレル集合族に制限した、ボレル集合族上のルベーグ測度を考える。<br>
 そして、このボレル集合族上のルベーグ測度では、以下の定理で示すように、測度の一意性と完備化の議論を行うことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47648134-7058c300-dbbc-11e8-8e03-07da2f2d2878.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47697521-c24a2900-dc4e-11e8-988e-b9b666c7bbc9.png)<br>
 
-> 記載中...
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47697566-f58cb800-dc4e-11e8-9c54-158dcf9bdfc6.png)<br>
+
+- （証明）<br>
+	ルベーグ測度は、ルベーグ-スティルチェス測度の一種なので、<br>
+    先の定理（ルベーグ-スティルチェス測度の一意性と完備化）と同様にして、成り立つ。<br>
 
 
 ---
