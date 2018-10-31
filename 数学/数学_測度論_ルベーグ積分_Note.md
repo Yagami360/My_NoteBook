@@ -524,7 +524,7 @@ R 上で定義された非減少関数 v:R→R+ に対して、<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/47783669-acb82a80-dd46-11e8-9060-8ef94a217eb5.png)<br>
 
-- （証明）
+- （証明）<br>
     有限加法的測度が誘導する外測度は、カラテオドリ外測度でもあるので、<br>
     定理（カラテオドリ外測度の可測集合族への制限と完備測度）より成り立つ。<br>
 
@@ -757,7 +757,7 @@ R 上で定義された非減少関数 v:R→R+ に対して、<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47780712-467bd980-dd3f-11e8-8b42-2a85c83bafb5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47791394-f4e24780-dd5c-11e8-92ea-674be139a6a1.png)<br>
 
 - （証明）(a) の証明のみ記載<br>
     - (a) の証明<br>
@@ -794,7 +794,7 @@ R 上で定義された非減少関数 v:R→R+ に対して、<br>
 １次元ルベーグ測度のときと同様にして、先に導入した２次元ボレル集合族を用いて、２次元ルベーグ測度に対して、定義域を可測集合族から２次元ボレル集合族に制限した、２次元ボレル集合族上の２次元ルベーグ測度なるものを考える。<br>
 そして、この２次元ボレル集合族上の２次元ルベーグ測度では、以下の定理で示すように、測度の一意性と完備化の議論を行うことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47781372-e25a1500-dd40-11e8-9e97-9a042b650823.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47791183-6b327a00-dd5c-11e8-811c-22f7ee31b2fb.png)<br>
 
 <br>
 
@@ -817,7 +817,12 @@ R 上で定義された非減少関数 v:R→R+ に対して、<br>
 このように定義した直積測度 ![image](https://user-images.githubusercontent.com/25688193/47781991-77a9d900-dd42-11e8-8618-7e5f8e4e61b4.png) は、その元になる測度 ![image](https://user-images.githubusercontent.com/25688193/47781951-5ba63780-dd42-11e8-8f69-c60a13bd82fb.png)
  がσ-有限な測度である場合においては、一意に存在する。<br>
 
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/47791444-14797000-dd5d-11e8-9284-c18ce65b1451.png)<br>
+
+- （証明）<br>
+	この定理は、先の定理（集合族の直積から生成された σ-加法族上への制限と完備性）を、<br>
+	有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47791639-7c2fbb00-dd5d-11e8-8ac4-79135acd3b58.png)、生成されたσ加法族 ![image](https://user-images.githubusercontent.com/25688193/47791684-8ce03100-dd5d-11e8-8378-71c928d503fb.png) から<br>
+	直積測度 ![image](https://user-images.githubusercontent.com/25688193/47791717-9ff30100-dd5d-11e8-8596-55914a514971.png) 、直積σ加法族 ![image](https://user-images.githubusercontent.com/25688193/47791787-cf097280-dd5d-11e8-9773-3300772656e6.png) に置き換えた定理になっているので、成り立つ。<br>
 
 
 ---
