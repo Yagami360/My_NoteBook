@@ -44,6 +44,13 @@
     1. [測度空間の完備化](#ID_9-5)
     1. [ボレル集合族、ボレル測度](#ID_9-A)
     1. [ルベーグ測度の一意性と完備化（ボレル集合族上のルベーグ測度）](#ID_9-B)
+1. [直積測度と２次元ルベーグ測度](#ID_10)
+    1. [集合族の直積と半加法族](#ID_10-1)
+    1. [直積集合からの射影と有限加法的測度](#ID_10-2)
+    1. [２次元ルベーグ測度](#ID_10-3)
+    1. [２次元ボレル集合族](#ID_10-4)
+    1. [２次元ルベーグ測度の一意性と完備化](#ID_10-5)
+    1. [直積測度](#ID_10-6)
 1. [ルベーグ積分の性質](#ID_3)
     1. [σ-加法族の性質と可測性](#ID_3-1)
     1. [単関数の積分とその性質](#ID_3-2)
@@ -52,7 +59,7 @@
     1. [ファトゥの補題](#ID_3-5)
     1. [単調収束定理](#ID_3-6)
     1. [ルベーグの収束定理](#ID_3-7)
-1. [測度０の集合](#ID_4)
+1. [測度０の集合（零集合）の扱い](#ID_4)
     1. [ほとんどいたるところ [almost everyewhere]](#ID_4-1)
     1. [積分の定義のほとんどいたるところを用いた表現](#ID_4-2)
     1. [各種収束定理のほとんどいたるところを用いた表現](#ID_4-3)
@@ -117,15 +124,17 @@
     その上で、この操作（写像）μ の加法性を定義するのであるが、この加法性を定めるには、予め図形のリストの形状（大きさ）に関する構造が定まっている必要がある。<br>
     そのためにまずは、以下のように定義される完全加法族なるものを導入する。<br>
     <br>
-    ![image](https://user-images.githubusercontent.com/25688193/47491262-7893c400-d885-11e8-9038-3a77fa461408.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47779498-9311e580-dd3c-11e8-8a2f-01b73d7cf709.png)<br>
     <br>
     その上で、この図形のリスト ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) を測る操作（＝写像） μ に対しての加法性を導入し、以下のように測度として定義する。<br>
     <br>
-    ![image](https://user-images.githubusercontent.com/25688193/47491319-96612900-d885-11e8-963a-0ea879f822de.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47779620-e2581600-dd3c-11e8-950f-3ff6bb7fcc0d.png)<br>
+    <!-->
     <br>
     この測度の中で、特に面積に関する測度が、ルベーグ積分となる。<br>
     即ち、２次元ルベーグ測度は、以下のように定義される。<br>
     ![image](https://user-images.githubusercontent.com/25688193/47491384-b42e8e00-d885-11e8-946e-bd7012ceabbf.png)<br>
+    -->
 
 <br>
 
@@ -239,7 +248,7 @@
 <a id="ID_2-1"></a>
 
 ### ◎ σ-加法族（完全加法族）
-![image](https://user-images.githubusercontent.com/25688193/47612010-baef1800-dab4-11e8-9b13-4ca3a6e3257f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47779665-0287d500-dd3d-11e8-980c-a82708f1a447.png)<br>
 
 
 <a id="ID_2-2"></a>
@@ -247,7 +256,7 @@
 ### ◎ 測度、測度空間
 σ-加法族を定義した上で、この σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png)（＝図形のリストに対応）を測る操作（＝写像） μ に対しての加法性を導入し、以下のように測度として定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47612223-921d5180-dab9-11e8-8f73-dddc562d7a21.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47779712-1fbca380-dd3d-11e8-8e73-1dba82d21d08.png)<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/47612027-276a1700-dab5-11e8-975c-e7059174cfb4.png)<br>
 
@@ -507,7 +516,7 @@
 <a id="ID_8-4"></a>
 
 ### ◎ ルベーグ-スティルチェス測度、１次元ルベーグ測度
-![image](https://user-images.githubusercontent.com/25688193/47647627-e2c8a380-dbba-11e8-9b6e-ce633fd49f83.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47773097-46bea980-dd2c-11e8-89b0-2995297d6dd9.png)<br>
 
 
 <a id="ID_8-5"></a>
@@ -649,6 +658,117 @@
 - （証明）<br>
 	ルベーグ測度は、ルベーグ-スティルチェス測度の一種なので、<br>
     先の定理（ルベーグ-スティルチェス測度の一意性と完備化）と同様にして、成り立つ。<br>
+
+
+
+<a id="ID_10"></a>
+
+## ■ 直積測度と２次元ルベーグ測度
+ここまでの測度の議論では、測度の定義域は抽象的な集合族で考えてきたが、測度 μ:B→R 自体は１次元のみで考えていた。<br>
+しかしながら例えば、１次元の線分上の測度から、２次元の長方形上の測度を構築したい場合、より一般的には、d 次元の測度を構築したい場合には、１次元の測度のみの議論では不十分である。<br>
+
+このような場合は、測度の直積なるものを導入して、それを元に、より高次元の測度を構築することになる。<br>
+ここでは、測度の直積に関連して、まず、２次元ルベーグ測度が導入できることを見ていき、その一般化として、測度の直積と一意性に関して議論していく。<br>
+
+
+<a id="ID_10-1"></a>
+
+### ◎ 集合族の直積と半加法族
+まず、集合族の直積が、半加法族をなすことを見ていく。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47768933-5be00c00-dd1d-11e8-8c27-b85808596164.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47780127-1ed84180-dd3e-11e8-90d2-a94f035f9dd9.png)<br>
+
+
+<a id="ID_10-2"></a>
+
+### ◎ 直積集合からの射影と有限加法的測度
+次に、集合族の直積 ![image](https://user-images.githubusercontent.com/25688193/47780236-5941de80-dd3e-11e8-8694-b5685a67729d.png) を定義域とする関数 ![image](https://user-images.githubusercontent.com/25688193/47780302-6f4f9f00-dd3e-11e8-8491-09d5472b18df.png) が、有限加法的測度となることを見ていく。<br>
+<!--（※この集合族 ![image](https://user-images.githubusercontent.com/25688193/47780368-94441200-dd3e-11e8-8b5d-9315c33f7dc6.png) は、半加法族とは限らない一般の集合族）<br>-->
+後に示すように、この有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47769521-8c28aa00-dd1f-11e8-831c-dfd24d1cff33.png) が誘導する測度の１種が、２次元ルベーグ測度となる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47769686-13761d80-dd20-11e8-88d6-8fed949f6fde.png)<br>
+
+- （証明略）<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47780441-bfc6fc80-dd3e-11e8-89f3-75770d43f628.png)<br>
+
+- （証明）(a) の証明のみ記載<br>
+    - (a) の証明<br>
+        集合族の直積 ![image](https://user-images.githubusercontent.com/25688193/47780497-d8371700-dd3e-11e8-913b-cd77f28e1b49.png) は、先の補題（集合族の直積と半加法族）より、半加法族である。<br>
+        そして、関数 ![image](https://user-images.githubusercontent.com/25688193/47780556-f270f500-dd3e-11e8-8352-c0f272f1dedc.png) は、半加法族を定義域としており、<br>
+        又、有限加法的測度の条件である、<br>
+        (1) 非負値：写像後の値域が ![image](https://user-images.githubusercontent.com/25688193/47780601-03ba0180-dd3f-11e8-8346-95050cd19acb.png) であることより、成り立つ。<br>
+        (2) 空集合が集合族に含まれて測度０：![image](https://user-images.githubusercontent.com/25688193/47780666-3106af80-dd3f-11e8-81ae-2a988dabbf17.png) より成り立つ。 <br>
+        (3) 有限加法性：定義域の半加法族の性質より成り立つ。<br>
+        を満たすので、有限加法的測度である。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47780712-467bd980-dd3f-11e8-8b42-2a85c83bafb5.png)<br>
+
+- （証明）(a) の証明のみ記載<br>
+    - (a) の証明<br>
+        関数 ![image](https://user-images.githubusercontent.com/25688193/47780800-77f4a500-dd3f-11e8-99ea-40288a7102ee.png) は、半加法族 ![image](https://user-images.githubusercontent.com/25688193/47780497-d8371700-dd3e-11e8-913b-cd77f28e1b49.png) から生成された σ-加法族を定義域としており、
+		又、測度の条件（非負値、σ加法性）を満たすので、測度である。<br>
+		一方、有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47780859-a1adcc00-dd3f-11e8-9899-899225c016ed.png) は、半加法族 ![image](https://user-images.githubusercontent.com/25688193/47780497-d8371700-dd3e-11e8-913b-cd77f28e1b49.png) を定義域としているが、<br>
+		![image](https://user-images.githubusercontent.com/25688193/47780903-c144f480-dd3f-11e8-8ba3-93373cbf51f2.png) の関係より、これを拡張した測度でもある。<br>
+
+
+<a id="ID_10-3"></a>
+
+### ◎ ２次元ルベーグ測度
+先の議論（集合族の直積が半加法族で有限加法的測度になる関係）において、<br>
+有限加法的測度 m として、（ルベーグ可測集合族上の）１次元ルベーグ測度 ![image](https://user-images.githubusercontent.com/25688193/47781011-08cb8080-dd40-11e8-90b4-068157f76775.png) を採用すると、![image](https://user-images.githubusercontent.com/25688193/47781045-1bde5080-dd40-11e8-8fd8-4d360e770bff.png) に対応するものとして、![image](https://user-images.githubusercontent.com/25688193/47781129-4d571c00-dd40-11e8-983b-36a0c365a818.png) が考えられるが、![image](https://user-images.githubusercontent.com/25688193/47781045-1bde5080-dd40-11e8-8fd8-4d360e770bff.png) が有限加法的測度であることより、この ![image](https://user-images.githubusercontent.com/25688193/47781129-4d571c00-dd40-11e8-983b-36a0c365a818.png) は２次元ルベーグ測度を誘導するものとして考えられる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47781161-6069ec00-dd40-11e8-8acb-087d600a729f.png)<br>
+
+
+<a id="ID_10-4"></a>
+
+### ◎ ２次元ボレル集合族
+１次元ルベーグ測度のときと同様にして、ここでは、２次元ルベーグ測度に関しての測度の一意性と完備化の議論を行うための前段階として、以下で定義される２次元ボレル集合族なるものを定義する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47781271-aaeb6880-dd40-11e8-979a-59ec8bbd2f3b.png)<br>
+
+この２次元ボレル集合族を定義域とする測度は、２次元ボレル測度と呼ばれ、一意に定まる測度となる。
+
+![image](https://user-images.githubusercontent.com/25688193/47781293-b9d21b00-dd40-11e8-932e-106158eb7270.png)<br>
+
+
+<a id="ID_10-5"></a>
+
+### ◎ ２次元ルベーグ測度の一意性と完備化
+１次元ルベーグ測度のときと同様にして、先に導入した２次元ボレル集合族を用いて、２次元ルベーグ測度に対して、定義域を可測集合族から２次元ボレル集合族に制限した、２次元ボレル集合族上の２次元ルベーグ測度なるものを考える。<br>
+そして、この２次元ボレル集合族上の２次元ルベーグ測度では、以下の定理で示すように、測度の一意性と完備化の議論を行うことが出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47781372-e25a1500-dd40-11e8-9e97-9a042b650823.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47781410-f69e1200-dd40-11e8-8b92-fc62446fbe49.png)<br>
+
+- （証明略）１次元ルベーグ測度のときと同様<br>
+
+
+<a id="ID_10-6"></a>
+
+### ◎ 直積測度
+先の２次元ルベーグ測度に関しての議論を、測度の直積の観点から一般化することで、以下のような、直積測度を導入出来る。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47781521-38c75380-dd41-11e8-96ab-356b41b5a699.png)<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47781912-46310d80-dd42-11e8-8a89-cd54016dc92e.png)<br>
+
+このように定義した直積測度 ![image](https://user-images.githubusercontent.com/25688193/47781991-77a9d900-dd42-11e8-8618-7e5f8e4e61b4.png) は、その元になる測度 ![image](https://user-images.githubusercontent.com/25688193/47781951-5ba63780-dd42-11e8-8f69-c60a13bd82fb.png)
+ がσ-有限な測度である場合においては、一意に存在する。<br>
+
+> 記載中...
 
 
 ---
@@ -822,7 +942,7 @@
 
 <a id="ID_4"></a>
 
-## ■ 測度０の集合
+## ■ 測度０の集合（零集合）の扱い
 > 記載中...
 
 <a id="ID_4-1"></a>
