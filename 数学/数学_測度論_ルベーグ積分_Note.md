@@ -334,7 +334,7 @@
 <a id="ID_6-2"></a>
 
 ### ◎ 有限加法的測度（ジョルダン測度）
-![image](https://user-images.githubusercontent.com/25688193/47494439-957fc580-d88c-11e8-8d5b-68a8bfa06476.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47782398-7cbb5800-dd43-11e8-8eeb-2f2a46e9bd85.png)<br>
 
 
 <a id="ID_6-3"></a>
@@ -348,12 +348,14 @@
 <a id="ID_6-4"></a>
 
 ### ◎ 半加法族
-より抽象的な定義での測度は、以下で定義する半加法族 Θ に対して、先に定義した有限加法的測度 m:Θ→R を構成したもの（＝半加法族上に定義された有限加法的測度）となる。<br>
-そして、このような測度を (Θ,m) と表記することにする。<br>
+より抽象的な定義での測度は、以下で定義する半加法族 ![image](https://user-images.githubusercontent.com/25688193/47782571-dd4a9500-dd43-11e8-9907-41ff59ace3a1.png) に対して、先に定義した有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47782607-f4898280-dd43-11e8-8fd8-916a2138554e.png) を構成したもの（＝半加法族上に定義された有限加法的測度）となる。<br>
+そして、このような測度を ![image](https://user-images.githubusercontent.com/25688193/47782640-0ff48d80-dd44-11e8-9027-142133a48832.png) と表記することにする。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47362593-b078fb00-d70f-11e8-925d-b7a832abf557.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47782754-5813b000-dd44-11e8-9895-f18b89c2f4c8.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47363162-0dc17c00-d711-11e8-804b-70a52a7f8718.png)<br>
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47782832-80031380-dd44-11e8-9801-6e7839cc98fe.png)<br>
 
 - （証明略）<br>
 
@@ -363,7 +365,7 @@
 ### ◎ 有限加法的測度が誘導する外測度
 先の外面積の例では、図形を覆うように配置した有限個の長方形で、図形の面積を評価（＝図形の面積の過大評価の下限）したが、これを有限個→可算無限個の長方形で覆うようした上で、面積を評価するように拡張したのが、以下で定義する外測度である。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47503695-b274c280-d8a5-11e8-9218-990f0262890f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783008-fe5fb580-dd44-11e8-8a2b-ca16335700a2.png)<br>
 
 > 【Memo】<br>
 > カラテオドリ外測度や有限加法的測度が誘導する外測度の定義域が、べき集合なのはなんでや？と思ったけど、べき集合が最も要素数の多い σ-加法族であることと、測度が σ加法族を定義域とすることが理由<br>
@@ -372,18 +374,17 @@
 <a id="ID_6-5-1"></a>
 
 #### ☆ 劣加法性と σ-加法性
-![image](https://user-images.githubusercontent.com/25688193/47495359-e42e5f00-d88e-11e8-810a-a3d44f89a4f6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783039-13d4df80-dd45-11e8-8d1f-815f73641114.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47495384-f90af280-d88e-11e8-8d27-054ad0f582ec.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783079-34049e80-dd45-11e8-830f-7b2792fc2a6e.png)<br>
+
 
 <a id="ID_6-5-2"></a>
 
 #### ☆ 有限加法的測度が誘導する外測度の性質
-![image](https://user-images.githubusercontent.com/25688193/47495415-10e27680-d88f-11e8-9bef-36c78e0b0495.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783198-7037ff00-dd45-11e8-96a2-ea79c0469e6e.png)<br>
 
 - （証明略）<br>
-
-> 記載中...
 
 
 <a id="ID_7"></a>
@@ -419,9 +420,9 @@
 <a id="ID_7-2-1"></a>
 
 #### ☆ （有限加法的測度が誘導する外測度に関しての）可測集合
-半加法族 Θ を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47495628-8fd7af00-d88f-11e8-8a35-db5f3bdec584.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、可測集合なるものが導入できる。<br>
+半加法族 ![image](https://user-images.githubusercontent.com/25688193/47782571-dd4a9500-dd43-11e8-9907-41ff59ace3a1.png) を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47783490-2dc2f200-dd46-11e8-91e4-cfaf38c60e5f.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、可測集合なるものが導入できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47546041-4daf7b80-d92a-11e8-9f1a-41cc3d3aebe7.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783545-54812880-dd46-11e8-8813-47415a3f95f3.png)<br>
 
 
 <a id="ID_7-2-2"></a>
@@ -448,9 +449,9 @@
 <a id="ID_7-4-1"></a>
 
 #### ☆ （有限加法的測度が誘導する外測度に関しての）零集合
-半加法族 Θ を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47495628-8fd7af00-d88f-11e8-8a35-db5f3bdec584.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、零集合なるものが導入できる。<br>
+半加法族 ![image](https://user-images.githubusercontent.com/25688193/47782571-dd4a9500-dd43-11e8-9907-41ff59ace3a1.png) を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47783490-2dc2f200-dd46-11e8-91e4-cfaf38c60e5f.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、零集合なるものが導入できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47546220-32913b80-d92b-11e8-9685-d913ca4d55db.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783593-78446e80-dd46-11e8-81dd-297490d6dafc.png)<br>
 
 
 <a id="ID_7-5"></a>
@@ -471,9 +472,9 @@
 <a id="ID_7-5-2"></a>
 
 #### ☆ （有限加法的測度が誘導する外測度に関しての）完備測度
-半加法族 Θ を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47495628-8fd7af00-d88f-11e8-8a35-db5f3bdec584.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、完備測度なるものが導入できる。<br>
+半加法族 ![image](https://user-images.githubusercontent.com/25688193/47782571-dd4a9500-dd43-11e8-9907-41ff59ace3a1.png) を定義域とする有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47783490-2dc2f200-dd46-11e8-91e4-cfaf38c60e5f.png) が誘導する外測度 ![image](https://user-images.githubusercontent.com/25688193/47495705-c281a780-d88f-11e8-87ea-d0119195e496.png) は、先に見たように、カラテオドリの外測度でもあるので、カラテオドリの外測度のときと同様にして、完備測度なるものが導入できる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47565200-ac90e700-d962-11e8-8d5b-db4276b9ed8d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783669-acb82a80-dd46-11e8-9060-8ef94a217eb5.png)<br>
 
 - （証明）
     有限加法的測度が誘導する外測度は、カラテオドリ外測度でもあるので、<br>
@@ -516,7 +517,7 @@
 <a id="ID_8-4"></a>
 
 ### ◎ ルベーグ-スティルチェス測度、１次元ルベーグ測度
-![image](https://user-images.githubusercontent.com/25688193/47773097-46bea980-dd2c-11e8-89b0-2995297d6dd9.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47782354-5e555c80-dd43-11e8-9000-873abf71832a.png)<br>
 
 
 <a id="ID_8-5"></a>
@@ -540,15 +541,15 @@
 <a id="ID_9-1"></a>
 
 ### ◎ σ-有限な有限加法的測度
-![image](https://user-images.githubusercontent.com/25688193/47567552-d4d01400-d969-11e8-9e95-e6ecaab79d16.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783961-8fd02700-dd47-11e8-9798-fa82a55b0892.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47567579-e4e7f380-d969-11e8-8596-f8bcc0ab509f.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783928-6dd6a480-dd47-11e8-83c2-59aca3235db1.png)<br>
 
 - （証明略）<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47603724-1eccfe80-da2b-11e8-9d23-af628d324fe6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47783981-a0809d00-dd47-11e8-899b-3d30f77b4dfd.png)<br>
 
 - （証明略）<br>
 
@@ -560,13 +561,13 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47604866-00baca80-da3a-11e8-88aa-bc79451212a5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47784060-d58cef80-dd47-11e8-8fe5-78430d5609d7.png)<br>
 
 - （証明）<br>
     m-可測集合族 ![image](https://user-images.githubusercontent.com/25688193/47604808-796d5700-da39-11e8-8142-75ebb1ee4702.png) は、その定義（＝σ-加法性）より、σ-加法族である。<br>
-    従って、一方、半加法族 Θ は、σ-加法族より弱い条件になっているので、![image](https://user-images.githubusercontent.com/25688193/47604811-8b4efa00-da39-11e8-8e8f-17e11d6fa463.png) の関係が成り立つ。<br>
-    又、半加法族 Θ から生成される σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47604843-d6690d00-da39-11e8-90fb-ed399bf112d8.png) は、半加法族 Θ を含む ”最小の” σ-加法族なので、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/47604811-8b4efa00-da39-11e8-8e8f-17e11d6fa463.png) の関係より、![image](https://user-images.githubusercontent.com/25688193/47604836-bb969880-da39-11e8-8c09-5e005d435eb9.png) の関係が成り立つ。<br>
+    従って、一方、半加法族 ![image](https://user-images.githubusercontent.com/25688193/47782571-dd4a9500-dd43-11e8-9907-41ff59ace3a1.png) は、σ-加法族より弱い条件になっているので、![image](https://user-images.githubusercontent.com/25688193/47784080-e76e9280-dd47-11e8-8b25-b6326c32a05c.png) の関係が成り立つ。<br>
+    又、半加法族 ![image](https://user-images.githubusercontent.com/25688193/47782571-dd4a9500-dd43-11e8-9907-41ff59ace3a1.png) から生成される σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47784116-01a87080-dd48-11e8-96f2-a1c121901826.png) は、半加法族 ![image](https://user-images.githubusercontent.com/25688193/47782571-dd4a9500-dd43-11e8-9907-41ff59ace3a1.png) を含む ”最小の” σ-加法族なので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47784149-197ff480-dd48-11e8-9e9a-7f0aeafd27ac.png) の関係より、![image](https://user-images.githubusercontent.com/25688193/47784175-2b619780-dd48-11e8-8798-87b50b3813ab.png) の関係が成り立つ。<br>
 
 
 <a id="ID_9-3"></a>
@@ -576,43 +577,43 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47510918-156d5600-d8b4-11e8-90e8-809e5bfe174e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47784370-b2af0b00-dd48-11e8-980a-63a4802ead52.png)<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47566385-8b31fa00-d966-11e8-8616-a41cff780a9a.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47784411-da05d800-dd48-11e8-9737-25b83e859d38.png)<br>
 
 
 <a id="ID_9-4"></a>
 
 ### ◎ 測度の拡張の一意性
-抽象集合 X 上の σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) が、![image](https://user-images.githubusercontent.com/25688193/47566796-c123ae00-d967-11e8-8aa0-82d38a9df4c1.png) の関係を満たし、<br>
+抽象集合 X 上の σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) が、![image](https://user-images.githubusercontent.com/25688193/47784455-028dd200-dd49-11e8-87a0-2fa9abc5140f.png) の関係を満たし、<br>
 σ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47566753-99344a80-d967-11e8-9b90-e44183bc300e.png) を定義域とする抽象集合 X 上の２つの測度 ![image](https://user-images.githubusercontent.com/25688193/47566831-d6004180-d967-11e8-84ae-b1ab000df360.png) が、
-半加法族 Θ を定義域とする抽象集合 X 上の有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47566876-eca69880-d967-11e8-87e0-33b9ede1cb80.png) を拡張する場合において、<br>
-どのような場合に μ_1=μ_2  の関係、即ち、測度の一意性が成り立つであろうか？ということを考える。<br>
+半加法族 ![image](https://user-images.githubusercontent.com/25688193/47782571-dd4a9500-dd43-11e8-9907-41ff59ace3a1.png) を定義域とする抽象集合 X 上の有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47784475-146f7500-dd49-11e8-998f-c0ffafeaffb5.png) を拡張する場合において、<br>
+どのような場合に ![image](https://user-images.githubusercontent.com/25688193/47784520-310bad00-dd49-11e8-8428-4c8f09f1c48c.png) の関係、即ち、測度の一意性が成り立つであろうか？ということを考える。<br>
 
-この一意性の条件は、以下で見るように、有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47566876-eca69880-d967-11e8-87e0-33b9ede1cb80.png) とσ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) の両方が関わってくる。<br>
+この一意性の条件は、以下で見るように、有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47784475-146f7500-dd49-11e8-998f-c0ffafeaffb5.png) とσ-加法族 ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) の両方が関わってくる。<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47630337-8bf3a780-db83-11e8-84ae-7b5c555e85a5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47784606-70d29480-dd49-11e8-908b-bb06febd2e8e.png)<br>
 
 - （証明）<br>
 	先の補題（半加法族から生成されるσ-加法族と可測集合族）より、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/47630419-0290a500-db84-11e8-810b-50f0e65d2443.png) の関係が成り立つ。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47784629-7e881a00-dd49-11e8-93b4-5ab69b89b012.png) の関係が成り立つ。<br>
     一方、先の補題（σ-有限な有限加法的測度と測度の拡張）より、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/47630446-29e77200-db84-11e8-9c43-d8dcea5f1aae.png) の関係が成り立つ。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47784653-92338080-dd49-11e8-81f5-513c6f7692e6.png) の関係が成り立つ。<br>
     <br>
-    従って、任意の ![image](https://user-images.githubusercontent.com/25688193/47630478-5ef3c480-db84-11e8-8de6-06b0a6397ff5.png) の部分を ![image](https://user-images.githubusercontent.com/25688193/47630491-6f0ba400-db84-11e8-91be-dc43df30f34c.png) に置き換えると、<br>
-    ① 測度 ![image](https://user-images.githubusercontent.com/25688193/47630516-93678080-db84-11e8-8305-ac70c71f7fb2.png) は ![image](https://user-images.githubusercontent.com/25688193/47630531-ab3f0480-db84-11e8-96d6-1bbf9d2c0ad7.png) の測度の拡張なので、![image](https://user-images.githubusercontent.com/25688193/47630543-c01b9800-db84-11e8-853f-292d2c1ea79c.png)<br>
-    ② 測度 ![image](https://user-images.githubusercontent.com/25688193/47630579-f0fbcd00-db84-11e8-9c49-1b2e6ef70bf7.png) は ![image](https://user-images.githubusercontent.com/25688193/47630531-ab3f0480-db84-11e8-96d6-1bbf9d2c0ad7.png) の測度の拡張なので、![image](https://user-images.githubusercontent.com/25688193/47630564-d4f82b80-db84-11e8-9886-6aec6c358f0e.png)<br>
+    従って、任意の ![image](https://user-images.githubusercontent.com/25688193/47630478-5ef3c480-db84-11e8-8de6-06b0a6397ff5.png) の部分を ![image](https://user-images.githubusercontent.com/25688193/47784678-a5dee700-dd49-11e8-915f-db7659a28d4f.png) に置き換えると、<br>
+    ① 測度 ![image](https://user-images.githubusercontent.com/25688193/47630516-93678080-db84-11e8-8305-ac70c71f7fb2.png) は ![image](https://user-images.githubusercontent.com/25688193/47784719-c018c500-dd49-11e8-831f-97e925cdedae.png) の測度の拡張なので、![image](https://user-images.githubusercontent.com/25688193/47784743-d58def00-dd49-11e8-8550-d5dcbfa980c9.png)<br>
+    ② 測度 ![image](https://user-images.githubusercontent.com/25688193/47630579-f0fbcd00-db84-11e8-9c49-1b2e6ef70bf7.png) は ![image](https://user-images.githubusercontent.com/25688193/47784719-c018c500-dd49-11e8-831f-97e925cdedae.png) の測度の拡張なので、![image](https://user-images.githubusercontent.com/25688193/47784763-e63e6500-dd49-11e8-81df-2b187bcf5e12.png)<br>
 
     従って、この２つの関係式より、<br>
     ![image](https://user-images.githubusercontent.com/25688193/47630593-083aba80-db85-11e8-8939-941d67a8e43d.png) となり、![image](https://user-images.githubusercontent.com/25688193/47630614-20123e80-db85-11e8-84c0-79a5f3f892ab.png) の関係が成り立つ。<br>
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47630662-5b147200-db85-11e8-9fb5-2a4211271689.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47784786-f8200800-dd49-11e8-8314-76f0da599418.png)<br>
 
 - （証明）<br>
     先の測度の拡張の一意性 ![image](https://user-images.githubusercontent.com/25688193/47630614-20123e80-db85-11e8-84c0-79a5f3f892ab.png) より、測度を元に行われるルベーグ積分<br>
@@ -715,7 +716,7 @@
         関数 ![image](https://user-images.githubusercontent.com/25688193/47780800-77f4a500-dd3f-11e8-99ea-40288a7102ee.png) は、半加法族 ![image](https://user-images.githubusercontent.com/25688193/47780497-d8371700-dd3e-11e8-913b-cd77f28e1b49.png) から生成された σ-加法族を定義域としており、
 		又、測度の条件（非負値、σ加法性）を満たすので、測度である。<br>
 		一方、有限加法的測度 ![image](https://user-images.githubusercontent.com/25688193/47780859-a1adcc00-dd3f-11e8-9899-899225c016ed.png) は、半加法族 ![image](https://user-images.githubusercontent.com/25688193/47780497-d8371700-dd3e-11e8-913b-cd77f28e1b49.png) を定義域としているが、<br>
-		![image](https://user-images.githubusercontent.com/25688193/47780903-c144f480-dd3f-11e8-8ba3-93373cbf51f2.png) の関係より、これを拡張した測度でもある。<br>
+		![image](https://user-images.githubusercontent.com/25688193/47784270-6b287f00-dd48-11e8-8cdd-2902ed9431ca.png) の関係より、これを拡張した測度でもある。<br>
 
 
 <a id="ID_10-3"></a>
