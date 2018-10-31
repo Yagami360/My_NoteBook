@@ -289,7 +289,7 @@ R 上で定義された非減少関数 v:R→R+ に対して、<br>
 ここでは、先の概要（測度に基づく積分）で述べたことを、改めて、より一般的な形式で厳密に定義する。<br>
 
 尚、以下の議論では、σ加法族 ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) の対象空間として、d 次元ユークリッド空間 ![image](https://user-images.githubusercontent.com/25688193/47611941-21733680-dab3-11e8-9731-dc66ce51d79c.png) ではなく、より抽象的・一般的な抽象集合 X で定義する。<br>
-こうすることで、ルベーグ積分をより、一般的で広範囲た対象のものとして扱える。<br>
+こうすることで、ルベーグ積分をより、一般的で広範囲な対象のものとして扱える。<br>
 そして、この抽象集合 X の最も典型的なものが、ユークリッド空間 ![image](https://user-images.githubusercontent.com/25688193/47611941-21733680-dab3-11e8-9731-dc66ce51d79c.png) であるという位置づけになる。<br>
 
 <a id="σ-加法族（完全加法族）"></a>
@@ -310,7 +310,7 @@ R 上で定義された非減少関数 v:R→R+ に対して、<br>
 以下、<br>
 ![image](https://user-images.githubusercontent.com/25688193/47612031-4072c800-dab5-11e8-8748-0054d257b0de.png)<br>
 という文言を、この測度空間の言葉を用いて<br>
-![image](https://user-images.githubusercontent.com/25688193/47491814-96155d80-d886-11e8-8617-ccff76fb3993.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47795757-67a3f080-dd66-11e8-8add-87b9f2136926.png)<br>
 と記述する。<br>
 
 
