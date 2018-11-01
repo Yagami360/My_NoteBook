@@ -1,6 +1,8 @@
 # 測度論 [measure theory] / ルベーグ積分 [Lebesgue integral]
 測度論とルベーグ積分の基本事項を記載したマイノートです。随時追記中。<br>
 
+![image](https://user-images.githubusercontent.com/25688193/47851160-186bc780-de1b-11e8-8c1c-df4de921564a.png)<br>
+
 ## 目次 [Contents]
 
 1. [概要](#概要)
@@ -182,11 +184,11 @@
 その上で、この操作（写像）μ の加法性を定義するのであるが、この加法性を定めるには、予め図形のリストの形状（大きさ）に関する構造が定まっている必要がある。<br>
 そのためにまずは、以下のように定義される σ-加法族なるものを導入する。<br>
 <br>
-![image](https://user-images.githubusercontent.com/25688193/47844469-e1d78200-de05-11e8-93e5-6ec39e2ffe1e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47849264-4e597d80-de14-11e8-8b51-29d7077363c3.png)<br>
 <br>
-その上で、この図形のリスト ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) を測る操作（＝写像） μ に対しての加法性を導入し、以下のように測度として定義する。<br>
+その上で、σ-加法族であるこの図形のリスト ![image](https://user-images.githubusercontent.com/25688193/47611932-03a5d180-dab3-11e8-8e19-ec65315f2b88.png) を測る操作（＝写像） μ に対しての加法性を導入し、以下のように測度として定義する。<br>
 <br>
-![image](https://user-images.githubusercontent.com/25688193/47844585-1c411f00-de06-11e8-9584-bf6b93e0c126.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47849367-a7c1ac80-de14-11e8-80a3-a06deb93ab76.png)<br>
 
 <!--
 この測度の中で、特に面積に関する測度が、ルベーグ積分となる。<br>
@@ -230,6 +232,8 @@
 > 以下はその概要説明。<br>
 
 <br>
+
+![image](https://user-images.githubusercontent.com/25688193/47851160-186bc780-de1b-11e8-8c1c-df4de921564a.png)<br>
 
 測度論で扱われる測度の構成には、以下のような方法がある。<br>
 ① σ-加法族を定義域とする測度の構成<br>
@@ -330,18 +334,21 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 
 ⑤ ルベーグ-スティルチェス測度<br>
 ルベーグ-スティルチェス外測度 ![image](https://user-images.githubusercontent.com/25688193/47808552-eeb29200-dd81-11e8-90a9-1d470c78c515.png) は、べき集合を定義域としているが、<br>
-ルベーグ-スティルチェス可測集合族 ![image](https://user-images.githubusercontent.com/25688193/47808757-6b457080-dd82-11e8-9944-1b7092ae86d3.png) を定義域として制限した測度 ![image](https://user-images.githubusercontent.com/25688193/47808777-7b5d5000-dd82-11e8-8601-820bd0a3eb52.png) は、完備測度となる。<br>
-そして、この完備測度 ![image](https://user-images.githubusercontent.com/25688193/47808800-8b752f80-dd82-11e8-85f1-571480f6eff6.png) を、右連続な非減少関数 v:I→R が誘導するルベーグ-スティルチェス測度という。<br>
+ルベーグ-スティルチェス可測集合族 ![image](https://user-images.githubusercontent.com/25688193/47808757-6b457080-dd82-11e8-9944-1b7092ae86d3.png) を定義域として制限した測度 ![image](https://user-images.githubusercontent.com/25688193/47808777-7b5d5000-dd82-11e8-8601-820bd0a3eb52.png) は、σ-加法性を持ち、測度になる。<br>
+そして、この測度 ![image](https://user-images.githubusercontent.com/25688193/47808800-8b752f80-dd82-11e8-85f1-571480f6eff6.png) を、右連続な非減少関数 v:I→R が誘導するルベーグ-スティルチェス測度という。<br>
+
 - このルベーグ-スティルチェス測度に対しては、σ-加法性の条件が成り立ち、集合の面積の分割前と分割後の面積が一致するので、測度になりえる。<br>
+- 更に、定義域を可測集合族 ![image](https://user-images.githubusercontent.com/25688193/47808757-6b457080-dd82-11e8-9944-1b7092ae86d3.png) からボレル集合族 ![image](https://user-images.githubusercontent.com/25688193/47851379-d42cf700-de1b-11e8-9a7f-5ea46d958c50.png) へ制限した測度 ![image](https://user-images.githubusercontent.com/25688193/47851408-e313a980-de1b-11e8-9b22-aea73aeaea5f.png) は、完備測度になる。<br>
 
 <br>
 
 ⑥ １次元ルベーグ測度<br>
 ルベーグ-スティルチェス測度において、<br>
-特に、非減少関数 v ではなく恒等写像 I が誘導するルベーグ-スティルチェル外測度を、１次元ルベーグ測度 λ という。<br>
+特に、非減少関数 v ではなく恒等写像が誘導するルベーグ-スティルチェル外測度を、１次元ルベーグ測度 λ という。<br>
 - このルベーグ測度に対しては、σ-加法性の条件が成り立ち、集合の面積の分割前と分割後の面積が一致するので、測度になりえる。<br>
+- 更に、定義域をルベーグ可測集合族 ![image](https://user-images.githubusercontent.com/25688193/47851495-22da9100-de1c-11e8-90cd-ca7c7b697ab1.png) からボレル集合族 ![image](https://user-images.githubusercontent.com/25688193/47851379-d42cf700-de1b-11e8-9a7f-5ea46d958c50.png) へ制限した測度 ![image](https://user-images.githubusercontent.com/25688193/47851531-3be34200-de1c-11e8-88d2-0dcf5283260b.png) は、完備測度になる。<br>
 
----
+
 
 <a id="σ-加法族を定義域とする測度"></a>
 
@@ -568,7 +575,7 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 <a id="完備測度、完備測度空間"></a>
 
 ### ◎ 完備測度、完備測度空間
-![image](https://user-images.githubusercontent.com/25688193/47543720-995c2800-d91e-11e8-81ce-856e7f7d0379.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47850069-4cdd8480-de17-11e8-8468-530b0f161ac4.png)<br>
 
 
 <a id="（カラテオドリ外測度に関しての）完備測度、完備測度空間"></a>
