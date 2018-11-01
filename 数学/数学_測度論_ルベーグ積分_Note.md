@@ -1,7 +1,7 @@
 # 測度論 [measure theory] / ルベーグ積分 [Lebesgue integral]
 測度論とルベーグ積分の基本事項を記載したマイノートです。随時追記中。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47851950-887b4d00-de1d-11e8-84e3-6da99ac666ac.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47861490-46aad080-de36-11e8-97df-2237c1095467.png)<br>
 
 ## 目次 [Contents]
 
@@ -233,7 +233,7 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47851160-186bc780-de1b-11e8-8c1c-df4de921564a.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47861490-46aad080-de36-11e8-97df-2237c1095467.png)<br>
 
 測度論で扱われる測度の構成には、以下のような方法がある。<br>
 ① σ-加法族を定義域とする測度の構成<br>
@@ -763,7 +763,7 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 
 このボレル集合族を定義域とする測度は、ボレル測度と呼ばれ、一意に定まる測度となる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47543411-14244380-d91d-11e8-9cc5-e9940bc91008.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47860246-73111d80-de33-11e8-9f88-cf0f137d2909.png)<br>
 
 
 <a id="ルベーグ測度の一意性と完備化（ボレル集合族上のルベーグ測度）"></a>
@@ -861,7 +861,7 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 
 この２次元ボレル集合族を定義域とする測度は、２次元ボレル測度と呼ばれ、一意に定まる測度となる。
 
-![image](https://user-images.githubusercontent.com/25688193/47781293-b9d21b00-dd40-11e8-932e-106158eb7270.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47860353-ae135100-de33-11e8-9638-af49c1b65fc8.png)<br>
 
 
 <a id="２次元ルベーグ測度の一意性と完備化"></a>
