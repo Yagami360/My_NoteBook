@@ -1,7 +1,7 @@
 # 測度論 [measure theory] / ルベーグ積分 [Lebesgue integral]
 測度論とルベーグ積分の基本事項を記載したマイノートです。随時追記中。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47851160-186bc780-de1b-11e8-8c1c-df4de921564a.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47851950-887b4d00-de1d-11e8-84e3-6da99ac666ac.png)<br>
 
 ## 目次 [Contents]
 
