@@ -67,6 +67,10 @@
     1. [ファトゥの補題](#ファトゥの補題)
     1. [単調収束定理](#単調収束定理)
     1. [ルベーグの収束定理](#ルベーグの収束定理)
+    1. [フビニの定理](#フビニの定理)
+        1. [直積集合の断面（切り口）](#直積集合の断面（切り口）)
+        1. [非負可測関数に対してのフビニの定理（フビニ-トネリの定理）](#非負可測関数に対してのフビニの定理（フビニ-トネリの定理）)
+        1. [完備化に対してのフビニの定理](#完備化に対してのフビニの定理)
 1. [測度０の集合（零集合）の扱い](#測度０の集合（零集合）の扱い)
     1. [ほとんどいたるところ [almost everyewhere]](#ほとんどいたるところ)
     1. [積分の定義のほとんどいたるところを用いた表現](#積分の定義のほとんどいたるところを用いた表現)
@@ -884,7 +888,7 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 ### ◎ 直積測度
 先の２次元ルベーグ測度に関しての議論を、測度の直積の観点から一般化することで、以下のような、直積測度を導入出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47781521-38c75380-dd41-11e8-96ab-356b41b5a699.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47908743-398eef80-ded1-11e8-9a70-3e4465d3f803.png)<br>
 
 <br>
 
@@ -908,7 +912,7 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 ## ■ ルベーグ積分の性質
 
 > 【Memo】 リーマン積分 ↔ ルベーグ積分の定理の対応関係<br>
-> ![image](https://user-images.githubusercontent.com/25688193/47612480-8b450d80-dabe-11e8-9381-1f9d0561bbb5.png)<br>
+> ![image](https://user-images.githubusercontent.com/25688193/47908680-0cdad800-ded1-11e8-8d35-e6edabb1f05f.png)<br>
 
 > 記載中...
 
@@ -1073,12 +1077,72 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 
 - （証明略）<br>
 
+
+<a id="フビニの定理"></a>
+
+### ◎ フビニの定理
+先に議論した測度の直積に対して、その断面（切り口）からルベーグ積分の性質（多重積分の積分の交換可能性）を述べたものがフビニの定理となる。<br>
+以下、そのことを見ていく。<br>
+
+
+<a id="直積集合の断面（切り口）"></a>
+
+#### ☆ 直積集合の断面（切り口）
+まず、直積集合に対する断面（切り口）なる概念を導入する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47906891-8375d680-decd-11e8-96aa-29855612a8e9.png)<br>
+
+ここでの主目的であるフビニの定理は、ルベーグ積分、即ち、可測関数の積分での性質なので、この断面の可側性（＝断面が可測集合、断面上の可測関数）を導入する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47906949-9ee0e180-decd-11e8-8955-44828cf1842e.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47906973-ae602a80-decd-11e8-9913-918b3a431386.png)<br>
+
+
+<a id="非負可測関数に対してのフビニの定理（フビニ-トネリの定理）"></a>
+
+#### ☆ 非負可測関数に対してのフビニの定理（フビニ-トネリの定理）
+この可測関数である切り口関数 ![image](https://user-images.githubusercontent.com/25688193/47907071-e23b5000-decd-11e8-9e19-27b3aee16f25.png) として、ルベーグ積分を採用（![image](https://user-images.githubusercontent.com/25688193/47907174-0eef6780-dece-11e8-93dd-1ce49a2c278b.png)）したときに、重積分の交換可能性の性質を述べたものが、以下の（非負可測関数に対しての）フビニの定理となる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47907239-2dedf980-dece-11e8-8543-d73899974125.png)<br>
+
+- （証明）<br>
+	関数の点列 ![image](https://user-images.githubusercontent.com/25688193/47907344-6beb1d80-dece-11e8-8ab0-eb1b77eea6ba.png) に対して、以下のような関数を考えると、この関数は可測関数である。（途中計算略）<br>
+    ここで、この関数の点列 ![image](https://user-images.githubusercontent.com/25688193/47907344-6beb1d80-dece-11e8-8ab0-eb1b77eea6ba.png) に単調収束定理<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47907409-8cb37300-dece-11e8-8836-103ac27ffc60.png)<br>
+    を適用すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47908057-d2bd0680-decf-11e8-9c51-7edc655fa323.png)<br>
+    の関係が成り立つことが分かる。<br>
+    <br>
+    一方、測度 ![image](https://user-images.githubusercontent.com/25688193/47908110-eff1d500-decf-11e8-80f6-706944aed145.png) に対しての積分に、単調収束定理を適用すると、以下のような関係式が得られる。（途中計算略）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47908158-01d37800-ded0-11e8-8f40-d220622a5d9c.png)<br>
+    <br>
+    先の関係式と合わせると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47908193-157ede80-ded0-11e8-8595-36c7a38c44d0.png)<br>
+    <br>
+    ここで、この式の右辺の累次積分は、直積測度による積分 ![image](https://user-images.githubusercontent.com/25688193/47908256-2d566280-ded0-11e8-9311-5634b4c42c25.png) に等しい（途中計算略）ので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47908324-5119a880-ded0-11e8-8c37-3184bfe99f10.png)<br>
+
+
+<a id="完備化に対してのフビニの定理"></a>
+
+#### ☆ 完備化に対してのフビニの定理
+先の非負可測関数に対してのフビニの定理は、２次元ルベーグ測度に伴うルベーグ積分に対しては、適用出来ないという問題が存在する。<br>
+これは、直積測度から得られるルベーグ可測集合族を定義域とする２次元ルベーグ測度が、必ずしも完備測度ではなく、２次元ボレル集合族を定義域とする２次元ルベーグ測度で完備化されることに起因する問題である。<br>
+
+このような場合においては、以下で議論するような ”完備化に対しての” のフビニの定理が必要となる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47908488-a3f36000-ded0-11e8-863f-0fac73d9e16f.png)<br>
+
+
 ---
 
 <a id="測度０の集合（零集合）の扱い"></a>
 
 ## ■ 測度０の集合（零集合）の扱い
+<!--
 > 記載中...
+-->
 
 <a id="ほとんどいたるところ"></a>
 
