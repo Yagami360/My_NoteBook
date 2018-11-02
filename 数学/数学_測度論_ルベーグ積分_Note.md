@@ -1,7 +1,7 @@
 # 測度論 [measure theory] / ルベーグ積分 [Lebesgue integral]
 測度論とルベーグ積分の基本事項を記載したマイノートです。随時追記中。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47861763-dcdef680-de36-11e8-96bc-4bd7571efc3d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47888822-e776ab80-de89-11e8-9d51-77a4da401f0a.png)<br>
 
 ## 目次 [Contents]
 
@@ -233,7 +233,7 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47861763-dcdef680-de36-11e8-96bc-4bd7571efc3d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47888822-e776ab80-de89-11e8-9d51-77a4da401f0a.png)<br>
 
 測度論で扱われる測度の構成には、以下のような方法がある。<br>
 ① σ-加法族を定義域とする測度の構成<br>
@@ -751,7 +751,7 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 測度空間が、完備測度でない場合において、測度が０となる零集合を、積分の計算結果に影響しないものとしてうまく除外できないために、積分の操作が厄介なものとなる。<br>
 このような場合は、以下に定義する完備化という操作によって、測度空間を予め完備にすることになる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47637491-3200db00-db9f-11e8-8d76-f177f09e567a.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47888959-a7fc8f00-de8a-11e8-94fd-c8a38253c829.png)<br>
 
 
 <a id="ボレル集合族、ボレル測度"></a>
