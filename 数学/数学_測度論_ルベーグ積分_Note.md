@@ -366,7 +366,7 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 <a id="σ-加法族（完全加法族）"></a>
 
 ### ◎ σ-加法族（完全加法族）
-![image](https://user-images.githubusercontent.com/25688193/47844664-4c88bd80-de06-11e8-9c14-7631e755a276.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47921243-77067380-def7-11e8-9ad4-519fb18f2647.png)<br>
 
 
 <a id="測度、測度空間"></a>
