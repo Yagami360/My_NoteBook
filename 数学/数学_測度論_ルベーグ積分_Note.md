@@ -1,7 +1,7 @@
 # 測度論 [measure theory] / ルベーグ積分 [Lebesgue integral]
 測度論とルベーグ積分の基本事項を記載したマイノートです。随時追記中。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47889151-cdd66380-de8b-11e8-9f03-4e79c1865dde.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47891568-15aeb800-de97-11e8-9b67-4849b64bf474.png)<br>
 
 ## 目次 [Contents]
 
@@ -233,7 +233,7 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47889151-cdd66380-de8b-11e8-9f03-4e79c1865dde.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47891568-15aeb800-de97-11e8-9b67-4849b64bf474.png)<br>
 
 測度論で扱われる測度の構成には、以下のような方法がある。<br>
 ① σ-加法族を定義域とする測度の構成<br>
