@@ -1,7 +1,7 @@
 # 測度論 [measure theory] / ルベーグ積分 [Lebesgue integral]
 測度論とルベーグ積分の基本事項を記載したマイノートです。随時追記中。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47891568-15aeb800-de97-11e8-9b67-4849b64bf474.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47948479-5b41b280-df75-11e8-8f84-76c78fcec2f4.png)<br>
 
 ## 目次 [Contents]
 
@@ -237,7 +237,7 @@
 
 <br>
 
-![image](https://user-images.githubusercontent.com/25688193/47891568-15aeb800-de97-11e8-9b67-4849b64bf474.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47948479-5b41b280-df75-11e8-8f84-76c78fcec2f4.png)<br>
 
 測度論で扱われる測度の構成には、以下のような方法がある。<br>
 ① σ-加法族を定義域とする測度の構成<br>
@@ -1259,7 +1259,10 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 <a id="ルベーグ積分の具体的な計算（一次元ルベーグ積分）"></a>
 
 ## ■ ルベーグ積分の具体的な計算（一次元ルベーグ積分）
-ルベーグ積分の具体的な計算として、まずは、１次元区間上の積分を見てみる。<br>
+ルベーグ積分の計算結果とリーマン積分の計算結果自体に違いは存在しないが、積分可能な関数の種類に違いが存在する。（リーマン積分のほうがより多くの関数で積分出来る。）<br>
+具体的には、リーマン積分は、区分的に滑らかな関数のみ積分可能であるが、ルベーグ積分は、区分的に滑らかでない、いたるところで不連続な関数（ディリクレ関数など）においても積分可能となる。<br>
+
+ここでは、ルベーグ積分の具体的な計算として、まずは、１次元区間上の積分を見てみる。<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/47494305-50f42a00-d88c-11e8-84a7-ca7ad0e151d3.png)<br>
 
