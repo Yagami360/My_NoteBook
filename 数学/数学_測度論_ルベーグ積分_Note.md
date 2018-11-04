@@ -69,6 +69,7 @@
     1. [積分の定義のほとんどいたるところを用いた表現](#積分の定義のほとんどいたるところを用いた表現)
 1. [ルベーグ積分の性質](#ルベーグ積分の性質)
     1. [各点収束と概収束](#各点収束と概収束)
+    1. [積分と級数の交換可能性（項別積分可能性）](#積分と級数の交換可能性（項別積分可能性）)
     1. [エゴロフの定理](#エゴロフの定理)
     1. [ファトゥの補題](#ファトゥの補題)
     1. [単調収束定理](#単調収束定理)
@@ -1053,8 +1054,8 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 即ち、各性質、定理に関して、以下のような違いが存在する。<br>
 
 - 「積分と級数の交換（項別積分）」<br>
-	リーマン積分における 「積分と級数の交換（項別積分）」 では、積分対象の関数の点列 ![image](https://user-images.githubusercontent.com/25688193/47961395-80a1ef80-e04d-11e8-9f19-8fac90fbbf2c.png) に対しての関数の点列 ![image](https://user-images.githubusercontent.com/25688193/47961387-68ca6b80-e04d-11e8-8015-434b97a3e176.png) が、一様収束しなければならない。<br>
-    一方、これに対応するルベーグ積分における「積分と級数の交換（項別積分）」では、このような強い制約は必要ではなく、積分対象関数の点列 ![image](https://user-images.githubusercontent.com/25688193/47961395-80a1ef80-e04d-11e8-9f19-8fac90fbbf2c.png) が可積分でありさえすれば良い。<br>
+	リーマン積分における 「積分と級数の交換（項別積分）」 では、積分対象の関数の点列 ![image](https://user-images.githubusercontent.com/25688193/47961395-80a1ef80-e04d-11e8-9f19-8fac90fbbf2c.png) に対しての関数の点列 ![image](https://user-images.githubusercontent.com/25688193/47964422-389ac100-e07d-11e8-8958-42b7910a7097.png) が、一様収束しなければならない。<br>
+    一方、これに対応するルベーグ積分における「積分と級数の交換（項別積分）」では、このような強い制約は必要ではなく、積分対象関数の点列 ![image](https://user-images.githubusercontent.com/25688193/47961395-80a1ef80-e04d-11e8-9f19-8fac90fbbf2c.png) が可測関数でありさえすれば良い。<br>
 
 - 「極限と積分の交換」 と 「ルベーグの収束定理」<br>
     リーマン積分における 「極限と積分の交換」 では、積分対象の関数の点列 ![image](https://user-images.githubusercontent.com/25688193/47961395-80a1ef80-e04d-11e8-9f19-8fac90fbbf2c.png) が、ある共通の定数 K に対して、連続関数で一様収束 ![image](https://user-images.githubusercontent.com/25688193/47961422-07ef6300-e04e-11e8-90ba-44828ac4e376.png) しなければならない。<br>
@@ -1083,6 +1084,23 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 ![image](https://user-images.githubusercontent.com/25688193/47963596-b22cb200-e071-11e8-97a2-cafc4586d11b.png)<br>
 
 
+<a id="積分と級数の交換可能性（項別積分可能性）"></a>
+
+### ◎ 積分と級数の交換可能性（項別積分可能性）
+まず、ルベーグの基本的な性質として、積分と級数の交換可能性、即ち、項別積分可能性について示す。<br>
+この性質は、後述の単調収束定理と同じ意味合いを持ち、又、実際のルベーグ積分の具体的な計算でも、重宝する性質となる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/47964554-1b66f200-e07f-11e8-96ad-b2d9966feb99.png)<br>
+
+- （証明略）証明の概略のみ記載<br>
+    関数 ![image](https://user-images.githubusercontent.com/25688193/47964745-726dc680-e081-11e8-927a-93f7a4b4a752.png) は、可測関数の和なので、可測関数である。<br>
+    又、積分の線形性（後述）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47964750-83b6d300-e081-11e8-91d2-d87b913450dc.png)<br>
+    と単調収束定理（後述）<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47964757-93361c00-e081-11e8-99d2-9dc4c8d9f734.png)<br>
+    の関係を合わせれば、項別積分の関係が成り立つ。<br>
+
+
 <a id="エゴロフの定理"></a>
 
 ### ◎ エゴロフの定理
@@ -1100,9 +1118,9 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 このエゴロフの定理を用いれば、<br>
 積分の基本性質である、「（単関数における）極限と積分の順序の交換可能性」を示すことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47963129-d1741100-e06a-11e8-820a-dc5121b140b4.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47964677-b6140080-e080-11e8-8d58-fd57d4cff75e.png)<br>
 
-- （証明略）図より自明<br>
+- （証明略）<br>
 
 <!--
 - （証明）<br>
@@ -1115,7 +1133,7 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 単調収束定理やルベーグ収束定理を示すための前段階として、以下のファトゥの補題を示す。<br>
 このファトゥの補題は、先の単関数に対する極限と積分の交換可能性の性質を、可測関数、即ちルベーグ積分に拡張したものになっている。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47612487-b16aad80-dabe-11e8-9702-56434a64fb35.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47964594-9f20de80-e07f-11e8-8f9f-1dd3bea7d6e4.png)<br>
 
 - （証明略）<br>
 
@@ -1125,23 +1143,19 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 ### ◎ 単調収束定理
 ファトゥの補題を用いれば、以下の単調収束定理を示すことが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47612505-158d7180-dabf-11e8-87a4-115f9fad2459.png)<br>
-
-<!-- ブログ用
-![image](https://user-images.githubusercontent.com/25688193/47963699-fd939000-e072-11e8-9ee8-d76134467b07.png)<br>
--->
+![image](https://user-images.githubusercontent.com/25688193/47964604-cbd4f600-e07f-11e8-8d82-99321a02ceed.png)<br>
 
 - （証明）<br>
-    定理の参考図にも示しているように、<br>
-    可測集合 ![image](https://user-images.githubusercontent.com/25688193/47612510-2807ab00-dabf-11e8-8527-a48de0e63b2e.png) 上で、可測関数の単調増加の点列 ![image](https://user-images.githubusercontent.com/25688193/46940732-64d9a800-d0a4-11e8-93cc-a42a39f3f0c0.png) に対しては、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47964627-1a829000-e080-11e8-8d8e-0c75bec50fb6.png)<br>
+    可測集合 ![image](https://user-images.githubusercontent.com/25688193/47612510-2807ab00-dabf-11e8-8527-a48de0e63b2e.png) 上で、可測関数の単調増加の点列 ![image](https://user-images.githubusercontent.com/25688193/46940732-64d9a800-d0a4-11e8-93cc-a42a39f3f0c0.png) に対しては、上図のように<br>
     ![image](https://user-images.githubusercontent.com/25688193/46940770-78850e80-d0a4-11e8-8054-f292ee538398.png)<br>
     の関係が成り立つので、これを、ファトゥの補題の関係式<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46941100-4a53fe80-d0a5-11e8-9619-12dc0c841223.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47964635-2b330600-e080-11e8-9e20-387d02253e2c.png)<br>
     に代入すると、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46941157-6fe10800-d0a5-11e8-834a-015288ce09a0.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47964640-3be37c00-e080-11e8-9a68-9750e768d7d6.png)<br>
     <br>
     また、積分の単調性の性質 ![image](https://user-images.githubusercontent.com/25688193/46941739-cb5fc580-d0a6-11e8-8c09-c4ce1ea909b1.png) より、<br>
-    ![image](https://user-images.githubusercontent.com/25688193/46941801-e3374980-d0a6-11e8-9ad5-af7cb7797e4a.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/47964656-4e5db580-e080-11e8-99a6-915f9aed3fe8.png)<br>
 
 
 <a id="ルベーグ収束定理"></a>
@@ -1160,25 +1174,21 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 ### ◎ 各種収束定理のほとんどいたるところを用いた表現
 ほとんどいたるところで定義された関数や概収束の概念を用いると、全ての点で収束するとは言えないような関数列に対しても、先の各点収束の意味での各種収束定理（単調収束定理、ルベーグの収束定理）を適用できるようになる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47612572-db24d400-dac0-11e8-8219-3807a0e8f827.png)<br>
-
-<!-- ブログ用
 ![image](https://user-images.githubusercontent.com/25688193/47963945-5f092e00-e076-11e8-9cf0-eacf57efae7c.png)<br>
--->
 
-- （証明略）<br>
+- （証明略）先の各点収束での単調収束定理と同様<br>
 
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/47612588-44a4e280-dac1-11e8-81dd-b61826256c8f.png)<br>
 
-- （証明略）<br>
+- （証明略）先の各点収束でのファトゥの補題と同様<br>
 
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/47963976-b8715d00-e076-11e8-8e2a-e44284708c43.png)<br>
 
-- （証明略）<br>
+- （証明略）先の各点収束でのルベーグの収束定理定理と同様<br>
 
 
 <a id="フビニの定理"></a>
@@ -1312,17 +1322,27 @@ R 上で定義された非減少関数 v:R→R に対して、<br>
 
 ### ◎ ルベーグ積分のその他の基本的性質
 以下、ルベーグ積分に関しての、その他の基本的な性質を見ていく。<br>
+
 まずは、測度 μ の有限加法性に起因する性質を見ていく。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/47612434-bc710e00-dabd-11e8-80ae-6e44e2d820ae.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/47964938-cf6a7c00-e083-11e8-873a-4bd4298d6a34.png)<br>
 
-- （証明略）
+- （証明略）測度 μ の有限加法性を用いて証明出来る。
 
 <br>
 
 次に、σ-加法性に起因する性質を見ていく。<br>
 
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/47965045-2cb2fd00-e085-11e8-8cba-afdeff8abc78.png)<br>
+
+- （証明略）測度 μ の σ-加法性を用いて証明出来る。
+
+<br>
+
+最後に、ルベーグ積分の線形性について見ていく。<br>
+![image](https://user-images.githubusercontent.com/25688193/47964978-34be6d00-e084-11e8-8c85-e1efb1465141.png)<br>
+
+- （証明略）先の単調関数のルベーグ積分の線形性を参考<br>
 
 
 ---
