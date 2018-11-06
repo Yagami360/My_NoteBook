@@ -498,7 +498,7 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 
 この定理（フーリエ変換の形をした埋め込み写像による再生核ヒルベルト空間の構成）を用いれば、各々の正定値カーネル（RBFカーネル等）に対しての再生核ヒルベルトのフーリエ変換での具体的な表示を得ることが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/48070875-3884f780-e21c-11e8-9560-72be2061eda1.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48072833-bf3bd380-e220-11e8-984c-70cfcb3dc2da.png)<br>
 
 
 <a id="RBFカーネルの再生核ヒルベルトのフーリエ変換での具体的な構成"></a>
