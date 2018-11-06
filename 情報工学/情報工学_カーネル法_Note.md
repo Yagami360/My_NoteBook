@@ -421,7 +421,7 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 <br>
 
 ![image](https://user-images.githubusercontent.com/25688193/48071077-bea13e00-e21c-11e8-9ab2-e25f3c4a2875.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/48071123-d8428580-e21c-11e8-903e-487f5e83709e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48073166-818b7a80-e221-11e8-9e1e-8c8f10395e3a.png)<br>
 
 <!--
 ![image](https://user-images.githubusercontent.com/25688193/48049645-9ac10680-e1e2-11e8-8da7-35c06bceedc3.png)<br>
@@ -478,7 +478,7 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 
 ![image](https://user-images.githubusercontent.com/25688193/48070689-d1ffd980-e21b-11e8-8267-57173ec20566.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/48071185-04f69d00-e21d-11e8-9155-fb8d7db23f4e.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/48070834-260abe00-e21c-11e8-94b8-5f2f11b48506.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48073456-260dbc80-e222-11e8-9bb4-1ac78b895446.png)<br>
 
 <!--
 > 以下の事項を、１つの定理としてまとめること。<br>
@@ -498,7 +498,7 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 
 この定理（フーリエ変換の形をした埋め込み写像による再生核ヒルベルト空間の構成）を用いれば、各々の正定値カーネル（RBFカーネル等）に対しての再生核ヒルベルトのフーリエ変換での具体的な表示を得ることが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/48072833-bf3bd380-e220-11e8-984c-70cfcb3dc2da.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48073514-45a4e500-e222-11e8-8330-09d855b76142.png)<br>
 
 
 <a id="RBFカーネルの再生核ヒルベルトのフーリエ変換での具体的な構成"></a>
