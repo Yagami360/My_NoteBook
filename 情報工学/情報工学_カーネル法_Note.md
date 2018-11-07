@@ -629,8 +629,29 @@ Schoenberg の定理は、先に導入した負定値カーネルと正定値カ
 
 <br>
 
-> 記載中...
+![image](https://user-images.githubusercontent.com/25688193/48127546-5491a300-e2c7-11e8-861d-a764fb62f132.png)<br>
 
+- （証明）<br>
+    - 「⇐」 の方向証明<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48133038-d3430c00-e2d8-11e8-8f08-18f63e090f53.png) を Tayler 展開すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48133060-e950cc80-e2d8-11e8-998c-9c0c780ee2bf.png)<br>
+        １次の項まで採用して、変形すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48133109-0ab1b880-e2d9-11e8-8758-264cc274406d.png)<br>
+        今、![image](https://user-images.githubusercontent.com/25688193/48133038-d3430c00-e2d8-11e8-8f08-18f63e090f53.png) は負定値カーネルであるので、この逆符号の関数をもつ上式は、正定値カーネルとなる。<br>
+        <br>
+    - 「⇒」 の方向の証明<br>
+        先の補題（正定値カーネルと負定値カーネルの同値関係）に対応した関数<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48133167-451b5580-e2d9-11e8-8a7e-8e76ab239374.png)<br>
+        を定義すると、この関数 ![image](https://user-images.githubusercontent.com/25688193/48133187-582e2580-e2d9-11e8-80a7-aa8589f32d36.png) は正定値カーネルであるが、
+        この関数 ![image](https://user-images.githubusercontent.com/25688193/48133187-582e2580-e2d9-11e8-80a7-aa8589f32d36.png) に対して、exp をとった ![image](https://user-images.githubusercontent.com/25688193/48133187-582e2580-e2d9-11e8-80a7-aa8589f32d36.png) は、
+        ラプラスカーネル ![image](https://user-images.githubusercontent.com/25688193/48133232-7d229880-e2d9-11e8-9d0c-b5c363a7fc37.png) の形になるので、正定値カーネルになる。<br>
+        <br>
+        正定値カーネル ![image](https://user-images.githubusercontent.com/25688193/48133187-582e2580-e2d9-11e8-80a7-aa8589f32d36.png) を展開すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48133339-d1c61380-e2d9-11e8-8d88-6403e518440f.png)<br>
+        ここで、一般の正定値カーネル ![image](https://user-images.githubusercontent.com/25688193/48133389-f3bf9600-e2d9-11e8-8e2d-388342f9e0c3.png) に対して、任意の関数 f ではさみうちした関数<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48133418-0d60dd80-e2da-11e8-8c37-5f965fe21c7f.png)<br>
+        は、正定値カーネルとなるという関係（証明略）と対比すると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48133306-b529db80-e2d9-11e8-806c-6e11d570c54d.png) も正定値カーネルとなることが分かる。<br>
 
 ---
 
