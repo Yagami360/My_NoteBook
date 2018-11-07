@@ -29,12 +29,14 @@
         1. [多項式カーネルの再生核ヒルベルト空間](#多項式カーネルの再生核ヒルベルト空間)
     1. [埋め込み写像による再生核ヒルベルト空間の構成](#埋め込み写像による再生核ヒルベルト空間の構成)
         1. [フーリエ変換の形をした埋め込み写像による再生核ヒルベルト空間の構成](#フーリエ変換の形をした埋め込み写像による再生核ヒルベルト空間の構成)
-        1. [RBF カーネルの再生核ヒルベルト空間のフーリエ変換での具体的な形](#RBFカーネルの再生核ヒルベルト空間のフーリエ変換での具体的な形)
-        1. ラプラスカーネルの再生核ヒルベルト空間
-    1. ソボレフ空間 [Sobolev space]
+        1. [RBF カーネルの再生核ヒルベルト空間](#RBFカーネルの再生核ヒルベルト空間)
+        1. [ラプラスカーネルの再生核ヒルベルト空間](#ラプラスカーネルの再生核ヒルベルト空間)
+    1. [ソボレフ空間 [Sobolev space]](#ソボレフ空間)
 1. [正定値カーネルの理論](#正定値カーネルの理論)
-    1. 負定値カーネル
-    1. Schoenberg の定理
+    1. [負定値カーネル](#負定値カーネル)
+        1. [負定値カーネルの基本的な性質](#負定値カーネルの基本的な性質)
+        1. [負定値カーネルの基本的な例](#負定値カーネルの基本的な例)
+    1. [Schoenberg の定理](#Schoenbergの定理)
     1. Bochner の定理
     1. Mercer（マーセル、マーサー）の定理
         1. 【補足】積分作用素
@@ -57,6 +59,15 @@
 
 ## ■ 概要
 > 記載中...
+
+カーネル法は、非線形データに対する多変量解析の手法の１つであるが、
+その特徴としては、非線形データを正定値カーネルの形に応じて定まる再生核ヒルベルト空間上の線形データに持ち込んで解析する点であることが挙げられる。<br>
+
+ここでは、以下のような観点から、カーネル法全体の概要を見ている。<br>
+
+- カーネル法の基本的なアイデアとカーネルトリック<br>
+- カーネル法の１つであるサポートベクターマシン<br>
+- カーネル法の１つであるカーネル主成分主成分<br>
 
 
 <a id="カーネル法の基本的なアイデア"></a>
@@ -83,7 +94,7 @@
 <a id="実数の正定値カーネル"></a>
 
 ### ◎ 実数の正定値カーネル
-![image](https://user-images.githubusercontent.com/25688193/48049488-30a86180-e1e2-11e8-8ee8-bf89a0216943.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48116490-a4617180-e2a9-11e8-840e-84fd9d7bb2a3.png)<br>
 
 > 正定値カーネルの解釈図を要追記
 
@@ -96,7 +107,7 @@
 実数ではなく複素数で扱うことにより、理論を展開する上での見通しがよくなることがあるが、これは正定値カーネルに関しても同様である。（例えば、後述の Bochner の定理など）<br>
 そのため、複素数の正定値カーネルなるものを定義する。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/46556410-88248a80-c921-11e8-9aa3-685f45c0ca2b.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48116531-bcd18c00-e2a9-11e8-9d61-691dbe821c41.png)<br>
 
 ここで、複素数の正定値カーネルでは、実数の正定値カーネルとは異なり、<br>
 （実数の正定値カーネルのときの）対称性の条件 ![image](https://user-images.githubusercontent.com/25688193/46447227-99538700-c7bb-11e8-9e01-0a479bd3116a.png) にあたるエルミート性の条件 ![image](https://user-images.githubusercontent.com/25688193/46447250-acfeed80-c7bb-11e8-90fd-e2a5b850f9df.png) は不要となる。<br>
@@ -325,7 +336,7 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 <a id="Moore-Aronszajnの定理"></a>
 
 ### ◎ Moore-Aronszajn の定理
-![image](https://user-images.githubusercontent.com/25688193/48042862-eb2a6b00-e1c6-11e8-9743-90584feee90d.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48116589-e68ab300-e2a9-11e8-8052-8ad1d1159536.png)<br>
 
 先の再生核ヒルベルト空間の線形汎関数を用いた特徴付けと、<br>
 Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（＝特徴付け）したのが以下の図である。<br>
@@ -416,7 +427,7 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 > 言い換えると、埋め込み写像により、再生核ヒルベルト空間を他の一般的な関数空間（例えば、ヒルベルト空間）の部分空間として実現できる。
 > - 次に、この可測関数として、e^(ixt) の形を採用すると、埋め込み写像がフーリエ変換の形となる。（＝埋め込み写像の１つの具体的な例が、フーリエ変換となる）<br>
 > そして、先の議論と同様にして、このフーリエ変換の形をした埋め込み写像により、部分空間としての再生核ヒルベルト空間の具体的表示が得られる。<br>
-> - 最後に、このフーリエ変換の形をした埋め込み写像により得られる再生核ヒルベルト空間の具体的な表示を構成する密度関数に、各々の正定値カーネル（RBFカーネル等）の式を適用すると、各々の正定値カーネル（RBFカーネル等）の再生核ヒルベルト空間のフーリエ変換による表示が得られる。<br>
+> - 最後に、このフーリエ変換の形をした埋め込み写像により得られる再生核ヒルベルト空間の具体的な表示を構成する確率密度関数に、各々の正定値カーネル（RBFカーネル等）の確率密度関数の式を適用すると、各々の正定値カーネル（RBFカーネル等）の再生核ヒルベルト空間のフーリエ変換による表示が得られる。<br>
 
 <br>
 
@@ -469,7 +480,7 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 > - 例４（集合）：集合 X の部分集合 A の、X への埋め込み。<br>
 
 
-<a id="フーリエ変換と埋め込み写像"></a>
+<a id="フーリエ変換の形をした埋め込み写像による再生核ヒルベルト空間の構成"></a>
 
 #### ☆ フーリエ変換の形をした埋め込み写像による再生核ヒルベルト空間の構成
 次に、この埋め込み写像がフーリエ変換によって与えられることを見ていく。
@@ -477,41 +488,65 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 > このことは、後述の Bochner の定理からの帰結とも言える？<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/48070689-d1ffd980-e21b-11e8-8267-57173ec20566.png)<br>
-![image](https://user-images.githubusercontent.com/25688193/48071185-04f69d00-e21d-11e8-9155-fb8d7db23f4e.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48116661-1d60c900-e2aa-11e8-9a10-c4f2e87587a3.png)<br>
 ![image](https://user-images.githubusercontent.com/25688193/48073456-260dbc80-e222-11e8-9bb4-1ac78b895446.png)<br>
-
-<!--
-> 以下の事項を、１つの定理としてまとめること。<br>
-
-先のヒルベルト埋め込み写像による再生核ヒルベルト空間の構成で使われた記号に対して、以下のような具体的な形を与える。<br>
-
-- 測度空間：![image](https://user-images.githubusercontent.com/25688193/48050333-ea083680-e1e4-11e8-889e-5dad6f8d9f70.png)<br>
-    - 抽象集合：![image](https://user-images.githubusercontent.com/25688193/48050353-fdb39d00-e1e4-11e8-9ef9-ab3c593a63d4.png)<br>
-    - ボレル可測集合族：![image](https://user-images.githubusercontent.com/25688193/48050381-13c15d80-e1e5-11e8-870d-7b0382a9d7d3.png)<br>
-    - R 上の連続関数（＝密度関数）：![image](https://user-images.githubusercontent.com/25688193/48050415-276cc400-e1e5-11e8-9b8e-248935e993d4.png)<br>
-- 可測関数：![image](https://user-images.githubusercontent.com/25688193/48050445-410e0b80-e1e5-11e8-8d8f-b14912a6f4a6.png)<br>
-
-このとき、先のとヒルベルト埋め込み写像のときと同様にして、<br>
-この可測集合 ![image](https://user-images.githubusercontent.com/25688193/48050445-410e0b80-e1e5-11e8-8d8f-b14912a6f4a6.png) を基底とした空間が、![image](https://user-images.githubusercontent.com/25688193/48050488-5b47e980-e1e5-11e8-9d0b-712b0c892e22.png) になる。即ち、<br>
-![image](https://user-images.githubusercontent.com/25688193/48050519-761a5e00-e1e5-11e8-8afa-671030486016.png) が ![image](https://user-images.githubusercontent.com/25688193/48050488-5b47e980-e1e5-11e8-9d0b-712b0c892e22.png) で稠密であることを示す。<br>
--->
 
 この定理（フーリエ変換の形をした埋め込み写像による再生核ヒルベルト空間の構成）を用いれば、各々の正定値カーネル（RBFカーネル等）に対しての再生核ヒルベルトのフーリエ変換での具体的な表示を得ることが出来る。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/48073514-45a4e500-e222-11e8-8330-09d855b76142.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48116692-3d908800-e2aa-11e8-818d-94cd7ed7e41f.png)<br>
 
 
-<a id="RBFカーネルの再生核ヒルベルトのフーリエ変換での具体的な構成"></a>
+<a id="RBFカーネルの再生核ヒルベルト空間"></a>
 
-#### ☆ RBF カーネルの再生核ヒルベルトのフーリエ変換での具体的な構成
-> 記載中...
+#### ☆ RBF カーネルの再生核ヒルベルト空間
+先の定理（フーリエ変換の形をした埋め込み写像による再生核ヒルベルト空間の構成）の密度関数に対して、正定値カーネルの１つの例として、RBFカーネルの確率密度関数の式を代入するとこで、RBFカーネルの再生核ヒルベルトのフーリエ変換での具体的な表示を得ることが出来る。<br>
+
+RBFカーネルの確率密度関数 ![image](https://user-images.githubusercontent.com/25688193/48116736-5ef17400-e2aa-11e8-88e3-7a514371f65e.png) を以下のように定める。<br>
+![image](https://user-images.githubusercontent.com/25688193/48116773-79c3e880-e2aa-11e8-94d0-fe29f8f81ec0.png)<br>
+これを先のフーリエ変換での再生核ヒルベルトの具体的な表示の式に代入すると、<br>
+RBFカーネルの再生核ヒルベルト空間の具体的な形は、<br>
+![image](https://user-images.githubusercontent.com/25688193/48116800-89433180-e2aa-11e8-96b4-ab9973dfe5ae.png)<br>
+同様にして、内積は、<br>
+![image](https://user-images.githubusercontent.com/25688193/48116854-ad067780-e2aa-11e8-8c30-0a0320dd37ef.png)<br>
+又、再生核は、<br>
+![image](https://user-images.githubusercontent.com/25688193/48116909-dc1ce900-e2aa-11e8-9bf0-3e7c1866a890.png)<br>
+となる。<br>
+即ち、埋め込み写像により定まる再生核ヒルベルト空間は、RBFカーネルの定める再生核ヒルベルト空間に一致することが分かる。<br>
+
+そして、このRBFカーネルの再生核ヒルベルト空間の具体的な表示<br>
+![image](https://user-images.githubusercontent.com/25688193/48116982-0d95b480-e2ab-11e8-8425-a3a73db0523a.png)<br>
+より、このRFBカーネルの再生核ヒルベルト空間に含まれる関数（＝再生核ヒルベルト空間の要素）は、周波数領域で指数関数的に減衰するものに限られることも分かる。<br>
+
+
+<a id="ラプラスカーネルの再生核ヒルベルト空間"></a>
+
+#### ☆ ラプラスカーネルの再生核ヒルベルト空間
+同様にして、先の定理（フーリエ変換の形をした埋め込み写像による再生核ヒルベルト空間の構成）の密度関数に対して、正定値カーネルの１つの例として、ラプラスカーネルの確率密度関数の式を代入するとこで、ラプラスカーネルの再生核ヒルベルトのフーリエ変換での具体的な表示を得ることが出来る。<br>
+
+ラプラスカーネルの確率密度関数 ![image](https://user-images.githubusercontent.com/25688193/48116736-5ef17400-e2aa-11e8-88e3-7a514371f65e.png) を、以下のように定める。<br>
+![image](https://user-images.githubusercontent.com/25688193/48117050-42a20700-e2ab-11e8-8472-437621b98067.png)<br>
+これを先のフーリエ変換での再生核ヒルベルトの具体的な表示の式に代入すると、<br>
+ラプラスカーネルの再生核ヒルベルト空間の具体的な形は、<br>
+![image](https://user-images.githubusercontent.com/25688193/48117069-577e9a80-e2ab-11e8-99d7-eced9ebe98e5.png)<br>
+同様にして、内積は、<br>
+![image](https://user-images.githubusercontent.com/25688193/48117117-7f6dfe00-e2ab-11e8-890d-b6ffc4a4caad.png)<br>
+又、再生核は、<br>
+![image](https://user-images.githubusercontent.com/25688193/48117141-8c8aed00-e2ab-11e8-96fb-0be6366fc794.png)<br>
+となる。<br>
+即ち、埋め込み写像により定まる再生核ヒルベルト空間は、ラプラスカーネルの定める再生核ヒルベルト空間に一致することが分かる。<br>
+
+そして、このラプラスカーネルの再生核ヒルベルト空間の具体的な表示<br>
+![image](https://user-images.githubusercontent.com/25688193/48117235-e7244900-e2ab-11e8-8d71-86f78be06e59.png)<br>
+より、このラプラスカーネルの再生核ヒルベルト空間に含まれる関数（＝再生核ヒルベルト空間の要素）は、先のRBFカーネルと比べて、周波数領域（＝波数）でより緩やかに減衰するものに限られることも分かる。<br>
 
 
 <a id="ソボレフ空間"></a>
 
 #### ☆ ソボレフ空間 [Soboveb space]
-再生核ヒルベルト空間の重要な例として、ソボレフ空間がある。<br>
+再生核ヒルベルト空間の重要な例の１つに、ソボレフ空間がある。<br>
 
+このソボレフ空間は、関数とその導関数を要素とする関数空間であり、又、完備距離空間、即ち、バナッハ空間でもある。<br>
+ノルムは、関数とその導関数のLpノルムで定まる。<br>
 
 > 記載中...
 
@@ -527,6 +562,74 @@ Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（�
 - ユークリッド空間上での平行移動（アフィン変換）に対して不変な正定値カーネル全体を、その正定値カーネルのフーリエ変換により特徴づけることを主張している Bochner の定理。<br>
 - 正定値カーネルに対する固有値分解である Mercer の定理<br>
 
+
+<a id="負定値カーネル"></a>
+
+### ◎ 負定値カーネル
+まず、先の正定値カーネルとの対比で、負定値カーネルなるものを導入する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/48117273-0327ea80-e2ac-11e8-8056-883f92ba8c42.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/48117294-13d86080-e2ac-11e8-9c06-6fbe6d162d9a.png)<br>
+
+以下、断り書きがない限り、負定値カーネルといえば、この複素数の負定値カーネルを表すものとする。<br>
+
+
+<a id="負定値カーネルの基本的な性質"></a>
+
+#### ☆ 負定値カーネルの基本的な性質
+次に、この負定値カーネルに関して成り立つ基本的な性質をいくつか見てみる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/48117352-42eed200-e2ac-11e8-85f2-c96da871711f.png)<br>
+
+- （証明略）負定値カーネルの定義より成り立つ。<br>
+
+<br>
+
+![image](https://user-images.githubusercontent.com/25688193/48117411-7b8eab80-e2ac-11e8-9813-b7222a1f3bfd.png)<br>
+
+- （証明略）正定値カーネルのときと同様<br>
+
+
+<a id="負定値カーネルの基本的な例"></a>
+
+#### ☆ 負定値カーネルの基本的な例
+
+- （例）負定値カーネルの例<br>
+    集合 X から内積空間 V への写像 ![image](https://user-images.githubusercontent.com/25688193/48117475-b1339480-e2ac-11e8-884f-ca5bb94c10a8.png) に対して、<br>
+    以下のような定義される関数は、集合 X 上の負定値カーネルであることを示す。<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48117497-c0b2dd80-e2ac-11e8-943f-67e3af7432f8.png)<br>
+    <br>
+    この関数に対して負定値カーネルの非負性の条件を確認すると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48117525-d1fbea00-e2ac-11e8-989e-93a7e92f6a6a.png)<br>
+    従って、負正値の条件が成り立つので、この関数 ψ は負定値カーネルである。<br>
+
+
+<a id="Schoenbergの定理"></a>
+
+### ◎ Schoenberg の定理
+Schoenberg の定理は、先に導入した負定値カーネルと正定値カーネルを関連付ける定理であるが、そのための前段階として、以下の補題を示す。<br>
+![image](https://user-images.githubusercontent.com/25688193/48117583-07083c80-e2ad-11e8-984b-a809e114c28f.png)<br>
+
+- （証明）<br>
+    - 「⇐」 方向の証明<br>
+        作られた関数 ![image](https://user-images.githubusercontent.com/25688193/48117675-46368d80-e2ad-11e8-9557-3bbe7485eab9.png) は、正定値カーネルなので、<br>
+        正定性の条件より、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48117703-5b132100-e2ad-11e8-9e0e-87a9f6ea6104.png)<br>
+        ここで、関数 ![image](https://user-images.githubusercontent.com/25688193/48117735-767e2c00-e2ad-11e8-8d20-2cea83caeacc.png) のエルミート性 ![image](https://user-images.githubusercontent.com/25688193/48117762-8ac22900-e2ad-11e8-8149-ac3bfa19e66a.png) より、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48117829-c2c96c00-e2ad-11e8-89a7-2561fa4c34c6.png)<br>
+        となるので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48117847-d1b01e80-e2ad-11e8-90e6-e7192180a3ae.png)<br>
+        となり、関数 ![image](https://user-images.githubusercontent.com/25688193/48117735-767e2c00-e2ad-11e8-8d20-2cea83caeacc.png) は負定値カーネルであることが分かる。<br>
+        <br>
+    - 「⇒」 方向の証明<br>
+        元の関数 ![image](https://user-images.githubusercontent.com/25688193/48117735-767e2c00-e2ad-11e8-8d20-2cea83caeacc.png) は、負定値カーネルなので、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48117971-2489d600-e2ae-11e8-85cd-b35621850774.png)<br>
+        従って、作られた関数 ![image](https://user-images.githubusercontent.com/25688193/48117675-46368d80-e2ad-11e8-9557-3bbe7485eab9.png) は正定値カーネルである。<br>
+
+<br>
+
+> 記載中...
 
 
 ---
