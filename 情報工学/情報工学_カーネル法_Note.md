@@ -39,8 +39,8 @@
     1. [Schoenberg の定理](#Schoenbergの定理)
     1. [カーネルを生成する操作](#カーネルを生成する操作)
     1. [Bochner の定理](#Bochnerの定理)
-    1. Mercer（マーセル、マーサー）の定理
-        1. 【補足】積分作用素
+    1. [Mercer（マーセル、マーサー）の定理](#Mercerの定理)
+        1. [積分作用素、積分核](#積分作用素、積分核)
         1. 【補足】スペクトル分解
 1. 汎化性能と正則化
     1. リプレゼンター定理
@@ -700,13 +700,34 @@ Bochner の定理は、ユークリッド空間上での平行移動（アフィ
 
 このように定義した平行移動不変性、及び、正値の概念に関連して、以下の Bochner の定理が成り立つ。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/48186046-3f298100-e37a-11e8-8477-161fcc3e3392.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48256007-a2d2ad80-e451-11e8-88fe-e393a783eb8a.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48256041-bf6ee580-e451-11e8-92d1-97717296463f.png)<br>
 
-- （証明略）十分条件の証明み記載する。<br>
+- （証明略）十分条件（⇐）の証明み記載する。<br>
+    このフーリエ変換の式<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48256081-e4635880-e451-11e8-966f-0f058740e855.png)<br>
+	の積分は、これら各々の ![image](https://user-images.githubusercontent.com/25688193/48256097-f0e7b100-e451-11e8-82e8-c80ae565c992.png) に対しての ![image](https://user-images.githubusercontent.com/25688193/48256120-02c95400-e452-11e8-800c-f710bd8e1737.png) の線形結合の極限和で表せる。即ち、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48256210-43c16880-e452-11e8-8245-c51aa80e8667.png)<br>
+    <br>
+    ここで、正値の条件 ![image](https://user-images.githubusercontent.com/25688193/48256800-11186f80-e454-11e8-892d-41332765bcca.png)、及び ![image](https://user-images.githubusercontent.com/25688193/48256245-5a67bf80-e452-11e8-99d2-4bf8d73fc629.png)の関係より、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48256501-293bbf00-e453-11e8-9a0c-97d77f2865ec.png) は正値関数となるが、<br>
+    これは、先の線形結合の極限和の式の基底に対応しており、正定値カーネルの性質（線形結合もまた正定値カーネル、極限も正定値カーネル）より、この線形結合の極限和である ![image](https://user-images.githubusercontent.com/25688193/48256838-2b524d80-e454-11e8-852d-b8b6c20a87ce.png) も正値であることが分かる。<br>
 
-<br>
 
-以下、この Bochner の定理から、RBF カーネルやラプラスカーネルが、正定値カーネルとなることを見ていく。<br>
+<a id="Mercerの定理"></a>
+
+### ◎ Mercer（マーサー、マーセル）の定理
+Mercer の定理は、正定値カーネルに対する固有値分解の定理であるが、
+より厳密には、正定値カーネルを積分作用素のスペクトル分解によって表現する定理となってる。<br>
+
+
+<a id="積分作用素、積分核"></a>
+
+#### ☆ 積分作用素、積分核
+まずは、この積分作用素、積分核とはどのようなものなのかを見ていく。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/48257036-b9c6cf00-e454-11e8-9506-40f0138b011a.png)<br>
+
 
 > 記載中...
 
