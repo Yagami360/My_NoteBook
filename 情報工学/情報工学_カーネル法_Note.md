@@ -41,6 +41,9 @@
     1. [Bochner の定理](#Bochnerの定理)
     1. [Mercer（マーセル、マーサー）の定理](#Mercerの定理)
         1. [積分作用素、積分核](#積分作用素、積分核)
+        1. [積分作用素とヒルベルト＝シュミット作用素](#積分作用素とヒルベルト＝シュミット作用素)
+        1. [積分核のヒルベルト＝シュミット展開](#積分核のヒルベルト＝シュミット展開)
+        1. 正値積分核と Mercer の定理
         1. [【補足】ヒルベルト空間上の線形作用素のトーレス、ヒルベルト＝シュミット作用素](#【補足】ヒルベルト空間上の線形作用素のトーレス、ヒルベルト＝シュミット作用素)
         1. 【補足】スペクトル分解
 1. 汎化性能と正則化
@@ -718,8 +721,8 @@ Bochner の定理は、ユークリッド空間上での平行移動（アフィ
 <a id="Mercerの定理"></a>
 
 ### ◎ Mercer（マーサー、マーセル）の定理
-Mercer の定理は、正定値カーネルに対する固有値分解の定理であるが、
-より厳密には、正定値カーネルを積分作用素のスペクトル分解によって表現する定理となってる。<br>
+Mercer の定理は、正定値カーネルに対する固有値分解の定理である。
+より厳密に言えば、正定値カーネルを積分作用素のスペクトル分解によって表現する定理となってる。<br>
 
 
 <a id="積分作用素、積分核"></a>
@@ -727,9 +730,33 @@ Mercer の定理は、正定値カーネルに対する固有値分解の定理�
 #### ☆ 積分作用素、積分核
 まずは、この積分作用素、積分核とはどのようなものなのかを見ていく。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/48547025-0d319500-e90d-11e8-8b69-8ad00897e3f4.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48553751-cbf6b080-e91f-11e8-97ea-bc4a18e46242.png)<br>
 
 
+<a id="積分作用素とヒルベルト＝シュミット作用素"></a>
+
+#### ☆ 積分作用素とヒルベルト＝シュミット作用素
+以下の定理で示すように、積分作用素は、ヒルベルト＝シュミット作用素でもある。<br>
+一方、自己共役なヒルベルト＝シュミット作用素は、固有値分解が可能である。（後述）<br>
+そしてこれら２つの事実が、正定値カーネルを積分作用素のスペクトル分解によって表現する Mercerの定理に結びつく。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/48554353-81763380-e921-11e8-8a98-406baac53f75.png)<br>
+
+- （証明）<br>
+	まず前提として、L2空間 ![image](https://user-images.githubusercontent.com/25688193/48555220-e5016080-e923-11e8-8971-6cac9d4605a1.png) は、ヒルベルト空間でもあるので（![image](https://user-images.githubusercontent.com/25688193/48555294-242fb180-e924-11e8-84d9-52a3ea137621.png)）、この空間上のヒルベルト＝シュミット作用素なるものが導入出来る。<br>
+    <br>
+    次に、積分核 K の２乗可積分性より、<br>
+    ほとんどいたるところの x∈Ω に対して、![image](https://user-images.githubusercontent.com/25688193/48555356-517c5f80-e924-11e8-9a2e-3b87d37c67d6.png) の関係が成り立つ。<br>
+    <br>
+	![image](https://user-images.githubusercontent.com/25688193/48555435-930d0a80-e924-11e8-9531-71c6baa06aad.png) をL2空間 ![image](https://user-images.githubusercontent.com/25688193/48555294-242fb180-e924-11e8-84d9-52a3ea137621.png) の完全正規直交系とすると、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48555750-72918000-e925-11e8-9cb8-f6dd8312f6d6.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48555435-930d0a80-e924-11e8-9531-71c6baa06aad.png) の複素共役をとった ![image](https://user-images.githubusercontent.com/25688193/48556058-2bf05580-e926-11e8-8ba6-3dcd668c7d78.png) もL2空間 ![image](https://user-images.githubusercontent.com/25688193/48555294-242fb180-e924-11e8-84d9-52a3ea137621.png) の完全正規直交系となるので、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48556204-a7520700-e926-11e8-99f6-2de365bc7c15.png)<br>
+
+
+<a id="積分核のヒルベルト＝シュミット展開"></a>
+
+#### ☆ 積分核のヒルベルト＝シュミット展開
 > 記載中...
 
 
