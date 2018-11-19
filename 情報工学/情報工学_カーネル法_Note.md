@@ -822,19 +822,49 @@ Mercer の定理は、正定値カーネルに対する固有値分解の定理�
 
 ![image](https://user-images.githubusercontent.com/25688193/48659244-65919f80-ea91-11e8-83c9-10b99d00658d.png)<br>
 
-![image](https://user-images.githubusercontent.com/25688193/48659259-996cc500-ea91-11e8-9fae-56f128478cea.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48692323-ecbd4f80-ec18-11e8-864f-c770ab10bb6a.png)<br>
 
 <br>
 
 以下の定理は、ハウスドルフ空間上のラドン測度上のカーネル関数を元にした作用素が、正値作用素となることを述べたものであり、この定理と先の積分作用素の正値性の定義と組合わせることで、積分作用素の固有値の正値性が示せ、最終的に Mercer の定理に結びつく。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/48659281-f6687b00-ea91-11e8-9c7c-e992f04fae39.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48695248-01521580-ec22-11e8-9e02-bb2391a83faf.png)<br>
 
 - （証明）<br>
     - 「⇒」方向の証明<br>
-        > 記載中...
+        ![image](https://user-images.githubusercontent.com/25688193/48693212-11ff8d00-ec1c-11e8-9c43-b18673f45b86.png) は正定値カーネルであるので、<br>
+		ハウスドルフ空間 Ω 上の任意の連続関数 ∀g∈Ω と、ハウスドルフ空間 Ω の分割された可測集合 ![image](https://user-images.githubusercontent.com/25688193/48693244-2ba0d480-ec1c-11e8-8cef-399666cdaf2d.png) を考えると、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48693287-568b2880-ec1c-11e8-8a90-634bbbd42fce.png)<br>
+		の関係が成り立つ。<br>
+        積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48693334-7de1f580-ec1c-11e8-91c1-ee8e85bbd53a.png) の正値性の条件式の積分<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48693362-8df9d500-ec1c-11e8-9832-0577bfc97d9e.png)<br>
+        は、この和の極限として与えるものになっているので、非負である。即ち、<br>
+        ![image](https://user-images.githubusercontent.com/25688193/48693479-ec26b800-ec1c-11e8-92cd-8dfa84d55244.png)<br>
+        となり、積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48693334-7de1f580-ec1c-11e8-91c1-ee8e85bbd53a.png) は、正値作用素となることが分かる。<br>
+        <br>
+        ※ 尚、今の場合、ハウスドルフ空間 Ω 上の連続関数 ∀g∈Ω で考えて、![image](https://user-images.githubusercontent.com/25688193/48693560-25f7be80-ec1d-11e8-96f0-53b0b3c8b99c.png) と積分作用素の正値性の条件 ![image](https://user-images.githubusercontent.com/25688193/48693589-3d36ac00-ec1d-11e8-93b7-05b095776ca7.png) を対応付けたが、より厳密には、![image](https://user-images.githubusercontent.com/25688193/48693620-59d2e400-ec1d-11e8-8199-d8a9cb27fc83.png) において、任意の ε>0 に対して、![image](https://user-images.githubusercontent.com/25688193/48693652-7ff88400-ec1d-11e8-82b5-3e26f01c4bc3.png) となるような連続関数 g∈Ω を考え、積分作用素の正値性の条件 ![image](https://user-images.githubusercontent.com/25688193/48693589-3d36ac00-ec1d-11e8-93b7-05b095776ca7.png) を対応付ければよい。<br>
+        <br>
     - 「⇐」方向の証明<br>
-        > 記載中...
+        背理法で示す。<br>
+        - まず、非正定値カーネルの条件として、ある ![image](https://user-images.githubusercontent.com/25688193/48695984-f8624380-ec23-11e8-8577-e7e0757809ce.png) に対して、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/48696007-09ab5000-ec24-11e8-8fe6-1659d25dacd7.png)<br>
+            が成り立つと仮定する。<br>
+        - カーネル関数 ![image](https://user-images.githubusercontent.com/25688193/48696067-3495a400-ec24-11e8-91e5-f68e9a558b68.png) の連続性と、ハウスドルフ空間 Ω のハウスドルフ性（＝空間中の異なる点がそれらの近傍によって分離可能）より、各点 ![image](https://user-images.githubusercontent.com/25688193/48696095-49723780-ec24-11e8-8418-bf710cf17173.png) の開近傍 ![image](https://user-images.githubusercontent.com/25688193/48696134-63137f00-ec24-11e8-869d-5ea2e7cbeb42.png) が存在して、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/48696159-7292c800-ec24-11e8-9012-be5efe31be56.png)<br>
+            の関係が成り立つ。<br>
+        - ここで、![image](https://user-images.githubusercontent.com/25688193/48696296-dfa65d80-ec24-11e8-9e45-dd8b80e9d486.png) の条件より、![image](https://user-images.githubusercontent.com/25688193/48696365-167c7380-ec25-11e8-9ecf-cd4bff0e1202.png) の関係が成り立つ。<br>
+            （＝このハウスドルフ空間 Ω は、測度 μ が非ゼロな集合から構成されているので、このハウスドルフ空間 Ω の近傍 ![image](https://user-images.githubusercontent.com/25688193/48696406-33b14200-ec25-11e8-8ba3-ffb907f5ee6f.png) に対しても、測度は非ゼロで、![image](https://user-images.githubusercontent.com/25688193/48696365-167c7380-ec25-11e8-9ecf-cd4bff0e1202.png) となる。）<br>
+        - 関数 ![image](https://user-images.githubusercontent.com/25688193/48696490-6824fe00-ec25-11e8-96f3-fed4ab59dcd2.png) において、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/48696505-76731a00-ec25-11e8-9b0b-6c9a6f03d066.png)<br>
+            とおくと、<br>
+            積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48693334-7de1f580-ec1c-11e8-91c1-ee8e85bbd53a.png) の正値性の条件式の積分 ![image](https://user-images.githubusercontent.com/25688193/48696577-9e627d80-ec25-11e8-87f8-5cf8fcbd7ed0.png) は、<br>
+            ![image](https://user-images.githubusercontent.com/25688193/48696662-e681a000-ec25-11e8-8fc2-c27e65b48a26.png)<br>
+            となり、仮定（正値作用素）に矛盾するので、命題は成り立つ。<br>
+
+<br>
+
+> 記載中...
+
 
 
 <a id="【補足】ヒルベルト空間上の線形作用素のトーレス、ヒルベルト＝シュミット作用素"></a>
