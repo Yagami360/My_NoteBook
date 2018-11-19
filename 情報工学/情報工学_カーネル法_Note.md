@@ -986,7 +986,7 @@ Mercer の定理は、正定値カーネルに対する固有値分解の定理�
 この記事で使われている一部の各種図や解析内容のコードは、以下の場所に置いてあります。参考までに<br>
 
 - サポートベクターマシン（SVM）<br>
-    - [GitHub/Yagami360/MachineLearning_Exercises_Python_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/SVM_scikit-learn)<br>
+    - [GitHub/Yagami360/MachineLearning_Exercises_Python_scikit-learn/SVM_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/SVM_scikit-learn)<br>
 
 - カーネル主成分分析<br>
     - [GitHub/Yagami360/MachineLearning_Exercises_Python_scikit-learn/kernelPCA_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/kernelPCA_scikit-learn)
