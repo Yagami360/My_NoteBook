@@ -729,8 +729,8 @@ Mercer の定理は、正定値カーネルに対する固有値分解の定理�
 
 > 【Memo】 Mercer の定理<br>
 > Supp(μ)=Ω である、言い換えると、ハウスドルフ空間 Ω 全体が、測度 μ が非ゼロで有効なものの集合（＝測度の台 Supp(μ)）から構成されている）ような、ハウスドルフ空間 Ω と Ω 上のラドン測度 μ とにおいて、<br>
-> このハウスドルフ空間上の正定値カーネル（＝積分核となる）K:Ω×Ω→R によって定まる積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48720142-6af21400-ec62-11e8-9d17-87c1d7825f43.png)（より一般的には、正定値カーネルによって定まる作用素）は、正値作用素でもある。<br>
-> 更に、積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48720142-6af21400-ec62-11e8-9d17-87c1d7825f43.png) は、ヒルベルト＝シュミット作用素でもあるので、自己共役なヒルベルト＝シュミット作用素と同様にして、この積分作用素の固有値は、全て非負の実数値となり、この非負の固有値 ![image](https://user-images.githubusercontent.com/25688193/48707360-8ea56200-ec42-11e8-934e-45d6b487342c.png) とこれに対応する固有ベクトル ![image](https://user-images.githubusercontent.com/25688193/48707387-a250c880-ec42-11e8-81b4-9f9968848678.png) を用いて、<br>
+> このハウスドルフ空間上の正定値カーネル（＝正値積分核となる）K:Ω×Ω→R によって定まる積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48720142-6af21400-ec62-11e8-9d17-87c1d7825f43.png)（より一般的には、正定値カーネルによって定まる作用素）は、正値作用素でもある。<br>
+> 更に、積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48720142-6af21400-ec62-11e8-9d17-87c1d7825f43.png) は、ヒルベルト＝シュミット作用素でもあり、又、正値作用素は自己共役作用素でもあるので、自己共役なヒルベルト＝シュミット作用素と同様にして、この積分作用素の固有値は、全て非負の実数値となり、この非負の固有値 ![image](https://user-images.githubusercontent.com/25688193/48707360-8ea56200-ec42-11e8-934e-45d6b487342c.png) とこれに対応する固有ベクトル ![image](https://user-images.githubusercontent.com/25688193/48707387-a250c880-ec42-11e8-81b4-9f9968848678.png) を用いて、<br>
 > 積分作用素を定める積分核を、固有値分解（＝スペクトル分解）<br>
 > ![image](https://user-images.githubusercontent.com/25688193/48720329-d3d98c00-ec62-11e8-8a28-af65e416073a.png)<br>
 > で表現することが出来る。<br>
@@ -894,12 +894,13 @@ Mercer の定理は、正定値カーネルに対する固有値分解の定理�
 
 のようになり、この積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48707126-cc55bb00-ec41-11e8-8095-281cf2819a7c.png) が、必要十分条件により、正値作用素にもなる。<br>
 
-更に、積分作用素は、ヒルベルト＝シュミット作用素であり、又、自己共役なヒルベルトシュミット作用素の固有値が全て実数である事実を利用すると、自己共役なヒルベルト＝シュミット作用素と同様にして、積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48707126-cc55bb00-ec41-11e8-8095-281cf2819a7c.png) は固有値展開可能であり、それらの全ての固有値は非負の実数となることが分かる。<br>
+更に、積分作用素は、ヒルベルト＝シュミット作用素でもあり、又、正値作用素がは自己共役作用素であるので、
+自己共役なヒルベルトシュミット作用素の固有値が全て実数である事実と同様にして、積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48707126-cc55bb00-ec41-11e8-8095-281cf2819a7c.png) は固有値展開可能であり、それらの全ての固有値は非負の実数となることが分かる。<br>
 即ち、非負の実数の固有値 ![image](https://user-images.githubusercontent.com/25688193/48707360-8ea56200-ec42-11e8-934e-45d6b487342c.png) が存在し、これに対応する固有ベクトル ![image](https://user-images.githubusercontent.com/25688193/48707387-a250c880-ec42-11e8-81b4-9f9968848678.png) が存在する。<br>
 
 これらのことをまとめて、更に収束性に関する内容を加えた定理が、以下に示す Mercer の定理となる。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/48708139-08d6e600-ec45-11e8-9574-7132486b19d6.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/48721198-be656180-ec64-11e8-9b6b-89c5726dc9e3.png)<br>
 
 - （証明）<br>
     前半の内容はこれまでの議論（積分核のヒルベルト＝シュミット展開～定理（カーネル関数と正値作用素）まで）より、成り立つことが分かる。<br>
