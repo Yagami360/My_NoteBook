@@ -727,6 +727,21 @@ Bochner の定理は、ユークリッド空間上での平行移動（アフィ
 Mercer の定理は、正定値カーネルに対する固有値分解の定理である。
 より厳密に言えば、正定値カーネルを積分作用素のスペクトル分解によって表現する定理となってる。<br>
 
+> 【Memo】 Mercer の定理<br>
+> Supp(μ)=Ω である、言い換えると、ハウスドルフ空間 Ω 全体が、測度 μ が非ゼロで有効なものの集合（＝測度の台 Supp(μ)）から構成されている）ような、ハウスドルフ空間 Ω と Ω 上のラドン測度 μ とにおいて、<br>
+> このハウスドルフ空間上の正定値カーネル（＝積分核となる）K:Ω×Ω→R によって定まる積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48720142-6af21400-ec62-11e8-9d17-87c1d7825f43.png)（より一般的には、正定値カーネルによって定まる作用素）は、正値作用素でもある。<br>
+> 更に、積分作用素 ![image](https://user-images.githubusercontent.com/25688193/48720142-6af21400-ec62-11e8-9d17-87c1d7825f43.png) は、ヒルベルト＝シュミット作用素でもあるので、自己共役なヒルベルト＝シュミット作用素と同様にして、この積分作用素の固有値は、全て非負の実数値となり、この非負の固有値 ![image](https://user-images.githubusercontent.com/25688193/48707360-8ea56200-ec42-11e8-934e-45d6b487342c.png) とこれに対応する固有ベクトル ![image](https://user-images.githubusercontent.com/25688193/48707387-a250c880-ec42-11e8-81b4-9f9968848678.png) を用いて、<br>
+> 積分作用素を定める積分核を、固有値分解（＝スペクトル分解）<br>
+> ![image](https://user-images.githubusercontent.com/25688193/48720329-d3d98c00-ec62-11e8-8a28-af65e416073a.png)<br>
+> で表現することが出来る。<br>
+> そして、この級数展開の式（＝固有値分解の式）は、一様絶対収束する。<br>
+
+<br>
+
+- 【参考】<br>
+    - [Reproducing Kernel Hilbert Spaceの数理とMercerの定理 - Obey Your MATHEMATICS.](http://mathetake.hatenablog.com/entry/2016/12/29/223101)<br>
+
+
 
 <a id="積分作用素、積分核"></a>
 
