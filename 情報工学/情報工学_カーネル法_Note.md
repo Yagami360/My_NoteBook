@@ -53,6 +53,7 @@
 1. 各種カーネル法
     1. [【外部リンク】サポートベクターマシン [SVM : Support Vector Machine]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_9)
     1. [【外部リンク】カーネル主成分分析 [kernel PCA : kernel Principal Component Analysis]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_2-5-2)
+1. [ニューラルネットワークとカーネル法](#ニューラルネットワークとカーネル法)
 1. 補足事項
     1. [【外部リンク】関数解析とヒルベルト空間](http://yagami12.hatenablog.com/entry/2018/10/03/134340)
     1. [【外部リンク】測度論](http://yagami12.hatenablog.com/entry/2018/11/04/232957)
@@ -980,6 +981,25 @@ Mercer の定理を用いれば、再生核ヒルベルト空間とその空間�
 - （証明略）<br>
 
 
+<a id="ニューラルネットワークとカーネル法"></a>
+
+## ■ ニューラルネットワークとカーネル法
+
+> 【Memo】ニューラルネットワークとカーネル法<br>
+> ニューラルネットワークの中間層からの出力<br>
+> ![image](https://user-images.githubusercontent.com/25688193/48778018-810ddc00-ed17-11e8-9d64-b3cad6fde018.png)<br>
+> 再生核ヒルベルト空間上の関数<br>
+> ![image](https://user-images.githubusercontent.com/25688193/48778086-a7cc1280-ed17-11e8-933c-40e831425368.png)<br>
+> の２つの式が、形式的には同じ形となっているので、浅いニューラルネットワークは、カーネル法と似た構造を持つことが分かる。<br>
+> <br>
+> ニューラルネットワークの中間層からの出力 ![image](https://user-images.githubusercontent.com/25688193/48778174-d77b1a80-ed17-11e8-8d60-95e90e6316c8.png) を用いた関数<br>
+> ![image](https://user-images.githubusercontent.com/25688193/48778200-e6fa6380-ed17-11e8-8081-5fbff948d3a5.png)<br>
+> が、正定値カーネルとなるから、これらを直交基底とする再生核ヒルベルト空間が生成できるので、<br>
+> ニューラルネットワークの中間層からの出力は、再生核ヒルベルト空間の要素（関数）となっていると言える。<br>
+> つまり、ニューラルネットワークは、マルチプルカーネル学習（＝係数である重みベクトルa,bも学習してカーネル関数自体も学習）を行うカーネル法ともみなせる。<br>
+
+
+
 ---
 
 
@@ -1003,8 +1023,11 @@ Mercer の定理を用いれば、再生核ヒルベルト空間とその空間�
     - [amazonで詳細を見る](https://www.amazon.co.jp/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B9-%E5%AE%9F%E8%A3%85%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6Python-%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0-Machine-Learning/dp/4797393963/ref=sr_1_1?ie=UTF8&qid=1541355307&sr=8-1&keywords=%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B9)
     - 5-7章にカーネル法の1種であるSVMのアルゴリズムを構成するマージン最大化と最適化問題の丁寧な式変形での解説と、scikit-learn などの機械学習フレームワークを使用せず、numpyだけを使用したPythonでのスクラッチ実装コードとその丁寧なコード説明がある。<br>
 
-- はじめてのパターン認識 <br>
+- はじめてのパターン認識<br>
     - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98-%E5%B9%B3%E4%BA%95-%E6%9C%89%E4%B8%89/dp/4627849710?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4627849710)<br>
+
+- 数学セミナー12月号 機械学習の数理 (2)<br>
+    - [数学セミナー2018年12月号｜日本評論社](https://www.nippyo.co.jp/shop/magazines/latest/4.html)<br>
 
 
 <a id="使用コード"></a>
