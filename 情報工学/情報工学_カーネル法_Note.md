@@ -57,6 +57,8 @@
         1. [【補足（外部リンク）】主成分分析 [PCA : Principal Component Analysis]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_2-5-1))
         1. [【補足（外部リンク）】カーネル主成分分析 [kernel PCA : kernel Principal Component Analysis]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_2-5-2)
         1. [カーネル主成分分析の再生核ヒルベルト空間を用いた議論](#カーネル主成分分析の再生核ヒルベルト空間を用いた議論)
+    1. カーネル正準相関分析（kernel CCA）
+    1. カーネル Fisher 判別分析
     1. [【外部リンク】サポートベクターマシン [SVM : Support Vector Machine]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_9)
 1. カーネル法との関連
     1. 平均による確率分布の特徴付け
@@ -1087,11 +1089,11 @@ Mercer の定理を用いれば、再生核ヒルベルト空間とその空間�
 
 特徴写像 ![image](https://user-images.githubusercontent.com/25688193/48967978-f802e780-f02b-11e8-8fe9-3211f830fd9f.png) により、![image](https://user-images.githubusercontent.com/25688193/48967982-0fda6b80-f02c-11e8-8936-50176f09be60.png) という再生核ヒルベルト空間 ![image](https://user-images.githubusercontent.com/25688193/48967969-cf7aed80-f02b-11e8-9c70-aa8b311ce2fe.png) 中のデータが生成されているようなケースを考える。<br>
 
-カーネル主成分分析は、この再生核ヒルベルト空間内で主成分分析を行うのであるが、通常の主成分分析の際の、第１主成分 ![image](https://user-images.githubusercontent.com/25688193/48967995-31d3ee00-f02c-11e8-9ee5-e18f80c2dd68.png) へのデータの射影 ![image](https://user-images.githubusercontent.com/25688193/48968000-4adc9f00-f02c-11e8-91de-884e327fded1.png) の分散値<br>
+カーネル主成分分析は、この再生核ヒルベルト空間内で主成分分析を行うのであるが、通常の主成分分析の際の、第１主成分の軸 ![image](https://user-images.githubusercontent.com/25688193/48967995-31d3ee00-f02c-11e8-9ee5-e18f80c2dd68.png) へのデータの射影 ![image](https://user-images.githubusercontent.com/25688193/48968000-4adc9f00-f02c-11e8-91de-884e327fded1.png) の分散値<br>
 ![image](https://user-images.githubusercontent.com/25688193/48968012-6e074e80-f02c-11e8-9997-780369673966.png)<br>
 の最大化（＝最適化問題）<br>
-<br>
-に対応するものとして、再生核ヒルベルト空間 ![image](https://user-images.githubusercontent.com/25688193/48967969-cf7aed80-f02b-11e8-9c70-aa8b311ce2fe.png) 中の第１主成分 f に対して、<br>
+![image](https://user-images.githubusercontent.com/25688193/48969533-71f29b00-f043-11e8-97dd-3bde641aebb5.png)<br>
+に対応するものとして、再生核ヒルベルト空間 ![image](https://user-images.githubusercontent.com/25688193/48967969-cf7aed80-f02b-11e8-9c70-aa8b311ce2fe.png) 中の主成分軸 f に対して、<br>
 ![image](https://user-images.githubusercontent.com/25688193/48968030-b7f03480-f02c-11e8-964d-4d9bf0a66e8d.png)<br>
 を考える。<br>
 ※ ![image](https://user-images.githubusercontent.com/25688193/48968034-c8a0aa80-f02c-11e8-9819-81f4a707252f.png) は、主成分軸 f のデータの射影の意味合いとなっており、通常の主成分分析の内積演算 ![image](https://user-images.githubusercontent.com/25688193/48968038-d9512080-f02c-11e8-8fe5-461ae819d21d.png) に対応するものである。<br>
@@ -1101,8 +1103,26 @@ Mercer の定理を用いれば、再生核ヒルベルト空間とその空間�
 ![image](https://user-images.githubusercontent.com/25688193/48968108-5b414980-f02d-11e8-8857-928379874e69.png)<br>
 で考える。<br>
 
+このとき、先のリプレゼンター定理より、この最適化問題の解（＝再生核ヒルベルト空間中の関数）![image](https://user-images.githubusercontent.com/25688193/48969454-107dfc80-f042-11e8-8b63-f4e4419b2089.png) は、X×X 上の正定値カーネル ![image](https://user-images.githubusercontent.com/25688193/48969467-520ea780-f042-11e8-928d-7840a32722df.png) から求まる ![image](https://user-images.githubusercontent.com/25688193/48969491-b3367b00-f042-11e8-948f-35810409387a.png) を用いて、<br>
+![image](https://user-images.githubusercontent.com/25688193/48969496-c2b5c400-f042-11e8-9899-76a4609a1d09.png)<br>
+と表現できる。<br>
+即ち、第 p 主成分の軸は、<br>
+![image](https://user-images.githubusercontent.com/25688193/48969554-98b0d180-f043-11e8-847d-d3e3c018037a.png)<br>
+の式から求めることが出来る。<br>
 
-> 記載中...
+更に、再生核ヒルベルト空間の再生性の条件<br>
+![image](https://user-images.githubusercontent.com/25688193/48969678-45d81980-f045-11e8-9aac-c3498eb01ed1.png)<br>
+を用いると、先の最適化問題の式は、<br>
+![image](https://user-images.githubusercontent.com/25688193/48969681-56888f80-f045-11e8-9908-b88ac857aca2.png)<br>
+という、一般化固有値問題の形に置き換えられる。（計算略）<br>
+
+この固有方程式において、グラム行列 ![image](https://user-images.githubusercontent.com/25688193/48969745-576df100-f046-11e8-8520-6e2b4443cb71.png) の固有値を ![image](https://user-images.githubusercontent.com/25688193/48969737-3907f580-f046-11e8-896c-3515af4264c7.png) とし、対応する固有ベクトルを ![image](https://user-images.githubusercontent.com/25688193/48969779-d6fbc000-f046-11e8-81e6-b1f5ee581076.png) とし、以上の議論をまとめると、主成分 f は、以下のようにして求まる。<br>
+
+- 第 p 主成分の軸：<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48969796-04e10480-f047-11e8-92e1-7443ecdde272.png)<br>
+
+- 第 p 主成分<br>
+    ![image](https://user-images.githubusercontent.com/25688193/48969801-10ccc680-f047-11e8-88a8-8cc69ce0a48e.png)<br>
 
 
 
