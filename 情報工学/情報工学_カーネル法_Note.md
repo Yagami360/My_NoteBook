@@ -16,6 +16,7 @@
         1. [動径基底関数カーネル（RBFカーネル）[radial bases function kernel]](#動径基底関数カーネル（RBFカーネル）)
         1. [ラプラスカーネル](#ラプラスカーネル)
         1. [多項式カーネル](#多項式カーネル)
+    1. 構造化データに対する正定値カーネル
 1. [再生核ヒルベルト空間](#再生核ヒルベルト空間)
     1. [再生核の性質](#再生核の性質)
         1. [再生核のテンソル積](#再生核のテンソル積)
@@ -52,8 +53,18 @@
     1. [リプレゼンター定理](#リプレゼンター定理)
     1. [【補足（外部リンク）】正則化 [Regularization] による過学習への対応](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_3-1-4)
 1. 各種カーネル法
+    1. [カーネル主成分分析（kernel PCA）](#カーネル主成分分析)
+        1. [【補足（外部リンク）】主成分分析 [PCA : Principal Component Analysis]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_2-5-1))
+        1. [【補足（外部リンク）】カーネル主成分分析 [kernel PCA : kernel Principal Component Analysis]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_2-5-2)
+        1. [カーネル主成分分析の再生核ヒルベルト空間を用いた議論](#カーネル主成分分析の再生核ヒルベルト空間を用いた議論)
     1. [【外部リンク】サポートベクターマシン [SVM : Support Vector Machine]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_9)
-    1. [【外部リンク】カーネル主成分分析 [kernel PCA : kernel Principal Component Analysis]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_2-5-2)
+1. カーネル法との関連
+    1. 平均による確率分布の特徴付け
+        1. 再生核ヒルベルト空間における平均
+        1. 確率分布を特徴付ける正定値カーネル
+    1. 正定値カーネルによる依存性、独立性
+        1. 再生核ヒルベルト空間上の共分散作用素
+    1. 確率過程と再生核ヒルベルト空間
 1. [ニューラルネットワークとカーネル法](#ニューラルネットワークとカーネル法)
 1. 補足事項
     1. [【外部リンク】関数解析とヒルベルト空間](http://yagami12.hatenablog.com/entry/2018/10/03/134340)
@@ -1043,6 +1054,55 @@ Mercer の定理を用いれば、再生核ヒルベルト空間とその空間�
         という関係が成り立つので、この級数展開の式<br>
         ![image](https://user-images.githubusercontent.com/25688193/48833178-28454e80-edbe-11e8-96b7-ce253a60b59e.png)<br>
         で与えられる関数 ![image](https://user-images.githubusercontent.com/25688193/48833741-68590100-edbf-11e8-946c-58164364d489.png) は、最適化問題の最小値を達成する解であることが分かる。<br>
+
+
+<!--
+<a id="各種カーネル法"></a>
+
+## ■ 各種カーネル法
+> 記載中...
+-->
+
+<a id="カーネル主成分分析"></a>
+
+## ■ カーネル主成分分析（kernel PCA）
+カーネル主成分分析は、カーネル法を用いて、線形分離不可能な問題を、より高次元の線形分離可能な再生核ヒルベルト空間持ち込んで、この再生核ヒルベルト空間内で主成分分析を行う手法であるが、ここでは、このカーネル主成分分析を、再生核ヒルベルト空間の概念で捉え直し、より一般的な視点で見ていく。<br>
+
+
+まず、このカーネル主成分分析の基本となる、通常の主成分分析（PCA）については、以下のページを参照。<br>
+
+- 【参考】<br>
+    - [主成分分析 [PCA : Principal Component Analysis]](http://yagami12.hatenablog.com/entry/2017/09/17/111400#ID_2-5-1)<br>
+
+次に、カーネル主成分分析の再生核ヒルベルト空間の概念を（表立って）用いない内容については、以下のページを参照<br>
+
+- 【参考】<br>
+    - [カーネル主成分分析 [kernel PCA : kernel Principal Component Analysis]]()<br>
+
+
+<a id="カーネル主成分の再生核ヒルベルト空間を用いた議論"></a>
+
+### ◎ カーネル主成分の再生核ヒルベルト空間を用いた議論
+集合 X 上の与えられたデータ ![image](https://user-images.githubusercontent.com/25688193/48967961-92aef680-f02b-11e8-8cb3-f6540e8e53cf.png) に対して、X×X 上の正定値カーネル ![image](https://user-images.githubusercontent.com/25688193/48967968-beca7780-f02b-11e8-985d-739230889e74.png) を用意し、この正定値カーネル k の組を基底として張られる再生核ヒルベルト空間 ![image](https://user-images.githubusercontent.com/25688193/48967969-cf7aed80-f02b-11e8-9c70-aa8b311ce2fe.png) において、<br>
+
+特徴写像 ![image](https://user-images.githubusercontent.com/25688193/48967978-f802e780-f02b-11e8-8fe9-3211f830fd9f.png) により、![image](https://user-images.githubusercontent.com/25688193/48967982-0fda6b80-f02c-11e8-8936-50176f09be60.png) という再生核ヒルベルト空間 ![image](https://user-images.githubusercontent.com/25688193/48967969-cf7aed80-f02b-11e8-9c70-aa8b311ce2fe.png) 中のデータが生成されているようなケースを考える。<br>
+
+カーネル主成分分析は、この再生核ヒルベルト空間内で主成分分析を行うのであるが、通常の主成分分析の際の、第１主成分 ![image](https://user-images.githubusercontent.com/25688193/48967995-31d3ee00-f02c-11e8-9ee5-e18f80c2dd68.png) へのデータの射影 ![image](https://user-images.githubusercontent.com/25688193/48968000-4adc9f00-f02c-11e8-91de-884e327fded1.png) の分散値<br>
+![image](https://user-images.githubusercontent.com/25688193/48968012-6e074e80-f02c-11e8-9997-780369673966.png)<br>
+の最大化（＝最適化問題）<br>
+<br>
+に対応するものとして、再生核ヒルベルト空間 ![image](https://user-images.githubusercontent.com/25688193/48967969-cf7aed80-f02b-11e8-9c70-aa8b311ce2fe.png) 中の第１主成分 f に対して、<br>
+![image](https://user-images.githubusercontent.com/25688193/48968030-b7f03480-f02c-11e8-964d-4d9bf0a66e8d.png)<br>
+を考える。<br>
+※ ![image](https://user-images.githubusercontent.com/25688193/48968034-c8a0aa80-f02c-11e8-9819-81f4a707252f.png) は、主成分軸 f のデータの射影の意味合いとなっており、通常の主成分分析の内積演算 ![image](https://user-images.githubusercontent.com/25688193/48968038-d9512080-f02c-11e8-8fe5-461ae819d21d.png) に対応するものである。<br>
+
+ここで、主成分分析は、標準化されたデータ（平均０，分散値１）で行う必要があるので、<br>
+この再生核ヒルベルト空間内でのデータを中心化した<br>
+![image](https://user-images.githubusercontent.com/25688193/48968108-5b414980-f02d-11e8-8857-928379874e69.png)<br>
+で考える。<br>
+
+
+> 記載中...
 
 
 
