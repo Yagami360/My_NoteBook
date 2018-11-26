@@ -1194,10 +1194,21 @@ Mercer の定理を用いれば、再生核ヒルベルト空間とその空間�
 ここで、リプレゼンター定理より、この最適化問題の解（＝再生核ヒルベルト空間中の関数）![image](https://user-images.githubusercontent.com/25688193/49017460-3df6b180-f1cc-11e8-8159-7075f670888a.png) は、<br>
 ![image](https://user-images.githubusercontent.com/25688193/49017661-c1180780-f1cc-11e8-8000-d08e91db32e5.png)<br>
 のような有限次元の級数展開の式で表現できるが、これを元の正準相関の式に代入すると、以下のように変形できる。（途中計算略）<br>
-![image](https://user-images.githubusercontent.com/25688193/49017902-57e4c400-f1cd-11e8-92c6-baa36cf89ec5.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/49023355-65ed1180-f1da-11e8-8109-a6ce3ccdf6fd.png)<br>
 
-> 記載中...
+ここで、この最適化問題の定性的な議論として、再生核ヒルベルト空間という関数の自由度が高すぎる空間での最適化、より詳細には、サンプル数に対して、パラメーター数が多すぎる最適化となっているために、過学習が発生してしまい、その結果として、相関係数が１になるような意味のないパラメーター ![image](https://user-images.githubusercontent.com/25688193/49014515-bdcc4e00-f1c3-11e8-9eb4-fdef0477b07e.png) の解が求まってしまうという問題がある。<br>
 
+この過学習を回避するために、目的関数に対して正則化項を付け加えることを考える。<br>
+即ち、以下のような正則化項付きの最適化問題を考える。<br>
+![image](https://user-images.githubusercontent.com/25688193/49025440-05140800-f1df-11e8-8199-f4b449bcf74f.png)<br>
+
+先と同様にして、関数 f,g をレプリゼンター定理にもとづく級数展開式、及び、グラム行列 K で書き換えると、<br>
+![image](https://user-images.githubusercontent.com/25688193/49025504-2e349880-f1df-11e8-8e8c-7d0fe949f1c2.png)<br>
+
+この最適化問題を解くために、線形正準相関分析のときと同様にして、ラグランジュの未定乗数法を用いて変形すると、最終的に、この最適化問題は、以下のような固有値問題に帰着される。<br>
+![image](https://user-images.githubusercontent.com/25688193/49025528-3db3e180-f1df-11e8-86b4-9b7a6bce5451.png)<br>
+
+この固有方程式において、固有値 ρ が正準相関係数に対応するので、最も大きい値となる固有値 ![image](https://user-images.githubusercontent.com/25688193/49025570-558b6580-f1df-11e8-835e-d46ae3fc7a36.png) に対応する固有ベクトルが、求めるべきパラメーター ![image](https://user-images.githubusercontent.com/25688193/49025621-6a67f900-f1df-11e8-9441-36d7e3a2c096.png) となる。<br>
 
 
 <a id="ニューラルネットワークとカーネル法"></a>
