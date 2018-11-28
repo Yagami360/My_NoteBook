@@ -1434,6 +1434,14 @@ d 次元のユークリッド空間 ![image](https://user-images.githubuserconte
     - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90%E2%80%95%E9%9D%9E%E7%B7%9A%E5%BD%A2%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90%E3%81%AE%E6%96%B0%E3%81%97%E3%81%84%E5%B1%95%E9%96%8B-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E7%A2%BA%E7%8E%87%E3%81%A8%E6%83%85%E5%A0%B1%E3%81%AE%E7%A7%91%E5%AD%A6-%E8%B5%A4%E7%A9%82-%E6%98%AD%E5%A4%AA%E9%83%8E/dp/4000069713?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4000069713)<br>
     - 前半に各種カーネル法（カーネル主成分分析、SVMなど）の説明があって、最後の方に、正定値カーネル、再生核ヒルベルト空間についての（関数解析用語での）理論的な説明。加えて、正定値カーネルの情報幾何的な解釈、リプレゼンター定理の説明がある。<br>
 
+- パターン認識と機械学習 下<br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_lpo_sbs_14_t_1?_encoding=UTF8&psc=1&refRID=K2ESPX1T44YFERG3T27T)
+    - いわずと知れた機械学習の定番書。6章にカーネル法、7章にサポートベクターマシン、12章にカーネル主成分分析の説明がある。<br>
+
+- はじめてのパターン認識<br>
+    - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98-%E5%B9%B3%E4%BA%95-%E6%9C%89%E4%B8%89/dp/4627849710?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4627849710)<br>
+    - 「パターン認識と機械学習」の内容がコンパクトにまとまっていて分かりやすい。
+
 - サポートベクターマシン入門<br>
     - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC%E3%83%9E%E3%82%B7%E3%83%B3%E5%85%A5%E9%96%80-%E3%83%8D%E3%83%AD-%E3%82%AF%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%82%A2%E3%83%8B%E3%83%BC%E3%83%8B/dp/4320121341?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4320121341)<br>
     - 原書は英語の本。カーネル法の1種であるSVMのみのタイトルだが、3章のカーネル誘導特徴空間の章で、より一般的な、正定値カーネル、再生核ヒルベルト空間の理論的な説明。及び、マーセルの定理の説明。
@@ -1443,17 +1451,14 @@ d 次元のユークリッド空間 ![image](https://user-images.githubuserconte
     - [amazonで詳細を見る](https://www.amazon.co.jp/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B9-%E5%AE%9F%E8%A3%85%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6Python-%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0-Machine-Learning/dp/4797393963/ref=sr_1_1?ie=UTF8&qid=1541355307&sr=8-1&keywords=%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%E3%82%A8%E3%83%83%E3%82%BB%E3%83%B3%E3%82%B9)
     - 5-7章にカーネル法の1種であるSVMのアルゴリズムを構成するマージン最大化と最適化問題の丁寧な式変形での解説と、scikit-learn などの機械学習フレームワークを使用せず、numpyだけを使用したPythonでのスクラッチ実装コードとその丁寧なコード説明がある。<br>
 
-- はじめてのパターン認識<br>
-    - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98-%E5%B9%B3%E4%BA%95-%E6%9C%89%E4%B8%89/dp/4627849710?SubscriptionId=AKIAI4N75A3H7VG7SKUQ&amp;tag=cloudstudy09-22&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=4627849710)<br>
-
-- 数学セミナー12月号 機械学習の数理 (2)<br>
+- 数学セミナー12月号<br>
     - [数学セミナー2018年12月号｜日本評論社](https://www.nippyo.co.jp/shop/magazines/latest/4.html)<br>
-
+    - 連載特集に機械学習の数理として、カーネル法とニューラルネットワークの関連性について書かれた記事がある。
 
 <a id="使用コード"></a>
 
 ### ◎ 使用コード
-この記事で使われている一部の各種図や解析内容のコードは、以下の場所に置いてあります。参考までに<br>
+この記事で使われている一部の図や解析内容のコードは、以下の場所に置いてあります。参考までに<br>
 
 - サポートベクターマシン（SVM）<br>
     - [GitHub/Yagami360/MachineLearning_Exercises_Python_scikit-learn/SVM_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/SVM_scikit-learn)<br>
