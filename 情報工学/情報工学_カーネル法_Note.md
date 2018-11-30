@@ -124,12 +124,12 @@
 
 ### ◎ カーネルトリック 
 ![image](https://user-images.githubusercontent.com/25688193/49130072-7950c780-f315-11e8-860d-368559dd82e3.png)<br>
-カーネル法では、特徴写像 Φ により、ユークリッド空間上のデータを、より高次元の特徴空間へ写像するが、この際に、カーネル関数 k は、特徴空間内の２つの特徴ベクトルの内積、即ち、![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) によって定まる。<br>
-従って、特徴空間での内積を計算したい場合（例えば、データ解析手法において共分散分散行列を計算したい場合など）において、特徴空間の次数に依存して膨大になる特徴ベクトルの内積計算ではなく、カーネル関数で直接計算できる。<br>
+カーネル法では、特徴写像 Φ により、ユークリッド空間上のデータを、より高次元の特徴空間へ写像するが、この際に、正定値カーネル k は、特徴空間内の２つの特徴ベクトルの内積、即ち、![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) によって定まる。<br>
+従って、特徴空間での内積を計算したい場合（例えば、データ解析手法において共分散分散行列を計算したい場合など）において、特徴空間の次数に依存して膨大になる特徴ベクトルの内積計算ではなく、正定値カーネルで直接計算できる。<br>
 このような計算量の大幅削減テクニックを、カーネルトリックという。<br>
 尚、このカーネルトリックの元になるの ![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) 関係は、Moore - Aronszajn の定理からの帰着から得られる。<br>
 
-> 詳細は、[Moore-Aronszajn の定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86)、[ 特徴写像とカーネルトリック（Moore - Aronszajn の定理からの帰着）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E7%89%B9%E5%BE%B4%E5%86%99%E5%83%8F%E3%81%A8%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%EF%BC%88Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86%E3%81%8B%E3%82%89%E3%81%AE%E5%B8%B0%E7%9D%80%EF%BC%89) に記載<br>
+> 詳細は、[正定値カーネル](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB)、[Moore-Aronszajn の定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86)、[ 特徴写像とカーネルトリック（Moore - Aronszajn の定理からの帰着）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E7%89%B9%E5%BE%B4%E5%86%99%E5%83%8F%E3%81%A8%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%EF%BC%88Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86%E3%81%8B%E3%82%89%E3%81%AE%E5%B8%B0%E7%9D%80%EF%BC%89) に記載<br>
 
 
 <a id="概要_リプレゼンター定理"></a>
