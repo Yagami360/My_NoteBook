@@ -409,7 +409,7 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 Moore-Aronszajn の定理より、再生核ヒルベルト空間を再解釈（＝特徴付け）したのが以下の図である。<br>
 正定値カーネルが、再生核ヒルベルト空間の基底になっており、それを元に再生核ヒルベルト空間が構築されていることと、再生性の条件 ![image](https://user-images.githubusercontent.com/25688193/48708417-dbd70300-ec45-11e8-9edc-9ad09734cc4d.png) が、元のベクトル空間での入力値の写像後の値に対応している点がポイントである。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/49289436-1f9ff700-f4e7-11e8-82e3-ec18152464c3.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/46566609-ba9fa900-c95c-11e8-8c28-a89da4de0f5d.png)<br>
 
 
 <a id="特徴写像とカーネルトリック（Moore-Aronszajnの定理からの帰着）"></a>
