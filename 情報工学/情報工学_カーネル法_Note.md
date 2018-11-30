@@ -1351,6 +1351,8 @@ Mercer の定理を用いれば、再生核ヒルベルト空間とその空間�
 d 次元のユークリッド空間 ![image](https://user-images.githubusercontent.com/25688193/49069031-97fa8400-f26b-11e8-9d3a-fdf5835e93af.png) において、以下のような教師データ付きの学習データの集合 ![image](https://user-images.githubusercontent.com/25688193/49069060-b06a9e80-f26b-11e8-8fdc-85ed908067bd.png) が与えられたケースを考える。<br>
 ![image](https://user-images.githubusercontent.com/25688193/49069085-c11b1480-f26b-11e8-89e4-b1c47a7a362d.png)<br>
 
+![image](https://user-images.githubusercontent.com/25688193/49289107-182c1e00-f4e6-11e8-9ab9-f9a04674e40e.png)<br>
+
 このとき、上図のように、線形識別器の関数 ![image](https://user-images.githubusercontent.com/25688193/49069152-e4de5a80-f26b-11e8-8185-733b7a036306.png) のマージンを h>0 に設定すると、全ての学習データ ![image](https://user-images.githubusercontent.com/25688193/49069203-fd4e7500-f26b-11e8-9ecc-faf9589ba51f.png) に対して、このマージン分 h だけ離れた値の関係<br>
 ![image](https://user-images.githubusercontent.com/25688193/49069222-0e978180-f26c-11e8-9d78-7a1d0c940029.png)<br>
 が成り立つ。<br>
