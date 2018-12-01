@@ -19,7 +19,6 @@
         1. [動径基底関数カーネル（RBFカーネル）[radial bases function kernel]](#動径基底関数カーネル（RBFカーネル）)
         1. [ラプラスカーネル](#ラプラスカーネル)
         1. [多項式カーネル](#多項式カーネル)
-    1. 構造化データに対する正定値カーネル
 1. [再生核ヒルベルト空間](#再生核ヒルベルト空間)
     1. [再生核の性質](#再生核の性質)
         1. [再生核のテンソル積](#再生核のテンソル積)
@@ -116,7 +115,7 @@
 ![image](https://user-images.githubusercontent.com/25688193/49068931-5a95f680-f26b-11e8-8347-eb67fa17ddf8.png)<br>
 有限次元のユークリッド空間上での線形なデータ解析手法は、左上図のように、データの分布が線形でない場合うまくいかない。<br>
 このような場合、右上図のように、データをより高次元の空間に持ち込み、その空間上で、線形なデータ解析手法を適用するという解決策が考えられる。<br>
-カーネル法では、このようなデータをより高次元の空間に持ち込む写像を、特徴写像として定式化し、この特徴写像の写像先の特徴空間を、内積が定義された無限次元空間である再生核ヒルベルト空間として定式化する。（※再生核ヒルベルトでは、更に、再生性の条件が成り立つが、これは、後述のカーネルトリックを適用できるために必要な性質となっている。）<br>
+カーネル法では、このようなデータをより高次元の空間に持ち込む写像を、特徴写像として定式化し、特徴写像の写像先である高次元の特徴空間を、一般的・汎用的な枠組みで扱えるように、内積が定義された無限次元空間である再生核ヒルベルト空間として定式化する。（※再生核ヒルベルトでは、更に、再生性の条件が成り立つが、これは、後述のカーネルトリックを適用できるために必要な性質となっている。）<br>
 
 > 詳細は、[再生核ヒルベルト空間](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E5%86%8D%E7%94%9F%E6%A0%B8%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93) に記載<br>
 
@@ -128,7 +127,7 @@
 カーネル法では、特徴写像 Φ により、ユークリッド空間上のデータを、より高次元の特徴空間へ写像するが、この際に、ユークリッド空間上の２つのデータの類似性を表すカーネル関数 k は、特徴空間内の２つの特徴ベクトルの内積、即ち、![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) によって定まる。<br>
 従って、特徴空間での内積を計算したい場合（例えば、データ解析手法において共分散分散行列を計算したい場合など）において、特徴空間の次数に依存して膨大になる特徴ベクトルの内積計算ではなく、正定値カーネルで直接計算できる。<br>
 このような計算量の大幅削減テクニックを、カーネルトリックという。<br>
-尚、このカーネルトリックの元になるの ![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) 関係は、Moore - Aronszajn の定理からの帰着から得られる。<br>
+尚、このカーネルトリックの元になる ![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) 関係は、Moore - Aronszajn の定理からの帰着から得られる。<br>
 
 > 詳細は、[正定値カーネル](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB)、[Moore-Aronszajn の定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86)、[ 特徴写像とカーネルトリック（Moore - Aronszajn の定理からの帰着）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E7%89%B9%E5%BE%B4%E5%86%99%E5%83%8F%E3%81%A8%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%EF%BC%88Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86%E3%81%8B%E3%82%89%E3%81%AE%E5%B8%B0%E7%9D%80%EF%BC%89) に記載<br>
 
@@ -312,7 +311,8 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 
 ## ■ 再生核ヒルベルト空間
 概要でみたように、カーネル法では、特徴空間を再生核ヒルベルト空間で定式化する。<br>
-一見すると、特徴空間では、内積構造が備わっている完備な空間、即ち、ヒルベルト空間で定式化すれば十分であるように思えるが、再生核ヒルベルト空間における再生性の条件が成り立てば、カーネルトリックが使用できるので、再生核ヒルベルト空間で定式化する。<br>
+一見すると、特徴空間では、内積構造が備わっている完備な無限次元空間、即ち、ヒルベルト空間で定式化すれば十分であるように思えるが、再生核ヒルベルト空間における再生性の条件が成り立てば、カーネルトリックが使用できるので、再生核ヒルベルト空間で定式化する。<br>
+（※ただの高次元空間ではなく、無限次元空間で定式化するのは、一般性や汎用性を確保するため）<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/46570892-a84a5d00-c9a6-11e8-9afd-fa2ca50310fe.png)<br>
 
@@ -1559,21 +1559,23 @@ d 次元のユークリッド空間 ![image](https://user-images.githubuserconte
 > ニューラルネットワークの中間層からの出力は、再生核ヒルベルト空間の要素（関数）となっていると言える。<br>
 > つまり、ニューラルネットワークは、マルチプルカーネル学習（＝係数である重みベクトルa,bも学習してカーネル関数自体も学習）を行うカーネル法ともみなせる。<br>
 
-
-
 ---
-
 
 <a id="参考文献"></a>
 
 ## ■ 参考文献
 
-- カーネル法入門―正定値カーネルによるデータ解析 (シリーズ 多変量データの統計科学)<br>
-    - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95%E5%85%A5%E9%96%80%E2%80%95%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%A4%9A%E5%A4%89%E9%87%8F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%B5%B1%E8%A8%88%E7%A7%91%E5%AD%A6-%E7%A6%8F%E6%B0%B4-%E5%81%A5%E6%AC%A1/dp/4254128088?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4254128088)<br>
-
 - カーネル多変量解析―非線形データ解析の新しい展開 (シリーズ確率と情報の科学)<br>
     - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E5%A4%9A%E5%A4%89%E9%87%8F%E8%A7%A3%E6%9E%90%E2%80%95%E9%9D%9E%E7%B7%9A%E5%BD%A2%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90%E3%81%AE%E6%96%B0%E3%81%97%E3%81%84%E5%B1%95%E9%96%8B-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%E7%A2%BA%E7%8E%87%E3%81%A8%E6%83%85%E5%A0%B1%E3%81%AE%E7%A7%91%E5%AD%A6-%E8%B5%A4%E7%A9%82-%E6%98%AD%E5%A4%AA%E9%83%8E/dp/4000069713?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4000069713)<br>
     - 前半に各種カーネル法（カーネル主成分分析、SVMなど）の説明があって、最後の方に、正定値カーネル、再生核ヒルベルト空間についての（関数解析用語での）理論的な説明。加えて、正定値カーネルの情報幾何的な解釈、リプレゼンター定理の説明がある。<br>
+    - 各種カーネル法の説明が豊富に記載してある。
+    - おすすめ
+
+- カーネル法入門―正定値カーネルによるデータ解析 (シリーズ 多変量データの統計科学)<br>
+    - [amazon で詳細を見る](https://www.amazon.co.jp/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95%E5%85%A5%E9%96%80%E2%80%95%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%81%AB%E3%82%88%E3%82%8B%E3%83%87%E3%83%BC%E3%82%BF%E8%A7%A3%E6%9E%90-%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA-%E5%A4%9A%E5%A4%89%E9%87%8F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%AE%E7%B5%B1%E8%A8%88%E7%A7%91%E5%AD%A6-%E7%A6%8F%E6%B0%B4-%E5%81%A5%E6%AC%A1/dp/4254128088?SubscriptionId=AKIAJMYP6SDQFK6N4QZA&amp&tag=cloudstudy09-22&amp&linkCode=xm2&amp&camp=2025&amp&creative=165953&amp&creativeASIN=4254128088)<br>
+    - カーネル法の数理的な内容が豊富に記載してある。
+    - おすすめ
+
 
 - パターン認識と機械学習 下<br>
     - [amazonで詳細を見る](https://www.amazon.co.jp/%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E8%AA%8D%E8%AD%98%E3%81%A8%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92-%E4%B8%8B-%E3%83%99%E3%82%A4%E3%82%BA%E7%90%86%E8%AB%96%E3%81%AB%E3%82%88%E3%82%8B%E7%B5%B1%E8%A8%88%E7%9A%84%E4%BA%88%E6%B8%AC-C-M-%E3%83%93%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97/dp/4621061240/ref=pd_lpo_sbs_14_t_1?_encoding=UTF8&psc=1&refRID=K2ESPX1T44YFERG3T27T)
@@ -1601,9 +1603,12 @@ d 次元のユークリッド空間 ![image](https://user-images.githubuserconte
 ### ◎ 使用コード
 この記事で使われている一部の図や解析内容のコードは、以下の場所に置いてあります。参考までに<br>
 
-- サポートベクターマシン（SVM）<br>
-    - [GitHub/Yagami360/MachineLearning_Exercises_Python_scikit-learn/SVM_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/SVM_scikit-learn)<br>
-
 - カーネル主成分分析<br>
     - [GitHub/Yagami360/MachineLearning_Exercises_Python_scikit-learn/kernelPCA_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/kernelPCA_scikit-learn)
+
+- サポートベクターマシン（SVM）<br>
+    - [GitHub/Yagami360/MachineLearning_Exercises_Python_scikit-learn/SVM_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/SVM_scikit-learn)<br>
+    - [GitHub/Yagami360/MachineLearning_Exercises_Python_scikit-learn/MachineLearningPipeline_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/MachineLearningPipeline_scikit-learn)<br>
+    - [GitHub/Yagami360/MachineLearning_Exercises_Python_scikit-learn/EnsembleLearning_scikit-learn](https://github.com/Yagami360/MachineLearning_Exercises_Python_scikit-learn/tree/master/EnsembleLearning_scikit-learn)
+
 
