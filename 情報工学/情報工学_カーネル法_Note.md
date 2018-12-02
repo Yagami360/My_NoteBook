@@ -23,7 +23,6 @@
     1. [再生核の性質](#再生核の性質)
         1. [再生核のテンソル積](#再生核のテンソル積)
     1. [再生核ヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理](#再生核ヒルベルト空間の線形汎関数を用いた特徴付けとリースの表現定理)
-        1. [【補足】リースの表現定理](#【補足】リースの表現定理)
     1. [Moore-Aronszajn の定理](#Moore-Aronszajnの定理)
         1. [特徴写像とカーネルトリック（Moore - Aronszajn の定理からの帰着）](#特徴写像とカーネルトリック（Moore-Aronszajnの定理からの帰着）)
     1. [再生核ヒルベルト空間の具体的な構成](#再生核ヒルベルト空間の具体的な構成)
@@ -71,7 +70,7 @@
         1. [ヒンジ損失関数を用いた正則化法としての SVM](#ヒンジ損失関数を用いた正則化法としてのSVM)
         1. [マージン最大化を実現する線形識別器のカーネル化](#マージン最大化を実現する線形識別器のカーネル化)
         1. [SVM の最適化問題の最適解と KKT 条件](#SVMの最適化問題の最適解とKKT条件)
-        1. SVM の数値解
+        1. [SVM の数値解法の概要](#SVMの数値解法の概要)
         1. [SVM の簡単な適用例](#SVMの簡単な適用例)
     1. サポートベクトル回帰
     1. カーネルロジスティクス回帰
@@ -112,7 +111,7 @@
 <a id="概要_特徴写像と再生核ヒルベルト空間"></a>
 
 ### ◎ 特徴写像と再生核ヒルベルト空間
-![image](https://user-images.githubusercontent.com/25688193/49068931-5a95f680-f26b-11e8-8347-eb67fa17ddf8.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/49337563-4b8eba00-f658-11e8-9490-1bd55170fd6f.png)<br>
 有限次元のユークリッド空間上での線形なデータ解析手法は、左上図のように、データの分布が線形でない場合うまくいかない。<br>
 このような場合、右上図のように、データをより高次元の空間に持ち込み、その空間上で、線形なデータ解析手法を適用するという解決策が考えられる。<br>
 カーネル法では、このようなデータをより高次元の空間に持ち込む写像を、特徴写像として定式化し、特徴写像の写像先である高次元の特徴空間を、一般的・汎用的な枠組みで扱えるように、内積が定義された無限次元空間である再生核ヒルベルト空間として定式化する。（※再生核ヒルベルトでは、更に、再生性の条件が成り立つが、これは、後述のカーネルトリックを適用できるために必要な性質となっている。）<br>
@@ -122,14 +121,16 @@
 
 <a id="概要_カーネルトリック"></a>
 
-### ◎ カーネルトリック 
+### ◎ カーネルトリック
+<!--
 ![image](https://user-images.githubusercontent.com/25688193/49130072-7950c780-f315-11e8-860d-368559dd82e3.png)<br>
+-->
 カーネル法では、特徴写像 Φ により、ユークリッド空間上のデータを、より高次元の特徴空間へ写像するが、この際に、ユークリッド空間上の２つのデータの類似性を表すカーネル関数 k は、特徴空間内の２つの特徴ベクトルの内積、即ち、![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) によって定まる。<br>
 従って、特徴空間での内積を計算したい場合（例えば、データ解析手法において共分散分散行列を計算したい場合など）において、特徴空間の次数に依存して膨大になる特徴ベクトルの内積計算ではなく、正定値カーネルで直接計算できる。<br>
 このような計算量の大幅削減テクニックを、カーネルトリックという。<br>
-尚、このカーネルトリックの元になる ![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) 関係は、Moore - Aronszajn の定理からの帰着から得られる。<br>
+尚、このカーネルトリックの元になる ![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) 関係は、カーネル関数が正定値カーネルであることと、再生核ヒルベルト空間における再生性の条件、及び、Moore - Aronszajn の定理からの帰着から得られる。<br>
 
-> 詳細は、[正定値カーネル](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB)、[Moore-Aronszajn の定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86)、[ 特徴写像とカーネルトリック（Moore - Aronszajn の定理からの帰着）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E7%89%B9%E5%BE%B4%E5%86%99%E5%83%8F%E3%81%A8%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%EF%BC%88Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86%E3%81%8B%E3%82%89%E3%81%AE%E5%B8%B0%E7%9D%80%EF%BC%89) に記載<br>
+> 詳細は、[正定値カーネル](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E6%AD%A3%E5%AE%9A%E5%80%A4%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB)、[再生核ヒルベルト空間](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E5%86%8D%E7%94%9F%E6%A0%B8%E3%83%92%E3%83%AB%E3%83%99%E3%83%AB%E3%83%88%E7%A9%BA%E9%96%93)、[Moore-Aronszajn の定理](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86)、[ 特徴写像とカーネルトリック（Moore - Aronszajn の定理からの帰着）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E6%B3%95_Note.md#%E7%89%B9%E5%BE%B4%E5%86%99%E5%83%8F%E3%81%A8%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%EF%BC%88Moore-Aronszajn%E3%81%AE%E5%AE%9A%E7%90%86%E3%81%8B%E3%82%89%E3%81%AE%E5%B8%B0%E7%9D%80%EF%BC%89) に記載<br>
 
 
 <a id="概要_リプレゼンター定理"></a>
@@ -311,8 +312,8 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 
 ## ■ 再生核ヒルベルト空間
 概要でみたように、カーネル法では、特徴空間を再生核ヒルベルト空間で定式化する。<br>
-一見すると、特徴空間では、内積構造が備わっている完備な無限次元空間、即ち、ヒルベルト空間で定式化すれば十分であるように思えるが、再生核ヒルベルト空間における再生性の条件が成り立てば、カーネルトリックが使用できるので、再生核ヒルベルト空間で定式化する。<br>
-（※ただの高次元空間ではなく、無限次元空間で定式化するのは、一般性や汎用性を確保するため）<br>
+一見すると、特徴空間では、内積構造が備わっている完備な無限次元空間、即ち、ヒルベルト空間で定式化すれば十分であるように思えるが、カーネルトリックの元になる関係式 ![image](https://user-images.githubusercontent.com/25688193/49225878-87dbd380-f428-11e8-8305-c0af2a36dd2b.png) が成り立つための要件として、再生核ヒルベルト空間における再生性の条件が必要になるので、再生核ヒルベルト空間で定式化する。<br>
+（※尚、ただの高次元空間ではなく、無限次元空間で定式化するのは、一般性や汎用性を確保するため）<br>
 
 ![image](https://user-images.githubusercontent.com/25688193/46570892-a84a5d00-c9a6-11e8-9afd-fa2ca50310fe.png)<br>
 
@@ -390,7 +391,10 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 > 【メモ】<br>
 > 再生性の条件 ![image](https://user-images.githubusercontent.com/25688193/46566137-dce0f900-c953-11e8-8416-0c4d02397343.png) と、リースの表現定理の内積表現 ![image](https://user-images.githubusercontent.com/25688193/46566178-b2dc0680-c954-11e8-882e-54adb5a8e531.png) が対応していることに注目。<br>
 
+- 【参考】
+    - [リースの表現定理](http://yagami12.hatenablog.com/entry/2018/10/03/134340#ID_A-4)
 
+<!--
 <a id="【補足】リースの表現定理"></a>
 
 #### 【補足】リースの表現定理
@@ -399,7 +403,7 @@ m 次元ユークリッド空間 ![image](https://user-images.githubusercontent.
 
 > 【メモ】<br>
 > 簡単言えば、このリースの表現定理は、射影定理によって直交補空間から非零元を取ってきて、それをグラムシュミットの方法で正規直交化している流れになっている。<br>
-
+-->
 
 <a id="Moore-Aronszajnの定理"></a>
 
@@ -1326,7 +1330,7 @@ Mercer の定理を用いれば、再生核ヒルベルト空間とその空間�
     そして、このマージン最大化は、最適化問題として定式化される。<br>
 
 - カーネル法とカーネルトリック、リプレゼンター定理（カーネル化）：<br>
-    ![image](https://user-images.githubusercontent.com/25688193/49068931-5a95f680-f26b-11e8-8347-eb67fa17ddf8.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/49337590-f606dd00-f658-11e8-98e7-ba070de04ce6.png)<br>
     サポートベクターマシンでも他のカーネル法と同様にして、ユークリッド空間において線形分離不可能な問題を、より高次元の再生核ヒルベルト空間内での線形識別問題に置き換える。（上図参照）<br>
 	そして、リプレゼンター定理により、再生核ヒルベルト空間という無限次元空間での最適化問題が、サンプル数に応じた有限次元空間での最適化問題に置き換えられる。<br>
     更に、カーネルトリックにより、２つの特徴ベクトルの内積演算をカーネル関数で直接計算可能とする。<br>
@@ -1455,7 +1459,7 @@ d 次元のユークリッド空間 ![image](https://user-images.githubuserconte
 ### ◎ マージン最大化を実現する線形識別器のカーネル化
 ここまでのSVMは、ユークリッド空間上でマージン最大化を実現する線形識別器であったが、これをカーネル化、即ち、以下の図のように、特徴写像により、ユークリッド空間から再生核ヒルベルト空間へという、より高次元でデータを線形分離可能な空間へと写像し、この再生核ヒルベルト空間内で、線形識別を行う。<br>
 ※ 一般的に、SVMというと、このカーネル化も含めてSVMという。<br>
-![image](https://user-images.githubusercontent.com/25688193/49141210-75cf3780-f339-11e8-9f27-0aac31e9aa63.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/49337605-34040100-f659-11e8-9661-4ab59931a75f.png)<br>
 
 - X : 可測集合<br>
 - ![image](https://user-images.githubusercontent.com/25688193/49141558-36edb180-f33a-11e8-936b-37d29efb23bb.png) : X 上の正定値カーネル<br>
@@ -1542,6 +1546,25 @@ d 次元のユークリッド空間 ![image](https://user-images.githubuserconte
 ※ ![image](https://user-images.githubusercontent.com/25688193/49326401-153c3680-f595-11e8-85e4-50a554c45679.png) のときのサポートベクトル ![image](https://user-images.githubusercontent.com/25688193/49326363-83342e00-f594-11e8-9a4e-5fbc8d17180d.png) を、上限値 C になっているという意味で、上限サポートベクトルという。<br>
 
 
+<a id="SVMの数値解法の概要"></a>
+
+### ◎ SVM の数値解法の概要
+ここまで、SVMの最適化問題における最適解が、KTT 条件で与えられることを見てきたが、膨大なデータに対して、実際にこれを解いて、具体的な最適解（＝最適なパラメーター）を求めるのは、一般的に困難である。<br>
+従って、一般的な凸２次計画問題用の数値解法を用いて、SVM の最適化問題（＝凸２次計画問題）の具体的な最適解を求めることが考えられるが、データが膨大な場合、これらの一般的な凸２次計画問題用の数値解法では、実用的な計算時間で最適解を求めることが困難である。<br>
+そこで実際には、SMO などの SVM の最適化問題の解法に特化した効率的な最適化手法で、SVM の具体的な最適解を求めることになる。<br>
+
+以下、最も一般的な SMO アルゴリズムの概要のみ記載する。<br>
+
+- SMO [Sequential Minimal Optimization]（逐次最小問題最適化法）<br>
+    ある２つの変数のペアを選び、一方の変数を固定した上で、ペアの値を順次変えながら、よりよい最適値を逐次求めていく手法。<br>
+    各最適化ステップにおいて、２つの変数を選ぶための基準として、KTT 条件に基づく基準を採用する。<br>
+
+<br>
+
+- 【参考サイト】
+    - [MLP SVM Chapter 7 分割法](https://www.slideshare.net/taikaitakeda/mlp-svm-chapter-7-decomposing)
+
+
 <a id="SVMの簡単な適用例"></a>
 
 ### ◎ SVM の簡単な適用例
@@ -1557,11 +1580,11 @@ d 次元のユークリッド空間 ![image](https://user-images.githubuserconte
 	・ トレーニングデータ 80% 、テストデータ 20%の割合で分割<br>
 	・ XORデータに対して、正規化処理実施<br>
 	・ カーネル関数は、RBFカーネル<br>
-    ・ クロス・バディゲーション（k=10）で汎化性能を評価<br>
+    ・ k-fold クロス・バディゲーション（k=10）で汎化性能を評価<br>
     <br>
     ① グリッドサーチによるパラメーターのチューニング<br>
     まずは、グリッドサーチを用いて、この分類タスクにおけるC-SVM の最適なパラメーター（＝C値、gamma値）をチューニングする。<br>
-    ![image](https://user-images.githubusercontent.com/25688193/49336474-3872ee80-f646-11e8-8354-911587b76d31.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/49337331-28aed680-f655-11e8-972c-f63ea8c858a2.png)<br>
     上図は、scikit-learn の `sklearn.model_selection.GridSearchCV` モジュールを用いて、C-SVM のパラメーターをグリッドサーチし、対象のXOR データの正解率をヒートマップで図示したものである。（横軸と縦軸が、C-SVM のハイパーパラメータである RBFカーネルの gamma 値と、C-SVM の C 値）<br>
     このヒートマップ図より、推定器として、カーネル関数を RBFカーネルとする C-SVM を使用した場合、最も正解率が高くなるパラメータ（ハイパーパラメータ）は、C = 1000, gamma = 0.1 (Accuracy = 0.971) となることが分かる。<br>
     <br>
@@ -1574,7 +1597,7 @@ d 次元のユークリッド空間 ![image](https://user-images.githubuserconte
     <br>
     ![image](https://user-images.githubusercontent.com/25688193/49336922-2dbc5780-f64e-11e8-9082-fde0d1f19475.png)<br>
 
-
+---
 
 <a id="ニューラルネットワークとカーネル法"></a>
 
