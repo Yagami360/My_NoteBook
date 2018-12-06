@@ -341,16 +341,16 @@
 
 <a id="ID_2-4"></a>
 
-### 特徴データの変換、特徴量のスケーリング
+### ■ 特徴データの変換、特徴量のスケーリング
 
 <a id="ID_2-4-1"></a>
 
-#### 特徴ベクトル空間 [feature vector space]
+#### ◎ 特徴ベクトル空間 [feature vector space]
 ![image](https://user-images.githubusercontent.com/25688193/30472026-eccf1052-9a35-11e7-82ad-3d0427854066.png)
 
 <a id="ID_2-4-2"></a>
 
-#### 特徴ベクトルの変換
+#### ◎ 特徴ベクトルの変換
 ![image](https://user-images.githubusercontent.com/25688193/30471869-44436b54-9a35-11e7-861f-1d4a495f9720.png)
 ![image](https://user-images.githubusercontent.com/25688193/30471905-6939bc92-9a35-11e7-93dc-b57e2fb5d80b.png)
 ![image](https://user-images.githubusercontent.com/25688193/30472182-6883ff0a-9a36-11e7-847a-50a03ec100f6.png)
@@ -358,7 +358,7 @@
 
 <a id="ID_2-4-3"></a>
 
-#### 特徴ベクトルの正規化（標準化） [normalization/standardization]
+##### ☆ 特徴ベクトルの正規化（標準化） [normalization/standardization]
 ![image](https://user-images.githubusercontent.com/25688193/30472418-3e9a9ffe-9a37-11e7-9377-dc43109d73c7.png)
 
 <a id="ID_2-4-3-1"></a>
@@ -368,7 +368,7 @@
 
 <a id="ID_2-4-4"></a>
 
-#### 特徴ベクトルの無相関化 [decorrelation]
+##### ☆ 特徴ベクトルの無相関化 [decorrelation]
 ![image](https://user-images.githubusercontent.com/25688193/30472530-d7244c02-9a37-11e7-9875-9eaf85293d03.png)
 ![image](https://user-images.githubusercontent.com/25688193/30472631-3ea0a9de-9a38-11e7-9d40-9c446b939362.png)
 
@@ -379,12 +379,12 @@
 
 <a id="ID_2-4-5"></a>
 
-#### 特徴ベクトルの白色化 [whitening]
+##### ☆ 特徴ベクトルの白色化 [whitening]
 > 記載中...
 
 <a id="ID_2-5"></a>
 
-### 特徴データの次元圧縮
+### ■ 特徴データの次元圧縮
 ![image](https://user-images.githubusercontent.com/25688193/30472927-61d09922-9a39-11e7-9c9c-95fe52eb7228.png)
 
 > 参考

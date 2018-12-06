@@ -1,6 +1,6 @@
 # 統計学 [statistics] / 統計解析 [statistical analysis]
 
-統計解析に関してのまとめた⚡マイノートです。今後も随時追加予定。
+統計学、統計解析に関してのまとめた⚡マイノートです。今後も随時追加予定。
 
 This is my notebook that summarizes about "statistical analysis". I will add contents as needed.
 
