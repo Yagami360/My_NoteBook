@@ -22,7 +22,7 @@
     - [情報理論 / 情報数理 [Information theory]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%83%85%E5%A0%B1%E7%90%86%E8%AB%96_Note.md)
     - [機械学習 [Machine Learning]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_Note.md)
         - [ニューラルネットワーク [Neural Network] / ディープラーニング [Deep Learning]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_NN_Note.md)
-        - [強化学習 [Reinforcement Learning]（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92.md)
+        - [強化学習 [Reinforcement Learning]（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92.md)
     - [自然言語処理 [NLP : natural language processing]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
     - コンピューターグラフィックス [Computer Graphics] / コンピュータービジョン [Computer Vision]
          - [一般物体検出 [Object Detection]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_NN_Note.md#-%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%81%AB%E3%82%88%E3%82%8B%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA-object-detection)
@@ -31,7 +31,7 @@
     - 古典力学
     - 解析力学
     - 剛体力学 [Rigid body dynamics]
-    - [電磁気学 [Electromagnetism]（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6/%E7%89%A9%E7%90%86%E5%AD%A6_%E9%9B%BB%E7%A3%81%E6%B0%97%E5%AD%A6.md)
+    - [電磁気学 [Electromagnetism]（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E7%89%A9%E7%90%86%E5%AD%A6/%E7%89%A9%E7%90%86%E5%AD%A6_%E9%9B%BB%E7%A3%81%E6%B0%97%E5%AD%A6.md)
     - 量子力学
     - [統計力学 [statistical mechanics]](http://yagami12.hatenablog.com/entry/2017/10/28/%E7%B5%B1%E8%A8%88%E5%8A%9B%E5%AD%A6)
     - 熱力学
@@ -76,14 +76,14 @@
             - [OSI 参照モデル[OSI reference model]](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md#-osi-%E5%9F%BA%E6%9C%AC%E5%8F%82%E7%85%A7%E3%83%A2%E3%83%87%E3%83%AB)
             - TCP / IP
         - [クラウド](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md#-%E3%82%AA%E3%83%B3%E3%83%97%E3%83%AC%E3%83%9F%E3%82%B9%E3%81%A8%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89)
-    - [Linux（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md#-linux-os-%E3%81%AE%E5%9F%BA%E7%A4%8E%E4%BA%8B%E9%A0%85)
-    - [データベース管理システム（DBMS）（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md#-%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%83%9F%E3%83%89%E3%83%AB%E3%82%A6%E3%82%A7%E3%82%A2)
+    - [Linux（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md#-linux-os-%E3%81%AE%E5%9F%BA%E7%A4%8E%E4%BA%8B%E9%A0%85)
+    - [データベース管理システム（DBMS）（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md#-%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E3%83%9F%E3%83%89%E3%83%AB%E3%82%A6%E3%82%A7%E3%82%A2)
         - MySQL
         - NoSQL
-    - [Docker（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md)
+    - [Docker（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%A2%E9%80%A3/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA_%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9_Note.md)
     
 - ゲーム開発 [Game development]
-    - [DirectX9（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA_DirextX.md)
+    - [DirectX9（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA/%E3%82%B2%E3%83%BC%E3%83%A0%E9%96%8B%E7%99%BA_DirextX.md)
     - Unity
     - ゲームエンジン [Game Engine]
     - 各種シェーダー / プログラマブルシェーダー [Shader / Programmable shader]
@@ -91,10 +91,10 @@
     - 物理エンジン / 物理シミュレーション [Physical simulation]
 
 - 自動車技術 [Automotive]
-    - モデルベース開発 [Model-based development]（作成中）
-    - [CAN通信 [Controller Area Network]（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_CAN%E9%80%9A%E4%BF%A1.md)
-        - [FNOS / CANbedded（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_FNOS.md)
-    - [AUTOSAR（作成中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_AUTOSAR.md)
+    - モデルベース開発 [Model-based development]（執筆中）
+    - [CAN通信 [Controller Area Network]（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_CAN%E9%80%9A%E4%BF%A1.md)
+        - [FNOS / CANbedded（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_FNOS.md)
+    - [AUTOSAR（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_AUTOSAR.md)
     - 機能安全 [functional safety] / ISO 26262
     - MISRA-C
     - AutomotiveSpice
