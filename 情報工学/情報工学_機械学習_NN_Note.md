@@ -774,7 +774,8 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 	    その対応するセル（グリッド）に対して、各デフォルトボックスの位置が固定されるように、<br>
 	    デフォルトボックスは、畳み込みのやり方で、特徴マップを隙間なく敷き詰め [tile] ている。（下図参照）<br>
         ![image](https://user-images.githubusercontent.com/25688193/40360882-7a247ac4-5e02-11e8-95d0-9ba5fdc37aa0.png)<br>
-
+        ![image](https://user-images.githubusercontent.com/25688193/51079927-e3ca9500-1714-11e9-950f-bbef5b1c68b3.png)<br>
+        
 		各特徴マップのセル（グリッド）において、<br>
 		検出したい物体が、各 BBOX 内に存在することを示す指標である検出スコア（物体の中心座標が含まれているなら１となる）と、セル中のデフォルトボックスのオフセット値を予想する。<br>
 		このオフセット値は、具体的には、ある座標位置で k 個のボックスそれぞれに対し、<br>
