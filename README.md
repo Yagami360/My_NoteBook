@@ -91,10 +91,10 @@
     - 物理エンジン / 物理シミュレーション [Physical simulation]
 
 - 自動車技術 [Automotive]
-    - モデルベース開発 [Model-based development]（執筆中）
+    - モデルベース開発 [Model-based development]
     - [CAN通信 [Controller Area Network]（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_CAN%E9%80%9A%E4%BF%A1.md)
         - [FNOS / CANbedded（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_FNOS.md)
-    - [AUTOSAR（執筆中）](https://github.com/Yagami360/My_NoteBook/blob/master/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3/%E8%87%AA%E5%8B%95%E8%BB%8A%E9%96%A2%E9%80%A3_AUTOSAR.md)
+    - AUTOSAR
     - 機能安全 [functional safety] / ISO 26262
     - MISRA-C
     - AutomotiveSpice
