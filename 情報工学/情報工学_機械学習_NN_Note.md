@@ -662,6 +662,9 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 <a id="ID_10"></a>
 
 ## 生成モデル [generative model]
+> 以下の内容は、旧記事となります。<br>
+> 最新の記事は、別記事（[生成モデル](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E7%94%9F%E6%88%90%E3%83%A2%E3%83%87%E3%83%AB.md)）に移行していますので、こちらを参照ください。
+
 ![image](https://user-images.githubusercontent.com/25688193/35478872-4302b400-042c-11e8-80aa-a187b50eba30.png)
 
 <a id="ID_10-1"></a>
