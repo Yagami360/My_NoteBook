@@ -69,6 +69,7 @@ I will add contents as needed.
     1. 逆畳み込みネットワーク [deconvolutional network]<br>（CNN の可視化）
     1. VGG-16
     1. VGG-19
+    1. [ResNet（残差ネットワーク）](#ResNet（残差ネットワーク）)
 1. [リカレントニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
     1. [リカレントニューラルネットワークのアーキテクチャの種類](#ID_4-1)
         1. [隠れ層間で回帰構造をもつネットワーク](#ID_4-1-1)
@@ -185,7 +186,9 @@ y_i=\dfrac{e^{x_i}}{e^{x_1}+e^{x_2}+\cdots +e^{x_n}}
 
 ![image](https://user-images.githubusercontent.com/25688193/31034610-bfe29f12-a59f-11e7-8d90-6541e8fa216c.png)
 
+<!--
 $$ P_n = \dfrac{ e^{\frac{E_n}{k_B T}} }{ \sum_{i=1}^{n} e^{ \frac{E_i}{k_B \times T } } } $$
+-->
 
 <!-- はてなブログ形式
 [tex:{ P_n = \dfrac{ e^{\frac{E_n}{k_B T}} }{ \sum_{i=1}^{n} e^{ \frac{E_i}{k_B \times T } }  } } ]
@@ -195,9 +198,11 @@ $$ P_n = \dfrac{ e^{\frac{E_n}{k_B T}} }{ \sum_{i=1}^{n} e^{ \frac{E_i}{k_B \tim
 
 この確率の式の分母を統計力学では分配関数<br>
 
-![image](https://user-images.githubusercontent.com/25688193/31034696-21d2f636-a5a0-11e7-9f6d-81de5b7f9f39.png)
+![image](https://user-images.githubusercontent.com/25688193/31034696-21d2f636-a5a0-11e7-9f6d-81de5b7f9f39.png)<br>
 
+<!--
 $$ Z = \sum_{i=1}^{n} e^{ \frac{-E_i}{k_B \times T} } $$
+-->
 
 <!-- はてなブログ形式
 [tex:{ Z = \sum_{i=1}^{n} e^{ \frac{-E_i}{k_B \times T} }　}]<br>
@@ -207,9 +212,11 @@ $$ Z = \sum_{i=1}^{n} e^{ \frac{-E_i}{k_B \times T} } $$
 
 Helmholtz の自由エネルギーは、この分配関数 Z を用いて、<br>
 
-![image](https://user-images.githubusercontent.com/25688193/31034742-51e4a0ae-a5a0-11e7-8d87-704124ad5467.png)
+![image](https://user-images.githubusercontent.com/25688193/31034742-51e4a0ae-a5a0-11e7-8d87-704124ad5467.png)<br>
 
-$$ F = - k_B \times T \times log_e{Z} $$
+<!--
+$$ F = - k_B \times T \times log_e{Z} $$<br>
+-->
 
 <!-- はてなブログ形式
 [tex:{ F = - k_B \times T \times \log_e Z }]<br>
@@ -217,15 +224,17 @@ $$ F = - k_B \times T \times log_e{Z} $$
 
 で表現できるけど、これを使えば、カノニカルアンサンブルのエントロピー S が<br>
 
-![image](https://user-images.githubusercontent.com/25688193/31034868-dba484e4-a5a0-11e7-85fe-ba7d5e011a04.png)
+![image](https://user-images.githubusercontent.com/25688193/31034868-dba484e4-a5a0-11e7-85fe-ba7d5e011a04.png)<br>
 
+<!--
 $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
+-->
 
 <!-- はてなブログ形式
 [tex:{ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e P_i }]<br>
 -->
 
-と書ける。これはまさに、情報理論でいうとこのシャノンの情報量に対応している。
+と書ける。これはまさに、情報理論でいうとこのシャノンの情報量に対応している。<br>
 
 
 <a id="ID_1-5"></a>
@@ -236,7 +245,8 @@ $$ S = - k_B \times \sum_{i=1}^{n} P_i \times \log_e{P_i} $$<br>
 <a id="ID_1-5-1"></a>
 
 #### 教師あり学習 [supervised learning] と教師なし学習 [Unsupervised learning]
-![image](https://user-images.githubusercontent.com/25688193/30948617-1cb9a46a-a44c-11e7-824b-1f0f23f6780a.png)
+
+![image](https://user-images.githubusercontent.com/25688193/30948617-1cb9a46a-a44c-11e7-824b-1f0f23f6780a.png)<br>
 
 <a id="ID_1-5-2"></a>
 
@@ -504,6 +514,55 @@ Keras での実装コード : https://github.com/MateLabs/All-Conv-Keras
 
 従来の CNN に対して、Pooling 層を使わず Conv 層のみの構成（Pooing層 → 複数の小さい Conv 層に置き換わる）で同等 or それ以上のレベルの識別性能を持つことを主張したモデル。
 
+---
+
+<a id="ResNet（残差ネットワーク）"></a>
+
+### ◎ ResNet（残差ネットワーク）
+ResNet（残差ネットワーク）は、2015年度の ImageNet コンペティションと COCO セグメンテーションで第１位で優勝したモデルであるが、ただ単に、コンペで高い正解率を叩き出しただけではなく、その残差構造自体に本質的で重要な意味を持つ。<br>
+
+一般的に、画像分類のタスクにおいて、CNNベースのニューラルネットワークの層の深さは重要な要素であり、基本的には、層の深さを深くするほど、CNN でより抽象的な構造を捉えることが出来るために、識別性能をより高めることが出来る。<br>
+※ VGG や GoogLeNet などは、この観点から、層の深さをそれぞれ 16層（VGG-16）、19層（VGG-19）、22層（GoogLeNet）にして識別性能を高めている。
+
+しかしながら、層の深さを深くしすぎると、下図の結果のように、逆に識別性能が低下してしまうことが経験的・実験的に知られている。<br>
+※ 下図ではまた、学習データセットにおいても層が深いほうが正解率が低いので、層を深くしすぎたために過学習が発生して、識別性能が低下したというわけではないことを示している点に注意。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/58227928-db8c0180-7d67-11e9-97e7-ed4367e77019.png)<br>
+
+層を深くすると性能が低下する理由としては、勾配消失問題や勾配爆発問題が考えられる。<br>
+この勾配消失問題や勾配爆発問題は、batch norm などの正則化手法や dropout で防止することが出来るが、層を深くしすぎるこれらの手法も有効ではなくなってくる。<br>
+
+ResNet では、このような非常に深い層のネットワークに対して、"shortcut connections" の構造を加えることにより、このような非常に深いネットワークにおいても、勾配消失問題や勾配爆発問題を防止することが出来るようにし、結果として、非常に深いネットワークでの高い識別性能を実現する。<br>
+
+以下の図は、従来のCNNベースのアーキテクチャと、ResNet のアーキテクチャの比較を示した図である。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/58234174-ea2ee480-7d78-11e9-8d18-68788fdde7b4.png)<br>
+
+従来の CNNベースの構造と比較して、ResNet では、赤線で示した "sortcut connection" の構造が追加されている。<br>
+この sortcut connection は、入力データ x を、従来のネットワークでの学習対象である出力関数 H(x) ところまで、恒等写像でスキップする。<br>
+この際に、スキップされた入力データ x と出力関数 H(x) との差分を、<br>
+残差関数<br>
+![image](https://user-images.githubusercontent.com/25688193/58234328-38dc7e80-7d79-11e9-98ce-f03698d3aca6.png)<br>
+として定義し、この残差関数 F(x) をネットワークの学習対象とする。<br>
+
+そして、この学習された残差関数 F(x) と入力データ x を元に、最終的な出力関数<br>
+![image](https://user-images.githubusercontent.com/25688193/58234365-4e51a880-7d79-11e9-83ad-6926d295f94f.png)<br>
+を決定する。<br>
+
+この "sortcut connection" の経路では、従来の何層もある経路（上図の青線）での各層での誤差逆伝播の積み重ねによる勾配消失の影響を受けないので、
+勾配消失問題を防ぐことが出来る。<br>
+より詳細には、出力関数 ![image](https://user-images.githubusercontent.com/25688193/58234365-4e51a880-7d79-11e9-83ad-6926d295f94f.png) は、その微分が１に非常に近い値となるために、誤差逆伝播法による勾配計算時に、他の層をスキップ出来る。
+
+
+> 記載中...
+
+- 【参考サイト】
+    - [**【元論文】[1512.03385] Deep Residual Learning for Image Recognition**](https://arxiv.org/abs/1512.03385)
+    - [**【論文翻訳（非公開）】GitHub/Yagami360/MachineLearning-Papers_Survey/papers/Deep_Residual_Learning_for_Image_Recognition/ResNet.md**](https://github.com/Yagami360/MachineLearning-Papers_Survey/blob/master/papers/Deep_Residual_Learning_for_Image_Recognition/ResNet.md)
+    - [**Residual Network(ResNet)の理解とチューニングのベストプラクティス - DeepAge**](https://deepage.net/deep_learning/2016/11/30/resnet.html)
+    - [ResNetの論文を読んだ - kumilog.net](https://www.kumilog.net/entry/resnet-paper)
+    - [**ResNetの仕組み**](https://www.slideshare.net/KotaNagasato/resnet-82940994)
+    - [ディープラーニング ResNet のヒミツ - Bridge over troubled Techs.](http://terada-h.hatenablog.com/entry/2016/12/13/192940)
 
 ---
 
