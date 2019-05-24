@@ -534,27 +534,65 @@ ResNet（残差ネットワーク）は、2015年度の ImageNet コンペティ
 
 ResNet では、このような非常に深い層のネットワークに対して、"shortcut connections" の構造を加えることにより、このような非常に深いネットワークにおいても、勾配消失問題や勾配爆発問題を防止することが出来るようにし、結果として、非常に深いネットワークでの高い識別性能を実現する。<br>
 
-以下の図は、従来のCNNベースのアーキテクチャと、ResNet のアーキテクチャの比較を示した図である。<br>
+#### ☆ ResNet のアーキテクチャ
+以下の図は、従来のCNNベースのアーキテクチャと、ResNet のアーキテクチャの基本構造を比較を示した図である。<br>
 
-![image](https://user-images.githubusercontent.com/25688193/58234174-ea2ee480-7d78-11e9-8d18-68788fdde7b4.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/58298459-94107e80-7e16-11e9-8689-452a3a83f9d1.png)<br>
 
 従来の CNNベースの構造と比較して、ResNet では、赤線で示した "sortcut connection" の構造が追加されている。<br>
-この sortcut connection は、入力データ x を、従来のネットワークでの学習対象である出力関数 H(x) ところまで、恒等写像でスキップする。<br>
-この際に、スキップされた入力データ x と出力関数 H(x) との差分を、<br>
+この sortcut connection は、入力データ x を、従来のネットワークでの学習対象である出力関数 ![image](https://user-images.githubusercontent.com/25688193/58298536-d8038380-7e16-11e9-8666-ec236ce3a3d9.png) ところまで、恒等写像でスキップする。<br>
+この際に、スキップされた入力データ x と出力関数 ![image](https://user-images.githubusercontent.com/25688193/58298536-d8038380-7e16-11e9-8666-ec236ce3a3d9.png) との差分を、<br>
 残差関数<br>
-![image](https://user-images.githubusercontent.com/25688193/58234328-38dc7e80-7d79-11e9-98ce-f03698d3aca6.png)<br>
-として定義し、この残差関数 F(x) をネットワークの学習対象とする。<br>
+![image](https://user-images.githubusercontent.com/25688193/58298486-ab4f6c00-7e16-11e9-9558-c3096104284c.png)<br>
+として定義し、この残差関数 ![image](https://user-images.githubusercontent.com/25688193/58298572-fe292380-7e16-11e9-85df-15612a924d9a.png) をネットワークの学習対象とする。<br>
+（※ この式は、入力データ x と出力関数 ![image](https://user-images.githubusercontent.com/25688193/58298536-d8038380-7e16-11e9-8666-ec236ce3a3d9.png) の次元が等しい条件を前提としていることに注意。）
 
-そして、この学習された残差関数 F(x) と入力データ x を元に、最終的な出力関数<br>
-![image](https://user-images.githubusercontent.com/25688193/58234365-4e51a880-7d79-11e9-83ad-6926d295f94f.png)<br>
+そして、この学習された残差関数 ![image](https://user-images.githubusercontent.com/25688193/58298572-fe292380-7e16-11e9-85df-15612a924d9a.png) と入力データ x を元に、最終的な出力関数<br>
+![image](https://user-images.githubusercontent.com/25688193/58298501-baceb500-7e16-11e9-9840-053233352a72.png)<br>
 を決定する。<br>
 
 この "sortcut connection" の経路では、従来の何層もある経路（上図の青線）での各層での誤差逆伝播の積み重ねによる勾配消失の影響を受けないので、
 勾配消失問題を防ぐことが出来る。<br>
-より詳細には、出力関数 ![image](https://user-images.githubusercontent.com/25688193/58234365-4e51a880-7d79-11e9-83ad-6926d295f94f.png) は、その微分が１に非常に近い値となるために、誤差逆伝播法による勾配計算時に、他の層をスキップ出来る。
+より詳細には、出力関数 ![image](https://user-images.githubusercontent.com/25688193/58298501-baceb500-7e16-11e9-9840-053233352a72.png) は、その微分が１に非常に近い値となるために、誤差逆伝播法による勾配計算時に、他の層をスキップ出来る。
 
+上記では、入力データ x と出力関数 ![image](https://user-images.githubusercontent.com/25688193/58298536-d8038380-7e16-11e9-8666-ec236ce3a3d9.png) の次元が等しい条件のもとでの式となっていたが、これら入力データ x と出力関数の次元が異なる場合は、以下のような２つの方法で対応する。<br>
 
-> 記載中...
+1. 線形変換 W_s  で入力データ x からの次元を一致させた上で、スキップして加算する。<br>
+    即ち、![image](https://user-images.githubusercontent.com/25688193/58298961-61678580-7e18-11e9-95f4-ea1bf42f07b0.png)<br>
+
+1. shortcut connection は恒等写像のまま（![image](https://user-images.githubusercontent.com/25688193/58298501-baceb500-7e16-11e9-9840-053233352a72.png)）であるが、増加した次元分の要素を、ゼロパディングで埋める。<br>
+    ※ この２番目の手法では、パラメーター数は増加しない。<br>
+
+<br>
+
+この ResNet の基本構造を元に、VGG と同じように、conv 層を 34 層まで積み重ねていったものが、以下に示している ResNet-34 である。<br>
+※ 下図（左）：VGG-19<br>
+※ 下図（中央）：VGG-19 をベースに、shortcut connection なしの34層ネットワーク（ResNetとの性能の比較用）<br>
+※ 下図（右）：ResNet-34<br>
+
+![image](https://user-images.githubusercontent.com/25688193/58295951-89e98280-7e0c-11e9-866b-7d8974e1a91d.png)<br>
+
+※ 実曲線は、入出力次元が一致する shortcut connections<br>
+※ 点曲線は、入出力次元が一致しない shortcut connections<br>
+
+以下の表は、このネットワーク構成の、詳細なパラメーターを示した図である。
+
+![image](https://user-images.githubusercontent.com/25688193/58299408-19496280-7e1a-11e9-90f0-46b75d6f8fc9.png)<br>
+
+この ResNet-34 は、3.6 億回のFLOPs（積乗演算）で、これは、VGG-19 のわずか 18% 程度になっていることに注目。<br>
+
+#### ☆ ResNet の識別性能の実験結果
+![image](https://user-images.githubusercontent.com/25688193/58296941-c9b26900-7e10-11e9-9a1a-5f60dd2f3ea7.png)
+
+左図は、ResNet との性能差を公平に比較出来るように、VGGベースで、ResNet と同じパラメーター数、深さ、幅、計算可能コストを持ち、shortcut connection なしにしたネットワーク（plain network）での、層の深さを変えたときの識別性能を示した図である。<brr>
+右図は、ResNet での、層の深さを変えたときの識別性能を示した図である。<br>
+※ データセットは、ImageNet<br>
+※ 細い線は、学習データセットでの誤識別率。
+※ 太い線は、検証データセットでの誤識別率<br>
+
+従来の shortcut connection なしのネットワーク（plain network）では、層の深さを深くしすぎると、逆に、識別性能は低下しているが、shortcut connection を導入した ResNet では、層の深さを深くすると、識別性能が上昇していることが見てとれる。<br>
+※ この図では、34 層まで深くしているが、更に深くしていっても（例えば、1202層）、同様の傾向は成り立つ。<br>
+
 
 - 【参考サイト】
     - [**【元論文】[1512.03385] Deep Residual Learning for Image Recognition**](https://arxiv.org/abs/1512.03385)
