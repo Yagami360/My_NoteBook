@@ -70,6 +70,9 @@ I will add contents as needed.
     1. VGG-16
     1. VGG-19
     1. [ResNet（残差ネットワーク）](#ResNet（残差ネットワーク）)
+        1. [ResNet のアーキテクチャ](#ResNetのアーキテクチャ)
+        1. [ResNet の識別性能の実験結果](#ResNetの識別性能の実験結果)
+        1. [ResNet の適用例](#ResNetの適用例)
 1. [リカレントニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
     1. [リカレントニューラルネットワークのアーキテクチャの種類](#ID_4-1)
         1. [隠れ層間で回帰構造をもつネットワーク](#ID_4-1-1)
@@ -534,6 +537,9 @@ ResNet（残差ネットワーク）は、2015年度の ImageNet コンペティ
 
 ResNet では、このような非常に深い層のネットワークに対して、"shortcut connections" の構造を加えることにより、このような非常に深いネットワークにおいても、勾配消失問題や勾配爆発問題を防止することが出来るようにし、結果として、非常に深いネットワークでの高い識別性能を実現する。<br>
 
+
+<a id="ResNetのアーキテクチャ"></a>
+
 #### ☆ ResNet のアーキテクチャ
 以下の図は、従来のCNNベースのアーキテクチャと、ResNet のアーキテクチャの基本構造を比較を示した図である。<br>
 
@@ -581,6 +587,9 @@ ResNet では、このような非常に深い層のネットワークに対し�
 
 この ResNet-34 は、3.6 億回のFLOPs（積乗演算）で、これは、VGG-19 のわずか 18% 程度になっていることに注目。<br>
 
+
+<a id="ResNetの識別性能の実験結果"></a>
+
 #### ☆ ResNet の識別性能の実験結果
 ![image](https://user-images.githubusercontent.com/25688193/58296941-c9b26900-7e10-11e9-9a1a-5f60dd2f3ea7.png)
 
@@ -592,6 +601,13 @@ ResNet では、このような非常に深い層のネットワークに対し�
 
 従来の shortcut connection なしのネットワーク（plain network）では、層の深さを深くしすぎると、逆に、識別性能は低下しているが、shortcut connection を導入した ResNet では、層の深さを深くすると、識別性能が上昇していることが見てとれる。<br>
 ※ この図では、34 層まで深くしているが、更に深くしていっても（例えば、1202層）、同様の傾向は成り立つ。<br>
+
+<a id="ResNetの適用例"></a>
+
+#### ☆ ResNet の適用例
+
+- ResNet を利用した CIFAR-10 の画像識別<br>
+    - [GitHub/Yagami/MachineLearning_Exercises_Python_PyTorch/ResNet_PyTorch/](https://github.com/Yagami360/MachineLearning_Exercises_Python_PyTorch/tree/master/ResNet_PyTorch)
 
 
 - 【参考サイト】
