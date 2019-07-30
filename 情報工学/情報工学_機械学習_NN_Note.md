@@ -73,6 +73,9 @@ I will add contents as needed.
         1. [ResNet のアーキテクチャ](#ResNetのアーキテクチャ)
         1. [ResNet の識別性能の実験結果](#ResNetの識別性能の実験結果)
         1. [ResNet の適用例](#ResNetの適用例)
+1. [グラフ畳み込みネットワーク](#グラフ畳み込みネットワーク)
+    1. グラフフーリエ変換を用いたグラフ畳み込み
+    1. [R-GCN [Relational Graph Convolutional Network]（グラフフーリエ変換を用いないグラフ畳み込み）](#R-GCN（グラフフーリエ変換を用いないグラフ畳み込み）)
 1. [リカレントニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
     1. [リカレントニューラルネットワークのアーキテクチャの種類](#ID_4-1)
         1. [隠れ層間で回帰構造をもつネットワーク](#ID_4-1-1)
@@ -617,6 +620,50 @@ ResNet では、このような非常に深い層のネットワークに対し�
     - [ResNetの論文を読んだ - kumilog.net](https://www.kumilog.net/entry/resnet-paper)
     - [**ResNetの仕組み**](https://www.slideshare.net/KotaNagasato/resnet-82940994)
     - [ディープラーニング ResNet のヒミツ - Bridge over troubled Techs.](http://terada-h.hatenablog.com/entry/2016/12/13/192940)
+
+---
+
+<a id="グラフ畳み込みネットワーク"></a>
+
+## ■ グラフ畳み込みネットワーク
+
+> 記載中...
+
+### ◎ グラフフーリエ変換を用いたグラフ畳み込み
+
+> 記載中...
+
+### ◎ R-GCN [Relational Graph Convolutional Network]
+
+> 論文：[[1703.06103] Modeling Relational Data with Graph Convolutional Networks](https://arxiv.org/abs/1703.06103)
+
+グラフフーリエ変換を用いたグラフ畳み込みでは、グラフ構造は無向グラフに限定され、又、グラフフーリエ変換を行う必要があるため処理が扱いづらく、計算量が多いという問題があった。<br>
+
+R-GCN [Relational Graph Convolutional Network] では、この問題を解決するために、グラフフーリエ変換ではなく、通常の畳み込みのように、線形結合＋活性化関数の形でグラフ畳み込みを行えるようにする。但し、グラフ構造は、知識ベースの有向グラフである必要がある。<br>
+
+#### ☆ RGCN でのグラフ畳み込み（グラフフーリエ変換を用いないグラフ畳み込み）
+グラフ構造の文脈において、知識ベース [Knowledge Base]  とは、グラフの各々の頂点ノード（A, B, ...）が、"A is a B" や "A has a B" の関係性を持つような有向グラフを指す。<br>
+
+このような知識ベースの有向グラフにおいて、R-GCN では、以下のようなグラフ畳み込みを導入する。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/62131332-f5246900-b315-11e9-9b4c-7b3e5f864c2d.png)<br>
+
+![image](https://user-images.githubusercontent.com/25688193/62131738-b04d0200-b316-11e9-8785-c785799dc03f.png)<br>
+
+※ この計算式は、i 番目の頂点での次の中間層での１つの頂点を決める式であるので、全ての頂点でこの処理を行うことで、次の中間層での全ての頂点が求まり、１回のグラフ畳み込みが行える動作となる。<br>
+
+この畳み込みは、通常の畳み込みのように、重みベクトルとベクトルの線形和＋活性化関数の形になっており、扱いやすいメリットがある。<br>
+
+#### ☆ RGCN での損失関数
+
+> 記載中...
+
+
+### ◎ 参考文献（グラフ畳み込み）
+
+- [機は熟した！グラフ構造に対するDeep Learning、Graph Convolutionのご紹介 - ABEJA Arts Blog](https://tech-blog.abeja.asia/entry/2017/04/27/105613)
+- [グラフ構造を畳み込む -Graph Convolutional Networks- - Qiita](https://qiita.com/tktktks10/items/98d21133cf3e121676c3)
+
 
 ---
 
