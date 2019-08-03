@@ -74,8 +74,11 @@ I will add contents as needed.
         1. [ResNet の識別性能の実験結果](#ResNetの識別性能の実験結果)
         1. [ResNet の適用例](#ResNetの適用例)
 1. [グラフ畳み込みネットワーク](#グラフ畳み込みネットワーク)
-    1. グラフフーリエ変換を用いたグラフ畳み込み
+    1. [グラフフーリエ変換を用いたグラフ畳み込み（Spectral graph convolution）](#グラフフーリエ変換を用いたグラフ畳み込み)
+    1. Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering
     1. [R-GCN [Relational Graph Convolutional Network]（グラフフーリエ変換を用いないグラフ畳み込み）](#R-GCN（グラフフーリエ変換を用いないグラフ畳み込み）)
+    1. [【補足】グラフラプラシアン](#グラフラプラシアン)
+    1. [参考サイト（グラフ畳み込み）](#参考サイト（グラフ畳み込み）)
 1. [リカレントニューラルネットワーク [RNN : Recursive Neural Network]<br>＜階層型ニューラルネットワーク＞](#ID_4)
     1. [リカレントニューラルネットワークのアーキテクチャの種類](#ID_4-1)
         1. [隠れ層間で回帰構造をもつネットワーク](#ID_4-1-1)
@@ -626,14 +629,76 @@ ResNet では、このような非常に深い層のネットワークに対し�
 <a id="グラフ畳み込みネットワーク"></a>
 
 ## ■ グラフ畳み込みネットワーク
+グラフ構造からなるニューラルネットワークを構築するにあたっては、通常のニューラルネットワークのように畳み込み演算を定義できる必要がある。<br>
+しかしながら、グラフ構造ではニューラルネットワークにおける画像の畳み込みのように、隣接する点の関係性が一定でないために、通常の畳み込みはうまく機能しない。<br>
+
+そこで、グラフ構造における畳み込み演算を構築する必要があるのだが、その方法には大きく分けて以下の２つの種類がある。<br>
+1. グラフフーリエ変換を用いたグラフ畳み込み
+2. グラフフーリエ変換を用いないグラフ畳み込み
+
+<a id="グラフフーリエ変換を用いたグラフ畳み込み"></a>
+
+### ◎ グラフフーリエ変換を用いたグラフ畳み込み（Spectral graph convolution）
+ここでは、グラフフーリエ変換を用いたグラフ畳み込みについて見ていく。<br>
+
+まず前提として、通常の畳み込み演算とフーリエ変換には、以下のような関係がある。
+
+1. 通常の畳み込み演算の一般形は、<br>
+    ![image](https://user-images.githubusercontent.com/25688193/62411473-42624c80-b62e-11e9-8128-8b02f3cf93a1.png)<br>
+    ![image](https://user-images.githubusercontent.com/25688193/62411482-5908a380-b62e-11e9-849f-b3f0dff80a25.png)<br>
+	となるが、この演算のフーリエ変換は、各々の関数のフーリエ変換の積<br>
+    ![image](https://user-images.githubusercontent.com/25688193/62411491-78073580-b62e-11e9-929a-84bbe580652a.png)<br>
+    で簡単に表現出来る。<br>
+
+1. フーリエ級数展開やフーリエ変換は、正規直交基底としての固有ベクトル（＝固有関数）で固有値展開したものである。<br>
+	ここで、このフーリエ変換の固有値＆固有ベクトルは、ラプラシアン ∇^2 の固有値と固有ベクトルである。<br>
+
+これら２つの観点から、グラフ構造における畳み込み演算を、以下の観点から構築する。<br>
+
+1. ラプラシアンに対応したグラフラプラシアンで置き換え、<br>
+1. そのグラフラプラシアンの固有値と固有ベクトルで、グラフ上のフーリエ変換（＝グラフフーリエ変換）を表現し、<br>
+1. そのグラフフーリエ変換（と逆グラフフーリエ変換）から、グラフ上のグラフ畳み込みを定義する。<br>
+
+グラフラプラシアン L=D−A において、次数行列 D も隣接行列 A も実対称行列なので、グラフラプラシアンも実対称行列である。<br>
+従って、直交行列 U を用いて対角化可能であり、以下の関係が成り立つ。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/62411505-c1f01b80-b62e-11e9-9046-8cfa4854e4de.png)<br>
+
+これは、固有方程式<br>
+![image](https://user-images.githubusercontent.com/25688193/62411515-f06df680-b62e-11e9-8530-e6b78da03a9e.png)<br>
+が成り立つことと同値であるので、先のフーリエ変換が、正規直交基底としての固有ベクトルで固有値展開したものであることとの類似により、直交行列 U によるグラフ上の信号 x∈Rn  への演算<br>
+![image](https://user-images.githubusercontent.com/25688193/62411516-011e6c80-b62f-11e9-92e1-72ceb0a32d2f.png)<br>
+はグラフフーリエ変換となる。<br>
+また、逆グラフフーリエ変換は、<br>
+![image](https://user-images.githubusercontent.com/25688193/62411525-257a4900-b62f-11e9-9842-7292c87683d8.png)<br>
+となる。<br>
+
+そして、このグラフフーリエ変換と逆グラフフーリエ変換を用いて、グラフ畳み込みを以下のように定義する。<br>
+![image](https://user-images.githubusercontent.com/25688193/62411560-c5d06d80-b62f-11e9-9a9d-7f46dddc8d29.png)<br>
+
+この式は、パラメーターを θ→λ とすると<br>
+![image](https://user-images.githubusercontent.com/25688193/62411578-fb755680-b62f-11e9-8928-768b15be1852.png)<br>
+と書き直せるので、一般的には、<br>
+![image](https://user-images.githubusercontent.com/25688193/62411588-19db5200-b630-11e9-8c98-d971c1c02491.png)<br>
+と表現することが出来る。<br>
+
+このように表現したグラフ畳み込みは、実用上の面で、データ次元に応じて計算量が膨大になるという問題がある。<br>
+そのため、対角化行列 diag(θ) を多項式で近似する方法が提案されている。<br>
+
+※ このチェビシェフ多項式による近似手法が論文 「Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering」 で提案されている手法。<br>
+
+
+### ◎ Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering
+
+> 論文：[[1606.09375] Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://arxiv.org/abs/1606.09375)
+
 
 > 記載中...
 
-### ◎ グラフフーリエ変換を用いたグラフ畳み込み
 
-> 記載中...
+<a id="R-GCN（グラフフーリエ変換を用いないグラフ畳み込み）"></a>
 
-### ◎ R-GCN [Relational Graph Convolutional Network]
+### ◎ R-GCN [Relational Graph Convolutional Network]（グラフフーリエ変換を用いないグラフ畳み込み）
 
 > 論文：[[1703.06103] Modeling Relational Data with Graph Convolutional Networks](https://arxiv.org/abs/1703.06103)
 
@@ -658,12 +723,28 @@ R-GCN [Relational Graph Convolutional Network] では、この問題を解決す
 
 > 記載中...
 
+<a id="グラフラプラシアン"></a>
+
+### 【補足】グラフラプラシアン
+グラフラプラシアンは、グラフ構造の接続辺数の情報を持つ次数行列と、各接続頂点番号の情報を持つ隣接行列の差で定義される。即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/62411461-062eec00-b62e-11e9-986e-f6018d85ed35.png)
+
+※ このグラフラプラシアンは、グラフ構造の各頂点へ入力される情報と出力される情報という見方では発散 ∇^2 の意味になっており、それ故に、ラプラシアンと名付けられている。<br>
+	
+このグラフラプラシアンの固有値と固有ベクトルには、グラフ構造の重要な情報が含まれる。（詳細略）<br>
+
+
 
 ### ◎ 参考文献（グラフ畳み込み）
 
+- [【星の本棚】グラフ理論](http://yagami12.hatenablog.com/entry/2017/09/17/110406)
 - [機は熟した！グラフ構造に対するDeep Learning、Graph Convolutionのご紹介 - ABEJA Arts Blog](https://tech-blog.abeja.asia/entry/2017/04/27/105613)
 - [グラフ構造を畳み込む -Graph Convolutional Networks- - Qiita](https://qiita.com/tktktks10/items/98d21133cf3e121676c3)
-
+- [Graph Convolutional Network 概説](https://www.slideshare.net/KCSKeioComputerSocie/graph-convolutional-network)
+- [onvolutional Neural Networks on Graphs with Fast Localized Spectral Filteringを読んだのでメモ - 機械学習とかコンピュータビジョンとか](http://peluigi.hatenablog.com/entry/2018/08/22/165627)
+- [グラフ畳み込み再考 - Qiita](https://qiita.com/cotton-gluon/items/5c4e2f9c2c8a120863fa)
+- [【元論文】[1606.09375] Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://arxiv.org/abs/1606.09375)
+- [【元論文】[1703.06103] Modeling Relational Data with Graph Convolutional Networks](https://arxiv.org/abs/1703.06103)
 
 ---
 
