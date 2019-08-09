@@ -75,7 +75,8 @@ I will add contents as needed.
         1. [ResNet の適用例](#ResNetの適用例)
 1. [グラフ畳み込みネットワーク](#グラフ畳み込みネットワーク)
     1. [グラフフーリエ変換を用いたグラフ畳み込み（Spectral graph convolution）](#グラフフーリエ変換を用いたグラフ畳み込み)
-    1. Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering
+    1. [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](#Convolutional_Neural_Networks_on_Graphs_with_Fast_Localized_Spectral_Filtering)
+    1. [Semi-Supervised Classification with Graph Convolutional Networks](#Semi-Supervised_Classification_with_Graph_Convolutional_Networks)
     1. [R-GCN [Relational Graph Convolutional Network]（グラフフーリエ変換を用いないグラフ畳み込み）](#R-GCN（グラフフーリエ変換を用いないグラフ畳み込み）)
     1. [【補足】グラフラプラシアン](#グラフラプラシアン)
     1. [参考サイト（グラフ畳み込み）](#参考サイト（グラフ畳み込み）)
@@ -633,8 +634,18 @@ ResNet では、このような非常に深い層のネットワークに対し�
 しかしながら、グラフ構造ではニューラルネットワークにおける画像の畳み込みのように、隣接する点の関係性が一定でないために、通常の畳み込みはうまく機能しない。<br>
 
 そこで、グラフ構造における畳み込み演算を構築する必要があるのだが、その方法には大きく分けて以下の２つの種類がある。<br>
-1. グラフフーリエ変換を用いたグラフ畳み込み
-2. グラフフーリエ変換を用いないグラフ畳み込み
+
+- グラフフーリエ変換を用いたグラフ畳み込み<br>
+	1. グラフフーリエ変換を用いたグラフ畳み込み（Spectral graph convolution）<br>
+	1. 「Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering」<br>
+    	→ グラフフーリエ変換を用いたグラフ畳み込みの計算をチェビシェフ多項式で近似<br>
+	1. 「Semi-Supervised Classification with Graph Convolutional Networks」<br>
+	    → チェビシェフ多項式で近似の内、K=1 の次数のみで近似<br>
+
+- グラフフーリエ変換を用いないグラフ畳み込み<br>
+	1. 「Relational Graph Convolutional Network」<br>
+		→ グラフフーリエ変換とは異なる単純な手法でのグラフ畳み込み<br>
+
 
 <a id="グラフフーリエ変換を用いたグラフ畳み込み"></a>
 
@@ -679,22 +690,44 @@ ResNet では、このような非常に深い層のネットワークに対し�
 この式は、パラメーターを θ→λ とすると<br>
 ![image](https://user-images.githubusercontent.com/25688193/62411578-fb755680-b62f-11e9-8928-768b15be1852.png)<br>
 と書き直せるので、一般的には、<br>
-![image](https://user-images.githubusercontent.com/25688193/62411588-19db5200-b630-11e9-8c98-d971c1c02491.png)<br>
+![image](https://user-images.githubusercontent.com/25688193/62774831-f5c0ba80-bae0-11e9-9e06-6e91be863a2d.png)<br>
 と表現することが出来る。<br>
 
-このように表現したグラフ畳み込みは、実用上の面で、データ次元に応じて計算量が膨大になるという問題がある。<br>
+このように表現したグラフ畳み込みは、固有ベクトルの計算と固有ベクトルとの積の計算が、データ次元に応じて計算量が膨大になるという問題がある。<br>
 そのため、対角化行列 diag(θ) を多項式で近似する方法が提案されている。<br>
 
 ※ このチェビシェフ多項式による近似手法が論文 「Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering」 で提案されている手法。<br>
 
 
+<a id="Convolutional_Neural_Networks_on_Graphs_with_Fast_Localized_Spectral_Filtering"></a>
+
 ### ◎ Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering
 
 > 論文：[[1606.09375] Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://arxiv.org/abs/1606.09375)
 
+前節で見たように、グラフフーリエ変換を用いたグラフ畳み込みは、以下のように式で表現できる。<br>
+
+![image](https://user-images.githubusercontent.com/25688193/62774831-f5c0ba80-bae0-11e9-9e06-6e91be863a2d.png)<br>
+
+このように表現したグラフ畳み込みでは、固有ベクトルの計算と固有ベクトルとの積の計算が、データ次元に応じて計算量が膨大になるという問題がある。<br>
+そのため、論文 「Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering」 では、diag(θ)  をチェビシェフ多項式で近似する方法が提案されている。<br>
+
+具体的には、対角行列 diag(θ)  は以下の多項式で展開することを考える。（※ 正規直交基底としての固有ベクトル（＝固有関数）で固有値展開した形）<br>
+
+![image](https://user-images.githubusercontent.com/25688193/62776107-949ae600-bae4-11e9-9eef-e57a083dbdd7.png)<br>
+
+そして、この展開式の具体的な形として、チェビシェフ多項式での多項式近似を考える。<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/62776419-8b5e4900-bae5-11e9-8608-7b4bf6816682.png)<br>
+
+これにより、チェビシェフ多項式での近似により、固有ベクトルの積の計算では、データの次元数 nの2乗に比例した計算コスト O(n^2) だったものが、チェビシェフ多項式の次数 K のオーダーに依存した計算コストとなり、計算コストが大幅に減少させることが出来る。<br>
+
+
+<a id="Semi-Supervised_Classification_with_Graph_Convolutional_Networks"></a>
+
+### ◎ Semi-Supervised Classification with Graph Convolutional Networks
 
 > 記載中...
-
 
 <a id="R-GCN（グラフフーリエ変換を用いないグラフ畳み込み）"></a>
 
