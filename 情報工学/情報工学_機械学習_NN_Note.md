@@ -720,14 +720,40 @@ ResNet では、このような非常に深い層のネットワークに対し�
 即ち、<br>
 ![image](https://user-images.githubusercontent.com/25688193/62776419-8b5e4900-bae5-11e9-8608-7b4bf6816682.png)<br>
 
+元のグラフ畳み込みの式に代入すると、<br>
+![image](https://user-images.githubusercontent.com/25688193/62816407-cf8f2f00-bb61-11e9-80c4-3db7c7e4160c.png)<br>
+
 これにより、チェビシェフ多項式での近似により、固有ベクトルの積の計算では、データの次元数 nの2乗に比例した計算コスト O(n^2) だったものが、チェビシェフ多項式の次数 K のオーダーに依存した計算コストとなり、計算コストが大幅に減少させることが出来る。<br>
 
 
 <a id="Semi-Supervised_Classification_with_Graph_Convolutional_Networks"></a>
 
 ### ◎ Semi-Supervised Classification with Graph Convolutional Networks
+前節では、グラフフーリエ変換を用いたグラフ畳み込みの式を、以下の式のようにチェビシェフ多項式で近似した。<br>
+![image](https://user-images.githubusercontent.com/25688193/62816483-52fd5000-bb63-11e9-8131-cb41d5cf142b.png)<br>
 
-> 記載中...
+論文「Semi-Supervised Classification with Graph Convolutional Networks」 では、このチェビシェフ多項式での近似式において、 K=1 の次数までの近似式を採用する。<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/62816488-70cab500-bb63-11e9-95e0-5c24efd01f61.png)<br>
+
+K=1 までの次数で近似することで、上式のように、グラフラプラシアン L に対して線形なモデルとなり、モデルの表現力は低下してしまうが、非線形部分は、グラフ畳み込みネットワークの多層構造で担保するようにする。<br>
+逆に、K=1とすることで、モデルの過学習が抑えられる効果もある。<br>
+
+ここで、上式においては、学習パラメーターは θ_0, θ_1 の２つになるが、さらなる過学習対策のために、θ = θ_0 = −θ_1 として、１つのパラメーターでのみ表現出来るようにすると、上式は、<br>
+![image](https://user-images.githubusercontent.com/25688193/62816661-c011e500-bb65-11e9-86e1-06f4fdb8aeb5.png)<br>
+と書き換えられる。
+
+更に、勾配損失問題や勾配発散問題への対策として、以下のような置き換えを行う。<br>
+![image](https://user-images.githubusercontent.com/25688193/62816665-cf912e00-bb65-11e9-8fe9-a7329416b1c2.png)<br>
+
+最終的な結論としては、グラフネットワークの各層の出力は、以下の式で計算出来ることになる。<br>
+![image](https://user-images.githubusercontent.com/25688193/62816738-bccb2900-bb66-11e9-90c7-cae53a082808.png)<br>
+
+#### ☆ 損失関数
+損失関数は、単純に最終的出力 Z と教師データ Y との間のクロスエントロピーで定義される。<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/62816842-197b1380-bb68-11e9-9789-ffd3615678d6.png)<br>
+
 
 <a id="R-GCN（グラフフーリエ変換を用いないグラフ畳み込み）"></a>
 
@@ -775,6 +801,8 @@ R-GCN [Relational Graph Convolutional Network] では、この問題を解決す
 - [グラフ構造を畳み込む -Graph Convolutional Networks- - Qiita](https://qiita.com/tktktks10/items/98d21133cf3e121676c3)
 - [Graph Convolutional Network 概説](https://www.slideshare.net/KCSKeioComputerSocie/graph-convolutional-network)
 - [onvolutional Neural Networks on Graphs with Fast Localized Spectral Filteringを読んだのでメモ - 機械学習とかコンピュータビジョンとか](http://peluigi.hatenablog.com/entry/2018/08/22/165627)
+- [SEMI-SUPERVISED CLASSIFICATION WITH GRAPH CONVOLUTIONAL NETWORKSを読んだのでメモ](http://peluigi.hatenablog.com/entry/2018/08/22/183809)
+- [[DL Hacks]Semi-Supervised Classification with Graph Convolutional Networks](https://www.slideshare.net/DeepLearningJP2016/dl-hackssemisupervised-classification-with-graph-convolutional-networks-121489644)
 - [グラフ畳み込み再考 - Qiita](https://qiita.com/cotton-gluon/items/5c4e2f9c2c8a120863fa)
 - [【元論文】[1606.09375] Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](https://arxiv.org/abs/1606.09375)
 - [【元論文】[1703.06103] Modeling Relational Data with Graph Convolutional Networks](https://arxiv.org/abs/1703.06103)
