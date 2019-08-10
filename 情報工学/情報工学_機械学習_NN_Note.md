@@ -779,8 +779,10 @@ R-GCN [Relational Graph Convolutional Network] では、この問題を解決す
 この畳み込みは、通常の畳み込みのように、重みベクトルとベクトルの線形和＋活性化関数の形になっており、扱いやすいメリットがある。<br>
 
 #### ☆ RGCN での損失関数
+損失関数は、単純に最終的出力と教師データとの間のクロスエントロピーで定義される。<br>
+即ち、<br>
+![image](https://user-images.githubusercontent.com/25688193/62816898-19c7de80-bb69-11e9-9822-0dd67f8e7fb5.png)<br>
 
-> 記載中...
 
 <a id="グラフラプラシアン"></a>
 
