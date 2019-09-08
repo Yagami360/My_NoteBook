@@ -101,10 +101,7 @@ I will add contents as needed.
     1. RNN Encoder-Decoder
     1. [（外部リンク）Attention](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-6)
     1. [（外部リンク）Memory Networks [MemN]](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-7)
-1. [生成モデル [generative model]](#ID_10)
-    1. [GAN [Generative Adversarial Network]（敵対的ネットワーク）](#ID_10-1)
-        1. [DCGAN [Deep Convolutional GAN]](#ID_10-1-1)
-    1. VAE [Variational Autoencoder]
+1. [（外部リンク）生成モデル [generative model]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E7%94%9F%E6%88%90%E3%83%A2%E3%83%87%E3%83%AB.md)
 1. [ニューラルネットワーク、ディープラーニングによる物体検出 [object detection]](#ID_11)
     1. R-CNN
     1. Faster R-CNN
@@ -960,56 +957,6 @@ R-GCN [Relational Graph Convolutional Network] では、この問題を解決す
 ![twitter_nn14-1_160905](https://user-images.githubusercontent.com/25688193/30112978-1aa4cc4a-934e-11e7-9a7b-97c4f9d415b5.png)
 ![twitter_nn14-2_160905](https://user-images.githubusercontent.com/25688193/30112973-1a8f9122-934e-11e7-8ef0-2b0f82c00645.png)
 ![twitter_nn15-1_160905](https://user-images.githubusercontent.com/25688193/30112979-1abb3e26-934e-11e7-8e8d-23a72b07fe7c.png)
-
----
-
-<a id="ID_10"></a>
-
-## 生成モデル [generative model]
-> 以下の内容は、旧記事となります。<br>
-> 最新の記事は、別記事（[生成モデル](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E7%94%9F%E6%88%90%E3%83%A2%E3%83%87%E3%83%AB.md)）に移行していますので、こちらを参照ください。
-
-![image](https://user-images.githubusercontent.com/25688193/35478872-4302b400-042c-11e8-80aa-a187b50eba30.png)
-
-<a id="ID_10-1"></a>
-
-### GAN [Generative Adversarial Network]（敵対的ネットワーク）
-- 元論文「Generative Adversarial Nets」
-    - arXiv.org : https://arxiv.org/abs/1406.2661
-- 参考サイト
-    - https://elix-tech.github.io/ja/2017/02/06/gan.html
-    - http://mizti.hatenablog.com/entry/2016/12/10/224426
-    - http://vaaaaaanquish.hatenablog.com/entry/2017/03/19/220817
-    - http://yasuke.hatenablog.com/entry/generative-adversarial-nets
-
-![image](https://user-images.githubusercontent.com/25688193/35478891-ac0a5494-042c-11e8-8781-39c88431fe8f.png)
-![image](https://user-images.githubusercontent.com/25688193/35481685-c432d534-046b-11e8-954c-f9b88f5a07fb.png)
-![image](https://user-images.githubusercontent.com/25688193/35481115-7b76b87a-0460-11e8-9f3f-293e6afdba22.png)
-![image](https://user-images.githubusercontent.com/25688193/35488656-2b95c91c-04cf-11e8-8d06-67ea71c58a72.png)
-
-> 記載中...
-
-
-<a id="ID_10-1-1"></a>
-
-#### DCGAN [Deep Convolutional GAN]
-- 元論文「Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks」
-    - arXiv.org : https://arxiv.org/abs/1511.06434
-
-- TensorFlow での DCGAN の実装コード集
-    - https://github.com/Yagami360/MachineLearning_Exercises_Python_TensorFlow/tree/master/GAN_DCGAN_TensorFlow
-
-![image](https://user-images.githubusercontent.com/25688193/35545399-50f2a4bc-05b2-11e8-853e-11d38971630f.png)
-![image](https://user-images.githubusercontent.com/25688193/35545437-72ebb95a-05b2-11e8-9219-e723ee344d54.png)
-![image](https://user-images.githubusercontent.com/25688193/36059567-efac113c-0e7d-11e8-8bdd-329fbc70808a.png)
-![image](https://user-images.githubusercontent.com/25688193/35549375-93ea4836-05c8-11e8-8279-a8d3d3a659c6.png)
-![image](https://user-images.githubusercontent.com/25688193/35545532-cd39d9d2-05b2-11e8-9ab9-a3f4123ab8fd.png)
-![image](https://user-images.githubusercontent.com/25688193/35545809-5d14a248-05b4-11e8-854e-caf830ef2972.png)
-![image](https://user-images.githubusercontent.com/25688193/35549398-b4a58dce-05c8-11e8-9bd5-883c03aa4564.png)
-
-> 記載中...
-
-<br>
 
 ---
 
