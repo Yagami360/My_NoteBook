@@ -2,11 +2,6 @@
 
 ニューラルネットワーク、ディープラーニングに関してのマイノートです。今後も随時追加予定です。
 
-This is my notebook that summarizes about "Neural Network" and "Deep Learning". 
-I will add contents as needed.
-
-![neuralnetworks](https://user-images.githubusercontent.com/25688193/30514787-10f19028-9b57-11e7-8091-de114932fd6a.png)
-
 尚、本記事内容に関連した Python & tensorflow ライブラリを用いた実装コード集は、以下の GitHub レポジトリにおいてあります。
 - [Yagami360/MachineLearning_Exercises_Python_TensorFlow](https://github.com/Yagami360/MachineLearning_Exercises_Python_TensorFlow)
 
@@ -99,9 +94,10 @@ I will add contents as needed.
 1. 連想記憶ネットワーク（ホップフィールドネットワーク [Hopfield network] ）</br>(相互結合型ニューラルネットワーク [mutual connected neural networks]）)
 1. 系列変換モデル [Sequence-to-Sequence model/seq2seq]
     1. RNN Encoder-Decoder
-    1. [（外部リンク）Attention](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-6)
-    1. [（外部リンク）Memory Networks [MemN]](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-7)
-1. [（外部リンク）生成モデル [generative model]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E7%94%9F%E6%88%90%E3%83%A2%E3%83%87%E3%83%AB.md)
+    1. [【外部リンク】Attention](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-6)
+    1. [【外部リンク】Memory Networks [MemN]](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-7)
+1. [【外部リンク】生成モデル [generative model]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E7%94%9F%E6%88%90%E3%83%A2%E3%83%87%E3%83%AB.md)
+1. [【外部リンク】Neural-ODE, ODE-Net [Neural Ordinary Differential Equations]](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/21)
 1. [ニューラルネットワーク、ディープラーニングによる物体検出 [object detection]](#ID_11)
     1. R-CNN
     1. Faster R-CNN
@@ -109,7 +105,7 @@ I will add contents as needed.
     1. YOLO
         1. YOLO v1
         1. YOLO v2
-1. [（外部リンク）ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
+1. [【外部リンク】ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
 1. [参考文献](#参考文献)
 
 ---
