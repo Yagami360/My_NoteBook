@@ -68,6 +68,7 @@
         1. [ResNet のアーキテクチャ](#ResNetのアーキテクチャ)
         1. [ResNet の識別性能の実験結果](#ResNetの識別性能の実験結果)
         1. [ResNet の適用例](#ResNetの適用例)
+    1. [【外部リンク】Convolutional neural network architecture for geometric matching](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/36)
 1. [グラフ畳み込みネットワーク](#グラフ畳み込みネットワーク)
     1. [グラフフーリエ変換を用いたグラフ畳み込み（Spectral graph convolution）](#グラフフーリエ変換を用いたグラフ畳み込み)
     1. [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](#Convolutional_Neural_Networks_on_Graphs_with_Fast_Localized_Spectral_Filtering)
@@ -97,7 +98,9 @@
     1. [【外部リンク】Attention](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-6)
     1. [【外部リンク】Memory Networks [MemN]](http://yagami12.hatenablog.com/entry/2017/12/30/175113#ID_10-7)
 1. [【外部リンク】生成モデル [generative model]](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E7%94%9F%E6%88%90%E3%83%A2%E3%83%87%E3%83%AB.md)
-1. [【外部リンク】Neural-ODE, ODE-Net [Neural Ordinary Differential Equations]](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/21)
+1. Neural-ODE
+    1. [【外部リンク】Neural-ODE, ODE-Net [Neural Ordinary Differential Equations]](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/21)
+    1.  [【外部リンク】Augmented Neural ODEs](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/37)
 1. [ニューラルネットワーク、ディープラーニングによる物体検出 [object detection]](#ID_11)
     1. R-CNN
     1. Faster R-CNN
