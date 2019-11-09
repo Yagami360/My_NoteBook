@@ -2,10 +2,6 @@
 
 ニューラルネットワーク、ディープラーニングに関してのマイノートです。今後も随時追加予定です。
 
-尚、本記事内容に関連した Python & tensorflow ライブラリを用いた実装コード集は、以下の GitHub レポジトリにおいてあります。
-- [Yagami360/MachineLearning_Exercises_Python_TensorFlow](https://github.com/Yagami360/MachineLearning_Exercises_Python_TensorFlow)
-
-
 ## 目次 [Contents]
 1. [概要 [Overview]](#ID_1)
     1. [全体 MAP 図](#ID_1-1)
@@ -101,6 +97,9 @@
 1. Neural-ODE
     1. [【外部リンク】Neural-ODE, ODE-Net [Neural Ordinary Differential Equations]](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/21)
     1.  [【外部リンク】Augmented Neural ODEs](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/37)
+1. Neural Processes
+    1. [【外部リンク】Conditional Neural Processes](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/38)
+    1. Neural Processes
 1. [ニューラルネットワーク、ディープラーニングによる物体検出 [object detection]](#ID_11)
     1. R-CNN
     1. Faster R-CNN
@@ -108,6 +107,8 @@
     1. YOLO
         1. YOLO v1
         1. YOLO v2
+- Optical Flow
+    - [【外部リンク】FlowNet: Learning Optical Flow with Convolutional Networks](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/43)
 1. [【外部リンク】ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
 1. [参考文献](#参考文献)
 
