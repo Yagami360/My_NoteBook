@@ -99,7 +99,7 @@
     1.  [【外部リンク】Augmented Neural ODEs](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/37)
 1. Neural Processes
     1. [【外部リンク】Conditional Neural Processes](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/38)
-    1. Neural Processes
+    1. [【外部リンク】Neural Processes](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/44)
 1. [ニューラルネットワーク、ディープラーニングによる物体検出 [object detection]](#ID_11)
     1. R-CNN
     1. Faster R-CNN
