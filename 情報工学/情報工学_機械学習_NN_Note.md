@@ -65,6 +65,7 @@
         1. [ResNet の識別性能の実験結果](#ResNetの識別性能の実験結果)
         1. [ResNet の適用例](#ResNetの適用例)
     1. [【外部リンク】Convolutional neural network architecture for geometric matching](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/36)
+    1. [【外部リンク】Spatial Transformer Networks](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/48)
 1. [グラフ畳み込みネットワーク](#グラフ畳み込みネットワーク)
     1. [グラフフーリエ変換を用いたグラフ畳み込み（Spectral graph convolution）](#グラフフーリエ変換を用いたグラフ畳み込み)
     1. [Convolutional Neural Networks on Graphs with Fast Localized Spectral Filtering](#Convolutional_Neural_Networks_on_Graphs_with_Fast_Localized_Spectral_Filtering)
@@ -109,6 +110,7 @@
         1. YOLO v2
 - Optical Flow
     - [【外部リンク】FlowNet: Learning Optical Flow with Convolutional Networks](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/43)
+    - [【外部リンク】View Synthesis by Appearance Flow](https://github.com/Yagami360/MachineLearning-Papers_Survey/issues/47)
 1. [【外部リンク】ニューラルネットワーク、ディープラーニングによる自然言語処理（NLP）](https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86_Note.md)
 1. [参考文献](#参考文献)
 
